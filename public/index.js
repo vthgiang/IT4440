@@ -2,11 +2,11 @@ const SERVER_HOST = 'http://it4440.phungluan.com';
 $.makeTable = function ({ header, body }) {
     let table = $("<table class='table table-hover' id = 'table'>");
     let tblHeader = "<tr>";
-    for (var item of header) tblHeader += `<th>${item}</th>`;
+    for (let item of header) tblHeader += `<th>${item}</th>`;
     tblHeader += "</tr>";
     $(tblHeader).appendTo(table);
     $.each(body, function (index, value) {
-        var TableRow = "<tr>";
+        let TableRow = "<tr>";
         $.each(value, function (key, val) {
             if (key === 1) {
                 TableRow += `<td><a href = ${SERVER_HOST}${val} target = '_blank'>${val}</a></td>`;
@@ -28,5 +28,9 @@ for (let i = 1; i <= 15; i++) {
         group_name, `/${group_name}/index.html`
     ]);
 }
-var table = $.makeTable({ header, body });
-$(table).appendTo("#TableCont");
+
+let table = $.makeTable({ header, body });
+
+$(document).ready(function () {
+    $(table).appendTo("#div_table");
+})
