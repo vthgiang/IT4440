@@ -260,7 +260,7 @@ tbody tr:hover {
   table tbody tr td:nth-child(2):before {
     content: "Demo";
   }
-  table tbody tr td:nth-child(3):before {
+  /* table tbody tr td:nth-child(3):before {
     content: "Name";
   }
   table tbody tr td:nth-child(4):before {
@@ -271,7 +271,7 @@ tbody tr:hover {
   }
   table tbody tr td:nth-child(6):before {
     content: "Total";
-  }
+  } */
 
   .column4,
   .column5,
