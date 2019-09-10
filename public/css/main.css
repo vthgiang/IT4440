@@ -222,7 +222,7 @@ tbody tr:hover {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 576px) {
   table {
     display: block;
   }
