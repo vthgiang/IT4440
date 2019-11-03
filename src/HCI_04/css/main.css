@@ -11,7 +11,7 @@ body {
 
 /* Set table header size */
 #table-plan-list > thead th:nth-child(1) {
-  width: 80px;
+  width: 100px;
 }
 #table-plan-list > thead th:nth-last-child(1) {
   width: 150px;
