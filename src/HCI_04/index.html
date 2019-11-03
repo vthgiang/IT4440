@@ -1,17 +1,197 @@
-<!-- 
-    file này để trỏ route trong server =>  các bạn có thể làm việc trong
-    thư mục của nhóm, tạo file folder thoải mái, file index.html dùng 
-    hiện view của nhóm, có thể tạo nhiều file html nếu bạn có nhiều màn.
- -->
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>HCI_04</title>
-<meta charset="utf-8">
+  <!-- begin meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- end meta -->
+
+  <!-- begin style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- end style -->
+
+  <!-- begin js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
+  <!-- end js -->
+
+  <title>HCI_04 - Trang chủ</title>
 </head>
+
 <body>
-
-<h1>Bài làm của nhóm 4</h1>
-
+  <!-- Header -->
+  <nav class="navbar navbar-bark bg-dark fixed-top row">
+    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+      <h3 class="text-light m-0">LOGO</h3>
+    </a>
+    <div class="navbar-nav ml-auto flex-row align-items-center">
+      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-user-circle text-light h3 m-0"></i>
+      </button>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-sign-out-alt text-white-50 h5 m-0"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- End Header -->
+  <!-- Body -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Begin Sidebar -->
+      <nav class="sidebar col-sm-3 col-md-2">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column h6">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-clipboard-check fa-fw mr-1"></i>
+                <span>Phê duyệt kế hoạch</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-tasks fa-fw mr-1"></i>
+                <span>Quản lý tiến độ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Sidebar -->
+      <!-- Begin Main -->
+      <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
+        <!-- Begin Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb rounded-0">
+            <li class="breadcrumb-item"><a href="#">Phê duyệt kế hoạch</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Danh sách kế hoạch</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+        <!-- Begin Content -->
+        <div class="container-fluid p-3">
+          <!-- Begin Pagination -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Trước</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Sau</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+          <!-- Start Table Data -->
+          <table id="table-plan-list" class="table table-bordered table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Mã số</th>
+                <th scope="col">Tên kế hoạch</th>
+                <th scope="col">Người nộp</th>
+                <th scope="col">Trạng thái</th>
+                <th scope="col">Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Kế hoạch A</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đã duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-block">Phê duyệt</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Kế hoạch A</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-block">Phê duyệt</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Kế hoạch A</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Yêu cầu chỉnh sửa
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-block">Phê duyệt</button>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Kế hoạch A</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đã chỉnh sửa
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-primary btn-block">Phê duyệt</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End Table Data -->
+        </div>
+        <!-- End Content -->
+      </main>
+      <!-- End Main -->
+    </div>
+  </div>
+  <!-- End Body -->
 </body>
+
 </html>
