@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Page title</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+     
+    <script type="text/javascript">
+        window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer",
+        {
+            title:{
+            text: ""    
+            },
+            legend: {
+            verticalAlign: "bottom",
+            horizontalAlign: "center"
+            },
+            data: [
+    
+            {        
+            color: "#B0D0B0",
+            type: "column",  
+            showInLegend: false, 
+            legendMarkerType: "none",
+            legendText: "Mức điểm theo chu kì",
+            dataPoints: [      
+            { x: 1, y: 3, label: "Tháng 4"},
+            { x: 2, y: 4,  label: "Tháng 5" },
+            { x: 3, y: 5,  label: "Tháng 6"},
+            { x: 4, y: 8,  label: "Tháng 7"},
+            { x: 5, y: 5,  label: "Tháng 8"},
+            { x: 6, y: 2, label: "Tháng 9"},
+            { x: 7, y: 3,  label: "Tháng 10"},        
+            { x: 8, y:9,  label: "Tháng 11"}
+            ]
+            }
+            ]
+        });
+    
+        chart.render();
+        }
+        </script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+              var barchart = new CanvasJS.Chart("BarChart",
+              {
+                title:{
+                  text: "Olympic Medals of all Times (till 2012 Olympics)"
+                },
+                data: [
+                {
+                  type: "bar",
+                  dataPoints: [
+                  { y: 198, label: "Italy"},
+                  { y: 201, label: "China"},
+                  { y: 202, label: "France"},
+                  { y: 236, label: "Great Britain"},
+                  { y: 395, label: "Soviet Union"},
+                  { y: 957, label: "USA"}
+                  ]
+                },
+                {
+                  type: "bar",
+                  dataPoints: [
+                  { y: 166, label: "Italy"},
+                  { y: 144, label: "China"},
+                  { y: 223, label: "France"},
+                  { y: 272, label: "Great Britain"},
+                  { y: 319, label: "Soviet Union"},
+                  { y: 759, label: "USA"}
+                  ]
+                },
+                {
+                  type: "bar",
+                  dataPoints: [
+                  { y: 185, label: "Italy"},
+                  { y: 128, label: "China"},
+                  { y: 246, label: "France"},
+                  { y: 272, label: "Great Britain"},
+                  { y: 296, label: "Soviet Union"},
+                  { y: 666, label: "USA"}
+                  ]
+                }
+                ]
+              });
+          
+          barchart.render();
+          }
+          </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <script src="sidebar.js"></script>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <!-- Header  -->
+        <script src="header.js"></script>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div id="chartContainer" style="height: 300px"></div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div id="BarChart" style="height: 300px"></div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+               <div id="chartContainer" style="height: 300px"></div>
+            </div>
+        </div>
+        <table class="table table-bordered">
+                <thead>
+                  <tr class="col1">
+                    <th scope="col">Khoảng đánh giá hệ số hoàn thành</th>
+                    <th scope="col">Thêm</th>
+                    <th scope="col">Xu hướng</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="col1">
+                    <th scope="row">K &#60;70 </th>
+                    <td>1</td>
+                    <td>
+                        <select name="status"   class="form-control" >
+                            <option value="true"> Đạt</option>
+                            <option value="false">Không đạt</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr class="col1">
+                    <th scope="row">70 &#61;&#60; K &#61;&#60;80</th>
+                    <td>2</td>
+                    <td>
+                        <select name="status"   class="form-control" >
+                            <option value="true"> Đạt</option>
+                            <option value="false">Không đạt</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr class="col1">
+                    <th scope="row">80 &#61;&#60; K &#61;&#60; 90</th>
+                    <td>3</td>
+                    <td>
+                        <select name="status"   class="form-control" >
+                            <option value="true"> Đạt</option>
+                            <option value="false">Không đạt</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr class="col1">
+                      <th scope="row">90 &#61;&#60; K &#61;&#60; 100</th>
+                      <td>4</td>
+                      <td>
+                        <select name="status"   class="form-control" >
+                            <option value="true"> Đạt</option>
+                            <option value="false">Không đạt</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr class="col1">
+                        <th scope="row"> K &#62; 100</th>
+                        <td>5</td>
+                        <td>
+                            <select name="status"   class="form-control" >
+                                <option value="true"> Đạt</option>
+                                <option value="false">Không đạt</option>
+                            </select>
+                        </td>
+                      </tr>
+                </tbody>
+              </table>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebarCollapse").on("click", function() {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
