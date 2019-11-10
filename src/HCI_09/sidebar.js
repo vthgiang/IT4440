@@ -1,0 +1,66 @@
+document.write('<nav id="sidebar">\n');
+document.write('  <div class="sidebar-header">\n');
+document.write("    <h4>TỔNG QUAN</h4>\n");
+document.write("  </div>\n");
+document.write("\n");
+document.write('  <div class="sidebar-muc">\n');
+document.write("    <h6>Thiết lập KPI</h6>\n");
+document.write("  </div>\n");
+document.write("\n");
+document.write('  <ul class="list-unstyled components">\n');
+document.write('    <li class="active">\n');
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("        Cấp nhân viên\n");
+document.write("      </a>\n");
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("        Cấp bộ phận\n");
+document.write("      </a>\n");
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("        Danh sách KPI\n");
+document.write("      </a>\n");
+document.write("  </ul>\n");
+document.write("\n");
+
+document.write('  <div class="sidebar-muc">\n');
+document.write("    <h6>Quản lý bộ phận Marketing</h6>\n");
+document.write("  </div>\n");
+document.write("\n");
+document.write('  <ul class="list-unstyled components">\n');
+document.write('    <li class="active">\n');
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("        Tạo công việc\n");
+document.write("      </a>\n");
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("        Danh sách công việc\n");
+document.write("      </a>\n");
+document.write('      <a href="#">\n');
+document.write('        <i class="fas fa-briefcase"></i>\n');
+document.write("       Kết quả KPI\n");
+document.write("      </a>\n");
+document.write("    <li>\n");
+document.write("  </ul>\n");
+document.write("\n");
+document.write('  <ul class="list-unstyled CTAs">\n');
+document.write("    <li>\n");
+document.write("      <a\n");
+document.write(
+  '        href="https://bootstrapious.com/tutorial/files/sidebar.zip"\n'
+);
+document.write('        class="download"\n');
+document.write("        >Download source</a\n");
+document.write("      >\n");
+document.write("    </li>\n");
+document.write("    <li>\n");
+document.write(
+  '      <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article"\n'
+);
+document.write("        >Back to article</a\n");
+document.write("      >\n");
+document.write("    </li>\n");
+document.write("  </ul>\n");
+document.write("</nav>\n");
