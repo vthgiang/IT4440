@@ -92,13 +92,10 @@ span {
 .user {
   float: right;
 }
-
-.dropdown-menu{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.filter{
-    margin-left: 2rem;
+.dropdown-menu {
+  margin-left: 10em;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .has-search .form-control-feedback {
   position: absolute;
@@ -135,12 +132,8 @@ span {
 .button-edit {
   float: right;
 }
-
-.th .td{
-    vertical-align: middle;
-}
-.header-row{
-    margin-bottom: 0px !important;
+.header-row {
+  margin-bottom: 0px !important;
 }
 .row {
   margin-bottom: 15px;
@@ -154,13 +147,8 @@ span {
 .table-bordered {
   border: 1px solid #979a9c !important;
 }
-
-.table th, td {
-    vertical-align: middle !important;
-    text-align: center;
-}
-.card-body{
-    background-color: #f7f7f7 !important;
+.card-body {
+  background-color: #f7f7f7 !important;
 }
 .card-header {
   background-color: #e5e4e4 !important;
@@ -538,4 +526,34 @@ a.article:hover {
   .progress {
     margin-bottom: 20px;
   }
+}
+
+.content1 {
+  display: flex;
+  height: 35vh;
+  margin-bottom: 4rem;
+}
+
+.table-responsive {
+  width: 50%;
+  padding: 0 100px 20px 20px;
+}
+
+.table {
+  border: 1px solid #dee2e6;
+  height: 100%;
+}
+.content2 {
+  display: flex;
+}
+
+#chartContainer {
+  width: 10%;
+  height: 100%;
+}
+
+.graph-circle {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
