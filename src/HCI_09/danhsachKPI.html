@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page title</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.   js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <script src="sidebar.js"></script>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <!-- Header  -->
+            <script src="header.js"></script>
+            <div class="row header-row">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
+                    <span class="name-page">
+                        <button class="btn btn-link page-before">Thiết lập KPI</button>
+                        <i class="fa fa-angle-right"></i>
+                        <button class="btn btn-link page-current">Danh sách KPI</button>
+                    </span>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+                <hr width="100%" />
+                <div>
+                    <div class="row filter">
+                        <div class="col-sm-1">
+                            <div style="text-align: center;">Chỉ tiêu</div>
+                            <div style="vertical-align: middle; text-align: center;">
+                                <input type="text" class="form-control" placeholder="1000">
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div style="text-align: center;">Từ ngày</div>
+                            <div style="vertical-align: middle; text-align: center;">
+                                <input type="text" class="form-control" placeholder="05/10/2019">
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div style="text-align: center;">Đến ngày</div>
+                            <div style="vertical-align: middle; text-align: center;">
+                                <input type="text" class="form-control" placeholder="05/11/2019">
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-sm-2">
+                            <div style="text-align: center;">Phòng ban</div>
+                            <div style="vertical-align: middle; text-align: center;" class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Bộ phận sản xuất
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Bộ phận marketing</a>
+                                    <a class="dropdown-item" href="#">Bộ phận kinh doanh</a>
+                                    <a class="dropdown-item" href="#">Bộ phận hành chính</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+                            <div style="text-align: center;">Vai trò</div>
+                            <div style="vertical-align: middle; text-align: center;" class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Vai trò
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Nhân viên</a>
+                                    <a class="dropdown-item" href="#">Bộ phận</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-sm-2">
+                            <div style="text-align: center;">Người thực hiện</div>
+                            <div style="vertical-align: middle; text-align: center;">
+                                <input type="text" class="form-control" placeholder="ANguyenVan@congty.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-2" style="position: relative;">
+                            <button class="btn btn-primary" style="position: absolute; bottom: 0; float: right;">Xem danh
+                                sách</button>
+                                <button class="btn btn-light" style="position: absolute; bottom: 0; margin-left: 9rem;">
+                                        <i class="fa fa-pencil"></i>
+                                        Thêm KPI
+                                    </button>
+                        </div>
+                        
+                    </div>
+                    <div class="row filter" style="font-size: 1.5rem; padding-top: 2rem; font-weight: bold;">
+                        Thống kê danh sách KPI bộ phận sản xuất
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr style="text-align: center;">
+                                <th scope="col">Tên KPI</th>
+                                <th scope="col">Loại KPI</th>
+                                <th scope="col">Thời gian bắt đầu</th>
+                                <th scope="col">Thời gian kết thúc</th>
+                                <th scope="col">Bộ phận</th>
+                                <th scope="col">Mô tả</th>
+                                <th scope="col">Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="font-size: 15px; margin-bottom: auto">
+                                <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
+                                <td id="priority">Tháng</td>
+                                <td id="emp">05/10/2019</td>
+                                <td id="monitor">05/11/2019</td>
+                                <td id="start">Bộ phận sản xuất</td>
+                                <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
+                                <td id="detail">
+                                    <button class="btn btn-primary">Xem chi tiết</button>
+                                    <button class="btn btn-danger">Xóa</button>
+                                </td>
+                            </tr>
+                            <tr style="font-size: 15px; margin-bottom: auto">
+                                    <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
+                                    <td id="priority">Tháng</td>
+                                    <td id="emp">05/10/2019</td>
+                                    <td id="monitor">05/11/2019</td>
+                                    <td id="start">Bộ phận sản xuất</td>
+                                    <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
+                                    <td id="detail">
+                                        <button class="btn btn-primary">Xem chi tiết</button>
+                                        <button class="btn btn-danger">Xóa</button>
+                                    </td>
+                                </tr>
+                                <tr style="font-size: 15px; margin-bottom: auto">
+                                        <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
+                                        <td id="priority">Tháng</td>
+                                        <td id="emp">05/10/2019</td>
+                                        <td id="monitor">05/11/2019</td>
+                                        <td id="start">Bộ phận sản xuất</td>
+                                        <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
+                                        <td id="detail">
+                                            <button class="btn btn-primary">Xem chi tiết</button>
+                                            <button class="btn btn-danger">Xóa</button>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- jQuery CDN - Slim version (=without AJAX) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+                crossorigin="anonymous"></script>
+
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $("#sidebarCollapse").on("click", function () {
+                        $("#sidebar").toggleClass("active");
+                    });
+                });
+            </script>
+
+            <script src="danhsachcongviec.js"></script>
+</body>
+
+</html>
