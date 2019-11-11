@@ -193,7 +193,7 @@ td {
     position: absolute;
     height: 26px;
     border: 1px solid #cbc8c8;
-    bottom: 130px;
+    bottom: 8px;
     width: calc(100% - 2px);
     display: flex;
 }
