@@ -58,18 +58,51 @@
       <!-- Begin Sidebar -->
       <nav class="sidebar col-sm-3 col-md-2">
         <div class="sidebar-sticky">
-          <ul class="nav flex-column h6">
-            <li class="nav-item">
-              <a class="nav-link active" href="/index.html">
-                <i class="fas fa-clipboard-check fa-fw mr-1"></i>
-                <span>Phê duyệt kế hoạch</span>
+          <ul class="nav flex-column h5 main-nav">
+            <li class="nav-item active">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+                <span>Chức năng chung</span>
               </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-1" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">
+                    <span>Phê duyệt kế hoạch</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="fas fa-tasks fa-fw mr-1"></i>
-                <span>Quản lý tiến độ</span>
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+                <span>Quản trị mục tiêu</span>
               </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-2" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Thiết lập mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Phê duyệt mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Giám sát tiến độ</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span>Thống kê</span>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>

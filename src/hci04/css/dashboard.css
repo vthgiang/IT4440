@@ -26,7 +26,6 @@ body {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
-  padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
@@ -97,4 +96,27 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.sidebar .main-nav > .nav-item {
+  background-color: #e9ecef;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ced4da;
+  cursor: pointer;
+}
+
+.sidebar .sub-nav > .nav-item {
+  border-bottom: 1px solid #e3e8ec;
+}
+
+.sidebar .sub-nav > .nav-item .nav-link {
+  padding-left: 2rem;
+}
+
+.sidebar .sub-nav > .nav-item .nav-link.active {
+  background-color: #007bff;
+  color: #e9ecef;
+  font-weight: bold;
 }
