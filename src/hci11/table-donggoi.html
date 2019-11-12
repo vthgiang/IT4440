@@ -144,7 +144,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb small">
                             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Quản lý chia liều</li>
+                            <li class="breadcrumb-item active" aria-current="page">Quản lý đóng gói</li>
                         </ol>
                     </nav>
                 </div>
@@ -529,40 +529,5 @@
 <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 <!-- Page level custom scripts -->
 <script src="js/demo/datatables-demo.js"></script>
-
-<script>
-window.onload = function() {
-
-var chart = new CanvasJS.Chart("chartContainer1", {
-    animationEnabled: true,
-    title: {
-        text: "Tỉ lệ các thành phần có trong Viên sáng mắt SAMA",
-        fontStyle: "italic",
-        fontFamily: "tahoma",
-        fontColor: "red",
-    },
-    data: [{
-        type: "pie",
-        startAngle: 240,
-        yValueFormatString: "##0.00\"%\"",
-        indexLabel: "{label} {y}",
-        dataPoints: [
-            {y: 9.2, label: "Bột đương qui"},
-            {y: 14.7, label: "Hỗn hợp cao khô dược liệu Sáng mắt"},
-            {y: 11.7, label: "Trạch tảs"},
-            {y: 11.7, label: "Thục địa"},
-            {y: 11.5, label: "Thảo quyết minh"},
-            {y: 14.2, label: "Hoài sơn"},
-            {y: 2.9, label: "Hạ khô thảo"},
-            {y: 12.7, label: "Hà thủ ô"},
-            {y: 6.4, label: "Cúc hoa"},
-            {y: 1, label: "Tá dược"},   
-        ]
-    }]
-});
-chart.render();
-
-}
-</script>
 </body>
 </html>
