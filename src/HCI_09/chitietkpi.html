@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Page title</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome JS -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+      integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <script src="sidebar.js"></script>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <!-- Header  -->
+        <script src="header.js"></script>
+        <div class="row header-row">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                        <span class="name-page">
+                                <button class="btn btn-link page-before">Thiết lập KPI</button> 
+                                 <i class="fa fa-angle-right"></i>
+                                 <button class="btn btn-link page-current">Chi tiết KPI</button>
+                            </span>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                     <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+            <hr  width="100%" />
+        <div class="row">
+            <div class="col-md-5">
+              <div class="row">
+                <div class="col-md-4 offset-md-1">
+                  <label>Tên KPI</label>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="Xây dựng tập khách hàng">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 offset-md-1">
+                  <label>Phòng ban</label>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <select name="status"   class="form-control" >
+                      <option value="true"> Bộ phận kinh doanh</option>
+                      <option value="false">Bộ phận sản xuất</option>
+                      <option value="false">Bộ phận kế toán</option>
+                      <option value="false">Bộ phận kiểm định</option>
+                      <option value="false">Bộ phận nhân sự</option>
+                  </select>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-md-4 offset-md-1">
+                    <label>Giám sát</label>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="ANguyenVan@congty.com" >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 offset-md-1">
+                    <label>Mục tiêu</label>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="Tập khách hàng đạt 50.00">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 offset-md-1">
+                    <label>Nhóm mục tiêu</label>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="Marleting">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4 offset-md-1">
+                    <label>Trọng số</label>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="60">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 offset-md-1 ">
+                      <label>Ngày bắt đầu</label>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                    </div>
+               </div>
+               <div class="row">
+                   <div class="col-md-4 offset-md-1 ">
+                     <label>Ngày kết thúc</label>
+                   </div>
+                   <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                   </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 offset-md-1 ">
+                    <label>Phương pháp đo</label>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="Số lượng thông tin khách h">
+                  </div>
+             </div>
+             <div class="row">
+                <div class="col-md-4 offset-md-1 ">
+                  <label>Mô tả</label>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <textarea class="form-control" rows="5" id="comment">Xây dựng tập thông tin khách hàng đã xem, mua hoặc quan tâm tới sản phẩm của công ty</textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-7  ">
+                  <button class="btn btn-danger button-edit"> Chỉnh sửa</button>
+                </div>
+            </div>
+            
+            </div>
+            <div class="col-md-7">
+              <div class="card">
+                <div class="card-header">
+                  <h5>Thông tin KPI</h5>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                      <label> Tần suất</label>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                      <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="hàng tháng" >
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <label> Chiều hướng tốt</label>
+                      </div>
+                      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <select name="status"   class="form-control" >
+                                    <option value="true"> Tăng</option>
+                                    <option value="false">Không thay đổi</option>
+                                    <option value="false">Giảm</option>
+                                </select>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                          <label>Hệ số hoàn thành</label>
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                          <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="phần trăm" >
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <label>Đơn vị đo</label>
+                          </div>
+                          <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <input type="text" name="taansuat" id="inputtaansuat" class="form-control"  required="required" value="triệu đồng" >
+                          </div>
+                        </div>
+                        <label class="txt1"> Tính điểm đánh giá</label>
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr class="col1">
+                                <th scope="col">Khoảng đánh giá hệ số hoàn thành</th>
+                                <th scope="col">Thêm</th>
+                                <th scope="col">Xu hướng</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="col1">
+                                <th scope="row">K &#60;70 </th>
+                                <td>1</td>
+                                <td>
+                                    <select name="status"   class="form-control" >
+                                        <option value="true"> Đạt</option>
+                                        <option value="false">Không đạt</option>
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr class="col1">
+                                <th scope="row">70 &#61;&#60; K &#61;&#60;80</th>
+                                <td>2</td>
+                                <td>
+                                    <select name="status"   class="form-control" >
+                                        <option value="true"> Đạt</option>
+                                        <option value="false">Không đạt</option>
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr class="col1">
+                                <th scope="row">80 &#61;&#60; K &#61;&#60; 90</th>
+                                <td>3</td>
+                                <td>
+                                    <select name="status"   class="form-control" >
+                                        <option value="true"> Đạt</option>
+                                        <option value="false">Không đạt</option>
+                                    </select>
+                                </td>
+                              </tr>
+                              <tr class="col1">
+                                  <th scope="row">90 &#61;&#60; K &#61;&#60; 100</th>
+                                  <td>4</td>
+                                  <td>
+                                    <select name="status"   class="form-control" >
+                                        <option value="true"> Đạt</option>
+                                        <option value="false">Không đạt</option>
+                                    </select>
+                                </td>
+                                </tr>
+                                <tr class="col1">
+                                    <th scope="row"> K &#62; 100</th>
+                                    <td>5</td>
+                                    <td>
+                                        <select name="status"   class="form-control" >
+                                            <option value="true"> Đạt</option>
+                                            <option value="false">Không đạt</option>
+                                        </select>
+                                    </td>
+                                  </tr>
+                            </tbody>
+                          </table>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#sidebarCollapse").on("click", function() {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>

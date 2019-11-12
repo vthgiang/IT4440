@@ -60,7 +60,7 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column h6">
             <li class="nav-item">
-              <a class="nav-link active" href="#">
+              <a class="nav-link active" href="/HCI_04/index.html">
                 <i class="fas fa-clipboard-check fa-fw mr-1"></i>
                 <span>Phê duyệt kế hoạch</span>
               </a>
@@ -79,14 +79,283 @@
       <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
         <!-- Begin Breadcrumb -->
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb rounded-0">
-            <li class="breadcrumb-item"><a href="#">Phê duyệt kế hoạch</a></li>
+          <ol class="breadcrumb rounded-0 h6">
+            <li class="breadcrumb-item">Phê duyệt kế hoạch</li>
             <li class="breadcrumb-item active" aria-current="page">Danh sách kế hoạch</li>
           </ol>
         </nav>
         <!-- End Breadcrumb -->
         <!-- Begin Content -->
         <div class="container-fluid p-3">
+          <!-- Start Filter -->
+          <div class="container-fluid p-3 border rounded mb-3 table-filter">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6">Mã số</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập mã số ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6">Tên kế hoạch</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên kế hoạch ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6">Bộ phận</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên bộ phận ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6">Người nộp</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên người nộp ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6">Trạng thái</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn trạng thái ...</option>
+                      <option>Chưa duyệt</option>
+                      <option>Đã duyệt</option>
+                      <option>Yêu cầu chỉnh sửa</option>
+                      <option>Đã chỉnh sửa</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4 mt-2 d-flex">
+                <button class="btn btn-outline-danger btn-block m-0 mx-1">
+                  Xoá bộ lọc
+                </button>
+                <button class="btn btn-primary btn-block m-0 mx-1">
+                  Lọc kết quả
+                  <i class="fas fa-filter ml-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End Filter -->
+          <!-- Start Table Data -->
+          <table id="table-plan-list" class="table table-bordered table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Mã số
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Tên kế hoạch
+                  <i class="fa fa-fw float-right"></i>
+                </th>
+                <th scope="col">Bộ phận
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Người nộp
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Trạng thái
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đã duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar"
+                      style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Yêu cầu chỉnh sửa
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đã chỉnh sửa
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Kế hoạch A</td>
+                <td>Nhân sự</td>
+                <td>Đào Duy Nam</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Chưa duyệt
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <a role="button" class="btn btn-info btn-block text-light" href="/HCI_04/plan-detail.html">Chi tiết</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End Table Data -->
           <!-- Begin Pagination -->
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-end">
@@ -106,189 +375,6 @@
             </ul>
           </nav>
           <!-- End Pagination -->
-          <!-- Start Table Data -->
-          <table id="table-plan-list" class="table table-bordered table-hover">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col">Mã số
-                  <i class="fa fa-fw fa-sort float-right"></i>
-                </th>
-                <th scope="col">Tên kế hoạch
-                  <i class="fa fa-fw float-right"></i>
-                </th>
-                <th scope="col">Người nộp
-                  <i class="fa fa-fw fa-sort float-right"></i>
-                </th>
-                <th scope="col">Trạng thái
-                  <i class="fa fa-fw fa-sort float-right"></i>
-                </th>
-                <th scope="col">Hành động</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Đã duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar"
-                      style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Yêu cầu chỉnh sửa
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Đã chỉnh sửa
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">7</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">8</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">9</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">10</th>
-                <td>Kế hoạch A</td>
-                <td>Đào Duy Nam</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-info btn-block">Chi tiết</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- End Table Data -->
         </div>
         <!-- End Content -->
       </main>

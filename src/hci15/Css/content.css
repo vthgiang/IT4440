@@ -1,0 +1,271 @@
+﻿.content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 242px);
+    height: calc(100% - 55px);
+    margin-right: 8px;
+    margin-left: 4px;
+}
+.them{
+    display: none;
+}
+.content .header-content{
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 100%;
+}
+.header-content .text-header-content{
+    position: relative;
+    font-size: 24px;
+    margin-left: 12px;
+    margin-right: 4px;
+    margin-top: 5px;
+    color: #000000;
+}
+.header-content .icon-next {
+    position: relative;
+    height: 16px;
+    width: 28px;
+    background-image: url('../Contents/Images/page-next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 13px;
+    margin-right: 4px;
+}
+.header-content .text {
+    position: relative;
+    color: #000000;
+    font-size: 18px!important;
+    margin-top: 9px;
+}
+.content .menu-content {
+    position: absolute;
+    top: 40px;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    margin: 4px 0;
+    background-color: #cbc8c8;
+}
+.menu-content .text-menu {
+    position: relative;
+    color: #000000 !important;
+    margin-left: 12px;
+    margin-right: 4px;
+    margin-top: 9px;
+    font-size: 16px;
+}
+.menu-content .input-menu{
+    position: relative;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.menu-content .input-menu input{
+    height: 30px;
+    border: 1.5px solid #000000;
+}
+.menu-content .input-menu select{
+    height: 30px;
+    border: 1.5px solid #000000;
+}
+.menu-content .button-menu {
+    background-color: #318024;
+    margin-left: 16px;
+    width: 110px;
+    display: flex;
+}
+.menu-content .button-menu .icon-excel{
+    position: relative;
+    height: 32px;
+    width: 25px;
+    background-image: url('../Contents/Images/excel_97_24.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.menu-content .button-menu .icon-pdf{
+    position: relative;
+    height: 32px;
+    width: 25px;
+    background-image: url('../Contents/Images/SaveAdd16.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.menu-content .button-menu .text-xuat{
+    position: relative;
+    height: 32px;
+    margin-top: 8px;
+    color: #ffffff;
+    margin-left: 2px;
+}
+button{
+    cursor: pointer;
+}
+input{
+    cursor: text;
+}
+.content .tbt-content {
+    position: absolute;
+    width: calc(100% - 2px);
+    top: 80px;
+    height: calc(100% - 100px);
+    border: 1px solid #cbc8c8;
+    overflow-x: auto !important;
+    color: #000000!important;
+    margin-top: 8px;
+}
+
+.tbt-content .main-table {
+    position: absolute;
+    font-size: 13px;
+    border-collapse: collapse;
+}
+
+.main-table tbody {
+    overflow: auto;
+}
+
+.main-table .row-table {
+    background-color: #e1dede;
+    overflow-x: auto;
+    overflow-y: hidden !important;
+}
+
+.row-table th {
+    position: sticky;
+    top: 0;
+    border: 1px solid #cbc8c8;
+    height: 51px;
+}
+
+tbody td {
+    border: 1px solid #cbc8c8;
+    cursor: pointer;
+}
+.row-table .text-row {
+    position: relative;
+    height: 24px;
+    padding-top: 8px;
+    padding: 0 8px;
+}
+
+.row-table .sl-row {
+    display: flex;
+    height: 24px;
+    width: 100%;
+}
+
+.sl-row .left-row {
+    position: relative;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+    width: 24px;
+    flex-shrink: 0;
+    line-height: 100%;
+    cursor: pointer;
+}
+
+.sl-row .right-row {
+    width: 100%;
+}
+
+    .sl-row .right-row input {
+        border: 1px solid #ccc;
+        width: 100%;
+    }
+
+.sl-row select {
+    width: 100%;
+}
+
+th, td {
+    white-space: nowrap;
+}
+
+td {
+    height: 30px;
+}
+.content .footer {
+    position: absolute;
+    height: 26px;
+    border: 1px solid #cbc8c8;
+    bottom: 8px;
+    width: calc(100% - 2px);
+    display: flex;
+}
+
+.footer .icon-page {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    margin-left: 8px;
+    margin-top: 3px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+    .footer .icon-page:hover {
+        background-color: #cbc8c8;
+    }
+
+.footer .first {
+    background: url('../Contents/Images/page-first.png') no-repeat center center;
+}
+
+.footer .prev {
+    background: url('../Contents/Images/page-prev.png') no-repeat center center;
+}
+
+.footer .next {
+    background: url('../Contents/Images/page-next.png') no-repeat center center;
+}
+
+.footer .last {
+    background: url('../Contents/Images/page-last.png') no-repeat center center;
+}
+
+.footer .refresh {
+    background: url('../Contents/Images/refresh.png') no-repeat center center;
+    margin-right: 4px;
+}
+
+.footer .space-icon {
+    position: relative;
+    margin-top: 4px;
+    margin-left: 4px;
+    height: 18px;
+    width: 1px;
+    background-color: #808080;
+}
+
+.footer .text-footer {
+    margin-left: 10px;
+    padding-top: 2px;
+    color: #000000!important;
+}
+
+.footer .input-footer input {
+    margin-top: 1px;
+    margin-left: 8px;
+    height: 20px;
+    width: 40px;
+}
+
+.footer .combobox select {
+    margin-top: 1px;
+    margin-left: 8px;
+    height: 22px;
+    width: 45px;
+}
+
+.footer .text-end {
+    position: absolute;
+    padding-top: 2px;
+    right: 15px;
+    color: #000000;
+}
