@@ -17,6 +17,8 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -51,11 +53,11 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                 <i class="fas fa-fw fa-industry"></i>
                 <span>Xưởng TPCN</span>
             </a>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Quản lý</h6>
                     <a class="collapse-item" href="table.html">Quản lý pha chế</a>
@@ -95,6 +97,7 @@
         <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
+
     </ul>
     <!-- End of Sidebar -->
 
@@ -134,90 +137,35 @@
                     </li>
                 </ul>
             </nav><!-- End of Topbar -->
-        </div><!-- End of Main Content -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb small">
-                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a href="table.html">Quản lý pha chế</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quy trình Alipas-01</li>
-                    </ol>
-                </nav>
-                <h1 class="h3 mb-0 text-danger">
-                    Chi tiết quy trình
-                </h1>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h5>Thời gian bắt đầu: 12/11/2019</h5>
-                    <h5>Tổ trưởng: Vũ Tuấn Đạt</h5>
-                    <h5>Nhân viên máy: Lê Xuân Long</h5>
-                    <h5>Nhân viên trực: Nguyễn Trọng Cảnh</h5>
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb small">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="check-report.html">Xem báo cáo công việc</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Báo cáo Alipas-01</li>
+                        </ol>
+                    </nav>
                 </div>
-                <div class="col">
-                    <h5>Thời gian hoàn thành: 14/11/2019</h5>
-                    <h5>Nhân viên pha chế: Nguyễn Hoàng Anh</h5>
-                    <h5>Nhân viên chia liều: Nguyễn Huy Đức</h5>
-                    <h5>Nhân viên đóng gói: Tạ Cao Cảnh</h5>
+                <div class="row">
+                    <div class="col-10">
+                        <p class="mb-4">Chọn để xem chi tiết ...</p>
+                    </div>
                 </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr class="text-primary">
-                                <th scope="col">Thành phần</th>
-                                <th scope="col">Hàm lượng</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Eurycoma Longifolia Extract 100:1 (LE-100)</th>
-                                <td>240 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Butea Superba Extract PE 30:1</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tribulus 45% Saponins</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Horny Goat Weed 10% Icariin</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">L-Arginine HCI</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Zinc Picolinate 20%</th>
-                                <td>55 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Avena Sativa Extract PE 10:1 </th>
-                                <td>50 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Ginkgo Biloba 24%</th>
-                                <td>40 mg</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Gelatin, Magnesium Stearate vừa đủ 1 viên.</th>
-                            </tr>
-                        </tbody>
-                    </table> 
-                </div>
-                <div class="col-6">
-                    <div class="text-uppercase" id="chartContainer" style="height: 535px; width: 100%;"></div>
+
+                <!-- DataTales Example -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Các báo cáo quy trình hiện tại</h6>
+                    </div>
+                    <div class="card-body">
+                        
+                    </div>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div><!-- End of Main Content -->
 
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
@@ -247,38 +195,10 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<!-- Canvas -->
-<script>
-window.onload = function() {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    title: {
-        text: "Tỉ lệ các thành phần",
-        fontFamily: "tahoma",
-    },
-    data: [{
-        type: "pie",
-        startAngle: 240,
-        yValueFormatString: "##0.00\"%\"",
-        indexLabel: "{label} {y}",
-        dataPoints: [
-            {y: 30.5, label: "Eurycoma Longifolia Extract"},
-            {y: 12.7, label: "Butea Superba Extract PE"},
-            {y: 12.7, label: "Tribulus"},
-            {y: 12.7, label: "Horny Goat Weed"},
-            {y: 12.7, label: "L-Arginine HCI"},
-            {y: 7, label: "Zinc Picolinate"},
-            {y: 6.4, label: "Avena Sativa Extract PE"},
-            {y: 5, label: "Ginkgo Biloba"},
-            {y: 3, label: "Gelatin - Magnesium Stearate"},
-            ]
-    }]
-});
-chart.render();
-
-}
-</script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>
 </body>
 </html>

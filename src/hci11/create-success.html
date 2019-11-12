@@ -137,84 +137,89 @@
         </div><!-- End of Main Content -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid" style="width: 70%;">
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb small">
                         <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
                         <li class="breadcrumb-item"><a href="table.html">Quản lý pha chế</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quy trình Alipas-01</li>
+                        <li class="breadcrumb-item active" aria-current="page">Tạo quy trình sản xuất mới</li>
                     </ol>
                 </nav>
-                <h1 class="h3 mb-0 text-danger">
-                    Chi tiết quy trình
-                </h1>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h5>Thời gian bắt đầu: 12/11/2019</h5>
-                    <h5>Tổ trưởng: Vũ Tuấn Đạt</h5>
-                    <h5>Nhân viên máy: Lê Xuân Long</h5>
-                    <h5>Nhân viên trực: Nguyễn Trọng Cảnh</h5>
-                </div>
-                <div class="col">
-                    <h5>Thời gian hoàn thành: 14/11/2019</h5>
-                    <h5>Nhân viên pha chế: Nguyễn Hoàng Anh</h5>
-                    <h5>Nhân viên chia liều: Nguyễn Huy Đức</h5>
-                    <h5>Nhân viên đóng gói: Tạ Cao Cảnh</h5>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr class="text-primary">
-                                <th scope="col">Thành phần</th>
-                                <th scope="col">Hàm lượng</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Eurycoma Longifolia Extract 100:1 (LE-100)</th>
-                                <td>240 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Butea Superba Extract PE 30:1</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tribulus 45% Saponins</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Horny Goat Weed 10% Icariin</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">L-Arginine HCI</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Zinc Picolinate 20%</th>
-                                <td>55 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Avena Sativa Extract PE 10:1 </th>
-                                <td>50 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Ginkgo Biloba 24%</th>
-                                <td>40 mg</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Gelatin, Magnesium Stearate vừa đủ 1 viên.</th>
-                            </tr>
-                        </tbody>
-                    </table> 
-                </div>
-                <div class="col-6">
-                    <div class="text-uppercase" id="chartContainer" style="height: 535px; width: 100%;"></div>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <div class="card-body p-0">
+                    <p class="alert alert-success">
+                        <i class="fas fa-check mr-2"></i>Tạo quy trình sản xuất mới thành công!
+                    </p>
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">Tạo quy trình sản xuất mới</h1>
+                    </div>
+                    <form class="user">
+                        <div class="form-group row">
+                            <input type="text" class="form-control" placeholder="Mã quy trình">
+                        </div>
+                        <div class="form-group row">
+                            <select class="btn btn-outline form-control" style="border-color: #d1d3e2; background-color: #fff; font-size: 1.2rem;">
+                                <option>Chọn tên sản phẩm</option>
+                                <option>Sâm Alipas</option>
+                                <option>Rocket 1h</option>
+                                <option>Viên sáng mắt SAMA</option>
+                                <option>Thực phẩm giảm cân</option>
+                                <option>Thực phẩm tăng chiều cao</option>
+                                <option>Thực phẩm bổ máu</option>
+                                <option>Thực phẩm tăng cường trí nhớ</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <select class="btn btn-outline form-control" style="border-color: #d1d3e2; background-color: #fff; font-size: 1.2rem;">
+                                <option>Chọn tổ sản xuất</option>
+                                <option>Tổ 1</option>
+                                <option>Tổ 2</option>
+                                <option>Tổ 3</option>
+                                <option>Tổ 4</option>
+                                <option>Tổ 5</option>
+                                <option>Tổ 6</option>
+                                <option>Tổ 7</option>
+                                <option>Tổ 8</option>
+                                <option>Tổ 9</option>
+                                <option>Tổ 10</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <textarea class="form-control">Mô tả . . .</textarea>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-2">Ngày bắt đầu</div>
+                            <div class="col-4">
+                                <input type="date" class="form-control" placeholder="Email Address">
+                            </div>
+                            <div class="col-2">Ngày kết thúc</div>
+                            <div class="col-4">
+                                <input type="date" class="form-control" placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary btn-user" data-toggle="modal" data-target="#exampleModalCenter">Tạo quy trình mới</button>
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            Tạo mới quy trình này?
+                                        </div>
+                                        <div class="modal-body">
+                                            <a class="btn btn-success" href="create-success.html">
+                                                <i class="fas fa-check mr-2"></i>Tạo mới
+                                            </a>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                <i class="fas fa-times mr-2"></i>Hủy
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -247,38 +252,5 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<!-- Canvas -->
-<script>
-window.onload = function() {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    title: {
-        text: "Tỉ lệ các thành phần",
-        fontFamily: "tahoma",
-    },
-    data: [{
-        type: "pie",
-        startAngle: 240,
-        yValueFormatString: "##0.00\"%\"",
-        indexLabel: "{label} {y}",
-        dataPoints: [
-            {y: 30.5, label: "Eurycoma Longifolia Extract"},
-            {y: 12.7, label: "Butea Superba Extract PE"},
-            {y: 12.7, label: "Tribulus"},
-            {y: 12.7, label: "Horny Goat Weed"},
-            {y: 12.7, label: "L-Arginine HCI"},
-            {y: 7, label: "Zinc Picolinate"},
-            {y: 6.4, label: "Avena Sativa Extract PE"},
-            {y: 5, label: "Ginkgo Biloba"},
-            {y: 3, label: "Gelatin - Magnesium Stearate"},
-            ]
-    }]
-});
-chart.render();
-
-}
-</script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>

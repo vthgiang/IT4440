@@ -55,7 +55,7 @@
                 <i class="fas fa-fw fa-industry"></i>
                 <span>Xưởng TPCN</span>
             </a>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Quản lý</h6>
                     <a class="collapse-item" href="table.html">Quản lý pha chế</a>
@@ -75,13 +75,13 @@
                 <i class="fas fa-fw fa-industry"></i>
                 <span>Cá nhân</span>
             </a>
-            <div id="profile" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="profile" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Thông tin chung</h6>
                     <a class="collapse-item" href="profile.html">Thông tin</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Cài đặt</h6>
-                    <a class="collapse-item" href="#">Cài đặt chung</a>
+                    <a class="collapse-item" href="setting.html">Cài đặt chung</a>
                     <hr class="sidebar-divider">
                     <a class="collapse-item text-uppercase text-danger" href="login.html">Đăng xuất</a>
                 </div>
@@ -138,86 +138,77 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb small">
-                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a href="table.html">Quản lý pha chế</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quy trình Alipas-01</li>
-                    </ol>
-                </nav>
-                <h1 class="h3 mb-0 text-danger">
-                    Chi tiết quy trình
-                </h1>
-            </div>
+            <!-- Page Heading -->
+            <h1 class="h3 mb-1 text-gray-800">Cài đặt chung</h1>
+            <p class="mb-4">Lựa chọn các thay đổi để phù hợp với bạn</p>
             <div class="row">
                 <div class="col">
-                    <h5>Thời gian bắt đầu: 12/11/2019</h5>
-                    <h5>Tổ trưởng: Vũ Tuấn Đạt</h5>
-                    <h5>Nhân viên máy: Lê Xuân Long</h5>
-                    <h5>Nhân viên trực: Nguyễn Trọng Cảnh</h5>
+                    <div class="card shadow mb-4 row">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Thay đổi ngôn ngữ</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="small">Ngôn ngữ hiện tại: TIẾNG VIỆT</p>
+                                </div>
+                                <div class="col">
+                                    <div class="dropdown">
+                                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chọn ngôn ngữ</a>
+
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" href="#">Tiếng Việt</a>
+                                            <a class="dropdown-item" href="#">English</a>
+                                            <a class="dropdown-item" href="#">语言</a>
+                                            <a class="dropdown-item" href="#">言語</a>
+                                            <a class="dropdown-item" href="#">ภาษา</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow mb-4 row">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Thay đổi màu sắc</h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="small">Chọn màu:</p>
+                            <a href="#" class="btn btn-primary btn-circle btn-lg mr-2 ml-2"></a>
+                            <a href="#" class="btn btn-success btn-circle btn-lg mr-2"></a>
+                            <a href="#" class="btn btn-info btn-circle btn-lg mr-2"></a>
+                            <a href="#" class="btn btn-warning btn-circle btn-lg mr-2"></a>
+                            <a href="#" class="btn btn-danger btn-circle btn-lg mr-2"></a>
+                            <a href="#" class="btn btn-secondary btn-circle btn-lg mr-2"></a>
+                            <a href="#" class="btn btn-light btn-circle btn-lg"></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h5>Thời gian hoàn thành: 14/11/2019</h5>
-                    <h5>Nhân viên pha chế: Nguyễn Hoàng Anh</h5>
-                    <h5>Nhân viên chia liều: Nguyễn Huy Đức</h5>
-                    <h5>Nhân viên đóng gói: Tạ Cao Cảnh</h5>
+                    <div class="card shadow mb-4 row">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Thay đổi mật khẩu</h6>
+                        </div>
+                        <div class="card-body">
+                            <form class="user">
+                                <div class="form-group row">
+                                    <input type="password" class="form-control" placeholder="Nhập mật khẩu cũ">
+                                </div><br>
+                                <div class="form-group row">
+                                    <input type="password" class="form-control" placeholder="Nhập mật khẩu mới">
+                                </div><br>
+                                <div class="form-group row">
+                                    <input type="password" class="form-control" placeholder="Nhập lại mật khẩu mới">
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary">Lưu</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr class="text-primary">
-                                <th scope="col">Thành phần</th>
-                                <th scope="col">Hàm lượng</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Eurycoma Longifolia Extract 100:1 (LE-100)</th>
-                                <td>240 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Butea Superba Extract PE 30:1</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Tribulus 45% Saponins</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Horny Goat Weed 10% Icariin</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">L-Arginine HCI</th>
-                                <td>100 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Zinc Picolinate 20%</th>
-                                <td>55 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Avena Sativa Extract PE 10:1 </th>
-                                <td>50 mg</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Ginkgo Biloba 24%</th>
-                                <td>40 mg</td>
-                            </tr>
-                            <tr>
-                                <th colspan="2">Gelatin, Magnesium Stearate vừa đủ 1 viên.</th>
-                            </tr>
-                        </tbody>
-                    </table> 
-                </div>
-                <div class="col-6">
-                    <div class="text-uppercase" id="chartContainer" style="height: 535px; width: 100%;"></div>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
+        </div><br><br>
 
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
@@ -247,38 +238,5 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<!-- Canvas -->
-<script>
-window.onload = function() {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-    animationEnabled: true,
-    title: {
-        text: "Tỉ lệ các thành phần",
-        fontFamily: "tahoma",
-    },
-    data: [{
-        type: "pie",
-        startAngle: 240,
-        yValueFormatString: "##0.00\"%\"",
-        indexLabel: "{label} {y}",
-        dataPoints: [
-            {y: 30.5, label: "Eurycoma Longifolia Extract"},
-            {y: 12.7, label: "Butea Superba Extract PE"},
-            {y: 12.7, label: "Tribulus"},
-            {y: 12.7, label: "Horny Goat Weed"},
-            {y: 12.7, label: "L-Arginine HCI"},
-            {y: 7, label: "Zinc Picolinate"},
-            {y: 6.4, label: "Avena Sativa Extract PE"},
-            {y: 5, label: "Ginkgo Biloba"},
-            {y: 3, label: "Gelatin - Magnesium Stearate"},
-            ]
-    }]
-});
-chart.render();
-
-}
-</script>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>

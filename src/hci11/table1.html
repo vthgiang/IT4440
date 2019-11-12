@@ -65,8 +65,8 @@
                     <a class="collapse-item" href="#">Quản lý đóng gói</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Báo cáo</h6>
-                    <a class="collapse-item" href="#">Báo cáo thống kế</a>
-                    <a class="collapse-item" href="#">Báo cáo công việc</a>
+                    <a class="collapse-item" href="check-report.html">Xem báo cáo công việc</a>
+                    <a class="collapse-item" href="#">Lập báo cáo thống kế</a>
                 </div>
             </div>
         </li>
@@ -83,10 +83,9 @@
                     <a class="collapse-item" href="profile.html">Thông tin</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Cài đặt</h6>
-                    <a class="collapse-item" href="#">Cài đặt chung</a>
-                    <a class="collapse-item" href="#">Đổi mật khẩu</a>
-                    <div class="collapse-divider"></div>
-                    <a class="collapse-item" href="login.html">Đăng xuất</a>
+                    <a class="collapse-item" href="setting.html">Cài đặt chung</a>
+                    <hr class="sidebar-divider">
+                    <a class="collapse-item text-uppercase text-danger" href="login.html">Đăng xuất</a>
                 </div>
             </div>
         </li>
@@ -141,7 +140,14 @@
 
             <div class="container-fluid">
                 <!-- Page Heading -->
-                <h1 class="h3 mb-2 text-gray-800">Quản lý pha chế</h1>
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb small">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Quản lý chia liều</li>
+                        </ol>
+                    </nav>
+                </div>
                 <div class="row">
                     <div class="col-10">
                         <p class="mb-4">Chọn để xem chi tiết ...</p>
@@ -193,7 +199,14 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Các quy trình hiện tại</h6>
+                        <div class="row">
+                            <div class="col-9">
+                                <h6 class="m-0 font-weight-bold text-primary">Các quy trình hiện tại</h6>
+                            </div>
+                            <div class="col-3">
+                                <a class="text-uppercase small" href="create-process.html"><i class="fas fa-plus mr-2"></i>Tạo quy trình sản xuất</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">

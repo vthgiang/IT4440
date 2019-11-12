@@ -25,7 +25,7 @@
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index-staff.html">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-capsules"></i>
             </div>
@@ -37,7 +37,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link text-uppercase" href="index.html">
+            <a class="nav-link text-uppercase" href="index-staff.html">
                 <i class="fas fa-fw fa-home"></i>
                 <span>Trang chủ</span>
             </a>
@@ -57,14 +57,13 @@
             </a>
             <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Quản lý</h6>
-                    <a class="collapse-item" href="table.html">Quản lý pha chế</a>
-                    <a class="collapse-item" href="table1.html">Quản lý chia liều</a>
-                    <a class="collapse-item" href="#">Quản lý đóng gói</a>
+                <h6 class="collapse-header">Công việc</h6>
+                    <a class="collapse-item" href="work-staff.html">Công việc cá nhân</a>
+                    <a class="collapse-item" href="team-staff.html">Tổ sản xuất</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Báo cáo</h6>
-                    <a class="collapse-item" href="check-report.html">Xem báo cáo công việc</a>
-                    <a class="collapse-item" href="#">Lập báo cáo thống kế</a>
+                    <a class="collapse-item" href="send-report.html">Gửi báo cáo công việc</a>
+                    <a class="collapse-item" href="auto-send-rp.html">Cài đặt gửi tự động</a>
                 </div>
             </div>
         </li>
@@ -78,10 +77,10 @@
             <div id="profile" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Thông tin chung</h6>
-                    <a class="collapse-item" href="profile.html">Thông tin</a>
+                    <a class="collapse-item" href="profile-staff.html">Thông tin</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Cài đặt</h6>
-                    <a class="collapse-item" href="#">Cài đặt chung</a>
+                    <a class="collapse-item" href="settinng-staff.html">Cài đặt chung</a>
                     <hr class="sidebar-divider">
                     <a class="collapse-item text-uppercase text-danger" href="login.html">Đăng xuất</a>
                 </div>
@@ -128,8 +127,8 @@
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle">
-                            <span class="mr-2 d-none d-lg-inline text-success text-uppercase">Tuấn Đạt Vũ</span>
-                            <img class="img-profile rounded-circle" src="img/ninja.jpg">
+                            <span class="mr-2 d-none d-lg-inline text-success text-uppercase">Hoàng Anh Nguyễn</span>
+                            <img class="img-profile rounded-circle" src="img/staff.jpg">
                         </a>
                     </li>
                 </ul>
@@ -138,30 +137,25 @@
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+            <!-- Page Heading -->
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb small">
-                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a href="table.html">Quản lý pha chế</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Quy trình Alipas-01</li>
-                    </ol>
-                </nav>
                 <h1 class="h3 mb-0 text-danger">
-                    Chi tiết quy trình
+                    Công việc cá nhân
                 </h1>
             </div>
             <div class="row">
-                <div class="col">
-                    <h5>Thời gian bắt đầu: 12/11/2019</h5>
-                    <h5>Tổ trưởng: Vũ Tuấn Đạt</h5>
-                    <h5>Nhân viên máy: Lê Xuân Long</h5>
-                    <h5>Nhân viên trực: Nguyễn Trọng Cảnh</h5>
+                <div class="col">    
+                    <p>Mã sản xuất: Alipas-01</p>
+                    <h4 class="small font-weight-bold">Tiến độ
+                        <span class="float-right">80%</span>
+                    </h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h5>Thời gian hoàn thành: 14/11/2019</h5>
-                    <h5>Nhân viên pha chế: Nguyễn Hoàng Anh</h5>
-                    <h5>Nhân viên chia liều: Nguyễn Huy Đức</h5>
-                    <h5>Nhân viên đóng gói: Tạ Cao Cảnh</h5>
+                    <p>Thời gian bắt đầu: 12/11/2019</p>
+                    <p>Thời gian hoàn thành: 14/11/2019</p>
                 </div>
             </div>
             <hr>
@@ -247,7 +241,6 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
-<!-- Canvas -->
 <script>
 window.onload = function() {
 
