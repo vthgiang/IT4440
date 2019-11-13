@@ -74,3 +74,40 @@ ul{
   list-style: none;
   margin: 0px;
 }
+
+.table-data{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn-add{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body p{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.checkListbank, .checkListDate{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.checkListbank ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+.checkListbank ul li select{
+  width: 200px;
+}
+
+.checkListDate ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}

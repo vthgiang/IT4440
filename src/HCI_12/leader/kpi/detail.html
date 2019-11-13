@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../../css/master.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="../../bootstrap/css/bootstrap-table.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<a href=""><img src="../../images/logo.png" alt="Logo" class="brand" width="200px" height="81px" style="padding: unset !important;"></a>
+
+			<div class="container-fluid">
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
+								<li><a href=""><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li><a href=""><i class="lnr lnr-home"></i> <span>Trang chủ</span></a></li>
+
+						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
+						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
+						<li><a href=""><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
+						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
+
+						<li><a href="setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						
+						
+						<li><a href="statistical.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+				
+						<li><a href=""><i class="lnr lnr-exit"></i> <span>Đăng xuất</span></a></li>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+	<!-- MAIN CONTENT -->
+		<div class="main-content">
+			<div class="container-fluid">
+				<h2>Danh sách các tiêu chí đã chọn</h2>
+				<h4 style="float: left;margin-right: 5px;">Bộ tiêu chí: </h4>
+
+				<p style="float: left;line-height: 40px;"> Đánh giá nhân viên kế toán</p>
+
+				<div class="btn-add">
+					<a href="add.html" class="btn btn-success"  data-toggle="modal" data-target="#add">Thêm tiêu chí</a>
+				</div>
+
+				
+				
+				<table class="table table-data" data-toggle="table" data-search="true">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>Tên tiêu chí</th>
+							<th>Trọng số</th>
+							<th>Thang điểm</th>
+							<th>Chỉnh sửa</th>
+							<th>Xóa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Tiêu chí về thời gian</td>
+							<td>2</td>
+							<td>10</td>
+							<td>		
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
+							</td>
+							<td>		
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Tiêu chí về kết quả thực hiện</td>
+							<td>1</td>
+							<td>10</td>
+							<td>		
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
+							</td>
+							<td>		
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Tiêu chí về kết quả báo cáo</td>
+							<td>1</td>
+							<td>10</td>
+							<td>		
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
+							</td>
+							<td>		
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+
+
+					</tbody>
+				</table>
+
+				<ul class="pagination">
+				  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+				  <li class="page-item"><a class="page-link" href="#">1</a></li>
+				  <li class="page-item"><a class="page-link" href="#">2</a></li>
+				  <li class="page-item"><a class="page-link" href="#">3</a></li>
+				  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</div>
+		</div>
+	<!-- END MAIN CONTENT -->
+		
+		</div>
+	<!-- END WRAPPER -->
+
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Thông báo</h3>
+				</div>
+				<div class="modal-body">
+					<p>Bạn có chắc chắn muốn xóa?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Xóa</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Thêm tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<p>Tên tiêu chí</p>
+							<input class="form-control" type="text" name="">
+							<p>Trọng số</p>
+							<input class="form-control" type="text" name="">
+							<p>Thang điểm</p>
+							<input class="form-control" type="text" name="">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Thêm</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Chỉnh sửa tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<p>Tên tiêu chí</p>
+							<input class="form-control" type="text" name="" value="Tiêu chí về thời gian">
+							<p>Trọng số</p>
+							<input class="form-control" type="text" name="" value="2">
+							<p>Thang điểm</p>
+							<input class="form-control" type="text" name="" value="10">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Chỉnh sửa</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+</body>
+</html>
