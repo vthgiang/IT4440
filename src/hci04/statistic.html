@@ -32,6 +32,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"
+    integrity="sha256-xKeoJ50pzbUGkpQxDYHD7o7hxe0LaOGeguUidbq6vis=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
     integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
   <script src="js/home.js"></script>
@@ -65,7 +67,8 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column h5 main-nav">
             <li class="nav-item active">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true"
+                aria-controls="sub-nav-1">
                 <span>Chức năng chung</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -80,7 +83,8 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true"
+                aria-controls="sub-nav-2">
                 <span>Quản trị mục tiêu</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -124,6 +128,125 @@
         <!-- End Breadcrumb -->
         <!-- Begin Content -->
         <div class="container-fluid p-3">
+          <div class="container-fluid p-3 border rounded">
+            <h3 class="mb-4">Thống kê mục tiêu</h3>
+            <div class="row my-2">
+              <div class="col-sm-2">
+                <label class="h6 font-weight-bold">Thời gian</label>
+              </div>
+              <div class="col-sm-2">
+                <select class="form-control">
+                  <option>Tuần này</option>
+                  <option>Tháng này</option>
+                  <option>Quý này</option>
+                  <option>Năm này</option>
+                </select>
+              </div>
+              <div class="offset-sm-6 col-sm-2">
+                <button type="button" class="btn btn-outline-primary btn-block">
+                  Xuất báo cáo
+                </button>
+              </div>
+            </div>
+            <hr />
+            <!-- Begin progress -->
+            <div class="row my-2">
+              <div class="col-12">
+                <div class="progress">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                  <div class="progress-bar bg-secondary" role="progressbar" style="width: 10%" aria-valuenow="10"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-md-3 px-5 d-flex flex-row">
+                <span class="h2 d-flex flex-row mr-2 flex-grow-1 text-success">
+                  <i class="fas fa-square mr-2"></i>
+                  <span class="h4 font-weight-bold">170</span>
+                </span>
+                <span class="h6">
+                  Đã hoàn thành
+                </span>
+              </div>
+              <div class="col-md-3 px-5 d-flex flex-row">
+                <span class="h2 d-flex flex-row mr-2 flex-grow-1 text-primary">
+                  <i class="fas fa-square mr-2"></i>
+                  <span class="h4 font-weight-bold">70</span>
+                </span>
+                <span class="h6">
+                  Đang đúng hạn
+                </span>
+              </div>
+              <div class="col-md-3 px-5 d-flex flex-row">
+                <span class="h2 d-flex flex-row mr-2 flex-grow-1 text-danger">
+                  <i class="fas fa-square mr-2"></i>
+                  <span class="h4 font-weight-bold">45</span>
+                </span>
+                <span class="h6">
+                  Đang quá hạn
+                </span>
+              </div>
+              <div class="col-md-3 px-5 d-flex flex-row">
+                <span class="h2 d-flex flex-row mr-2 flex-grow-1 text-secondary">
+                  <i class="fas fa-square mr-2"></i>
+                  <span class="h4 font-weight-bold">20</span>
+                </span>
+                <span class="h6">
+                  Chưa thực hiện
+                </span>
+              </div>
+            </div>
+            <!-- End progress -->
+            <hr />
+            <!-- Begin chart -->
+            <div class="row">
+              <div class="col-md-9">
+                <canvas id="chart-01"></canvas>
+              </div>
+              <div class="col-md-3">
+                <div class="container mb-4">
+                  <label class="h6 font-weight-bold">Trạng thái mục tiêu</label>
+                  <select class="form-control">
+                    <option>Tất cả</option>
+                    <option>Chưa duyệt</option>
+                    <option>Đã duyệt</option>
+                    <option>Yêu cầu chỉnh sửa</option>
+                    <option>Đã chỉnh sửa</option>
+                  </select>
+                </div>
+                <div class="container mb-4">
+                  <label class="h6 font-weight-bold">Bộ phận</label>
+                  <select class="form-control">
+                    <option disabled selected>Chọn bộ phận ...</option>
+                    <option>Bộ phận A</option>
+                    <option>Bộ phận B</option>
+                    <option>Bộ phận C</option>
+                    <option>Bộ phận D</option>
+                  </select>
+                </div>
+                <div class="container mb-4">
+                  <label class="h6 font-weight-bold">Phòng ban</label>
+                  <select class="form-control">
+                    <option disabled selected>Chọn phòng ban ...</option>
+                    <option>Phòng ban A</option>
+                    <option>Phòng ban B</option>
+                    <option>Phòng ban C</option>
+                    <option>Phòng ban D</option>
+                  </select>
+                </div>
+                <div class="container mb-4">
+                  <button class="btn btn-primary">Lọc thông tin</button>
+                </div>
+              </div>
+            </div>
+            <!-- End chart -->
+          </div>
         </div>
         <!-- End Content -->
       </main>
@@ -131,6 +254,9 @@
     </div>
   </div>
   <!-- End Body -->
+  <!-- Begin footer script -->
+  <script src="./js/statistic.js"></script>
+  <!-- End footer script -->
 </body>
 
 </html>
