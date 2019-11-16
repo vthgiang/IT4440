@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.0ed78181da1ba1d87a57dd7cfd3c5d56.js"
+  "/precache-manifest.1cd2613becff96de52fcfa03b65a5be6.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "antd-admin"});
