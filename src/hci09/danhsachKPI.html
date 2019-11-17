@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page title</title>
+    <title>Danh sách KPI</title>
 
     <!-- Bootstrap CSS CDN -->
     <!-- <link
@@ -22,22 +22,101 @@
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.   js"
-        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
-        crossorigin="anonymous"></script>
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+    </script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
-        crossorigin="anonymous"></script>
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
     <div class="wrapper">
         <!-- Sidebar  -->
-        <script src="sidebar.js"></script>
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h4>CÔNG TY THUỐC</h4>
+            </div>
+
+            <div class="sidebar-muc">
+                <h6>Thiết lập KPI</h6>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="thietlapkpicapnhanvien.html">
+                        <i class="fas fa-briefcase"></i>
+                        Cấp nhân viên
+                    </a>
+                    <a href="thietlapkpicapbophan.html">
+                        <i class="fas fa-briefcase"></i>
+                        Cấp bộ phận
+                    </a>
+                    <a href="danhsachKPI.html" style="background-color: black;">
+                        <i class="fas fa-briefcase"></i>
+                        Danh sách KPI
+                    </a>
+            </ul>
+
+            <div class="sidebar-muc">
+                <h6>Quản lý bộ phận Marketing</h6>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="themcongviec.html">
+                        <i class="fas fa-briefcase"></i>
+                        Tạo công việc
+                    </a>
+                    <a href="danhsachcongviec.html">
+                        <i class="fas fa-briefcase"></i>
+                        Danh sách công việc
+                    </a>
+                    <a href="ketquakpi.html">
+                        <i class="fas fa-briefcase"></i>
+                        Kết quả KPI
+                    </a>
+                <li>
+            </ul>
+        </nav>
 
         <!-- Page Content  -->
         <div id="content">
             <!-- Header  -->
-            <script src="header.js"></script>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <div class="menu">
+                        <div class="col-md-12">
+                            <ul>
+                                <li><a href="index.html">Tổng quan </a></li>
+                                <li><a href="thietlapkpicapnhanvien.html" class="current">Quản lý KPI</a></li>
+                                <li><a href="danhsachcongviec.html">Marketing </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <button class="btn btn-default user" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="username">Nguyễn Vân Anh</span>
+                        <i class="fa fa-angle-down "></i>
+                    </button>
+                    <ul class="user dropdown-menu">
+                        <li>
+                            <span>
+                                <i class="fa fa-phone"></i>
+                                <span> Hotline 1800 6751</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span>
+                                <i class="fa fa-life-ring"></i>
+                                <span> Đăng xuất</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
             <div class="row header-row">
                 <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 ">
                     <span class="name-page">
@@ -111,14 +190,15 @@
                             </div>
                         </div>
                         <div class="col-sm-2" style="position: relative;">
-                            <button class="btn btn-primary" style="position: absolute; bottom: 0; float: right;">Xem danh
+                            <button class="btn btn-primary" style="position: absolute; bottom: 0; float: right;">Xem
+                                danh
                                 sách</button>
-                                <button class="btn btn-light" style="position: absolute; bottom: 0; margin-left: 9rem;">
-                                        <i class="fa fa-pencil"></i>
-                                        Thêm KPI
-                                    </button>
+                            <button class="btn btn-light" style="position: absolute; bottom: 0; margin-left: 9rem;">
+                                <i class="fa fa-pencil"></i>
+                                Thêm KPI
+                            </button>
                         </div>
-                        
+
                     </div>
                     <div class="row filter" style="font-size: 1.5rem; padding-top: 2rem; font-weight: bold;">
                         Thống kê danh sách KPI bộ phận sản xuất
@@ -144,34 +224,37 @@
                                 <td id="start">Bộ phận sản xuất</td>
                                 <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
                                 <td id="detail">
-                                    <button class="btn btn-primary">Xem chi tiết</button>
+                                    <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
+                                    </a>
                                     <button class="btn btn-danger">Xóa</button>
                                 </td>
                             </tr>
                             <tr style="font-size: 15px; margin-bottom: auto">
-                                    <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
-                                    <td id="priority">Tháng</td>
-                                    <td id="emp">05/10/2019</td>
-                                    <td id="monitor">05/11/2019</td>
-                                    <td id="start">Bộ phận sản xuất</td>
-                                    <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
-                                    <td id="detail">
-                                        <button class="btn btn-primary">Xem chi tiết</button>
-                                        <button class="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr style="font-size: 15px; margin-bottom: auto">
-                                        <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
-                                        <td id="priority">Tháng</td>
-                                        <td id="emp">05/10/2019</td>
-                                        <td id="monitor">05/11/2019</td>
-                                        <td id="start">Bộ phận sản xuất</td>
-                                        <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
-                                        <td id="detail">
-                                            <button class="btn btn-primary">Xem chi tiết</button>
-                                            <button class="btn btn-danger">Xóa</button>
-                                        </td>
-                                    </tr>
+                                <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
+                                <td id="priority">Tháng</td>
+                                <td id="emp">05/10/2019</td>
+                                <td id="monitor">05/11/2019</td>
+                                <td id="start">Bộ phận sản xuất</td>
+                                <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
+                                <td id="detail">
+                                    <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
+                                    </a>
+                                    <button class="btn btn-danger">Xóa</button>
+                                </td>
+                            </tr>
+                            <tr style="font-size: 15px; margin-bottom: auto">
+                                <th id="name" scope="row">Xây dựng thẻ khách hàng</th>
+                                <td id="priority">Tháng</td>
+                                <td id="emp">05/10/2019</td>
+                                <td id="monitor">05/11/2019</td>
+                                <td id="start">Bộ phận sản xuất</td>
+                                <td id="end">Thực hiện dựa trên mẫu thiết kế có sẵn</td>
+                                <td id="detail">
+                                    <a href="chitietkpi.html"> <button class="btn btn-primary">Xem chi tiết</button>
+                                    </a>
+                                    <button class="btn btn-danger">Xóa</button>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
