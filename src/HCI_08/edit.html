@@ -1,0 +1,207 @@
+
+ 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sửa thông tin </title>
+</head>
+<body>
+
+	<style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+		@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/skins/_all-skins.min.css"); 
+	</style>
+
+
+
+	 <body class="hold-transition skin-blue sidebar-mini" id="menu">
+            <div class="wrapper">
+                <header class="main-header">
+                    <a class="logo">
+                        <span class="logo-mini"><b>Nhóm 8</b></span>
+                        <span class="logo-lg"><b>Nhóm 8</b></span>
+                    </a> 
+                    <nav class="navbar navbar-static-top">
+                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown tasks-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn
+                                    </a>
+                                  </li>
+
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                            class="user-image" alt="User Image">
+                                        <span class="hidden-xs">HNX</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="user-header">
+                                            <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                                class="img-circle" alt="User Image">
+
+                                            <p>
+                                                Web Developer
+                                                <small> 2019</small>
+                                            </p>
+                                        </li>
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a 
+                                                    class="btn btn-default btn-flat"></a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a  class="btn btn-default btn-flat log_out">Đăng xuất</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <aside class="main-sidebar">
+                    <section class="sidebar">
+                       
+                        <ul class="sidebar-menu" data-widget="tree" >
+                            <li>
+                                <a>
+                                    <i class="fa fa-dashboard"></i> <span>Giao việc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    <i class="fa fa-th"></i> <span>Công việc hoàn thành</span>
+                                </a>
+                            </li>
+
+                            <li  style="background-color: black"><a href><i class="fa fa-book"></i> <span> Quản lý nhân viên </span></a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+                <div class="content-wrapper">
+                      <section class="content-header">
+                      </section>
+						<section class="content" id="main_content">
+						    
+							<h3>Sửa thông tin nhân viên</h3>
+							<hr />
+							<table class="table table-bordered table-hover">
+								<tbody>
+									<tr>
+                    <td class="col-2">Tên nhân vật</td>         
+                    <td class="col-10"><input class="form-control" type="text" value="Trần Đình Cẩn" /></td>       
+                  </tr>
+                  <tr>
+                    <td class="col-2">Mail</td>         
+                    <td class="col-10"><input class="form-control" type="text" value="trancan1997@gmail.com" /></td>       
+                  </tr>
+
+                  <tr>
+                    <td class="col-2">SĐT</td>         
+                    <td class="col-10"><input class="form-control" type="text" value="0986372627" /></td>       
+                  </tr>
+
+                  <tr>
+                    <td class="col-2">Ngày sinh</td>         
+                    <td class="col-10"><input class="form-control" type="date" value="20000-10-10" /></td>       
+                  </tr>
+
+                  <tr>
+                    <td class="col-2">Quê quán</td>         
+                    <td class="col-10"><input class="form-control" type="text" value="Việt Nam" /></td>       
+                  </tr>
+                   <tr>
+                    <td class="col-2">trạng thái</td>         
+                    <td class="col-10"><select class="form-control">
+                      <option>Hoạt động</option>
+                      <option>Khóa</option>
+                    </select></td>       
+                  </tr>
+                  <tr>
+                    <td><button class="btn btn-primary edit">Lưu</button></td>
+                  </tr>
+								</tbody>
+							</table>
+
+						</section>
+
+
+                </div>
+            </div>
+        </body> 
+  <!-- The Modal -->
+  <div class="modal fade" id="modelSuccess">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <div class="modal-body">
+          Thành công!
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+        <style type="text/css">
+        	.content {
+        		background-color: white;
+        		margin-left: 10px;
+        		margin-right: 10px;
+        		border-radius: 20px;
+        	}
+        	th{
+        		background-color: rgb(130, 179, 102);;
+        	}
+        </style>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://adminlte.io/themes/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+
+    $('.edit').click(function(){
+      $('#modelSuccess').modal();
+      setTimeout(function(){
+        window.location.href='quan_ly_nhan_vien.html';
+      },1000);
+    });   
+
+	});
+</script>
+
+
+</body>
+</html>
+
+ 
+

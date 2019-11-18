@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Trang chủ</title>
+    <link href="Css/libraries/jquery-ui.css" rel="stylesheet" />
+    <link href="Css/libraries/bootstrap.min.css" rel="stylesheet" />
+    <link href="Css/index.css" rel="stylesheet" />
+    <link href="Css/menu.css" rel="stylesheet" />
+    <link href="Css/header.css" rel="stylesheet" />
+    <link href="Css/content.css" rel="stylesheet" />
+    <link href="Css/dialog.css" rel="stylesheet" />
+    <link href="Css/style.css" rel="stylesheet" />
+    <link href="Css/dialog.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Phần menu-->
+    <div class="menu">
+        <div class="logo">
+            <a>
+                <span class="icon-logo"></span>
+                <span class="text-logo">BÁN THUỐC</span>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <div class="item select">
+                <span class="icon-item overview"></span>
+                <a href="index.html">
+                    <span class="text-item">Trang chủ</span>
+                </a>
+            </div>
+            <div id="del" class="item">
+                <a>
+                    <span class="icon-item count"></span>
+                    <span class="text-item">Thống kê</span>
+                    <span class="icon-tiep"></span>
+                </a>
+            </div>
+            <div id="child" class="child">
+                <div class="child-item ngay">
+                    <span class="icon-child"></span>
+                    <span class="text-child">Doanh thu theo ngày</span>
+                </div>
+                <div class="child-item thang">
+                    <span class="icon-child"></span>
+                    <span class="text-child">Doanh thu theo tháng</span>
+                </div>
+                <div class="child-item quy">
+                    <span class="icon-child"></span>
+                    <span class="text-child">Doanh thu theo quý</span>
+                </div>
+                <div class="child-item nam">
+                    <span class="icon-child"></span>
+                    <span class="text-child">Doanh thu theo năm</span>
+                </div>
+                <div class="child-item sanpham">
+                    <span class="icon-child"></span>
+                    <span class="text-child">Doanh thu theo sản phẩm</span>
+                </div>
+            </div>
+            <div class="item">
+                <a>
+                    <span class="icon-item report"></span>
+                    <span class="text-item">Báo cáo</span>
+                </a>
+            </div>
+            <div class="item">
+                <a>
+                    <span class="icon-item setting"></span>
+                    <span class="text-item">thiết lập hệ thống</span>
+                </a>
+            </div>
+            <div class="item">
+                <a>
+                    <span class="icon-item help"></span>
+                    <span class="text-item">Trợ giúp</span>
+                </a>
+            </div>
+            <div class="item">
+                <a>
+                    <span class="icon-item user"></span>
+                    <span class="text-item">Tài khoản</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Phần header-->
+    <div class="header">
+        <div class="nav-header">
+            <div class="search">
+                <div><input placeholder="Nhập dữ liệu tìm kiếm" /></div>
+                <div><button>Tìm kiếm</button></div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div>
+                <select class="language">
+                    <option>Tiếng việt (tiếng việt)</option>
+                    <option>English(US)</option>
+                </select>
+            </div>
+            <div class="icon-notice"></div>
+            <div class="icon-header"></div>
+            <div class="account">
+                <div class="icon-user"></div>
+                <div class="information"><span>Nguyễn Văn Thắng</span></div>
+            </div>
+        </div>
+    </div>
+    <!--Phần content-->
+    <div class="includetrang"></div>
+    <div id="themngay" class="them includengay"></div>
+    <div id="themthang" class="them includethang"></div>
+    <div id="themquy" class="them includequy"></div>
+    <div id="themnam" class="them includenam"></div>
+    <div id="themsanpham" class="them includesanpham"></div>
+    <!--Phần dialog request-1-->
+    <div class="dialog-request" id="dialog-request">
+        <div class="main-request">
+            <a>
+                <span class="icon-request"></span>
+                <span class="tex-request">Bạn có muốn xuất file thống kê của ngày 10/10/2019 không?</span>
+            </a>
+        </div>
+        <div class="footer-request">
+            <button class="button-request-c">Có</button>
+            <button class="button-request-k">Không</button>
+        </div>
+    </div>
+    <!--Phần dialog request-2-->
+    <div class="dialog-request" id="dialog-request-2">
+        <div class="main-request-1">
+            <div class="tex-request-1">Xuất file thành công</div>
+        </div>
+        <div class="footer-request">
+            <button class="button-request-c-1">OK</button>
+        </div>
+    </div>
+    <script src="Scripts/libraries/jquery-3.4.1.js"></script>
+    <script src="Scripts/libraries/jquery-1.12.4.js"></script>
+    <script src="Scripts/libraries/jquery-ui.js"></script>
+    <script src="Scripts/libraries/jquery.validate.min.js"></script>
+    <script src="Scripts/views/base.js"></script>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".includetrang").load("trangchu.html");
+        $(".includengay").load("theongay.html");
+        $(".includethang").load("theothang.html");
+        $(".includequy").load("theoquy.html");
+        $(".includenam").load("theonam.html");
+        $(".includesanpham").load("theosanpham.html");
+    });
+</script>
