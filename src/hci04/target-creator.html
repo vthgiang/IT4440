@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- begin meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- end meta -->
+
+  <!-- begin style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- end style -->
+
+  <!-- begin js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
+  <!-- end js -->
+
+  <title>HCI_04 - Thiết lập mục tiêu</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-bark bg-dark fixed-top row">
+    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+      <h3 class="text-light m-0">LOGO</h3>
+    </a>
+    <div class="navbar-nav ml-auto flex-row align-items-center">
+      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-user-circle text-light h3 m-0"></i>
+      </button>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-sign-out-alt text-white-50 h5 m-0"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- End Header -->
+  <!-- Body -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Begin Sidebar -->
+      <nav class="sidebar col-sm-3 col-md-2">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column h5 main-nav">
+            <li class="nav-item active">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true"
+                aria-controls="sub-nav-1">
+                <span>Chức năng chung</span>
+              </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-1" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">
+                    <span>Phê duyệt kế hoạch</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true"
+                aria-controls="sub-nav-2">
+                <span>Quản trị mục tiêu</span>
+              </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-2" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/target-creator.html">
+                    <span>Thiết lập mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/target-approve.html">
+                    <span>Phê duyệt mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/progress-monitor.html">
+                    <span>Giám sát tiến độ</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/statistic.html">
+                    <span>Thống kê</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Sidebar -->
+      <!-- Begin Main -->
+      <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
+        <!-- Begin Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb rounded-0 h6">
+            <li class="breadcrumb-item active" aria-current="page">Thiết lập mục tiêu</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+        <!-- Begin Content -->
+        <div class="container-fluid p-3">
+          <div class="container p-3 border rounded">
+            <h3 class="mb-4">Thiết lập mục tiêu mới</h3>
+            <div class="row m-3">
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Bộ phận</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn bộ phận ...</option>
+                      <option>Bộ phận A</option>
+                      <option>Bộ phận B</option>
+                      <option>Bộ phận C</option>
+                      <option>Bộ phận D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Phòng ban</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn phòng ban ...</option>
+                      <option>Phòng ban A</option>
+                      <option>Phòng ban B</option>
+                      <option>Phòng ban C</option>
+                      <option>Phòng ban D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Thời hạn</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <div class="input-group date" data-provide="datepicker">
+                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="row my-2">
+                  <div class="col-md-2 col-sm-12">
+                    <label class="h6 font-weight-bold">Tên mục tiêu</label>
+                  </div>
+                  <div class="col-md-10 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên mục tiêu ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <div class="row my-2">
+                  <div class="col-md-2 col-sm-12">
+                    <label class="h6 font-weight-bold">Mô tả</label>
+                  </div>
+                  <div class="col-md-10 col-sm-12">
+                    <textarea class="form-control" placeholder="Điền mô tả ..."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row m-3">
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-sm-12">
+                    <label class="h6 font-weight-bold">Bên liên quan</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control mb-1" placeholder="Chọn người liên quan ..." value="Đào Duy Nam">
+                    <input type="text" class="form-control mb-1" placeholder="Chọn người liên quan ..." value="Trương Anh Quốc">
+                    <div class="input-group mb-1">
+                      <input type="text" class="form-control" placeholder="Thêm người liên quan ..." aria-describedby="button-plus-1">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-plus-1">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-sm-12">
+                    <label class="h6 font-weight-bold">Danh sách công việc</label>
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="text" class="form-control mb-1" placeholder="Thêm công việc ..." value="Công việc 1">
+                    <input type="text" class="form-control mb-1" placeholder="Thêm công việc ..." value="Công việc 2">
+                    <input type="text" class="form-control mb-1" placeholder="Thêm công việc ..." value="Công việc 3">
+                    <div class="input-group mb-1">
+                      <input type="text" class="form-control" placeholder="Thêm công việc ..." aria-describedby="button-plus-2">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-plus-2">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="row m-3">
+              <button type="button" class="btn btn-primary ml-auto">Thêm mục tiêu</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Content -->
+      </main>
+      <!-- End Main -->
+    </div>
+  </div>
+  <!-- End Body -->
+</body>
+
+</html>

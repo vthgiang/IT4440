@@ -1,0 +1,92 @@
+﻿/*Css cho phân header*/
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 55px;
+    width: calc(100% - 237px);
+    display: flex;
+    background-color: #1a6fb4;
+    color: #ffffff;
+    margin-right: 8px;
+}
+.header .nav-header{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+}
+.nav-header .search {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    margin-left: 15px;
+    margin-top: 12px;
+    color: #ffffff;
+    display: flex;
+}
+.search input{
+    height: 29px;
+    width: 200px;
+}
+.search button{
+    width: 80px;
+    height: 30px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: #868080;
+}
+.header .header-right {
+    display: flex;
+    position: absolute;
+    right: 0;
+    justify-content: center;
+}
+.header .language {
+    position: relative;
+    height: 32px;
+    width: 170px;
+    color: #ffffff;
+    margin-top: 12px;
+    margin-right: 15px;
+    background-color: #085b93;
+    cursor: pointer;
+}
+.header .icon-notice {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    align-self: center;
+    margin-top: 12px;
+    background-image: url('../Contents/Images/icon-notice1.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header .account {
+    position: relative;
+    display: flex;
+    align-self: center;
+    color: #fff;
+    margin: 0 16px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+.header .account .icon-user {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    margin-top: 2px;
+    background-image: url('../Contents/Images/EmployeeImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.header .account .information {
+    position: relative;
+    align-self: center;
+    padding: 0 5px;
+    margin-right: 15px;
+}
