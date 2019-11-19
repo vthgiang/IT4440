@@ -32,7 +32,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#"> <i class="fa fa-home"></i> Trang chủ</a>
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
                 </div>
 
                 <!-- sidebar-header  -->
@@ -82,6 +82,12 @@
                                     </li>
                                     <li>
                                         <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
 
@@ -302,8 +308,28 @@
                         <p>Công việc vừa xem:</p>
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Lên menu cơm trưa tháng 12</a>
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Lên menu cơm
+                                    trưa tháng 12</a>
                             </li>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Modal Header</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>This is a large modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Chuẩn bị quà tặng cho nhân viên xuất sắc tháng 11</a>
                             </li>
