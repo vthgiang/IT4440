@@ -12,7 +12,7 @@ body {
   width: 260px;
   height: 100%;
   float: left;
-  background-color: #2B333E;
+  background-color: #1BA1E2;
   position: fixed;
   left: 0; }
 
@@ -30,7 +30,7 @@ body {
  * TOP NAVIGATION
  ********************/
 .navbar-default {
-  background-color: #fff; 
+  background-color: #1BA1E2; 
 }
 
 .navbar-default .brand {
@@ -66,11 +66,51 @@ margin-right: 2px;
 }
 .sidebar .nav > li > a {
   padding: 18px 30px;
-  color: #AEB7C2;
+  color: #000000;
   border-left: 5px solid transparent; 
 }
 
 ul{
   list-style: none;
   margin: 0px;
+}
+
+.table-data{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn-add{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body p{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.checkListbank, .checkListDate{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.checkListbank ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+.checkListbank ul li select{
+  width: 200px;
+}
+
+.checkListDate ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
+img {
+  width: 260px;
 }
