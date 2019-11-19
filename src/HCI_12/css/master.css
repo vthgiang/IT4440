@@ -12,7 +12,7 @@ body {
   width: 260px;
   height: 100%;
   float: left;
-  background-color: #2B333E;
+  background-color: #1BA1E2;
   position: fixed;
   left: 0; }
 
@@ -30,7 +30,7 @@ body {
  * TOP NAVIGATION
  ********************/
 .navbar-default {
-  background-color: #fff; 
+  background-color: #1BA1E2; 
 }
 
 .navbar-default .brand {
@@ -66,7 +66,7 @@ margin-right: 2px;
 }
 .sidebar .nav > li > a {
   padding: 18px 30px;
-  color: #AEB7C2;
+  color: #000000;
   border-left: 5px solid transparent; 
 }
 
