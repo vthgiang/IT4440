@@ -5,12 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Sidebar template</title>
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Trang chủ</title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
     <!-- using local links -->
@@ -29,7 +32,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#"> <i class="fa fa-home"></i> Trang chủ</a>
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
                 </div>
 
                 <!-- sidebar-header  -->
@@ -79,6 +82,12 @@
                                     </li>
                                     <li>
                                         <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
 
@@ -185,7 +194,8 @@
                                     <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới máy in</div>
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
                                     <div class="notification-time">
                                         7 minutes ago
                                     </div>
@@ -298,8 +308,28 @@
                         <p>Công việc vừa xem:</p>
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Lên menu cơm trưa tháng 12</a>
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">Lên menu cơm
+                                    trưa tháng 12</a>
                             </li>
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Modal Header</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>This is a large modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Chuẩn bị quà tặng cho nhân viên xuất sắc tháng 11</a>
                             </li>
@@ -321,24 +351,26 @@
                 <footer>
                     <div class="row ">
                         <div class="col-md-12">
-                            <small>Made by <span
-                                    class="text-secondary font-weight-bold">HCI-03</span></small>
+                            <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
                         </div>
                         <div class="col-md-12">
                             <address>
-                                        <strong>HUST, University.</strong><br>
-                                        1 Đại Cồ Việt, Hai Bà Trưng <br>
-                                        Hà Nội, Việt Nam<br>
-                                      </address>
+                                <strong>HUST, University.</strong><br>
+                                1 Đại Cồ Việt, Hai Bà Trưng <br>
+                                Hà Nội, Việt Nam<br>
+                            </address>
                         </div>
                         <div class="col-md-12">
-                            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                                 <i class="fab fa-github" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                             </a>
-                            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                                 <i class="fab fa-instagram" aria-hidden="true"></i>
                             </a>
                         </div>
@@ -353,10 +385,12 @@
 
     <!-- using online scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
     <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <!-- using local scripts -->

@@ -1,0 +1,229 @@
+
+ 
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>quản lý nhân viên </title>
+</head>
+<body>
+
+	<style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+		@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/skins/_all-skins.min.css"); 
+	</style>
+
+
+
+	 <body class="hold-transition skin-blue sidebar-mini" id="menu">
+            <div class="wrapper">
+                <header class="main-header">
+                    <a class="logo">
+                        <span class="logo-mini"><b>Nhóm 8</b></span>
+                        <span class="logo-lg"><b>Nhóm 8</b></span>
+                    </a> 
+                    <nav class="navbar navbar-static-top">
+                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown tasks-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn
+                                    </a>
+                                  </li>
+
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                            class="user-image" alt="User Image">
+                                        <span class="hidden-xs">HNX</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="user-header">
+                                            <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                                class="img-circle" alt="User Image">
+
+                                            <p>
+                                                Web Developer
+                                                <small> 2019</small>
+                                            </p>
+                                        </li>
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a 
+                                                    class="btn btn-default btn-flat"></a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a  class="btn btn-default btn-flat log_out">Đăng xuất</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <aside class="main-sidebar">
+                    <section class="sidebar">
+                       
+                        <ul class="sidebar-menu" data-widget="tree" >
+                            <li>
+                                <a>
+                                    <i class="fa fa-dashboard"></i> <span>Giao việc</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a >
+                                    <i class="fa fa-th"></i> <span>Công việc đã hoàn thành</span>
+                                </a>
+                            </li>
+
+                            <li  style="background-color: black"><a href><i class="fa fa-book"></i> <span> Quản lý nhân viên </span></a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+                <div class="content-wrapper">
+                      <section class="content-header">
+                      </section>
+						<section class="content" id="main_content">
+						    
+							<h3>Quản lý nhân viên</h3>
+							<hr />
+							<hr />
+
+							<div class="row" style="font-size: 15px; ">
+								<div class="col-md-4">
+									<span>Tên nhân viên: </span>
+									<select class="form-control loai_thuoc">
+										<option>Tất cả</option>
+										<option>Tiêm phòng dại</option>
+										<option>Thuốc đau dạ dày</option>
+										<option>Thuốc viên da</option>
+									</select>
+								</div>
+                <div class="col-md-4">
+                  <span>Mã số:</span>
+                  <select class="form-control loai_dong_vat">
+                    <option>Tất cả</option>
+                    <option>Chó</option>
+                    <option>Mèo</option>
+                    <option>Lợn</option>
+                    <option>Gà</option>
+                  </select>
+                </div>
+                <br/>
+                 <div class="col-md-4">
+                  <button class="btn btn-primary xem_thong_tin">Xem Thông Tin</button>
+                </div>
+
+							</div>
+  
+							<hr>
+							<table class="table table-bordered table-hover">
+								<thead>
+									<th>STT</th>
+									<th>Họ Và Tên</th>
+									<th>Ngày Vào Làm</th>
+                  <th>Tổ</th>
+									<th>Hành động</th>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+
+						</section>
+
+
+                </div>
+            </div>
+        </body> 
+  <!-- The Modal -->
+  <div class="modal fade" id="modelFail">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <div class="modal-body">
+          vui lòng kiểm tra lại dữ liệu
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+
+
+        <style type="text/css">
+        	.content {
+        		background-color: white;
+        		margin-left: 10px;
+        		margin-right: 10px;
+        		border-radius: 20px;
+        	}
+        	th{
+        		background-color: rgb(130, 179, 102);;
+        	}
+        </style>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://adminlte.io/themes/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+
+    var data = [
+      {'stt':1,'ten':'Trần cẩn','to':'1','ngay':'15/11/2019'},
+      {'stt':2,'ten':'Nguyễn Văn Mạnh','to':'2','ngay':'20/10/2019'},
+    ];
+
+    $('.xem_thong_tin').click(function(){
+
+      let dataText = '';
+      for(let i=0 ; i < data.length; i++) {
+        dataText += '<tr><td>'+data[i].stt+'</td><td>'+data[i].ten+'</td><td>'+data[i].ngay+'</td><td>'+data[i].to+'</td><td><a href="edit.html"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a><button class="btn-danger btn delete" style="margin-left: 5px"><i class="fa fa-trash" aria-hidden="true"></i></button></td></tr>';
+      }
+
+      $('tbody').html(dataText);
+      deleteRow();
+    });
+
+    function deleteRow() {
+      $('.delete').click(function(){
+        if ( confirm('Bạn có muốn xoá nó?') ) {
+          $($(this).parent()).parent().remove();
+        }
+      });
+    }
+
+	});
+</script>
+
+
+</body>
+</html>
+
+ 
+
