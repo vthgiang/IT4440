@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-	
+
 	<title>Admin</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 	<link rel="stylesheet" href="../css/master.css">
-	
+	<link rel="stylesheet" href="../css/home/home.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="../bootstrap/css/bootstrap-table.css" rel="stylesheet">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
 </head>
 
@@ -52,10 +55,10 @@
 						<li><a href="workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
 
 						<li><a href="kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
-						
-						
+
+
 						<li><a href="statistical.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
-				
+
 						<li><a href=""><i class="lnr lnr-exit"></i> <span>Đăng xuất</span></a></li>
 
 					</ul>
@@ -68,12 +71,12 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				
-
+				<canvas id="myChartBar"></canvas>
+				<canvas id="myChartCircle"></canvas>
 			</div>
 		</div>
+
 	<!-- END MAIN CONTENT -->
-		
 		</div>
 	<!-- END WRAPPER -->
 
@@ -100,5 +103,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="../bootstrap/js/bootstrap-table.min.js"></script>
+	<script type="text/javascript" src = "../js/myChartBar.js"></script>
+	<script type="text/javascript" src = "../js/myChartCircle.js"></script>
 </body>
 </html>
