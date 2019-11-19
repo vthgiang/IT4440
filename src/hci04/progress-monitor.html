@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- begin meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- end meta -->
+
+  <!-- begin style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap&subset=vietnamese"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+    integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- end style -->
+
+  <!-- begin js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+    integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
+  <script src="js/home.js"></script>
+  <!-- end js -->
+
+  <title>HCI_04 - Giám sát tiến độ</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <nav class="navbar navbar-bark bg-dark fixed-top row">
+    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+      <h3 class="text-light m-0">LOGO</h3>
+    </a>
+    <div class="navbar-nav ml-auto flex-row align-items-center">
+      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-user-circle text-light h3 m-0"></i>
+      </button>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-sign-out-alt text-white-50 h5 m-0"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- End Header -->
+  <!-- Body -->
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Begin Sidebar -->
+      <nav class="sidebar col-sm-3 col-md-2">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column h5 main-nav">
+            <li class="nav-item active">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+                <span>Chức năng chung</span>
+              </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-1" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">
+                    <span>Phê duyệt kế hoạch</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+                <span>Quản trị mục tiêu</span>
+              </a>
+              <i class="fas fa-chevron-down ml-auto mr-2"></i>
+            </li>
+            <li id="sub-nav-2" class="collapse show">
+              <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/target-creator.html">
+                    <span>Thiết lập mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/target-approve.html">
+                    <span>Phê duyệt mục tiêu</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/progress-monitor.html">
+                    <span>Giám sát tiến độ</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/statistic.html">
+                    <span>Thống kê</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Sidebar -->
+      <!-- Begin Main -->
+      <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
+        <!-- Begin Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb rounded-0 h6">
+            <li class="breadcrumb-item">Phê duyệt mục tiêu</li>
+            <li class="breadcrumb-item active" aria-current="page">Danh sách mục tiêu</li>
+          </ol>
+        </nav>
+        <!-- End Breadcrumb -->
+        <!-- Begin Content -->
+        <div class="container-fluid p-3">
+          <!-- Start Filter -->
+          <div class="container-fluid p-3 border rounded mb-3 table-filter">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Bộ phận</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn bộ phận ...</option>
+                      <option>Bộ phận A</option>
+                      <option>Bộ phận B</option>
+                      <option>Bộ phận C</option>
+                      <option>Bộ phận D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Phòng ban</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn phòng ban ...</option>
+                      <option>Phòng ban A</option>
+                      <option>Phòng ban B</option>
+                      <option>Phòng ban C</option>
+                      <option>Phòng ban D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Hạn chót</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <div class="input-group date" data-provide="datepicker">
+                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-2 col-sm-12">
+                    <label class="h6">Tên mục tiêu</label>
+                  </div>
+                  <div class="col-md-10 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên mục tiêu ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Trạng thái</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn trạng thái ...</option>
+                      <option>Tất cả</option>
+                      <option>Đúng hạn</option>
+                      <option>Quá hạn</option>
+                      <option>Hoàn thành</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-4 mt-2 d-flex">
+                <button class="btn btn-outline-danger btn-block m-0 mx-1">
+                  Xoá bộ lọc
+                </button>
+                <button class="btn btn-primary btn-block m-0 mx-1">
+                  Lọc kết quả
+                  <i class="fas fa-filter ml-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- End Filter -->
+          <!-- Start Table Data -->
+          <table id="table-plan-list" class="table table-bordered table-hover">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Mã số
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Tên mục tiêu
+                  <i class="fa fa-fw float-right"></i>
+                </th>
+                <th scope="col">Bộ phận
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Phòng ban
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Hạn chót
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Trạng thái
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+                <th scope="col">Tiến độ
+                  <i class="fa fa-fw fa-sort float-right"></i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Hoàn thành
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      12/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 40%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      4/10
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Quá hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 30%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      2/10
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Mục tiêu A</td>
+                <td>Nhân sự</td>
+                <td>Phòng tổ chức</td>
+                <td>20/11/2019</td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      Đúng hạn
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
+                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                      8/12
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- End Table Data -->
+          <!-- Begin Pagination -->
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-end">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Trước</a>
+              </li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Sau</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Pagination -->
+        </div>
+        <!-- End Content -->
+      </main>
+      <!-- End Main -->
+    </div>
+  </div>
+  <!-- End Body -->
+</body>
+
+</html>

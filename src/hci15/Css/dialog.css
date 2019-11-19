@@ -1,0 +1,77 @@
+﻿.dialog-request{
+    display: none;
+}
+.main-request{
+    position: absolute;
+    height: 40px;
+    width: 375px;
+    display: flex;
+}
+    .main-request .icon-request {
+        position: absolute;
+        margin-left: 8px;
+        margin-top: 4px;
+        height: 32px;
+        width: 32px;
+        background: url('../Contents/Images/icon-question.png') no-repeat center center;
+    }
+    .main-request .tex-request{
+        position: absolute;
+        left: 55px;
+        height: 100%;
+        font-size: 15px;
+        padding-top: 4px;
+        font-size: 18px!important;
+    }
+.main-request-1 .tex-request-1{
+        position: absolute;
+        height: 100%;
+        padding-top: 10px;
+        left: 45px;
+        font-size: 18px!important;
+    }
+.main-request-1 {
+    position: absolute;
+    height: 40px;
+    width: 250px;
+    display: flex;
+}
+.footer-request {
+    position: relative;
+    height: 28px;
+    top: 50px;
+    margin-top: 10px;
+    display: flex;
+}
+.footer-request .button-request-k{
+    position: absolute;
+    height: 26px;
+    width: 75px;
+    margin-top: 1px;
+    right: 4px;
+}
+.footer-request .button-request-k:hover{
+    background-color: #DB524C;
+}
+.footer-request .button-request-c{
+    position: absolute;
+    height: 26px;
+    width: 75px;
+    margin-top: 1px;
+    right: 90px;
+}
+.footer-request .button-request-c:hover{
+    background-color: #0F69B5;
+}
+.footer-request .button-request-c-1{
+    position: absolute;
+    height: 24px;
+    width: 75px;
+    right: 90px;
+}
+.footer-request .button-request-c-1:hover{
+    background-color: #0F69B5;
+}
+button{
+    cursor: pointer;
+}
