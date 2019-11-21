@@ -111,7 +111,7 @@ input{
     position: absolute;
     width: calc(100% - 2px);
     top: 80px;
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
     border: 1px solid #cbc8c8;
     overflow-x: auto !important;
     color: #000000!important;
@@ -193,7 +193,7 @@ td {
     position: absolute;
     height: 26px;
     border: 1px solid #cbc8c8;
-    bottom: 8px;
+    bottom: 12px;
     width: calc(100% - 2px);
     display: flex;
 }
@@ -268,4 +268,138 @@ td {
     padding-top: 2px;
     right: 15px;
     color: #000000;
+}
+.content .cv {
+    position: absolute;
+    width: 68%;
+    top: 80px;
+    height: calc(100% - 80px);
+    overflow-y: auto !important;
+    color: #000000 !important;
+}
+.cv .quanlycv {
+    position: relative;
+    height: 200px;
+    margin-top: 8px;
+    border: 1px solid #cbc8c8;
+    background-color: #ebecf0;
+}
+.quanlycv .text-cv {
+    position: relative;
+    height: 30px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quanlycv .task {
+    position: absolute;
+    margin-top: 4px;
+    width: calc(100% - 16px);
+    height: 170px;
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow-y: auto; 
+}
+.task .main-tb{
+    position: absolute;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.main-tb .row-tb {
+    background-color: #e1dede;
+    overflow: hidden;
+}
+
+.row-tb th {
+    position: sticky;
+    top: 0;
+    border: 1px solid #cbc8c8;
+}
+.main-tb tbody td{
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+.content .hoatdong{
+    position:absolute;
+    right: 2px;
+    top: 88px;
+    width: 40%;
+    height: calc(100% - 88px);
+    border: 1px solid #000000;
+}
+.hoatdong .header-hoatdong{
+    position:absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #cbc8c8;
+}
+.header-hoatdong .icon-hoatdong {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
+    margin-top: 3px;
+    background-image: url('../Contents/Images/EmployeeImage.png');
+    background-repeat: no-repeat;
+    background-position: 2px -151px;
+    background-image: url('../Contents/Images/iconMenu.png');
+    cursor: pointer;
+}
+.header-hoatdong .text-hoatdong {
+    position: absolute;
+    color: #000000;
+    height: 24px;
+    width: 100px;
+    margin-top: 9px;
+    margin-left: 44px;
+}
+.hoatdong .menu-hoatdong {
+    position: absolute;
+    height: calc(100% - 40px);
+    top: 40px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.menu-hoatdong .date-hoatdong{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    margin-left: 4px;
+    color: #000000;
+}
+.menu-hoatdong .one-menu {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #eeeded;
+    cursor: pointer;
+}
+.one-menu .text-- {
+    position: absolute;
+    color: #000000;
+    height: 24px;
+    width: calc(100% - 44px);
+    margin-left: 44px;
+}
+.one-menu .icon-menu {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    border: 1px solid #000000;
+    margin-left: 4px;
+    margin-top: 2px;
+    background-image: url('../Contents/Images/EmployeeImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.back{
+    background-color: #ffffff!important;
+    margin-top: 10px!important;
+    margin-left: 100px;
 }

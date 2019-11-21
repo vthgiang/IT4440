@@ -21,9 +21,13 @@ class Base {
         $(document).on('click', '.quy', this.addPrecious);
         $(document).on('click', '.nam', this.addYear);
         $(document).on('click', '.sanpham', this.addProduct);
+        $(document).on('click', '.canhan', this.quanlycongviec);
+        $(document).on('click', '.task td button', this.chitiet);
     }
 
     addDay() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').addClass('them');
         $('.includetrang').addClass('them');
         $('#themthang').addClass('them');
         $('#themquy').addClass('them');
@@ -33,6 +37,8 @@ class Base {
     }
 
     addMonth() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').addClass('them');
         $('.includetrang').addClass('them');
         $('#themngay').addClass('them');
         $('#themquy').addClass('them');
@@ -42,6 +48,8 @@ class Base {
     }
 
     addPrecious() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').addClass('them');
         $('.includetrang').addClass('them');
         $('#themngay').addClass('them');
         $('#themthang').addClass('them');
@@ -51,6 +59,8 @@ class Base {
     }
 
     addYear() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').addClass('them');
         $('.includetrang').addClass('them');
         $('#themngay').addClass('them');
         $('#themquy').addClass('them');
@@ -60,11 +70,33 @@ class Base {
     }
 
     addProduct() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').addClass('them');
         $('.includetrang').addClass('them');
         $('#themngay').addClass('them');
         $('#themquy').addClass('them');
         $('#themnam').addClass('them');
         $('#themsanpham').removeClass('them');
+        $('#themthang').addClass('them');
+    }
+    quanlycongviec() {
+        $('.includechitiet').addClass('them');
+        $('.includequanlycongviec').removeClass('them');
+        $('.includetrang').addClass('them');
+        $('#themngay').addClass('them');
+        $('#themquy').addClass('them');
+        $('#themnam').addClass('them');
+        $('#themsanpham').addClass('them');
+        $('#themthang').addClass('them');
+    }
+    chitiet() {
+        $('.includechitiet').removeClass('them');
+        $('.includequanlycongviec').addClass('them');
+        $('.includetrang').addClass('them');
+        $('#themngay').addClass('them');
+        $('#themquy').addClass('them');
+        $('#themnam').addClass('them');
+        $('#themsanpham').addClass('them');
         $('#themthang').addClass('them');
     }
 

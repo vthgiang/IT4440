@@ -92,6 +92,14 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.item .list {
+    background-position: 2px -151px;
+}
+.item .bill {
+    background-image: url('../Contents/Images/vector-smart-object.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .item .user {
     background-image: url('../Contents/Images/icon-subscriber.png');
     background-repeat: no-repeat;
