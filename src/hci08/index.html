@@ -8,10 +8,45 @@
 <head>
 <title>HCI_08</title>
 <meta charset="utf-8">
+<style>
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .button {
+        width: 30%;
+        padding: 20px 40px;
+        align-content: center;
+        border-radius: 10px;
+        margin: 40px auto;
+        font-size: 20px;
+        transition: transform;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+
+    .employee:hover {
+        transform: scale(1.2);
+    }
+
+    .manager:hover {
+        transform: scale(1.2);
+    }
+
+    .employee {
+        background-image: linear-gradient(to top,yellow,#fa9600ea);
+    }
+
+    .manager {
+        background-image: linear-gradient(to bottom, orange, yellow);
+    }
+</style>
 </head>
 <body>
 
-<h1>Bài làm của nhóm 8</h1>
-
+<h1 class="title">Bài làm của nhóm 8</h1>
+<div class="employee button"><a href="bao_cao_cv_hang_ngay.html">GIAO DIỆN CHO CÔNG NHÂN</a></div>
+<div class="manager button"><a href="giao_viec.html">GIAO DIỆN CHO QUẢN ĐỐC XƯỞNG</a></div>
 </body>
 </html>
