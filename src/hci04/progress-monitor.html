@@ -65,7 +65,8 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column h5 main-nav">
             <li class="nav-item active">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true"
+                aria-controls="sub-nav-1">
                 <span>Chức năng chung</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -80,7 +81,8 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true"
+                aria-controls="sub-nav-2">
                 <span>Quản trị mục tiêu</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -128,7 +130,82 @@
           <!-- Start Filter -->
           <div class="container-fluid p-3 border rounded mb-3 table-filter">
             <div class="row">
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Bộ phận</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn bộ phận ...</option>
+                      <option>Bộ phận A</option>
+                      <option>Bộ phận B</option>
+                      <option>Bộ phận C</option>
+                      <option>Bộ phận D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Phòng ban</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn phòng ban ...</option>
+                      <option>Phòng ban A</option>
+                      <option>Phòng ban B</option>
+                      <option>Phòng ban C</option>
+                      <option>Phòng ban D</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Hạn chót</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <div class="input-group date" data-provide="datepicker">
+                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-2 col-sm-12">
+                    <label class="h6">Tên mục tiêu</label>
+                  </div>
+                  <div class="col-md-10 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Nhập tên mục tiêu ...">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-4 col-sm-12">
+                    <label class="h6">Trạng thái</label>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                    <select class="form-control">
+                      <option disabled selected>Chọn trạng thái ...</option>
+                      <option>Tất cả</option>
+                      <option>Đúng hạn</option>
+                      <option>Quá hạn</option>
+                      <option>Hoàn thành</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-lg-4 offset-lg-4 mt-2 d-flex">
+                <button class="btn btn-outline-danger btn-block m-0 mx-1">
+                  Xoá bộ lọc
+                </button>
                 <button class="btn btn-primary btn-block m-0 mx-1">
                   Lọc kết quả
                   <i class="fas fa-filter ml-2"></i>
