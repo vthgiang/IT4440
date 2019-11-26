@@ -14,19 +14,17 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
 
     <!-- using local links -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
 </head>
 
 <body>
@@ -35,7 +33,7 @@
             <div class="sidebar-content">
                 <!-- sidebar-brand  -->
                 <div class="sidebar-item sidebar-brand">
-                    <a href="#">Bộ phận Hậu cần - Hỗ trợ</a>
+                    <a href="index.html">Bộ phận Hậu cần - Hỗ trợ</a>
                 </div>
                 <!-- sidebar-header  -->
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
@@ -69,49 +67,89 @@
                 <!-- sidebar-menu  -->
                 <div class=" sidebar-item sidebar-menu">
                     <ul>
-                        <li class="header-menu">
-                            <span>General</span>
-                        </li>
                         <li class="sidebar-dropdown">
                             <a href="#">
                                 <i class="fa fa-tachometer-alt"></i>
-                                <span class="menu-text">Quản lí báo cáo</span>
+                                <span class="menu-text">Quản lý công việc</span>
                                 <span class="badge badge-pill badge-warning">New</span>
                             </a>
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="report_management.html">Tổng hợp báo cáo
-                                            <span class="badge badge-pill badge-success">Pro</span>
+                                        <a href="congvieccanhan.html">Công việc cá nhân
+                                            <span class="badge badge-pill badge-success">10</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="create-report.html">Tạo báo cáo</a>
+                                        <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
                                     </li>
                                     <li>
-                                        <a href="form.html">Biểu mẫu</a>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-address-book"></i>
+                                <span class="menu-text">Quản lý nhân viên</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Danh sách nhân viên
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kỉ luật, khen thưởng</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-
-                        <li class="header-menu">
-                            <span>Extra</span>
-                        </li>
-                        <li>
+                        <li class="sidebar-dropdown">
                             <a href="#">
                                 <i class="fa fa-book"></i>
-                                <span class="menu-text">Tài liệu cá nhân</span>
-                                <span class="badge badge-pill badge-primary">Beta</span>
+                                <span class="menu-text">Quản lý báo cáo</span>
                             </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
+                                    </li>
+                                    <li>
+                                        <a href="create-report.html">Tạo báo cáo</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li>
+                        <li class="sidebar-dropdown">
                             <a href="#">
-                                <i class="fa fa-calendar"></i>
-                                <span class="menu-text">Lịch</span>
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
                             </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Email</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
@@ -261,38 +299,72 @@
         </nav>
         <!-- page-content  -->
         <main class="page-content pt-2">
-            <form>
-                <div class="form-group">
-                    <label for="formGroupExampleInput"><strong>Tên người nhận</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tên người nhận">
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2"><strong>Chức vụ</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Chức vụ">
-                </div>
-                <div class="form-group">
-                    <label for=""><strong>Email</strong></label>
-                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
-                        placeholder="email vd: truongphong@gmail">
-                    <small id="emailHelpId" class="form-text text-muted">Liên hệ phòng nhân sự để biết email</small>
+            <div class="container-fluid">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"><strong>Tên người nhận</strong></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tên người nhận">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"><strong>Chức vụ</strong></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Chức vụ">
+                    </div>
+                    <div class="form-group">
+                        <label for=""><strong>Email</strong></label>
+                        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                            placeholder="email vd: truongphong@gmail">
+                        <small id="emailHelpId" class="form-text text-muted">Liên hệ phòng nhân sự để biết email</small>
 
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput"><strong>Loại báo cáo</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Loại báo cáo">
-                    <small>Kỉ luật - khen thưởng, kế hoạch sản xuất...</small>
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput"><strong>Mô tả chi tiết</strong></label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nội dung mô tả">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"><strong>Loại báo cáo</strong></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Loại báo cáo">
+                        <small>Kỉ luật - khen thưởng, kế hoạch sản xuất...</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput"><strong>Mô tả chi tiết</strong></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nội dung mô tả">
 
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1"><strong>Chọn báo cáo đính kèm</strong></label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <button type="button" class="btn btn-primary">Gửi báo cáo</button>
+                </form>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <footer>
+                <div class="row ">
+                    <div class="col-md-4">
+                        <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+                    </div>
+                    <div class="col-md-4">
+                        <address>
+                            <strong>HUST, University.</strong><br>
+                            1 Đại Cồ Việt, Hai Bà Trưng <br>
+                            Hà Nội, Việt Nam<br>
+                        </address>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1"><strong>Chọn báo cáo đính kèm</strong></label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                </div>
-            </form>
-            <button type="button" class="btn btn-primary">Gửi báo cáo</button>
+            </footer>
         </main>
         <!-- page-content" -->
     </div>
@@ -306,27 +378,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
-    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <!-- using local scripts -->
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
-
-
     <script src="js/main.js"></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
