@@ -14,15 +14,6 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
-
-    <!-- using local links -->
-    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
@@ -44,7 +35,7 @@
                     </div>
                     <div class="user-info">
                         <span class="user-name">Nguyễn Văn A <br> (Nhân viên vệ sinh)
-                            
+
                         </span>
                         <!-- <span class="user-role">Administrator</span> -->
                         <span class="user-status">
@@ -94,7 +85,7 @@
                                 </ul>
                             </div>
                         </li>
-                       
+
                         <li class="header-menu">
                             <span>Extra</span>
                         </li>
@@ -111,7 +102,7 @@
                                 <span class="menu-text">Lịch</span>
                             </a>
                         </li>
-                       
+
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
@@ -127,7 +118,7 @@
                     <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
                         <div class="notifications-header">
                             <i class="fa fa-bell"></i>
-                           Thông báo
+                            Thông báo
                         </div>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">
@@ -257,16 +248,17 @@
         </nav>
         <!-- page-content  -->
         <main class="page-content pt-2">
-            <nav class="navbar navbar-light bg-light px-5">
-                <a class="navbar-brand" href="#">
-                  <img src="https://image.flaticon.com/icons/svg/235/235253.svg" width="30" height="30"
-                    class="d-inline-block align-top" alt="">
-                  Tạo công việc mới
-                </a>
-              </nav>
-              
-                    
-                    <div class="row container-fluid">
+            <div class="container-fluid">
+                <nav class="navbar navbar-light bg-light px-5">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://image.flaticon.com/icons/svg/235/235253.svg" width="30" height="30"
+                            class="d-inline-block align-top" alt="">
+                        Tạo công việc mới
+                    </a>
+                </nav>
+
+
+                <div class="row container-fluid">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="usr">Tên công việc:</label>
@@ -277,7 +269,7 @@
                             <textarea class="form-control" rows="4" id="comment"></textarea>
                         </div>
                     </div>
-                    
+
 
 
 
@@ -287,55 +279,64 @@
                         <div class="form-group">
                             <label for="status">Status:</label>
                             <select name="status" class="custom-select mb-3">
-                                                    <option selected>Mới</option>
-                                                    <option value="Đang làm">Đang làm</option>
-                                                    <option value="Hoàn thành">Hoàn thành</option>
-                                                    <option value="Đang trễ">Đang trễ</option>
-                                                  </select>
+                                <option selected>Mới</option>
+                                <option value="Đang làm">Đang làm</option>
+                                <option value="Hoàn thành">Hoàn thành</option>
+                                <option value="Đang trễ">Đang trễ</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="priority">Priority:</label>
                             <select name="priority" class="custom-select mb-3">
-                                                        <option selected>Cao</option>
-                                                        <option value="Trung bình">Trung bình</option>
-                                                        <option value="Thấp">Thấp</option>
-                
-                                                      </select>
+                                <option selected>Cao</option>
+                                <option value="Trung bình">Trung bình</option>
+                                <option value="Thấp">Thấp</option>
+
+                            </select>
                         </div>
-<div class="form-group">
+                        <div class="form-group">
                             <label for="usr">Deadline:</label>
                             <input type="text" class="form-control" id="usr">
                         </div>
-
+                        <button type="submit" class="btn btn-primary mb-4">Submit</button>
                     </div>
-
                 </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-                    <nav aria-label="...">
-                      <ul class="pagination">
-                        <li class="page-item">
-                          <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Trang trước</a>
-                        </li>
-                        <li class="page-item active" aria-current="page"></li>
-                        <li class="page-item"><a class="page-link" href="#">1<span class="sr-only">(current)</span></a></li>
-
-                          <a class="page-link" href="#">2 </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">Tiếp theo</a>
-                        </li>
-                      </ul>
-                    </nav>
-            
-            
-                  </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <footer>
+                <div class="row ">
+                    <div class="col-md-4">
+                        <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+                    </div>
+                    <div class="col-md-4">
+                        <address>
+                            <strong>HUST, University.</strong><br>
+                            1 Đại Cồ Việt, Hai Bà Trưng <br>
+                            Hà Nội, Việt Nam<br>
+                        </address>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
-              </div>
-        </main>
-        <!-- page-content" -->
+            </footer>
+    </div>
+    </main>
+    <!-- page-content" -->
     </div>
     <!-- page-wrapper -->
 
@@ -343,31 +344,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <!-- using local scripts -->
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
-
-
+        </script>
     <script src="js/main.js"></script>
-     <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-  crossorigin="anonymous"></script>
 </body>
 
 </html>
