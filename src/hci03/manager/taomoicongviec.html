@@ -5,23 +5,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
     <title>Tạo mới công việc</title>
 
     <!-- using online links -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
-    <!-- using local links -->
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
 
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
 </head>
 
 <body>
@@ -118,24 +117,30 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">General</a>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
                                     </li>
                                     <li>
-                                        <a href="#">Panels</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Icons</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Forms</a>
+                                        <a href="create-report.html">Tạo báo cáo</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Email</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
 
                     </ul>
                 </div>
@@ -186,7 +191,8 @@
                                     <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
                                 </div>
                                 <div class="content">
-                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới máy in</div>
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
                                     <div class="notification-time">
                                         7 minutes ago
                                     </div>
@@ -278,14 +284,10 @@
         </nav>
         <!-- page-content  -->
         <main class="page-content pt-2">
-
             <div class="container-fluid">
                 <div class="row">
-
                     <h4 class="container-fluid">Tạo công việc mới</h4>
-
                 </div>
-
                 <div class="row container-fluid">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -301,50 +303,46 @@
                         <div class="form-group">
                             <label for="status">Loại công việc:</label>
                             <select name="status" class="custom-select mb-3">
-                                                        <option selected>Hậu cần</option>
-                                                        <option value="Đang làm">Vệ sinh</option>
-                                                        <option value="Hoàn thành">Bảo vệ</option>
-                                                        <option value="Đang trễ">Giao hàng</option>
-                                                        <option value="Đang trễ">Khác</option>
-                                                      </select>
+                                <option selected>Hậu cần</option>
+                                <option value="Đang làm">Vệ sinh</option>
+                                <option value="Hoàn thành">Bảo vệ</option>
+                                <option value="Đang trễ">Giao hàng</option>
+                                <option value="Đang trễ">Khác</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="priority">Khu vực:</label>
                             <select name="priority" class="custom-select mb-3">
-                                                            <option selected>Nhà ăn</option>
-                                                            <option value="Trung bình">Nhà kho</option>
-                                                            <option value="Thấp">Phòng họp</option>
-                    
-                                                          </select>
+                                <option selected>Nhà ăn</option>
+                                <option value="Trung bình">Nhà kho</option>
+                                <option value="Thấp">Phòng họp</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="usr">Deadline:</label>
                             <input type="text" class="form-control" id="usr">
                         </div>
                     </div>
-
-
-
                 </div>
                 <div class="row container-fluid">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="status">Status:</label>
                             <select name="status" class="custom-select mb-3">
-                                                    <option selected>Mới</option>
-                                                    <option value="Đang làm">Đang làm</option>
-                                                    <option value="Hoàn thành">Hoàn thành</option>
-                                                    <option value="Đang trễ">Đang trễ</option>
-                                                  </select>
+                                <option selected>Mới</option>
+                                <option value="Đang làm">Đang làm</option>
+                                <option value="Hoàn thành">Hoàn thành</option>
+                                <option value="Đang trễ">Đang trễ</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="priority">Priority:</label>
                             <select name="priority" class="custom-select mb-3">
-                                                        <option selected>Cao</option>
-                                                        <option value="Trung bình">Trung bình</option>
-                                                        <option value="Thấp">Thấp</option>
-                
-                                                      </select>
+                                <option selected>Cao</option>
+                                <option value="Trung bình">Trung bình</option>
+                                <option value="Thấp">Thấp</option>
+
+                            </select>
                         </div>
 
                     </div>
@@ -352,33 +350,33 @@
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-
-
             <br>
             <br>
             <br>
             <hr>
             <footer>
                 <div class="row ">
-                    <div class="col-md-12">
-                        <small>Made by <span
-                                    class="text-secondary font-weight-bold">HCI-03</span></small>
+                    <div class="col-md-4">
+                        <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
                     </div>
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <address>
-                                        <strong>HUST, University.</strong><br>
-                                        1 Đại Cồ Việt, Hai Bà Trưng <br>
-                                        Hà Nội, Việt Nam<br>
-                                      </address>
+                            <strong>HUST, University.</strong><br>
+                            1 Đại Cồ Việt, Hai Bà Trưng <br>
+                            Hà Nội, Việt Nam<br>
+                        </address>
                     </div>
-                    <div class="col-md-12">
-                        <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                    <div class="col-md-4">
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                             <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                             <i class="fab fa-facebook" aria-hidden="true"></i>
                         </a>
-                        <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                        <a href="#" target="_blank"
+                            class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -393,19 +391,12 @@
 
     <!-- using online scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
-    </script>
-    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <!-- using local scripts -->
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
     <script src="js/main.js"></script>
 
 </body>
