@@ -7,18 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
-    <title>Báo cáo công việc trong ngày</title>
+    <title>Trang chủ</title>
 
     <!-- using online links -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
-
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
@@ -82,7 +79,6 @@
                                         <a href="viecnhom.html">Công việc nhóm
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
                                     </li>
                                     <li>
                                         <a href="workingreport.html">Báo cáo công việc trong ngày
@@ -104,9 +100,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Danh sách nhân viên
-
-                                        </a>
+                                        <a href="#">Danh sách nhân viên</a>
                                     </li>
                                     <li>
                                         <a href="#">Theo dõi tiến độ công việc trong ngày</a>
@@ -152,7 +146,6 @@
                                 </ul>
                             </div>
                         </li>
-
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
@@ -298,135 +291,102 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <h4 class="container-fluid">Báo cáo công việc cuối ngày</h4>
-                    <h4 id="today" class="container-fluid"></h4>
+                    <div class="form-group col-md-12">
+                        <h4>Thống kê công việc</h4>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="form group col-md-12 ">
+                        <h4>Tháng:</h4>
+                        <select name="status" class="custom-select mb-3">
+
+                            <option>Tháng 1</option>
+                            <option>Tháng 2</option>
+                            <option>Tháng 3</option>
+                            <option>Tháng 4</option>
+                            <option>Tháng 5</option>
+                            <option>Tháng 6</option>
+                            <option>Tháng 7</option>
+                            <option>Tháng 8</option>
+                            <option>Tháng 9</option>
+                            <option>Tháng 10</option>
+                            <option selected>Tháng 11</option>
+                            <option>Tháng 12</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="row">
-                    <div class="form-group col-md-12">
 
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th style="width:5%">STT</th>
-                                    <th style="width:35%">Việc đã làm</th>
-                                    <th style="width:12%">Loại công việc</th>
-                                    <th style="width:12%">Tiến độ(%)</th>
-                                    <th style="width:12%">Thời gian(h)</th>
-                                    <th style="width:12%">Có trễ không?</th>
-                                    <th style="width:12%">Sản lượng</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="00001">
-                                    <td class="id">1</td>
-                                    <td><input type="text" style="width: 300px;"> </td>
-                                    <td class="sta"><select name="status" class="custom-select mb-3">
-                                            <option selected>Hậu cần</option>
-                                            <option>Vệ sinh</option>
-                                            <option>Bảo vệ</option>
-                                            <option>Giao hàng</option>
-                                            <option>Khác</option>
-                                        </select>
-                                    </td>
-                                    <td class="pri"><input type="text" style="width: 50px;"> </td>
-                                    <td class="dead"><input type="text" style="width: 50px;"> </td>
-                                    <td class="up"> <select class="custom-select mb-3">
-                                            <option value="">Có</option>
-                                            <option value="">Không</option>
-                                        </select> </td>
-                                    <td class="up"><input type="text" style="width: 50px;"> </td>
-                                </tr>
-                            </tbody>
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <div class="form-group col-md-6">
+                        <div id="piechart"></div>
+                        <script type="text/javascript">
+                            // Load google charts
+                            google.charts.load('current', {
+                                'packages': ['corechart']
+                            });
+                            google.charts.setOnLoadCallback(drawChart);
 
-                            <tbody>
-                                <tr id="00001">
-                                    <td class="id">2</td>
-                                    <td><input type="text" style="width: 300px;"> </td>
-                                    <td class="sta"><select name="status" class="custom-select mb-3">
-                                            <option selected>Hậu cần</option>
-                                            <option>Vệ sinh</option>
-                                            <option>Bảo vệ</option>
-                                            <option>Giao hàng</option>
-                                            <option>Khác</option>
-                                        </select>
-                                    </td>
-                                    <td class="pri"><input type="text" style="width: 50px;"> </td>
-                                    <td class="dead"><input type="text" style="width: 50px;"> </td>
-                                    <td class="up"> <select class="custom-select mb-3">
-                                            <option value="">Có</option>
-                                            <option value="">Không</option>
-                                        </select> </td>
-                                    <td class="up"><input type="text" style="width: 50px;"> </td>
-                                </tr>
-                            </tbody>
+                            // Draw the chart and set the chart values
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Task', 'Hours per Day'],
+                                    ['Đang làm', 6],
+                                    ['Đang trễ', 2],
+                                    ['Đã hoàn thành(Có trễ)', 1],
+                                    ['Đã hoàn thành(Đúng hạn)', 4],
+                                ]);
 
-                            <tbody>
-                                <tr id="00001">
-                                    <td class="id">3</td>
-                                    <td><input type="text" style="width: 300px;"> </td>
-                                    <td class="sta"><select name="status" class="custom-select mb-3">
-                                            <option selected>Hậu cần</option>
-                                            <option>Vệ sinh</option>
-                                            <option>Bảo vệ</option>
-                                            <option>Giao hàng</option>
-                                            <option>Khác</option>
-                                        </select>
-                                    </td>
-                                    <td class="pri"><input type="text" style="width: 50px;"> </td>
-                                    <td class="dead"><input type="text" style="width: 50px;"> </td>
-                                    <td class="up"> <select class="custom-select mb-3">
-                                            <option value="">Có</option>
-                                            <option value="">Không</option>
-                                        </select> </td>
-                                    <td class="up"><input type="text" style="width: 50px;"> </td>
-                                </tr>
-                            </tbody>
-                            <tbody>
-                                <tr id="00001">
-                                    <td class="id">4</td>
-                                    <td><input type="text" style="width: 300px;"> </td>
-                                    <td class="sta"><select name="status" class="custom-select mb-3">
-                                            <option selected>Hậu cần</option>
-                                            <option>Vệ sinh</option>
-                                            <option>Bảo vệ</option>
-                                            <option>Giao hàng</option>
-                                            <option>Khác</option>
-                                        </select>
-                                    </td>
-                                    <td class="pri"><input type="text" style="width: 50px;"> </td>
-                                    <td class="dead"><input type="text" style="width: 50px;"> </td>
-                                    <td class="up"> <select class="custom-select mb-3">
-                                            <option value="">Có</option>
-                                            <option value="">Không</option>
-                                        </select> </td>
-                                    <td class="up"><input type="text" style="width: 50px;"> </td>
-                                </tr>
-                            </tbody>
+                                // Optional; add a title and set the width and height of the chart
+                                var options = {
+                                    'title': 'Công việc cá nhân',
+                                    'width': 750,
+                                    'height': 500
+                                };
 
-                            <tbody>
-                                <tr id="00001">
-                                    <td class="id">5</td>
-                                    <td><input type="text" style="width: 300px;"> </td>
-                                    <td class="sta"><select name="status" class="custom-select mb-3">
-                                            <option selected>Hậu cần</option>
-                                            <option>Vệ sinh</option>
-                                            <option>Bảo vệ</option>
-                                            <option>Giao hàng</option>
-                                            <option>Khác</option>
-                                        </select>
-                                    </td>
-                                    <td class="pri"><input type="text" style="width: 50px;"> </td>
-                                    <td class="dead"><input type="text" style="width: 50px;"> </td>
-                                    <td class="up"> <select class="custom-select mb-3">
-                                            <option value="" selected>Có</option>
-                                            <option value="">Không</option>
-                                        </select> </td>
-                                    <td class="up"><input type="text" style="width: 50px;"> </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                                // Display the chart inside the <div> element with id="piechart"
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <div id="piechart1"></div>
+
+                        <script type="text/javascript">
+                            // Load google charts
+                            google.charts.load('current', {
+                                'packages': ['corechart']
+                            });
+                            google.charts.setOnLoadCallback(drawChart);
+
+                            // Draw the chart and set the chart values
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['Task', 'Hours per Day'],
+                                    ['Đang làm', 6],
+                                    ['Đang trễ', 2],
+                                    ['Đã hoàn thành(Có trễ)', 1],
+                                    ['Đã hoàn thành(Đúng hạn)', 2],
+                                ]);
+
+                                // Optional; add a title and set the width and height of the chart
+                                var options = {
+                                    'title': 'Công việc nhóm',
+                                    'width': 750,
+                                    'height': 500
+                                };
+
+                                // Display the chart inside the <div> element with id="piechart"
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+                                chart.draw(data, options);
+                            }
+                        </script>
                     </div>
                 </div>
                 <br>
@@ -461,7 +421,6 @@
                         </div>
                     </div>
                 </footer>
-
             </div>
         </main>
         <!-- page-content" -->
@@ -477,8 +436,6 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
     <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
-
 </body>
 
 </html>
