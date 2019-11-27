@@ -64,6 +64,18 @@
                     <span class="text-item">Báo cáo</span>
                 </a>
             </div>
+            <div class="item canhan">
+                <a>
+                    <span class="icon-item list"></span>
+                    <span class="text-item">Công việc cá nhân</span>
+                </a>
+            </div>
+            <div class="item">
+                <a>
+                    <span class="icon-item bill"></span>
+                    <span class="text-item">Quản lý công việc nhân viên</span>
+                </a>
+            </div>
             <div class="item">
                 <a>
                     <span class="icon-item setting"></span>
@@ -108,7 +120,9 @@
         </div>
     </div>
     <!--Phần content-->
-    <div class="includetrang"></div>
+    <div id="trangchu" class="includetrang"></div>
+    <div class="includequanlycongviec them"></div>
+    <div class="includechitiet them"></div>
     <div id="themngay" class="them includengay"></div>
     <div id="themthang" class="them includethang"></div>
     <div id="themquy" class="them includequy"></div>
@@ -151,5 +165,7 @@
         $(".includequy").load("theoquy.html");
         $(".includenam").load("theonam.html");
         $(".includesanpham").load("theosanpham.html");
+        $(".includequanlycongviec").load("quanlycongviec.html");
+        $(".includechitiet").load("chitietcongviec.html");
     });
 </script>

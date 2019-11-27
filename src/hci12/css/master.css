@@ -1,0 +1,116 @@
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  background-color: #F3F5F8;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  color: #676a6d; }
+
+#wrapper .sidebar {
+  width: 260px;
+  height: 100%;
+  float: left;
+  background-color: #1BA1E2;
+  position: fixed;
+  left: 0; }
+
+#wrapper .main {
+  width: calc(100% - 260px);
+  left: 0;
+  position: relative;
+  float: right;
+  background-color: #f5f5fa; }
+
+#wrapper #sidebar-nav,#wrapper .main {
+  padding-top: 80px; }
+
+/********************
+ * TOP NAVIGATION
+ ********************/
+.navbar-default {
+  background-color: #1BA1E2; 
+}
+
+.navbar-default .brand {
+  float: left;
+  padding: 30px 39px;
+  background-color: #fff; 
+}
+
+.navbar-nav > li > a {
+  padding: 28px 20px; }
+.navbar-nav > li > a > i {
+  font-size: 22px;
+  margin-right: 2px;
+  vertical-align: middle; 
+}
+.navbar-nav > li > a > i.icon-submenu {
+  margin-left: 2px;
+  margin-right: 0;
+  font-size: 10px;
+  position: relative;
+  top: 2px; 
+}
+.navbar-nav > li > a > span {
+  position: relative;
+  top: 2px; 
+}
+.navbar-nav > li > a img {
+width: 22px;
+margin-right: 2px; 
+}
+.sidebar {
+  z-index: 9; 
+}
+.sidebar .nav > li > a {
+  padding: 18px 30px;
+  color: #000000;
+  border-left: 5px solid transparent; 
+}
+
+ul{
+  list-style: none;
+  margin: 0px;
+}
+
+.table-data{
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.btn-add{
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-body p{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.checkListbank, .checkListDate{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.checkListbank ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
+
+.checkListbank ul li select{
+  width: 200px;
+}
+
+.checkListDate ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
+img {
+  width: 260px;
+}

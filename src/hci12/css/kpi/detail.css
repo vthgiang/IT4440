@@ -1,0 +1,9 @@
+.checkListbank, .checkListDate{
+  margin-top: 20px;
+  overflow: hidden;
+}
+.checkListbank ul li{
+  float: left;
+  margin-right: 20px;
+  line-height: 30px;
+}
