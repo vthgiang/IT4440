@@ -10,20 +10,15 @@
     <title>Trang chủ</title>
 
     <!-- using online links -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
-
-    <!-- using local links -->
-    <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/sidebar-themes.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
 </head>
 
 <body>
@@ -84,15 +79,15 @@
                                         <a href="viecnhom.html">Công việc nhóm
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
                                     </li>
                                     <li>
                                         <a href="workingreport.html">Báo cáo công việc trong ngày
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
                                     </li>
-
+                                    <li>
+                                        <a href="thongke.html">Thống kê</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -105,9 +100,7 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">Danh sách nhân viên
-
-                                        </a>
+                                        <a href="#">Danh sách nhân viên</a>
                                     </li>
                                     <li>
                                         <a href="#">Theo dõi tiến độ công việc trong ngày</a>
@@ -126,25 +119,33 @@
                             <div class="sidebar-submenu">
                                 <ul>
                                     <li>
-                                        <a href="#">General</a>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
                                     </li>
                                     <li>
-                                        <a href="#">Panels</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Tables</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Icons</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Forms</a>
+                                        <a href="create-report.html">Tạo báo cáo</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-
-
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- sidebar-menu  -->
@@ -350,17 +351,17 @@
                 <hr>
                 <footer>
                     <div class="row ">
-                        <div class="col-md-12">
+                        <div class="col-md-4">
                             <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-4">
                             <address>
                                 <strong>HUST, University.</strong><br>
                                 1 Đại Cồ Việt, Hai Bà Trưng <br>
                                 Hà Nội, Việt Nam<br>
                             </address>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-4">
                             <a href="#" target="_blank"
                                 class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
                                 <i class="fab fa-github" aria-hidden="true"></i>
@@ -376,7 +377,6 @@
                         </div>
                     </div>
                 </footer>
-
             </div>
         </main>
         <!-- page-content" -->
@@ -391,15 +391,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
-    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-
-    <!-- using local scripts -->
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script> -->
-
-
     <script src="js/main.js"></script>
 </body>
 

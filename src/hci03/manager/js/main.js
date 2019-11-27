@@ -1,7 +1,7 @@
-jQuery(function ($) {
+jQuery(function($) {
 
     // Dropdown menu
-    $(".sidebar-dropdown > a").click(function () {
+    $(".sidebar-dropdown > a").click(function() {
         $(".sidebar-submenu").slideUp(200);
         if ($(this).parent().hasClass("active")) {
             $(".sidebar-dropdown").removeClass("active");
@@ -15,23 +15,23 @@ jQuery(function ($) {
     });
 
     //toggle sidebar
-    $("#toggle-sidebar").click(function () {
+    $("#toggle-sidebar").click(function() {
         $(".page-wrapper").toggleClass("toggled");
     });
     //Pin sidebar
-    $("#pin-sidebar").click(function () {
+    $("#pin-sidebar").click(function() {
         if ($(".page-wrapper").hasClass("pinned")) {
             // unpin sidebar when hovered
             $(".page-wrapper").removeClass("pinned");
-            $("#sidebar").unbind( "hover");
+            $("#sidebar").unbind("hover");
         } else {
             $(".page-wrapper").addClass("pinned");
             $("#sidebar").hover(
-                function () {
+                function() {
                     console.log("mouseenter");
                     $(".page-wrapper").addClass("sidebar-hovered");
                 },
-                function () {
+                function() {
                     console.log("mouseout");
                     $(".page-wrapper").removeClass("sidebar-hovered");
                 }
@@ -42,13 +42,13 @@ jQuery(function ($) {
 
 
     //toggle sidebar overlay
-    $("#overlay").click(function () {
+    $("#overlay").click(function() {
         $(".page-wrapper").toggleClass("toggled");
     });
 
     //switch between themes 
     var themes = "default-theme legacy-theme chiller-theme ice-theme cool-theme light-theme";
-    $('[data-theme]').click(function () {
+    $('[data-theme]').click(function() {
         $('[data-theme]').removeClass("selected");
         $(this).addClass("selected");
         $('.page-wrapper').removeClass(themes);
@@ -57,7 +57,7 @@ jQuery(function ($) {
 
     // switch between background images
     var bgs = "bg1 bg2 bg3 bg4";
-    $('[data-bg]').click(function () {
+    $('[data-bg]').click(function() {
         $('[data-bg]').removeClass("selected");
         $(this).addClass("selected");
         $('.page-wrapper').removeClass(bgs);
@@ -65,13 +65,13 @@ jQuery(function ($) {
     });
 
     // toggle background image
-    $("#toggle-bg").change(function (e) {
+    $("#toggle-bg").change(function(e) {
         e.preventDefault();
         $('.page-wrapper').toggleClass("sidebar-bg");
     });
 
     // toggle border radius
-    $("#toggle-border-radius").change(function (e) {
+    $("#toggle-border-radius").change(function(e) {
         e.preventDefault();
         $('.page-wrapper').toggleClass("boder-radius-on");
     });
@@ -86,4 +86,13 @@ jQuery(function ($) {
         $(".sidebar-content").addClass("desktop");
 
     }
+
+    // get cong viec ca nhan
+    $(document).ready(function() {
+        $("#btn").click(function() {
+            alert("Text: " + $("#test").text());
+        });
+    });
+
+
 });
