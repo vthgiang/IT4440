@@ -14,6 +14,7 @@
     <link href="Css/dialog.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="includeheader"></div>
     <!--Phần menu-->
     <div class="menu">
         <div class="logo">
@@ -38,40 +39,50 @@
             </div>
             <div id="child" class="child">
                 <div class="child-item ngay">
-                    <span class="icon-child"></span>
-                    <span class="text-child">Doanh thu theo ngày</span>
+                    <a href="theongay.html">
+                        <span class="icon-child"></span>
+                        <span class="text-child">Doanh thu theo ngày</span>
+                    </a>
                 </div>
                 <div class="child-item thang">
-                    <span class="icon-child"></span>
-                    <span class="text-child">Doanh thu theo tháng</span>
+                    <a href="theothang.html">
+                        <span class="icon-child"></span>
+                        <span class="text-child">Doanh thu theo tháng</span>
+                    </a>
                 </div>
                 <div class="child-item quy">
-                    <span class="icon-child"></span>
-                    <span class="text-child">Doanh thu theo quý</span>
+                    <a href="theoquy.html">
+                        <span class="icon-child"></span>
+                        <span class="text-child">Doanh thu theo quý</span>
+                    </a>
                 </div>
                 <div class="child-item nam">
-                    <span class="icon-child"></span>
-                    <span class="text-child">Doanh thu theo năm</span>
+                    <a href="theonam.html">
+                        <span class="icon-child"></span>
+                        <span class="text-child">Doanh thu theo năm</span>
+                    </a>
                 </div>
                 <div class="child-item sanpham">
-                    <span class="icon-child"></span>
-                    <span class="text-child">Doanh thu theo sản phẩm</span>
+                    <a href="theosanpham.html">
+                        <span class="icon-child"></span>
+                        <span class="text-child">Doanh thu theo sản phẩm</span>
+                    </a>
                 </div>
             </div>
             <div class="item">
-                <a>
+                <a href="baocao.html">
                     <span class="icon-item report"></span>
                     <span class="text-item">Báo cáo</span>
                 </a>
             </div>
             <div class="item canhan">
-                <a>
+                <a href="quanlycongviec.html">
                     <span class="icon-item list"></span>
                     <span class="text-item">Công việc cá nhân</span>
                 </a>
             </div>
             <div class="item">
-                <a>
+                <a href="phanchiacongvec.html">
                     <span class="icon-item bill"></span>
                     <span class="text-item">Quản lý công việc nhân viên</span>
                 </a>
@@ -96,76 +107,159 @@
             </div>
         </div>
     </div>
-    <!--Phần header-->
-    <div class="header">
-        <div class="nav-header">
-            <div class="search">
-                <div><input placeholder="Nhập dữ liệu tìm kiếm" /></div>
-                <div><button>Tìm kiếm</button></div>
-            </div>
-        </div>
-        <div class="header-right">
-            <div>
-                <select class="language">
-                    <option>Tiếng việt (tiếng việt)</option>
-                    <option>English(US)</option>
-                </select>
-            </div>
-            <div class="icon-notice"></div>
-            <div class="icon-header"></div>
-            <div class="account">
-                <div class="icon-user"></div>
-                <div class="information"><span>Nguyễn Văn Thắng</span></div>
-            </div>
-        </div>
-    </div>
     <!--Phần content-->
-    <div id="trangchu" class="includetrang"></div>
-    <div class="includequanlycongviec them"></div>
-    <div class="includechitiet them"></div>
-    <div id="themngay" class="them includengay"></div>
-    <div id="themthang" class="them includethang"></div>
-    <div id="themquy" class="them includequy"></div>
-    <div id="themnam" class="them includenam"></div>
-    <div id="themsanpham" class="them includesanpham"></div>
-    <!--Phần dialog request-1-->
-    <div class="dialog-request" id="dialog-request">
-        <div class="main-request">
-            <a>
-                <span class="icon-request"></span>
-                <span class="tex-request">Bạn có muốn xuất file thống kê của ngày 10/10/2019 không?</span>
-            </a>
+    <div class="content">
+        <!--Phần header-content-->
+        <div class="header-content">
+            <div class="text-header-content"><b>Trang chủ kế toán bán hàng</b></div>
         </div>
-        <div class="footer-request">
-            <button class="button-request-c">Có</button>
-            <button class="button-request-k">Không</button>
+        <!--Phần menu-content-->
+        <div class="menu-content">
+            <div class="text-menu"><b>Tiến độ làm việc của các nhân viên</b></div>
+        </div>
+        <!--Phần table-->
+        <div class="tbt-content">
+            <table class="main-table">
+                <thead class="row-table">
+                    <tr>
+                        <th>
+                            <div class="text-row">STT</div>
+                        </th>
+                        <th>
+                            <div class="text-row">Tên nhân viên</div>
+                        </th>
+                        <th>
+                            <div class="text-row">Số lượng theo ngày</div>
+                        </th>
+                        <th>
+                            <div class="text-row">Số lượng theo tháng</div>
+                        </th>
+                        <th>
+                            <div class="text-row">Số lượng theo năm</div>
+                        </th>
+                        <th>
+                            <div class="text-row">Tiến độ</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody style="text-align: center">
+                    <tr style="background-color: #ffffff;">
+                        <td>1</td>
+                        <td>  <b>Nguyễn Văn Thắng</b>  </td>
+                        <td><b>5</b></td>
+                        <td><b>100</b></td>
+                        <td><b>1000</b></td>
+                        <td><b>100%</b></td>
+                    </tr>
+                    <tr style="background-color: #d5d3d3;">
+                        <td>2</td>
+                        <td>  Lâm Phúc Anh Tú  </td>
+                        <td>5</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>96%</td>
+                    </tr>
+                    <tr style="background-color: #ffffff;">
+                        <td>3</td>
+                        <td>  Hồ Văn Toàn  </td>
+                        <td>5</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>98%</td>
+                    </tr>
+                    <tr style="background-color: #d5d3d3;">
+                        <td>4</td>
+                        <td>Bùi Đức Anh</td>
+                        <td>5</td>
+                        <td>100</td>
+                        <td>1000</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td><b>Tổng</b></td>
+                        <td></td>
+                        <td><b>20</b></td>
+                        <td><b>400</b></td>
+                        <td><b>4000</b></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="hoatdong">
+            <div class="header-hoatdong">
+                <div class="icon-hoatdong">
+                </div>
+                <div class="text-hoatdong"><b>Hoạt động</b></div>
+            </div>
+            <div class="menu-hoatdong">
+                <div class="date-hoatdong">Hôm nay 08:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã thêm nhiệm vụ cho từng thành viên trong ngày 21-11-2019</div>
+                </div>
+                <div class="date-hoatdong">Hôm nay 07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">Hôm qua 07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Lâm Phúc Anh Tú</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Bùi Đức Anh</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Hồ Văn Toàn</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
+                <div class="one-menu">
+                    <div class="icon-menu"></div>
+                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
+                </div>
+                <div class="one-menu back">
+                    <div class="text--"><b style="color: #0094ff">Xem toàn bộ hoạt động...</b></div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--Phần dialog request-2-->
-    <div class="dialog-request" id="dialog-request-2">
-        <div class="main-request-1">
-            <div class="tex-request-1">Xuất file thành công</div>
-        </div>
-        <div class="footer-request">
-            <button class="button-request-c-1">OK</button>
-        </div>
-    </div>
+
     <script src="Scripts/libraries/jquery-3.4.1.js"></script>
     <script src="Scripts/libraries/jquery-1.12.4.js"></script>
     <script src="Scripts/libraries/jquery-ui.js"></script>
     <script src="Scripts/libraries/jquery.validate.min.js"></script>
     <script src="Scripts/views/base.js"></script>
+    <script src="Scripts/views/controller.js"></script>
 </body>
 </html>
 <script>
     $(function () {
-        $(".includetrang").load("trangchu.html");
-        $(".includengay").load("theongay.html");
-        $(".includethang").load("theothang.html");
-        $(".includequy").load("theoquy.html");
-        $(".includenam").load("theonam.html");
-        $(".includesanpham").load("theosanpham.html");
-        $(".includequanlycongviec").load("quanlycongviec.html");
-        $(".includechitiet").load("chitietcongviec.html");
+        $(".includeheader").load("header.html");
     });
 </script>
