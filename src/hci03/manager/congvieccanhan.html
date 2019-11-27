@@ -90,6 +90,9 @@
                                         </a>
 
                                     </li>
+                                    <li>
+                                        <a href="thongke.html">Thống kê</a>
+                                    </li>
 
                                 </ul>
                             </div>
@@ -143,7 +146,10 @@
                                         <a href="chat.html">Chat</a>
                                     </li>
                                     <li>
-                                        <a href="#">Email</a>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -431,11 +437,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated">
+                                            <input type="text" class="form-control" id="updated"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
                                         <div class="form-group">
                                             <label for="comment">Descrpition:</label>
-                                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                                            <textarea class="form-control" rows="5" id="comment"
+                                                placeholder="Nội dung mô tả"></textarea>
                                         </div>
 
                                     </div>
@@ -461,7 +469,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline">
+                                            <input type="text" class="form-control" id="deadline"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
                                     </div>
 
@@ -523,81 +532,90 @@
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <div class="row container-fluid">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="comment">Descrpition:</label>
-                                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                                        </div>
+                                <form action="#" class="needs-validation" novalidate>
+                                    <div class="row container-fluid">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="usr">Updated:</label>
+                                                <input type="text" class="form-control" id="updated"
+                                                    placeholder="yyyy-mm-dd hh:mm">
 
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="status">Loại công việc:</label>
-                                            <select name="status" class="custom-select mb-3">
-                                                <option selected>Hậu cần</option>
-                                                <option value="Đang làm">Vệ sinh</option>
-                                                <option value="Hoàn thành">Bảo vệ</option>
-                                                <option value="Đang trễ">Giao hàng</option>
-                                                <option value="Đang trễ">Khác</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="priority">Khu vực:</label>
-                                            <select name="priority" class="custom-select mb-3">
-                                                <option selected>Nhà ăn</option>
-                                                <option value="Trung bình">Nhà kho</option>
-                                                <option value="Thấp">Phòng họp</option>
-
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline">
-                                        </div>
-                                    </div>
-
-
-
-                                </div>
-                                <div class="row container-fluid">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="status">Status:</label>
-                                            <div id="status">
-                                                <select name="status" class="custom-select mb-3" id="statuso">
-                                                    <option value="Mới" selected>Mới</option>
-                                                    <option value="Đang làm">Đang làm</option>
-                                                    <option value="Hoàn thành">Hoàn thành</option>
-                                                    <option value="Đang trễ">Đang trễ</option>
-                                                </select>
+                                                <div class="invalid-feedback">Vui lòng điền thông tin</div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="comment">Descrpition:</label>
+                                                <textarea class="form-control" rows="5" id="comment"
+                                                    placeholder="Nội dung mô tả"></textarea>
+                                                <div class="invalid-feedback">Vui lòng điền thông tin</div>
                                             </div>
 
                                         </div>
-                                        <div class="form-group">
-                                            <label for="priority">Priority:</label>
-                                            <div id="priority">
-                                                <select name="priority" class="custom-select mb-3" id="priorityo">
-                                                    <option value="Cao" selected>Cao</option>
-                                                    <option value="Trung bình">Trung bình</option>
-                                                    <option value="Thấp">Thấp</option>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="status">Loại công việc:</label>
+                                                <select name="status" class="custom-select mb-3">
+                                                    <option selected>Hậu cần</option>
+                                                    <option value="Đang làm">Vệ sinh</option>
+                                                    <option value="Hoàn thành">Bảo vệ</option>
+                                                    <option value="Đang trễ">Giao hàng</option>
+                                                    <option value="Đang trễ">Khác</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="priority">Khu vực:</label>
+                                                <select name="priority" class="custom-select mb-3">
+                                                    <option selected>Nhà ăn</option>
+                                                    <option value="Trung bình">Nhà kho</option>
+                                                    <option value="Thấp">Phòng họp</option>
 
                                                 </select>
                                             </div>
-
+                                            <div class="form-group">
+                                                <label for="deadline">Deadline:</label>
+                                                <input type="text" class="form-control" id="deadline"
+                                                    placeholder="yyyy-mm-dd hh:mm">
+                                                <div class="invalid-feedback">Vui lòng điền thông tin</div>
+                                            </div>
                                         </div>
 
+
+
                                     </div>
-                                </div>
+                                    <div class="row container-fluid">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="status">Status:</label>
+                                                <div id="status">
+                                                    <select name="status" class="custom-select mb-3" id="statuso">
+                                                        <option value="Mới" selected>Mới</option>
+                                                        <option value="Đang làm">Đang làm</option>
+                                                        <option value="Hoàn thành">Hoàn thành</option>
+                                                        <option value="Đang trễ">Đang trễ</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="priority">Priority:</label>
+                                                <div id="priority">
+                                                    <select name="priority" class="custom-select mb-3" id="priorityo">
+                                                        <option value="Cao" selected>Cao</option>
+                                                        <option value="Trung bình">Trung bình</option>
+                                                        <option value="Thấp">Thấp</option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
 
                             <!-- Modal footer -->
                             <div class="modal-footer">
-                                <button id="btnup1" type="button" class="btn btn-outline-success" data-dismiss="modal">
+                                <button id="btnup1" type="submit" class="btn btn-outline-success" data-dismiss="modal">
                                     Cập nhật</button>
                             </div>
 
@@ -652,7 +670,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
-    <script src="js/main.js"></script>s
+    <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 
 </body>

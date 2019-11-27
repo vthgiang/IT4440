@@ -88,7 +88,10 @@
                                         <a href="workingreport.html">Báo cáo công việc trong ngày
                                             <span class="badge badge-pill badge-success">15</span>
                                         </a>
-
+                                    </li>
+                                    <li>
+                                        <a href="thongke.html">Thống kê
+                                        </a>
                                     </li>
 
                                 </ul>
@@ -143,7 +146,10 @@
                                         <a href="chat.html">Chat</a>
                                     </li>
                                     <li>
-                                        <a href="#">Email</a>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
                                     </li>
                                 </ul>
                             </div>
@@ -302,7 +308,7 @@
                 <div class="row">
                     <div class="form-group col-md-12">
 
-                        <table class="table table-hover">
+                        <table class="table table-hover" id="listtb">
                             <thead>
                                 <tr>
                                     <th>Id</th>
@@ -315,88 +321,88 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><a href="#" data-toggle="modal" data-target="#myModal">00001</a></td>
-                                    <td>Họp các tổ trưởng</td>
-                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
-                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
-                                    <td>HoangPM, HungNV</td>
-                                    <td>2019-13-11 14:00</td>
-                                    <td>2019-13-11 09:00</td>
+                                <tr id="00001">
+                                    <td class="id"><a href="#" data-toggle="modal" data-target="#myModal">00001</a></td>
+                                    <td class="sub">Họp các tổ trưởng</td>
+                                    <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td class="mem">HoangPM, HungNV</td>
+                                    <td class="dead">2019-13-11 14:00</td>
+                                    <td class="up">2019-13-11 09:00</td>
                                 </tr>
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00002</a></td>
-                                    <td>Họp với phòng nhân sự</td>
-                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
-                                    <td><span class="badge badge-pill badge-danger">Cao</span></td>
-                                    <td>TienNH, HungNV</td>
-                                    <td>2019-13-11 10:00</td>
-                                    <td>2019-13-11 08:00</td>
+                                <tr id="00002">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00002</a></td>
+                                    <td class="sub">Họp với phòng nhân sự</td>
+                                    <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-danger">Cao</span></td>
+                                    <td class="mem">TienNH, HungNV</td>
+                                    <td class="dead">2019-13-11 10:00</td>
+                                    <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00003</a></td>
-                                    <td>Kiểm tra chất lượng nhà vệ sinh</td>
-                                    <td><span class="badge badge-pill badge-success">Hoàn thành</span></td>
-                                    <td><span class="badge badge-pill badge-success">Thấp</span></td>
-                                    <td>TuyenTK, HungNV, NamDL</td>
-                                    <td>2019-13-11 08:00</td>
-                                    <td>2019-13-11 08:00</td>
+                                <tr id="00003">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00003</a></td>
+                                    <td class="sub">Kiểm tra chất lượng nhà vệ sinh</td>
+                                    <td class="sta"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-success">Thấp</span></td>
+                                    <td class="mem">TuyenTK, HungNV, NamDL</td>
+                                    <td class="dead">2019-13-11 08:00</td>
+                                    <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00004</a></td>
-                                    <td>Lên kế hoạch tổ chức sinh nhật công ty</td>
-                                    <td><span class="badge badge-pill badge-warning">Đang làm</span></td>
-                                    <td><span class="badge badge-pill badge-success">Thấp</span></td>
-                                    <td>HoangPM, HungNV, TuyenTK</td>
-                                    <td>2019-20-11 10:00</td>
-                                    <td>2019-13-11 08:00</td>
+                                <tr id="00004">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00004</a></td>
+                                    <td class="sub">Lên kế hoạch tổ chức sinh nhật công ty</td>
+                                    <td class="sta"><span class="badge badge-pill badge-warning">Đang làm</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-success">Thấp</span></td>
+                                    <td class="mem">HoangPM, HungNV, TuyenTK</td>
+                                    <td class="dead">2019-20-11 10:00</td>
+                                    <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00005</a></td>
-                                    <td>Họp tổ bảo vệ</td>
-                                    <td><span class="badge badge-pill badge-success">Hoàn thành</span></td>
-                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
-                                    <td>HoangPM, TienNH</td>
-                                    <td>2019-12-11 14:00</td>
-                                    <td>2019-12-11 14:00</td>
+                                <tr id="00005">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00005</a></td>
+                                    <td class="sub">Họp tổ bảo vệ</td>
+                                    <td class="sta"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td class="mem">HoangPM, TienNH</td>
+                                    <td class="dead">2019-12-11 14:00</td>
+                                    <td class="up">2019-12-11 14:00</td>
 
                                 </tr>
 
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00006</a></td>
-                                    <td>Phê duyệt kế hoạch thay đổi menu cơm trưa</td>
-                                    <td><span class="badge badge-pill badge-warning">Đang làm</span></td>
-                                    <td><span class="badge badge-pill badge-danger">Cao</span></td>
-                                    <td>TienNH, NamDL</td>
-                                    <td>2019-15-11 10:00</td>
-                                    <td>2019-13-11 08:00</td>
+                                <tr id="00006">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00006</a></td>
+                                    <td class="sub">Phê duyệt kế hoạch thay đổi menu cơm trưa</td>
+                                    <td class="sta"><span class="badge badge-pill badge-warning">Đang làm</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-danger">Cao</span></td>
+                                    <td class="mem">TienNH, NamDL</td>
+                                    <td class="dead">2019-15-11 10:00</td>
+                                    <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
 
                             <tbody>
-                                <tr>
-                                    <td><a href="" data-toggle="modal" data-target="#myModal">00007</a></td>
-                                    <td>Training nhân viên mới</td>
-                                    <td><span class="badge badge-pill badge-primary">Mới</span></td>
-                                    <td><span class="badge badge-pill badge-warning">Trung bình</span></td>
-                                    <td>TuyenTK, HungNV</td>
-                                    <td>2019-01-12 14:00</td>
-                                    <td>2019-13-11 08:00</td>
+                                <tr id="00007">
+                                    <td class="id"><a href="" data-toggle="modal" data-target="#myModal">00007</a></td>
+                                    <td class="sub">Training nhân viên mới</td>
+                                    <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
+                                    <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
+                                    <td class="mem">TuyenTK, HungNV</td>
+                                    <td class="dead">2019-01-12 14:00</td>
+                                    <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -438,11 +444,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated">
+                                            <input type="text" class="form-control" id="updated"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
                                         <div class="form-group">
                                             <label for="comment">Descrpition:</label>
-                                            <textarea class="form-control" rows="4" id="comment"></textarea>
+                                            <textarea class="form-control" rows="4" id="comment"
+                                                placeholder="Nội dung mô tả"></textarea>
                                         </div>
 
                                         <div class="form-group">
@@ -473,7 +481,8 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline">
+                                            <input type="text" class="form-control" id="deadline"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
                                     </div>
 
@@ -506,6 +515,8 @@
                                             </div>
 
                                         </div>
+
+
 
                                     </div>
                                 </div>
@@ -539,11 +550,13 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated">
+                                            <input type="text" class="form-control" id="updated"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
                                         <div class="form-group">
                                             <label for="comment">Descrpition:</label>
-                                            <textarea class="form-control" rows="4" id="comment"></textarea>
+                                            <textarea class="form-control" rows="4" id="comment"
+                                                placeholder="Nội dung mô tả"></textarea>
                                         </div>
 
                                         <div class="form-group">
@@ -555,7 +568,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label for="status">Loại công việc:</label>
-                                            <select name="status" class="custom-select mb-3">
+                                            <select name="status" class="custom-select mb-3" id="sta1">
                                                 <option selected>Hậu cần</option>
                                                 <option value="Đang làm">Vệ sinh</option>
                                                 <option value="Hoàn thành">Bảo vệ</option>
@@ -565,7 +578,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="priority">Khu vực:</label>
-                                            <select name="priority" class="custom-select mb-3">
+                                            <select name="priority" class="custom-select mb-3" id="pri1">
                                                 <option selected>Nhà ăn</option>
                                                 <option value="Trung bình">Nhà kho</option>
                                                 <option value="Thấp">Phòng họp</option>
@@ -574,8 +587,12 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline">
+                                            <input type="text" class="form-control" id="deadline"
+                                                placeholder="yyyy-mm-dd hh:mm">
                                         </div>
+
+
+
                                     </div>
 
 
@@ -607,7 +624,6 @@
                                             </div>
 
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -669,6 +685,7 @@
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
         </script>
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
