@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+  <title>Email Application</title>
+
+  <!-- using online links -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar-themes.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+  <!-- core dependcies css -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+  <!-- page css -->
+  <link href="assets/vendor/selectize/dist/css/selectize.default.css" rel="stylesheet">
+  <link href="assets/vendor/summernote/dist/summernote-bs4.css" rel="stylesheet">
+  <link href="assets/vendor/sweetalert/lib/sweet-alert.css" rel="stylesheet">
+
+  <!-- core css -->
+  <link href="assets/css/themify-icons.css" rel="stylesheet">
+  <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <!-- sidebar-brand  -->
+        <div class="sidebar-item sidebar-brand">
+          <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+        </div>
+
+        <!-- sidebar-header  -->
+        <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Hoang
+              <strong>Pham</strong>
+            </span>
+            <span class="user-role">Tổ trưởng</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-item sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-menu  -->
+        <div class=" sidebar-item sidebar-menu">
+          <ul>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer-alt"></i>
+                <span class="menu-text">Quản lý công việc</span>
+                <span class="badge badge-pill badge-warning">New</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="congvieccanhan.html">Công việc cá nhân
+                      <span class="badge badge-pill badge-success">10</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="viecnhom.html">Công việc nhóm
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="workingreport.html">Báo cáo công việc trong ngày
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="thongke.html">Thống kê</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-address-book"></i>
+                <span class="menu-text">Quản lý nhân viên</span>
+                <span class="badge badge-pill badge-danger">3</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Danh sách nhân viên</a>
+                  </li>
+                  <li>
+                    <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                  </li>
+                  <li>
+                    <a href="#">Kỉ luật, khen thưởng</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span class="menu-text">Quản lý báo cáo</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="report_management.html">Tổng hợp báo cáo</a>
+                  </li>
+                  <li>
+                    <a href="create-report.html">Tạo báo cáo</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-mail-bulk"></i>
+                <span class="menu-text">Liên lạc</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="chat.html">Chat</a>
+                  </li>
+                  <li>
+                    <a href="email.html">Email</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-footer  -->
+      <div class="sidebar-footer">
+        <div class="dropdown">
+
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+            <div class="notifications-header">
+              <i class="fa fa-bell"></i> Notifications
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-check text-success border border-success"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
+                  <div class="notification-time">
+                    6 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation text-info border border-info"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                    máy in</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+            <div class="messages-header">
+              <i class="fa fa-envelope"></i> Messages
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>HungNV</strong>
+                  </div>
+                  <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TuyenTK</strong>
+                  </div>
+                  <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TienNH</strong>
+                  </div>
+                  <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all messages</a>
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Setting</a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-power-off"></i>
+          </a>
+        </div>
+        <div class="pinned-footer">
+          <a href="#">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- page-content -->
+    <main class="page-content">
+      <div class="container-fluid">
+        <!--INSERT NEW CONTENT START HERE-->
+        <!-- Aside START -->
+        <div class="aside ml-4">
+          <div class="aside-toggle">
+            <i class="chevron-right mdi mdi-chevron-right"></i>
+            <i class="chevron-left mdi mdi-chevron-left"></i>
+          </div>
+          <div class="aside-wrapper">
+            <div class="m-t-2">
+              <button data-toggle="modal" data-target="#side-modal-rep"
+                class="btn btn-success btn-rounded btn-float btn-outline btn-block m-b-30">
+                <i class="mdi mdi-plus"></i>
+                <span>Soạn thư</span>
+              </button>
+              <p class="text-semibold m-b-20 font-size-15">
+                <a class="text-gray" href="#">
+                  <i class="mdi mdi-inbox m-r-10"></i>
+                  <span style="color: darkturquoise;">Hộp thư đến</span>
+                </a>
+              </p>
+              <p class="text-semibold m-b-20 font-size-15 ">
+                <a class="text-gray" href="#">
+                  <i class="mdi mdi-send m-r-10"></i>
+                  <span>Đã gửi</span>
+                </a>
+              </p>
+              <p class="text-semibold m-b-20 font-size-15 ">
+                <a class="text-gray" href="#">
+                  <i class="mdi mdi-comment-alert-outline m-r-10"></i>
+                  <span>Ẩn</span>
+                </a>
+              </p>
+              <p class="text-semibold m-b-20 font-size-15 ">
+                <a class="text-gray" href="#">
+                  <i class="mdi mdi-pencil m-r-10"></i>
+                  <span>Nháp</span>
+                </a>
+              </p>
+              <p class="text-semibold m-b-20 font-size-15 ">
+                <a class="text-gray" href="#">
+                  <i class="ti-trash m-r-10"></i>
+                  <span>Đã xóa</span>
+                </a>
+              </p>
+              <p class="text-semibold m-b-20 font-size-15 ">
+                <a class="text-gray" href="#">
+                  <i class="mdi mdi-archive m-r-10"></i>
+                  <span>Lưu trữ</span>
+                </a>
+              </p>
+            </div>
+            <div class="m-t-50">
+              <p class="font-size-11 text-uppercase p-b-15">Nhóm</p>
+              <p class="text-semibold m-b-20">
+                <span class="status info m-r-5"></span>
+                <a class="text-gray" href="#">Công việc</a>
+              </p>
+              <p class="text-semibold m-b-20">
+                <span class="status primary m-r-5"></span>
+                <a class="text-gray" href="#">Riêng tư</a>
+              </p>
+              <p class="text-semibold m-b-20">
+                <span class="status danger m-r-5"></span>
+                <a class="text-gray" href="#">Quan trọng</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Aside END -->
+        <!-- Content Wrapper START -->
+        <div class="main-content">
+          <div class="email-wrapper row">
+            <div class="email-list">
+              <div class="email-list-tools">
+                <ul class="tools pull-left">
+                  <li>
+                    <a href="#">
+                      <span class="font-size-14">Đánh dấu đã đọc</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="tools text-right">
+                  <li>
+                    <a href="#" title="Đánh dấu quan trọng" id="mark">
+                      <i class="ti-star"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="Tạm ẩn" data-toggle="modal" data-target="#modal-hide">
+                      <i class="ti-timer"></i>
+                    </a>
+                  </li>
+                  <div class="modal fade text-left" id="modal-hide">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="m-b-15">Ẩn thư?</h4>
+                          <p>Bạn có chắc chắn muốn ẩn, thư này sẽ nằm trong mục ẩn của bạn?</p>
+                          <div class="m-t-20 text-right">
+                            <button class="btn btn-default" data-dismiss="modal">Hủy</button>
+                            <button class="btn btn-primary" data-dismiss="modal" id="hide_email">Ok</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <li>
+                    <a href="#" title="Xóa" data-toggle="modal" data-target="#modal-delete"><i class="ti-trash"></i></a>
+                  </li>
+                  <div class="modal fade text-left" id="modal-delete">
+                    <div class="modal-dialog modal-sm" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="m-b-15">Xóa thư?</h4>
+                          <p>Bạn có chắc chắn muốn xóa, thư này sẽ nằm trong thùng rác của bạn?</p>
+                          <div class="m-t-20 text-right">
+                            <button class="btn btn-default" data-dismiss="modal">Hủy</button>
+                            <button class="btn btn-primary" data-dismiss="modal" id="delete_email">Xóa</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="email-list-wrapper scrollable">
+                <ul class="email-list-item">
+                  <li class="email-item active" id="email_select">
+                    <div class="email-avatar">
+                      <i class="mdi mdi-star" id="star"></i>
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-8.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Thu Hoài</p>
+                        <p class="subject">
+                          Công việc cuối tuần...
+                        </p>
+                        <p>
+                          Chào Hưng, tôi đang cần...
+                        </p>
+                        <span class="datetime">8 phút trước</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-2.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Vũ Thị Hương Giang</p>
+                        <p class="subject">
+                          Hợp đồng mua bán dụng cụ ...
+                        </p>
+                        <p class="">
+                          Chào Hưng, chiều nay họp...
+                        </p>
+                        <span class="datetime">17 phút trước</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-1.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Nguyễn Trọng Nam</p>
+                        <p class="subject">
+                          Yêu cầu dụng cụ bảo vệ...
+                        </p>
+                        <p class="">
+                          Chào anh Hưng, bọn em đang cần...
+                        </p>
+                        <span class="datetime">48 phút trước</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-3.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Nguyễn Hoài</p>
+                        <p class="subject">
+                          Điều thêm xe vào kho hàng
+                        </p>
+                        <p class="">
+                          Chào anh Hưng, bọn em cần thêm 12 xe...
+                        </p>
+                        <span class="datetime">1 giờ trước</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-4.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Trần Kim Tuyến</p>
+                        <p class="subject">
+                          Bộ phận sản xuất cần thêm...
+                        </p>
+                        <p class="">
+                          Chào anh, bọn em đang cần một lô nguyên liệu...
+                        </p>
+                        <span class="datetime">Thứ 6 8:40 AM</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-5.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Hà Thu</p>
+                        <p class="subject">
+                          Bộ phận kế toán: Bọn em đã phê duyệt...
+                        </p>
+                        <p class="">
+                          Chào anh Hưng...
+                        </p>
+                        <span class="datetime">Thứ 6 7:51 AM</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="email-item">
+                    <div class="email-avatar">
+                      <img class="thumb-img img-circle" alt="" src="assets/images/avatars/thumb-11.jpg">
+                    </div>
+                    <div class="open-mail">
+                      <div class="email-detail">
+                        <p class="from">Quang Thành</p>
+                        <p class="subject">
+                          Bộ phận nhân sự: Chúng tôi đã
+                        </p>
+                        <p class="">
+                          Chúng tôi đã tuyển thêm 4 nhân viên...
+                        </p>
+                        <span class="datetime">Thứ 3 6:48 PM</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="email-content scrollable">
+              <div class="email-content-tools">
+                <ul>
+                  <li>
+                    <a class="back-to-mailbox" href="javascript:void(0)">
+                      <i class="ti-arrow-circle-left"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="pull-right">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-reply"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-star"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-flag"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="ti-more-alt"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="email-content-detail" id="content1">
+                <div class="detail-head">
+                  <div class="p-v-10 p-h-20 d-inline-block">
+                    <img class="thumb-img img-circle pull-left" alt="" src="assets/images/avatars/thumb-8.jpg">
+                    <div class="info">
+                      <span class="d-block font-size-16 text-dark">Thu Hoài</span>
+                      <span class="font-size-12">To: hoaithu@gmail.com</span>
+                    </div>
+                  </div>
+                  <ul class="tools">
+                    <li class="font-size-13">Thứ 6 8:40 AM</li>
+                    <li class="d-none d-md-inline-block">
+                      <a href="#">
+                        <i class="fa fa-reply"></i>
+                      </a>
+                    </li>
+                    <li class="d-none d-md-inline-block dropdown dropdown-animated scale-left">
+                      <a href="#" data-toggle="dropdown">
+                        <i class="ti-more-alt"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#" class="dropdown-item">Action</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Another Action</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Something Else Here</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="detail-body">
+                  <h4 class="m-b-20">Công việc cuối tuần</h4>
+                  <div class="mrg-top-15">
+                    <p>
+                      Người dùng được thể hiện ntn:
+                      Người dùng được thể hiện thông qua tên , ảnh đại diện và chức vụ trong công ty
+                      Nhiệm vụ được thể hiện ntn:
+                      Việc quản lý công việc cá nhân của tổ trưởng đã được đáp ứng hay chưa? các thông tin cần thiết (
+                      gồm: id công việc, tên
+                      công việc, trạng thái ( mới, đang làm, hoàn thành), mức độ cần thiết ( thấp, cao, trung bình),
+                      thời hạn hoàn thành, thời
+                      gian cập nhật ) đã hiển thị đủ chưa, cần bổ sung gì không?
+                      Ngữ cảnh sử dụng :
+                      Khi người dùng tổ trưởng muốn xem các công việc cá nhân của mình, hoặc khi có thêm công việc mới,
+                      các công việc đã có
+                      cần update.
+                    </p>
+                    <p>
+                      Môi trường thử nghiệm: Văn phòng công ty sản xuất thuốc đang sử dụng phần mềm, sử dụng thiết bị
+                      ghi âm để lưu lại câu
+                      trả lời của người dùng
+                      .
+                    </p>
+                    <p>
+                      Vai trò của người thử nghiệm: Người developer trực tiếp thực hiện nhiệm vụ quản lý công việc cá
+                      nhân: Xem, thêm, sửa,
+                      xóa công việc. Người kiểm thử viên thực hiện việc giám sát.
+                    </p>
+                    <p>
+                      Người dùng tìm thấy chức năng trong bn giây.
+                      Người dùng tìm thấy việc cần làm tiếp theo trong bao nhiêu giây.
+                      Người dùng nhận biết được nhiệm vụ đã làm đến đâu rồi trong bn giây
+                      Người dùng thực hiện công việc trong bao nhiêu giây.
+                      Hệ thống phản hồi việc thực hiện của người dùng trong bn giây.
+                      Mức độ người dùng nhận biết được phản hồi sau mỗi thao tác
+                      Mức độ người dùng đánh giá được trạng thái của hệ thống sau khi thực hiện công việc.
+                    </p>
+                  </div>
+                </div>
+                <div class="detail-foot">
+                  <ul class="attachments">
+                    <li>
+                      <a href="javascript:;">
+                        <div class="file-icon">
+                          <i class="fa fa-file-pdf-o"></i>
+                        </div>
+                        <div class="file-info">
+                          <span class="file-name ">Báo-cáo-cuối-tuần.pdf</span>
+                          <span class="file-size "> 18Mb</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <div class="file-icon">
+                          <i class="fa fa-file-image-o"></i>
+                        </div>
+                        <div class="file-info">
+                          <span class="file-name ">Ảnh03.jpg</span>
+                          <span class="file-size "> 172Kb</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <button data-toggle="modal" data-target="#side-modal-rep"
+                    class="btn btn-info btn-rounded btn-outline mt-4">Trả lời</button>
+                  <div class="modal modal-right fade" id="side-modal-rep">
+                    <div class="modal-dialog" role="document" style="min-width: 700px;">
+                      <div class="modal-content">
+                        <div class="side-modal-wrapper">
+                          <div class="vertical-align">
+                            <div class="table-cell">
+                              <div class="modal-body">
+                                <div class="p-h-15">
+                                  <div class="card">
+                                    <div class="card-header border bottom">
+                                      <h4 class="card-title">Trả lời</h4>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5>Đến: Thu Hoài (thuhoai@gmail.com)</h5>
+                                      <div class="m-t-15">
+                                        <div id="summernote-standard"></div>
+                                      </div>
+                                      <hr>
+                                      <div class="m-t-15">
+                                        <div class="m-t-15">
+                                          <button id="send_email" class="btn btn-success btn-rounded swal-success"
+                                            type="button">Gửi</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="email-content-detail" id="content2">
+                <div class="detail-head">
+                  <div class="p-v-10 p-h-20 d-inline-block">
+                    <img class="thumb-img img-circle pull-left" alt="" src="assets/images/avatars/thumb-2.jpg">
+                    <div class="info">
+                      <span class="d-block font-size-16 text-dark">Vũ Thị Hương Giang</span>
+                      <span class="font-size-12">To: huonggiangvu@gmail.com</span>
+                    </div>
+                  </div>
+                  <ul class="tools">
+                    <li class="font-size-13">Thứ 3 7:40 AM</li>
+                    <li class="d-none d-md-inline-block">
+                      <a href="#">
+                        <i class="fa fa-reply"></i>
+                      </a>
+                    </li>
+                    <li class="d-none d-md-inline-block dropdown dropdown-animated scale-left">
+                      <a href="#" data-toggle="dropdown">
+                        <i class="ti-more-alt"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#" class="dropdown-item">Action</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Another Action</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Something Else Here</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="detail-body">
+                  <h4 class="m-b-20">Hợp đồng mua bán dụng cụ</h4>
+                  <div class="mrg-top-15">
+                    <p>
+                      Mua bán hàng hóa là một hoạt động thương mại giữa bên mua và bên bán, theo đó bên bán có nghĩa vụ
+                      giao hàng, chuyển
+                      quyền sở hữu hàng hóa cho bên mua và nhận thanh toán; bên mua có nghĩa vụ thanh toán cho bên bán,
+                      nhận hàng và quyền sở
+                      hữu hàng hóa theo thỏa thuận trong hợp đồng.
+                    </p>
+                    <p>
+                      Môi trường thử nghiệm: Văn phòng công ty sản xuất thuốc đang sử dụng phần mềm, sử dụng thiết bị
+                      ghi âm để lưu lại câu
+                      trả lời của người dùng
+                      .
+                    </p>
+                    <p>
+                      Vai trò của người thử nghiệm: Người developer trực tiếp thực hiện nhiệm vụ quản lý công việc cá
+                      nhân: Xem, thêm, sửa,
+                      xóa công việc. Người kiểm thử viên thực hiện việc giám sát.
+                    </p>
+                    <p>
+                      Người dùng tìm thấy chức năng trong bn giây.
+                      Người dùng tìm thấy việc cần làm tiếp theo trong bao nhiêu giây.
+                      Người dùng nhận biết được nhiệm vụ đã làm đến đâu rồi trong bn giây
+                      Người dùng thực hiện công việc trong bao nhiêu giây.
+                      Hệ thống phản hồi việc thực hiện của người dùng trong bn giây.
+                      Mức độ người dùng nhận biết được phản hồi sau mỗi thao tác
+                      Mức độ người dùng đánh giá được trạng thái của hệ thống sau khi thực hiện công việc.
+                    </p>
+                  </div>
+                </div>
+                <div class="detail-foot">
+                  <ul class="attachments">
+                    <li>
+                      <a href="javascript:;">
+                        <div class="file-icon">
+                          <i class="fa fa-file-pdf-o"></i>
+                        </div>
+                        <div class="file-info">
+                          <span class="file-name ">Báo-cáo-cuối-tuần.pdf</span>
+                          <span class="file-size "> 18Mb</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="javascript:;">
+                        <div class="file-icon">
+                          <i class="fa fa-file-image-o"></i>
+                        </div>
+                        <div class="file-info">
+                          <span class="file-name ">Ảnh03.jpg</span>
+                          <span class="file-size "> 172Kb</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Content Wrapper END -->
+        <!-- END HERE-->
+        <hr>
+        <footer>
+          <div class="row ">
+            <div class="col-md-4">
+              <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+            </div>
+            <div class="col-md-4">
+              <address>
+                <strong>HUST, University.</strong><br>
+                1 Đại Cồ Việt, Hai Bà Trưng <br>
+                Hà Nội, Việt Nam<br>
+              </address>
+            </div>
+            <div class="col-md-4">
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <!-- page-content" -->
+  </div>
+  <!-- page-wrapper -->
+  <!-- using online scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+  <script src="assets/js/vendor.js"></script>
+  <script src="assets/js/app.min.js"></script>
+
+  <!-- page js -->
+  <script src="assets/vendor/selectize/dist/js/standalone/selectize.min.js"></script>
+  <script src="assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
+  <script src="assets/js/forms/form-elements.js"></script>
+
+  <!-- page js -->
+  <script src="assets/vendor/nouislider/distribute/nouislider.js"></script>
+  <script src="assets/vendor/sweetalert/lib/sweet-alert.js"></script>
+  <script src="assets/vendor/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+  <script src="assets/js/components/notifications.js"></script>
+
+  <script src="assets/js/email.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

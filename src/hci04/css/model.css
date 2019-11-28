@@ -1,0 +1,52 @@
+/* Start form-search */
+.form-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 0px 6px 20px;
+  vertical-align: middle;
+}
+.plan-search {
+  border: none;
+}
+
+.form-search input {
+  width: 92%;
+}
+.form-search i {
+  width: 8%;
+}
+.fas, .fa-search {  
+  font-size: 20px;
+  color: gray;
+}
+
+/* Action */
+
+.form-search:focus {
+  border-color: #80bdff;
+}
+
+.plan-search:hover, 
+.plan-search:active,
+.plan-search:focus {
+  outline: none;
+}
+
+select:focus {
+  box-shadow: none!important;
+}
+
+select::selection {
+  border-color: #80bdff;
+}
+/* End form-search */
+
+/* Start table */
+.table-title {
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin: 20px;
+}

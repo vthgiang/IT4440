@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+  <title>Trang liên hệ</title>
+
+  <!-- using online links -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar-themes.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+  <!-- core dependcies css -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+  <!-- page css -->
+
+  <!-- core css -->
+  <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="assets/css/themify-icons.css" rel="stylesheet">
+  <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <!-- sidebar-brand  -->
+        <div class="sidebar-item sidebar-brand">
+          <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+        </div>
+
+        <!-- sidebar-header  -->
+        <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Hoang
+              <strong>Pham</strong>
+            </span>
+            <span class="user-role">Tổ trưởng</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-item sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-menu  -->
+        <div class=" sidebar-item sidebar-menu">
+          <ul>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer-alt"></i>
+                <span class="menu-text">Quản lý công việc</span>
+                <span class="badge badge-pill badge-warning">New</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="congvieccanhan.html">Công việc cá nhân
+                      <span class="badge badge-pill badge-success">10</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="viecnhom.html">Công việc nhóm
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="workingreport.html">Báo cáo công việc trong ngày
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="thongke.html">Thống kê</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-address-book"></i>
+                <span class="menu-text">Quản lý nhân viên</span>
+                <span class="badge badge-pill badge-danger">3</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Danh sách nhân viên</a>
+                  </li>
+                  <li>
+                    <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                  </li>
+                  <li>
+                    <a href="#">Kỉ luật, khen thưởng</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span class="menu-text">Quản lý báo cáo</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="report_management.html">Tổng hợp báo cáo</a>
+                  </li>
+                  <li>
+                    <a href="create-report.html">Tạo báo cáo</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-mail-bulk"></i>
+                <span class="menu-text">Liên lạc</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="chat.html">Chat</a>
+                  </li>
+                  <li>
+                    <a href="email.html">Email</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-footer  -->
+      <div class="sidebar-footer">
+        <div class="dropdown">
+
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+            <div class="notifications-header">
+              <i class="fa fa-bell"></i> Notifications
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-check text-success border border-success"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
+                  <div class="notification-time">
+                    6 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation text-info border border-info"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                    máy in</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+            <div class="messages-header">
+              <i class="fa fa-envelope"></i> Messages
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>HungNV</strong>
+                  </div>
+                  <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TuyenTK</strong>
+                  </div>
+                  <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TienNH</strong>
+                  </div>
+                  <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all messages</a>
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Setting</a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-power-off"></i>
+          </a>
+        </div>
+        <div class="pinned-footer">
+          <a href="#">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- page-content START HERE -->
+    <main class="page-content">
+      <div class="container-fluid">
+        <div class="card">
+          <div class="container p-h-0">
+            <div class="card-header m-t-30">
+              <h4 class="card-title">Liên hệ</h4>
+              <div class="card-toolbar">
+                <ul>
+                  <li>
+                    <a class="text-gray" href="javascript:void(0)">
+                      <i class="mdi mdi-account-plus font-size-20"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-gray" href="javascript:void(0)">
+                      <i class="mdi mdi-filter-variant font-size-20"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-gray" href="javascript:void(0)">
+                      <i class="mdi mdi-dots-vertical font-size-20"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-1.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Phạm Minh Hoàng</b></p>
+                        <span class="font-size-13">minhhoang@gmail.com</span>
+                        <span class="font-size-13 d-block">0932387316</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-2.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Vũ Thị Hương Giang</b></p>
+                        <span class="font-size-13">huonggiang@gmail.com</span>
+                        <span class="font-size-13 d-block">0982347587</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-3.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Lê Na</b></p>
+                        <span class="font-size-13">lena@gmail.com</span>
+                        <span class="font-size-13 d-block">0163278469</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-4.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Nguyễn Quang Thành</b></p>
+                        <span class="font-size-13">quangthanh@gmail.com</span>
+                        <span class="font-size-13 d-block">0123987583</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-5.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Nguyễn Hoài</b></p>
+                        <span class="font-size-13">hoainguyen@gmail.com</span>
+                        <span class="font-size-13 d-block">0984348347</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-6.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Thu Hà</b></p>
+                        <span class="font-size-13">thuha@gmail.com</span>
+                        <span class="font-size-13 d-block">0987323675</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-8.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Lệ Quyên</b></p>
+                        <span class="font-size-13">lequyen@gmail.com</span>
+                        <span class="font-size-13 d-block">0983127468</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-9.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Lê Minh Nguyễn</b></p>
+                        <span class="font-size-13">minhnguyen@gmail.com</span>
+                        <span class="font-size-13 d-block">0938124573</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <div class="card contact-item">
+                    <div class="card-header p-15">
+                      <div class="card-toolbar">
+                        <ul>
+                          <li class="dropdown dropdown-animated scale-left">
+                            <a class="text-gray" data-toggle="dropdown" href="javascript:void(0)">
+                              <i class="mdi mdi-dots-vertical font-size-20"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-pencil m-r-5"></i>
+                                  <span>Chỉnh sửa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-delete m-r-5"></i>
+                                  <span>Xóa</span>
+                                </a>
+                              </li>
+                              <li class="d-block">
+                                <a class="dropdown-item" href="#">
+                                  <i class="mdi mdi-content-duplicate m-r-5"></i>
+                                  <span>Tạo bản sao</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="card-body m-b-15">
+                      <div class="contact-thumb">
+                        <img class="mx-auto d-block" src="assets/images/avatars/thumb-10.jpg" alt="">
+                      </div>
+                      <div class="text-center">
+                        <p class="text-dark m-b-0 "><b>Thu Quỳnh</b></p>
+                        <span class="font-size-13">thuquynh@gmail.com</span>
+                        <span class="font-size-13 d-block">0167274983</span>
+                      </div>
+                    </div>
+                    <div class="border top bg-gray">
+                      <div class="row">
+                        <div class="col-4 border right">
+                          <a href="#" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-phone font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4 border right">
+                          <a href="email.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-email-outline font-size-20"></i>
+                          </a>
+                        </div>
+                        <div class="col-4">
+                          <a href="chat.html" class="p-v-10 d-block text-center text-gray">
+                            <i class="mdi mdi-message-outline font-size-20"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <footer>
+          <div class="row ">
+            <div class="col-md-4">
+              <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+            </div>
+            <div class="col-md-4">
+              <address>
+                <strong>HUST, University.</strong><br>
+                1 Đại Cồ Việt, Hai Bà Trưng <br>
+                Hà Nội, Việt Nam<br>
+              </address>
+            </div>
+            <div class="col-md-4">
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <!-- page-content" -->
+  </div>
+  <!-- page-wrapper -->
+  <!-- using online scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+  <script src="assets/js/vendor.js"></script>
+
+  <script src="assets/js/app.min.js"></script>
+
+  <!-- page js -->
+  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
