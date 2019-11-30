@@ -13,6 +13,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="../../bootstrap/css/bootstrap-table.css" rel="stylesheet">
 
+	<style type="text/css">
+		.ck.ck-editor__main>.ck-editor__editable{
+			height: 300px;
+		}
+	</style>
+
 </head>
 
 <body>
@@ -26,7 +32,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -48,14 +54,13 @@
 
 						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
 						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
+						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
+
 
 						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
 
 
 						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
-
 
 
 					</ul>
@@ -68,125 +73,35 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				<h2>Danh sách công việc cá nhân</h2>
+				<h2>Lập báo cáo</h2>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="property">
+							<h4>Loại báo cáo</h4>
+							<select class="form-control">
+								<option>Báo cáo thuế</option>
+								<option>Báo cáo công nợ</option>
+								<option>Báo cáo thu chi</option>
+							</select>
+						</div>
 
-				<div class="checkListDate">
-					<ul>
-						<li>
-							Trạng thái công việc
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Đã hoàn thành</option>
-								<option>Đang thực hiện</option>
-								<option>Quá hạn</option>
-							</SELECT>
-						</li>
-						<li>
-							Từ ngày
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Tháng 1/2019</option>
-								<option>Tháng 2/2019</option>
-								<option>Tháng 3/2019</option>
-								<option>Tháng 4/2019</option>
-							</SELECT>
-						</li>
-						<li>
-							Đến ngày ngày
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Tháng 1/2019</option>
-								<option>Tháng 2/2019</option>
-								<option>Tháng 3/2019</option>
-								<option>Tháng 4/2019</option>
-							</SELECT>
-						</li>
-						<li><a href="" class="btn btn-info">Tra cứu</a></li>
-					</ul>
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="property">
+							<h4>Tên báo cáo</h4>
+							<input class="form-control" type="text" name="">
+						</div>
+					</div>
 				</div>
 
-				<table class="table table-data" data-toggle="table" data-search="true">
-					<thead>
-						<tr>
-							<th>STT</th>
-							<th>Tên công việc</th>
-							<th>Ngày giao</th>
-							<th>Deadline</th>
-							<th>Trạng thái</th>
-							<th>Chi tiết</th>
-							<th>Xóa</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Kiểm kê chứng từ</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đang thực hiện</td>
-							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Tính lương cho nhân viên</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đang thực hiện</td>
-							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>sao lưu dữ liệu gốc</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đã hoàn thành</td>
-							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-						<tr>
-							<td>4</td>
-							<td>Kiểm kê chứng từ</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đã xong</td>
-							<td>
-								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-
-					</tbody>
-				</table>
-
-				<ul class="pagination">
-				  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-				  <li class="page-item"><a class="page-link" href="#">1</a></li>
-				  <li class="page-item"><a class="page-link" href="#">2</a></li>
-				  <li class="page-item"><a class="page-link" href="#">3</a></li>
-				  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-				</ul>
+				<h4>Chi tiết</h4>
+				<div>
+					<textarea name="content" id="editor" style="height:400px;"></textarea>
+				</div>
+				<div class="btn-add">
+					<a href="add.html" class="btn btn-success">Khởi tạo</a>
+				</div>
 			</div>
 		</div>
 	<!-- END MAIN CONTENT -->
@@ -274,5 +189,13 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+	<script src="https://cdn.ckeditor.com/ckeditor5/15.0.0/classic/ckeditor.js"></script>
+	<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
 </body>
 </html>

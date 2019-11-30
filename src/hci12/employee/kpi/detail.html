@@ -26,7 +26,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -48,13 +48,13 @@
 
 						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
 						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
-
-						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
 
 
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+						<li><a href="setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+
+
+						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
 
 
 
@@ -68,70 +68,38 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				<h2>Danh sách công việc cá nhân</h2>
+				<h2>Danh sách các tiêu chí đã chọn</h2>
+				<h4 style="float: left;margin-right: 5px;">Bộ tiêu chí: </h4>
 
-				<div class="checkListDate">
-					<ul>
-						<li>
-							Trạng thái công việc
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Đã hoàn thành</option>
-								<option>Đang thực hiện</option>
-								<option>Quá hạn</option>
-							</SELECT>
-						</li>
-						<li>
-							Từ ngày
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Tháng 1/2019</option>
-								<option>Tháng 2/2019</option>
-								<option>Tháng 3/2019</option>
-								<option>Tháng 4/2019</option>
-							</SELECT>
-						</li>
-						<li>
-							Đến ngày ngày
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Tháng 1/2019</option>
-								<option>Tháng 2/2019</option>
-								<option>Tháng 3/2019</option>
-								<option>Tháng 4/2019</option>
-							</SELECT>
-						</li>
-						<li><a href="" class="btn btn-info">Tra cứu</a></li>
-					</ul>
+				<p style="float: left;line-height: 40px;"> Đánh giá nhân viên kế toán</p>
+
+				<div class="btn-add">
+					<a href="add.html" class="btn btn-success"  data-toggle="modal" data-target="#add">Thêm tiêu chí</a>
 				</div>
+
+
 
 				<table class="table table-data" data-toggle="table" data-search="true">
 					<thead>
 						<tr>
 							<th>STT</th>
-							<th>Tên công việc</th>
-							<th>Ngày giao</th>
-							<th>Deadline</th>
-							<th>Trạng thái</th>
-							<th>Chi tiết</th>
+							<th>Tên tiêu chí</th>
+							<th>Kỳ vọng</th>
+							<th>Trọng số</th>
+							<th>Thang điểm</th>
+							<th>Chỉnh sửa</th>
 							<th>Xóa</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>1</td>
-							<td>Kiểm kê chứng từ</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đang thực hiện</td>
+							<td>Tiêu chí về thời gian</td>
+							<td>7</td>
+							<td>2</td>
+							<td>10</td>
 							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
 							</td>
 							<td>
 								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
@@ -139,12 +107,12 @@
 						</tr>
 						<tr>
 							<td>2</td>
-							<td>Tính lương cho nhân viên</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đang thực hiện</td>
+							<td>Tiêu chí về kết quả thực hiện</td>
+							<td>8</td>
+							<td>1</td>
+							<td>10</td>
 							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
 							</td>
 							<td>
 								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
@@ -152,30 +120,18 @@
 						</tr>
 						<tr>
 							<td>3</td>
-							<td>sao lưu dữ liệu gốc</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đã hoàn thành</td>
+							<td>Tiêu chí về kết quả báo cáo</td>
+							<td>7</td>
+							<td>1</td>
+							<td>10</td>
 							<td>
-								<a href="detail.html" class="btn btn-success"> Chi tiết</a>
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</a>
 							</td>
 							<td>
 								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
 							</td>
 						</tr>
-						<tr>
-							<td>4</td>
-							<td>Kiểm kê chứng từ</td>
-							<td>12/5/2019</td>
-							<td>12/7/2019</td>
-							<td>Đã xong</td>
-							<td>
-								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#edit"> Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
+
 
 					</tbody>
 				</table>
@@ -215,57 +171,56 @@
 	 	<div class="modal-dialog" role="document">
 			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
 				<div class="modal-header">
-					<h3 class="modal-title">Tạo công việc cho nhân viên</h3>
+					<h3 class="modal-title">Thêm tiêu chí</h3>
 				</div>
 				<div class="modal-body">
 					<div class="container-fluid">
 						<div class="row">
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<p>Tên công việc</p>
-								<input class="form-control" type="text" name="">
-								<p>Người thực hiện</p>
-								<select class="form-control" >
-									<option>MS1 Lê Duy Anh</option>
-									<option>MS2 Anh Phương</option>
-									<option>MS3 Nguyễn Thị Mừng</option>
-									<option>MS4 Vũ Thị Xinh</option>
-								</select>
-								<p>Loại công việc</p>
-								<select class="form-control" >
-									<option>Cá nhân</option>
-									<option>Tập thể</option>
-								</select>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<p>Ngày bắt đầu</p>
-								<select class="form-control" >
-									<option>Tháng 1/2019</option>
-									<option>Tháng 2/2019</option>
-									<option>Tháng 3/2019</option>
-								</select>
-								<p>Ngày kết thúc</p>
-								<select class="form-control" >
-									<option>Tháng 1/2019</option>
-									<option>Tháng 2/2019</option>
-									<option>Tháng 3/2019</option>
-								</select>
-							</div>
-
+							<p>Tên tiêu chí</p>
+							<input class="form-control" type="text" name="">
+							<p>Trọng số</p>
+							<input class="form-control" type="text" name="">
+							<p>Thang điểm</p>
+							<input class="form-control" type="text" name="">
+							<p>Kỳ vọng</p>
+							<input class="form-control" type="text" name="">
 						</div>
-					</div>
-					<div class="container-fluid">
-						<p>Mô tả công việc</p>
-						<textarea class="form-control" style="height: 150px;"></textarea>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-success" data-dismiss="modal">Tạo</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal">Thêm</button>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
 				</div>
 			</div>
 	  	</div>
 	</div>
+
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Chỉnh sửa tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<p>Tên tiêu chí</p>
+							<input class="form-control" type="text" name="" value="Tiêu chí về thời gian">
+							<p>Trọng số</p>
+							<input class="form-control" type="text" name="" value="2">
+							<p>Thang điểm</p>
+							<input class="form-control" type="text" name="" value="10">
+							<p>kỳ vọng</p>
+							<input class="form-control" type="text" name="" value="10">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Chỉnh sửa</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
 	</div>
 
 	<!-- jQuery library -->

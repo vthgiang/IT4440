@@ -26,7 +26,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -48,13 +48,12 @@
 
 						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
 						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
+						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
 
 						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
 
 
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
 
 
 
@@ -68,7 +67,7 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				<h2>Danh sách công việc cá nhân</h2>
+				<h2>Danh sách công việc đã giao</h2>
 
 				<div class="checkListDate">
 					<ul>
@@ -110,12 +109,16 @@
 						<li><a href="" class="btn btn-info">Tra cứu</a></li>
 					</ul>
 				</div>
+				<div class="btn-add">
+					<div href="add.html" class="btn btn-success"  data-toggle="modal" data-target="#add">Tạo việc mới</div>
+				</div>
 
 				<table class="table table-data" data-toggle="table" data-search="true">
 					<thead>
 						<tr>
 							<th>STT</th>
 							<th>Tên công việc</th>
+							<th>Người phụ trách</th>
 							<th>Ngày giao</th>
 							<th>Deadline</th>
 							<th>Trạng thái</th>
@@ -127,6 +130,7 @@
 						<tr>
 							<td>1</td>
 							<td>Kiểm kê chứng từ</td>
+							<td>MS2 Duy Anh</td>
 							<td>12/5/2019</td>
 							<td>12/7/2019</td>
 							<td>Đang thực hiện</td>
@@ -140,6 +144,7 @@
 						<tr>
 							<td>2</td>
 							<td>Tính lương cho nhân viên</td>
+							<td>MS2 Duy Anh</td>
 							<td>12/5/2019</td>
 							<td>12/7/2019</td>
 							<td>Đang thực hiện</td>
@@ -153,6 +158,7 @@
 						<tr>
 							<td>3</td>
 							<td>sao lưu dữ liệu gốc</td>
+							<td>MS2 Anh Phương</td>
 							<td>12/5/2019</td>
 							<td>12/7/2019</td>
 							<td>Đã hoàn thành</td>
@@ -166,6 +172,7 @@
 						<tr>
 							<td>4</td>
 							<td>Kiểm kê chứng từ</td>
+							<td>MS2 Duy Anh</td>
 							<td>12/5/2019</td>
 							<td>12/7/2019</td>
 							<td>Đã xong</td>
