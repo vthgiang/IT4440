@@ -26,7 +26,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -49,13 +49,20 @@
 						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
 						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
 						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
 
-						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-credit-card"></i> <span>KPI</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse item" style="background: #ccc;">
+								<ul class="nav">
+									<li><a class="item" style="padding-left: 60px;" href="setciteria.html">Chỉ tiêu hiện tại</a></li>		
+									<li><a class="item" style="padding-left: 60px;" href="result.html">
+									Kết quả KPI</a></li>		
+								</ul>
+							</div>
+						</li>
 
 
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
-
+						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
 
 
 					</ul>
@@ -68,108 +75,48 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				<h2>Danh sách báo cáo</h2>
+				<h2>Danh sách bộ tiêu chí đánh giá KPI</h2>
 
-				<div class="checkListDate">
-					<ul>
-						<li>
-							Loại báo cáo
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>Báo cáo thuế</option>
-								<option>Báo cáo công nợ</option>
-								<option>Báo cáo thu chi</option>
-							</SELECT>
-						</li>
-						<li>
-							Năm
-						</li>
-						<li>
-							<SELECT class="form-control">
-								<option>Tất cả</option>
-								<option>2019</option>
-								<option>2018</option>
-								<option>2017</option>
-								<option>2016</option>
-							</SELECT>
-						</li>
-						<li><a href="" class="btn btn-info">Tra cứu</a></li>
-					</ul>
-				</div>
-
-				<div class="btn-add">
-					<a href="add.html" class="btn btn-success">Lập báo cáo</a>
-				</div>
 				<table class="table table-data" data-toggle="table" data-search="true">
 					<thead>
 						<tr>
-							<th>Số báo cáo</th>
-							<th>Tên báo cáo</th>
-							<th>Loại báo cáo</th>
-							<th>Ngày lập</th>
-							<th>Chi tiết</th>
-							<th>Xóa</th>
+							<th>Mã bộ tiêu chí</th>
+							<th>Tên bộ tiêu chí</th>
+							<th>Kỳ vọng</th>
+							<th>Trọng số</th>
+							<th>Thang điểm</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>1252452</td>
-							<td>Báo cáo tài chính doanh nghiệp quý 1</td>
-							<td>Báo cáo tài chính</td>
-							<td>
-								20/12/2018
-							</td>
-							<td>
-								<a href="detail.html" class="btn btn-success">Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
 						</tr>
 						<tr>
-							<td>1252452</td>
-							<td>Báo cáo tài chính doanh nghiệp quý 1</td>
-							<td>Báo cáo tài chính</td>
-							<td>
-								20/12/2018
-							</td>
-							<td>
-								<a href="detail.html" class="btn btn-success">Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
 						</tr>
 						<tr>
-							<td>1252452</td>
-							<td>Báo cáo tài chính doanh nghiệp quý 1</td>
-							<td>Báo cáo tài chính</td>
-							<td>
-								20/12/2018
-							</td>
-							<td>
-								<a href="detail.html" class="btn btn-success">Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
 						</tr>
 						<tr>
-							<td>1252452</td>
-							<td>Báo cáo tài chính doanh nghiệp quý 1</td>
-							<td>Báo cáo tài chính</td>
-							<td>
-								20/12/2018
-							</td>
-							<td>
-								<a href="detail.html" class="btn btn-success">Chi tiết</a>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
 						</tr>
+
 					</tbody>
 				</table>
 
@@ -208,57 +155,102 @@
 	 	<div class="modal-dialog" role="document">
 			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
 				<div class="modal-header">
-					<h3 class="modal-title">Tạo công việc cho nhân viên</h3>
+					<h3 class="modal-title">Tạo bộ tiêu chí</h3>
 				</div>
 				<div class="modal-body">
 					<div class="container-fluid">
 						<div class="row">
 							<div class="col-md-6 col-sm-6 col-xs-12">
-								<p>Tên công việc</p>
+								<p>Tên bộ tiêu chí</p>
 								<input class="form-control" type="text" name="">
-								<p>Người thực hiện</p>
+								<p>Tạo cho vị trí</p>
 								<select class="form-control" >
-									<option>MS1 Lê Duy Anh</option>
-									<option>MS2 Anh Phương</option>
-									<option>MS3 Nguyễn Thị Mừng</option>
-									<option>MS4 Vũ Thị Xinh</option>
+									<option>Kế toán trưởng</option>
+									<option>Nhân viên</option>
+									<option>Kế toán thuế</option>
 								</select>
-								<p>Loại công việc</p>
+								<p>Tần suất đánh giá</p>
 								<select class="form-control" >
-									<option>Cá nhân</option>
-									<option>Tập thể</option>
+									<option>1 tháng/Lần</option>
+									<option>2 tháng/lần</option>
+									<option>3 tháng/lần</option>
 								</select>
 							</div>
 
 							<div class="col-md-6 col-sm-6 col-xs-12">
-								<p>Ngày bắt đầu</p>
+								<p>Từ</p>
 								<select class="form-control" >
 									<option>Tháng 1/2019</option>
 									<option>Tháng 2/2019</option>
 									<option>Tháng 3/2019</option>
 								</select>
-								<p>Ngày kết thúc</p>
+								<p>Đến</p>
 								<select class="form-control" >
 									<option>Tháng 1/2019</option>
 									<option>Tháng 2/2019</option>
 									<option>Tháng 3/2019</option>
 								</select>
 							</div>
-
 						</div>
-					</div>
-					<div class="container-fluid">
-						<p>Mô tả công việc</p>
-						<textarea class="form-control" style="height: 150px;"></textarea>
 					</div>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-success" data-dismiss="modal">Tạo</button>
+					<button type="button" class="btn btn-success" data-dismiss="modal">Thêm</button>
 					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
 				</div>
 			</div>
 	  	</div>
 	</div>
+
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Chỉnh sửa bộ tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Tên bộ tiêu chí</p>
+								<input class="form-control" type="text" name="" value="Bộ tiêu chí đánh giá nhân viên kế toán thuế">
+								<p>Tạo cho vị trí</p>
+								<select class="form-control" >
+									<option>Kế toán trưởng</option>
+									<option>Nhân viên</option>
+									<option>Kế toán thuế</option>
+								</select>
+								<p>Tần suất đánh giá</p>
+								<select class="form-control" >
+									<option>1 tháng/Lần</option>
+									<option>2 tháng/lần</option>
+									<option>3 tháng/lần</option>
+								</select>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Từ</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+								<p>Đến</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Chỉnh sửa</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
 	</div>
 
 	<!-- jQuery library -->
@@ -266,6 +258,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+
+<script src="../../js/master.js"></script>
 </body>
 </html>

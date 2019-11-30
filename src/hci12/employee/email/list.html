@@ -26,7 +26,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -49,12 +49,21 @@
 						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
 						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
 						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
 
-						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-credit-card"></i> <span>KPI</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse item" style="background: #ccc;">
+								<ul class="nav">
+									<li><a class="item" style="padding-left: 60px;" href="../kpi/setciteria.html">Chỉ tiêu hiện tại</a></li>		
+									<li><a class="item" style="padding-left: 60px;" href="../kpi/result.html">
+									Kết quả KPI</a></li>		
+								</ul>
+							</div>
+						</li>
 
 
 						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+
 
 
 					</ul>
@@ -69,7 +78,7 @@
 			<div class="container-fluid">
 				<h2>Hộp thư</h2>
 				<div class="btn-add">
-					<div class="btn btn-success"  data-toggle="modal" data-target="#add">Soạn thư</div>
+					<div href="add.html" class="btn btn-success"  data-toggle="modal" data-target="#add">Soạn thư</div>
 				</div>
 				<table class="table table-data" data-toggle="table" data-search="true">
 					<tbody>
@@ -223,6 +232,8 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+
+<script src="../../js/master.js"></script>
 </body>
 </html>
