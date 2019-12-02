@@ -146,10 +146,10 @@
                   <div class="col-md-8 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn bộ phận ...</option>
-                      <option>Bộ phận A</option>
-                      <option>Bộ phận B</option>
-                      <option>Bộ phận C</option>
-                      <option>Bộ phận D</option>
+                      <option>Bộ phận Giám đốc</option>
+                      <option>Bộ phận Kinh doanh</option>
+                      <option>Bộ phận Nghiên cứu</option>
+                      <option>Bộ phận Marketing</option>
                     </select>
                   </div>
                 </div>
@@ -162,10 +162,10 @@
                   <div class="col-md-8 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn phòng ban ...</option>
-                      <option>Phòng ban A</option>
-                      <option>Phòng ban B</option>
-                      <option>Phòng ban C</option>
-                      <option>Phòng ban D</option>
+                      <option>Phòng quản lí</option>
+                      <option>Phòng tuyển dụng</option>
+                      <option>Phòng đào tạo</option>
+                      <option>Phòng sửa chữa</option>
                     </select>
                   </div>
                 </div>
@@ -176,8 +176,8 @@
                     <label class="h6">Ngày gửi</label>
                   </div>
                   <div class="col-md-8 col-sm-12">
-                    <div class="input-group date" data-provide="datepicker">
-                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <div class="input-group date">
+                      <input type="text" style="padding-left: 15px;" class="form-control datepicker" placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -408,6 +408,25 @@
     </div>
   </div>
   <!-- End Body -->
+  <script type="text/javascript">
+    $.fn.datepicker.dates["vi-VN"] =
+    {
+      months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+      monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+      days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+      daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+      daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+      titleFormat : "dd MM yyyy",
+      today : "Today",
+    };
+
+    $(".datepicker").datepicker({
+      isRTL: false,
+      format: 'dd/mm/yyyy',
+      autoclose:true,
+      language: 'vi-VN'
+    });
+  </script>
 </body>
 
 </html>
