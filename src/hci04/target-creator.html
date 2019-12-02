@@ -132,15 +132,35 @@
               <div class="col-md-6 col-sm-12">
                 <div class="row my-2">
                   <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Người lập</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <div style="padding-left: 15px;">Không Bốn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Chức vụ</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12" style="padding-left: 15px;">
+                    <div style="padding-left: 15px;">Giám đốc quản trị mục tiêu</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
                     <label class="h6 font-weight-bold">Bộ phận</label>
                   </div>
                   <div class="col-md-9 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn bộ phận ...</option>
-                      <option>Bộ phận A</option>
-                      <option>Bộ phận B</option>
-                      <option>Bộ phận C</option>
-                      <option>Bộ phận D</option>
+                      <option>Bộ phận Nhân sự</option>
+                      <option>Bộ phận Kinh doanh</option>
+                      <option>Bộ phận Nghiên cứu</option>
+                      <option>Bộ phận Hậu cần</option>
                     </select>
                   </div>
                 </div>
@@ -153,10 +173,10 @@
                   <div class="col-md-9 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn phòng ban ...</option>
-                      <option>Phòng ban A</option>
-                      <option>Phòng ban B</option>
-                      <option>Phòng ban C</option>
-                      <option>Phòng ban D</option>
+                      <option>Phòng quản lí</option>
+                      <option>Phòng tuyển dụng</option>
+                      <option>Phòng kế toán</option>
+                      <option>Phòng sản xuất</option>
                     </select>
                   </div>
                 </div>
@@ -167,8 +187,8 @@
                     <label class="h6 font-weight-bold">Thời hạn</label>
                   </div>
                   <div class="col-md-9 col-sm-12">
-                    <div class="input-group date" data-provide="datepicker">
-                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <div class="input-group date">
+                      <input type="text" style="padding-left: 15px;" class="form-control datepicker" placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -243,6 +263,26 @@
     </div>
   </div>
   <!-- End Body -->
+  <script type="text/javascript">
+    $.fn.datepicker.dates["vi-VN"] =
+    {
+      months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+      monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+      days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+      daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+      daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+      titleFormat : "dd MM yyyy",
+      today : "Today",
+    };
+
+    // $.datepicker.setDefaults($.datepicker.regional["vi-VN"]);
+    $(".datepicker").datepicker({
+      isRTL: false,
+      format: 'dd/mm/yyyy',
+      autoclose:true,
+      language: 'vi-VN'
+    });
+  </script>
 </body>
 
 </html>
