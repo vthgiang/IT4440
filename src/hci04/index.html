@@ -20,6 +20,7 @@
     integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/model.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -47,7 +48,10 @@
       <h3 class="text-light m-0">LOGO</h3>
     </a>
     <div class="navbar-nav ml-auto flex-row align-items-center">
-      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <h6 class="text-light m-0 mr-3">
+        Xin chào ABC<br/>
+        <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
+      </h6>
       <button class="btn m-0 p-0 mr-3">
         <i class="fas fa-user-circle text-light h3 m-0"></i>
       </button>
@@ -65,7 +69,8 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column h5 main-nav">
             <li class="nav-item active">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true"
+                aria-controls="sub-nav-1">
                 <span>Chức năng chung</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -80,13 +85,19 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true"
+                aria-controls="sub-nav-2">
                 <span>Quản trị mục tiêu</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
             </li>
             <li id="sub-nav-2" class="collapse show">
               <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/statistic.html">
+                    <span>Dashboard</span>
+                  </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/target-creator.html">
                     <span>Thiết lập mục tiêu</span>
@@ -102,11 +113,11 @@
                     <span>Giám sát tiến độ</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="/statistic.html">
                     <span>Thống kê</span>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -126,81 +137,48 @@
         <!-- Begin Content -->
         <div class="container-fluid p-3">
           <!-- Start Filter -->
-          <div class="container-fluid p-3 border rounded mb-3 table-filter">
+          <div class="container-fluid p-3 rounded mb-3 table-filter">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="row my-2">
-                  <div class="col-md-3 col-sm-12">
-                    <label class="h6">Mã số</label>
-                  </div>
-                  <div class="col-md-9 col-sm-12">
-                    <input type="text" class="form-control" placeholder="Nhập mã số ...">
-                  </div>
-                </div>
+
+              <h4 class="col-lg-2">Tìm kiếm</h4>
+
+              <div class="Department col-lg-2 col-md-9 col-sm-12 " style="padding: 0;">
+                <select class="form-control">
+                  <option disabled selected>Bộ phận</option>
+                  <option>Tất cả</option>
+                  <option>Hành chính</option>
+                  <option>Nhân sự</option>
+                  <option>Yêu cầu chỉnh sửa</option>
+                  <option>Đã chỉnh sửa</option>
+                </select>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="row my-2">
-                  <div class="col-md-3 col-sm-12">
-                    <label class="h6">Tên kế hoạch</label>
-                  </div>
-                  <div class="col-md-9 col-sm-12">
-                    <input type="text" class="form-control" placeholder="Nhập tên kế hoạch ...">
-                  </div>
-                </div>
+              <div class="State col-lg-2 col-md-9 col-sm-12" style="padding: 0;">
+                <select class="form-control">
+                  <option disabled selected>Trạng thái</option>
+                  <option>Tất cả</option>
+                  <option>Chưa duyệt</option>
+                  <option>Đã duyệt</option>
+                  <option>Yêu cầu chỉnh sửa</option>
+                  <option>Đã chỉnh sửa</option>
+                </select>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="row my-2">
-                  <div class="col-md-3 col-sm-12">
-                    <label class="h6">Bộ phận</label>
-                  </div>
-                  <div class="col-md-9 col-sm-12">
-                    <input type="text" class="form-control" placeholder="Nhập tên bộ phận ...">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="row my-2">
-                  <div class="col-md-3 col-sm-12">
-                    <label class="h6">Người nộp</label>
-                  </div>
-                  <div class="col-md-9 col-sm-12">
-                    <input type="text" class="form-control" placeholder="Nhập tên người nộp ...">
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="row my-2">
-                  <div class="col-md-3 col-sm-12">
-                    <label class="h6">Trạng thái</label>
-                  </div>
-                  <div class="col-md-9 col-sm-12">
-                    <select class="form-control">
-                      <option disabled selected>Chọn trạng thái ...</option>
-                      <option>Tất cả</option>
-                      <option>Chưa duyệt</option>
-                      <option>Đã duyệt</option>
-                      <option>Yêu cầu chỉnh sửa</option>
-                      <option>Đã chỉnh sửa</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-4 offset-lg-4 mt-2 d-flex">
-                <button class="btn btn-outline-danger btn-block m-0 mx-1">
-                  Xoá bộ lọc
-                </button>
-                <button class="btn btn-primary btn-block m-0 mx-1">
-                  Lọc kết quả
-                  <i class="fas fa-filter ml-2"></i>
-                </button>
+              <!-- Search form -->
+              <div class="Search col-lg-6" style="padding: 0;">
+                <form class="form-search d-flex border rounded">
+                  <input class="plan-search" type="text" placeholder="Nhập tên nhiệm vụ ..." aria-label="Search">
+                  <i class="fas fa-search"></i>
+                </form>
               </div>
             </div>
           </div>
+          <!-- Collapse Filter -->
+
           <!-- End Filter -->
+          <!-- Start Table-title -->
+          <div class="table-title">Bảng danh sách kế hoạch</div>
+          <!-- End Table-title -->
           <!-- Start Table Data -->
-          <table id="table-plan-list" class="table table-bordered table-hover">
+          <table id="table-plan-list-1" class="table table-bordered table-hover">
             <thead class="thead-light">
               <tr>
                 <th scope="col">Mã số
