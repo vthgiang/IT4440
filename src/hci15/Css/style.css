@@ -1,6 +1,156 @@
-﻿.select {
+.select{
     background-color: #016087!important;
 }
 .select-child {
     background-color: #4cbae7!important;
+}
+.content-ta{
+    height: 40px;
+    width: 100%;
+    left: 20px;
+    display: flex;
+}
+.mar{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.mar-text{
+    font-weight: bold;
+    color: #000000;
+    margin-top: 5px;
+    margin-left: 12px;
+    font-size: 20px;
+}
+.content-menu{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(230, 232, 236);
+    display: flex;
+}
+.content-menu .text-cot-menu{
+    position: relative;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 7px;
+    margin-left: 12px;
+    font-size: 18px;
+}
+.content-menu .input-menu{
+    position: relative;
+    margin-left: 12px;
+    width: 200px;
+    height: 32px;
+    margin-top: 3px;
+}
+.content-menu .button-menu{
+    position: relative;
+    margin-left: 12px;
+
+}
+.report-st{
+    display: block!important;
+    text-align: center;
+}
+.cv {
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    overflow-y: auto !important;
+    color: #000000 !important;
+}
+.cv .quanlycv {
+    position: relative;
+    height: 200px;
+    margin-top: 8px;
+    border: 1px solid #cbc8c8;
+    background-color: #ebecf0;
+}
+.quanlycv .text-cv {
+    position: relative;
+    height: 30px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.quanlycv .task {
+    position: absolute;
+    margin-top: 4px;
+    width: calc(100% - 16px);
+    height: 170px;
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow-y: auto; 
+}
+.task .main-tb{
+    position: absolute;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.main-tb .row-tb {
+    background-color: #e1dede;
+    overflow: hidden;
+}
+
+.row-tb th {
+    position: sticky;
+    top: 0;
+    border: 1px solid #cbc8c8;
+}
+.main-tb tbody td{
+    background-color: #ffffff;
+    overflow-y: auto;
+}
+.hoatdong{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto !important;
+    color: #000000 !important;
+}
+.hoatdong .menu-hoatdong {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.menu-hoatdong .date-hoatdong{
+    height: 20px;
+    width: 100%;
+    margin-left: 4px;
+    font-size: 12px!important;
+    color: #000000;
+}
+.menu-hoatdong .one-menu {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background-color: #eeeded;
+    cursor: pointer;
+}
+.one-menu .text-- {
+    position: absolute;
+    color: #000000;
+    height: 24px;
+    width: calc(100% - 44px);
+    margin-left: 44px;
+    font-size: 15px!important;
+}
+.one-menu .icon-menu {
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
+    margin-top: 6px;
+    border-radius: 15px;
+}
+
+.back{
+    background-color: #ffffff!important;
+    margin-top: 10px!important;
+    margin-left: 100px;
+}
+.st{
+    margin-top: 10px;
 }
