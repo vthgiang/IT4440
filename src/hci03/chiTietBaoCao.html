@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>HCI 03 - Chi tiết báo cáo</title>
+
+    <!-- using online links -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+
+    <!-- core css -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+                </div>
+
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Hoang
+                            <strong>Pham</strong>
+                        </span>
+                        <span class="user-role">Trưởng bộ phận</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-item sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span class="menu-text">Quản lý công việc</span>
+                                <span class="badge badge-pill badge-warning">New</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="congvieccanhan.html">Công việc cá nhân
+                                            <span class="badge badge-pill badge-success">10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thongke.html">Thống kê</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-address-book"></i>
+                                <span class="menu-text">Quản lý nhân viên</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Danh sách nhân viên
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kỉ luật, khen thưởng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span class="menu-text">Quản lý báo cáo</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
+                                    </li>
+                                    <li>
+                                        <a href="create-report.html">Gửi báo cáo</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="PheDuyetBaoCaoTuan.html">Phê duyệt cáo tuần</a>
+                                    </li>
+                                    <li>
+                                        <a href="PheDuyetBaoCaoThang.html">Phê duyệt cáo tháng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Trợ giúp</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Hỏi đáp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div class="dropdown">
+
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                        <div class="notifications-header">
+                            <i class="fa fa-bell"></i> Notifications
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-check text-success border border-success"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
+                                    <div class="notification-time">
+                                        6 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation text-info border border-info"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
+                                    <div class="notification-time">
+                                        7 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
+                                    <div class="notification-time">
+                                        7 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all notifications</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-pill badge-success notification">7</span>
+                    </a>
+                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+                        <div class="messages-header">
+                            <i class="fa fa-envelope"></i> Messages
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>HungNV</strong>
+                                    </div>
+                                    <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>TuyenTK</strong>
+                                    </div>
+                                    <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>TienNH</strong>
+                                    </div>
+                                    <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all messages</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+                        <a class="dropdown-item" href="#">My profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content">
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="page-header">
+                        <h2 class="header-title">Chi tiết tổng hợp</h2>
+                        <div class="header-sub-title">
+
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="table-overflow">
+                                <table id="dt-opt" class="table table-hover table-xl">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Tên tổ</th>
+                                            <th>Quản lí tổ</th>
+                                            <th>Khu vực phụ trách</th>
+                                            <th>Thời gian</th>
+                                            <th>Hiệu suất</th>
+                                            <th> Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td>
+                                                Tổ hậu cần 1
+                                            </td>
+                                            <td>Nguyễn Lệ Hằng</td>
+                                            <td>Khu vực sảnh A2 </td>
+                                            <td>08 May 2019</td>
+                                            <td>
+                                                <!-- <div class="progress">
+                                                    <div><i>Nhân viên</i>
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+
+                                                <div class="list-media">
+                                                    <div class="list-item">
+
+                                                        <div class="info">
+                                                            <span class="title">Mức độ hoàn thành công việc</span>
+
+                                                        </div>
+                                                        <div class="progress">
+
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 100%" aria-valuenow="100"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="info">
+                                                            <span class="title">Mức độ đúng giờ NV</span>
+
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-warning"
+                                                                role="progressbar" style="width: 80%" aria-valuenow="80"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center font-size-18">
+                                                <div>
+
+                                                    <a> <button data-toggle="modal" data-target="#side-modal-l"
+                                                            class="btn btn-icon btn-danger">
+                                                            <i class="mdi mdi-heart-outline"></i> Khen Thưởng
+                                                        </button> </a>
+                                                    <a>
+
+                                                        <button data-toggle="modal" data-target="#side-modal-r"
+                                                            class="btn btn-icon btn-outline btn-primary">
+                                                            <i class="mdi mdi-message-outline"></i> Nhắc nhở
+                                                        </button>
+                                                    </a>
+
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+
+                                            <td>
+                                                Tổ hậu cần 3
+                                            </td>
+                                            <td>Chu văn Quành</td>
+                                            <td>Khu vực sản xuất thuốc bổ </td>
+                                            <td>09 jun 2019</td>
+                                            <td>
+                                                <!-- <div class="progress">
+                                                    <div><i>Nhân viên</i>
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+
+                                                <div class="list-media">
+                                                    <div class="list-item">
+
+                                                        <div class="info">
+                                                            <span class="title">Mức độ hoàn thành công việc</span>
+
+                                                        </div>
+                                                        <div class="progress">
+
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 100%" aria-valuenow="100"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="info">
+                                                            <span class="title">Mức độ đúng giờ NV</span>
+
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-warning"
+                                                                role="progressbar" style="width: 80%" aria-valuenow="80"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center font-size-18">
+                                                <div>
+
+                                                    <a> <button data-toggle="modal" data-target="#side-modal-l"
+                                                            class="btn btn-icon btn-danger">
+                                                            <i class="mdi mdi-heart-outline"></i> Khen Thưởng
+                                                        </button> </a>
+                                                    <a>
+
+                                                        <button data-toggle="modal" data-target="#side-modal-r"
+                                                            class="btn btn-icon btn-outline btn-primary">
+                                                            <i class="mdi mdi-message-outline"></i> Nhắc nhở
+                                                        </button>
+                                                    </a>
+
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td>
+                                                Tổ hậu cần 2
+                                            </td>
+                                            <td>Nguyễn Văn Quỳnh</td>
+                                            <td>Khu vực sảnh A2 </td>
+                                            <td>08 May 2019</td>
+                                            <td>
+                                                <!-- <div class="progress">
+                                                    <div><i>Nhân viên</i>
+                                                        <div class="progress-bar" role="progressbar" style="width: 100%"
+                                                            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                                        </div>
+                                                    </div>
+                                                </div> -->
+
+
+                                                <div class="list-media">
+                                                    <div class="list-item">
+
+                                                        <div class="info">
+                                                            <span class="title">Mức độ hoàn thành công việc</span>
+
+                                                        </div>
+                                                        <div class="progress">
+
+                                                            <div class="progress-bar" role="progressbar"
+                                                                style="width: 100%" aria-valuenow="100"
+                                                                aria-valuemin="0" aria-valuemax="100">
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="info">
+                                                            <span class="title">Mức độ đúng giờ NV</span>
+
+                                                        </div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar bg-gradient-warning"
+                                                                role="progressbar" style="width: 50%" aria-valuenow="80"
+                                                                aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center font-size-18">
+                                                <div>
+
+                                                    <a> <button data-toggle="modal" data-target="#side-modal-l"
+                                                            class="btn btn-icon btn-danger">
+                                                            <i class="mdi mdi-heart-outline"></i> Khen Thưởng
+                                                        </button> </a>
+                                                    <a>
+
+                                                        <button data-toggle="modal" data-target="#side-modal-r"
+                                                            class="btn btn-icon btn-outline btn-primary">
+                                                            <i class="mdi mdi-message-outline"></i> Nhắc nhở
+                                                        </button>
+                                                    </a>
+
+
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <nav aria-label="...">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" tabindex="-1" aria-disabled="false">Trang
+                                                trước</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active" aria-current="page">
+                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">Tiếp theo</a>
+                                        </li>
+                                    </ul>
+
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+    <div class="modal modal-left fade " id="side-modal-l">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="side-modal-wrapper">
+                    <div class="vertical-align">
+                        <div class="table-cell">
+                            <div class="modal-body">
+                                <div class="p-h-15">
+                                    <h4>Khen Thưởng</h4>
+                                    <p class="m-b-15 font-size-13">Nhập tên và email người nhận</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tên người được nhận">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Nội dung khen thưởng">
+                                        </div>
+
+                                        <button class="btn btn-success">Gửi thư</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-right  fade " id="side-modal-r">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="side-modal-wrapper">
+                    <div class="vertical-align">
+                        <div class="table-cell">
+                            <div class="modal-body">
+                                <div class="p-h-15">
+                                    <h4>Nhắc nhở </h4>
+                                    <p class="m-b-15 font-size-13">Nhập tên và email người nhận</p>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Tên người nhận">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Email Adress">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Nội dung nhắc nhở">
+                                        </div>
+
+                                        <button class="btn btn-success">Gửi thư</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/js/apps/chat.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
