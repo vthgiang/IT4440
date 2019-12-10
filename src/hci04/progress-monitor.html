@@ -20,6 +20,7 @@
     integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -43,9 +44,50 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
       <h3 class="text-light m-0">LOGO</h3>
     </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
     <div class="navbar-nav ml-auto flex-row align-items-center">
       <h6 class="text-light m-0 mr-3">
         Xin chào Admin<br />
@@ -177,7 +219,8 @@
                   </div>
                   <div class="col-md-8 col-sm-12">
                     <div class="input-group date">
-                      <input type="text" style="padding-left: 15px;" class="form-control datepicker" placeholder="dd/mm/yyyy">
+                      <input type="text" style="padding-left: 15px;" class="form-control datepicker"
+                        placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -461,20 +504,20 @@
   <!-- End Body -->
   <script type="text/javascript">
     $.fn.datepicker.dates["vi-VN"] =
-    {
-      months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
-      monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
-      days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
-      daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
-      daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
-      titleFormat : "dd MM yyyy",
-      today : "Today",
-    };
+      {
+        months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+        monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+        days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+        daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+        daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+        titleFormat: "dd MM yyyy",
+        today: "Today",
+      };
 
     $(".datepicker").datepicker({
       isRTL: false,
       format: 'dd/mm/yyyy',
-      autoclose:true,
+      autoclose: true,
       language: 'vi-VN'
     });
   </script>
