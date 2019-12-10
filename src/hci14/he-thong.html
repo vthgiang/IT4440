@@ -67,6 +67,7 @@
 				<button class="w3-border" style="cursor: pointer; padding: 0 10px;">Tìm kiếm</button>
 			</div>
 		</div>
+	</div>
 	<!-- Main content -->
 	<div class="w3-content" style="margin-top: 10px; height: 600px;">
 		<div class="w3-row-padding w3-section">
@@ -90,7 +91,50 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<div id="id01" class="w3-modal">
+						<div class="w3-modal-content">
+							<header class="w3-container w3-blue"> 
+								<h3 class="w3-center">Đánh giá công việc</h3>
+							</header>
+							<div class="w3-container">
+								<form action="#" method="get" accept-charset="utf-8">
+									<div class="w3-padding-16">
+										<label class="w3-large">Ghi chú</label>
+										<textarea name="content" class="w3-input w3-border" rows = 6;></textarea>
+									</div>
+									<div class="w3-padding-16">
+										<label class="w3-large">Điểm KPI</label>
+										<select name="kpi_point" class="w3-input w3-border">
+											<option value="">1</option>
+											<option value="">2</option>
+											<option value="">3</option>
+											<option value="">4</option>
+											<option value="">5</option>
+											<option value="">6</option>
+											<option value="">7</option>
+											<option value="">8</option>
+											<option value="">9</option>
+											<option value="">10</option>
+										</select>
+									</div>
+									<div class="w3-padding-16">
+										<label class="w3-large">Đánh giá</label>
+										<select name="kpi_point" class="w3-input w3-border">
+											<option value="">Hoàn thành rất tốt</option>
+											<option value="">Hoàn thành tốt</option>
+											<option value="">Hoàn thành chưa tốt</option>
+										</select>
+									</div>
+									
+								</form>
+							</div>
+							<div class="w3-container w3-row-padding">
+								<div class="w3-half w3-center w3-padding-16"><button class="w3-button w3-center w3-green" onclick="document.getElementById('id01').style.display='none'">Lưu</button></div>
+								<div class="w3-half w3-center w3-padding-16"><button class="w3-button w3-center w3-red" onclick="document.getElementById('id01').style.display='none'">Hủy</button></div>
+							</div>
+						</div>
+					</div>
+					<button class="w3-button w3-block w3-dark-grey" onclick="document.getElementById('id01').style.display='block'">Đánh giá</button>
 				</div>
 			</div>
 			<div class="w3-col l4 m6 s12" style="margin-bottom: 15px;">
@@ -113,7 +157,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<button class="w3-button w3-block w3-dark-grey">Đánh giá</button>
 				</div>
 			</div>
 			<div class="w3-col l4 m6 s12" style="margin-bottom: 15px;">
@@ -136,7 +180,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<button class="w3-button w3-block w3-dark-grey">Đánh giá</button>
 				</div>
 			</div>
 		</div>
@@ -161,7 +205,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<button class="w3-button w3-block w3-dark-grey">Đánh giá</button>
 				</div>
 			</div>
 			<div class="w3-col l4 m6 s12" style="margin-bottom: 15px;">
@@ -184,7 +228,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<button class="w3-button w3-block w3-dark-grey">Đánh giá</button>
 				</div>
 			</div>
 			<div class="w3-col l4 m6 s12" style="margin-bottom: 15px;">
@@ -207,7 +251,7 @@
 							</div>
 						</div>
 					</div>
-					<button class="w3-button w3-block w3-dark-grey">Đồng ý</button>
+					<button class="w3-button w3-block w3-dark-grey">Đánh giá</button>
 				</div>
 			</div>
 		</div>
