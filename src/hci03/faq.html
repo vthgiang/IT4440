@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+  <title>HCI 03 - Hỏi đáp</title>
+
+  <!-- using online links -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sidebar-themes.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+  <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
+  <!-- core dependcies css -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+  <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+  <!-- page css -->
+
+  <!-- core css -->
+  <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link href="assets/css/themify-icons.css" rel="stylesheet">
+  <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="assets/css/animate.min.css" rel="stylesheet">
+  <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+    <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content">
+        <!-- sidebar-brand  -->
+        <div class="sidebar-item sidebar-brand">
+          <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+        </div>
+
+        <!-- sidebar-header  -->
+        <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+          <div class="user-pic">
+            <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+          </div>
+          <div class="user-info">
+            <span class="user-name">Hoang
+              <strong>Pham</strong>
+            </span>
+            <span class="user-role">Trưởng bộ phận</span>
+            <span class="user-status">
+              <i class="fa fa-circle"></i>
+              <span>Online</span>
+            </span>
+          </div>
+        </div>
+        <!-- sidebar-search  -->
+        <div class="sidebar-item sidebar-search">
+          <div>
+            <div class="input-group">
+              <input type="text" class="form-control search-menu" placeholder="Search...">
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- sidebar-menu  -->
+        <div class=" sidebar-item sidebar-menu">
+          <ul>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-tachometer-alt"></i>
+                <span class="menu-text">Quản lý công việc</span>
+                <span class="badge badge-pill badge-warning">New</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="congvieccanhan.html">Công việc cá nhân
+                      <span class="badge badge-pill badge-success">10</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="viecnhom.html">Công việc nhóm
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+
+                  </li>
+                  <li>
+                    <a href="workingreport.html">Báo cáo công việc trong ngày
+                      <span class="badge badge-pill badge-success">15</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="thongke.html">Thống kê</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-address-book"></i>
+                <span class="menu-text">Quản lý nhân viên</span>
+                <span class="badge badge-pill badge-danger">3</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="#">Danh sách nhân viên
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                  </li>
+                  <li>
+                    <a href="#">Kỉ luật, khen thưởng</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-book"></i>
+                <span class="menu-text">Quản lý báo cáo</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="report_management.html">Tổng hợp báo cáo</a>
+                  </li>
+                  <li>
+                    <a href="create-report.html">Gửi báo cáo</a>
+                  </li>
+
+                  <li>
+                    <a href="PheDuyetBaoCaoTuan.html">Phê duyệt cáo tuần</a>
+                  </li>
+                  <li>
+                    <a href="PheDuyetBaoCaoThang.html">Phê duyệt cáo tháng</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-mail-bulk"></i>
+                <span class="menu-text">Liên lạc</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="chat.html">Chat</a>
+                  </li>
+                  <li>
+                    <a href="email.html">Email</a>
+                  </li>
+                  <li>
+                    <a href="contact.html">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="sidebar-dropdown">
+              <a href="#">
+                <i class="fa fa-mail-bulk"></i>
+                <span class="menu-text">Trợ giúp</span>
+              </a>
+              <div class="sidebar-submenu">
+                <ul>
+                  <li>
+                    <a href="faq.html">Hỏi đáp</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-footer  -->
+      <div class="sidebar-footer">
+        <div class="dropdown">
+
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-bell"></i>
+            <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+            <div class="notifications-header">
+              <i class="fa fa-bell"></i> Notifications
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-check text-success border border-success"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
+                  <div class="notification-time">
+                    6 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation text-info border border-info"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="notification-content">
+                <div class="icon">
+                  <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                </div>
+                <div class="content">
+                  <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                    máy in</div>
+                  <div class="notification-time">
+                    7 minutes ago
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all notifications</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-envelope"></i>
+            <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+            <div class="messages-header">
+              <i class="fa fa-envelope"></i> Messages
+            </div>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>HungNV</strong>
+                  </div>
+                  <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TuyenTK</strong>
+                  </div>
+                  <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
+                </div>
+              </div>
+
+            </a>
+            <a class="dropdown-item" href="#">
+              <div class="message-content">
+                <div class="pic">
+                  <img src="img/user.jpg" alt="">
+                </div>
+                <div class="content">
+                  <div class="message-title">
+                    <strong>TienNH</strong>
+                  </div>
+                  <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item text-center" href="#">View all messages</a>
+
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-cog"></i>
+            <span class="badge-sonar"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+            <a class="dropdown-item" href="#">My profile</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Setting</a>
+          </div>
+        </div>
+        <div>
+          <a href="#">
+            <i class="fa fa-power-off"></i>
+          </a>
+        </div>
+        <div class="pinned-footer">
+          <a href="#">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- page-content START HERE -->
+    <main class="page-content">
+      <div class="container-fluid">
+        <div class="page-header">
+          <h2 class="header-title">Hỏi đáp</h2>
+          <div class="header-sub-title d-inline">
+            <nav class="breadcrumb breadcrumb-dash">
+              <a href="#" class="breadcrumb-item"><i class="ti-home p-r-5"></i>Trang chủ</a>
+              <span class="breadcrumb-item active">Hỏi đáp</span>
+            </nav>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body m-v-40">
+            <div class="row">
+              <div class="col-sm-10 offset-sm-1">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <h5><b>Mục lục</b></h5>
+                    <ul class="list-unstyled m-t-30 nav d-block" role="tablist">
+                      <li class="m-b-20 d-block">
+                        <a href="#faq-tab-1" class="text-semibold font-size-16 text-gray active" role="tab"
+                          data-toggle="tab">Chung</a>
+                      </li>
+                      <li class="m-b-20 d-block">
+                        <a href="#faq-tab-2" class="text-semibold font-size-16 text-gray" role="tab"
+                          data-toggle="tab">Các thao tác nghiệp vụ</a>
+                      </li>
+                      <li class="m-b-20 d-block">
+                        <a href="#faq-tab-3" class="text-semibold font-size-16 text-gray" role="tab"
+                          data-toggle="tab">Cơ chế
+                          &amp; Chính sách</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade in active" id="faq-tab-1">
+                        <div class="accordion borderless" id="general" role="tablist">
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a data-toggle="collapse" href="#collapseOneBorderless" aria-expanded="false">
+                                  <span>Các phím tắt thao tác trên hệ thống như thế nào?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseOneBorderless" class="collapse" data-parent="#general">
+                              <div class="card-body">
+                                <p>Các phím tắt của hệ thống được cung cấp như sau:
+                                  Ctrl + 1 đến 8: Chọn một tab cụ thể đang mở, số thứ tự đánh từ trái sang phải
+                                  Ctrl + 9: Chuyển tới tab cuối cùng
+                                  Ctrl + Tab: Chuyển sang tab tiếp theo, thông thường là tab bên phải. (Ctrl + Page Up
+                                  cũng hoạt động nhưng không dùng
+                                  được trong IE).
+                                  Ctrl + Shift + Tab: Chuyển sang tab trước đó, thông thường là tab bên trái. (Ctrl +
+                                  Page Down cũng hoạt động nhưng không
+                                  dùng được trong IE).
+                                  Ctrl + W, Ctrl + F4: Đóng tab hiện tại.
+                                  Ctrl + Shift + T: Mở lại tab cuối cùng vừa đóng.
+                                  Ctrl + T: Mở một tab mới.
+                                  Ctrl + N: Mở một cửa sổ mới.
+                                  Alt + F4: Đóng cửa sổ hiện tại. (Làm việc với mọi cửa sổ đang mở, kể cả các ứng dụng).
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTwoBorderless"
+                                  aria-expanded="false">
+                                  <span>Thao tác với chuột trên hệ thống như thế nào?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseTwoBorderless" class="collapse" data-parent="#general">
+                              <div class="card-body">
+                                <p>Các thao tác với chuột trên hệ thống cung cấp như sau: Kích chuột giữa (cuộn chuột)
+                                  vào một Tab: Đóng tab.
+                                  Ctrl + chuột trái hoặc nhấp con lăn chuột vào link: Mở link trong một tab mới nhưng
+                                  vẫn ở trang hiện tại.
+                                  Shift + nhấp chuột trái vào link: Mở link trong một cửa sổ trình duyệt mới.
+                                  Ctrl + Shift + click chuột trái vào link: Mở liên kết trong tab mới và di chuyển đến
+                                  tab đó.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseThreeBorderless"
+                                  aria-expanded="false">
+                                  <span>Các phím tắt điều hướng trên website như thế nào?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseThreeBorderless" class="collapse" data-parent="general">
+                              <div class="card-body">
+                                <p>
+                                  Các phím tắt cung cấp cho việc điều hướng như sau: Alt + Mũi tên sang trái, Backspace:
+                                  Back/Quay lại trang trước
+                                  Alt + Mũi tên sang phải, Shift + Backspace: Forward/Chuyển đến trang tiếp
+                                  F5: Tải lại trang.
+                                  Ctrl + F5: Tải lại trang và xóa cache, tải lại toàn bộ website.
+                                  Escape: Dừng tải trang.
+                                  Alt + Home: Mở trang chủ (homepage)..</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseFourBorderless"
+                                  aria-expanded="false">
+                                  <span>Làm sao để xóa các thông báo?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseFourBorderless" class="collapse" data-parent="#general">
+                              <div class="card-body">
+                                <p>Các thông báo sẽ được hiện thị khi có tin tức mới chuyển đến, hệ thống sẽ chỉ hiển
+                                  thị các thông báo trong vòng 2 ngày gần nhất, các thông báo sau 2 ngày sẽ bị ẩn, bạn
+                                  có thể xem toàn bộ thông báo trên thanh điều khiển.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="faq-tab-2">
+                        <div class="accordion borderless" id="services" role="tablist">
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a data-toggle="collapse" href="#collapseSixBorderless" aria-expanded="true">
+                                  <span>Làm sao để tôi tạo công việc nhóm?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseSixBorderless" class="collapse show" data-parent="#services">
+                              <div class="card-body">
+                                <p>Trả lời câu hỏi.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseSevenBorderless"
+                                  aria-expanded="false">
+                                  <span>Tôi phân công công việc cho các thành viên như thế nào ?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseSevenBorderless" class="collapse" data-parent="#services">
+                              <div class="card-body">
+                                <p>Trả lời câu hỏi.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseEightBorderless"
+                                  aria-expanded="false">
+                                  <span>Tôi nhận các công việc từ cấp trên ở đâu ? </span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseEightBorderless" class="collapse" data-parent="#services">
+                              <div class="card-body">
+                                <p>Trả lời câu hỏi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="faq-tab-3">
+                        <div class="accordion borderless" id="pnc" role="tablist">
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseNineBorderless"
+                                  aria-expanded="false">
+                                  <span>Nghĩa vụ của tôi đối với hệ thống là gì?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseNineBorderless" class="collapse" data-parent="#pnc">
+                              <div class="card-body">
+                                <p>Trả lời câu hỏi.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" role="tab">
+                              <h5 class="card-title">
+                                <a class="collapsed" data-toggle="collapse" href="#collapseTenBorderless"
+                                  aria-expanded="false">
+                                  <span>Hệ thống có quyền được làm gì với tài khoản củ tôi?</span>
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapseTenBorderless" class="collapse" data-parent="#pnc">
+                              <div class="card-body">
+                                <p>Trả lời câu hỏi.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <footer>
+        <div class="row ">
+          <div class="col-md-4">
+            <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+          </div>
+          <div class="col-md-4">
+            <address>
+              <strong>HUST, University.</strong><br>
+              1 Đại Cồ Việt, Hai Bà Trưng <br>
+              Hà Nội, Việt Nam<br>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- page-content" -->
+  </div>
+  <!-- page-wrapper -->
+  <!-- using online scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+  <script src="assets/js/vendor.js"></script>
+
+  <script src="assets/js/app.min.js"></script>
+
+  <!-- page js -->
+  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

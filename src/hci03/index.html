@@ -1,42 +1,1008 @@
-<!-- 
-    file này để trỏ route trong server =>  các bạn có thể làm việc trong
-    thư mục của nhóm, tạo file folder thoải mái, file index.html dùng 
-    hiện view của nhóm, có thể tạo nhiều file html nếu bạn có nhiều màn.
- -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>HCI_03</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>HCI 03 - Trang chủ</title>
+
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+
+    <!-- core css -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
 </head>
-<style>
-    a {
-        text-decoration: none;
-        display: block;
-        font-size: 20px;
-    }
-</style>
 
 <body>
-    <h1>Bài làm của nhóm 3</h1>
-    <ul>
-        <li><a href="./manager/index.html">Trang chủ (Tổ trưởng)</a></li>
-        <li><a href="./manager/chat.html">Chat</a></li>
-        <li><a href="./manager/congvieccanhan.html">Công việc cá nhân</a></li>
-        <li><a href="./manager/contact.html">Liên hệ</a></li>
-        <li><a href="./manager/create-report.html">Tạo báo cáo</a></li>
-        <li><a href="./manager/email.html">Gửi email</a></li>
-        <li><a href="./manager/report_management.html">Quản lý báo cáo</a></li>
-        <li><a href="./manager/taomoicongviec.html">Tạo mới công viêc</a></li>
-        <li><a href="./manager/thongke.html">Thống kê kết quả</a></li>
-        <li><a href="./manager/viecnhom.html">Quản lý việc nhóm</a></li>
-        <li><a href="./manager/workingreport.html">Báo cáo hằng ngày</a></li>
-        <li><a href="./employee/danhsachcongviec.html">Danh sách công việc (Nhân viên)</a></li>
-        <li><a href="./employee/taobaocao.html">Tạo báo cáo (Nhân viên)</a></li>
-        <li><a href="./employee/taocongviecmoi.html">Tạo công việc mới (Nhân viên)</a></li>
-        <!-- Hello -->
-    </ul>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+                </div>
+
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Hoang
+                            <strong>Pham</strong>
+                        </span>
+                        <span class="user-role">Trưởng bộ phận</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-item sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span class="menu-text">Quản lý công việc</span>
+                                <span class="badge badge-pill badge-warning">New</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="congvieccanhan.html">Công việc cá nhân
+                                            <span class="badge badge-pill badge-success">10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thongke.html">Thống kê</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-address-book"></i>
+                                <span class="menu-text">Quản lý nhân viên</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Danh sách nhân viên
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kỉ luật, khen thưởng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span class="menu-text">Quản lý báo cáo</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
+                                    </li>
+                                    <li>
+                                        <a href="create-report.html">Gửi báo cáo</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="PheDuyetBaoCaoTuan.html">Phê duyệt cáo tuần</a>
+                                    </li>
+                                    <li>
+                                        <a href="PheDuyetBaoCaoThang.html">Phê duyệt cáo tháng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Trợ giúp</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Hỏi đáp</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div class="dropdown">
+
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                        <div class="notifications-header">
+                            <i class="fa fa-bell"></i> Notifications
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-check text-success border border-success"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Đã hoàn thành cuộc họp với tổ 3</div>
+                                    <div class="notification-time">
+                                        6 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation text-info border border-info"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">TuyenTK vừa nộp báo cáo công việc trong ngày</div>
+                                    <div class="notification-time">
+                                        7 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Còn 1 ngày đến hạn hoàn thành công việc Thay mới
+                                        máy in</div>
+                                    <div class="notification-time">
+                                        7 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all notifications</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-pill badge-success notification">7</span>
+                    </a>
+                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+                        <div class="messages-header">
+                            <i class="fa fa-envelope"></i> Messages
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>HungNV</strong>
+                                    </div>
+                                    <div class="message-detail">Máy in của phòng kế toán đang bị hỏng ....</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>TuyenTK</strong>
+                                    </div>
+                                    <div class="message-detail">Chiều nay họp lúc mấy giờ nhỉ?</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong>TienNH</strong>
+                                    </div>
+                                    <div class="message-detail">Mọi người đang cố gắng để hoàn thành đúng deadline</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all messages</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+                        <a class="dropdown-item" href="#">My profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content pt-2">
+            <div class="container-fluid">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="card-title">Tổng quan bộ phận Hậu cần - hỗ trợ</h5>
+                                    <div class="float-right">
+                                        <ul class="list-inline d-none d-sm-block">
+                                            <li class="m-r-20">
+                                                <span class="status success"></span>
+                                                <span class="text-semibold m-l-5">Số nhân viên</span>
+                                            </li>
+                                            <li>
+                                                <span class="status info"></span>
+                                                <span class="text-semibold m-l-5">Số công việc hoàn thành</span>
+                                            </li>
+                                            <li>
+                                                <span class="status primary"></span>
+                                                <span class="text-semibold m-l-5">Chi phí nguyên liệu, dụng cụ</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="m-t-10">
+                                        <div class="chartjs-size-monitor"
+                                            style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                            <div class="chartjs-size-monitor-expand"
+                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                                <div
+                                                    style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                                                </div>
+                                            </div>
+                                            <div class="chartjs-size-monitor-shrink"
+                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                                <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <canvas class="chart chartjs-render-monitor" id="customer-overview-chart"
+                                            style="height: 320px; display: block; width: 631px;" width="631"
+                                            height="320"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Tổng quan KPI tháng 12</h4>
+                                    <div class="card-toolbar">
+                                        <ul>
+                                            <li>
+                                                <a class="text-gray" href="javascript:void(0)">
+                                                    <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="m-t-10">
+                                        <span class="status gradient info"></span>
+                                        <span class="m-b-10 font-size-16 m-l-5">KPI bộ phận</span>
+                                        <div class="float-right">
+                                            <b class=" font-size-18 text-dark">70 % công việc</b>
+                                            <!-- <span>Đúng tiến độ</span> -->
+                                        </div>
+                                        <div class="progress m-t-15">
+                                            <div class="progress-bar bg-gradient-info" role="progressbar"
+                                                style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="m-t-60">
+                                        <span class="status gradient success"></span>
+                                        <span class="m-b-10 font-size-16 m-l-5">KPI của bạn</span>
+                                        <div class="float-right">
+                                            <b class=" font-size-18 text-dark">90 % công việc</b>
+                                            <!-- <span>Vượt tiến độ</span> -->
+                                        </div>
+                                        <div class="progress m-t-15">
+                                            <div class="progress-bar bg-gradient-success" role="progressbar"
+                                                style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="m-t-60 m-b-20">
+                                        <p class="font-size-16">Tổng quan KPI năm 2019</p>
+                                        <div class="row m-t-20">
+                                            <div class="col text-right">
+                                                <div id="sparkline-line-chart"><canvas width="170" height="40"
+                                                        style="display: inline-block; width: 170px; height: 40px; vertical-align: top;"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Mục tiêu tháng này của bạn</h4>
+                                    <div class="card-toolbar">
+                                        <ul>
+                                            <li>
+                                                <a class="text-gray" href="javascript:void(0)">
+                                                    <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="m-b-30">
+                                        <div class="chartjs-size-monitor"
+                                            style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+                                            <div class="chartjs-size-monitor-expand"
+                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                                <div
+                                                    style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+                                                </div>
+                                            </div>
+                                            <div class="chartjs-size-monitor-shrink"
+                                                style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+                                                <div style="position:absolute;width:200%;height:200%;left:0; top:0">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <canvas class="chart chartjs-render-monitor" id="goal-chart"
+                                            style="height: 200px; display: block; width: 274px;" width="274"
+                                            height="200"></canvas>
+                                    </div>
+                                    <div class="row m-b-10">
+                                        <div class="col-10 offset-1">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="text-center">
+                                                        <h2 class="font-weight-light">200</h2>
+                                                        <span class="status gradient info"></span>
+                                                        <span class="m-l-10">Công việc hoàn thành</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="text-center">
+                                                        <h2 class="font-weight-light">25</h2>
+                                                        <span class="status gradient"></span>
+                                                        <span class="m-l-10">Tổ chức sự kiện</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Nhân viên bộ phận Hậu cần - hỗ trợ</h4>
+                                    <div class="card-toolbar">
+                                        <ul>
+                                            <li>
+                                                <a class="text-gray" href="javascript:void(0)">
+                                                    <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="table-overflow">
+                                    <table class="table table-lg">
+                                        <thead>
+                                            <tr>
+                                                <td class="text-dark text-semibold">Nhân viên</td>
+                                                <td class="text-dark text-semibold">ID nhân viên</td>
+                                                <td class="text-dark text-semibold">Ngày cập nhật</td>
+                                                <td class="text-dark text-semibold">Trạng thái công việc</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="list-media">
+                                                        <div class="list-item">
+                                                            <div class="media-img">
+                                                                <img src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="title p-t-10 text-semibold">
+                                                                    Hoàng Văn Hưng
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>#33667</td>
+                                                <td>08 May 2018</td>
+                                                <td><span class="badge badge-pill badge-primary">Đúng tiến độ</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="list-media">
+                                                        <div class="list-item">
+                                                            <div class="media-img">
+                                                                <img src="assets/images/avatars/thumb-2.jpg" alt="">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="title p-t-10 text-semibold">
+                                                                    Trần Kim Tuyến
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>#33683</td>
+                                                <td>05 May 2018</td>
+                                                <td><span class="badge badge-pill badge-success">Vượt tiến độ</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="list-media">
+                                                        <div class="list-item">
+                                                            <div class="media-img">
+                                                                <img src="assets/images/avatars/thumb-3.jpg" alt="">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="title p-t-10 text-semibold">
+                                                                    Phạm Minh Hoàng
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>#33668</td>
+                                                <td>09 May 2018</td>
+                                                <td><span class="badge badge-pill badge-warning">Đang chậm</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="list-media">
+                                                        <div class="list-item">
+                                                            <div class="media-img">
+                                                                <img src="assets/images/avatars/thumb-8.jpg" alt="">
+                                                            </div>
+                                                            <div class="info">
+                                                                <span class="title p-t-10 text-semibold">
+                                                                    Nguyễn Hữu Tiền
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>#33684</td>
+                                                <td>16 May 2018</td>
+                                                <td><span class="badge badge-pill badge-danger">Nguy hiểm</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m-b-30">
+                        <ul class="list-media d-inline-block m-b-20">
+                            <li class="list-item">
+                                <div class="media-img">
+                                    <div class="icon-avatar bg-gradient-success">
+                                        <span>S</span>
+                                    </div>
+                                </div>
+                                <div class="info">
+                                    <b class="title font-size-16">Công việc đang diễn ra</b>
+                                    <span class="sub-title">Quý 4</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <span>Đang chuẩn bị</span>
+                                        <a href="#" class="text-gray pull-right">
+                                            <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                        </a>
+                                    </h4>
+                                    <div class="m-t-30" id="board1">
+                                        <div class="card draggable-item" data-toggle="modal" data-target="#modal-task">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-info"></li>
+                                                    <li class="bg-danger"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Giai đoạn 1 - Lên kế hoạch</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-paperclip"></i>
+                                                            <span>8</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mdi mdi-calendar"></i>
+                                                            <span>12/10</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-8.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="modal-task">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <div class="p-15 m-v-40">
+                                                            <div class="card">
+                                                                <div class="card-header border bottom">
+                                                                    <h4 class="card-title">Chi tiết công việc</h4>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Tên
+                                                                                    công việc:</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        Tổ chức sự kiện 10 năm thành lập
+                                                                                        công ty</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Các
+                                                                                    thành viên tham gia:</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        HoangPM, TuyenTK, TienNH</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Ngày
+                                                                                    bắt đầu:</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        12/11/2019</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Ngày
+                                                                                    kết thúc:</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        01/10/2020</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Loại
+                                                                                    công việc:</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        Công việc dự án</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Mô
+                                                                                    tả</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <p class="form-control-plaintext">
+                                                                                        Thực hiện tổ chức sự kiện 10 năm
+                                                                                        thành lập công ty, công việc bao
+                                                                                        gồm tổ chức nấu ăn, tổ chức buổi
+                                                                                        tọa đàm</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-group row">
+                                                                                <label
+                                                                                    class="col-sm-3 col-form-label control-label text-dark">Tiến
+                                                                                    độ</label>
+                                                                                <div class="col-sm-9">
+                                                                                    <ul
+                                                                                        class="nav wizard wizard-gradient-success">
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link active"
+                                                                                                href="#"></a>
+                                                                                            <div class="nav-title">Lên
+                                                                                                kế hoạch</div>
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link"
+                                                                                                href="#"></a>
+                                                                                            <div class="nav-title">Mua
+                                                                                                nguyên liệu dụng cụ
+                                                                                            </div>
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link"
+                                                                                                href="#"></a>
+                                                                                            <div class="nav-title">Tổ
+                                                                                                chức sự kiện</div>
+                                                                                        </li>
+                                                                                        <li class="nav-item">
+                                                                                            <a class="nav-link"
+                                                                                                href="#"></a>
+                                                                                            <div class="nav-title">Kết
+                                                                                                thúc</div>
+                                                                                        </li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <button class="btn btn-success"
+                                                                    data-dismiss="modal">OK</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card draggable-item">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-info"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Giai đoạn 2 - Chuẩn bị nguyên liệu, dụng
+                                                        cụ</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-comment-outline"></i>
+                                                            <span>3</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-11.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <span>Đang thực hiện</span>
+                                        <a href="#" class="text-gray pull-right">
+                                            <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                        </a>
+                                    </h4>
+                                    <div class="m-t-30" id="board2">
+                                        <div class="card draggable-item">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-info"></li>
+                                                    <li class="bg-danger"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Mua kho hàng thực phẩm</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-paperclip"></i>
+                                                            <span>8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-3.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card draggable-item">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-info"></li>
+                                                    <li class="bg-danger"></li>
+                                                    <li class="bg-warning"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Tổ chức sự kiên ngày 2</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-paperclip"></i>
+                                                            <span>8</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="mdi mdi-calendar"></i>
+                                                            <span>12/17</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-7.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        <span>Đã hoàn thành, nhận xét</span>
+                                        <a href="#" class="text-gray pull-right">
+                                            <i class="mdi mdi-dots-vertical font-size-20"></i>
+                                        </a>
+                                    </h4>
+                                    <div class="m-t-30" id="board3">
+                                        <div class="card draggable-item">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-warning"></li>
+                                                    <li class="bg-danger"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Hoàn thành tốt công việc</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-paperclip"></i>
+                                                            <span>8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-12.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-9.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-13.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card draggable-item">
+                                            <div class="p-15">
+                                                <ul class="list-label m-b-10">
+                                                    <li class="bg-info"></li>
+                                                </ul>
+                                                <p class="font-size-15"><b>Sai sót trong tổ chức sự kiện kỷ niệm 10 năm
+                                                        thành lập</b></p>
+                                                <div class="m-t-20">
+                                                    <ul class="list-inline d-inline-block m-t-10">
+                                                        <li>
+                                                            <i class="mdi mdi-paperclip"></i>
+                                                            <span>8</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list-media-horizon list-inline pull-right">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-8.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <footer>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+                        </div>
+                        <div class="col-md-4">
+                            <address>
+                                <strong>HUST, University.</strong><br>
+                                1 Đại Cồ Việt, Hai Bà Trưng <br>
+                                Hà Nội, Việt Nam<br>
+                            </address>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="assets/vendor/jquery.sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/js/dashboard/default.js"></script>
 </body>
 
 </html>
