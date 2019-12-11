@@ -17,6 +17,8 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/sb-admin-2.css" rel="stylesheet">
+    <!-- Custom styles for this page -->
+    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
@@ -51,11 +53,11 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                 <i class="fas fa-fw fa-industry"></i>
                 <span>Xưởng TPCN</span>
             </a>
-            <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Quản lý</h6>
                     <a class="collapse-item" href="table.html">Quản lý pha chế</a>
@@ -95,6 +97,7 @@
         <div class="text-center d-none d-md-inline">
             <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
+
     </ul>
     <!-- End of Sidebar -->
 
@@ -134,95 +137,64 @@
                     </li>
                 </ul>
             </nav><!-- End of Topbar -->
-        </div><!-- End of Main Content -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid" style="width: 70%;">
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb small">
-                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a href="table.html">Quản lý pha chế</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Tạo quy trình sản xuất mới</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                <div class="card-body p-0">
-                    <p class="alert alert-success">
-                        <i class="fas fa-check mr-2"></i>Tạo quy trình sản xuất mới thành công!
-                    </p>
-                    <div class="text-center">
-                        <h1 class="h4 text-gray-900 mb-4">Tạo quy trình sản xuất mới</h1>
+                <!-- Begin Page Content -->
+                <div class="container-fluid" style="width: 80%;">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small">
+                                <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Lập báo cáo công việc</li>
+                            </ol>
+                        </nav>
                     </div>
-                    <form class="user">
-                        <div class="form-group row">
-                            <input type="text" class="form-control" placeholder="Mã quy trình">
-                        </div>
-                        <div class="form-group row">
-                            <select class="btn btn-outline form-control" style="border-color: #d1d3e2; background-color: #fff; font-size: 1.2rem;">
-                                <option>Chọn tên sản phẩm</option>
-                                <option>Sâm Alipas</option>
-                                <option>Rocket 1h</option>
-                                <option>Viên sáng mắt SAMA</option>
-                                <option>Thực phẩm giảm cân</option>
-                                <option>Thực phẩm tăng chiều cao</option>
-                                <option>Thực phẩm bổ máu</option>
-                                <option>Thực phẩm tăng cường trí nhớ</option>
-                            </select>
-                        </div>
-                        <div class="form-group row">
-                            <select class="btn btn-outline form-control" style="border-color: #d1d3e2; background-color: #fff; font-size: 1.2rem;">
-                                <option>Chọn tổ sản xuất</option>
-                                <option>Tổ 1</option>
-                                <option>Tổ 2</option>
-                                <option>Tổ 3</option>
-                                <option>Tổ 4</option>
-                                <option>Tổ 5</option>
-                                <option>Tổ 6</option>
-                                <option>Tổ 7</option>
-                                <option>Tổ 8</option>
-                                <option>Tổ 9</option>
-                                <option>Tổ 10</option>
-                            </select>
-                        </div>
-                        <div class="form-group row">
-                            <textarea class="form-control">Mô tả . . .</textarea>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-2">Ngày bắt đầu</div>
-                            <div class="col-4">
-                                <input type="date" class="form-control" placeholder="Email Address">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <div class="card-body p-0">
+                            <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">Lập báo cáo công việc</h1>
                             </div>
-                            <div class="col-2">Ngày kết thúc</div>
-                            <div class="col-4">
-                                <input type="date" class="form-control" placeholder="Email Address">
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-primary btn-user" data-toggle="modal" data-target="#exampleModalCenter">Tạo quy trình mới</button>
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            Tạo mới quy trình này?
-                                        </div>
-                                        <div class="modal-body">
-                                            <a class="btn btn-success" href="create-success.html">
-                                                <i class="fas fa-check mr-2"></i>Tạo mới
-                                            </a>
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">
-                                                <i class="fas fa-times mr-2"></i>Hủy
-                                            </button>
+                            <form class="user">
+                                <div class="form-group row">
+                                    Mã sản xuất
+                                    <input type="text" class="form-control" placeholder="Nhập mã sản xuất" value="Alipas-01" required>
+                                </div>
+                                <div class="form-group row">
+                                    Tổng thời gian thực hiện (giờ)
+                                    <input type="text" class="form-control" placeholder="Thời gian thực hiện" value="800" required>
+                                </div>
+                                <div class="form-group row">
+                                    Sản lượng
+                                    <input type="text" class="form-control" placeholder="Tiến độ hiện tại" value="80 (hộp)" required>
+                                </div>
+                                <div class="form-group row">
+                                    Ghi chú
+                                    <textarea class="form-control" required>Ghi chú . . .</textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary btn-user" data-toggle="modal" data-target="#exampleModalCenter">Lập báo cáo</button>
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    Lập báo cáo này?
+                                                </div>
+                                                <div class="modal-body">
+                                                    <a class="btn btn-success" href="create-report-success.html">
+                                                        <i class="fas fa-check mr-2"></i>Lập báo cáo
+                                                    </a>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                                        <i class="fas fa-times mr-2"></i>Hủy
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </div><!-- /.container-fluid -->
+                    </div>
+                </div><!-- /.container-fluid -->
+        </div><!-- End of Main Content -->
 
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
@@ -252,5 +224,10 @@
 <!-- Page level custom scripts -->
 <script src="js/demo/chart-area-demo.js"></script>
 <script src="js/demo/chart-pie-demo.js"></script>
+<!-- Page level plugins -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Page level custom scripts -->
+<script src="js/demo/datatables-demo.js"></script>
 </body>
 </html>
