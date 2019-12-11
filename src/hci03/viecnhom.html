@@ -22,6 +22,21 @@
     <!-- Favicon -->
     <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
     <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+    <link href="assets/vendor/selectize/dist/css/selectize.default.css" rel="stylesheet">
+    <link href="assets/vendor/summernote/dist/summernote-bs4.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet">
+
+    <!-- core css -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
 </head>
 
 <body>
@@ -91,6 +106,10 @@
                                     </li>
                                     <li>
                                         <a href="thongke.html">Thống kê</a>
+                                    </li>
+                                    <li>
+                                        <a href="calendar.html">Lịch
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -168,6 +187,9 @@
                                 <ul>
                                     <li>
                                         <a href="faq.html">Hỏi đáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="sitemap.html">Sơ đồ trang web</a>
                                     </li>
                                 </ul>
                             </div>
@@ -316,9 +338,35 @@
         <main class="page-content pt-2">
 
             <div class="container-fluid">
-                <div class="row">
+                <div class="row container-fluid">
 
-                    <h4 class="container-fluid">Công việc nhóm</h4>
+                    <div class="col-md-6">
+
+                        <h4><b>Công việc nhóm</b></h4>
+                        <p>(* Click Mã để xem chi tiết)</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <select name="dkloc" class="custom-select mb-3">
+                            <option selected>Điều kiện lọc</option>
+                            <option>Tên</option>
+                            <option>Thành viên</option>
+                            <option>Trạng thái</option>
+                            <option>Độ ưu tiên</option>
+
+                        </select>
+
+                    </div>
+                    <div class="col-md-2">
+
+                        <input type="search" name="" id="input" class="form-control" value="" required="required"
+                            placeholder="Tìm kiếm">
+
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-outline-success">
+                            Tìm kiếm</button>
+                    </div>
 
                 </div>
 
@@ -328,23 +376,23 @@
                         <table class="table table-hover" id="listtb">
                             <thead>
                                 <tr>
-                                    <th>Id</th>
-                                    <th>Subject</th>
-                                    <th>Status</th>
-                                    <th>Priority</th>
-                                    <th>Members</th>
-                                    <th>Deadline</th>
-                                    <th>Updated</th>
+                                    <th>Mã</th>
+                                    <th>Tên công việc</th>
+                                    <th>Trạng thái</th>
+                                    <th>Độ ưu tiên</th>
+                                    <th>Thành viên</th>
+                                    <th>Hạn chót</th>
+
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr id="00001">
                                     <td class="id"><a href="#" data-toggle="modal" data-target="#myModal">00001</a></td>
-                                    <td class="sub">Họp các Trưởng bộ phận</td>
+                                    <td class="sub">Họp các tổ trưởng</td>
                                     <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
                                     <td class="mem">HoangPM, HungNV</td>
-                                    <td class="dead">2019-13-11 14:00</td>
+
                                     <td class="up">2019-13-11 09:00</td>
                                 </tr>
                             </tbody>
@@ -356,7 +404,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-danger">Cao</span></td>
                                     <td class="mem">TienNH, HungNV</td>
-                                    <td class="dead">2019-13-11 10:00</td>
+
                                     <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
@@ -368,7 +416,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-success">Thấp</span></td>
                                     <td class="mem">TuyenTK, HungNV, NamDL</td>
-                                    <td class="dead">2019-13-11 08:00</td>
+
                                     <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
@@ -380,7 +428,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-warning">Đang làm</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-success">Thấp</span></td>
                                     <td class="mem">HoangPM, HungNV, TuyenTK</td>
-                                    <td class="dead">2019-20-11 10:00</td>
+
                                     <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
@@ -392,7 +440,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-success">Hoàn thành</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
                                     <td class="mem">HoangPM, TienNH</td>
-                                    <td class="dead">2019-12-11 14:00</td>
+
                                     <td class="up">2019-12-11 14:00</td>
 
                                 </tr>
@@ -406,7 +454,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-warning">Đang làm</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-danger">Cao</span></td>
                                     <td class="mem">TienNH, NamDL</td>
-                                    <td class="dead">2019-15-11 10:00</td>
+
                                     <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
@@ -418,7 +466,7 @@
                                     <td class="sta"><span class="badge badge-pill badge-primary">Mới</span></td>
                                     <td class="pri"><span class="badge badge-pill badge-warning">Trung bình</span></td>
                                     <td class="mem">TuyenTK, HungNV</td>
-                                    <td class="dead">2019-01-12 14:00</td>
+
                                     <td class="up">2019-13-11 08:00</td>
                                 </tr>
                             </tbody>
@@ -459,11 +507,7 @@
                             <div class="modal-body">
                                 <div class="row container-fluid">
                                     <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated"
-                                                placeholder="yyyy-mm-dd hh:mm">
-                                        </div>
+
                                         <div class="form-group">
                                             <label for="comment">Descrpition:</label>
                                             <textarea class="form-control" rows="4" id="comment"
@@ -472,7 +516,8 @@
 
                                         <div class="form-group">
                                             <label for="member">Members:</label>
-                                            <textarea class="form-control" rows="2" id="member"></textarea>
+                                            <textarea class="form-control" name="inputRequired" rows="2"
+                                                id="member"></textarea>
                                         </div>
 
                                     </div>
@@ -498,8 +543,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline"
-                                                placeholder="yyyy-mm-dd hh:mm">
+                                            <div class="icon-input">
+                                                <i class="mdi mdi-timer"></i>
+                                                <input id="datepicker-1" data-provide="datepicker" type="text"
+                                                    class="form-control" placeholder="Pick a date">
+                                            </div>
                                         </div>
                                     </div>
 
@@ -557,96 +605,103 @@
 
                             <!-- Modal Header -->
                             <div class="modal-header">
-                                <h4 class="modal-title">Modal Heading</h4>
+                                <h4 class="modal-title">Tạo công việc mới</h4>
                                 <button type="button" class="close" data-dismiss="modal">×</button>
                             </div>
 
                             <!-- Modal body -->
                             <div class="modal-body">
-                                <div class="row container-fluid">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="usr">Updated:</label>
-                                            <input type="text" class="form-control" id="updated"
-                                                placeholder="yyyy-mm-dd hh:mm">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="comment">Descrpition:</label>
-                                            <textarea class="form-control" rows="4" id="comment"
-                                                placeholder="Nội dung mô tả"></textarea>
-                                        </div>
+                                <form role="form" id="form-validation">
+                                    <div class="row container-fluid">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="comment">Tên công việc:</label>
+                                                <input type="text" class="form-control" name="inputRequired" id="name"
+                                                    placeholder="Tên công việc"></textarea>
 
-                                        <div class="form-group">
-                                            <label for="member">Members:</label>
-                                            <textarea class="form-control" rows="2" id="member"></textarea>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="status">Loại công việc:</label>
-                                            <select name="status" class="custom-select mb-3" id="sta1">
-                                                <option selected>Hậu cần</option>
-                                                <option value="Đang làm">Vệ sinh</option>
-                                                <option value="Hoàn thành">Bảo vệ</option>
-                                                <option value="Đang trễ">Giao hàng</option>
-                                                <option value="Đang trễ">Khác</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="priority">Khu vực:</label>
-                                            <select name="priority" class="custom-select mb-3" id="pri1">
-                                                <option selected>Nhà ăn</option>
-                                                <option value="Trung bình">Nhà kho</option>
-                                                <option value="Thấp">Phòng họp</option>
-
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="deadline">Deadline:</label>
-                                            <input type="text" class="form-control" id="deadline"
-                                                placeholder="yyyy-mm-dd hh:mm">
-                                        </div>
-
-
-
-                                    </div>
-
-
-
-                                </div>
-                                <div class="row container-fluid">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="status">Status:</label>
-                                            <div id="status">
-                                                <select name="status" class="custom-select mb-3" id="statuso">
-                                                    <option value="Mới" selected>Mới</option>
-                                                    <option value="Đang làm">Đang làm</option>
-                                                    <option value="Hoàn thành">Hoàn thành</option>
-                                                    <option value="Đang trễ">Đang trễ</option>
-                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="comment">Descrpition:</label>
+                                                <textarea class="form-control" rows="4" id="comment"
+                                                    placeholder="Nội dung mô tả"></textarea>
                                             </div>
 
+
+
                                         </div>
-                                        <div class="form-group">
-                                            <label for="priority">Priority:</label>
-                                            <div id="priority">
-                                                <select name="priority" class="custom-select mb-3" id="priorityo">
-                                                    <option value="Cao" selected>Cao</option>
-                                                    <option value="Trung bình">Trung bình</option>
-                                                    <option value="Thấp">Thấp</option>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="status">Loại công việc:</label>
+                                                <select name="status" class="custom-select mb-3" id="sta1">
+                                                    <option selected>Hậu cần</option>
+                                                    <option value="Đang làm">Vệ sinh</option>
+                                                    <option value="Hoàn thành">Bảo vệ</option>
+                                                    <option value="Đang trễ">Giao hàng</option>
+                                                    <option value="Đang trễ">Khác</option>
                                                 </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="priority">Khu vực:</label>
+                                                <select name="priority" class="custom-select mb-3" id="pri1">
+                                                    <option selected>Nhà ăn</option>
+                                                    <option value="Trung bình">Nhà kho</option>
+                                                    <option value="Thấp">Phòng họp</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="status">Status:</label>
+                                                <div id="status">
+                                                    <select name="status" class="custom-select mb-3" id="statuso">
+                                                        <option value="Mới" selected>Mới</option>
+                                                        <option value="Đang làm">Đang làm</option>
+                                                        <option value="Hoàn thành">Hoàn thành</option>
+                                                        <option value="Đang trễ">Đang trễ</option>
+                                                    </select>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <div class="row container-fluid">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="member">Members:</label>
+                                                <textarea class="form-control" name="inputDigit" rows="2"
+                                                    id="member"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="priority">Priority:</label>
+                                                <div id="priority">
+                                                    <select name="priority" class="custom-select mb-3" id="priorityo">
+                                                        <option value="Cao" selected>Cao</option>
+                                                        <option value="Trung bình">Trung bình</option>
+                                                        <option value="Thấp">Thấp</option>
+
+                                                    </select>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="deadline">Deadline:</label>
+                                                <div class="icon-input">
+                                                    <i class="mdi mdi-timer"></i>
+                                                    <input type="text" class="form-control" name="inputMinLength"
+                                                        id="datepicker-1" data-provide="datepicker"
+                                                        placeholder="Pick a date">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <button id="btnup1" class="btn btn-gradient-success">Submit</button>
+                                </form>
                             </div>
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                                <button id="btnup1" type="button" class="btn btn-outline-success" data-dismiss="modal">
-                                    Cập nhật</button>
-                            </div>
+
+
+
                         </div>
                     </div>
                 </div>
@@ -699,6 +754,16 @@
         </script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/vendor/moment/min/moment.min.js"></script>
+    <script src="assets/vendor/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="assets/vendor/summernote/dist/summernote-bs4.min.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/forms/form-elements.js"></script>
+    <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/js/forms/form-validation.js"></script>
 
 </body>
 

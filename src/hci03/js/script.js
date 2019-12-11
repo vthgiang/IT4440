@@ -20,7 +20,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -43,7 +43,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -66,7 +66,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -89,7 +89,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -112,7 +112,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -135,7 +135,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -158,7 +158,7 @@ $(document).ready(function() {
         localStorage.setItem("mem", mem);
 
         $(".modal-title").text(sub);
-        $("#updated").val(up);
+        $("#datepicker-1").val(up);
         $("#deadline").val(dead);
         $("#member").val(mem);
         $("#status select").val(sta);
@@ -188,9 +188,14 @@ $(document).ready(function() {
 
 
 
+    $("#btnup1").click(function() {
+        if (($("#name").val() != "") && ($("#member").val() != "")) {
+            alert("Tạo thành công!")
+        }
+    });
 
     $("#btnup").click(function() {
-        var updated = $("#updated").val();
+        var updated = $("#datepicker-1").val();
         var deadline = $("#deadline").val();
         var id = localStorage.getItem("id");
         var status = localStorage.getItem("status");
