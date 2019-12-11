@@ -76,7 +76,7 @@ $(function () {
   var $visitorsChart = $('#visitors-chart')
   var visitorsChart  = new Chart($visitorsChart, {
     data   : {
-      labels  : ['18th', '20th', '22nd', '24th', '26th', '28th', '30th'],
+      labels  : ['5th', '6th', '7nd', '8th', '9th', '10th', '11th'],
       datasets: [{
         type                : 'line',
         data                : [100, 120, 170, 167, 180, 177, 160],
