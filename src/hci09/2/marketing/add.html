@@ -20,7 +20,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    Chi tiết công việc
+    Thêm công việc
   </title>
   <!-- Favicon -->
   <link href="../assets/img/brand/favicon.png" rel="icon" type="image/png">
@@ -150,7 +150,7 @@
     <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
       <div class="container-fluid">
         <!-- Brand -->
-        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Chi tiết công việc</a>
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../index.html">Thêm công việc</a>
         <!-- Form -->
         <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
           <div class="form-group mb-0">
@@ -269,7 +269,7 @@
               <div class="card-header bg-white border-0">
                 <div class="row align-items-center">
                   <div class="col-8">
-                    <h3 class="mb-0">Chi tiết công việc</h3>
+                    <h3 class="mb-0">Thêm công việc</h3>
                   </div>
                   <div class="col-4 text-right">
                     <a href="./tables.html" class="btn btn-sm btn-primary">Quay lại</a>
@@ -308,8 +308,8 @@
                       <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Cố gắng hơn nữa nhé Duy!</textarea>
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-success" id="approve">Duyệt</button>
-                      <button type="button" class="btn btn-danger" id="cancel">Hủy</button>
+                      <button type="button" class="btn btn-success" id="add">Thêm</button>
+                      <!-- <button type="button" class="btn btn-danger" id="cancel">Hủy</button> -->
                     </div>
                   </div>
                 </form>
@@ -361,13 +361,18 @@
       });
   </script>
   <script>
-    $( "#approve" ).click(function() {
-      if (window.confirm('Sau khi duyệt, công việc sẽ hoàn thành. Bạn có muốn duyệt?')) {
-        window.location = "./tables.html";
-      }
-    });
-    $( "#cancel" ).click(function() {
-      if (window.confirm('Hãy cẩn thận! Bạn có muốn hủy công việc đã giao không?')) {
+    // $( "#approve" ).click(function() {
+    //   if (window.confirm('Sau khi duyệt, công việc sẽ hoàn thành. Bạn có muốn duyệt?')) {
+    //     window.location = "./tables.html";
+    //   }
+    // });
+    // $( "#cancel" ).click(function() {
+    //   if (window.confirm('Hãy cẩn thận! Bạn có muốn hủy công việc đã giao không?')) {
+    //     window.location = "./tables.html";
+    //   }
+    // });
+    $( "#add" ).click(function() {
+      if (window.confirm('Bạn có muốn giao công việc này không?')) {
         window.location = "./tables.html";
       }
     });
