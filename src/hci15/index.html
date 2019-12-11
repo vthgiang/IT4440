@@ -1,265 +1,373 @@
 ﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>Trang chủ</title>
-    <link href="Css/libraries/jquery-ui.css" rel="stylesheet" />
-    <link href="Css/libraries/bootstrap.min.css" rel="stylesheet" />
-    <link href="Css/index.css" rel="stylesheet" />
-    <link href="Css/menu.css" rel="stylesheet" />
-    <link href="Css/header.css" rel="stylesheet" />
-    <link href="Css/content.css" rel="stylesheet" />
-    <link href="Css/dialog.css" rel="stylesheet" />
-    <link href="Css/style.css" rel="stylesheet" />
-    <link href="Css/dialog.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="includeheader"></div>
-    <!--Phần menu-->
-    <div class="menu">
-        <div class="logo">
-            <a>
-                <span class="icon-logo"></span>
-                <span class="text-logo">BÁN THUỐC</span>
-            </a>
-        </div>
-        <div class="nav-menu">
-            <div class="item select">
-                <span class="icon-item overview"></span>
-                <a href="index.html">
-                    <span class="text-item">Trang chủ</span>
-                </a>
-            </div>
-            <div id="del" class="item">
-                <a>
-                    <span class="icon-item count"></span>
-                    <span class="text-item">Thống kê</span>
-                    <span class="icon-tiep"></span>
-                </a>
-            </div>
-            <div id="child" class="child">
-                <div class="child-item ngay">
-                    <a href="theongay.html">
-                        <span class="icon-child"></span>
-                        <span class="text-child">Doanh thu theo ngày</span>
-                    </a>
-                </div>
-                <div class="child-item thang">
-                    <a href="theothang.html">
-                        <span class="icon-child"></span>
-                        <span class="text-child">Doanh thu theo tháng</span>
-                    </a>
-                </div>
-                <div class="child-item quy">
-                    <a href="theoquy.html">
-                        <span class="icon-child"></span>
-                        <span class="text-child">Doanh thu theo quý</span>
-                    </a>
-                </div>
-                <div class="child-item nam">
-                    <a href="theonam.html">
-                        <span class="icon-child"></span>
-                        <span class="text-child">Doanh thu theo năm</span>
-                    </a>
-                </div>
-                <div class="child-item sanpham">
-                    <a href="theosanpham.html">
-                        <span class="icon-child"></span>
-                        <span class="text-child">Doanh thu theo sản phẩm</span>
-                    </a>
-                </div>
-            </div>
-            <div class="item">
-                <a href="baocao.html">
-                    <span class="icon-item report"></span>
-                    <span class="text-item">Báo cáo</span>
-                </a>
-            </div>
-            <div class="item canhan">
-                <a href="quanlycongviec.html">
-                    <span class="icon-item list"></span>
-                    <span class="text-item">Công việc cá nhân</span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="phanchiacongvec.html">
-                    <span class="icon-item bill"></span>
-                    <span class="text-item">Quản lý công việc nhân viên</span>
-                </a>
-            </div>
-            <div class="item">
-                <a>
-                    <span class="icon-item setting"></span>
-                    <span class="text-item">thiết lập hệ thống</span>
-                </a>
-            </div>
-            <div class="item">
-                <a>
-                    <span class="icon-item help"></span>
-                    <span class="text-item">Trợ giúp</span>
-                </a>
-            </div>
-            <div class="item">
-                <a>
-                    <span class="icon-item user"></span>
-                    <span class="text-item">Tài khoản</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--Phần content-->
-    <div class="content">
-        <!--Phần header-content-->
-        <div class="header-content">
-            <div class="text-header-content"><b>Trang chủ kế toán bán hàng</b></div>
-        </div>
-        <!--Phần menu-content-->
-        <div class="menu-content">
-            <div class="text-menu"><b>Tiến độ làm việc của các nhân viên</b></div>
-        </div>
-        <!--Phần table-->
-        <div class="tbt-content">
-            <table class="main-table">
-                <thead class="row-table">
-                    <tr>
-                        <th>
-                            <div class="text-row">STT</div>
-                        </th>
-                        <th>
-                            <div class="text-row">Tên nhân viên</div>
-                        </th>
-                        <th>
-                            <div class="text-row">Số lượng theo ngày</div>
-                        </th>
-                        <th>
-                            <div class="text-row">Số lượng theo tháng</div>
-                        </th>
-                        <th>
-                            <div class="text-row">Số lượng theo năm</div>
-                        </th>
-                        <th>
-                            <div class="text-row">Tiến độ</div>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody style="text-align: center">
-                    <tr style="background-color: #ffffff;">
-                        <td>1</td>
-                        <td>  <b>Nguyễn Văn Thắng</b>  </td>
-                        <td><b>5</b></td>
-                        <td><b>100</b></td>
-                        <td><b>1000</b></td>
-                        <td><b>100%</b></td>
-                    </tr>
-                    <tr style="background-color: #d5d3d3;">
-                        <td>2</td>
-                        <td>  Lâm Phúc Anh Tú  </td>
-                        <td>5</td>
-                        <td>100</td>
-                        <td>1000</td>
-                        <td>96%</td>
-                    </tr>
-                    <tr style="background-color: #ffffff;">
-                        <td>3</td>
-                        <td>  Hồ Văn Toàn  </td>
-                        <td>5</td>
-                        <td>100</td>
-                        <td>1000</td>
-                        <td>98%</td>
-                    </tr>
-                    <tr style="background-color: #d5d3d3;">
-                        <td>4</td>
-                        <td>Bùi Đức Anh</td>
-                        <td>5</td>
-                        <td>100</td>
-                        <td>1000</td>
-                        <td>95%</td>
-                    </tr>
-                    <tr>
-                        <td><b>Tổng</b></td>
-                        <td></td>
-                        <td><b>20</b></td>
-                        <td><b>400</b></td>
-                        <td><b>4000</b></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="hoatdong">
-            <div class="header-hoatdong">
-                <div class="icon-hoatdong">
-                </div>
-                <div class="text-hoatdong"><b>Hoạt động</b></div>
-            </div>
-            <div class="menu-hoatdong">
-                <div class="date-hoatdong">Hôm nay 08:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã thêm nhiệm vụ cho từng thành viên trong ngày 21-11-2019</div>
-                </div>
-                <div class="date-hoatdong">Hôm nay 07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">Hôm qua 07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Lâm Phúc Anh Tú</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Bùi Đức Anh</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Hồ Văn Toàn</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="date-hoatdong">2019-09-11T07:15:57+07:00</div>
-                <div class="one-menu">
-                    <div class="icon-menu"></div>
-                    <div class="text--"><b>Nguyễn Văn Thắng</b> đã hoàn thành xong xuất báo cáo theo ngày</div>
-                </div>
-                <div class="one-menu back">
-                    <div class="text--"><b style="color: #0094ff">Xem toàn bộ hoạt động...</b></div>
-                </div>
-            </div>
-        </div>
-    </div>
+<html lang="en">
 
-    <script src="Scripts/libraries/jquery-3.4.1.js"></script>
-    <script src="Scripts/libraries/jquery-1.12.4.js"></script>
-    <script src="Scripts/libraries/jquery-ui.js"></script>
-    <script src="Scripts/libraries/jquery.validate.min.js"></script>
-    <script src="Scripts/views/base.js"></script>
-    <script src="Scripts/views/controller.js"></script>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Trang chủ</title>
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="Css/style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-briefcase-medical"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">BÁN THUỐC</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active i select">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item i">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Thống kê</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Thống kê doanh thu:</h6>
+                        <a class="collapse-item child" href="theongay.html">Theo ngày</a>
+                        <a class="collapse-item child" href="theothang.html">Theo tháng</a>
+                        <a class="collapse-item child" href="theoquy.html">Theo quý</a>
+                        <a class="collapse-item child" href="theonam.html">Theo năm</a>
+                        <a class="collapse-item child" href="theosanpham.html">Theo sản phẩm</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="baocao.html">
+                    <i class="far fa-file"></i>
+                    <span>Báo cáo</span>
+                </a>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="quanlycongviec.html">
+                    <i class="fas fa-align-justify"></i>
+                    <span>Công việc cá nhân</span>
+                </a>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="chiaviec.html">
+                    <i class="fas fa-bars"></i>
+                    <span>Quản lý công việc cá nhân</span>
+                </a>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="kpi.html">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>KPI</span>
+                </a>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Thiết lập hệ thống</span>
+                </a>
+            </li>
+            <li class="nav-item i">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-hands-helping"></i>
+                    <span>Trợ giúp</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="background-color: #1a6fb4!important;">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Nhập dữ liệu cần tìm kiếm" aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">9+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Thống báo
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">10:00 29-11-2019</div>
+                                        <span class="font-weight-bold">Công việc cá nhân của bạn đã được cập nhật</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">9:46 29-11-2019</div>
+                                        Nhiệm vụ thống kê doanh thu theo tháng của bạn sẽ kết thúc sau 4 tiếng
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">Hôm qua 28-11-2019</div>
+                                        Công việc cá nhân của bạn đã được cập nhật
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Xem thêm...</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Tin nhắn
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Gửi tôi cái báo cáo hôm qua nha</div>
+                                        <div class="small text-gray-500">8:58</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Làm hộ t cái thống kê doanh thu càng...</div>
+                                        <div class="small text-gray-500">hôm qua 12:30</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Làm hộ t cái thống kê doanh thu càng...</div>
+                                        <div class="small text-gray-500">hôm qua 12:30</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Làm hộ t cái thống kê doanh thu càng...</div>
+                                        <div class="small text-gray-500">hôm qua 12:30</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Xem thêm...</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-white small">Nguyễn Văn Thắng</span>
+                                <img class="img-profile rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    trang cá nhân
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Cài đặt
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Đăng xuất
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid">
+                    <!-- Content Row -->
+
+                    <div class="row">
+                        <!-- Area Chart -->
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold">Biểu đồ tổng quan</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div id="chartContainer" class="card-t"></div>
+                                </div>
+                                <div style="color: #000000;font-size: 20px; text-align: center;"><b>Hình 1: Biểu đồ đường hiển thị phần trăm hoàn thành công việc</b></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of Content Wrapper -->
+
+            </div>
+            <!-- End of Page Wrapper -->
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+
+            <!-- Logout Modal-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn có thực sự muốn đăng xuất khỏi hệ thống.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
+                            <a class="btn btn-primary" href="login.html">Đăng xuất</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="Scripts/jquery.min.js"></script>
+            <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+            <!-- Core plugin JavaScript-->
+            <script src="Scripts/jquery.easing.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="Scripts/admin.js"></script>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+            <!-- Page level custom scripts -->
+            <script src="Scripts/chart.js"></script>
+            <script src="Scripts/base.js"></script>
+
 </body>
+
 </html>
-<script>
-    $(function () {
-        $(".includeheader").load("header.html");
-    });
-</script>

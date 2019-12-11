@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Employee KPI</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<style>
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.w3-anton{
+			font-family: 'Patua One', cursive;
+		}
+
+		body{
+			font-family: Arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar (sit on top) -->
+		<div class="w3-bar w3-white w3-card w3-cell-middle " id="myNavbar">
+		<a href="index.html" class="w3-bar-item w3-anton w3-medium" style="text-decoration: none; padding-right: 30px;">COMPANY</a>
+			<!-- Right-sided navbar links -->
+			<div class="w3-left w3-hide-small w3-margin-right">
+				
+				<a href="employee-import.html" class="w3-bar-item w3-button"><i class="fa fa-th" style="margin-right: 5px;"></i>Danh sách công việc</a>
+				<a href="nhap-hang.html" class="w3-bar-item w3-button "><i class="fa fa-user" style="margin-right: 5px;"></i>Nhập hàng</a>
+				<a href="theo-doi.html" class="w3-bar-item w3-button "><i class="fa fa-usd" ></i> Theo dõi đơn hàng</a>
+				<a href="employee-kpi.html" class="w3-bar-item w3-button "><i class="fa fa-bar-chart" style="margin-right: 5px;"></i>KPI</a>
+				<a href="danh-muc-sp.html" class="w3-bar-item w3-button "><i class="fa fa-book" style="padding-right: 5px;"></i>Danh mục sản phẩm</a>
+			</div>
+			<div class="w3-right w3-hide-small w3-margin-right">
+				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-user w3-large" style="padding: 0 10px;"></i>Hi, Employee</a>
+				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-bell w3-large" style="padding: 0 10px;"></i></a>
+			</div>
+			<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+			<a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<!-- Sidebar on small screens when clicking the menu icon -->
+	<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+		<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+		<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+		<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
+	</nav>
+	
+	<div class="w3-content w3-container w3-padding-16">
+		<p class="w3-padding-16">KPI hiện tại<span class="w3-badge w3-red" style="margin-left: 5px;">9</span></p>
+		<div class="w3-animate-zoom">
+			<p style="margin-bottom: 5px;"><span class="w3-tag w3-green">Hoàn thành đúng hạn!</span>12/20</p>
+			<p style="margin-bottom: 5px;"><span class="w3-tag w3-yellow">Hoàn thành nhưng quá hạn!</span>2/20</p>
+			<p style="margin-bottom: 5px;"><span class="w3-tag w3-red">Chưa hoàn thành</span>1/20</p>
+			<p style="margin-bottom: 5px;"><span class="w3-tag w3-blue">Đang hoàn thành</span>5/20</p>			
+		</div>
+	</div>
+	<div class="w3-content w3-container w3-margin-top">
+		<h2 class="w3-center">KPI theo các tháng</h2>
+		<canvas id="myKpi">
+			
+		</canvas>
+	</div>
+	
+	<footer class="w3-container w3-center w3-large w3-light-grey w3-padding-32">
+		HCI_14
+	</footer>
+	
+
+	
+
+
+	<script type="text/javascript">
+		var mySidebar = document.getElementById("mySidebar");
+
+		function w3_open() {
+			if (mySidebar.style.display === 'block') {
+				mySidebar.style.display = 'none';
+			} else {
+				mySidebar.style.display = 'block';
+			}
+		}
+
+// Close the sidebar with the close button
+		function w3_close() {
+			mySidebar.style.display = "none";
+		}
+	</script>
+	<script>
+		Chart.defaults.global.defaultFontFamily = 'Lato';
+		Chart.defaults.global.defaultFontSize = 14;
+		Chart.defaults.global.defaultFontColor = '#777';
+
+		var kpi = document.getElementById('myKpi').getContext('2d');
+		var myKpi = new Chart(kpi, {
+    // The type of chart we want to create
+	    type: 'line',
+
+	    // The data for our dataset
+	    data: {
+	    	labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+	    	datasets: [{
+	    		label: 'My First dataset',
+	    		borderColor: 'rgb(51, 153, 255)',
+	    		data: [9, 8, 10, 8, 9, 8, 10]
+	    	}
+	    ]
+	    },
+
+	    // Configuration options go here
+	    options: {
+	    	legend:{
+	    		display: false
+	    	}
+	    }
+	});
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>
