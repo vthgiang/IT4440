@@ -20,6 +20,7 @@
     integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -43,12 +44,53 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
       <h3 class="text-light m-0">LOGO</h3>
     </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
     <div class="navbar-nav ml-auto flex-row align-items-center">
       <h6 class="text-light m-0 mr-3">
-        Xin chào ABC<br />
+        Xin chào Admin<br />
         <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
       </h6>
       <button class="btn m-0 p-0 mr-3">
@@ -126,7 +168,7 @@
       <!-- Begin Main -->
       <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
         <!-- Begin Breadcrumb -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="margin-top: 20px;">
           <ol class="breadcrumb rounded-0 h6">
             <li class="breadcrumb-item">Phê duyệt mục tiêu</li>
             <li class="breadcrumb-item active" aria-current="page">Danh sách mục tiêu</li>
@@ -146,10 +188,10 @@
                   <div class="col-md-8 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn bộ phận ...</option>
-                      <option>Bộ phận A</option>
-                      <option>Bộ phận B</option>
-                      <option>Bộ phận C</option>
-                      <option>Bộ phận D</option>
+                      <option>Bộ phận Nhân sự</option>
+                      <option>Bộ phận Kinh doanh</option>
+                      <option>Bộ phận Nghiên cứu</option>
+                      <option>Bộ phận Hậu cần</option>
                     </select>
                   </div>
                 </div>
@@ -162,10 +204,10 @@
                   <div class="col-md-8 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn phòng ban ...</option>
-                      <option>Phòng ban A</option>
-                      <option>Phòng ban B</option>
-                      <option>Phòng ban C</option>
-                      <option>Phòng ban D</option>
+                      <option>Phòng quản lí</option>
+                      <option>Phòng tuyển dụng</option>
+                      <option>Phòng kế toán</option>
+                      <option>Phòng sản xuất</option>
                     </select>
                   </div>
                 </div>
@@ -176,8 +218,9 @@
                     <label class="h6">Hạn chót</label>
                   </div>
                   <div class="col-md-8 col-sm-12">
-                    <div class="input-group date" data-provide="datepicker">
-                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <div class="input-group date">
+                      <input type="text" style="padding-left: 15px;" class="form-control datepicker"
+                        placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -251,181 +294,181 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row" style="text-align: center;">1</th>
-                <td>Tuyển 5 nhân viên </td>
-                <td>Nhân sự</td>
-                <td>Quản trị nhân sự</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #28a745;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">1</th>
+                <td style="vertical-align: middle;">Tuyển 5 nhân viên </td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #28a745; vertical-align: middle;">
                   <b>Hoàn thành</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      12/12
+                      100%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">2</th>
-                <td>Đuổi 5 nhân viên</td>
-                <td>Nhân sự</td>
-                <td>Quản trị nhân sự</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">2</th>
+                <td style="vertical-align: middle;">Đuổi 5 nhân viên</td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">3</th>
-                <td>Tăng chức</td>
-                <td>Nhân sự</td>
-                <td>Quản trị nhân sự</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">3</th>
+                <td style="vertical-align: middle;">Tăng chức</td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 40%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      4/10
+                      40%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">4</th>
-                <td>Doanh số tăng 50%</td>
-                <td>Tài chính</td>
-                <td>Cơ cấu tổ chức</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">4</th>
+                <td style="vertical-align: middle;">Doanh số tăng 50%</td>
+                <td style="vertical-align: middle;">Tài chính</td>
+                <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Quá hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 30%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      2/10
+                      20%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">5</th>
-                <td>Tạo sản phẩm mới</td>
-                <td>Nghiên cứu</td>
-                <td>Phát triển</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">5</th>
+                <td style="vertical-align: middle;">Tạo sản phẩm mới</td>
+                <td style="vertical-align: middle;">Nghiên cứu</td>
+                <td style="vertical-align: middle;">Phát triển</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">6</th>
-                <td>Quảng cáo</td>
-                <td>Markerting</td>
-                <td>Markerting</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">6</th>
+                <td style="vertical-align: middle;">Quảng cáo</td>
+                <td style="vertical-align: middle;">Markerting</td>
+                <td style="vertical-align: middle;">Markerting</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">7</th>
-                <td>Đi làm đầy đủ</td>
-                <td>Nhân sự</td>
-                <td>Hành chính</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">7</th>
+                <td style="vertical-align: middle;">Đi làm đầy đủ</td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Hành chính</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">8</th>
-                <td>Thêm bộ phận</td>
-                <td>Quản trị</td>
-                <td>Phòng tổ chức</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">8</th>
+                <td style="vertical-align: middle;">Thêm bộ phận</td>
+                <td style="vertical-align: middle;">Quản trị</td>
+                <td style="vertical-align: middle;">Phòng tổ chức</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">9</th>
-                <td>Xóa bộ phận</td>
-                <td>Quản trị</td>
-                <td>Phòng tổ chức</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">9</th>
+                <td style="vertical-align: middle;">Xóa bộ phận</td>
+                <td style="vertical-align: middle;">Quản trị</td>
+                <td style="vertical-align: middle;">Phòng tổ chức</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">10</th>
-                <td>Số 1 toàn quốc </td>
-                <td>Giám đốc</td>
-                <td>Quản trị</td>
-                <td>20/11/2019</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">10</th>
+                <td style="vertical-align: middle;">Số 1 toàn quốc </td>
+                <td style="vertical-align: middle;">Giám đốc</td>
+                <td style="vertical-align: middle;">Quản trị</td>
+                <td style="vertical-align: middle;">20/11/2019</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đúng hạn</b>
                 </td>
                 <td style="vertical-align: middle;">
                   <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 80%"
                       aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      8/12
+                      75%
                     </div>
                   </div>
                 </td>
@@ -459,6 +502,25 @@
     </div>
   </div>
   <!-- End Body -->
+  <script type="text/javascript">
+    $.fn.datepicker.dates["vi-VN"] =
+      {
+        months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+        monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+        days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+        daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+        daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+        titleFormat: "dd MM yyyy",
+        today: "Today",
+      };
+
+    $(".datepicker").datepicker({
+      isRTL: false,
+      format: 'dd/mm/yyyy',
+      autoclose: true,
+      language: 'vi-VN'
+    });
+  </script>
 </body>
 
 </html>
