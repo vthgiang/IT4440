@@ -26,7 +26,7 @@
 				<div id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Kế toán trưởng</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
@@ -47,16 +47,22 @@
 						<li><a href="../home.html"><i class="lnr lnr-home"></i> <span>Trang chủ</span></a></li>
 
 						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
-						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
+						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
 						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
-						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
 
-						<li><a href="../kpi/setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-credit-card"></i> <span>KPI</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse item" style="background: #ccc;">
+								<ul class="nav">
+									<li><a class="item" style="padding-left: 60px;" href="setciteria.html">Chỉ tiêu hiện tại</a></li>		
+									<li><a class="item" style="padding-left: 60px;" href="result.html">
+									Kết quả KPI</a></li>		
+								</ul>
+							</div>
+						</li>
 
 
 						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
-
-
 
 					</ul>
 				</nav>
@@ -68,65 +74,55 @@
 	<!-- MAIN CONTENT -->
 		<div class="main-content">
 			<div class="container-fluid">
-				<h2>Danh sách thông báo</h2>
+				<h2>Kết quả KPI cá nhân</h2>
+
 				<table class="table table-data" data-toggle="table" data-search="true">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>Kỳ đánh giá</th>
+							<th>Nhóm tiêu chí</th>
+							<th>Kết quả đạt được</th>
+							<th>Xem chi tiết</th>
+						</tr>
+					</thead>
 					<tbody>
 						<tr>
-
-								<td>
-									<img src="../../images/logo.png" style="height:20px;width: 30px;">
-								</td>
-								<td>
-									<a href="../workemployee/detail.html" target="_blank">
-										<b>MS01 Nguyễn Anh Phương</b> đã nộp công việc thống kê
-									</a>
-								</td>
-								<td>7:29 12-Nov-2019</td>
-
+							<td>1</td>
+							<td>10/2019</td>
+							<td>Bộ tiêu chí thuế</td>
+							<td>90%</td>
+							<td>
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#detail"> Xem</a>
+							</td>
 						</tr>
 						<tr>
+							<td>2</td>
+							<td>10/2019</td>
+							<td>Bộ tiêu chí thuế</td>
+							<td>90%</td>
 							<td>
-								<img src="../../images/logo.png" style="height:20px;width: 30px;">
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#detail"> Xem</a>
 							</td>
-							<td>
-								<a href="../workemployee/detail.html" target="_blank">
-									<b>MS01 Nguyễn Anh Phương</b> đã cập nhật tiến độ công việc kế toán
-								</a>
-							</td>
-							<td>7:29 12-Nov-2019</td>
 						</tr>
 						<tr>
+							<td>3</td>
+							<td>10/2019</td>
+							<td>Bộ tiêu chí thuế</td>
+							<td>90%</td>
 							<td>
-								<img src="../../images/user.png" style="height:20px;width: 30px;">
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#detail"> Xem</a>
 							</td>
-							<td>
-								<a href="../workemployee/detail.html" target="_blank">
-									<b>MS02 Lê Duy Anh</b> đã cập nhật tiến độ công việc kế toán
-								</a>
-							</td>
-							<td>7:29 12-Nov-2019</td>
 						</tr>
 						<tr>
+							<td>4</td>
+							<td>10/2019</td>
+							<td>Bộ tiêu chí thuế</td>
+							<td>90%</td>
 							<td>
-								<img src="../../images/logo.png" style="height:20px;width: 30px;">
+								<a href="detail.html" class="btn btn-success" data-toggle="modal" data-target="#detail"> Xem</a>
 							</td>
-							<td>
-								<a href="../workemployee/detail.html" target="_blank">
-									<b>MS01 Nguyễn Anh Phương</b> đã nộp công việc thống kê
-								</a>
-							</td>
-							<td>7:29 12-Nov-2019</td>
 						</tr>
-						<tr>
-							<td>
-								<img src="../../images/user.png" style="height:20px;width: 30px;">
-							</td>
-							<td><a href="../workemployee/detail.html" target="_blank"><b>MS01 Nguyễn Anh Phương</b> đã nộp công việc thống kê
-							</a>
-						</td>
-							<td>7:29 12-Nov-2019</td>
-						</tr>
-
 					</tbody>
 				</table>
 
@@ -144,29 +140,13 @@
 		</div>
 	<!-- END WRAPPER -->
 
-	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	 	<div class="modal-dialog" role="document">
-			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
-				<div class="modal-header">
-					<h3 class="modal-title">Thông báo</h3>
-				</div>
-				<div class="modal-body">
-					<p>Bạn có chắc chắn muốn xóa?</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
-					<button type="button" class="btn btn-danger" data-dismiss="modal">Xóa</button>
-				</div>
-			</div>
-	  	</div>
-	</div>
-
-
 	<!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+
+<script src="../../js/master.js"></script>
 </body>
 </html>
