@@ -1,0 +1,59 @@
+<!-- 
+    file này để trỏ route trong server =>  các bạn có thể làm việc trong
+    thư mục của nhóm, tạo file folder thoải mái, file index.html dùng 
+    hiện view của nhóm, có thể tạo nhiều file html nếu bạn có nhiều màn.
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+<title>HCI_08</title>
+<meta charset="utf-8">
+<style>
+    h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .button {
+        width: 30%;
+        padding: 20px 40px;
+        align-content: center;
+        border-radius: 10px;
+        margin: 40px auto;
+        font-size: 20px;
+        transition: transform;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .employee:hover {
+        transform: scale(1.2);
+    }
+
+    .manager:hover {
+        transform: scale(1.2);
+    }
+
+    .employee {
+        background-image: linear-gradient(to top,yellow,#fa9600ea);
+    }
+
+    .manager {
+        background-image: linear-gradient(to bottom, orange, yellow);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="title">Bài làm của nhóm 8</h1>
+<div class="employee button"><a href="cong_nhan/bao_cao_cv_hang_ngay.html">GIAO DIỆN CHO CÔNG NHÂN</a></div>
+<div class="manager button"><a href="to_truong/dashboard_nhan_vien.html">GIAO DIỆN CHO TỔ TRƯỞNG</a></div>
+<div class="manager button"><a href="quan_doc/Dashboard.html">GIAO DIỆN CHO QUẢN ĐỐC</a></div>
+</body>
+</html>

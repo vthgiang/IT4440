@@ -47,7 +47,10 @@
       <h3 class="text-light m-0">LOGO</h3>
     </a>
     <div class="navbar-nav ml-auto flex-row align-items-center">
-      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <h6 class="text-light m-0 mr-3">
+        Xin chào ABC<br />
+        <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
+      </h6>
       <button class="btn m-0 p-0 mr-3">
         <i class="fas fa-user-circle text-light h3 m-0"></i>
       </button>
@@ -65,7 +68,8 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column h5 main-nav">
             <li class="nav-item active">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true" aria-controls="sub-nav-1">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-1" aria-expanded="true"
+                aria-controls="sub-nav-1">
                 <span>Chức năng chung</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
@@ -80,13 +84,19 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true" aria-controls="sub-nav-2">
+              <a role="button" class="nav-link" data-toggle="collapse" data-target="#sub-nav-2" aria-expanded="true"
+                aria-controls="sub-nav-2">
                 <span>Quản trị mục tiêu</span>
               </a>
               <i class="fas fa-chevron-down ml-auto mr-2"></i>
             </li>
             <li id="sub-nav-2" class="collapse show">
               <ul class="nav flex-column h6 sub-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="/statistic.html">
+                    <span>Dashboard</span>
+                  </a>
+                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/target-creator.html">
                     <span>Thiết lập mục tiêu</span>
@@ -102,11 +112,11 @@
                     <span>Giám sát tiến độ</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="/statistic.html">
                     <span>Thống kê</span>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -240,180 +250,130 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Mục tiêu A</td>
+                <th scope="row" style="text-align: center;">1</th>
+                <td>Tuyển 5 nhân viên </td>
                 <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <td>Quản trị nhân sự</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Đã duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: #28a745;">
+                  <b>Đã duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">2</th>
-                <td>Mục tiêu A</td>
+                <th scope="row" style="text-align: center;">2</th>
+                <td>Đuổi 5 nhân viên</td>
                 <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <td>Quản trị nhân sự</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">3</th>
-                <td>Mục tiêu A</td>
+                <th scope="row" style="text-align: center;">3</th>
+                <td>Tăng chức</td>
                 <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <td>Quản trị nhân sự</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">4</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <th scope="row" style="text-align: center;">4</th>
+                <td>Doanh số tăng 50%</td>
+                <td>Tài chính</td>
+                <td>Cơ cấu tổ chức</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">5</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <th scope="row" style="text-align: center;">5</th>
+                <td>Tạo sản phẩm mới</td>
+                <td>Nghiên cứu</td>
+                <td>Phát triển</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">6</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <th scope="row" style="text-align: center;">6</th>
+                <td>Quảng cáo</td>
+                <td>Markerting</td>
+                <td>Markerting</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">7</th>
-                <td>Mục tiêu A</td>
+                <th scope="row" style="text-align: center;">7</th>
+                <td>Đi làm đầy đủ</td>
                 <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <td>Hành chính</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: #28a745;">
+                  <b>Đã duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">8</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
+                <th scope="row" style="text-align: center;">8</th>
+                <td>Thêm bộ phận</td>
+                <td>Quản trị</td>
                 <td>Phòng tổ chức</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">9</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
+                <th scope="row" style="text-align: center;">9</th>
+                <td>Xóa bộ phận</td>
+                <td>Quản trị</td>
                 <td>Phòng tổ chức</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
                 </td>
               </tr>
               <tr>
-                <th scope="row">10</th>
-                <td>Mục tiêu A</td>
-                <td>Nhân sự</td>
-                <td>Phòng tổ chức</td>
+                <th scope="row" style="text-align: center;">10</th>
+                <td>Số 1 toàn quốc </td>
+                <td>Giám đốc</td>
+                <td>Quản trị</td>
                 <td>20/11/2019</td>
-                <td>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" style="width: 100%"
-                      aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      Chưa duyệt
-                    </div>
-                  </div>
+                <td style="text-align: center; padding: 1em;color: red;">
+                  <b>Chưa duyệt</b>
                 </td>
                 <td>
                   <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>

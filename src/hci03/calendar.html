@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>HCI 03 - Lịch trình</title>
+
+    <!-- using online links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- <link rel="stylesheet" href="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="assets/images/logo/apple-touch-icon.html">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+    <!-- core dependcies css -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/PACE/themes/blue/pace-theme-minimal.css" />
+    <link rel="stylesheet" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+
+    <!-- page css -->
+    <link rel="stylesheet" href="assets/vendor/fullcalendar/fullcalendar.min.css" />
+    <link href="assets/vendor/selectize/dist/css/selectize.default.css" rel="stylesheet">
+    <link href="assets/vendor/summernote/dist/summernote-bs4.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet">
+
+    <!-- core css -->
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <div class="sidebar-item sidebar-brand">
+                    <a href="index.html"> <i class="fa fa-home"></i> Trang chủ</a>
+                </div>
+
+                <!-- sidebar-header  -->
+                <div class="sidebar-item sidebar-header d-flex flex-nowrap">
+                    <div class="user-pic">
+                        <img class="img-responsive img-rounded" src="img/user.jpg" alt="User picture">
+                    </div>
+                    <div class="user-info">
+                        <span class="user-name">Hoang
+                            <strong>Pham</strong>
+                        </span>
+                        <span class="user-role">Trưởng bộ phận</span>
+                        <span class="user-status">
+                            <i class="fa fa-circle"></i>
+                            <span>Online</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- sidebar-search  -->
+                <div class="sidebar-item sidebar-search">
+                    <div>
+                        <div class="input-group">
+                            <input type="text" class="form-control search-menu" placeholder="Search...">
+                            <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar-menu  -->
+                <div class=" sidebar-item sidebar-menu">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-tachometer-alt"></i>
+                                <span class="menu-text">Quản lý công việc</span>
+                                <span class="badge badge-pill badge-warning">New</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="congvieccanhan.html">Công việc cá nhân
+                                            <span class="badge badge-pill badge-success">10</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="viecnhom.html">Công việc nhóm
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+
+                                    </li>
+                                    <li>
+                                        <a href="workingreport.html">Báo cáo công việc trong ngày
+                                            <span class="badge badge-pill badge-success">15</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="thongke.html">Thống kê</a>
+                                    </li>
+                                    <li>
+                                        <a href="calendar.html">Lịch</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-address-book"></i>
+                                <span class="menu-text">Quản lý nhân viên</span>
+                                <span class="badge badge-pill badge-danger">3</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="#">Danh sách nhân viên
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Theo dõi tiến độ công việc trong ngày</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kỉ luật, khen thưởng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-book"></i>
+                                <span class="menu-text">Quản lý báo cáo</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="report_management.html">Tổng hợp báo cáo</a>
+                                    </li>
+                                    <li>
+                                        <a href="create-report.html">Gửi báo cáo</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="PheDuyetBaoCaoTuan.html">Phê duyệt cáo tuần</a>
+                                    </li>
+                                    <li>
+                                        <a href="PheDuyetBaoCaoThang.html">Phê duyệt cáo tháng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Liên lạc</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="chat.html">Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="email.html">Email</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Liên hệ</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="#">
+                                <i class="fa fa-mail-bulk"></i>
+                                <span class="menu-text">Trợ giúp</span>
+                            </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">Hỏi đáp</a>
+                                    </li>
+                                    <li>
+                                        <a href="sitemap.html">Sơ đồ trang web</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div class="dropdown">
+
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge badge-pill badge-warning notification">3</span>
+                    </a>
+                    <div class="dropdown-menu notifications" aria-labelledby="dropdownMenuMessage">
+                        <div class="notifications-header">
+                            <i class="fa fa-bell"></i> Thông báo
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-check text-success border border-success"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail"> Em Ngân gửi báo cáo ngày</div>
+                                    <div class="notification-time">
+                                        6 minutes ago
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation text-info border border-info"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Giám đốc thông báo kế hoạch họp</div>
+                                    <div class="notification-time">
+                                        Hôm nay
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="notification-content">
+                                <div class="icon">
+                                    <i class="fas fa-exclamation-triangle text-warning border border-warning"></i>
+                                </div>
+                                <div class="content">
+                                    <div class="notification-detail">Lịch họp</div>
+                                    <div class="notification-time">
+                                        Hôm qua
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">Xem tất cả thông báo</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-envelope"></i>
+                        <span class="badge badge-pill badge-success notification">7</span>
+                    </a>
+                    <div class="dropdown-menu messages" aria-labelledby="dropdownMenuMessage">
+                        <div class="messages-header">
+                            <i class="fa fa-envelope"></i> Tin nhắn
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Tin nhắn</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        In totam explicabo</div>
+                                </div>
+                            </div>
+
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div class="message-content">
+                                <div class="pic">
+                                    <img src="img/user.jpg" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message-title">
+                                        <strong> Jhon doe</strong>
+                                    </div>
+                                    <div class="message-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        In totam explicabo</div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">View all messages</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                        <span class="badge-sonar"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuMessage">
+                        <a class="dropdown-item" href="#">My profile</a>
+                        <a class="dropdown-item" href="#">Help</a>
+                        <a class="dropdown-item" href="#">Setting</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="#">
+                        <i class="fa fa-power-off"></i>
+                    </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content pt-2">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Aside START -->
+                    <div class="aside">
+                        <div class="aside-toggle">
+                            <i class="chevron-right mdi mdi-chevron-right"></i>
+                            <i class="chevron-left mdi mdi-chevron-left"></i>
+                        </div>
+                        <div class="aside-wrapper">
+                            <div class="m-t-20">
+                                <p class="font-size-11 text-uppercase p-b-15">Tags</p>
+                                <p class="text-semibold m-b-20">
+                                    <span class="status info m-r-5"></span>
+                                    <a class="text-gray" href="#">Họp</a>
+                                </p>
+                                <p class="text-semibold m-b-20">
+                                    <span class="status success m-r-5"></span>
+                                    <a class="text-gray" href="#">Ngày lễ</a>
+                                </p>
+                                <p class="text-semibold m-b-20">
+                                    <span class="status primary m-r-5"></span>
+                                    <a class="text-gray" href="#">Riêng tư</a>
+                                </p>
+                                <p class="text-semibold m-b-20">
+                                    <span class="status danger m-r-5"></span>
+                                    <a class="text-gray" href="#">Quan trọng</a>
+                                </p>
+                            </div>
+                            <div class="m-t-50">
+                                <p class="font-size-11 text-uppercase p-b-15">Sự kiện</p>
+                                <p class="text-semibold m-b-20">
+                                    <i class="mdi mdi-plus m-r-5 text-info"></i>
+                                    <a class="text-gray" href="#" data-target="#event-modal" data-toggle="modal">Thêm sự
+                                        kiện</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Aside END -->
+
+                    <!-- Content Wrapper START -->
+                    <div class="main-content">
+                        <div id="full-calendar"></div>
+                        <div class="modal fade" id="event-modal">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header border bottom">
+                                        <h4 class="modal-title">Tạo/Tùy chỉnh sự kiện</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row p-v-20">
+                                            <div class="col-sm-10 offset-sm-1">
+                                                <div class="form-group">
+                                                    <label class="control-label">Sự kiện</label>
+                                                    <input type="text" class="form-control" placeholder="Event Name">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="start-date">Bắt
+                                                                đầu</label>
+                                                            <div class="icon-input">
+                                                                <i class="mdi mdi-calendar-clock"></i>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Placeholder" id="start-date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="start-date">Kết
+                                                                thúc</label>
+                                                            <div class="icon-input">
+                                                                <i class="mdi mdi-calendar-clock"></i>
+                                                                <input type="text" class="form-control"
+                                                                    placeholder="Placeholder" id="end-date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class=" control-label m-t-5 p-r-10">Tag:</label>
+                                                    <div class="color-selector d-inline-block">
+                                                        <label>
+                                                            <input type="radio" name="tag-color">
+                                                            <span class="theme-color bg-primary"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="tag-color">
+                                                            <span class="theme-color bg-info"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="tag-color">
+                                                            <span class="theme-color bg-success"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="tag-color">
+                                                            <span class="theme-color bg-warning"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="tag-color">
+                                                            <span class="theme-color bg-danger"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label pull-left lh-2-5 p-r-10">Thành
+                                                        viên:</label>
+                                                    <ul class="list-media-horizon list-inline">
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-1.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-2.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-3.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-4.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <img src="assets/images/avatars/thumb-5.jpg" alt="">
+                                                            </a>
+                                                        </li>
+                                                        <li class="add-member dropdown dropdown-animated">
+                                                            <a href="#" data-toggle="dropdown">
+                                                                <span>+</span>
+                                                            </a>
+                                                            <div class="dropdown-menu dropdown-md">
+                                                                <ul class="list-media">
+                                                                    <li class="list-item">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="media-hover p-10">
+                                                                            <div class="media-img">
+                                                                                <img src="assets/images/avatars/thumb-2.jpg"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <span class="title p-t-10">Susie
+                                                                                    Willis</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-item">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="media-hover p-10">
+                                                                            <div class="media-img">
+                                                                                <img src="assets/images/avatars/thumb-3.jpg"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <span class="title p-t-10">HungNV</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-item">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="media-hover p-10">
+                                                                            <div class="media-img">
+                                                                                <img src="assets/images/avatars/thumb-8.jpg"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <span
+                                                                                    class="title p-t-10">TuyenTK</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="list-item">
+                                                                        <a href="javascript:void(0);"
+                                                                            class="media-hover p-10">
+                                                                            <div class="media-img">
+                                                                                <img src="assets/images/avatars/thumb-6.jpg"
+                                                                                    alt="">
+                                                                            </div>
+                                                                            <div class="info">
+                                                                                <span class="title p-t-10">TienNH</span>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Mô tả</label>
+                                                    <textarea class="form-control" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                                        <button type="button" class="btn btn-success">Cập nhật</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Wrapper END -->
+                </div>
+
+
+
+                <br>
+                <br>
+                <br>
+                <hr>
+                <footer>
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <small>Made by <span class="text-secondary font-weight-bold">HCI-03</span></small>
+                        </div>
+                        <div class="col-md-4">
+                            <address>
+                                <strong>HUST, University.</strong><br>
+                                1 Đại Cồ Việt, Hai Bà Trưng <br>
+                                Hà Nội, Việt Nam<br>
+                            </address>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" target="_blank"
+                                class="btn btn-sm bg-secondary shadow-sm rounded-0 text-light mr-3 mb-3">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- using online scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+        </script>
+    <script src="js/main.js"></script>
+    <script src="assets/js/vendor.js"></script>
+
+    <script src="assets/js/app.min.js"></script>
+
+    <!-- page js -->
+    <script src="assets/vendor/moment/min/moment.min.js"></script>
+    <script src="assets/vendor/fullcalendar/fullcalendar.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/apps/calendar.js"></script>
+</body>
+
+</html>
