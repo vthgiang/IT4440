@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Báo Cáo Công Việc Hàng Ngày </title>
+</head>
+<body>
+
+<style>
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+    @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+    @import url("https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css");
+    @import url("https://adminlte.io/themes/AdminLTE/dist/css/skins/_all-skins.min.css");
+</style>
+
+
+<body class="hold-transition skin-blue sidebar-mini" id="menu">
+<div class="wrapper">
+    <header class="main-header">
+        <a class="logo">
+            <span class="logo-mini"><b>Nhóm 8</b></span>
+            <span class="logo-lg"><b>Nhóm 8</b></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown tasks-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn
+                            (Tổ trưởng)
+                        </a>
+                    </li>
+
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                 class="user-image" alt="User Image">
+                            <span class="hidden-xs">HNX</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="user-header">
+                                <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                     class="img-circle" alt="User Image">
+
+                                <p>
+                                    Web Developer
+                                    <small> 2019</small>
+                                </p>
+                            </li>
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a
+                                            class="btn btn-default btn-flat"></a>
+                                </div>
+                                <div class="pull-right">
+                                    <a class="btn btn-default btn-flat log_out">Đăng xuất</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="main-sidebar">
+        <section class="sidebar">
+
+            <ul class="sidebar-menu" data-widget="tree">
+                <li style="background-color: black">
+                    <a>
+                        <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="giao_viec.html">
+                        <i class="fa fa-th"></i> <span>Giao việc</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cong_viec_hoan_thanh.html">
+                        <i class="fa fa-th"></i> <span>Theo dõi tiến độ</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class="content-wrapper">
+        <section class="content-header">
+
+        </section>
+        <section class="content" id="main_content">
+
+
+            <div class="alert alert-success" role="alert">
+                Có công việc mới <a href="chi-tiet-cong-viec.html">
+                <!-- <button class="btn btn-primary">Xem chi tiết</button> --></a>
+            </div>
+
+            <h3 style="color: green">Công việc mới</h3>
+            <table class="table table-borered table-hover">
+                <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Khối Lượng</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày Kết thúc dự kiến</th>
+                <th>Ghi chú</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thuốc dạ dày</td>
+                    <td>200 cân</td>
+                    <td>20/11/2019</td>
+                    <td>20/12/2019</td>
+                    <td></td>
+                </tr>
+
+                </tbody>
+            </table>
+            <hr>
+
+            <h3>Công việc đang làm</h3>
+            <table class="table table-borered table-hover">
+                <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Khối Lượng</th>
+                <th>Tổng đã làm</th>
+                <th>Chi tiết</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày Kết thúc dự kiến</th>
+                <th>Ghi chú</th>
+                </thead>
+                <tbody class="dang_lam">
+                <tr style="color:red">
+                    <td>1</td>
+                    <td>Thuốc dạ dày</td>
+                    <td>200 cân</td>
+                    <td>100 cân</td>
+                    <td>Pha chế: 150 cân</br>Chia liều: 120 cân</br>Đóng gói: 100 cân</br></td>
+                    <td>20/11/2019</td>
+                    <td><span>15/12/2019</span></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Thuốc viêm</td>
+                    <td>150 cân</td>
+                    <td>75 cân</td>
+                    <td>Pha chế: 100 cân</br>Chia liều: 100 cân</br>Đóng gói: 75 cân</br></td>
+                    <td>20/11/2019</td>
+                    <td>20/12/2019</td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="modelSuccess">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+                        Lưu dữ liệu thành công
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- The Modal -->
+        <div class="modal fade" id="modelFail">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+                        vui lòng kiểm tra lại dữ liệu
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+
+
+<style type="text/css">
+    .content {
+        background-color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+
+    th {
+        background-color: rgb(130, 179, 102);;
+    }
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://adminlte.io/themes/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        // function checkInt(string) {
+        // 	return string == parseInt(string);
+        // }
+
+        // $('.them').click(function(){
+
+        // 	let loai_thuoc = $('.loai_thuoc').val(),stt;
+        // 	let loai_dong_vat = $('.loai_dong_vat').val();
+        // 	let so_luong = $('#so_luong').val();
+
+        // 	let lastTr = $('tbody tr');
+        // 	let lastStt = $(lastTr[lastTr.length-1]).children()[0];
+        // 	lastStt = $(lastStt).text();
+
+        // 	if ( checkInt(lastStt) ) {
+        // 		stt = parseInt(lastStt) + 1;
+        // 	} else{
+        // 		insertFail();
+        // 		return;
+        // 	}
+
+        // 	if( loai_thuoc == '...' || loai_dong_vat == '...' || !checkInt(so_luong) ) {
+        // 		insertFail();
+        // 	} else {
+        // 		insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong);
+        // 	}
+
+
+        // });
+
+        // $('.hoan_thanh').click(function(){
+
+        // 	$("#modelSuccess").modal();
+
+        // });
+        // function deleteRow() {
+        // 	$('.close').click(function(){
+        // 		$($(this).parent()).parent().remove();
+        // 	});
+        // }
+
+
+        // function insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong) {
+        // 	// $("#modelSuccess").modal();
+        // 	$('tbody').append('<tr><td>'+stt+'</td><td>'+loai_thuoc+'</td><td>'+loai_dong_vat+'</td><td>'+so_luong+'</td><td class="text-center"><button type="button" class="close"> <span aria-hidden="true">&times;</span></button></td></tr>');
+        // 	deleteRow();
+        // }
+
+        // function insertFail( ) {
+        // 	$("#modelFail").modal();
+        // }
+
+        // deleteRow();
+
+    });
+</script>
+
+</body>
+</html>
+
+ 
+

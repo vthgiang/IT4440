@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Giao việc </title>
+  <title>quản lý nhân viên </title>
 </head>
 <body>
 
@@ -35,7 +35,7 @@
                         <div class="navbar-custom-menu">
                             <ul class="nav navbar-nav">
                                 <li class="dropdown tasks-menu">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn ( Quản đốc )
                                     </a>
                                   </li>
 
@@ -72,148 +72,81 @@
                 </header>
                 <aside class="main-sidebar">
                     <section class="sidebar">
-                       
-                        <ul class="sidebar-menu" data-widget="tree" >
-                            <li style="background-color: black">
+                        <ul class="sidebar-menu" data-widget="tree">
+                            <li>
                                 <a>
-                                    <i class="fa fa-dashboard"></i> <span>Giao việc</span>
+                                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="cong_viec_hoan_thanh.html">
-                                    <i class="fa fa-th"></i> <span>Công việc đã hoàn thành</span>
+                                <a href="giao_viec.html">
+                                    <i class="fa fa-th"></i> <span>Giao việc</span>
                                 </a>
                             </li>
-
-                            <li><a href="quan_ly_nhan_vien.html"><i class="fa fa-book"></i> <span> Quản lý nhân viên </span></a>
+                            <li style="background-color: black">
+                                <a href="quan_ly_nhan_vien.html">
+                                    <i class="fa fa-th"></i> <span>Quản lý nhân viên</span>
+                                </a>
                             </li>
                         </ul>
                     </section>
                 </aside>
                 <div class="content-wrapper">
                       <section class="content-header">
-                      <!--   <h1>
-                          Dashboard
-                        </h1>
-                        <ol class="breadcrumb">
-                          <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-                        </ol> -->
                       </section>
 						<section class="content" id="main_content">
 						    
-							<h3>Giao việc</h3>
+							<h3>Quản lý nhân viên</h3>
 							<hr />
-							<div class="row" style="font-size: 15px">
-								<div class="col-md-4">Ngày: <span>2019/10/13</span></div>
-							</div>
 							<hr />
+
 							<div class="row" style="font-size: 15px; ">
-								<div class="col-md-2">
-									<span>Loại thuốc: </span>
+								<div class="col-md-4">
+									<span>Tên nhân viên: </span>
 									<select class="form-control loai_thuoc">
-										<option>...</option>
+										<option>Tất cả</option>
 										<option>Tiêm phòng dại</option>
 										<option>Thuốc đau dạ dày</option>
 										<option>Thuốc viên da</option>
 									</select>
 								</div>
-                <div class="col-md-2">
-                  <span>Loại động vật:</span>
+                <div class="col-md-4">
+                  <span>Mã số:</span>
                   <select class="form-control loai_dong_vat">
-                    <option>...</option>
+                    <option>Tất cả</option>
                     <option>Chó</option>
                     <option>Mèo</option>
                     <option>Lợn</option>
                     <option>Gà</option>
                   </select>
                 </div>
-                <div class="col-md-2">
-                  <span>Số lượng</span>
-                  <input type="number" id='so_luong' class="form-control" placeholder="số lượng" 
-                   />
+                <br/>
+                 <div class="col-md-4">
+                  <button class="btn btn-primary xem_thong_tin">Xem Thông Tin</button>
                 </div>
-                 <div class="col-md-2">
-                  <span>Tên nhân viên</span>
-                  <select class="form-control ten_nhan_vien">
-                    <option>...</option>
-                    <option>Trần Cẩn</option>
-                    <option>Nguyễn Mạnh</option>
-                  </select>
-                </div>
-                 <div class="col-md-2">
-                  <span>Mã nhân viên</span>
-                  <select class="form-control ma_nhan_vien" disabled
-                  >
-                    <option>...</option>
-                    <option>20150324</option>
-                    <option>20151234</option>
-                  </select>
-                </div>
-								<!-- <div class="col-md-4">
-									<button class="btn btn-primary">Thêm</button>
-								</div>
- -->
+
 							</div>
-              <div class="row" style="margin-top:10px">
-                <div class="col-md-6">
-                  <button class="btn btn-primary them">Thêm Công Việc</button>
-                </div>
-              </div>
+  
 							<hr>
 							<table class="table table-bordered table-hover">
 								<thead>
 									<th>STT</th>
-									<th>Loại thuốc</th>
-									<th>Nhân viên</th>
-                  <th>Mã nhân viên</th>
-									<th>Số lượng</th>
-									<th></th>
+									<th>Họ Và Tên</th>
+									<th>Ngày Vào Làm</th>
+                  <th>Tổ</th>
+									<th>Hành động</th>
 								</thead>
 								<tbody>
-								<!-- 	<tr>
-										<td>1</td>
-										<td>Thuốc tiêm phòng dại</td>
-										<td>Trần Cẩn</td>
-                    <td>20150324</td>
-										<td>20</td>
-										<td class="text-center">
-											<button type="button" class="close"> <span aria-hidden="true">&times;</span></button>
-										</td>
-									</tr> -->
 									
 								</tbody>
 							</table>
 
-							<div class="text-right">
-								<div><button class="btn btn-primary hoan_thanh"> Giao Việc </button> </div>
-							</div>
-
 						</section>
 
 
-  <!-- The Modal -->
-  <div class="modal fade" id="modelSuccess">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <div class="modal-header">
-          <h4 class="modal-title"></h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
-        </div>
-        
-        <div class="modal-body">
-        	Lưu dữ liệu thành công  
-        </div>
-        
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-
+                </div>
+            </div>
+        </body> 
   <!-- The Modal -->
   <div class="modal fade" id="modelFail">
     <div class="modal-dialog">
@@ -236,13 +169,6 @@
     </div>
   </div>
   
-
-
-
-
-                </div>
-            </div>
-        </body> 
 
 
         <style type="text/css">
@@ -269,83 +195,33 @@
 <script>
 	$(document).ready(function(){
 
-    $('.ten_nhan_vien').change(function(){
-      let ten = $(this).val();
-      
-      if( ten == '...' ){
-        $('.ma_nhan_vien').val('...');
-      } else if( ten == 'Trần Cẩn' ) {
-        $('.ma_nhan_vien').val('20150324');
-      } else {
-        $('.ma_nhan_vien').val('20151234');
-      }
-    })
+    var data = [
+      {'stt':1,'ten':'Trần cẩn','to':'1','ngay':'15/11/2019'},
+      {'stt':2,'ten':'Nguyễn Văn Mạnh','to':'2','ngay':'20/10/2019'},
+    ];
 
-    function checkInt(string) {
-      return string == parseInt(string);
-    }
+    $('.xem_thong_tin').click(function(){
 
-    $('.them').click(function(){
-      
-      let loai_thuoc = $('.loai_thuoc').val(),stt;
-      let loai_dong_vat = $('.loai_dong_vat').val();
-      let so_luong = $('#so_luong').val();
-      let ma_nhan_vien = $('.ma_nhan_vien').val();
-      let ten_nhan_vien = $('.ten_nhan_vien').val();
-
-      let lastTr = $('tbody tr');
-
-      if( lastTr.length == 0 ) {
-        stt = 1;
-      } else{
-        let lastStt = $(lastTr[lastTr.length-1]).children()[0];
-
-        lastStt = $(lastStt).text();  
-
-        if ( checkInt(lastStt) ) {
-          stt = parseInt(lastStt) + 1;
-        } else{
-          insertFail();
-          return;
-        }  
-      }
-      
-      
-      if( loai_thuoc == '...' || loai_dong_vat == '...' || !checkInt(so_luong) || ten_nhan_vien == '...' ) {
-        insertFail();
-      } else {
-        insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong,ten_nhan_vien,ma_nhan_vien);
+      let dataText = '';
+      for(let i=0 ; i < data.length; i++) {
+        dataText += '<tr><td>'+data[i].stt+'</td><td>'+data[i].ten+'</td><td>'+data[i].ngay+'</td><td>'+data[i].to+'</td><td><a href="edit.html"><button class="btn btn-primary"><i class="fas fa-edit"></i></button></a><button class="btn-danger btn delete" style="margin-left: 5px"><i class="fa fa-trash" aria-hidden="true"></i></button></td></tr>';
       }
 
-      
-    });
-
-    $('.hoan_thanh').click(function(){
-
-      $("#modelSuccess").modal();     
-
-    });
-    function deleteRow() {
-      $('.close').click(function(){
-        $($(this).parent()).parent().remove(); 
-      }); 
-    }
-    
-
-    function insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong,ten_nhan_vien,ma_nhan_vien) {
-      // $("#modelSuccess").modal();
-      $('tbody').append('<tr><td>'+stt+'</td><td>'+loai_thuoc+' - '+ loai_dong_vat +'</td><td>'+ten_nhan_vien+'</td><td>'+ma_nhan_vien+'</td><td>'+so_luong+'</td><td class="text-center"><button type="button" class="close"> <span aria-hidden="true">&times;</span></button></td></tr>');
+      $('tbody').html(dataText);
       deleteRow();
-    }
+    });
 
-    function insertFail( ) {
-      $("#modelFail").modal();
+    function deleteRow() {
+      $('.delete').click(function(){
+        if ( confirm('Bạn có muốn xoá nó?') ) {
+          $($(this).parent()).parent().remove();
+        }
+      });
     }
-
-    deleteRow();
 
 	});
 </script>
+
 
 </body>
 </html>
