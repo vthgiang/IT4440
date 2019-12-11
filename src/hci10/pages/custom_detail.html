@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+    <!-- SEARCH FORM -->
+    <ol class="breadcrumb float-sm-right">
+      <li class="breadcrumb-item active">Quản lý</li>
+      <li class="breadcrumb-item active">Danh sách khách hàng hiện tại</li>
+      <li class="breadcrumb-item">Chi tiết khách hàng</li>
+    </ol>
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Tìm kiếm"
+               aria-label="Tìm kiếm">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Thông báo mới</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 Kế hoạch
+            <span class="float-right text-muted text-sm">3 phút</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 Báo cáo
+            <span class="float-right text-muted text-sm">12 phút</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 Phản hổi
+            <span class="float-right text-muted text-sm">2 ngày</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Xem tất cả</a>
+        </div>
+      </li>
+    </ul>
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="../dist/img/user4-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info">
+        <a href="#" class="d-block">Quản lý - Hồng Nguyễn</a>
+      </div>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index.html" class="brand-link">
+      <img src="../dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">HCI_10 Company</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+            data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="../manage_index.html" class="nav-link">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Trang chủ - Quản lý</p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-calendar-alt"></i>
+              <p>
+                Công việc
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Phân công công việc</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kiểm tra công việc</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Xác nhận báo cáo</p>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="list_custom.html" class="nav-link active">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>Danh sách khách hàng</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="add_contact.html" class="nav-link ">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>Thêm mới khách hàng</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Chi tiết</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- About Me Box -->
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-md-12 col-sm-6">
+            <div class="card">
+              <div class="card-header p-2">
+                <div class="card-header">
+                  <h1 class="card-title"><strong><i class="fas fas fa-male"></i>   Nguyễn Thị Hồng</strong></h1>
+                </div>
+              </div><!-- /.card-header -->
+              <div class="card-body">
+                <div class="card ">
+                  <!-- /.card-header -->
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-credit-card"></i> Nhãn hàng</strong>
+
+                        <p class="text-muted">Thực phẩm chức năng - Phahacol</p>
+
+                        <hr>
+                      </div>
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-star"></i> Trạng thái</strong>
+                        <p class="text-muted" > Đã ký hợp đồng</p>
+                        <hr>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-mobile"></i> Liên lạc cá nhân</strong>
+
+                        <p class="text-muted">
+                          0966 198 002
+                        </p>
+
+                        <hr>
+                    </div>
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-phone"></i> Liên lạc cơ quan</strong>
+
+                        <p class="text-muted">
+                          024 035 985
+                        </p>
+
+                        <hr>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-map-marker-alt mr-1"></i> Địa chỉ</strong>
+
+                        <p class="text-muted">Đống Đa, Hà Nội</p>
+
+                        <hr>
+                      </div>
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-calendar-alt"></i> Thời gian liên lạc gần nhất</strong>
+                        <p class="text-muted"  disabled> 20/11/2019 - 9h35 AM</p>
+                        <hr>
+
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <strong><i class="fas fa-female"></i> Nhân viên tiếp nhận</strong>
+
+                        <p class="text-muted">Uyên Trần</p>
+
+                        <hr>
+                      </div>
+                      <div class="col-md-6">
+                        <strong><i class="far fa-file-alt mr-1"></i> Ghi chú</strong>
+
+                        <p class="text-muted">Yêu cầu chi tiết hợp đồng theo các sản phẩm.</p>
+                        <hr>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="user-block">
+                      <span class="username">
+                          <a href="#">Giá trị hợp đồng: 20.000.000 VNĐ</a>
+                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
+                        </span>
+                    </div>
+                    <!-- /.user-block -->
+                    <div class="row mb-5">
+                      <div class="col-md-8 col-sm-6">
+                        <img class="img-fluid" src="../dist/img/contract.jpg" alt="Photo">
+                      </div>
+                      <!-- /.col -->
+                    </div>
+
+                    <p>
+                      <a href="#" class="link-black text-sm mr-2"><i class="fas fa-eye"></i> Xem chi tiết</a>
+                      <a href="#" class="link-black text-sm"><i class="fas fa-file-download"></i> Tải xuống</a>
+                    </p>
+                  </div>
+                  <!-- /.card-body -->
+                </div>
+              </div><!-- /.card-body -->
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  <footer class="main-footer text-center">
+    <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/demo.js"></script>
+<script>
+  n = new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+  document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+</body>
+</html>

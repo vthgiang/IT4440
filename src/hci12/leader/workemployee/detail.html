@@ -3,7 +3,7 @@
 
 <head>
 
-	<title>Admin</title>
+	<title>HCI_12 Công việc nhân viên</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
 							<ul class="dropdown-menu">
 								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
 								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
-								<li><a href=""><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+								<li><a href="../../index.html"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>
 						</li>
 
@@ -64,7 +64,7 @@
 
 						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
 
-						<li><a href=""><i class="lnr lnr-exit"></i> <span>Đăng xuất</span></a></li>
+
 
 					</ul>
 				</nav>
@@ -99,6 +99,53 @@
 				</div>
 
 				<div class="property">
+					<p><b>Danh sách công việc đề xuất </b></p>
+				</div>
+
+				<table class="table table-data" data-toggle="table" data-search="true">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>Tên công việc</th>
+							<th>Ngày tạo</th>
+							<th>Ngày hoàn thành</th>
+							<th>Chi tiết</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Kiểm kê chứng từ</td>
+							<td>12/5/2019</td>
+							<td>12/7/2019</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td>Thống kê chứng từ</td>
+							<td>12/5/2019</td>
+							<td>Chưa xong</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>Lập báo cáo chi tiết</td>
+							<td>12/5/2019</td>
+							<td>Chưa xong</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="property">
 					<p><b>File đính kèm: </b><a target="_blank" href="https://drive.google.com/drive/folders/1Ze0zd0qlONi9pBKDniseMJTmEng1DEBH?fbclid=IwAR1hwUF3CgeQtQcUmqxJyMN5ltuKteJPbZu1lMH3QPaEuaQsv0O9dQkeGKg"> BaoCao.pdf</a></p>
 					<button class="btn btn-success">Duyệt</button>
 				</div>
@@ -121,6 +168,9 @@
 			</div>
 		</div>
 	<!-- END MAIN CONTENT -->
+	<div class="panel-footer" style="text-align: center; bottom: 0px; border : none; left: 50%;">
+			HCI_12
+		</div>
 
 		</div>
 	<!-- END WRAPPER -->
@@ -129,16 +179,17 @@
 	 	<div class="modal-dialog" role="document">
 			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
 				<div class="modal-header">
-					<h3 class="modal-title">Chi tiết công việc</h3>
+					<h3 class="modal-title">Đề xuất công việc</h3>
 				</div>
 				<div class="modal-body">
 					<div class="container-fluid">
 						<p>Tên công việc</p>
 						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Tổng hợp chứng từ</p>
-						<p>Ngày tạo</p>
-						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">22/12/5/2019</p>
 						<p>Mô tả</p>
 						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán. Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán</p>
+
+						<p>Trạng thái</p>
+						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Đã hoàn thành</p>
 					</div>
 				</div>
 				<div class="modal-footer">
@@ -146,7 +197,6 @@
 				</div>
 			</div>
 	  	</div>
-	</div>
 	</div>
 
 	<!-- jQuery library -->

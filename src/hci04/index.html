@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/model.css">
+  <link rel="stylesheet" href="css/header.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -44,12 +45,53 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
       <h3 class="text-light m-0">LOGO</h3>
     </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
     <div class="navbar-nav ml-auto flex-row align-items-center">
       <h6 class="text-light m-0 mr-3">
-        Xin chào ABC<br/>
+        Xin chào Admin<br />
         <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
       </h6>
       <button class="btn m-0 p-0 mr-3">
@@ -127,7 +169,7 @@
       <!-- Begin Main -->
       <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
         <!-- Begin Breadcrumb -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="margin-top: 20px;">
           <ol class="breadcrumb rounded-0 h6">
             <li class="breadcrumb-item">Phê duyệt kế hoạch</li>
             <li class="breadcrumb-item active" aria-current="page">Danh sách kế hoạch</li>
@@ -201,11 +243,11 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row" style="text-align: center;">1</th>
-                <td>Kế hoạch tuyển dụng nhân sự</td>
-                <td>Nhân sự</td>
-                <td>Đào Duy Nam</td>
-                <td style="text-align: center; padding: 1em;color: #28a745;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">1</th>
+                <td style="vertical-align: middle;">Kế hoạch tuyển dụng nhân sự</td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Đào Duy Nam</td>
+                <td style="text-align: center; padding: 1em;color: #28a745; vertical-align: middle;">
                   <b>Đã duyệt</b>
                 </td>
                 <td>
@@ -213,11 +255,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">2</th>
-                <td>Quản lý nhân sự</td>
-                <td>Nhân sự</td>
-                <td>Đào Duy Nam</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">2</th>
+                <td style="vertical-align: middle;">Quản lý nhân sự</td>
+                <td style="vertical-align: middle;">Nhân sự</td>
+                <td style="vertical-align: middle;">Đào Duy Nam</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -225,11 +267,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">3</th>
-                <td>Kế hoạch doanh thu</td>
-                <td>Kế toán</td>
-                <td>Trương Anh Quốc</td>
-                <td style="text-align: center; padding: 1em;color: #ffc107;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">3</th>
+                <td style="vertical-align: middle;">Kế hoạch doanh thu</td>
+                <td style="vertical-align: middle;">Kế toán</td>
+                <td style="vertical-align: middle;">Trương Anh Quốc</td>
+                <td style="text-align: center; padding: 1em;color: #ffc107; vertical-align: middle;">
                   <b>Yêu cầu chỉnh sửa</b>
                 </td>
                 <td>
@@ -237,11 +279,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">4</th>
-                <td>Đầu tư</td>
-                <td>Tài chính</td>
-                <td>Trương Anh Quốc</td>
-                <td style="text-align: center; padding: 1em;color: #17a2b8;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">4</th>
+                <td style="vertical-align: middle;">Đầu tư</td>
+                <td style="vertical-align: middle;">Tài chính</td>
+                <td style="vertical-align: middle;">Trương Anh Quốc</td>
+                <td style="text-align: center; padding: 1em;color: #17a2b8; vertical-align: middle;">
                   <b>Đã chỉnh sửa</b>
                 </td>
                 <td>
@@ -249,11 +291,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">5</th>
-                <td>Kế hoạch thu hút vốn</td>
-                <td>Tài chính</td>
-                <td>Trương Anh Quốc</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">5</th>
+                <td style="vertical-align: middle;">Kế hoạch thu hút vốn</td>
+                <td style="vertical-align: middle;">Tài chính</td>
+                <td style="vertical-align: middle;">Trương Anh Quốc</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -261,11 +303,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">6</th>
-                <td>Kế hoạch sản xuất</td>
-                <td>Sản xuất</td>
-                <td>Nguyễn Văn Đạt</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">6</th>
+                <td style="vertical-align: middle;">Kế hoạch sản xuất</td>
+                <td style="vertical-align: middle;">Sản xuất</td>
+                <td style="vertical-align: middle;">Nguyễn Văn Đạt</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -273,11 +315,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">7</th>
-                <td>Nhập khẩu</td>
-                <td>Sản xuất</td>
-                <td>Nguyễn Văn Đạt</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">7</th>
+                <td style="vertical-align: middle;">Nhập khẩu</td>
+                <td style="vertical-align: middle;">Sản xuất</td>
+                <td style="vertical-align: middle;">Nguyễn Văn Đạt</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -285,11 +327,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">8</th>
-                <td>Nhập khẩu</td>
-                <td>Sản xuất</td>
-                <td>Nguyễn Văn Đạt</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">8</th>
+                <td style="vertical-align: middle;">Nhập khẩu</td>
+                <td style="vertical-align: middle;">Sản xuất</td>
+                <td style="vertical-align: middle;">Nguyễn Văn Đạt</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -297,11 +339,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">9</th>
-                <td>Kế hoạch nghiên cứu</td>
-                <td>Nghiên cứu</td>
-                <td>Phùng Việt Duy</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">9</th>
+                <td style="vertical-align: middle;">Kế hoạch nghiên cứu</td>
+                <td style="vertical-align: middle;">Nghiên cứu</td>
+                <td style="vertical-align: middle;">Phùng Việt Duy</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>
@@ -309,11 +351,11 @@
                 </td>
               </tr>
               <tr>
-                <th scope="row" style="text-align: center;">10</th>
-                <td>Lịch bảo vệ tháng 12</td>
-                <td>Hậu cần</td>
-                <td>Ngô Tuấn Anh</td>
-                <td style="text-align: center; padding: 1em;color: red;">
+                <th scope="row" style="text-align: center; vertical-align: middle;">10</th>
+                <td style="vertical-align: middle;">Lịch bảo vệ tháng 12</td>
+                <td style="vertical-align: middle;">Hậu cần</td>
+                <td style="vertical-align: middle;">Ngô Tuấn Anh</td>
+                <td style="text-align: center; padding: 1em;color: red; vertical-align: middle;">
                   <b>Chưa duyệt</b>
                 </td>
                 <td>

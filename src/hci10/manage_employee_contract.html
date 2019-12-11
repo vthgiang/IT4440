@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hợp đồng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <div id="nav"></div>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../../index.html" class="brand-link">
+            <img src="../../dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">HCI_10 Company</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="../../manage_index.html" class="nav-link active">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Trang chủ - Quản lý</p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-calendar-alt"></i>
+                            <p>
+                                Công việc
+                                <i class="fas fa-angle-right right"></i>
+                                <span class="badge badge-info right">2</span>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="./employee_schedule.html" class="nav-link active">
+                                    <i class="fas fa-check-square nav-icon"></i>
+                                    <p>Phân công công việc</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/layout/top-nav.html" class="nav-link">
+                                    <i class="fas fa-file-word nav-icon"></i>
+                                    <p>Xác nhận báo cáo</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/list_custom.html" class="nav-link">
+                            <i class="nav-icon fas fa-copy"></i>
+                            <p>Danh sách khách hàng</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html" class="nav-link">
+                            <i class="nav-icon fas fa-chart-line"></i>
+                            <p>Thiết lập KPI</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Hợp đồng</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Quản lý A</a></li>
+                            <li class="breadcrumb-item"><a href="#">Công việc</a></li>
+                            <li class="breadcrumb-item active">Hợp đồng</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <hr>
+        <!-- Main content -->
+        <div class="form-contract">
+            <img src="../../img/contract.jpg" style="width:1024px;height:1500px;" alt="Hợp đồng">
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-4 row">
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-success form-control float-right">Duyệt</button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="submit" class="btn btn-danger form-control float-right">Không duyệt</button>
+                </div>
+            </div>
+            <div class="col-8">
+            <!-- TO DO: Text Area-->
+
+            </div>
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+
+    </div>
+    <footer class="main-footer text-center">
+        <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+    </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="../../dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="../../plugins/chart.js/Chart.min.js"></script>
+<script src="../../dist/js/demo.js"></script>
+<script src="../../dist/js/pages/dashboard3.js"></script>
+
+<script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+</body>
+</html>
