@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Medicine Company Project Management</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/ionicons/css/ionicons.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/typicons/src/font/typicons.css">
-    <link rel="stylesheet" href="../../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
-    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.addons.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/typicons/src/font/typicons.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.addons.css">
     <!-- endinject -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="../../../assets/css/shared/style.css">
+    <link rel="stylesheet" href="../../assets/css/shared/style.css">
     <!-- endinject -->
     <!-- Layout styles -->
-    <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
+    <link rel="stylesheet" href="../../assets/css/demo_1/style.css">
     <!-- End Layout styles -->
-    <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body>
     <div class="container-scroller">
@@ -74,7 +74,7 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="../../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                    <img src="../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Giám đốc</p>
                     <p class="font-weight-light small-text">Họp hội đồng ngày 04/12/2019</p>
@@ -82,7 +82,7 @@
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="../../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                    <img src="../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Giám đốc</p>
                     <p class="font-weight-light small-text">Thông tin triển khai dự án mới</p>
@@ -90,7 +90,7 @@
                 </a>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                    <img src="../../../assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic"> </div>
+                    <img src="../../assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic"> </div>
                   <div class="preview-item-content flex-grow py-2">
                     <p class="preview-subject ellipsis font-weight-medium text-dark">Phòng hành chính</p>
                     <p class="font-weight-light small-text">Thông báo trả lương tháng 11/2019</p>
@@ -139,10 +139,10 @@
             </li>
             <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
               <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                <img class="img-xs rounded-circle" src="../../../assets/images/faces/face8.jpg" alt="Profile image"> </a>
+                <img class="img-xs rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image"> </a>
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
-                  <img class="img-md rounded-circle" src="../../../assets/images/faces/face8.jpg" alt="Profile image">
+                  <img class="img-md rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image">
                   <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
                   <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
                 </div>
@@ -167,7 +167,7 @@
             <li class="nav-item nav-profile">
               <a href="#" class="nav-link">
                 <div class="profile-image">
-                  <img class="img-xs rounded-circle" src="../../../assets/images/faces/face8.jpg" alt="profile image">
+                  <img class="img-xs rounded-circle" src="../../assets/images/faces/face8.jpg" alt="profile image">
                   <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
@@ -207,7 +207,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/evaluate/evaluate.html">
+              <a class="nav-link" href="../../pages/report/report.html">
                 <i class="menu-icon typcn typcn-th-large-outline"></i>
                 <span class="menu-title">Báo cáo</span>
               </a>
@@ -218,32 +218,66 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-12 grid-margin">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="p-4 pr-5 border-bottom bg-light d-flex justify-content-between">
+                    <h4 class="card-title mb-0">Đánh giá mức độ hoàn thành</h4>
+                  </div>
+                  <div class="card-body d-flex flex-column">
+                    <canvas class="my-auto" id="doughnutChart" height="200"></canvas>
+                    <div class="d-flex mt-5 py-3 border-top">
+                      <p class="mb-0 font-weight-semibold"><span class="dot-indicator bg-success"></span> Hoàn thành </p>
+                      <p class="mb-0 ml-auto text-primary">83</p>
+                    </div>
+                    <div class="d-flex pt-3 border-top">
+                      <p class="mb-0 font-weight-semibold"><span class="dot-indicator bg-success"></span>Đang thực hiện </p>
+                      <p class="mb-0 ml-auto text-primary">80</p>
+                    </div>
+                    <div class="d-flex pt-3 border-top">
+                      <p class="mb-0 font-weight-semibold"><span class="dot-indicator bg-success"></span>Chậm tiến độ </p>
+                      <p class="mb-0 ml-auto text-primary">20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          <div class="col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Báo Cáo</h4>
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleInputName1">Người nhận</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Nội dung</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="9"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label>File đính kèm</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                          </span>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-success mr-2">Submit</button>
-                      <button class="btn btn-light">Cancel</button>
-                    </form>
+                    <h4 class="card-title">Đánh giá hoàn thành công việc quý 4 năm 2019</h4>
+                    <p class="card-description"> Tháng 10/2019 </p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Trạng thái</th>
+                          <th>Số lượng</th>
+                          <th>Đánh giá</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Đã hoàn thành</td>
+                          <td>83</td>
+                          <td> 45% </td>
+                        </tr>
+                        <tr>
+                          <td>Đang thực hiện</td>
+                          <td>80</td>
+                          <td>43.7%</td>
+                        </tr>
+                        <tr>
+                          <td>Chưa thực hiện</td>
+                          <td>20</td>
+                          <td>11.3%</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                     <p class="card-description">  </p>
+                     <p class="card-description"> Tổng số công việc quý 4 năm 2019: 183</p>
+                     <p class="card-description"> Hoàn thành tháng 10: 83</p>
+                     <p class="card-description"> Tiến độ tháng 10: 45%</p>
+                     <p class="card-description"> Vượt chỉ tiêu: 12%</p>
+                     <p class="card-description">  </p>
+                     <button type="submit" class="btn btn-success mr-2">Xuất báo cáo</button>
                   </div>
                 </div>
               </div>
@@ -253,8 +287,8 @@
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank"></a>. All rights reserved.</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Medicine Company Project Management.
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i>
               </span>
             </div>
           </footer>
@@ -266,16 +300,17 @@
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
-    <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>
-    <script src="../../../assets/vendors/js/vendor.bundle.addons.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page-->
     <!-- End plugin js for this page-->
     <!-- inject:js -->
-    <script src="../../../assets/js/shared/off-canvas.js"></script>
-    <script src="../../../assets/js/shared/misc.js"></script>
+    <script src="../../assets/js/shared/off-canvas.js"></script>
+    <script src="../../assets/js/shared/misc.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
+    <script src="../../assets/js/shared/chart.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>
