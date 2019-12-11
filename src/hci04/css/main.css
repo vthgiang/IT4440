@@ -19,6 +19,9 @@ body {
 #table-plan-list > thead th:nth-last-child(2) {
   width: 200px;
 }
+#table-plan-list-1 > thead th:nth-last-child(5) {
+  width: 300px;
+}
 
 /* Set style for table data */
 #table-plan-list > tbody td:nth-last-child(1) {

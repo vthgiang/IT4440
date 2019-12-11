@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<title>Admin</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../../css/master.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="../../bootstrap/css/bootstrap-table.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<a href="../home.html"><img src="../../images/logo.png" alt="Logo" class="brand" width="200px" height="81px" style="padding: unset !important;"></a>
+
+			<div class="container-fluid">
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
+								<li><a href="../../index.html"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li><a href="../home.html"><i class="lnr lnr-home"></i> <span>Trang chủ</span></a></li>
+
+						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
+						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
+						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
+
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-credit-card"></i> <span>KPI</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse item" style="background: #ccc;">
+								<ul class="nav">
+									<li><a class="item" style="padding-left: 60px;" href="setciteria.html">Chỉ tiêu hiện tại</a></li>		
+									<li><a class="item" style="padding-left: 60px;" href="result.html">
+									Kết quả KPI</a></li>		
+								</ul>
+							</div>
+						</li>
+
+
+						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+	<!-- MAIN CONTENT -->
+		<div class="main-content">
+			<div class="container-fluid">
+				<h2>Danh sách bộ tiêu chí đánh giá KPI</h2>
+
+				<table class="table table-data" data-toggle="table" data-search="true">
+					<thead>
+						<tr>
+							<th>Mã bộ tiêu chí</th>
+							<th>Tên bộ tiêu chí</th>
+							<th>Kỳ vọng</th>
+							<th>Trọng số</th>
+							<th>Thang điểm</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>132</td>
+							<td>Tiêu chí đánh giá nhân viên kế toán</td>
+							<td>8</td>
+							<td>2</td>
+							<td>10</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<ul class="pagination">
+				  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+				  <li class="page-item"><a class="page-link" href="#">1</a></li>
+				  <li class="page-item"><a class="page-link" href="#">2</a></li>
+				  <li class="page-item"><a class="page-link" href="#">3</a></li>
+				  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+				</ul>
+			</div>
+		</div>
+	<!-- END MAIN CONTENT -->
+
+		</div>
+	<!-- END WRAPPER -->
+
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Thông báo</h3>
+				</div>
+				<div class="modal-body">
+					<p>Bạn có chắc chắn muốn xóa?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Xóa</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Tạo bộ tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Tên bộ tiêu chí</p>
+								<input class="form-control" type="text" name="">
+								<p>Tạo cho vị trí</p>
+								<select class="form-control" >
+									<option>Kế toán trưởng</option>
+									<option>Nhân viên</option>
+									<option>Kế toán thuế</option>
+								</select>
+								<p>Tần suất đánh giá</p>
+								<select class="form-control" >
+									<option>1 tháng/Lần</option>
+									<option>2 tháng/lần</option>
+									<option>3 tháng/lần</option>
+								</select>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Từ</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+								<p>Đến</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Thêm</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Chỉnh sửa bộ tiêu chí</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Tên bộ tiêu chí</p>
+								<input class="form-control" type="text" name="" value="Bộ tiêu chí đánh giá nhân viên kế toán thuế">
+								<p>Tạo cho vị trí</p>
+								<select class="form-control" >
+									<option>Kế toán trưởng</option>
+									<option>Nhân viên</option>
+									<option>Kế toán thuế</option>
+								</select>
+								<p>Tần suất đánh giá</p>
+								<select class="form-control" >
+									<option>1 tháng/Lần</option>
+									<option>2 tháng/lần</option>
+									<option>3 tháng/lần</option>
+								</select>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12">
+								<p>Từ</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+								<p>Đến</p>
+								<select class="form-control" >
+									<option>Tháng 1/2019</option>
+									<option>Tháng 2/2019</option>
+									<option>Tháng 3/2019</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Chỉnh sửa</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+
+<script src="../../js/master.js"></script>
+</body>
+</html>

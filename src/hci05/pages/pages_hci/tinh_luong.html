@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Flot Charts</title>
+  <title>Phần mền quản lý công việc - Fabbi JSC</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -107,32 +107,19 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
     
                     <p>
-                      Lã Mạnh Cường - Web Developer
+                      Lã Mạnh Cường <br> Trưởng phòng hành chính nhân sự
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
                   <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="row">
-                      <div class="col-xs-4 text-center">
-                        <a href="#">Followers</a>
-                      </div>
-                      <div class="col-xs-4 text-center">
-                        <a href="#">Sales</a>
-                      </div>
-                      <div class="col-xs-4 text-center">
-                        <a href="#">Friends</a>
-                      </div>
-                    </div>
-                    <!-- /.row -->
-                  </li>
+                   
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                       <a href="#" class="btn btn-default btn-flat">Thông tin</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="#" class="btn btn-default btn-flat">Đăng xuất</a>
                     </div>
                   </li>
                 </ul>
@@ -181,7 +168,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
           <li><a href="ds_congviec_cty.html"><i class="fa fa-circle-o"></i>DS công việc CTY</a></li>
           <li><a href="tao_du_an.html"><i class="fa fa-circle-o"></i> Tạo dự án</a></li>
           <li><a href="chi_tiet_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết dự án</a></li>
-          <li><a href="tao_congviec_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc trong dự án</a></li>
+          <li><a href="tao_congviec_cty.html"><i class="fa fa-circle-o"></i>Tạo công việc trong dự án</a></li>
           <li><a href="chi_tiet_cong_viec_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công việc dự án</a></li>
           <li><a href="tao_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc cho nhân viên</a></li>
           <li><a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công việc cho nhân viên</a></li>
@@ -268,7 +255,31 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-              <table id="example1" class="table table-bordered table-striped">
+              <form action="" method="POST" class="form-inline" role="form">
+            
+              <div class="form-group">
+                <label class="" for="">Quy trình</label>
+                <select name="" id="input" class="form-control" required="required">
+                  <option value="">Sản xuất thuốc ABC</option>
+                  <option value="">Tiếp nhận nhân viên mới</option>
+                </select>
+              </div>
+              <div class="form-group">
+                  <label class="" for="">Phòng ban</label>
+                  <select name="" id="input" class="form-control" required="required">
+                    <option value="">Hành chính - Nhân sự</option>
+                    <option value="">Bán hàng</option>
+                    <option value="">Kế toán</option>
+                    <option value="">Sản xuất</option>
+                  </select>
+                </div>
+            
+              
+            
+              <button type="submit" class="btn btn-primary">Lọc</button>
+            </form>
+            <br>
+            <table id="example1" class="table table-bordered table-striped">
                 <thead>
                   <tr>
                     <th style="width: 40px">STT</th>
@@ -283,7 +294,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                     <td>1</td>
                     <td>Công việc
                     </td>
-                    <td>20/11/2019</td>
+                    <td>20/11/2019 - còn lại 24h</td>
                     <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                       <td><a href="ketqua_congviec.html">Kết quả</a></td>
 
@@ -292,7 +303,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                       <td>2</td>
                       <td>Tính chuyên cần
                       </td>
-                      <td>20/11/2019</td>
+                      <td>20/11/2019 - còn lại 24h</td>
                       <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                         <td><a href="ketqua_congviec.html">Kết quả</a></td>
 
@@ -301,7 +312,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <td>3</td>
                         <td>Báo cáo tiến độ
                         </td>
-                        <td>20/11/2019</td>
+                        <td>20/11/2019 - còn lại 24h</td>
                         <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                           <td><a href="ketqua_congviec.html">Kết quả</a></td>
 
@@ -310,7 +321,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                           <td>4</td>
                           <td>Lấy thông tin lương
                           </td>
-                          <td>20/11/2019</td>
+                          <td>20/11/2019 - còn lại 24h</td>
                           <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                             <td><a href="ketqua_congviec.html">Kết quả</a></td>
 
@@ -319,7 +330,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                             <td>5</td>
                             <td>Tính thưởng
                             </td>
-                            <td>20/11/2019</td>
+                            <td>20/11/2019 - còn lại 24h</td>
                             <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                               <td><a href="ketqua_congviec.html">Kết quả</a></td>
 
@@ -328,7 +339,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                               <td>6</td>
                               <td>Tính lương
                               </td>
-                              <td>20/11/2019</td>
+                              <td>20/11/2019 - còn lại 24h</td>
                               <td><a href="taocongviec_quytrinh.html"><button class=" btn btn-primary btn-warning" >35%<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                                 <td><a href="ketqua_congviec.html">Kết quả</a></td>
 

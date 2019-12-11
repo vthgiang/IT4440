@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Nhập hàng</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+
+	<style>
+
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.w3-anton{
+			font-family: 'Patua One', cursive;
+		}
+
+		body{
+			font-family: Arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navbar (sit on top) -->
+		<div class="w3-bar w3-white w3-card w3-cell-middle " id="myNavbar">
+		<a href="#home" class="w3-bar-item w3-anton w3-medium" style="text-decoration: none; padding-right: 30px;">COMPANY</a>
+			<!-- Right-sided navbar links -->
+			<div class="w3-left w3-hide-small w3-margin-right">
+				
+				<a href="employee-import.html" class="w3-bar-item w3-button"><i class="fa fa-th" style="margin-right: 5px;"></i>Danh sách công việc</a>
+				<a href="nhap-hang.html" class="w3-bar-item w3-button "><i class="fa fa-user" style="margin-right: 5px;"></i>Nhập hàng</a>
+				<a href="theo-doi.html" class="w3-bar-item w3-button "><i class="fa fa-usd" ></i> Theo dõi đơn hàng</a>
+				<a href="employee-kpi.html" class="w3-bar-item w3-button "><i class="fa fa-bar-chart" style="margin-right: 5px;"></i>KPI</a>
+				<a href="danh-muc-sp.html" class="w3-bar-item w3-button "><i class="fa fa-book" style="padding-right: 5px;"></i>Danh mục sản phẩm</a>
+			</div>
+			<div class="w3-right w3-hide-small w3-margin-right">
+				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-user w3-large" style="padding: 0 10px;"></i>Hi, Employee</a>
+				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-bell w3-large" style="padding: 0 10px;"></i></a>
+			</div>
+			<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+			<a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<!-- Sidebar on small screens when clicking the menu icon -->
+	<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+		<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+		<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+		<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
+	</nav>
+
+	<div class="w3-bar w3-content w3-padding-16">
+		<div class="w3-row-padding">
+			<div class="w3-threequarter" style="margin-bottom: 10px;">
+				<select name="job" class="w3-input w3-border" >
+					<option value="Hôm nay">Hôm nay</option>
+					<option value="Khẩn cấp">Khẩn cấp</option>
+					<option value="Quá hạn">Quá hạn</option>
+				</select>
+			</div>
+			<div class="w3-quarter" >
+				<button class="w3-border" style="cursor: pointer; padding: 6px;">Tìm kiếm</button>
+			</div>
+		</div>
+	</div>
+
+	<form class="w3-container w3-light-grey">
+  		<h2 class="w3-center w3-padding-16">Thêm mới sản phẩm</h2>
+  		<div class="w3-content">
+  			
+  			<p class="w3-large"><label>Tên sản phẩm</label></p>
+  			<div class="w3-section">
+  				<select name="user" style="width: 100%;" class="w3-large w3-input">
+	  				<option value="huong">Paetoge</option>
+	  				<option value="huong">Cacbonnat</option>
+	  				<option value="huong">Urma</option>
+	  				<option value="huong">Terecc</option>
+	  				<option value="huong">Ciccilin</option>
+	  				<option value="huong">Rine</option>
+	  				<option value="huong">ccacidimi</option>
+  				</select>
+  			</div>
+  			<p class="w3-large w3-margin-top"><label>Nhà cung cấp</label></p>
+  			<div class="w3-section">
+  				<select name="user" style="width: 100%;" class="w3-large w3-input">
+	  				<option value="huong">Paetoge</option>
+	  				<option value="huong">Cacbonnat</option>
+	  				<option value="huong">Urma</option>
+	  				<option value="huong">Terecc</option>
+	  				<option value="huong">Ciccilin</option>
+	  				<option value="huong">Rine</option>
+	  				<option value="huong">ccacidimi</option>
+  				</select>
+  			</div>
+  			<div class="w3-section">
+  				<p class="w3-large w3-padding-16"><label>Số lượng</label></p>
+  				<input type="number" name="time" class="w3-block w3-input" step="5">
+  			</div>
+  			<div class="w3-section">
+  				<p class="w3-large w3-padding-16"><label>Giá tiền</label></p>
+  				<input type="number" name="time" class="w3-block w3-input" step="1000000">
+  			</div>
+  			<div class="w3-section">
+  				<p class="w3-large w3-padding-16"><label>Mô tả chi tiết</label></p>
+  				<textarea name="discription" class="w3-input" rows="6">
+  					
+  				</textarea>
+  			</div>
+  			<div class="w3-section w3-padding-32">
+  				<input type="submit" name="Submit" class="w3-block w3-blue w3-btn">
+  			</div>
+  		</div>
+  		
+	</form>
+
+	<footer class="w3-container w3-center w3-large w3-light-grey w3-padding-32">
+		HCI_14
+	</footer>
+	
+
+	
+
+
+	<script type="text/javascript">
+		var mySidebar = document.getElementById("mySidebar");
+
+		function w3_open() {
+			if (mySidebar.style.display === 'block') {
+				mySidebar.style.display = 'none';
+			} else {
+				mySidebar.style.display = 'block';
+			}
+		}
+
+// Close the sidebar with the close button
+		function w3_close() {
+			mySidebar.style.display = "none";
+		}
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

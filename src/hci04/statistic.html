@@ -20,6 +20,7 @@
     integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -47,11 +48,55 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
       <h3 class="text-light m-0">LOGO</h3>
     </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
     <div class="navbar-nav ml-auto flex-row align-items-center">
-      <h6 class="text-light m-0 mr-3">Xin chào ABC</h6>
+      <h6 class="text-light m-0 mr-3">
+        Xin chào Admin<br />
+        <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
+      </h6>
       <button class="btn m-0 p-0 mr-3">
         <i class="fas fa-user-circle text-light h3 m-0"></i>
       </button>
@@ -94,6 +139,11 @@
             <li id="sub-nav-2" class="collapse show">
               <ul class="nav flex-column h6 sub-nav">
                 <li class="nav-item">
+                  <a class="nav-link active" href="/statistic.html">
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="/target-creator.html">
                     <span>Thiết lập mục tiêu</span>
                   </a>
@@ -108,11 +158,11 @@
                     <span>Giám sát tiến độ</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link active" href="/statistic.html">
                     <span>Thống kê</span>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </li>
           </ul>
@@ -122,7 +172,7 @@
       <!-- Begin Main -->
       <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
         <!-- Begin Breadcrumb -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="margin-top: 20px;">
           <ol class="breadcrumb rounded-0 h6">
             <li class="breadcrumb-item active" aria-current="page">Thống kê</li>
           </ol>
@@ -226,20 +276,20 @@
                   <label class="h6 font-weight-bold">Bộ phận</label>
                   <select class="form-control">
                     <option disabled selected>Chọn bộ phận ...</option>
-                    <option>Bộ phận A</option>
-                    <option>Bộ phận B</option>
-                    <option>Bộ phận C</option>
-                    <option>Bộ phận D</option>
+                    <option>Bộ phận Nhân sự</option>
+                    <option>Bộ phận Kinh doanh</option>
+                    <option>Bộ phận Nghiên cứu</option>
+                    <option>Bộ phận Hậu cần</option>
                   </select>
                 </div>
                 <div class="container mb-4">
                   <label class="h6 font-weight-bold">Phòng ban</label>
                   <select class="form-control">
                     <option disabled selected>Chọn phòng ban ...</option>
-                    <option>Phòng ban A</option>
-                    <option>Phòng ban B</option>
-                    <option>Phòng ban C</option>
-                    <option>Phòng ban D</option>
+                    <option>Phòng quản lí</option>
+                    <option>Phòng tuyển dụng</option>
+                    <option>Phòng kế toán</option>
+                    <option>Phòng sản xuất</option>
                   </select>
                 </div>
                 <div class="container mb-4">
