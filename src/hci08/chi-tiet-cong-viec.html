@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Báo Cáo Công Việc Hàng Ngày </title>
+</head>
+<body>
+
+
+	<style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+		@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+		@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css");
+		@import url("https://adminlte.io/themes/AdminLTE/dist/css/skins/_all-skins.min.css"); 
+	</style>
+
+
+
+	 <body class="hold-transition skin-blue sidebar-mini" id="menu">
+            <div class="wrapper">
+                <header class="main-header">
+                    <a class="logo">
+                        <span class="logo-mini"><b>Nhóm 8</b></span>
+                        <span class="logo-lg"><b>Nhóm 8</b></span>
+                    </a> 
+                    <nav class="navbar navbar-static-top">
+                        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                        <div class="navbar-custom-menu">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown tasks-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Trần Đình Cẩn (Quản Đốc)
+                                    </a>
+                                  </li>
+
+                                <li class="dropdown user user-menu">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                            class="user-image" alt="User Image">
+                                        <span class="hidden-xs">HNX</span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="user-header">
+                                            <img src="https://www.gravatar.com/avatar/7aebbe14aacfcac6a1ed3952cde70d86?s=160"
+                                                class="img-circle" alt="User Image">
+
+                                            <p>
+                                                Web Developer
+                                                <small> 2019</small>
+                                            </p>
+                                        </li>
+                                        <li class="user-footer">
+                                            <div class="pull-left">
+                                                <a 
+                                                    class="btn btn-default btn-flat"></a>
+                                            </div>
+                                            <div class="pull-right">
+                                                <a  class="btn btn-default btn-flat log_out">Đăng xuất</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <aside class="main-sidebar">
+                    <section class="sidebar">
+                       
+                        <ul class="sidebar-menu" data-widget="tree" >
+                            <li>
+                                <a>
+                                    <i class="fa fa-dashboard"></i> <span>Báo việc theo ngày</span>
+                                </a>
+                            </li>
+                            <li  style="background-color: black">
+                                <a href="chi-tiet-cong-viec.html">
+                                    <i class="fa fa-th"></i> <span>Công việc hiện tại</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="user/top-link.html">
+                                    <i class="fa fa-th"></i> <span>Báo việc theo chu kỳ</span>
+                                </a>
+                            </li>
+
+                            <li><a href="user/support.html"><i class="fa fa-book"></i> <span> Lịch sử báo cáo </span></a>
+                            </li>
+                        </ul>
+                    </section>
+                </aside>
+                <div class="content-wrapper">
+                      <section class="content-header">
+                      
+                      </section>
+					<section class="content" id="main_content">
+					
+
+              <h3 style="color: green">Công việc mới</h3>
+            <table class="table table-borered table-hover">
+              <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Khối Lượng</th>
+                <th>Chi tiết</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày Kết thúc</th>
+                <th>Ghi chú</th>
+                <th></th>
+              </thead>
+              <tbody>
+                 <tr class="remove">
+                  <td>1</td>
+                  <td>Thuốc dạ dày</td>
+                  <td>80 cân</td>
+                  <td>Tổ 1: <input type="text" value="20"></br>Tổ 2: <input type="text" value="20"></br>Tổ 3: <input type="text" value="20"></br>Tổ 4: <input type="text" value="20"></br>Đơn vị: Cân</td>
+                  <td><input type="date" value="2019-11-20" /></br>mm/dd/yy</td>
+                  <td><input type="date" value="2019-12-20" /></br>mm/dd/yy</td>
+                  <td><textarea placeholder="ghi chú" class="form-control"></textarea></td>
+                  <td><button class="btn btn-primary submit">Đồng Ý</button><br><br/><button class="btn btn-danger huy">Hủy Bỏ</button></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <hr />
+
+            <h3>Công việc đang làm</h3>
+            <table class="table table-borered table-hover">
+              <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Khối Lượng</th>
+                <th>Tổng đã làm</th>
+                <th>Chi tiết</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày Kết thúc dự kiến</th>
+                <th>Ghi chú</th>
+              </thead>
+              <tbody class="dang_lam">
+                <tr>
+                  <td>1</td>
+                  <td>Thuốc dạ dày</td>
+                  <td>200 cân</td>
+                  <td>100 cân</td>
+                  <td>Tổ 1: 20 cân - 50%</br>Tổ 2 : 20 cân - 50%</br>Tổ 3 : 20 cân - 50%</br>Tổ 4 : 40 cân - 50%</td>
+                  <td>20/11/2019</td>
+                  <td>20/12/2019</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>Thuốc viêm</td>
+                  <td>150 cân</td>
+                  <td>75 cân</td>
+                    <td>Tổ 1: 20 cân - 50%</br>Tổ 2 : 20 cân - 50%</br>Tổ 3 : 20 cân - 50%</br>Tổ 4 : 40 cân - 50%</td>
+                  <td>20/11/2019</td>
+                  <td>20/12/2019</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+            <hr />
+             <h3> Công việc đã hoàn thành </h3>
+            <table class="table table-borered table-hover ">
+              <thead>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Khối Lượng</th>
+                <th>Tổngđã làm</th>
+                <th>Chi tiết</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày Kết thúc</th>
+                <th>Ghi chú</th>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                  <td>1</td>
+                  <td>Thuốc dạ dày</td>
+                  <td>100 cân</td>
+                  <td>100 cân</td>
+                  <td>Tổ 1: 25 cân - 100%</br>Tổ 2 : 25 cân - 100%</br>Tổ 3 : 25 cân - 100%</br>Tổ 4 : 25 cân - 100%</td>
+                  <td>20/11/2019</td>
+                  <td>20/12/2019</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+                  <td>Thuốc viêm</td>
+                  <td>200 cân</td>
+                  <td>200 cân</td>
+                    <td>Tổ 1: 50 cân - 100%</br>Tổ 2 : 50 cân - 100%</br>Tổ 3 : 100 cân - 100%</br>Tổ 4 : 50 cân - 100%</td>
+                  <td>20/11/2019</td>
+                  <td>20/12/2019</td>
+                  <td></td>
+                </tr>
+
+              </tbody>
+            </table>
+
+
+
+					</section>
+
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="modelSuccess">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title"></h4>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <div class="modal-body">
+          <h3>Ghi chú</h3>
+          <textarea class="form-control"></textarea>  
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger huy_that" data-dismiss="modal">yêu cầu hủy</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div>
+        </body> 
+
+
+        <style type="text/css">
+        	.content {
+        		background-color: white;
+        		margin-left: 10px;
+        		margin-right: 10px;
+        		border-radius: 20px;
+        	}
+        	th{
+        		background-color: rgb(130, 179, 102);;
+        	}
+        </style>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://adminlte.io/themes/AdminLTE/dist/js/adminlte.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+
+      $('.submit').click(function(){
+
+        if( confirm('Xác nhận yêu cầu làm việc!') ) {
+          let infor = $('.remove').children();
+
+          let current = $($('.dang_lam tr:last-child').children()[0]).text();
+          let nextStt = parseInt(current) + 1;
+
+          let ten = $(infor[1]).text();
+          let tong_khoi_luong = $(infor[2]).text();
+          let ngay_bat_dau = $($(infor[4]).children()[0]).val();
+          let ngay_ket_thuc = $($(infor[5]).children()[0]).val();
+
+          let chi_tiet = $(infor[3]).children();
+          let to_1 = $(chi_tiet[0]).val();
+          let to_2 = $(chi_tiet[2]).val();
+          let to_3 = $(chi_tiet[4]).val();
+          let to_4 = $(chi_tiet[6]).val();
+          let phan_tram = validate(to_1,to_2,to_3,to_4,tong_khoi_luong);
+
+          if( phan_tram != false ) {
+
+            chi_tiet = "tổ 1: "+to_1+" cân - "+phan_tram[0].toString()+"%<br>tổ 2: "+to_2+" cân - "+phan_tram[1].toString()+"%<br> tổ 3: "+to_3+" cân - "+phan_tram[2].toString()+"%<br> tổ 4: "+to_3+" can - "+phan_tram[3].toString()+"%" ;
+
+            // console.log(phan_tram);
+            let td = "<tr><td>"+nextStt+"</td><td>"+ten+"</td><td>"+tong_khoi_luong+" cân</td><td>0 cân</td><td>"+chi_tiet+"</td><td>"+ngay_bat_dau+"</td><td>"+ngay_ket_thuc+"</td></tr>";
+
+            $('.dang_lam').append(td);
+            $('.remove').remove();          
+          }
+
+        }
+
+
+      });
+
+      $('.huy').click(function(){
+        $("#modelSuccess").modal();
+      }) ;
+
+      $('.huy_that').click(function(){
+         $('.remove').remove(); 
+
+       });
+
+      function validate(to1,to2,to3,to4,tong) {
+
+        to1 =parseInt(to1);
+        to2 = parseInt(to2);
+        to3 = parseInt(to3);
+        to4 = parseInt(to4);
+        tong = parseInt(tong);
+
+        if ( to1 +to2 + to3 + to4 != tong ) {
+          alert('nhập sai dữ liệu!');
+          return false;
+        }
+
+        to1 = (to1/tong).toFixed(2) * 100 ;
+        to2 = (to2/tong).toFixed(2) * 100;
+        to3 = (to3/tong).toFixed(2) * 100;
+        to4 = 100 - to1 - to2 - to3;
+
+        return [to1,to2,to3,to4];
+      }
+
+		// function checkInt(string) {
+		// 	return string == parseInt(string);
+		// }
+
+		// $('.them').click(function(){
+			
+		// 	let loai_thuoc = $('.loai_thuoc').val(),stt;
+		// 	let loai_dong_vat = $('.loai_dong_vat').val();
+		// 	let so_luong = $('#so_luong').val();
+
+		// 	let lastTr = $('tbody tr');
+		// 	let lastStt = $(lastTr[lastTr.length-1]).children()[0];
+		// 	lastStt = $(lastStt).text();
+
+		// 	if ( checkInt(lastStt) ) {
+		// 		stt = parseInt(lastStt) + 1;
+		// 	} else{
+		// 		insertFail();
+		// 		return;
+		// 	}
+			
+		// 	if( loai_thuoc == '...' || loai_dong_vat == '...' || !checkInt(so_luong) ) {
+		// 		insertFail();
+		// 	} else {
+		// 		insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong);
+		// 	}
+
+			
+		// });
+
+		// $('.hoan_thanh').click(function(){
+
+		// 	$("#modelSuccess").modal();			
+
+		// });
+		// function deleteRow() {
+		// 	$('.close').click(function(){
+		// 		$($(this).parent()).parent().remove(); 
+		// 	});	
+		// }
+		
+
+		// function insertSuccess(stt,loai_thuoc,loai_dong_vat,so_luong) {
+		// 	// $("#modelSuccess").modal();
+		// 	$('tbody').append('<tr><td>'+stt+'</td><td>'+loai_thuoc+'</td><td>'+loai_dong_vat+'</td><td>'+so_luong+'</td><td class="text-center"><button type="button" class="close"> <span aria-hidden="true">&times;</span></button></td></tr>');
+		// 	deleteRow();
+		// }
+
+		// function insertFail( ) {
+		// 	$("#modelFail").modal();
+		// }
+
+		// deleteRow();
+
+  
+
+	});
+</script>
+
+</body>
+</html>
+
+ 
+
