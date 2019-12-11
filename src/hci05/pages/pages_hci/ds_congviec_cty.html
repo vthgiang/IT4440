@@ -59,7 +59,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <span class="label label-warning">10</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
+                  <li class="header">Bạn có 10 thông báo</li>
                   <li>
                     <!-- inner menu: contains the actual data -->
                     <ul class="menu">
@@ -276,10 +276,10 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
                     <tr>
                       <td>
-                        <button type="button" class="btn btn-block btn-primary">10</button>
+                        <p><b>10</b></p>
                       </td>
                       <td>
-                        Tổng công việc
+                        <b>Tổng công việc</b>
                       </td>
 
                     </tr>
@@ -288,25 +288,33 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <button type="button" class="btn btn-block btn-success">5</button>
                       </td>
                       <td>
-                        Số công việc đã hoàn thành
+                        Số công việc đã hoàn thành đúng tiến độ
                       </td>
 
                     </tr>
                     <tr>
                       <td>
-                        <button type="button" class="btn btn-block btn-info">4</button>
+                        <button type="button" class="btn btn-block btn-info">3</button>
                       </td>
                       <td>
-                        Số công việc đang diễn ra
+                        Số công việc đã hoàn thành chậm tiến độ
                       </td>
 
                     </tr>
                     <tr>
+                    <td>
+                      <button type="button" class="btn btn-block btn-danger">1</button>
+                    </td>
+                    <td>
+                      Số công việc đang thực hiện
+                    </td>
+                  </tr>
+                    <tr>
                       <td>
-                        <button type="button" class="btn btn-block btn-danger">1</button>
+                        <button type="button" class="btn btn-block btn-primary">1</button>
                       </td>
                       <td>
-                        Số công việc chậm tiến độ
+                        Số công việc đang thực hiện và chậm tiến độ
                       </td>
                     </tr>
                     <tr>
@@ -381,7 +389,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <th>Deadline</th>
                   <th>Người chịu trách nhiệm</th>
                   <th>Tiến độ</th>
-                  <th>Kết quả</th>
+                  <th>Chi tiết</th>
                   <th style="width: 40px">Sửa</th>
                   <th style="width: 40px">Xóa</th>
                 </tr>
@@ -395,7 +403,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                   <td>20/10/2019</td>
                   <td>Nguyễn Chí Thanh</td>
                   <td>100%</td>
-                  <td><a href="chi_tiet_du_an.html">Kết quả</a></td>
+                  <td><a href="chi_tiet_du_an.html">Chi tiết</a></td>
 
                   <td><a href="editarea.php?id="><button class=" btn btn-primary btn-warning" >Edit<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                     <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google" onClick="return checkDelete()" ><i class="fa fa fa-trash-o"></i></a>
@@ -407,8 +415,8 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <td>10/10/2019</td>
                         <td>20/10/2019</td>
                         <td>Lã Mạnh Cường</td>
-                     <td>65%</td>
-                     <td><a href="chitiet_congvieccanhan.html">Kết quả</a></td>
+                     <td>100%</td>
+                     <td><a href="chitiet_congvieccanhan.html">Chi tiết</a></td>
 
                      <td><a href="editarea.php?id="><button class=" btn btn-primary btn-warning" >Edit<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                       <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google" onClick="return checkDelete()" ><i class="fa fa fa-trash-o"></i></a>
@@ -421,7 +429,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                           <td>20/10/2019</td>
                           <td>Nguyễn Duy Kỳ</td>
                         <td>65%</td>
-                        <td><a href="chitiet_congvieccanhan.html">Kết quả</a></td>
+                        <td><a href="chitiet_congvieccanhan.html">Chi tiết</a></td>
 
                         <td><a href="editarea.php?id="><button class=" btn btn-primary btn-warning" >Edit<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                           <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google" onClick="return checkDelete()" ><i class="fa fa fa-trash-o"></i></a>
@@ -434,7 +442,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                               <td>20/10/2019</td>
                               <td>Trịnh Duy Hưng</td>
                            <td>65%</td>
-                           <td><a href="chitiet_congvieccanhan.html">Kết quả</a></td>
+                           <td><a href="chitiet_congvieccanhan.html">Chi tiết</a></td>
 
                            <td><a href="editarea.php?id="><button class=" btn btn-primary btn-warning" >Edit<i class="fa fa-pencil" aria-hidden="true"></i></button></a>
                             <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google" onClick="return checkDelete()" ><i class="fa fa fa-trash-o"></i></a>
@@ -737,8 +745,9 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
      var donutData = [
      { label: '', data: 50, color: '#0B610B' },
-     { label: '', data: 40, color: '#01DFD7' },
-     { label: '', data: 10, color: '#DF3A01' }
+     { label: '', data: 30, color: '#01DFD7' },
+     { label: '', data: 10, color: '#DF3A01' },
+     { label: '', data: 10, color: '#337ab7' }
      ]
      $.plot('#donut-chart', donutData, {
       series: {

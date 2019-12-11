@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Data Tables</title>
+    <title>Create Project</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -19,6 +19,11 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,11 +36,6 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
-<style>
-    a {
-        color: #fff;
-    }
-</style>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
@@ -77,8 +77,7 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-warning text-yellow"></i> Very long description here that
-                                            may not fit into the
+                                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
                                             page and may cause design problems
                                         </a>
                                     </li>
@@ -169,9 +168,9 @@
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                </button>
-              </span>
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
                 </div>
             </form>
             <!-- /.search form -->
@@ -180,52 +179,55 @@
                 <li class="header">MAIN NAVIGATION</li>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Công việc công ty</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="ds_congviec_cty.html"><i class="fa fa-circle-o"></i>DS công việc CTY</a></li>
-                        <li><a href="tao_du_an.html"><i class="fa fa-circle-o"></i> Tạo dự án</a></li>
-                        <li><a href="chi_tiet_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết dự án</a></li>
-                        <li><a href="tao_congviec_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc trong dự
-                            án</a></li>
-                        <li><a href="chi_tiet_cong_viec_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công việc dự
-                            án</a></li>
-                        <li><a href="tao_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc cho
-                            nhân viên</a></li>
-                        <li><a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết
-                            công việc cho nhân viên</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Công việc phòng ban</span>
+                        <i class="fa fa-dashboard"></i> <span>Phòng hành chính nhân sự</span>
                         <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="ds_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Ds công việc phòng
-                            ban</a></li>
-                        <li><a href="tao_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Tạo công việc </a></li>
-                        <li><a href="chi_tiet_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Chi tiết công việc</a>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Công việc công ty</span>
+                                <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                      </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="ds_congviec_cty.html"><i class="fa fa-circle-o"></i>DS công việc CTY</a></li>
+                                <li><a href="tao_du_an.html"><i class="fa fa-circle-o"></i> Tạo dự án</a></li>
+                                <li><a href="chi_tiet_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết dự án</a></li>
+                                <li><a href="tao_congviec_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc trong dự án</a></li>
+                                <li><a href="chi_tiet_cong_viec_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công việc dự án</a></li>
+                                <li><a href="tao_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc cho nhân viên</a></li>
+                                <li><a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công việc cho nhân viên</a></li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Công việc cá nhân</span>
-                        <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="ds_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Ds công việc </a></li>
-                        <li><a href="tao_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Tạo công việc </a></li>
-                        <li><a href="chi_tiet_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Chi tiết công
-                            việc</a></li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Công việc phòng ban</span>
+                                <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="ds_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Ds công việc phòng ban</a></li>
+                                <li><a href="tao_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Tạo công việc </a></li>
+                                <li><a href="chi_tiet_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Chi tiết công việc</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Công việc cá nhân</span>
+                                <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="ds_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Ds công việc </a></li>
+                                <li><a href="tao_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Tạo công việc </a></li>
+                                <li><a href="chi_tiet_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Chi tiết công việc</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -237,7 +239,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Chi tiết dự án
+                Tạo công việc của dự án sản xuất vacxin cúm gà
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -251,118 +253,61 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- /.box -->
-                    <div class="box box-default">
-                        <div class="box-header with-border">
-                            <h3 class="box-title">Thông tin chung về dự án sản xuất vacxin cúm gà</h3>
 
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
-                                        class="fa fa-minus"></i></button>
-                            </div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-md-2 ">Tên dự án:</div>
-                                <div class="col-md-10">Dự án sản xuất vacxin cúm gà</div>
-                                <div class="col-md-2 ">Ngày bắt đầu:</div>
-                                <div class="col-md-10">10/10/2019</div>
-                                <div class="col-md-2 ">Deadline:</div>
-                                <div class="col-md-10">20/10/2019</div>
-                                <div class="col-md-2 ">Người chịu trách nhiệm:</div>
-                                <div class="col-md-10">Nguyễn Chí Thanh</div>
-                                <div class="col-md-2 ">Mô tả:</div>
-                                <div class="col-md-10">Sản xuất vacxin để dập tắt dịch cúm gà</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="col-md-2"></div>
                     <div class="box">
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <div class="col-xs-12">
-                                <!-- /.box -->
-                                <a href="tao_cong_viec_nhan_vien_du_an.html">
-                                    <button type="button" class="btn btn-block btn-success">Tạo công việc nhân viên</button>
-                                </a>
-                            </div>
-<!--                            <button class="btn btn-success"><a href="create_task_project.html">Tạo công việc cho phòng ban</a>-->
-<!--                            </button>-->
-                            <table id="example1" class="table table-bordered table-striped">
-                                <thead>
-                                <tr>
-                                    <th>STT</th>
-                                    <th>Tên công việc</th>
-                                    <th>Phòng ban thực hiện</th>
-                                    <th>Ngày bắt đầu</th>
-                                    <th>Deadline</th>
-                                    <th>Trạng thái</th>
-                                    <th>Hành động</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Nghiên cứu tìm ra vacxin</td>
-                                    <td>Phòng nghiên cứu sản xuất</td>
-                                    <td>10/10/2019</td>
-                                    <td>20/10/2019</td>
-                                    <td><p><b>Đã hoàn thành<b><p></td>
-                                    <td>
-                                        <button class="btn btn-warning"><a href="chi_tiet_cong_viec_du_an.html">Chi
-                                            tiết</a></button>
-                                        <button class="btn btn-info">Sửa</button>
-                                        <button class="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <
-                                    <td>Lập chiến lược marketing</td>
-                                    <td>Phòng marketing</td>
-                                    <td>10/10/2019</td>
-                                    <td>20/10/2019</td>
-                                    <td><p><b>Đã hoàn thành<b><p></td>
-                                    <td>
-                                        <button class="btn btn-warning"><a href="detail_task_project.html">Chi tiết</a>
-                                        </button>
-                                        <button class="btn btn-info">Sửa</button>
-                                        <button class="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Lập chiến lược sale</td>
-                                    <td>Phòng sale</td>
-                                    <td>10/10/2019</td>
-                                    <td>20/10/2019</td>
-                                    <td><p><b>Đã hoàn thành<b><p></td>
-                                    <td>
-                                        <button class="btn btn-warning"><a href="detail_task_project.html">Chi tiết</a>
-                                        </button>
-                                        <button class="btn btn-info">Sửa</button>
-                                        <button class="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Xin cấp phép của bộ y tế</td>
-                                    <td>Phòng hành chính nhân sự</td>
-                                    <td>10/10/2019</td>
-                                    <td>20/10/2019</td>
-                                    <td><p><b>Đã hoàn thành<b><p></td>
-                                    <td>
-                                        <button class="btn btn-warning"><a href="detail_task_project.html">Chi tiết</a>
-                                        </button>
-                                        <button class="btn btn-info">Sửa</button>
-                                        <button class="btn btn-danger">Xóa</button>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <form role="form">
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên công việc</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail0" placeholder="Tên công việc">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên dự án</label>
+                                        <input type="email" class="form-control" disabled id="exampleInputEmail1" value="Dự án ABC" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Người chịu trách nhiệm</label>
+                                        <select class="form-control select2" style="width: 100%;">
+                                            <option selected="selected">Lã Mạnh Cường</option>
+                                            <option>Nguyễn Chí Thanh</option>
+                                            <option>NGuyễn Duy Kỳ</option>
+                                            <option>Trịnh Duy Hưng</option>
+                                            <option>Kerlor Senglao</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Date:</label>
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="datepicker" value="11/27/2019">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label >Mô tả</label>
+                                        <textarea rows="4" cols="50" class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label style="width: 100%;">Người phối hợp thực hiện</label>
+                                        <select class="form-control select2" style="width: 95%; float: left;">
+                                            <option selected="selected">Lã Mạnh Cường</option>
+                                            <option>Nguyễn Chí Thanh</option>
+                                            <option>NGuyễn Duy Kỳ</option>
+                                            <option>Trịnh Duy Hưng</option>
+                                            <option>Kerlor Senglao</option>
+                                        </select>
+                                        <button class="btn"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="box-footer">
+                                    <button type="submit" class="btn btn-primary btn-create">Cập nhật</button>
+                                </div>
+                            </form>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -379,11 +324,10 @@
         <div class="pull-right hidden-xs">
             <b>Version</b> 2.4.13
         </div>
-        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-        reserved.
+        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong>
     </footer>
 
-    <!-- Control Sidebar -->
+
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
@@ -395,6 +339,8 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Select2 -->
+<script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- DataTables -->
 <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -406,19 +352,47 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<!-- bootstrap datepicker -->
+<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- page script -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script>
+    $('.btn-create').on('click', function(e){
+        e.preventDefault();
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: true,
+            timer: 1500
+        }).then((result) => {
+            if (result.value) {
+                window.location="ds_congviec_cty.html";
+            }
+        })
+
+
+    })
+
+
+    //Date picker
+    $('#datepicker').datepicker({
+        autoclose: true
+    })
+
     $(function () {
         $('#example1').DataTable()
         $('#example2').DataTable({
-            'paging': true,
+            'paging'      : true,
             'lengthChange': false,
-            'searching': false,
-            'ordering': true,
-            'info': true,
-            'autoWidth': false
+            'searching'   : false,
+            'ordering'    : true,
+            'info'        : true,
+            'autoWidth'   : false
         })
     })
+
+    //Initialize Select2 Elements
 </script>
 </body>
 </html>
