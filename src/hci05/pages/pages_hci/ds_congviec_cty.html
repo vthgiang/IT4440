@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Flot Charts</title>
+  <title> HCI-05 Danh sách công việc công ty</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -276,10 +276,10 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
                     <tr>
                       <td>
-                        <button type="button" class="btn btn-block btn-primary">10</button>
+                        <p><b>10</b></p>
                       </td>
-                      <td>
-                        Tổng công việc
+                      <td><p><b>Tổng công việc</b></p>
+
                       </td>
 
                     </tr>
@@ -288,16 +288,16 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <button type="button" class="btn btn-block btn-success">5</button>
                       </td>
                       <td>
-                        Số công việc đã hoàn thành
+                        Số công việc đã hoàn thành đúng tiến độ
                       </td>
 
                     </tr>
                     <tr>
                       <td>
-                        <button type="button" class="btn btn-block btn-info">4</button>
+                        <button type="button" class="btn btn-block btn-info">3</button>
                       </td>
                       <td>
-                        Số công việc đang diễn ra
+                        Số công việc đã hoàn thành nhưng chậm tiến độ
                       </td>
 
                     </tr>
@@ -306,8 +306,17 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                         <button type="button" class="btn btn-block btn-danger">1</button>
                       </td>
                       <td>
-                        Số công việc chậm tiến độ
+                        Số công việc đang thực hiện
                       </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="button" class="btn btn-block btn-primary">1</button>
+                      </td>
+                      <td>
+                        Số công việc đang thực hiện và chậm tiến độ
+                      </td>
+
                     </tr>
                     <tr>
                       <td><div class="form-group">
@@ -456,11 +465,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
            </div>
            <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.13
-    </div>
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
-    reserved.
+     <strong>HCI_05</strong>
   </footer>
 
    <div class="control-sidebar-bg"></div>
@@ -737,8 +742,9 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
      var donutData = [
      { label: '', data: 50, color: '#0B610B' },
-     { label: '', data: 40, color: '#01DFD7' },
-     { label: '', data: 10, color: '#DF3A01' }
+     { label: '', data: 30, color: '#01DFD7' },
+     { label: '', data: 10, color: '#DF3A01' },
+     {label:'',data:10,color:'#337ab7'}
      ]
      $.plot('#donut-chart', donutData, {
       series: {
