@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Xưởng Thực phẩm chức năng</title>
+    <title>HCI-11 Xưởng Thực phẩm chức năng</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -66,7 +66,8 @@
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Báo cáo</h6>
                     <a class="collapse-item" href="check-report.html">Xem báo cáo công việc</a>
-                    <a class="collapse-item" href="#">Lập báo cáo thống kế</a>
+                    <a class="collapse-item" href="create-report.html">Lập báo cáo thống kế</a>
+                    <a class="collapse-item" href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html">Báo cáo KPI</a>
                 </div>
             </div>
         </li>
@@ -83,7 +84,7 @@
                     <a class="collapse-item" href="profile.html">Thông tin</a>
                     <div class="collapse-divider"></div>
                     <h6 class="collapse-header">Cài đặt</h6>
-                    <a class="collapse-item" href="#">Cài đặt chung</a>
+                    <a class="collapse-item" href="setting.html">Cài đặt chung</a>
                     <hr class="sidebar-divider">
                     <a class="collapse-item text-uppercase text-danger" href="login.html">Đăng xuất</a>
                 </div>
@@ -138,40 +139,50 @@
                 </ul>
             </nav><!-- End of Topbar -->
 
-            <div class="container-fluid">
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb small">
-                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item"><a href="check-report.html">Xem báo cáo công việc</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Báo cáo Alipas-01</li>
-                        </ol>
-                    </nav>
-                </div>
-                <div class="row">
-                    <div class="col-10">
-                        <p class="mb-4">Chọn để xem chi tiết ...</p>
+            <!-- Begin Page Content -->
+        <div class="container-fluid" style="width: 80%;">
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb small">
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="check-report.html">Xem báo cáo công việc</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Báo cáo Alipas-01</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <div class="card-body p-0">
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">Xem báo cáo công việc</h1>
                     </div>
-                </div>
-
-                <!-- DataTales Example -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Các báo cáo quy trình hiện tại</h6>
-                    </div>
-                    <div class="card-body">
-                        
-                    </div>
+                    <form class="user">
+                        <div class="form-group row">
+                            Mã sản xuất
+                            <input type="text" class="form-control" placeholder="Nhập mã sản xuất" value="Alipas-01" readonly>
+                        </div>
+                        <div class="form-group row">
+                            Thời gian thực hiện (giờ)
+                            <input type="text" class="form-control" placeholder="Thời gian thực hiện" value="8" readonly>
+                        </div>
+                        <div class="form-group row">
+                            Tiến độ hiện tại (%)
+                            <input type="text" class="form-control" placeholder="Tiến độ hiện tại" value="80" readonly>
+                        </div>
+                        <div class="form-group row">
+                            Ghi chú
+                            <textarea class="form-control" readonly></textarea>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div><!-- /.container-fluid -->
         </div><!-- End of Main Content -->
 
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
-                    <span>Copyright &copy; Nov 2019</span>
+                    <span>HCI-11 Xưởng Thực phẩm chức năng</span>
                 </div>
             </div>
         </footer><!-- End of Footer -->

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+        <!-- SEARCH FORM -->
+        <form class="form-inline ml-3">
+            <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Tìm kiếm"
+                       aria-label="Tìm kiếm">
+                <div class="input-group-append">
+                    <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <!-- Notifications Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a class="nav-link" data-toggle="dropdown" href="#">
+                    <i class="far fa-bell fa-2x"></i>
+                    <span class="badge badge-warning navbar-badge">10</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                    <span class="dropdown-item dropdown-header">10 Thông báo mới</span>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-users mr-2"></i> 8 Hợp đồng cần duyệt
+                        <span class="float-right text-muted text-sm">12 phút</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">
+                        <i class="fas fa-file mr-2"></i> 3 Báo cáo mới
+                        <span class="float-right text-muted text-sm">35 phút</span>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item dropdown-footer">Xem tất cả</a>
+                </div>
+            </li>
+        </ul>
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="../dist/img/user4-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">Quản lý - Hồng Nguyễn</a>
+            </div>
+        </div>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="../index.html" class="brand-link">
+            <img src="../dist/img/AdminLTELogo.png"
+                 alt="AdminLTE Logo"
+                 class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">HCI_10 Company</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="../manage_index.html" class="nav-link">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Trang chủ - Quản lý</p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-calendar-alt"></i>
+                            <p>
+                                Công việc
+                                <i class="fas fa-angle-right right"></i>
+                                <span class="badge badge-info right">2</span>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="../manage_employee_schedule.html" class="nav-link">
+                                    <i class="fas fa-check-square nav-icon"></i>
+                                    <p>Phân công công việc</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/layout/top-nav.html" class="nav-link">
+                                    <i class="fas fa-file-word nav-icon"></i>
+                                    <p>Xác nhận báo cáo</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="list_custom.html" class="nav-link active">
+                            <i class="nav-icon fas fa-copy"></i>
+                            <p>Danh sách khách hàng</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html" class="nav-link">
+                            <i class="nav-icon fas fa-chart-line"></i>
+                            <p>Thiết lập KPI</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Danh sách khách hàng</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Quản lý</a></li>
+                            <li class="breadcrumb-item active">Danh sách khách hàng hiện tại</li>
+                        </ol>
+                    </div>
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <!-- SELECT2 EXAMPLE -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Ngày: </label>
+                                    <div class="input-group form-inline">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                            </div>
+                                            <input type="date" class="form-control" value="9/12/2019">
+                                        </div>
+                                    </div>
+                                    <!-- /.input group -->
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Nhãn hàng</label>
+                                    <select class="form-control">
+                                        <optgroup label="TPCN">
+                                            <option value="1">Phahacol</option>
+                                            <option value="2">RoseWat</option>
+                                        </optgroup>
+                                        <optgroup label="Thuốc thú y">
+                                            <option value="3">Dog</option>
+                                            <option value="4">Tom</option>
+                                            <option value="5">Jerry</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Khu vực</label>
+                                    <select class="form-control">
+                                        <option value="1">Quận Đống Đa</option>
+                                        <option value="2">Quận Ba Đình</option>
+                                        <option value="3">Quận Cầu Giấy</option>
+                                        <option value="4">Quận Hoàn Kiếm</option>
+                                        <option value="5">Quận Hai Bà Trưng</option>
+                                        <option value="6">Quận Thanh Xuân</option>
+                                        <option value="12">Quận Tây Hồ</option>
+                                        <option value="7">Quận Hoàng Mai</option>
+                                        <option value="8">Quận Long Biên</option>
+                                        <option value="9">Quận Hà Đông</option>
+                                        <option value="10">Quận Nam Từ Liêm</option>
+                                        <option value="11">Quận Bắc Từ Liêm</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Trạng thái</label>
+                                    <select class="form-control">
+                                        <option value="1">Đã ký hợp đồng</option>
+                                        <option value="2">Đang thương thảo</option>
+                                        <option value="3">Đã liên hệ</option>
+                                        <option value="4">Mới</option>
+                                        <option value="5">Còn tồn đọng</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Theo nhân viên</label>
+                                    <select class="select2" multiple="multiple" data-placeholder="Nhập tên NV"
+                                            style="width: 100%;">
+                                        <option>Hồng Nguyễn</option>
+                                        <option>Uyên Trần</option>
+                                        <option>Hoà Phạm</option>
+                                        <option>Tiến Nguyễn</option>
+                                        <option>Thanh Cường</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                            <tr>
+                                <th>Mã số</th>
+                                <th>Tên khách hàng</th>
+                                <th>Nhãn hàng</th>
+                                <th>Khu vực</th>
+                                <th>Trạng thái</th>
+                                <th>Nhân viên phụ trách</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Nguyễn Xuân Phúc</td>
+                                <td>Phahacol</td>
+                                <td>Đống Đa</td>
+                                <td>Đã ký hợp đồng</td>
+                                <td>Uyên Trần</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary"><a href="custom_detail.html"
+                                                                                            style="color: white">Chi
+                                        tiết</a></button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Lại Văn Sâm</td>
+                                <td>Phahacol</td>
+                                <td>Cầu Giấy</td>
+                                <td>Đã liên lạc</td>
+                                <td>Uyên Trần</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="custom_detail.html">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Nguyễn Thị Kim Tiến</td>
+                                <td>Phahacol</td>
+                                <td>Hai Bà Trưng</td>
+                                <td>Đã liên lạc</td>
+                                <td>Hồng Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tòng Thị Phóng</td>
+                                <td>Phahacol</td>
+                                <td>Hai Bà Trưng</td>
+                                <td>Tồn đọng</td>
+                                <td>Hồng Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Vương Đình Huệ</td>
+                                <td>Traphacoo</td>
+                                <td>Tây Hồ</td>
+                                <td>Tồn đọng</td>
+                                <td>Hoà Phạm</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Nguyễn Phú Trọng</td>
+                                <td>Traphacoo</td>
+                                <td>Đống Đa</td>
+                                <td>Đã gặp mặt</td>
+                                <td>Hồng Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Phùng Xuân Nhạ</td>
+                                <td>Phahacol</td>
+                                <td>Hoàn Kiếm</td>
+                                <td>Đã liên lạc</td>
+                                <td>Hoà Phạm</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Đinh La Thăng</td>
+                                <td>Tom</td>
+                                <td>Hà Đông</td>
+                                <td>Mới</td>
+                                <td>Hồng Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Tô Lâm</td>
+                                <td>Phahacol</td>
+                                <td>Nam Từ Liêm</td>
+                                <td>Đã liên lạc</td>
+                                <td>Tiến Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Vũ Trí Đức</td>
+                                <td>Traphacoo</td>
+                                <td>Tây Hồ</td>
+                                <td>Mới</td>
+                                <td>Tiến Nguyễn</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-primary" href="#">Chi tiết</button>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <th>Mã số</th>
+                                <th>Tên khách hàng</th>
+                                <th>Nhãn hàng</th>
+                                <th>Khu vực</th>
+                                <th>Trạng thái</th>
+                                <th>Nhân viên phụ trách</th>
+                                <th></th>
+                            </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col-sm-12 col-md-5">
+                            <div class="dataTables_info" id="example2_info" role="status" aria-live="polite">Hiển thị 1 - 10
+                                trong 1756 khách hàng
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-7 float-right">
+                            <div class="dataTables_paginate paging_simple_numbers" id="example2_paginate">
+                                <ul class="pagination">
+                                    <li class="paginate_button page-item previous disabled" id="example2_previous">
+                                        <a href="#" aria-controls="example2" data-dt-idx="0" tabindex="0" class="page-link">Trước</a>
+                                    </li>
+                                    <li class="paginate_button page-item active"><a href="#" aria-controls="example2"
+                                                                                    data-dt-idx="1" tabindex="0"
+                                                                                    class="page-link">1</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example2"
+                                                                              data-dt-idx="2" tabindex="0"
+                                                                              class="page-link">2</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example2"
+                                                                              data-dt-idx="3" tabindex="0"
+                                                                              class="page-link">3</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example2"
+                                                                              data-dt-idx="4" tabindex="0"
+                                                                              class="page-link">4</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example2"
+                                                                              data-dt-idx="5" tabindex="0"
+                                                                              class="page-link">5</a></li>
+                                    <li class="paginate_button page-item "><a href="#" aria-controls="example2"
+                                                                              data-dt-idx="6" tabindex="0"
+                                                                              class="page-link">6</a></li>
+                                    <li class="paginate_button page-item next" id="example2_next"><a href="#"
+                                                                                                     aria-controls="example2"
+                                                                                                     data-dt-idx="7"
+                                                                                                     tabindex="0"
+                                                                                                     class="page-link">Sau</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.card-body -->
+                <!-- /.card -->
+
+                <!
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+    <footer class="main-footer text-center">
+        <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+    </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../plugins/moment/moment.min.js"></script>
+<script src="../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+<!-- date-range-picker -->
+<script src="../plugins/daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap color picker -->
+<script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Bootstrap Switch -->
+<script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../dist/js/demo.js"></script>
+<!-- Page script -->
+<script>
+    $(function () {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+
+        //Initialize Select2 Elements
+        $('.select2bs4').select2({
+            theme: 'bootstrap4'
+        })
+
+        //Datemask dd/mm/yyyy
+        $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'})
+        //Datemask2 mm/dd/yyyy
+        $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'})
+        //Money Euro
+        $('[data-mask]').inputmask()
+
+        //Date range picker
+        $('#reservation').daterangepicker()
+        //Date range picker with time picker
+        $('#reservationtime').daterangepicker({
+            timePicker: true,
+            timePickerIncrement: 30,
+            locale: {
+                format: 'MM/DD/YYYY hh:mm A'
+            }
+        })
+        //Date range as a button
+
+        //Timepicker
+        $('#timepicker').datetimepicker({
+            format: 'LT'
+        })
+
+        //Bootstrap Duallistbox
+        $('.duallistbox').bootstrapDualListbox()
+
+
+    })
+</script>
+
+<script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+</body>
+</html>

@@ -20,6 +20,7 @@
     integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
   <!-- end style -->
 
   <!-- begin js -->
@@ -43,12 +44,53 @@
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-    <a class="navbar-brand col-sm-3 col-md-2 m-0 pt-0 pb-0">
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
       <h3 class="text-light m-0">LOGO</h3>
     </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
     <div class="navbar-nav ml-auto flex-row align-items-center">
       <h6 class="text-light m-0 mr-3">
-        Xin chào ABC<br />
+        Xin chào Admin<br />
         <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
       </h6>
       <button class="btn m-0 p-0 mr-3">
@@ -126,7 +168,7 @@
       <!-- Begin Main -->
       <main role="main" class="col-sm-9 col-md-10 ml-sm-auto ml-md-auto px-0">
         <!-- Begin Breadcrumb -->
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" style="margin-top: 20px;">
           <ol class="breadcrumb rounded-0 h6">
             <li class="breadcrumb-item active" aria-current="page">Thiết lập mục tiêu</li>
           </ol>
@@ -140,15 +182,35 @@
               <div class="col-md-6 col-sm-12">
                 <div class="row my-2">
                   <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Người lập</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12">
+                    <div style="padding-left: 15px;">Không Bốn</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
+                    <label class="h6 font-weight-bold">Chức vụ</label>
+                  </div>
+                  <div class="col-md-9 col-sm-12" style="padding-left: 15px;">
+                    <div style="padding-left: 15px;">Giám đốc quản trị mục tiêu</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <div class="row my-2">
+                  <div class="col-md-3 col-sm-12">
                     <label class="h6 font-weight-bold">Bộ phận</label>
                   </div>
                   <div class="col-md-9 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn bộ phận ...</option>
-                      <option>Bộ phận A</option>
-                      <option>Bộ phận B</option>
-                      <option>Bộ phận C</option>
-                      <option>Bộ phận D</option>
+                      <option>Bộ phận Nhân sự</option>
+                      <option>Bộ phận Kinh doanh</option>
+                      <option>Bộ phận Nghiên cứu</option>
+                      <option>Bộ phận Hậu cần</option>
                     </select>
                   </div>
                 </div>
@@ -161,10 +223,10 @@
                   <div class="col-md-9 col-sm-12">
                     <select class="form-control">
                       <option disabled selected>Chọn phòng ban ...</option>
-                      <option>Phòng ban A</option>
-                      <option>Phòng ban B</option>
-                      <option>Phòng ban C</option>
-                      <option>Phòng ban D</option>
+                      <option>Phòng quản lí</option>
+                      <option>Phòng tuyển dụng</option>
+                      <option>Phòng kế toán</option>
+                      <option>Phòng sản xuất</option>
                     </select>
                   </div>
                 </div>
@@ -175,8 +237,9 @@
                     <label class="h6 font-weight-bold">Thời hạn</label>
                   </div>
                   <div class="col-md-9 col-sm-12">
-                    <div class="input-group date" data-provide="datepicker">
-                      <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                    <div class="input-group date">
+                      <input type="text" style="padding-left: 15px;" class="form-control datepicker"
+                        placeholder="dd/mm/yyyy">
                     </div>
                   </div>
                 </div>
@@ -255,6 +318,25 @@
     </div>
   </div>
   <!-- End Body -->
+  <script type="text/javascript">
+    $.fn.datepicker.dates["vi-VN"] =
+      {
+        months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+        monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+        days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+        daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+        daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+        titleFormat: "dd MM yyyy",
+        today: "Today",
+      };
+
+    $(".datepicker").datepicker({
+      isRTL: false,
+      format: 'dd/mm/yyyy',
+      autoclose: true,
+      language: 'vi-VN'
+    });
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<title>HCI_12 Chi tiết công việc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../../css/master.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+	<link href="../../bootstrap/css/bootstrap-table.css" rel="stylesheet">
+	<style type="text/css">
+		.property{
+			margin-top: 20px;
+			display: flex;
+		}
+		.comment{
+			margin-top: 20px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<!-- WRAPPER -->
+	<div id="wrapper">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<a href="../home.html"><img src="../../images/logo.png" alt="Logo" class="brand" width="200px" height="81px" style="padding: unset !important;"></a>
+
+			<div class="container-fluid">
+				<div id="navbar-menu">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="../../images/user.png" class="img-circle" alt="Avatar"> <span>Nhân viên</span> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<ul class="dropdown-menu">
+								<li><a href=""><i class="lnr lnr-user"></i> <span>My Profile</span></a></li>
+								<li><a href=""><i class="lnr lnr-envelope"></i> <span>Đổi mật khẩu</span></a></li>
+								<li><a href="../../index.html"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- END NAVBAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="sidebar-nav" class="sidebar">
+			<div class="sidebar-scroll">
+				<nav>
+					<ul class="nav">
+						<li><a href="../home.html"><i class="lnr lnr-home"></i> <span>Trang chủ</span></a></li>
+
+						<li><a href="../email/list.html"><i class="fa fa-shopping-cart"></i> <span>Hộp thư</span></a></li>
+						<li><a href="../message/list.html"><i class="fa fa-shopping-cart"></i> <span>Thông báo</span></a></li>
+						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
+
+
+						<li>
+							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="fa fa-credit-card"></i> <span>KPI</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
+							<div id="subPages" class="collapse item" style="background: #ccc;">
+								<ul class="nav">
+									<li><a class="item" style="padding-left: 60px;" href="../kpi/setciteria.html">Chỉ tiêu hiện tại</a></li>
+									<li><a class="item" style="padding-left: 60px;" href="../kpi/result.html">
+									Kết quả KPI</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li><a href="list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
+
+
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<!-- END LEFT SIDEBAR -->
+		<!-- MAIN -->
+		<div class="main">
+	<!-- MAIN CONTENT -->
+		<div class="main-content">
+			<div class="container-fluid">
+				<h2>Chi tiết công việc</h2>
+
+				<div class="property">
+					<p><b>Tên công việc: </b>Kiểm kê chứng từ định kì</p>
+				</div>
+				<div class="property">
+					<p><b>Ngày giao: </b>26/12/2019</p>
+				</div>
+				<div class="property">
+					<p><b>Deadline: </b>26/12/2019</p>
+				</div>
+				<div class="property">
+					<p><b>Trạng thái: </b>Đã hoàn thành</p>
+				</div>
+				<div class="property">
+					<p><b>Nội dung: </b></p>
+					<p style="border: 1px solid #ccc;border-radius: 5px;padding: 10px;">Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán. Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán</p>
+				</div>
+
+				<div class="property">
+					<p><b>Danh sách công việc đề xuất </b></p>
+				</div>
+
+				<div class="btn-add">
+					<div data-toggle="modal" data-target="#add" class="btn btn-success">Thêm</div>
+				</div>
+
+				<table class="table table-data" data-toggle="table" data-search="true">
+					<thead>
+						<tr>
+							<th>STT</th>
+							<th>Tên công việc</th>
+							<th>Ngày tạo</th>
+							<th>Ngày hoàn thành</th>
+							<th>Chi tiết</th>
+							<th>Xóa</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Kiểm kê chứng từ</td>
+							<td>12/5/2019</td>
+							<td>12/7/2019</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+							<td>
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td>Thống kê chứng từ</td>
+							<td>12/5/2019</td>
+							<td>Chưa xong</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+							<td>
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td>Lập báo cáo chi tiết</td>
+							<td>12/5/2019</td>
+							<td>Chưa xong</td>
+							<td>
+								<div data-toggle="modal" data-target="#detail" class="btn btn-success"> Chi tiết</div>
+							</td>
+							<td>
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="property">
+					<p><b>File đính kèm: </b></p>
+					<input style="margin-left: 20px" type="file" name="">
+					<button class="btn btn-success" style="margin-left: 20px">Nộp</button>
+				</div>
+
+				<h3>Bình luận</h3>
+
+				<div class="comment">
+					<p><i><b>Kế toán trưởng</b> - 12/5/2019</i></p>
+					<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">kế hoạch thực hiện của em chưa tốt, em hãy thực hiện lại!</p>
+				</div>
+				<div class="comment">
+					<p><i><b>MS01: Lê Duy Anh</b> - 12/5/2019</i></p>
+					<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Vâng em sẽ xem xét lại kế hoạch</p>
+				</div>
+
+				<div class="comment">
+					<textarea class="form-control" style="height:100px;" placeholder="Viết bình luận!"></textarea>
+					<div class="btn btn-primary" style="margin-top: 20px;margin-bottom: 30px;">Bình luận</div>
+				</div>
+			</div>
+		</div>
+	<!-- END MAIN CONTENT -->
+	<div class="panel-footer" style="text-align: center; bottom: 0px; border : none; left: 50%">
+			HCI_12
+		</div>
+
+		</div>
+	<!-- END WRAPPER -->
+
+	<div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Đề xuất công việc</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<p>Tên công việc</p>
+						<input type="text" class="form-control" name=""/>
+						<p>Mô tả</p>
+						<TEXTAREA class="form-control" style="height: 100px;"></TEXTAREA>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Thêm</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Đề xuất công việc</h3>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<p>Tên công việc</p>
+						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Tổng hợp chứng từ</p>
+						<p>Mô tả</p>
+						<p style="border:1px solid #ccc;border-radius: 5px;padding: 10px;">Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán. Kiểm tra các định khoản các nghiệp vụ phát sinh. Kiểm tra sự cân đối giữa số liệu kế toán chi tiết và tổng hợp. Hỗ trợ xử lý bảng cân đối kế toán, báo cáo kết quả hoạt động kinh doanh và các báo cáo tài chính khác theo đúng quy định của pháp luật và công ty về hướng dẫn tài chính và kế toán</p>
+
+						<p>Trạng thái</p>
+						<SELECT class="form-control">
+								<option>Đã hoàn thành</option>
+								<option>Đang thực hiện</option>
+						</SELECT>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">Xong</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	<div class="modal-dialog" role="document">
+			<div class="modal-content" style="margin-top: 50%;transform: translateY(-50%);">
+				<div class="modal-header">
+					<h3 class="modal-title">Thông báo</h3>
+				</div>
+				<div class="modal-body">
+					<p>Bạn có chắc chắn muốn xóa?</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Xóa</button>
+				</div>
+			</div>
+	  	</div>
+	</div>
+
+	<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="../../bootstrap/js/bootstrap-table.min.js"></script>
+
+<script src="../../js/master.js"></script>
+</body>
+</html>
