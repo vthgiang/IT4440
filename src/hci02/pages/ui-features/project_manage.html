@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Medicine Company Project Management</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/typicons/src/font/typicons.css">
+    <link rel="stylesheet" href="../../assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.addons.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../../assets/css/shared/style.css">
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/demo_1/style.css">
+    <!-- End Layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+          <a class="navbar-brand brand-logo" href="../../index.html">
+           <span class="profile-text font-weight-medium d-none d-md-block">G R O U P 2</span> </a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item font-weight-semibold d-none d-lg-block">Liên hệ: 1900 0000</li>
+            <li class="nav-item dropdown language-dropdown">
+              <a class="nav-link dropdown-toggle px-2 d-flex align-items-center" id="LanguageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="d-inline-flex mr-0 mr-md-3">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-vn"></i>
+                  </div>
+                </div>
+                <span class="profile-text font-weight-medium d-none d-md-block">Tiếng Việt</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" aria-labelledby="LanguageDropdown">
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-us"></i>
+                  </div>English
+                </a>
+                <a class="dropdown-item">
+                  <div class="flag-icon-holder">
+                    <i class="flag-icon flag-icon-vn"></i>
+                  </div>Tiếng Việt
+                </a>
+              </div>
+            </li>
+          </ul>
+          <form class="ml-auto search-form d-none d-md-block" action="#">
+            <div class="form-group">
+              <input type="search" class="form-control" placeholder="Tìm kiếm">
+            </div>
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count">7</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+                <a class="dropdown-item py-3">
+                  <p class="mb-0 font-weight-medium float-left">Bạn có 7 thư mới</p>
+                  <span class="badge badge-pill badge-primary float-right">Xem tất cả</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Giám đốc</p>
+                    <p class="font-weight-light small-text">Họp hội đồng ngày 04/12/2019</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Giám đốc</p>
+                    <p class="font-weight-light small-text">Thông tin triển khai dự án mới</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic"> </div>
+                  <div class="preview-item-content flex-grow py-2">
+                    <p class="preview-subject ellipsis font-weight-medium text-dark">Phòng hành chính</p>
+                    <p class="font-weight-light small-text">Thông báo trả lương tháng 11/2019</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count bg-success">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+                <a class="dropdown-item py-3 border-bottom">
+                  <p class="mb-0 font-weight-medium float-left">Bạn có 4 thông báo</p>
+                  <span class="badge badge-pill badge-primary float-right">Xem tất cả</span>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-alert m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Lỗi</h6>
+                    <p class="font-weight-light small-text mb-0">Bây giờ</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-settings m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Cài đặt</h6>
+                    <p class="font-weight-light small-text mb-0">Tin nhắn riêng tư</p>
+                  </div>
+                </a>
+                <a class="dropdown-item preview-item py-3">
+                  <div class="preview-thumbnail">
+                    <i class="mdi mdi-airballoon m-auto text-primary"></i>
+                  </div>
+                  <div class="preview-item-content">
+                    <h6 class="preview-subject font-weight-normal text-dark mb-1">Người dùng mới</h6>
+                    <p class="font-weight-light small-text mb-0">Hôm qua</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
+              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image"> </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image">
+                  <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
+                  <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
+                </div>
+                <a class="dropdown-item">Thông tin cá nhân<span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item">Tin nhắn<i class="dropdown-item-icon ti-comment-alt"></i></a>
+                <a class="dropdown-item">Hoạt động<i class="dropdown-item-icon ti-location-arrow"></i></a>
+                <a class="dropdown-item">Cài đặt<i class="dropdown-item-icon ti-help-alt"></i></a>
+                <a class="dropdown-item">Đăng xuất<i class="dropdown-item-icon ti-power-off"></i></a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="profile-image">
+                  <img class="img-xs rounded-circle" src="../../assets/images/faces/face8.jpg" alt="profile image">
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Đặng Ngọc Hiếu</p>
+                  <p class="designation">Phòng kỹ thuật</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">Main Menu</li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <i class="menu-icon typcn typcn-document-text"></i>
+                <span class="menu-title">Trang chủ</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
+                <span class="menu-title">Quản lý công việc</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/ui-features/project_manage.html">Quản lý dự án</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/ui-features/my_work.html">Công việc của tôi</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/evaluate/evaluate.html">
+                <i class="menu-icon typcn typcn-shopping-bag"></i>
+                <span class="menu-title">Đánh giá</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../pages/report/report.html">
+                <i class="menu-icon typcn typcn-th-large-outline"></i>
+                <span class="menu-title">Báo cáo</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Quản lý dự án</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Tên dự án </th>
+                          <th> Ngày bắt đầu </th>
+                          <th> Tiến độ </th>
+                          <th> Chi tiết </th>
+                          <th> Deadline </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <div class="filter-wrapper">
+                          <div class="dropdown toolbar-item">
+                            <a role="button" class="btn btn-success mr-2" href="projectadd.html">Thêm dự án</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownsorting">
+                              <a class="dropdown-item" href="#">Đã hoàn thành</a>
+                              <a class="dropdown-item" href="#">Đang tiến hành</a>
+                            </div>
+                          </div>
+                        </div>
+                        <tr>
+                          <td> Dự án 001 </td>
+                          <td> 01/01/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/05/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 002 </td>
+                          <td> 01/03/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/03/2020 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 003 </td>
+                          <td> 01/01/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> 
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 31/12/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 004 </td>
+                          <td> 01/06/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/06/2020 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 005 </td>
+                          <td> 10/09/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/06/2020 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 006 </td>
+                          <td> 07/07/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                          <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/12/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Dự án 008 </td>
+                          <td> 01/10/2019 </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          </td>
+                          <td> 01/08/2020 </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="d-block mt-3" href="#"> </a>
+                      <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                        <button type="button" class="btn btn-secondary">01</button>
+                        <button type="button" class="btn btn-secondary">02</button>
+                        <button type="button" class="btn btn-secondary">03</button>
+                        <button type="button" class="btn btn-secondary">...</button>
+                        <button type="button" class="btn btn-secondary">10</button>
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Quản lý nhân viên</h4>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th> STT </th>
+                          <th> Tên nhân viên </th>
+                          <th> Tiến độ công việc </th>
+                          <th> Đánh giá </th>
+                          <th> Ghi chú </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <div class="filter-wrapper">
+                          <div class="dropdown toolbar-item">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tất cả</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownsorting">
+                              <a class="dropdown-item" href="#">Xuất sắc</a>
+                              <a class="dropdown-item" href="#">Tốt</a>
+                              <a class="dropdown-item" href="#">Trung bình</a>
+                              <a class="dropdown-item" href="#">Kém</a>
+                            </div>
+                            <a class="d-block mt-3" href="#"> </a>
+                          </div>
+                        </div>
+                        <tr>
+                          <td> 1 </td>
+                          <td> Đặng Ngọc Hiếu </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Xuất sắc </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 2 </td>
+                          <td> Nguyễn Quang Hải </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Tốt </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 3 </td>
+                          <td> Đoàn Thành Trung </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Xuất sắc </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 4 </td>
+                          <td> Nguyễn Thị Hoa </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Tốt </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 5 </td>
+                          <td> Hà Thị Vân </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Trung bình </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 6 </td>
+                          <td> Hoàng Văn Hà </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Kém </td>
+                          <td>  </td>
+                        </tr>
+                        <tr>
+                          <td> 7 </td>
+                          <td> Nguyễn Hữu Nam </td>
+                          <td>
+                            <div class="progress">
+                              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </td>
+                          <td> Tốt </td>
+                          <td>  </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                      <a class="d-block mt-3" href="#"> </a>
+                      <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                        <button type="button" class="btn btn-secondary">01</button>
+                        <button type="button" class="btn btn-secondary">02</button>
+                        <button type="button" class="btn btn-secondary">03</button>
+                        <button type="button" class="btn btn-secondary">...</button>
+                        <button type="button" class="btn btn-secondary">10</button>
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank"></a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Medicine Company Project Management.
+              </span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="../../assets/js/shared/off-canvas.js"></script>
+    <script src="../../assets/js/shared/misc.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
