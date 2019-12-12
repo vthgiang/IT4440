@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HCI15-Theo ngày</title>
+    <title>HCI15-Theo năm</title>
 
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="Css/style.css" rel="stylesheet">
+    <link href="../Css/style.css" rel="stylesheet">
 
 </head>
 
@@ -29,7 +29,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" >
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="trangchu.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-briefcase-medical"></i>
         </div>
@@ -40,8 +40,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item i">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item active i">
+        <a class="nav-link" href="trangchu.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Trang chủ</span></a>
       </li>
@@ -58,10 +58,10 @@
           <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
               <h6 class="collapse-header">Thống kê doanh thu:</h6>
-              <a class="collapse-item child active select-child" href="theongay.html">Theo ngày</a>
+              <a class="collapse-item child" href="theongay.html">Theo ngày</a>
             <a class="collapse-item child" href="theothang.html">Theo tháng</a>
             <a class="collapse-item child" href="theoquy.html">Theo quý</a>
-            <a class="collapse-item child" href="theonam.html">Theo năm</a>
+            <a class="collapse-item child active select-child" href="theonam.html">Theo năm</a>
             <a class="collapse-item child" href="theosanpham.html">Theo sản phẩm</a>
             </div>
           </div>
@@ -76,18 +76,6 @@
         <a class="nav-link" href="quanlycongviec.html">
           <i class="fas fa-align-justify"></i>
           <span>Công việc cá nhân</span>
-        </a>
-      </li>
-      <li class="nav-item i">
-        <a class="nav-link" href="chiaviec.html">
-          <i class="fas fa-bars"></i>
-          <span>Quản lý công việc cá nhân</span>
-        </a>
-      </li>
-      <li class="nav-item i">
-        <a class="nav-link" href="kpi.html">
-          <i class="fas fa-balance-scale"></i>
-          <span>KPI</span>
         </a>
       </li>
       <li class="nav-item i">
@@ -304,12 +292,21 @@
                 <div class="content-ta">
                     <span class="mar-text">Thống kê</span>
                     <i class="fas fa-angle-right mar"></i>
-                    <span class="mar-text">Doanh thu theo ngày</span>
+                    <span class="mar-text">Doanh thu theo năm</span>
                 </div>
                 <!--Content menu-->
                 <div class="content-menu">
-                    <span class="text-cot-menu">Ngày</span>
-                    <div class="input-menu" style="width: 170px;"><input value="30/11/2019" class="form-control"></div>
+                    <span class="text-cot-menu">Năm</span>
+                    <div class="input-menu" style="width: 100px;">
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="button-menu">
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#xuatModal">
                             <i class="fas fa-file-excel"></i>
@@ -346,8 +343,6 @@
                                 <thead>
                                     <tr>
                                         <th>Thời gian</th>
-                                        <th>Mã đơn hàng</th>
-                                        <th>Khách hàng</th>
                                         <th>Doanh thu</th>
                                         <th>Doanh thu thuần</th>
                                     </tr>
@@ -355,51 +350,37 @@
                                 <tbody>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                     <tr>
                                         <td>30/11/2019</td>
-                                        <td>TH00011</td>
-                                        <td>Nguyễn Văn A</td>
                                         <td>3,200,000</td>
                                         <td>3,200,000</td>
                                     </tr>
                                 <tfoot>
                                     <tr>
                                         <th>Tổng</th>
-                                        <th></th>
-                                        <th></th>
                                         <th>32,000,000</th>
                                         <th>32,000,000</th>
                                     </tr>
@@ -450,7 +431,6 @@
                 </div>
             </div>
         </div>
-
         <!--xuat Modal-->
         <div class="modal fade" id="xuatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -487,19 +467,19 @@
             </div>
         </div>
         <!-- Bootstrap core JavaScript-->
-        <script src="Scripts/jquery.min.js"></script>
-        <script src="Scripts/bootstrap.bundle.min.js"></script>
+        <script src="../Scripts/jquery.min.js"></script>
+        <script src="../Scripts/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="Scripts/jquery.easing.min.js"></script>
+        <script src="../Scripts/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="Scripts/admin.js"></script>
+        <script src="../Scripts/admin.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
         <!-- Page level custom scripts -->
-        <script src="Scripts/chart.js"></script>
-        <script src="Scripts/base.js"></script>
+        <script src="../Scripts/chart.js"></script>
+        <script src="../Scripts/base.js"></script>
 
 </body>
 

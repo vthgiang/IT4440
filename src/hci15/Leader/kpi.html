@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HCI15-Theo tháng</title>
+    <title>HCI15-KPI</title>
 
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="Css/style.css" rel="stylesheet">
+    <link href="../Css/style.css" rel="stylesheet">
 
 </head>
 
@@ -26,10 +26,10 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #1a6fb4!important;">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" >
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="trangchu.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-briefcase-medical"></i>
         </div>
@@ -40,8 +40,8 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item i">
-        <a class="nav-link" href="index.html">
+      <li class="nav-item active i">
+        <a class="nav-link" href="trangchu.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Trang chủ</span></a>
       </li>
@@ -49,23 +49,6 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-      <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item active select">
-          <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Thống kê</span>
-          </a>
-          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-              <h6 class="collapse-header">Thống kê doanh thu:</h6>
-              <a class="collapse-item" href="theongay.html">Theo ngày</a>
-            <a class="collapse-item child active select-child" href="theothang.html">Theo tháng</a>
-            <a class="collapse-item child" href="theoquy.html">Theo quý</a>
-            <a class="collapse-item child" href="theonam.html">Theo năm</a>
-            <a class="collapse-item child" href="theosanpham.html">Theo sản phẩm</a>
-            </div>
-          </div>
-        </li>
       <li class="nav-item i">
         <a class="nav-link" href="baocao.html">
           <i class="far fa-file"></i>
@@ -84,7 +67,7 @@
           <span>Quản lý công việc cá nhân</span>
         </a>
       </li>
-      <li class="nav-item i">
+      <li class="nav-item i select">
         <a class="nav-link" href="kpi.html">
           <i class="fas fa-balance-scale"></i>
           <span>KPI</span>
@@ -302,94 +285,133 @@
             <div class="container-fluid">
                 <!-- Content header -->
                 <div class="content-ta">
-                    <span class="mar-text">Thống kê</span>
-                    <i class="fas fa-angle-right mar"></i>
-                    <span class="mar-text">Doanh thu theo tháng</span>
-                </div>
-                <!--Content menu-->
-                <div class="content-menu">
-                    <span class="text-cot-menu">Từ ngày</span>
-                    <div class="input-menu" style="width: 170px;"><input value="01/11/2019" class="form-control"></div>
-                    <span class="text-cot-menu">Đến ngày</span>
-                    <div class="input-menu" style="width: 170px;"><input value="30/11/2019" class="form-control"></div>
-                    <div class="button-menu">
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#xuatModal">
-                            <i class="fas fa-file-excel"></i>
-                            <span style="color: black;">Xuất excel</span>
-                        </button>
-                    </div>
-                    <div class="button-menu">
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#xuatModal">
-                            <i class="fas fa-file-powerpoint"></i>
-                            <span style="color: black;">Xuất PDF</span>
-                        </button>
-                    </div>
+                    <span class="mar-text">Bộ đánh giá về KPI</span>
                 </div>
                 <!-- DataTales Example -->
-                <div class="card shadow mb-4">
-                    <div class="card-header py-3">
-                        <div class="content-menu">
-                            <span class="text-cot-menu text-primary">Tên nhân viên</span>
-                            <div class="input-menu">
-                                <div class="form-group">
-                                    <select class="form-control" id="sel1">
-                                        <option>Nguyễn Văn Thắng</option>
-                                        <option>Lâm Phúc Anh Tú</option>
-                                        <option>Hồ Văn Toàn</option>
-                                        <option>Bùi Việt Anh</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="card shadow mb-12">
                     <div class="card-body" style="height: 100%!important">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                 <thead>
                                     <tr>
-                                        <th>Thời gian</th>
-                                        <th>Doanh thu</th>
-                                        <th>Doanh thu thuần</th>
+                                        <th>C1</th>
+                                        <th>C2</th>
+                                        <th>Tiêu chí</th>
+                                        <th>Kỳ vọng</th>
+                                        <th>Trọng số</th>
+                                        <th>Thang điểm</th>
+                                        <th>Sửa</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><b>TÍNH CHUYÊN NGHIỆP</b></td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                        <td><b>25.00</b></td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Kỹ năng chuyên môn</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>13.25</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Kỷ luật</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>6.00</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Tác phong, khả năng trình bày</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>5.75</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><b>HIỆU QUẢ</b></td>
+                                        <td>8</td>
+                                        <td>2</td>
+                                        <td><b>50.00</b></td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
                                     <tr>
-                                        <td>30/11/2019</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Khả năng thực hiện công việc</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>44.00</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
-                                <tfoot>
                                     <tr>
-                                        <th>Tổng</th>
-                                        <th>32,000,000</th>
-                                        <th>32,000,000</th>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Mức độ hoàn thành công việc</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>5.00</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
                                     </tr>
-                                </tfoot>
+                                    <tr>
+                                        <td></td>
+                                        <td>2</td>
+                                        <td>Có sáng kiến</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1.00</td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><b>TÍNH TRUNG THỰC</b></td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td><b>5.00</b></td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><b>TÍNH HỢP TÁC</b></td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td><b>10.00</b></td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td><b>THÁI ĐỘ TÍCH CỰC</b></td>
+                                        <td>9</td>
+                                        <td>1</td>
+                                        <td><b>10.00</b></td>
+                                        <td><button data-toggle="modal" data-target="#createModal" style="background-color: #1a6fb4; color: aliceblue;">Sửa</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><b>Tổng</b></td>
+                                        <td>8</td>
+                                        <td>1</td>
+                                        <td><b>100</b></td>
+                                        <td></td>
+                                    </tr>
                             </table>
                             <ul class="pagination">
                                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
@@ -436,55 +458,71 @@
                 </div>
             </div>
         </div>
-        <!--xuat Modal-->
-        <div class="modal fade" id="xuatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--create Modal-->
+        <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Sửa đổi tiêu chí</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div class="modal-body">Bạn có muốn xuất file thống kê của ngày 30/11/2019 không?</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
-                        <button class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal" data-target="#okModal">Xuất</button>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="p-3">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Tiêu chí đánh giá</h1>
+                                </div>
+                                <form class="user">
+                                    <div class="form-group row">
+                                        <span class="st">Tiêu chí đánh giá : </span>
+                                        <div class="col-sm-8 mb-3 mb-sm-8">
+                                            <input type="text" value="TÍNH CHUYÊN NGHIỆP" class="form-control form-control-user" id="exampleFirstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="st">Kỳ vọng : </span>
+                                        <div class="col-sm-4 mb-3 mb-sm-12">
+                                            <input class="form-control form-control-user" value="8" id="exampleFirstName">
+                                        </div>
+                                        <span class="st">Trọng số : </span>
+                                        <div class="col-sm-4 mb-3 mb-sm-12">
+                                            <input class="form-control form-control-user" value="1" id="exampleFirstName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <span class="st">Ghi chú : </span>
+                                        <div class="col-sm-10 mb-3 mb-sm-12" style="left: 16px;">
+                                            <input type="text" class="form-control form-control-user" id="exampleFirstName">
+                                        </div>
+                                    </div>
+                                    <a href="" class="btn btn-primary btn-user btn-block">
+                                        Sửa đổi
+                                    </a>
+                                    <hr>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--ok Modal-->
-        <div class="modal fade" id="okModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Bạn đã xuất file thành công</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" type="button" data-dismiss="modal">Ok</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <!-- Bootstrap core JavaScript-->
-        <script src="Scripts/jquery.min.js"></script>
-        <script src="Scripts/bootstrap.bundle.min.js"></script>
+        <script src="../Scripts/jquery.min.js"></script>
+        <script src="../Scripts/bootstrap.bundle.min.js"></script>
 
         <!-- Core plugin JavaScript-->
-        <script src="Scripts/jquery.easing.min.js"></script>
+        <script src="../Scripts/jquery.easing.min.js"></script>
 
         <!-- Custom scripts for all pages-->
-        <script src="Scripts/admin.js"></script>
+        <script src="../Scripts/admin.js"></script>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
         <!-- Page level custom scripts -->
-        <script src="Scripts/chart.js"></script>
-        <script src="Scripts/base.js"></script>
+        <script src="../Scripts/chart.js"></script>
+        <script src="../Scripts/base.js"></script>
 
 </body>
 

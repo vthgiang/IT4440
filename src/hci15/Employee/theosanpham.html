@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HCI15-Báo cáo</title>
+    <title>HCI15-Theo sản phẩm</title>
 
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="Css/style.css" rel="stylesheet">
+    <link href="../Css/style.css" rel="stylesheet">
 
 </head>
 
@@ -29,7 +29,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar" >
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="trangchu.html">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-briefcase-medical"></i>
         </div>
@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item i">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="trangchu.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Trang chủ</span></a>
       </li>
@@ -49,24 +49,24 @@
       <!-- Divider -->
       <hr class="sidebar-divider">
 
-        <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item i">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-              <i class="fas fa-chart-line"></i>
-              <span>Thống kê</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-              <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Thống kê doanh thu:</h6>
-                <a class="collapse-item child" href="theongay.html">Theo ngày</a>
-                <a class="collapse-item child" href="theothang.html">Theo tháng</a>
-                <a class="collapse-item child" href="theoquy.html">Theo quý</a>
-                <a class="collapse-item child" href="theonam.html">Theo năm</a>
-                <a class="collapse-item child" href="theosanpham.html">Theo sản phẩm</a>
-              </div>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item active select">
+          <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Thống kê</span>
+          </a>
+          <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Thống kê doanh thu:</h6>
+              <a class="collapse-item child" href="theongay.html">Theo ngày</a>
+            <a class="collapse-item child" href="theothang.html">Theo tháng</a>
+            <a class="collapse-item child" href="theoquy.html">Theo quý</a>
+            <a class="collapse-item child" href="theonam.html">Theo năm</a>
+            <a class="collapse-item child active select-child" href="theosanpham.html">Theo sản phẩm</a>
             </div>
-          </li>
-      <li class="nav-item active select i">
+          </div>
+        </li>
+      <li class="nav-item i">
         <a class="nav-link" href="baocao.html">
           <i class="far fa-file"></i>
           <span>Báo cáo</span>
@@ -76,18 +76,6 @@
         <a class="nav-link" href="quanlycongviec.html">
           <i class="fas fa-align-justify"></i>
           <span>Công việc cá nhân</span>
-        </a>
-      </li>
-      <li class="nav-item i">
-        <a class="nav-link" href="chiaviec.html">
-          <i class="fas fa-bars"></i>
-          <span>Quản lý công việc cá nhân</span>
-        </a>
-      </li>
-      <li class="nav-item i">
-        <a class="nav-link" href="kpi.html">
-          <i class="fas fa-balance-scale"></i>
-          <span>KPI</span>
         </a>
       </li>
       <li class="nav-item i">
@@ -117,7 +105,7 @@
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
-        <!-- Main Content -->
+      <!-- Main Content -->
         <div id="content">
 
             <!-- Topbar -->
@@ -300,16 +288,23 @@
             <!-- End of Topbar -->
 
             <div class="container-fluid">
+                <!-- Content header -->
+                <div class="content-ta">
+                    <span class="mar-text">Thống kê</span>
+                    <i class="fas fa-angle-right mar"></i>
+                    <span class="mar-text">Doanh thu theo sản phẩm</span>
+                </div>
                 <!--Content menu-->
                 <div class="content-menu">
-                    <span class="text-cot-menu">Báo cáo</span>
+                    <span class="text-cot-menu">Sản phẩm</span>
                     <div class="input-menu">
                         <div class="form-group">
                             <select class="form-control" id="sel1">
-                                <option><a href="baocao.html">Theo tháng</a></option>
-                                <option><a href="baocaongay.html"></a>Theo ngày</a></option>
-                                <option><a href="baocaoquy.html">Theo quý</a></option>
-                                <option><a href="baocaonam.html">Theo năm</a></option>
+                                <option>Bromuric- ÂuCơ- H30Viên</option>
+                                <option>Ecosipcool14x10cm- Tatra- H2túix 5Miếng</option>
+                                <option>Mobic7.5mg- Meloxicam- Đức- H2Vx10 Viên</option>
+                                <option>Detromethorpharn15mg- Đồng Tháp- Lọ 200 Viên</option>
+                                <option>Hoàn Khơp Bổ Thận NK- TW- H14 Gói</option>
                             </select>
                         </div>
                     </div>
@@ -328,7 +323,7 @@
                 </div>
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
-                    <div class="card-header py-3" style="display: flex!important;">
+                    <div class="card-header py-3">
                         <div class="content-menu">
                             <span class="text-cot-menu text-primary">Tên nhân viên</span>
                             <div class="input-menu">
@@ -342,116 +337,165 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="content-menu">
-                            <span class="text-cot-menu text-primary">Tháng</span>
-                            <div class="input-menu" style="width: 100px;"><input value="11/2019" class="form-control"></div>
+                        <div class="card-body" style="height: 100%!important">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã hàng</th>
+                                            <th>Tên hàng</th>
+                                            <th>Số lượng bán</th>
+                                            <th>Doanh thu</th>
+                                            <th>Doanh thu thuần</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Bromuric- ÂuCơ- H30Viên</td>
+                                            <td>11</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Ecosipcool14x10cm- Tatra- H2túix 5Miếng</td>
+                                            <td>20</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Mobic7.5mg- Meloxicam- Đức- H2Vx10 Viên</td>
+                                            <td>31</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Detromethorpharn15mg- Đồng Tháp- Lọ 200 Viên</td>
+                                            <td>22</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Hoàn Khơp Bổ Thận NK- TW- H14 Gói</td>
+                                            <td>12</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SP00011</td>
+                                            <td>Đè Lưỡi Gỗi Hanomed- TânÁ- H10Chiếc</td>
+                                            <td>15</td>
+                                            <td>3,465,000</td>
+                                            <td>3,465,000</td>
+                                        </tr>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Tổng</th>
+                                            <th></th>
+                                            <th></th>
+                                            <th>34,650,000</th>
+                                            <th>34,650,000</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="card-header report-st">
-                        <div class="text-primary"><h2>Báo cáo doanh thu tháng 11</h2></div>
-                        <div class="text-primary"><h5>Nhân viên: Nguyễn Văn Thắng</h5></div>
-                        <div class="text-primary">Ngày tạo: 30/11/2019</div>
+                </div>
+
+                <!-- End of Content Wrapper -->
+
+            </div>
+            <!-- End of Page Wrapper -->
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+            </a>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span><h4>HCI15-Kế toán bán hàng</h4></span>
                     </div>
-                    <div class="card-body" style="height: 100%!important">
-                        <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                        <th>T11.2019</th>
-                                        <th>Tổng</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Doanh thu bán hàng(1)</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Doanh thu thuần(2)</td>
-                                        <td>3,200,000</td>
-                                        <td>3,200,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Giá vốn bán hàng(3)</td>
-                                        <td>2,200,000</td>
-                                        <td>2,200,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lợi nhuận gộp về bán hàng(4=2-3)</td>
-                                        <td>1,000,000</td>
-                                        <td>1,000,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thu nhập khác(5)</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Chi phí khác(6)</td>
-                                        <td>0</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Lợi nhuận thuần(7=(4+5)-6)</td>
-                                        <td>1,000,000</td>
-                                        <td>1,000,000</td>
-                                    </tr>
-                            </table>
+                </div>
+            </footer>
+            <!-- Logout Modal-->
+            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn có thực sự muốn đăng xuất khỏi hệ thống.</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
+                            <a class="btn btn-primary" href="login.html">Đăng xuất</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- End of Content Wrapper -->
-
-        </div>
-        <!-- End of Page Wrapper -->
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-        <footer class="sticky-footer bg-white">
-            <div class="container my-auto">
-                <div class="copyright text-center my-auto">
-                    <span><h4>HCI15-Kế toán bán hàng</h4></span>
-                </div>
-            </div>
-        </footer>
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Bạn có thực sự muốn đăng xuất khỏi hệ thống.</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
-                        <a class="btn btn-primary" href="login.html">Đăng xuất</a>
+            <!--xuat Modal-->
+            <div class="modal fade" id="xuatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn có muốn xuất file thống kê của ngày 30/11/2019 không?</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
+                            <button class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal" data-target="#okModal">Xuất</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!--ok Modal-->
+            <div class="modal fade" id="okModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn đã xuất file thành công</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" data-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bootstrap core JavaScript-->
+            <script src="../Scripts/jquery.min.js"></script>
+            <script src="../Scripts/bootstrap.bundle.min.js"></script>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="Scripts/jquery.min.js"></script>
-        <script src="Scripts/bootstrap.bundle.min.js"></script>
+            <!-- Core plugin JavaScript-->
+            <script src="../Scripts/jquery.easing.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="Scripts/jquery.easing.min.js"></script>
+            <!-- Custom scripts for all pages-->
+            <script src="../Scripts/admin.js"></script>
+            <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="Scripts/admin.js"></script>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-
-        <!-- Page level custom scripts -->
-        <script src="Scripts/chart.js"></script>
-        <script src="Scripts/base.js"></script>
+            <!-- Page level custom scripts -->
+            <script src="../Scripts/chart.js"></script>
+            <script src="../Scripts/base.js"></script>
 
 </body>
 

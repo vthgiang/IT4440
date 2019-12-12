@@ -12084,3 +12084,6 @@ body.sidebar-toggled footer.sticky-footer {
 .st {
     margin-top: 10px;
 }
+.dis{
+    display: none;
+}
