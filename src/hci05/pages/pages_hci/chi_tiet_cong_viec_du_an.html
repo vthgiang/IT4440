@@ -457,29 +457,113 @@
                                 <div class="col-md-4">Trạng thái:</div>
                                 <div class="col-md-8">Đang thực hiện</div>
                             </div>
-                        </div>
-                        <!-- /.box -->
+                        </div>                       <!-- /.box -->
 
                     </div>
                     <!-- /.col -->
-                    <div class="col-xs-12">
 
-                        <!-- /.box -->
-                        <a href="tao_cong_viec_nhan_vien_du_an.html">
-                            <button type="button" class="btn btn-block btn-success">Tạo công việc nhân viên</button>
-                        </a>
-                    </div>
+
                 </div>
                 <!-- /.row -->
+                <div class="row">
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-bar-chart-o"></i>
+
+                            <h3 class="box-title">Biểu đồ thống kê công việc</h3>
+
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="box-body">
+                            <div class="col-md-6" id="donut-chart" style="height: 300px;"></div>
+                            <div class="col-md-6">
+                                <!-- Bar chart -->
+
+                                <!-- /.box -->
+                                <div class="box-body pad table-responsive">
+
+                                    <table class="table table-bordered text-center">
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p><b>4</b></p>
+                                            </td>
+                                            <td><p><b>Tổng công việc</b></p>
+
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-block btn-success">1</button>
+                                            </td>
+                                            <td>
+                                                Số công việc đã hoàn thành đúng tiến độ
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-block btn-info">1</button>
+                                            </td>
+                                            <td>
+                                                Số công việc đã hoàn thành nhưng chậm tiến độ
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-block btn-danger">1</button>
+                                            </td>
+                                            <td>
+                                                Số công việc đang thực hiện
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="btn btn-block btn-primary">1</button>
+                                            </td>
+                                            <td>
+                                                Số công việc đang thực hiện và chậm tiến độ
+                                            </td>
+
+                                        </tr>
+
+                                    </table>
+                                </div>
+
+                                <!-- /.box -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12">
 
                         <!-- /.box -->
                         <div class="box">
+
                             <div class="box-header">
                                 <h3 class="box-title">Bảng quản lý công việc cho nhân viên</h3>
                             </div>
                             <!-- /.box-header -->
+                            <div class="col-xs-12">
+
+                                <!-- /.box -->
+                                <a href="tao_cong_viec_nhan_vien_du_an.html">
+                                    <button type="button" class="btn btn-block btn-success">Tạo công việc nhân viên</button>
+                                </a>
+                            </div>
                           <div class="box-body">
 <!--                            <button class="btn btn-success"><a href="create_task_project.html">Tạo công việc</a>-->
 <!--                            </button>-->
@@ -504,9 +588,9 @@
                                 <td>20/10/2019</td>
                                 <td>Đã hoàn thành</td>
                                 <td>
-                                  <button class="btn btn-warning"><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chi
-                                    tiết</a></button>
-                                  <button class="btn btn-info">Sửa</button>
+                                    <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
+                                    </button></a>
+                                  <button class="btn btn-warning">Sửa</button>
                                   <button class="btn btn-danger">Xóa</button>
                                 </td>
                               </tr>
@@ -519,9 +603,9 @@
                                 <td>20/10/2019</td>
                                 <td>Đã hoàn thành</td>
                                 <td>
-                                  <button class="btn btn-warning"><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chi tiết</a>
-                                  </button>
-                                  <button class="btn btn-info">Sửa</button>
+                                    <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
+                                    </button></a>
+                                    <button class="btn btn-warning">Sửa</button>
                                   <button class="btn btn-danger">Xóa</button>
                                 </td>
                               </tr>
@@ -533,9 +617,9 @@
                                 <td>20/10/2019</td>
                                 <td>Đang thực hiện</td>
                                 <td>
-                                  <button class="btn btn-warning"><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chi tiết</a>
-                                  </button>
-                                  <button class="btn btn-info">Sửa</button>
+                                    <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
+                                    </button></a>
+                                    <button class="btn btn-warning">Sửa</button>
                                   <button class="btn btn-danger">Xóa</button>
                                 </td>
                               </tr>
@@ -547,9 +631,9 @@
                                 <td>20/10/2019</td>
                                 <td>Đang thực hiện</td>
                                 <td>
-                                  <button class="btn btn-warning"><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chi tiết</a>
-                                  </button>
-                                  <button class="btn btn-info">Sửa</button>
+                                    <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
+                                    </button></a>
+                                    <button class="btn btn-warning">Sửa</button>
                                   <button class="btn btn-danger">Xóa</button>
                                 </td>
                               </tr>
@@ -558,17 +642,6 @@
                           </div>
                             <!-- /.box-body -->
                         </div>
-                    </div>
-                    <!-- /.col -->
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="form-group">
-                            <label>Nhận xét:</label>
-                            <textarea class="form-control" rows="5" placeholder="Nhận xét ..."></textarea>
-                        </div>
-                        <!-- /.box -->
-                        <button type="button" class="btn btn-block btn-success">Nhận xét</button>
                     </div>
                     <!-- /.col -->
                 </div>
@@ -858,20 +931,20 @@
          */
 
         var donutData = [
-            {label: 'Series2', data: 30, color: '#0101DF'},
-            {label: 'Series3', data: 20, color: '#0B610B'},
-            {label: 'Series1', data: 10, color: '#01DFD7'},
-            {label: 'Series4', data: 40, color: '#DF3A01'}
+            { label: '', data: 10, color: '#0B610B' },
+            { label: '', data: 10, color: '#01DFD7' },
+            { label: '', data: 10, color: '#DF3A01' },
+            {label:'',data:10,color:'#337ab7'}
         ]
         $.plot('#donut-chart', donutData, {
             series: {
                 pie: {
-                    show: true,
-                    radius: 1,
+                    show       : true,
+                    radius     : 1,
                     innerRadius: 0.5,
-                    label: {
-                        show: true,
-                        radius: 2 / 3,
+                    label      : {
+                        show     : true,
+                        radius   : 2 / 3,
                         formatter: labelFormatter,
                         threshold: 0.1
                     }
