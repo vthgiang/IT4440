@@ -27,7 +27,7 @@
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
           <a class="navbar-brand brand-logo" href="../../index.html">
-           <span class="profile-text font-weight-medium d-none d-md-block">G R O U P 2</span> </a>
+           <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
@@ -146,11 +146,11 @@
                   <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
                   <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
                 </div>
-                <a class="dropdown-item">Thông tin cá nhân<span class="badge badge-pill badge-danger">1</span><i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item" href="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
                 <a class="dropdown-item">Tin nhắn<i class="dropdown-item-icon ti-comment-alt"></i></a>
                 <a class="dropdown-item">Hoạt động<i class="dropdown-item-icon ti-location-arrow"></i></a>
                 <a class="dropdown-item">Cài đặt<i class="dropdown-item-icon ti-help-alt"></i></a>
-                <a class="dropdown-item">Đăng xuất<i class="dropdown-item-icon ti-power-off"></i></a>
+                <a class="dropdown-item" href="../../logout.html">Đăng xuất<i class="dropdown-item-icon ti-power-off"></i></a>
               </div>
             </li>
           </ul>
@@ -201,16 +201,38 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/evaluate/evaluate.html">
-                <i class="menu-icon typcn typcn-shopping-bag"></i>
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Đánh giá</span>
+                <i class="menu-arrow"></i>
               </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/evaluate/evaluate.html">Đánh giá công việc</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html">Đánh giá KPI</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/report/report.html">
-                <i class="menu-icon typcn typcn-th-large-outline"></i>
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <i class="menu-icon typcn typcn-coffee"></i>
                 <span class="menu-title">Báo cáo</span>
+                <i class="menu-arrow"></i>
               </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/report/report.html">Lập báo cáo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../pages/report/sent_report.html">Báo cáo đã gửi</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>
@@ -236,10 +258,6 @@
                         <div class="filter-wrapper">
                           <div class="dropdown toolbar-item">
                             <a role="button" class="btn btn-success mr-2" href="projectadd.html">Thêm dự án</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownsorting">
-                              <a class="dropdown-item" href="#">Đã hoàn thành</a>
-                              <a class="dropdown-item" href="#">Đang tiến hành</a>
-                            </div>
                           </div>
                         </div>
                         <tr>
@@ -251,7 +269,7 @@
                             </div>
                           </td>
                           <td>
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/05/2019 </td>
                         </tr>
@@ -264,7 +282,7 @@
                             </div>
                           </td>
                           <td>
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/03/2020 </td>
                         </tr>
@@ -277,7 +295,7 @@
                             </div>
                           </td>
                           <td> 
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 31/12/2019 </td>
                         </tr>
@@ -290,7 +308,7 @@
                             </div>
                           </td>
                           <td>
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/06/2020 </td>
                         </tr>
@@ -303,7 +321,7 @@
                             </div>
                           </td>
                           <td>
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/06/2020 </td>
                         </tr>
@@ -316,7 +334,7 @@
                             </div>
                           </td>
                           <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                          <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/12/2019 </td>
                         </tr>
@@ -329,7 +347,7 @@
                             </div>
                           </td>
                           <td>
-                            <a role="button" class="btn btn-info btn-block text-light" href="typography.html">Chi tiết</a>
+                            <a role="button" class="btn btn-info btn-block text-light" href="project_detail.html">Chi tiết</a>
                           </td>
                           <td> 01/08/2020 </td>
                         </tr>
@@ -473,8 +491,8 @@
           <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid clearfix">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank"></a>. All rights reserved.</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Medicine Company Project Management.
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">HCI02 - Medicine Company Project Management.
               </span>
             </div>
           </footer>

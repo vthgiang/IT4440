@@ -27,7 +27,7 @@
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
           <a class="navbar-brand brand-logo" href="../../index.html">
-            <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
+           <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
@@ -146,7 +146,7 @@
                   <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
                   <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
                 </div>
-                <a class="dropdown-item" href ="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item" href="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
                 <a class="dropdown-item">Tin nhắn<i class="dropdown-item-icon ti-comment-alt"></i></a>
                 <a class="dropdown-item">Hoạt động<i class="dropdown-item-icon ti-location-arrow"></i></a>
                 <a class="dropdown-item">Cài đặt<i class="dropdown-item-icon ti-help-alt"></i></a>
@@ -240,27 +240,111 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-12 grid-margin">
+              <div class="col-4">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Báo Cáo</h4>
+                    <h4 class="card-title">Dự án 001</h4>
+                    <p class="card-description"> Triển khai hệ thống chấm công </p>
                     <form class="forms-sample">
                       <div class="form-group">
-                        <label for="exampleInputName1">Người nhận</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                        <label for="exampleInputEmail1">Người giám sát</label>
+                        <p class="card-description"> Trưởng phòng: Nguyễn Xuân Nam </p>
                       </div>
                       <div class="form-group">
-                        <label for="exampleTextarea1">Nội dung</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="9"></textarea>
+                        <label for="exampleInputPassword1">Ngày bắt đầu</label>
+                        <p class="card-description"> 01/01/2019 </p>
                       </div>
                       <div class="form-group">
-                        <label>File đính kèm</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                          </span>
+                        <label for="exampleInputPassword1">Ngày kết thúc</label>
+                        <p class="card-description"> 01/05/2019 </p>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-8 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Thêm công việc dự án</h4>
+                    <form class="form-sample">
+                      <p class="card-description"> Thông tin chi tiết công việc </p>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Mã công việc</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Tên công việc</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Bộ phận</label>
+                            <div class="col-sm-9">
+                              <select class="form-control">
+                                <option>Bộ phận kỹ thuật</option>
+                                <option>Bộ phận nhân sự</option>
+                                <option>Bộ phận hành chính</option>
+                                <option>Bộ phận R&D</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Deadline</label>
+                            <div class="col-sm-9">
+                              <input class="form-control" placeholder="dd/mm/yyyy" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-10">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Nội dung</label>
+                            <div class="col-sm-12">
+                              <textarea class="form-control" id="exampleTextarea1" rows="6">
+                              </textarea>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Phân công</label>
+                            <div class="col-sm-9">
+                              <select class="form-control">
+                                <option>Đặng Ngọc Hiếu</option>
+                                <option>Hà Văn Toàn</option>
+                                <option>Đào Thị Hà</option>
+                                <option>Nguyễn Văn Chinh</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Ghi chú</label>
+                            <div class="input-group col-xs-12">
+                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
+                              <span class="input-group-append">
+                              <button class="file-upload-browse btn btn-info" type="button">Upload</button>
+                              </span>
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <button type="submit" class="btn btn-success mr-2">Submit</button>
@@ -269,6 +353,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
             </div>
           </div>
           <!-- content-wrapper ends -->
@@ -291,13 +377,9 @@
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
     <!-- endinject -->
-    <!-- Plugin js for this page-->
-    <!-- End plugin js for this page-->
     <!-- inject:js -->
     <script src="../../assets/js/shared/off-canvas.js"></script>
     <script src="../../assets/js/shared/misc.js"></script>
     <!-- endinject -->
-    <!-- Custom js for this page-->
-    <!-- End custom js for this page-->
   </body>
 </html>
