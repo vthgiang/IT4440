@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> HCI-05 Tạo công việc nhân viên trong dự án</title>
+  <title> HCI-05 Chi tiết công việc của nhân viên trong dự án</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -19,11 +19,6 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
-  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
-   <!-- bootstrap datepicker -->
-   <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +31,14 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
+<style>
+    .col-md-2{
+        padding: 10px;
+    }
+    .col-md-10{
+        padding: 10px;
+    }
+</style>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
@@ -45,7 +48,7 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg">Công ty thuốc thú y</span>
+        <span class="logo-lg"> Công ty thuốc thú y</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -115,24 +118,11 @@
 
                   <p>
                     Lã Mạnh Cường <br> Trưởng phòng hành chính nhân sự
-                    <small>Member since Nov. 2012</small>
+
                   </p>
                 </li>
                 <!-- Menu Body -->
-                <li class="user-body">
-                  <div class="row">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </div>
-                  <!-- /.row -->
-                </li>
+
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
@@ -160,20 +150,9 @@
           </div>
           <div class="pull-left info">
             <p>Lã Mạnh Cường</p>
-            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+              <a href="#">Trưởng phòng hành chính nhân sự</a>
           </div>
         </div>
-        <!-- search form -->
-        <form action="#" method="get" class="sidebar-form">
-          <div class="input-group">
-            <input type="text" name="q" class="form-control" placeholder="Search...">
-            <span class="input-group-btn">
-                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                  </button>
-                </span>
-          </div>
-        </form>
-        <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
           <li class="header">MENU</li>
@@ -239,7 +218,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tạo công việc của dự án ABC
+        Chi tiết công việc của nhân viên trong dự án
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -253,64 +232,29 @@
       <div class="row">
         <div class="col-xs-12">
           <!-- /.box -->
+          <div class="box box-default">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Chi tiết công việc chuẩn bị giấy kiểm định chất lượng</h3>
 
-          <div class="box">
-            <!-- /.box-header -->
-            <div class="box-body">
-            <form role="form">
+                    <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
                 <div class="box-body">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Tên công việc</label>
-                        <input type="email" class="form-control" id="exampleInputEmail0" placeholder="Tên công việc">
+                    <div class="row box-body">
+                        <div class="col-md-2 mt-4 ml-1  ">Tên dự án:</div><div class="col-md-10">Dự án sản xuất vacxin cúm gà</div>
+                        <div class="col-md-2 mt-4 ml-1  ">Tên công việc:</div><div class="col-md-10">Chuẩn bị giấy kiểm định chất lượng</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Deadline:</div><div class="col-md-10">12/12/2019</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Người chịu trách nhiệm:</div><div class="col-md-10">Nguyễn Chí Thanh</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Mô tả:</div><div class="col-md-10">Lập mẫu giấy kiểm định chất lượng và lấy thông tin để hoàn thành</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Báo cáo:</div><div class="col-md-10"><a>Chi tiết</a></div>
+                        <div class="col-md-2 mt-4 ml-1 ">Trạng thái công việc:</div><div class="col-md-10">Hoàn thành</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Thời gian hoàn thành:</div><div class="col-md-10">12/12/2019</div>
                     </div>
-<!--                    <div class="form-group">-->
-<!--                            <label for="exampleInputEmail1">Tên dự án</label>-->
-<!--                            <input type="email" class="form-control" disabled id="exampleInputEmail1" value="Dự án ABC" >-->
-<!--                        </div>-->
-                    <div class="form-group">
-                        <label>Người chịu trách nhiệm</label>
-                        <select class="form-control select2" style="width: 100%;">
-                            <option selected="selected">Lã Mạnh Cường</option>
-                            <option>Nguyễn Chí Thanh</option>
-                            <option>NGuyễn Duy Kỳ</option>
-                            <option>Trịnh Duy Hưng</option>
-                            <option>Kerlor Senglao</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                            <label>Ngày bắt đầu</label>
-                            <div class="input-group date">
-                              <div class="input-group-addon">
-                                <i class="fa fa-calendar"></i>
-                              </div>
-                              <input type="text" class="form-control pull-right" id="datepicker" value="11/27/2019">
-                            </div>
-                            <!-- /.input group -->
-                          </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Mô tả</label>
-                        <textarea rows="4" cols="50" class="form-control"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile" style="width: 100%;">Người phối hợp thực hiện</label>
-                        <select class="form-control select2" style="width: 95%; float: left;">
-                                <option selected="selected">Lã Mạnh Cường</option>
-                                <option>Nguyễn Chí Thanh</option>
-                                <option>NGuyễn Duy Kỳ</option>
-                                <option>Trịnh Duy Hưng</option>
-                                <option>Kerlor Senglao</option>
-                        </select>
-                        <button class="btn"><i class="fa fa-plus"></i></button>
-                    </div>
-                </div>
 
-                <div class="box-footer">
-                    <button type="submit" class="btn btn-primary btn-create">Tạo</button>
                 </div>
-                </form>
             </div>
-            <!-- /.box-body -->
-          </div>
           <!-- /.box -->
         </div>
         <!-- /.col -->
@@ -321,12 +265,9 @@
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 2.4.13
-    </div>
+
      <strong>HCI_05</strong>
   </footer>
-
 
   <!-- /.control-sidebar -->
   <!-- Add the sidebar's background. This div must be placed
@@ -339,8 +280,6 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Select2 -->
-<script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- DataTables -->
 <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -352,35 +291,27 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- bootstrap datepicker -->
-<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- page script -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<!-- page script -->
 <script>
-$('.btn-create').on('click', function(e){
+  $(function () {
+
+    $('.btn-send-comment').on('click', function(e){
     e.preventDefault();
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Your work has been saved',
+      title: 'Gửi nhận xét thành công!',
       showConfirmButton: true,
       timer: 1500
     }).then((result) => {
       if (result.value) {
-        window.location="ds_congviec_cty.html";
+        window.location="chi_tiet_cong_viec_du_an.html";
       }
     })
 
 
   })
-
-
-    //Date picker
-    $('#datepicker').datepicker({
-      autoclose: true
-    })
-
-  $(function () {
     $('#example1').DataTable()
     $('#example2').DataTable({
       'paging'      : true,
@@ -391,8 +322,6 @@ $('.btn-create').on('click', function(e){
       'autoWidth'   : false
     })
   })
-
-    //Initialize Select2 Elements
 </script>
 </body>
 </html>
