@@ -146,7 +146,7 @@
                   <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
                   <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
                 </div>
-                <a class="dropdown-item" href ="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item" href="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
                 <a class="dropdown-item">Tin nhắn<i class="dropdown-item-icon ti-comment-alt"></i></a>
                 <a class="dropdown-item">Hoạt động<i class="dropdown-item-icon ti-location-arrow"></i></a>
                 <a class="dropdown-item">Cài đặt<i class="dropdown-item-icon ti-help-alt"></i></a>
@@ -240,32 +240,62 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-12 grid-margin">
+              <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Báo Cáo</h4>
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleInputName1">Người nhận</label>
-                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                    <h4 class="card-title">Báo cáo đã gửi</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Ngày tháng </th>
+                          <th> Người nhận </th>
+                          <th> Tiêu đề </th>
+                          <th> Chi tiết </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 01/12/2019 </td>
+                          <td> Trưởng phòng: Đỗ Ngọc Long </td>
+                          <td> Báo cáo tiến độ định kỳ </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 15/11/2019 </td>
+                          <td> Trưởng phòng: Đỗ Ngọc Long </td>
+                          <td> Báo cáo hoàn thành dự án </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 13/11/2019 </td>
+                          <td> Trưởng phòng: Đỗ Ngọc Long </td>
+                          <td> Báo cáo hoàn thành dự án </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 01/11/2019 </td>
+                          <td> Trưởng phòng: Đỗ Ngọc Long </td>
+                          <td> Báo cáo công việc tháng 10/2019 </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="d-block mt-3" href="#"> </a>
+                      <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                        <button type="button" class="btn btn-secondary">01</button>
+                        <button type="button" class="btn btn-secondary">02</button>
+                        <button type="button" class="btn btn-secondary">03</button>
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Nội dung</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="9"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <label>File đính kèm</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                          </span>
-                        </div>
-                      </div>
-                      <button type="submit" class="btn btn-success mr-2">Submit</button>
-                      <button class="btn btn-light">Cancel</button>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -291,13 +321,9 @@
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="../../assets/vendors/js/vendor.bundle.addons.js"></script>
     <!-- endinject -->
-    <!-- Plugin js for this page-->
-    <!-- End plugin js for this page-->
     <!-- inject:js -->
     <script src="../../assets/js/shared/off-canvas.js"></script>
     <script src="../../assets/js/shared/misc.js"></script>
     <!-- endinject -->
-    <!-- Custom js for this page-->
-    <!-- End custom js for this page-->
   </body>
 </html>
