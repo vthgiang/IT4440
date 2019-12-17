@@ -37,26 +37,26 @@ let myChartC = new Chart(myChartCircle, {
   options:{
     title:{
       display:true,
-      text:'Biểu đồ phần trăm công việc của phòng kế toán doanh nghiệp tháng 10 năm 2019',
+      text:'Biểu đồ công việc tháng 10 năm 2019',
       fontSize:25,
     },
     legend:{
-      display:true,
-      position:'right',
+      display: true,
+      position:'bottom',
       labels:{
         fontColor:'#000'
       }
     },
     layout:{
       padding:{
-        left:10,
-        right:0,
-        bottom:0,
-        top:0
+        left: 0,
+        right: 0,
+        bottom: 730,
+        top: 0
       }
     },
     tooltips:{
-      enabled:true
+      enabled: true
     }
   }
 });
