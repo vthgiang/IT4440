@@ -132,3 +132,29 @@ img {
 .circleCustom {
   height: 250px;
 }
+
+
+#sidebar-nav .nav li.active > a {
+  background-color: #495769;
+  color: #fff;
+}
+
+.title-room {
+  text-align: center;
+}
+.panel-login {
+  background-color: #A0B87E;
+  position: relative;
+  top: 200px;
+  left: 450px;
+}
+
+.checkbox-login{
+  left: 10px;
+}
+.wrap-login {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #32323A;
+}
