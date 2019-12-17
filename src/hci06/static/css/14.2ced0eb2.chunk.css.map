@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAEA,qBACE,cAAe,CACf,UAAY,CACZ,kBAAmB,CACnB,iBACF","file":"14.2ced0eb2.chunk.css","sourcesContent":[".create-report {\n}\n.create-report-title {\n  font-size: 24px;\n  color: black;\n  margin-bottom: 15px;\n  text-align: center;\n}\n"]}
