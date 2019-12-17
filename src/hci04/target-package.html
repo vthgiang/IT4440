@@ -23,64 +23,75 @@
   <link rel="stylesheet" href="css/header.css">
   <style>
     .nav-tabs {
-        border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
     }
 
     .nav {
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
     }
 
     .nav-tabs {
-    border-bottom: 1px solid #dee2e6;
-}
-.nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-.nav-tabs>li {
-    float: left;
-    margin-bottom: -1px;
-}
-.nav>li {
-    position: relative;
-    display: block;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-    color: #555;
-    cursor: default;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-bottom-color: transparent;
-}
-.nav-tabs>li>a {
-    margin-right: 2px;
-    line-height: 1.42857143;
-    border: 1px solid transparent;
-    border-radius: 4px 4px 0 0;
-}
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}
-a {
-    color: #337ab7;
-    text-decoration: none;
-}
-.nav-tabs>li>a:hover {
-    border-color: #eee #eee #ddd;
-}
-.nav>li>a:hover {
-    text-decoration: none;
-    background-color: #eee;
-}
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .nav {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    .nav-tabs>li {
+      float: left;
+      margin-bottom: -1px;
+    }
+
+    .nav>li {
+      position: relative;
+      display: block;
+    }
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+      color: #555;
+      cursor: default;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+    }
+
+    .nav-tabs>li>a {
+      margin-right: 2px;
+      line-height: 1.42857143;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .nav>li>a {
+      position: relative;
+      display: block;
+      padding: 10px 15px;
+    }
+
+    a {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    .nav-tabs>li>a:hover {
+      border-color: #eee #eee #ddd;
+    }
+
+    .nav>li>a:hover {
+      text-decoration: none;
+      background-color: #eee;
+    }
   </style>
   <!-- end style -->
 
@@ -106,64 +117,64 @@ a {
 <body>
   <!-- Header -->
   <nav class="navbar navbar-bark bg-dark fixed-top row">
-      <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
-        <h3 class="text-light m-0">LOGO</h3>
-      </a>
-      <div class="dropdown col-sm-8">
-        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
-          <i class="fas fa-bell text-light"></i>
-          <div class="noti-icon">
-            <span class="badge badge-danger ml-2">4</span>
-          </div>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <li>
-              <a class="dropdown-item">
-                <strong class="text-info">Bộ phận nhân sự</strong>
-                <div>
-                  Gửi bảng chấm công tháng 11/2019
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item">
-                <strong class="text-info">Bộ phận Nghiên cứu</strong>
-                <div>
-                  Gửi tiến độ nghiên cứu độc dược APTX-4869
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item">
-                <strong class="text-info">Bộ phận kinh doanh</strong>
-                <div>
-                  Gửi bảng xuất kho nhập kho tháng 11/2019
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item">
-                <strong class="text-info">Bộ phận hậu cần</strong>
-                <div>
-                  Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
-                </div>
-              </a>
-            </li>
-          </ul>
-      </div>
-      <div class="navbar-nav ml-auto flex-row align-items-center">
-        <h6 class="text-light m-0 mr-3">
-          Xin chào Admin<br />
-          <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
-        </h6>
-        <button class="btn m-0 p-0 mr-3">
-          <i class="fas fa-user-circle text-light h3 m-0"></i>
-        </button>
-        <button class="btn m-0 p-0 mr-3">
-          <i class="fas fa-sign-out-alt text-white-50 h5 m-0"></i>
-        </button>
-      </div>
-    </nav>
-    <!-- End Header -->
+    <a class="navbar-brand col-md-2 m-0 pt-0 pb-0">
+      <h3 class="text-light m-0">LOGO</h3>
+    </a>
+    <div class="dropdown col-sm-8">
+      <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+        <i class="fas fa-bell text-light"></i>
+        <div class="noti-icon">
+          <span class="badge badge-danger ml-2">4</span>
+        </div>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận nhân sự</strong>
+              <div>
+                Gửi bảng chấm công tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận Nghiên cứu</strong>
+              <div>
+                Gửi tiến độ nghiên cứu độc dược APTX-4869
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận kinh doanh</strong>
+              <div>
+                Gửi bảng xuất kho nhập kho tháng 11/2019
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item">
+              <strong class="text-info">Bộ phận hậu cần</strong>
+              <div>
+                Gửi bảng thiết bị cần yêu cầu mới quý IV/2019
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="navbar-nav ml-auto flex-row align-items-center">
+      <h6 class="text-light m-0 mr-3">
+        Xin chào Admin<br />
+        <span id="user-role" class="text-secondary m-0 mr-3">Admin</span>
+      </h6>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-user-circle text-light h3 m-0"></i>
+      </button>
+      <button class="btn m-0 p-0 mr-3">
+        <i class="fas fa-sign-out-alt text-white-50 h5 m-0"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- End Header -->
   <!-- Body -->
   <div class="container-fluid">
     <div class="row">
@@ -247,304 +258,342 @@ a {
           <!-- Start Filter -->
           <div class="container-fluid p-3 border rounded mb-3 table-filter">
             <div class="row" style="margin-left: 30px;">
-              <h1 >Thư viện mục tiêu</h1>
+              <h1>Thư viện mục tiêu</h1>
             </div>
             <div class="row" style="margin-left: 30px;">
               <div>Thư viện mục tiêu lưu trữ mẫu mục tiêu, sử dụng khi thiết lập mẫu mục tiêu</div>
             </div>
-              <ul class="nav nav-tabs">
-                <li class="li-active active" onclick="activeClick(this)"><a data-toggle="tab" href="#home">Bộ phận nhân sự</a></li>
-                <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu1">Bộ phận Kinh doanh</a></li>
-                <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu2">Bộ phận nghiên cứu</a></li>
-                <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu3">Bộ phận Hậu cần</a></li>
-              </ul>
-              <div class="tab-content">
-                <div id="home" class="tab-pane fade in active show">
-                  <table id="table-plan-list" class="table table-bordered table-hover">
-                    <thead class="thead-light">
-                      <tr>
-                        <th style="width: 20%"  scope="col">Mẫu mục tiêu
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th scope="col">Phòng ban
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th style="width: 5%" scope="col">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: middle;">Tuyển nhân viên </td>
-                        <td style="vertical-align: middle;">Quản trị nhân sự</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
-                          <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Đuổi nhân viên</td>
-                        <td style="vertical-align: middle;">Quản trị nhân sự</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Tăng chức</td>
-                        <td style="vertical-align: middle;">Quản trị nhân sự</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Quản lí thời gian làm việc</td>
-                        <td style="vertical-align: middle;">Phòng kiểm tra</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Mẫu đơn Hợp đồng</td>
-                        <td style="vertical-align: middle;">Phòng lao động</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- End Table Data -->
-                  <!-- Begin Pagination -->
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-end">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Trước</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Sau</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div id="menu1" class="tab-pane fade">
-                  <table id="table-plan-list" class="table table-bordered table-hover">
-                    <thead class="thead-light">
-                      <tr>
-                        <th style="width: 20%"  scope="col">Mẫu mục tiêu
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th scope="col">Phòng ban
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th style="width: 5%" scope="col">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: middle;">Doanh số tăng 50%</td>
-                        <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Doanh số tăng 150%</td>
-                        <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Doanh số tăng 250%</td>
-                        <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Thuế</td>
-                        <td style="vertical-align: middle;">Phòng thuế</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Tài chính công ty</td>
-                        <td style="vertical-align: middle;">Phòng tài chính</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- End Table Data -->
-                  <!-- Begin Pagination -->
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-end">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Trước</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Sau</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div id="menu2" class="tab-pane fade">
-                  <table id="table-plan-list" class="table table-bordered table-hover">
-                    <thead class="thead-light">
-                      <tr>
-                        <th style="width: 20%"  scope="col">Mẫu mục tiêu
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th scope="col">Phòng ban
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th style="width: 5%" scope="col">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: middle;">Nghiên cứu 1 thuốc mới</td>
-                        <td style="vertical-align: middle;">Phòng nghiên cứu</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Nghiên cứu 3 thuốc mới</td>
-                        <td style="vertical-align: middle;">Phòng nghiên cứu</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Phát minh ý kiến</td>
-                        <td style="vertical-align: middle;">Phòng sáng chế</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Phê bình không nghiên cứu</td>
-                        <td style="vertical-align: middle;">Phòng nghiên cứu</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Phê bình không sáng chế</td>
-                        <td style="vertical-align: middle;">Phòng sáng chế</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- End Table Data -->
-                  <!-- Begin Pagination -->
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-end">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Trước</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Sau</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-                <div id="menu3" class="tab-pane fade">
-                  <table id="table-plan-list" class="table table-bordered table-hover">
-                    <thead class="thead-light">
-                      <tr>
-                        <th style="width: 20%"  scope="col">Mẫu mục tiêu
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th scope="col">Phòng ban
-                          <i class="fa fa-fw fa-sort float-right"></i>
-                        </th>
-                        <th style="width: 5%" scope="col">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td style="vertical-align: middle;">An ninh tốt</td>
-                        <td style="vertical-align: middle;">Phòng bảo vệ</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Đội ngũ bảo vệ</td>
-                        <td style="vertical-align: middle;">Phòng bảo vệ</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Vệ sinh tốt</td>
-                        <td style="vertical-align: middle;">Phòng vệ sinh</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Đội ngũ vệ sinh</td>
-                        <td style="vertical-align: middle;">Phòng vệ sinh</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td style="vertical-align: middle;">Hỗ trợ</td>
-                        <td style="vertical-align: middle;">Phòng hỗ trợ</td>
-                        <td>
-                          <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi tiết</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <!-- End Table Data -->
-                  <!-- Begin Pagination -->
-                  <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-end">
-                      <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Trước</a>
-                      </li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">4</a></li>
-                      <li class="page-item"><a class="page-link" href="#">6</a></li>
-                      <li class="page-item"><a class="page-link" href="#">7</a></li>
-                      <li class="page-item">
-                        <a class="page-link" href="#">Sau</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
+            <!-- Button Add Target -->
+            <div class="d-flex flex-row-reverse">
+              <button class="btn btn-success"><i class="fa fa-plus"></i> Thêm mẫu mục tiêu</button>
+            </div> 
+            <!-- Begin Table-->
+            <ul class="nav nav-tabs">
+              <li class="li-active active" onclick="activeClick(this)"><a data-toggle="tab" href="#home">Bộ phận nhân
+                  sự</a></li>
+              <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu1">Bộ phận Kinh
+                  doanh</a></li>
+              <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu2">Bộ phận nghiên
+                  cứu</a></li>
+              <li class="li-active" onclick="activeClick(this)"><a data-toggle="tab" href="#menu3">Bộ phận Hậu cần</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="home" class="tab-pane fade in active show">
+                <table id="table-plan-list" class="table table-bordered table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th style="width: 20%" scope="col">Mẫu mục tiêu
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th scope="col">Phòng ban
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th style="width: 5%" scope="col" colspan="2">Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: middle;">Tuyển nhân viên </td>
+                      <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
+                      </td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Đuổi nhân viên</td>
+                      <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
+                      </td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Tăng chức</td>
+                      <td style="vertical-align: middle;">Quản trị nhân sự</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
+                      </td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Quản lí thời gian làm việc</td>
+                      <td style="vertical-align: middle;">Phòng kiểm tra</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
+                      </td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Mẫu đơn Hợp đồng</td>
+                      <td style="vertical-align: middle;">Phòng lao động</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Sửa</a>
+                      </td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light">Xóa</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table Data -->
+                <!-- Begin Pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Trước</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Sau</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
+              <div id="menu1" class="tab-pane fade">
+                <table id="table-plan-list" class="table table-bordered table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th style="width: 20%" scope="col">Mẫu mục tiêu
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th scope="col">Phòng ban
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th style="width: 5%" scope="col">Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: middle;">Doanh số tăng 50%</td>
+                      <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Doanh số tăng 150%</td>
+                      <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Doanh số tăng 250%</td>
+                      <td style="vertical-align: middle;">Cơ cấu tổ chức</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Thuế</td>
+                      <td style="vertical-align: middle;">Phòng thuế</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Tài chính công ty</td>
+                      <td style="vertical-align: middle;">Phòng tài chính</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table Data -->
+                <!-- Begin Pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Trước</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Sau</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div id="menu2" class="tab-pane fade">
+                <table id="table-plan-list" class="table table-bordered table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th style="width: 20%" scope="col">Mẫu mục tiêu
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th scope="col">Phòng ban
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th style="width: 5%" scope="col">Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: middle;">Nghiên cứu 1 thuốc mới</td>
+                      <td style="vertical-align: middle;">Phòng nghiên cứu</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Nghiên cứu 3 thuốc mới</td>
+                      <td style="vertical-align: middle;">Phòng nghiên cứu</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Phát minh ý kiến</td>
+                      <td style="vertical-align: middle;">Phòng sáng chế</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Phê bình không nghiên cứu</td>
+                      <td style="vertical-align: middle;">Phòng nghiên cứu</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Phê bình không sáng chế</td>
+                      <td style="vertical-align: middle;">Phòng sáng chế</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table Data -->
+                <!-- Begin Pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Trước</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Sau</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div id="menu3" class="tab-pane fade">
+                <table id="table-plan-list" class="table table-bordered table-hover">
+                  <thead class="thead-light">
+                    <tr>
+                      <th style="width: 20%" scope="col">Mẫu mục tiêu
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th scope="col">Phòng ban
+                        <i class="fa fa-fw fa-sort float-right"></i>
+                      </th>
+                      <th style="width: 5%" scope="col">Hành động</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: middle;">An ninh tốt</td>
+                      <td style="vertical-align: middle;">Phòng bảo vệ</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Đội ngũ bảo vệ</td>
+                      <td style="vertical-align: middle;">Phòng bảo vệ</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Vệ sinh tốt</td>
+                      <td style="vertical-align: middle;">Phòng vệ sinh</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Đội ngũ vệ sinh</td>
+                      <td style="vertical-align: middle;">Phòng vệ sinh</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="vertical-align: middle;">Hỗ trợ</td>
+                      <td style="vertical-align: middle;">Phòng hỗ trợ</td>
+                      <td>
+                        <a role="button" class="btn btn-info btn-block text-light" href="/target-detail.html">Chi
+                          tiết</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End Table Data -->
+                <!-- Begin Pagination -->
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Trước</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Sau</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
 
           </div>
           <!-- End Filter -->
@@ -558,20 +607,20 @@ a {
   <!-- End Body -->
   <script type="text/javascript">
     $.fn.datepicker.dates["vi-VN"] =
-    {
-      months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
-      monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
-      days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
-      daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
-      daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
-      titleFormat : "dd MM yyyy",
-      today : "Today",
-    };
+      {
+        months: ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"],
+        monthsShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+        days: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+        daysShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+        daysMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+        titleFormat: "dd MM yyyy",
+        today: "Today",
+      };
 
     $(".datepicker").datepicker({
       isRTL: false,
       format: 'dd/mm/yyyy',
-      autoclose:true,
+      autoclose: true,
       language: 'vi-VN'
     });
   </script>
@@ -601,16 +650,16 @@ a {
     ]
 
     var str1 = "<option disabled selected>Chọn phòng ban ...</option>", str2 = "<option disabled selected>Chọn phòng ban ...</option>", str3 = "<option disabled selected>Chọn phòng ban ...</option>", str4 = "<option disabled selected>Chọn phòng ban ...</option>";
-    array1.map(function(data, i) {
+    array1.map(function (data, i) {
       str1 += `<option>${data}</option>`
     })
-    array2.map(function(data, i) {
+    array2.map(function (data, i) {
       str2 += `<option>${data}</option>`
     })
-    array3.map(function(data, i) {
+    array3.map(function (data, i) {
       str3 += `<option>${data}</option>`
     })
-    array4.map(function(data, i) {
+    array4.map(function (data, i) {
       str4 += `<option>${data}</option>`
     })
     function handleChange(e) {
@@ -636,7 +685,7 @@ a {
     var liActive = document.getElementsByClassName("li-active")
     function activeClick(e) {
       console.log(e)
-      for(var i=0;i<liActive.length;i++) {
+      for (var i = 0; i < liActive.length; i++) {
         liActive[i].classList = "li-active";
       }
       // liActive.forEach(function(data) {
