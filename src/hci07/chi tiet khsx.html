@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>HCI-07 Kế hoạch sản xuất</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script>
+        $(function () {
+            $('.dates #usr1').datepicker({
+                'format': 'yyyy-mm-dd',
+                'autoclose': true
+            });
+        });
+
+        $(function () {
+            $('#repost').click(function () {
+                var value_job = document.getElementById("lnamel");
+                if (value_job.value == "") {
+                    value_job.setAttribute("style", "border: 1px solid red");
+                } else {
+                    alert("Gửi báo cáo thành công");
+                }
+            });
+        });
+        $(function () {
+            $('#lnamel').keydown(function () {
+                var value_job = document.getElementById("lnamel");
+                value_job.setAttribute('style', 'border: 1px solid #ccc')
+            });
+        });
+
+        $(function () {
+            $('#cancel').click(function () {
+                var gt1 = document.getElementById("lnamel");
+                gt1.value = "";
+                var gt2 = document.getElementById("subject");
+                gt2.value = "";
+            });
+        });
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container1 {
+            margin-top: 25px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        input[type=button] {
+            background-color: #4CAF50;
+            color: white;
+            margin-left: 12px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+    <a class="navbar-brand mr-1" href="Trang chủ.html">XƯỞNG THUỐC THÚ Y</a>
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Ô tìm kiếm -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- Header -->
+    <ul class="navbar-nav ml-auto ml-md-0">
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bell fa-fw"></i>
+          
+        </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+            <a class="dropdown-item" href="#">Thông báo lãnh đạo</a>
+            <a class="dropdown-item" href="#">Thông báo của tổ trưởng</a>
+          </div>
+      </li>
+      <li class="nav-item dropdown no-arrow mx-1">
+        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-envelope fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+          <a class="dropdown-item" href="#">Thư đến</a>
+          <a class="dropdown-item" href="#">Thư đi</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Khác</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown no-arrow">
+        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Quản đốc: Nguyễn Công Hoan
+          <i class="fas fa-user-circle fa-fw"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+          <a class="dropdown-item" href="#">Cài đặt</a>
+          <a class="dropdown-item" href="#">Lịch sử đăng nhập</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Đăng xuất</a>
+        </div>
+      </li>
+    </ul>
+
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Thanh điều hướng -->
+    <ul class="sidebar navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="Trang chủ.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Trang chủ</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="taskManager" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Quản lý công việc</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="taskManager">
+          <a class="dropdown-item" href="Create task.html">Kế hoạch sản xuất</a>
+          <a class="dropdown-item" href="Danh sách công việc.html">Danh sách công việc</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="report" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Báo cáo</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="taskManager">
+          <h6 class="dropdown-header">Nhân viên</h6>
+          <a class="dropdown-item" href="Báo cáo tổ trưởng.html">Tổ trưởng</a>
+          <a class="dropdown-item" href="Báo cáo pha chế.html">Pha chế</a>
+          <a class="dropdown-item" href="Báo cáo chia liều.html">Chia liều</a>
+          <a class="dropdown-item" href="Báo cáo đóng gói .html">Đóng gói</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">Bộ phận khác</h6>
+          
+          <a class="dropdown-item" href="Báo cáo nhận.html">Báo cáo đến</a>
+          <a class="dropdown-item" href="Báo cáo gửi.html">Báo cáo đi</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="http://hci09.it4440.phungluan.com/ketquakpi.html">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>KPI</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="thong tin ca nhan.html">
+          <i class="fas fa-fw fa-user-circle"></i>
+          <span>Thông tin cá nhân</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="tro giup.html">
+          <i class="fas fa-fw fa-search"></i>
+          <span>Trợ giúp</span></a>
+      </li>
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+
+        <!-- Đường dẫn-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="Trang chủ.html">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active"><a href="Báo cáo nhận.html">Thư đến</a></li>
+            <li class="breadcrumb-item active"><a href="chi tiet khsx.html">Chi tiết thư</a></li>
+          </ol>
+
+        <!-- Thẻ -->
+      
+        <!-- Bảng -->
+        <script>
+            $(document).ready(function () {
+                $('.dates #user1').datepicker({
+                    'format': 'yyyy-mm-dd'
+                });
+            });
+        </script>
+        
+        <div class="container1">
+            <form action="">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname" style="margin-left: 8px;">Người gửi:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Nguyễn Thị Hiền(Phòng kế hoạch)" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname" style="margin-left: 8px">Người nhận:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Nguyễn Công Hoan(Quản đốc )" disabled>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="col-25">
+                        <label for="fname" style="margin-left: 8px">Bộ phận:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nname" placeholder = "Xưởng sản xuất thú y" disabled>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class="col-25">
+                        <label for="fname" style="margin-left: 8px">Ngày gửi:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="vname" placeholder = "01/11/2019" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname" style="margin-left: 8px">Tiêu đề thư:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lnamel" name="lastname" placeholder="Kế hoạch sản xuất tháng 11/2019" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject" style="margin-left: 8px">Ghi chú:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lnamel" name="lastname" placeholder="... " disabled>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-header">
+                      <i class="fas fa-table"></i> Bảng sản xuất tháng 11/2019</div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                          <thead>
+                            <tr>
+                              <th>STT</th>
+                              <th>Tên sản phẩm</th>
+                              <th>Thành phần</th>
+                              <th>Số lượng</th>
+                              <th>Deadline</th>
+                              <th>Ghi chú</th>
+                            </tr>
+                          </thead>
+                          <tfoot>
+                            <tr>
+                              <th>STT</th>
+                              <th>Tên sản phẩm</th>
+                              <th>Thành phần</th>
+                              <th>Số lượng</th>
+                              <th>Deadline</th>
+                              <th>Ghi chú</th>
+                            </tr>
+                          </tfoot>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>COLIS P</td>
+                              <td>Colistin sulfate, Vitamin K3.</td>
+                              <td>60</td>
+                              <td>19/12/2019</td>
+                              <td>...</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>TOLTRA 5 S</td>
+                              <td>Toltrazuril.</td>
+                              <td>63</td>
+                              <td>19/12/2019</td>
+                              <td>...</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>TYLOSIN 20 P</td>
+                              <td>Tylosin tartrate.</td>
+                              <td>66</td>
+                              <td>19/12/2019</td>
+                              <td>...</td>
+                            </tr>
+                            <tr>
+                              <td>4</td>
+                              <td>OXYTETRA 10 P</td>
+                              <td>Oxytetracycline HCl.</td>
+                              <td>50</td>
+                              <td>19/12/2019</td>
+                              <td>...</td>
+                            </tr>
+                            
+                            <tr>
+                              <td>5</td>
+                              <td>BUTAVIT I</td>
+                              <td>Butafosfan, Vitamin B12.</td>
+                              <td>27</td>
+                              <td>19/12/2019</td>
+                              <td>...</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                <div class="row" id="row_submit">
+                    <input style="margin-left: 900px; margin-top: 6px;background-color: rgb(255, 0, 0) "  data-toggle="modal" data-target="#submit" type="button" value="Lên kế hoạch" id="repost">
+                    <input onclick="msg()" style=" margin-top:6px; background-color: rgb(0, 255, 13)" type="button" value="Quay lại" id="cancel">
+                </div>
+            </form>
+        </div>
+        <script>
+            function msg() {
+                window.location.assign("Báo cáo nhận.html")
+            }
+            </script>
+      <!-- Body-->
+      
+
+      <!-- Footer -->
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © HCI-07 20191</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Bạn có muốn đăng xuất?</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">Chọn "Đăng xuất" bên dưới nếu bạn đã sẵn sàng kết thúc phiên hiện tại của mình</div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+            <a class="btn btn-primary" href="index.html">Đăng xuất</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Dialog chia nhỏ lượng sản xuất-->
+    <div class="modal fade" id="chiaLai" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nhập số lượng sản xuất/một tổ</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body"><input  type="text" name="fname"></div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+            <a class="btn btn-primary" href="Create task(1).html">Đồng ý</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dialog submit-->
+  <div class="modal fade" id="submit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Đã chuyển sang kế hoạch sản xuất</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Dialog gộp lại-->
+ <div class="modal fade" id="gopLai" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Bạn có chắc chắn gộp lại?</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+        <a class="btn btn-primary" href="#">Chắc chắn</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+  <script src="vendor/datatables/jquery.dataTables.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin.min.js"></script>
+
+  <!-- Demo scripts for this page-->
+  <script src="js/demo/datatables-demo.js"></script>
+  <script src="js/demo/chart-area-demo.js"></script>
+
+</body>
+
+</html>
