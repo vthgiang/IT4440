@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,10 +8,23 @@
 
     <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-    <!-- IonIcons -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
@@ -19,11 +33,10 @@
 
 </head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
-    <!-- Navbar -->
-    <div id="nav">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <div id="nav">
             <nav class="main-header navbar navbar-expand navbar-white navbar-light">
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
@@ -49,21 +62,23 @@
                         <!-- Messages Dropdown Menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link" data-toggle="dropdown" href="#">
-                                <i class="far fa-comments"></i>
+                                <i class="far fa-bell fa-2x"></i>
                                 <span class="badge badge-danger navbar-badge">3</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                                 <a href="#" class="dropdown-item">
                                     <!-- Message Start -->
                                     <div class="media">
-                                        <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                        <img src="../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                            class="img-size-50 mr-3 img-circle">
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
-                                                Brad Diesel
-                                                <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                                Nhà thuốc Bạch Mai
+                                                <span class="float-right text-sm text-danger"><i
+                                                        class="fas fa-star"></i></span>
                                             </h3>
-                                            <p class="text-sm">Call me whenever you can...</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                            <p class="text-sm">Đang có thắc mắc!</p>
+                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
                                         </div>
                                     </div>
                                     <!-- Message End -->
@@ -72,14 +87,16 @@
                                 <a href="#" class="dropdown-item">
                                     <!-- Message Start -->
                                     <div class="media">
-                                        <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                        <img src="../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                            class="img-size-50 img-circle mr-3">
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
-                                                John Pierce
-                                                <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                                Nhà thuốc Vĩnh Tuy
+                                                <span class="float-right text-sm text-muted"><i
+                                                        class="fas fa-star"></i></span>
                                             </h3>
-                                            <p class="text-sm">I got your message bro</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                            <p class="text-sm">Sắp đến cuộc gặp</p>
+                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
                                         </div>
                                     </div>
                                     <!-- Message End -->
@@ -88,47 +105,22 @@
                                 <a href="#" class="dropdown-item">
                                     <!-- Message Start -->
                                     <div class="media">
-                                        <img src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                        <img src="../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                            class="img-size-50 img-circle mr-3">
                                         <div class="media-body">
                                             <h3 class="dropdown-item-title">
-                                                Nora Silvester
-                                                <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                                Nhà Thuốc Minh Khai
+                                                <span class="float-right text-sm text-warning"><i
+                                                        class="fas fa-star"></i></span>
                                             </h3>
-                                            <p class="text-sm">The subject goes here</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                            <p class="text-sm">Hợp đồng vừa được duyệt, cần tiến hành kí kết</p>
+                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
                                         </div>
                                     </div>
                                     <!-- Message End -->
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-                            </div>
-                        </li>
-                        <!-- Notifications Dropdown Menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown" href="#">
-                                <i class="far fa-bell"></i>
-                                <span class="badge badge-warning navbar-badge">15</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                                <span class="dropdown-item dropdown-header">15 Notifications</span>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-envelope mr-2"></i> 4 new messages
-                                    <span class="float-right text-muted text-sm">3 mins</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-users mr-2"></i> 8 friend requests
-                                    <span class="float-right text-muted text-sm">12 hours</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-file mr-2"></i> 3 new reports
-                                    <span class="float-right text-muted text-sm">2 days</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                                <a href="#" class="dropdown-item dropdown-footer">Xem tất cả</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -145,144 +137,154 @@
                         </div>
                     </div>
                 </nav>
-    
     </div>
-    <!-- /.navbar -->
+        <!-- /.navbar -->
 
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-            <img src="../dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">HCI_10 Company</span>
-        </a>
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../index.html" class="brand-link">
+                <img src="../dist/img/Capture1.JPG" alt="Company Logo" class="brand-image img-circle elevation-3"
+                     style="opacity: .8">
+                <span class="brand-text font-weight-light">HCI_10 Company</span>
+            </a>
+    
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+    
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                             with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="../employees_index.html" class="nav-link">
+                                <i class="fas fa-home nav-icon"></i>
+                                <p>Trang chủ - Nhân viên</p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview menu-open">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                <p>
+                                    Công việc
+                                    <i class="fas fa-angle-right right"></i>
+                                    <span class="badge badge-info right">2</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="contacts.html" class="nav-link">
+                                        <i class="fas fa-list nav-icon"></i>
+                                        <p>Danh sách khách hàng </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add_contact.html" class="nav-link ">
+                                        <i class="nav-icon fas fa-edit"></i>
+                                        <p>Thêm khách hàng mới</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="take_care_customer.html" class="nav-link">
+                                        <i class="nav-icon fas fa-user"></i>
+                                        <p>Chắm sóc khách hàng
+                                            <span class="badge badge-info right">2</span>
+                                        </p>
+                                    </a>
+                                </li>
+    
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="report_week.html" class="nav-link active">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Báo cáo 
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <!-- Sidebar user panel (optional) -->
-
-            <!-- Sidebar Menu -->
-            <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <!-- Add icons to the links using the .nav-icon class
-                         with font-awesome or any other icon font library -->
-                    <li class="nav-item">
-                        <a href="../employees_index.html" class="nav-link">
-                            <i class="fas fa-home nav-icon"></i>
-                            <p>Trang chủ - Nhân viên</p>
-                        </a>
-                    </li>
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-calendar-alt"></i>
-                            <p>
-                                Công việc
-                                <i class="fas fa-angle-right right"></i>
-                                <span class="badge badge-info right">2</span>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="contacts.html" class="nav-link">
-                                    <i class="fas fa-list nav-icon"></i>
-                                    <p>Danh sách khách hàng </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="add_contact.html" class="nav-link ">
-                                    <i class="nav-icon fas fa-edit"></i>
-                                    <p>Thêm khách hàng mới</p>
-                                </a>
-                            </li>
-                            
-
-                        </ul>
-                    </li>
-                    <li class="nav-item has-treeview">
-                        <a href="report_week.html" class="nav-link active">
-                            <i class="nav-icon fas fa-copy"></i>
-                            <p>
-                                Báo cáo 
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- /.sidebar-menu -->
-        </div>
-        <!-- /.sidebar -->
-    </aside>
-    <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Báo cáo</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                        </div>
+                    </div>
+                </div class="container-fluid">
                 <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Báo cáo</h1>
-                    </div><!-- /.col -->
-                    <div class="col-sm-6">
+                    <div class="form-group  " style="margin-left: 1.5%;">
+                        <label>Ngày bắt đầu</label>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                            </div>
+                            <input type="date" class="form-control" data-inputmask-alias="datetime"
+                                data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+                    <div class="form-group " style="margin-left: 1.5%;">
+                        <label>Ngày kết thúc</label>
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                            </div>
+                            <input type="date" class="form-control" data-inputmask-alias="datetime"
+                                data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                        </div>
+                        <!-- /.input group -->
                     </div>
                 </div>
-            </div class="container-fluid">
-                <div class="row mb-2">
-                        <div class="form-group  " style="margin-left: 1.5%;">
-                                <label>Ngày bắt đầu</label>
+                <div>
 
-                                <div class="input-group" >
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                    </div>
-                                    <input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
-                                </div>
-                                <!-- /.input group -->
-                            </div>
-                            <div class="form-group " style="margin-left: 1.5%;">
-                                    <label>Ngày bắt đầu</label>
-    
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
-                                        </div>
-                                        <input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
-                                    </div>
-                                    <!-- /.input group -->
-                                </div>
                 </div>
-            <div>
+            </section>
+            <!-- Content Wrapper. Contains page content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- SELECT2 EXAMPLE -->
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">Chi tiết báo cáo</h3>
+                        </div>
 
-            </div>
-        </section>
-    <!-- Content Wrapper. Contains page content -->
-    <section class="content">
-        <div class="container-fluid">
-            <!-- SELECT2 EXAMPLE -->
-            <div class="card card-info">
-                <div class="card-header">
-                    <h3 class="card-title">Chi tiết báo cáo</h3>
-                </div>
+                        <form class="row">
+                            <div class="col-md-6">
+                                <div class="card-body">
 
-                <form class="row">
-                    <div class="col-md-6">
-                            <div class="card-body">
-                                    
-                                        <div class="form-group">
-                                                <label>Nhãn hàng</label>
-                                                <select class="form-control">
-                                                    <option>Thuốc cảm cúm</option>
-                                                    <option>Thuốc đau chân</option>
-                                                    <option>Thuốc giảm cân</option>
-                                                </select>
+                                    <div class="form-group">
+                                        <label>Nhãn hàng</label>
+                                        <select class="form-control">
+                                            <option>Thuốc cảm cúm</option>
+                                            <option>Thuốc đau chân</option>
+                                            <option>Thuốc giảm cân</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên nhân viên</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-male"></i></span>
                                             </div>
-                                            <div class="form-group">
-                                                    <label for="exampleInputEmail1">Tên nhân viên</label>
-                                                    <div class="input-group">
-                                                        <div class="input-group-prepend">
-                                                            <span class="input-group-text"><i class="fas fa-male"></i></span>
-                                                        </div>
-                                                        <p class="form-control"> Trần Thu Uyên - Phòng sale - thuốc cảm cúm - 0001</p>
-                                                    </div>
-                                                </div>
+                                            <p class="form-control"> Trần Thu Uyên - Phòng sale - thuốc cảm cúm - 0001
+                                            </p>
+                                        </div>
+                                    </div>
                                     <div class="form-group">
                                         <label>Tổng số khác hàng tiếp nhân</label>
 
@@ -290,327 +292,287 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><i class="fas fa-phone"></i></span>
                                             </div>
-                                            <p  class="form-control"> <span>150</span> khách hàng </p>
-                                            
+                                            <p class="form-control"> <span>150</span> khách hàng </p>
+
                                         </div>
                                         <!-- /.input group -->
                                     </div>
-                                            <div class="bootstrap-timepicker">
-                                                <div class="form-group">
-                                                    <label>Khách hàng đã liên hệ</label>
+                                    <div class="bootstrap-timepicker">
+                                        <div class="form-group">
+                                            <label>Khách hàng đã liên hệ</label>
 
-                                                    <div class="input-group date" id="timepicker" data-target-input="nearest">
-                                                        <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
-                                                            <div class="input-group-text"><i class="far fa-address-card"></i></div>
-                                                        </div>
-                                                        <p  class="form-control"> <span>85</span> khách hàng </p>
+                                            <div class="input-group date" id="timepicker" data-target-input="nearest">
+                                                <div class="input-group-append" data-target="#timepicker"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="far fa-address-card"></i>
                                                     </div>
-                                                    <!-- /.input group -->
                                                 </div>
-                                                <!-- /.form group -->
+                                                <p class="form-control"> <span>85</span> khách hàng </p>
                                             </div>
-
-                                    </div>
-
-                            <!-- /.card-body -->
-                        </div>
-
-                    <div class="col-md-6">
-                        <div class="card-body">
-                                
-                                    <div class="form-group">
-                                            <label for="exampleInputEmail1">Tên quản lý</label>
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i class="fas fa-male"></i></span>
-                                                </div>
-                                                <select class="form-control">
-                                                        <option>Trần Văn An</option>
-                                                        <option>Nguyễn Thị Hồng</option>
-                                                        <option>Bùi Thanh Cường</option>
-                                                    </select>
-                                            </div>
+                                            <!-- /.input group -->
                                         </div>
-                            <div class="form-group">
-
-                                <label>Email</label>
-
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                        <!-- /.form group -->
                                     </div>
-                                    <p class="form-control">tranthuuyen.nt@gmail.com</p>
-                                </div>
-                            </div>
-                               
-                            <div class="form-group">
-                                <label>Khách hàng đã ký hợp đồng</label>
 
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="far fa-address-card"></i></span>
-                                    </div>
-                                    <p class="form-control"><span>50</span> Khách hàng</p>                           
                                 </div>
-                                <!-- /.input group -->
-                            </div>
-                            <div class="form-group">
-                                <label>Khách hàng còn tồn đọng</label>
 
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="far fa-address-card"></i></span>
-                                    </div>
-                                    <p class="form-control"><span>15</span> Khách hàng</p>
-                                </div>
-                                <!-- /.input group -->
+                                <!-- /.card-body -->
                             </div>
 
+                            <div class="col-md-6">
+                                <div class="card-body">
+
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Tên quản lý</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-male"></i></span>
+                                            </div>
+                                            <select class="form-control">
+                                                <option>Trần Văn An</option>
+                                                <option>Nguyễn Thị Hồng</option>
+                                                <option>Bùi Thanh Cường</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <label>Email</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="far fa-envelope"></i></div>
+                                            </div>
+                                            <p class="form-control">tranthuuyen.nt@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Khách hàng đã ký hợp đồng</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="far fa-address-card"></i></span>
+                                            </div>
+                                            <p class="form-control"><span>50</span> Khách hàng</p>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Khách hàng còn tồn đọng</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="far fa-address-card"></i></span>
+                                            </div>
+                                            <p class="form-control"><span>15</span> Khách hàng</p>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+                        <div class="col-md-6">
+                            <!-- PIE CHART -->
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">Biểu đồ KPI</h3>
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="pieChart" style="height:250px; min-height:250px"></canvas>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+
                         </div>
-                    </div>
-                    <div class="card-body col-md-12 col-sm-6">
-                        <div class="form-group">
-                            <label>Đánh giá KPI (phần trăm hoàn thành công việc)</label>
-                            <canvas id="myCanvas"></canvas>
-                            <div id="myLegend"></div>
+                        <!-- /.col (LEFT) -->
+                        <div class="col-md-6">
+                            <!-- LINE CHART -->
+                            <div class="card card-info">
+                                <div class="card-header">
+                                    <h3 class="card-title">Biểu đồ doanh số</h3>
+
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart">
+                                        <canvas id="lineChart" style="height:250px; min-height:250px"></canvas>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
                         </div>
-                    </div>
-                    <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Gửi báo cáo</button>
-                    </div>
-                    <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Xuất báo cáo</button>
+                        <!-- /.col (RIGHT) -->
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary toastsDefaultSuccess">Gửi báo cáo</button>
+                            <button type="button" class="btn btn-primary toastsDefaultSuccess1">Xuất báo
+                                cáo</button>
                         </div>
 
-                </form>
+                    </div>
+
+                    <!-- /.card -->
 
 
-            </div>
-
-            <!-- /.card -->
-
-                    
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
-    </section>
+                    <!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </section>
+        </div>
+        <!-- /.content -->
+        <footer class="main-footer text-center">
+            <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+        </footer>
     </div>
-    <!-- /.content -->
-                    <footer class="main-footer text-center">
-                        <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
-                    </footer>
-                </div>
-                <!-- ./wrapper -->
-                
-                <!-- REQUIRED SCRIPTS -->
-                
-                <!-- jQuery -->
-                <script src="../plugins/jquery/jquery.min.js"></script>
-                <!-- Bootstrap -->
-                <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <!-- AdminLTE -->
-                <script src="../dist/js/adminlte.js"></script>
-                
-                <!-- OPTIONAL SCRIPTS -->
-                <script src="../plugins/chart.js/Chart.min.js"></script>
-                <script src="../dist/js/demo.js"></script>
-                <script src="../dist/js/pages/dashboard3.js"></script>
-                <script>
-                    var myCanvas = document.getElementById("myCanvas");
- 
-                    myCanvas.width = 300;
-                    
-                    myCanvas.height = 300;
-                    var ctx = myCanvas.getContext("2d");
-                    function drawLine(ctx, startX, startY, endX, endY){
- 
-                    ctx.beginPath();
+    <!-- ./wrapper -->
 
-                    ctx.moveTo(startX,startY);
+    <!-- REQUIRED SCRIPTS -->
 
-                    ctx.lineTo(endX,endY);
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE -->
+    <script src="../dist/js/adminlte.js"></script>
 
-                    ctx.stroke();
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <script src="../dist/js/demo.js"></script>
+    <script src="../dist/js/pages/dashboard3.js"></script>
 
+    <!-- ChartJS -->
+    <script src="../plugins/chart.js/Chart.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+        $(function () {
+            /* ChartJS
+             * -------
+             * Here we will create a few charts using ChartJS
+             */
+
+            var areaChartData = {
+                labels: ['Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [
+                    {
+                        label: 'Doanh số',
+                        backgroundColor: 'rgba(60,141,188,0.9)',
+                        borderColor: 'rgba(60,141,188,0.8)',
+                        pointRadius: false,
+                        pointColor: '#3b8bba',
+                        pointStrokeColor: 'rgba(60,141,188,1)',
+                        pointHighlightFill: '#fff',
+                        pointHighlightStroke: 'rgba(60,141,188,1)',
+                        data: [120, 170, 100, 150]
                     }
-                    function drawArc(ctx, centerX, centerY, radius, startAngle, endAngle){
-                    
-                    ctx.beginPath();
+                ]
+            }
 
-                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+            var areaChartOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+                legend: {
+                    display: false
+                },
+                scales: {
+                    xAxes: [{
+                        gridLines: {
+                            display: true,
+                        }
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            display: true,
+                        },
+                        display: true,
+                        labelString: 'Trăm triệu VNĐ',
+                        ticks: {
+                            suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
+                            // OR //
+                            beginAtZero: true   // minimum value will be 0.
+                        }
+                    }]
+                }
+            }
 
-                    ctx.stroke();
+            //-------------
+            //- LINE CHART -
+            //--------------
+            var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+            var lineChartOptions = jQuery.extend(true, {}, areaChartOptions)
+            var lineChartData = jQuery.extend(true, {}, areaChartData)
+            lineChartData.datasets[0].fill = false;
+            lineChartOptions.datasetFill = false
 
+            var lineChart = new Chart(lineChartCanvas, {
+                type: 'line',
+                data: lineChartData,
+                options: lineChartOptions
+            })
+
+            //-------------
+            //- PIE CHART -
+            //-------------
+            // Get context with jQuery - using jQuery's .get() method.
+            var donutData = {
+                labels: [
+                    'Khách hàng mới',
+                    'Khách hàng chăm sóc',
+                    'Khách hàng đã liên lạc',
+                    'Khách hàng còn tồn đọng',
+                ],
+                datasets: [
+                    {
+                        data: [10, 15, 5, 5],
+                        backgroundColor: ['#f56954', '#00a65a', '#f39c12', '#00c0ef'],
                     }
-                    function drawPieSlice(ctx,centerX, centerY, radius, startAngle, endAngle, color ){
- 
-                    ctx.fillStyle = color;
-
-                    ctx.beginPath();
-
-                    ctx.moveTo(centerX,centerY);
-
-                    ctx.arc(centerX, centerY, radius, startAngle, endAngle);
-
-                    ctx.closePath();
-
-                    ctx.fill();
-
-                    }
-
-                    var myVinyls = {
-                    
-                    "Khách hàng đã liên hệ": 85,
-
-                    "Khách hàng đã ký hợp đồng ": 50,
-
-                    "Khách hàng tồn đọng": 15 
-
-                    };
-
-                    var Piechart = function(options){
- 
- this.options = options;
-
- this.canvas = options.canvas;
-
- this.ctx = this.canvas.getContext("2d");
-
- this.colors = options.colors;
-
-
-
- this.draw = function(){
-
-     var total_value = 0;
-
-     var color_index = 0;
-
-     for (var categ in this.options.data){
-
-         var val = this.options.data[categ];
-
-         total_value += val;
-
-     }
-
-
-
-     var start_angle = 0;
-
-     for (categ in this.options.data){
-
-         val = this.options.data[categ];
-         var slice_angle = 2 * Math.PI * val / total_value;
-
-         drawPieSlice(
-
-             this.ctx,
-
-             this.canvas.width/2,
-
-             this.canvas.height/2,
-
-             Math.min(this.canvas.width/2,this.canvas.height/2),
-
-             start_angle,
-
-             start_angle+slice_angle,
-
-             this.colors[color_index%this.colors.length]
-
-         );
-
-         start_angle += slice_angle;
-
-         color_index++;
-
-     }
-     for (categ in this.options.data){
- 
- val = this.options.data[categ];
-
- slice_angle = 2 * Math.PI * val / total_value;
-
- var pieRadius = Math.min(this.canvas.width/2,this.canvas.height/2);
-
- var labelX = this.canvas.width/2 + (pieRadius / 2) * Math.cos(start_angle + slice_angle/2);
-
- var labelY = this.canvas.height/2 + (pieRadius / 2) * Math.sin(start_angle + slice_angle/2);
-
-
-
- if (this.options.doughnutHoleSize){
-
-     var offset = (pieRadius * this.options.doughnutHoleSize ) / 2;
-
-     labelX = this.canvas.width/2 + (offset + pieRadius / 2) * Math.cos(start_angle + slice_angle/2);
-
-     labelY = this.canvas.height/2 + (offset + pieRadius / 2) * Math.sin(start_angle + slice_angle/2);               
-
- }
-
-
-
- var labelText = Math.round(100 * val / total_value);
-
- this.ctx.fillStyle = "white";
-
- this.ctx.font = "bold 20px Arial";
-
- this.ctx.fillText(labelText+"%", labelX,labelY);
-
- start_angle += slice_angle;
-
-}
-if (this.options.legend){
- 
- color_index = 0;
-
- var legendHTML = "";
-
- for (categ in this.options.data){
-
-     legendHTML += "<div><span style='display:inline-block;width:20px;margin:5px;background-color:"+this.colors[color_index++]+";'>&nbsp;</span> "+categ+"</div>";
-
- }
-
- this.options.legend.innerHTML = legendHTML;
-
-}
-
-
-
- }
-
-}
-
-var myLegend = document.getElementById("myLegend");
-var myPiechart = new Piechart(
- 
-    {
- 
-        canvas:myCanvas,
- 
-        data:myVinyls,
- 
-        colors:["green","blue", "red"],
-        legend:myLegend
- 
-    }
- 
-);
-
- 
-myPiechart.draw();
-                </script>
-                
-                <script>
-                    function thongbao(){
-                        confirm("Bạn muốn nộp báo cáo");
-                        window.location="../employees_index.html";
-                    }
-                    
-
-                </script>
+                ]
+            }
+
+            var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+            var pieData = donutData;
+            var pieOptions = {
+                maintainAspectRatio: false,
+                responsive: true,
+            }
+            //Create pie or douhnut chart
+            // You can switch between pie and douhnut using the method below.
+            var pieChart = new Chart(pieChartCanvas, {
+                type: 'pie',
+                data: pieData,
+                options: pieOptions
+            })
+
+        })
+    </script>
+
+    <script>
+        $('.toastsDefaultSuccess').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-success',
+                title: 'Thành công',
+                subtitle: '',
+                body: 'Gửi báo cáo thành công'
+            })
+        })
+
+        $('.toastsDefaultSuccess1').click(function () {
+            $(document).Toasts('create', {
+                class: 'bg-success',
+                title: 'Thành công',
+                subtitle: '',
+                body: 'Xuất báo cáo thành công'
+            })
+        });
+
+
+    </script>
 </body>
+
 </html>

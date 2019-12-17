@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,348 +8,486 @@
 
     <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-    <!-- IonIcons -->
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="../plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <body class="hold-transition sidebar-mini">
-<div class="wrapper">
-    <!-- Navbar -->
-    <div id="nav">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <div id="nav">
             <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-                    <!-- Left navbar links -->
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
-                        </li>
-                    </ul>
-                
-                    <!-- SEARCH FORM -->
-                    <form class="form-inline ml-3">
-                        <div class="input-group input-group-sm">
-                            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                            <div class="input-group-append">
-                                <button class="btn btn-navbar" type="submit">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                
-                    <!-- Right navbar links -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Messages Dropdown Menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown" href="#">
-                                <i class="far fa-comments"></i>
-                                <span class="badge badge-danger navbar-badge">3</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                                <a href="#" class="dropdown-item">
-                                    <!-- Message Start -->
-                                    <div class="media">
-                                        <img src="../dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
-                                        <div class="media-body">
-                                            <h3 class="dropdown-item-title">
-                                                Brad Diesel
-                                                <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
-                                            </h3>
-                                            <p class="text-sm">Call me whenever you can...</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                        </div>
-                                    </div>
-                                    <!-- Message End -->
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <!-- Message Start -->
-                                    <div class="media">
-                                        <img src="../dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                        <div class="media-body">
-                                            <h3 class="dropdown-item-title">
-                                                John Pierce
-                                                <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
-                                            </h3>
-                                            <p class="text-sm">I got your message bro</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                        </div>
-                                    </div>
-                                    <!-- Message End -->
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <!-- Message Start -->
-                                    <div class="media">
-                                        <img src="../dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
-                                        <div class="media-body">
-                                            <h3 class="dropdown-item-title">
-                                                Nora Silvester
-                                                <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
-                                            </h3>
-                                            <p class="text-sm">The subject goes here</p>
-                                            <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                        </div>
-                                    </div>
-                                    <!-- Message End -->
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
-                            </div>
-                        </li>
-                        <!-- Notifications Dropdown Menu -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown" href="#">
-                                <i class="far fa-bell"></i>
-                                <span class="badge badge-warning navbar-badge">15</span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                                <span class="dropdown-item dropdown-header">15 Notifications</span>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-envelope mr-2"></i> 4 new messages
-                                    <span class="float-right text-muted text-sm">3 mins</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-users mr-2"></i> 8 friend requests
-                                    <span class="float-right text-muted text-sm">12 hours</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item">
-                                    <i class="fas fa-file mr-2"></i> 3 new reports
-                                    <span class="float-right text-muted text-sm">2 days</span>
-                                </a>
-                                <div class="dropdown-divider"></div>
-                                <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-                                    class="fas fa-th-large"></i></a>
-                        </li>
-                    </ul>
-                    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                        <div class="image">
-                            <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                        </div>
-                        <div class="info">
-                            <a href="#" class="d-block">Trần Uyên</a>
-                        </div>
-                    </div>
-                </nav>
-    
-    </div>
-    <!-- /.navbar -->
-
-    <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-            <img src="../dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">HCI_10 Company</span>
-        </a>
-
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <!-- Sidebar user panel (optional) -->
-
-            <!-- Sidebar Menu -->
-            <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                    <!-- Add icons to the links using the .nav-icon class
-                         with font-awesome or any other icon font library -->
+                <!-- Left navbar links -->
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="../employees_index.html" class="nav-link active">
-                            <i class="fas fa-home nav-icon"></i>
-                            <p>Trang chủ - Nhân viên</p>
-                        </a>
-                    </li>
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-calendar-alt"></i>
-                            <p>
-                                Công việc
-                                <i class="fas fa-angle-right right"></i>
-                                <span class="badge badge-info right">2</span>
-                            </p>
-                        </a>
-                        <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="contacts.html" class="nav-link">
-                                    <i class="fas fa-list nav-icon"></i>
-                                    <p>Danh sách khách hàng </p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="add_contact.html" class="nav-link ">
-                                    <i class="nav-icon fas fa-edit"></i>
-                                    <p>Thêm khách hàng mới</p>
-                                </a>
-                            </li>
-                            
-
-                        </ul>
-                    </li>
-                    <li class="nav-item has-treeview">
-                        <a href="report_week.html" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
-                            <p>
-                                Báo cáo tuần
-                            </p>
-                        </a>
+                        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                     </li>
                 </ul>
-            </nav>
-            <!-- /.sidebar-menu -->
-        </div>
-        <!-- /.sidebar -->
-    </aside>
 
-    <!-- Content Wrapper. Contains page content -->
-    <div class="content-wrapper">
-        <div class="content-header">
-            <div class="container-fluid">
-                <div class="row breadcrumb mb-2">
+                <!-- SEARCH FORM -->
+                <form class="form-inline ml-3">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Right navbar links -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- Messages Dropdown Menu -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown" href="#">
+                            <i class="far fa-bell fa-2x"></i>
+                            <span class="badge badge-danger navbar-badge">3</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                            <a href="#" class="dropdown-item">
+                                <!-- Message Start -->
+                                <div class="media">
+                                    <img src="../dist/img/user1-128x128.jpg" alt="User Avatar"
+                                        class="img-size-50 mr-3 img-circle">
+                                    <div class="media-body">
+                                        <h3 class="dropdown-item-title">
+                                            Nhà thuốc Bạch Mai
+                                            <span class="float-right text-sm text-danger"><i
+                                                    class="fas fa-star"></i></span>
+                                        </h3>
+                                        <p class="text-sm">Đang có thắc mắc!</p>
+                                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
+                                    </div>
+                                </div>
+                                <!-- Message End -->
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <!-- Message Start -->
+                                <div class="media">
+                                    <img src="../dist/img/user8-128x128.jpg" alt="User Avatar"
+                                        class="img-size-50 img-circle mr-3">
+                                    <div class="media-body">
+                                        <h3 class="dropdown-item-title">
+                                            Nhà thuốc Vĩnh Tuy
+                                            <span class="float-right text-sm text-muted"><i
+                                                    class="fas fa-star"></i></span>
+                                        </h3>
+                                        <p class="text-sm">Sắp đến cuộc gặp</p>
+                                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
+                                    </div>
+                                </div>
+                                <!-- Message End -->
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">
+                                <!-- Message Start -->
+                                <div class="media">
+                                    <img src="../dist/img/user3-128x128.jpg" alt="User Avatar"
+                                        class="img-size-50 img-circle mr-3">
+                                    <div class="media-body">
+                                        <h3 class="dropdown-item-title">
+                                            Nhà Thuốc Minh Khai
+                                            <span class="float-right text-sm text-warning"><i
+                                                    class="fas fa-star"></i></span>
+                                        </h3>
+                                        <p class="text-sm">Hợp đồng vừa được duyệt, cần tiến hành kí kết</p>
+                                        <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 giờ trước</p>
+                                    </div>
+                                </div>
+                                <!-- Message End -->
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item dropdown-footer">Xem tất cả</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+                                class="fas fa-th-large"></i></a>
+                    </li>
+                </ul>
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Trần Uyên</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="../index.html" class="brand-link">
+                <img src="../dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
+                    style="opacity: .8">
+                <span class="brand-text font-weight-light">HCI_10 Company</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                        <li class="nav-item">
+                            <a href="../employees_index.html" class="nav-link active">
+                                <i class="fas fa-home nav-icon"></i>
+                                <p>Trang chủ - Nhân viên</p>
+                            </a>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-calendar-alt"></i>
+                                <p>
+                                    Công việc
+                                    <i class="fas fa-angle-right right"></i>
+                                    <span class="badge badge-info right">2</span>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="contacts.html" class="nav-link">
+                                        <i class="fas fa-list nav-icon"></i>
+                                        <p>Danh sách khách hàng </p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="add_contact.html" class="nav-link ">
+                                        <i class="nav-icon fas fa-edit"></i>
+                                        <p>Thêm khách hàng mới</p>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item has-treeview">
+                            <a href="report_week.html" class="nav-link">
+                                <i class="nav-icon fas fa-copy"></i>
+                                <p>
+                                    Báo cáo tuần
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row breadcrumb mb-2">
                         <div class="breadcrumb col-sm-6">
                             <h1 class="m-0 text-dark "> Chi tiết khách hàng</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                    <li class="breadcrumb-item"><a href="../employees_index.html">Nhân viên</a></li>
-                                    <li class="breadcrumb-item active">Lịch làm việc</li>
-                                </ol>
+                                <li class="breadcrumb-item"><a href="../employees_index.html">Nhân viên</a></li>
+                                <li class="breadcrumb-item active">Lịch làm việc</li>
+                            </ol>
                         </div>
-                        
+
                     </div>
                 </div>
                 <hr>
             </div>
-        
-        <div class="content">
-            <div class="container-fluid">
+
+            <div class="content">
+                <div class="container-fluid">
                     <div style="margin:5%; margin-left: 15%; font: 20px !important;">
                         <div class="row">
                             <div class="col-sm-12" style="font: 20px;">
-                                    <label style="float: left; margin-right: 30px;">Nhãn Hàng: </label>
-                                    <p><strong>Thuốc cảm cúm</strong></p>
+                                <label style="float: left; margin-right: 30px;">Nhãn Hàng: </label>
+                                <p><strong>Thuốc cảm cúm</strong></p>
                             </div>
-                            
+
                         </div>
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                    <label style="float: left; margin-right: 30px;"><i class="fas fa-user"></i>Tên khách hàng: </label>
-                                    <p>Nhà thuốc Sức Khỏe</p>
+                                <label style="float: left; margin-right: 30px;"><i class="fas fa-user"></i>Tên khách
+                                    hàng: </label>
+                                <p>Nhà thuốc Sức Khỏe</p>
                             </div>
                             <div class="col-md-6 col-sm-12">
-                                    <label style="float: left;margin-right: 30px;"><i class="fas fa-phone-square"></i>Số điện thoại: </label>
-                                    <p>0123456789</p>
+                                <label style="float: left;margin-right: 30px;"><i class="fas fa-phone-square"></i>Số
+                                    điện thoại: </label>
+                                <p>0123456789</p>
                             </div>
-                            
+
                         </div>
 
                         <div class="row">
                             <div class="col-md-6 col-sm-12">
-                                <label style="float: left; margin-right: 30px;"><i class="fas fa-envelope"></i>Email: </label>
+                                <label style="float: left; margin-right: 30px;"><i class="fas fa-envelope"></i>Email:
+                                </label>
                                 <p>suckhoe@gmail.com</p>
                             </div>
                             <div class="col-md-6">
-                                <label style="float: left; margin-right: 30px;"><i class="fas fa-map-marker-alt"></i>Địa chỉ: </label>
+                                <label style="float: left; margin-right: 30px;"><i class="fas fa-map-marker-alt"></i>Địa
+                                    chỉ: </label>
                                 <p>Hai Bà Trưng, Hà Nội</p>
                             </div>
                         </div>
                         <div class="row">
-                                <div class="col-md-6 col-sm-12">
-                                    <label style="float: left; margin-right: 30px;"><i class="fas fa-user"></i>Quản lý: </label>
-                                    <p>Trần Văn An</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <label style="float: left; margin-right: 30px;">Trạng thái: </label>
-                                    <p>Chưa xác nhận
-                                </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label style="float: left; margin-right: 30px;"><i class="fas fa-user"></i>Quản lý:
+                                </label>
+                                <p>Trần Văn An</p>
+                            </div>
+                            <div class="col-md-6">
+                                <label style="float: left; margin-right: 30px;">Trạng thái: </label>
+                                <p>Chưa xác nhận
+                            </div>
                         </div>
                         <div class="row">
-                                <div class="col-sm-12">
-                                        <label style="float: left; margin-right: 30px;">Trạng thái khách hàn: </label>
-                                        <select>
-                                            <option>Khách hàng mới cần liên lạc</option>
-                                            <option>Ký hợp đồng</option>
-                                            <option>Khách hàng đang chăm sóc</option>
-                                        </select>
-                                        
-                                </div>
-                                <div class="col-12">
-                                    <label>Upload file hợp đồng (file pdf): </label>
-                                    <input type="file" id="myFile"  >
-                                </div>
+                            <div class="col-sm-12">
+                                <label style="float: left; margin-right: 30px;">Trạng thái khách hàng: </label>
+                                <select>
+                                    <option>Khách hàng mới cần liên lạc</option>
+                                    <option>Ký hợp đồng</option>
+                                    <option>Khách hàng đang chăm sóc</option>
+                                </select>
+
                             </div>
-                        
+                            <div class="col-12">
+                                <label>Upload file hợp đồng (file pdf): </label>
+                                <input type="file" id="myFile">
+                            </div>
+                        </div>
+
                         <div class="row">
                             <div class="col-12">
                                 <label>Những lần gặp mặt</label>
-                                <div>
-                                    <p>Lần 1:
-                                    </p>
-                                    <p>Thời gian: 16:00 01/12/2018
-                                    </p>
-                                    <p>Nội dung: Đặt vấn đề, giới thiệu sản phẩm</p>
-                                </div>
-                                <div>
-                                        <p>Lần 2:
-                                        </p>
-                                        <p><p style="color: red; float: left;">*</p>Thời gian: </p>
-                                        <input type="date" name="time"  required>
-
-                                        <p style="margin-top: 10px;"><p style="color: red;float: left;">*</p>Nội dung:</p>
-                                        <textarea rows="3" cols="120"></textarea>
+                                <!-- The time line -->
+                                <div class="timeline">
+                                    <!-- timeline time label -->
+                                    <div class="time-label">
+                                        <span class="bg-red">01 Th12. 2019</span>
                                     </div>
-                                    
-                                        
-                            </div>
-                        </div>
+                                    <!-- /.timeline-label -->
+                                    <!-- timeline item -->
+                                    <div>
+                                        <i class="fas fa-user bg-blue"></i>
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fas fa-clock"></i> 16:00</span>
+                                            <h3 class="timeline-header"><a href="#">Gặp gỡ</a> với nội dung
+                                            </h3>
 
-                        <div class="row">
-                            <div class="col-12 " style="margin-top: 15px;">
-                                <input id="baocao" type="button" width="100px" value="Gửi báo cáo" class="btn btn-sm btn-primary" onclick="thongbao()"> 
+                                            <div class="timeline-body">
+                                                Đặt vấn đề, giới thiệu sản phẩm
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END timeline item -->
+
+                                    <!-- timeline time label -->
+                                    <div class="time-label">
+                                        <span class="bg-blue">Hôm nay</span>
+                                    </div>
+                                    <!-- /.timeline-label -->
+                                    <!-- timeline item -->
+                                    <div>
+                                        <i class="fas fa-user bg-blue"></i>
+                                        <div class="timeline-item">
+                                            <span class="time"><i class="fas fa-clock"></i> 16:00</span>
+                                            <h3 class="timeline-header"><a href="#">Gặp gỡ</a> với nội dung
+                                            </h3>
+
+                                            <div class="timeline-body">
+                                                Giải đáp các thắc mắc liên quan đến sản phẩm mới, chuẩn bị soạn thảo hợp
+                                                đồng
+                                                <hr/>
+                                                <a href="#">ban_ghi.pdf</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END timeline item -->
+                                    <div>
+                                        <i class="fas fa-clock bg-gray"></i>
+                                    </div>
+
+                                </div>
+                                <div class="card card-primary">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Thêm cuộc gặp</h3>
+                                    </div>
+                                    <!-- /.card-header -->
+                                    <!-- form start -->
+                                    <form>
+                                        <div class="card-body">
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Thời gian</label>
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i
+                                                                class="far fa-calendar-alt"></i></span>
+                                                    </div>
+                                                    <input type="text" class="form-control"
+                                                        data-inputmask-alias="datetime"
+                                                        data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Nội dung</label>
+                                                <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputFile">Tệp đính kèm</label>
+                                                <div class="input-group">
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="exampleInputFile">
+                                                        <label class="custom-file-label" for="exampleInputFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </form>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary toastsDefaultSuccess">Upload</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <footer class="main-footer text-center">
+                            <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+                        </footer>
                     </div>
                     <footer class="main-footer text-center">
-                        <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+                        <strong>HCI_10 &copy; 20191</strong>
                     </footer>
                 </div>
                 <!-- ./wrapper -->
-                
+                <!-- ./wrapper -->
+
                 <!-- REQUIRED SCRIPTS -->
-                
+
                 <!-- jQuery -->
                 <script src="../plugins/jquery/jquery.min.js"></script>
-                <!-- Bootstrap -->
+                <!-- Bootstrap 4 -->
                 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-                <!-- AdminLTE -->
-                <script src="../dist/js/adminlte.js"></script>
-                
-                <!-- OPTIONAL SCRIPTS -->
-                <script src="../plugins/chart.js/Chart.min.js"></script>
+                <!-- Select2 -->
+                <script src="../plugins/select2/js/select2.full.min.js"></script>
+                <!-- Bootstrap4 Duallistbox -->
+                <script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+                <!-- InputMask -->
+                <script src="../plugins/moment/moment.min.js"></script>
+                <script src="../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+                <!-- date-range-picker -->
+                <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+                <!-- bootstrap color picker -->
+                <script src="../plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+                <!-- Tempusdominus Bootstrap 4 -->
+                <script src="../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+                <!-- Bootstrap Switch -->
+                <script src="../plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+                <!-- AdminLTE App -->
+                <script src="../dist/js/adminlte.min.js"></script>
+                <!-- AdminLTE for demo purposes -->
                 <script src="../dist/js/demo.js"></script>
-                <script src="../dist/js/pages/dashboard3.js"></script>
-                
+                <!-- Page script -->
                 <script>
-                    function thongbao(){
+                    $(function () {
+                        //Initialize Select2 Elements
+                        $('.select2').select2()
+
+                        //Initialize Select2 Elements
+                        $('.select2bs4').select2({
+                            theme: 'bootstrap4'
+                        })
+
+                        //Datemask dd/mm/yyyy
+                        $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+                        //Datemask2 mm/dd/yyyy
+                        $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
+                        //Money Euro
+                        $('[data-mask]').inputmask()
+
+                        //Date range picker
+                        $('#reservation').daterangepicker()
+                        //Date range picker with time picker
+                        $('#reservationtime').daterangepicker({
+                            timePicker: true,
+                            timePickerIncrement: 30,
+                            locale: {
+                                format: 'MM/DD/YYYY hh:mm A'
+                            }
+                        })
+                        //Date range as a button
+
+                        //Timepicker
+                        $('#timepicker').datetimepicker({
+                            format: 'LT'
+                        })
+
+                        //Bootstrap Duallistbox
+                        $('.duallistbox').bootstrapDualListbox()
+
+                        $('.toastsDefaultSuccess').click(function() {
+                            $(document).Toasts('create', {
+                                class: 'bg-success', 
+                                title: 'Thành công',
+                                subtitle: '',
+                                body: 'Upload cuộc gặp thành công                               '
+                            })
+                        });
+
+
+                    })
+                </script>
+
+                <script>
+                    //Timepicker
+                    $('#datemask').inputmask('dd/mm/yyyy', { 'placeholder': 'dd/mm/yyyy' })
+                    $('#timepicker').inputmask('HH:MM', { 'placeholder': 'HH:MM' })
+
+                    function thongbao() {
                         confirm("Bạn muốn nộp báo cáo");
-                        window.location="../employees_index.html";
+                        window.location = "../employees_index.html";
                     }
-                    
+
 
                 </script>
 </body>
+
 </html>
