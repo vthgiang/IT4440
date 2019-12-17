@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Flot Charts</title>
+    <title>HCI_05 Danh sách công việc cá nhân</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -18,7 +18,7 @@
      folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <script src="https://kit.fontawesome.com/0fb6f52a65.js" crossorigin="anonymous"></script>
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,7 +38,7 @@
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>A</b>LT</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Công ty ABC</span>
+            <span class="logo-lg">Công ty thuốc</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -170,70 +170,50 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">MAIN NAVIGATION</li>
+                <li class="header">MENU</li>
                 <li class="treeview">
                     <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Phòng hành chính nhân sự</span>
+                        <span>Phòng hành chính nhân sự</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-dashboard"></i> <span>Công việc công ty</span>
+                        <li>
+                            <a href="ds_congviec_cty.html">
+                                <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
                                 <span class="pull-right-container">
-                      <i class="fa fa-angle-left pull-right"></i>
+
                     </span>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="ds_congviec_cty.html"><i class="fa fa-circle-o"></i>DS công việc CTY</a>
-                                </li>
-                                <li><a href="tao_du_an.html"><i class="fa fa-circle-o"></i> Tạo dự án</a></li>
-                                <li><a href="chi_tiet_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết dự án</a></li>
-                                <li><a href="tao_congviec_du_an.html"><i class="fa fa-circle-o"></i>Tạo công việc trong
-                                    dự án</a></li>
-                                <li><a href="chi_tiet_cong_viec_du_an.html"><i class="fa fa-circle-o"></i>Chi tiết công
-                                    việc dự án</a></li>
-                                <li><a href="tao_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Tạo công
-                                    việc cho nhân viên</a></li>
-                                <li><a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><i class="fa fa-circle-o"></i>Chi
-                                    tiết công việc cho nhân viên</a></li>
-                            </ul>
                         </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-dashboard"></i> <span>Công việc phòng ban</span>
+                        <li>
+                            <a href="ds_cong_viec_phong_ban.html">
+                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
                                 <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
+
                       </span>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="ds_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Ds công việc
-                                    phòng ban</a></li>
-                                <li><a href="tao_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Tạo công việc
-                                </a></li>
-                                <li><a href="chi_tiet_cong_viec_phong_ban.html"><i class="fa fa-circle-o"></i>Chi tiết
-                                    công việc</a></li>
-                            </ul>
+
                         </li>
-                        <li class="treeview">
-                            <a href="#">
-                                <i class="fa fa-dashboard"></i> <span>Công việc thường xuyên</span>
+                        <li>
+                            <a href="ds_cong_viec_ca_nhan.html">
+                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
                                 <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
+
                       </span>
                             </a>
-                            <ul class="treeview-menu">
-                                <li><a href="ds_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Ds công việc </a>
-                                </li>
-                                <li><a href="tao_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Tạo công việc
-                                </a></li>
-                                <li><a href="chi_tiet_cong_viec_ca_nhan.html"><i class="fa fa-circle-o"></i>Chi tiết
-                                    công việc</a></li>
-                            </ul>
+                        </li>
+                        <li>
+                            <a href="../../../hci09/ketquakpi.html">
+                                <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
+                                <span class="pull-right-container">
+
+                      </span>
+                            </a>
                         </li>
                     </ul>
+
                 </li>
             </ul>
         </section>
@@ -287,7 +267,7 @@
                                         <th></th>
                                     </tr>
                                     <tr>
-                                        
+
                                         <td>
                                             Tổng công việc :
                                         </td>
@@ -302,7 +282,7 @@
                                         <td>
                                             <button type="button" class="btn btn-block btn-success">1</button>
                                         </td>
-                                        
+
 
                                     </tr>
                                     <tr>
@@ -312,7 +292,7 @@
                                         <td>
                                             <button style="background-color: #337ab7 ;" type="button" class="btn btn-block btn-info">1</button>
                                         </td>
-                                       
+
 
                                     </tr>
                                     <tr>
@@ -322,7 +302,7 @@
                                         <td>
                                             <button type="button" class="btn btn-block btn-info">1</button>
                                         </td>
-                                        
+
 
                                     </tr>
                                     <tr>
@@ -333,8 +313,8 @@
                                                         <button style="background-color:#df3a01; border-color: #df3a01;" type="button" class="btn btn-block btn-danger">1</button>
                                                     </td>
                                             </tr>
-                                        
-                                       
+
+
                                     <tr>
                                         <td>
                                             <div class="form-group">
@@ -345,7 +325,7 @@
                                                     <option>Quý 3</option>
                                                     <option>Quý 4</option>
 
-        
+
                                                 </select>
                                             </div>
                                         </td>
@@ -356,7 +336,7 @@
                                                     <option>Tháng một</option>
                                                     <option>Tháng hai</option>
                                                     <option>Tháng ba</option>
-                                                    
+
 
                                                 </select>
                                             </div>
@@ -502,10 +482,8 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 2.4.13
-        </div>
-        <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE</a>.</strong> All rights
+
+        <strong>HCI_05</strong>
         reserved.
     </footer>
 

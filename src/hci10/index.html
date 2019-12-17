@@ -36,14 +36,35 @@ to get the desired effect
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
   <!-- Navbar -->
-  <div id="nav"></div>
+  <div id="nav">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Tìm kiếm" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </nav>
+  </div>
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index.html" class="brand-link">
-      <img src="dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
+      <img src="dist/img/Capture1.JPG" alt="Company Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">HCI_10 Company</span>
     </a>
@@ -59,24 +80,32 @@ to get the desired effect
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="./index.html" class="nav-link active">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="fas fa-home nav-icon"></i>
               <p>Trang chủ</p>
             </a>
           </li>
           <li class="nav-header">NHÂN VIÊN</li>
           <li class="nav-item">
             <a href="./employees_index.html" class="nav-link">
-              <i class="far fa-circle nav-icon"></i>
+              <i class="fas fa-user nav-icon"></i>
               <p>Nhân viên</p>
             </a>
           </li>
           <li class="nav-header">QUẢN LÝ</li>
           <li class="nav-item">
           <a href="./manage_index.html" class="nav-link">
-            <i class="far fa-circle nav-icon"></i>
+            <i class="fas fa-user-tie nav-icon"></i>
             <p>Quản lý</p>
           </a>
         </li>
+
+          <li class="nav-header">TRANG CHỦ CHUNG</li>
+          <li class="nav-item">
+            <a href="./bo_phan_kinh_doanh_index.html" class="nav-link">
+              <i class="fas fa-money-check nav-icon"></i>
+              <p>Bộ phận kinh doanh</p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -108,10 +137,52 @@ to get the desired effect
     <div class="content">
       <div class="container-fluid">
         <div class="row">
+
           <div class="col-lg-6">
             <div class="card">
               <div class="card-header border-0">
-                <h3 class="card-title">Top nhân viên đạt doanh số cao nhất</h3>
+                <div class="d-flex justify-content-between">
+                  <h3 class="card-title">Tình hình kinh doanh Các nhãn hàng</h3>
+                  <a href="javascript:void(0);"></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="d-flex flex-column">
+                    <span class="text-bold text-lg">1,808,230.00</span>
+                    <span>Danh số</span>
+                  </p>
+                  <p class="ml-auto d-flex flex-column text-right">
+                    <span class="text-success">
+                      <i class="fas fa-arrow-up"></i> 33.1%
+                    </span>
+                    <span class="text-muted">Tháng trước</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
+
+                <div class="position-relative mb-4">
+                  <canvas id="sales-chart" height="200"></canvas>
+                </div>
+
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-primary"></i> Hiện tại
+                  </span>
+
+                  <span>
+                    <i class="fas fa-square text-gray"></i> Năm ngoái
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-md-6 -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-0">
+                <h3 class="card-title">Top nhân các nhãn hàng đạt doanh số cao nhất</h3>
                 <br>
                 <div class="card-tools">
                   <a href="#" class="btn btn-tool btn-sm">
@@ -126,108 +197,77 @@ to get the desired effect
                 <table class="table table-striped table-valign-middle">
                   <thead>
                   <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Sales</th>
-                    <th>More</th>
+                    <th>Nhãn hàng</th>
+                    <th>Số lượng Sale</th>
+                    <th>KPI</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Some Product
+                      TPCN - Phahacol
                     </td>
-                    <td>$13 USD</td>
+                    <td>12</td>
                     <td>
                       <small class="text-success mr-1">
                         <i class="fas fa-arrow-up"></i>
                         12%
                       </small>
-                      12,000 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
+                      197.450.000 VNĐ
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Another Product
+                      TPCN - Traphacoo
                     </td>
-                    <td>$29 USD</td>
+                    <td>10</td>
                     <td>
-                      <small class="text-warning mr-1">
-                        <i class="fas fa-arrow-down"></i>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
                         0.5%
                       </small>
-                      123,234 Sold
+                      184.970.000 VNĐ
                     </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
+
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Amazing Product
+                      Thuốc thú y - Jerry
                     </td>
-                    <td>$1,230 USD</td>
-                    <td>
-                      <small class="text-danger mr-1">
-                        <i class="fas fa-arrow-down"></i>
-                        3%
-                      </small>
-                      198 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
-                    </td>
-                    <td>$199 USD</td>
+                    <td>21</td>
                     <td>
                       <small class="text-success mr-1">
                         <i class="fas fa-arrow-up"></i>
-                        63%
+                        10%
                       </small>
-                      87 Sold
+                      147.340.000 VNĐ
                     </td>
+
+                  </tr>
+                  <tr>
                     <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
+                      Thuốc thú y - Remax
+                    </td>
+                    <td>15</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        2.5%
+                      </small>
+                      124.970.000 VNĐ
                     </td>
                   </tr>
                   <tr>
                     <td>
-                      <img src="dist/img/default-150x150.png" alt="Product 1" class="img-circle img-size-32 mr-2">
-                      Perfect Item
-                      <span class="badge bg-danger">NEW</span>
+                      TPCN - RoseWet
                     </td>
-                    <td>$199 USD</td>
+                    <td>15</td>
                     <td>
                       <small class="text-success mr-1">
                         <i class="fas fa-arrow-up"></i>
-                        63%
+                        3.2%
                       </small>
-                      87 Sold
-                    </td>
-                    <td>
-                      <a href="#" class="text-muted">
-                        <i class="fas fa-search"></i>
-                      </a>
+                      103.430.000 VNĐ
                     </td>
                   </tr>
                   </tbody>
@@ -239,46 +279,7 @@ to get the desired effect
             <!-- /.card -->
           </div>
           <!-- /.col-md-6 -->
-          <div class="col-lg-6">
-            <div class="card">
-              <div class="card-header border-0">
-                <div class="d-flex justify-content-between">
-                  <h3 class="card-title">Sales theo nhãn hàng</h3>
-                  <a href="javascript:void(0);">View Report</a>
-                </div>
-              </div>
-              <div class="card-body">
-                <div class="d-flex">
-                  <p class="d-flex flex-column">
-                    <span class="text-bold text-lg">$18,230.00</span>
-                    <span>Sales Over Time</span>
-                  </p>
-                  <p class="ml-auto d-flex flex-column text-right">
-                    <span class="text-success">
-                      <i class="fas fa-arrow-up"></i> 33.1%
-                    </span>
-                    <span class="text-muted">Since last month</span>
-                  </p>
-                </div>
-                <!-- /.d-flex -->
 
-                <div class="position-relative mb-4">
-                  <canvas id="sales-chart" height="200"></canvas>
-                </div>
-
-                <div class="d-flex flex-row justify-content-end">
-                  <span class="mr-2">
-                    <i class="fas fa-square text-primary"></i> This year
-                  </span>
-
-                  <span>
-                    <i class="fas fa-square text-gray"></i> Last year
-                  </span>
-                </div>
-              </div>
-            </div>
-          <!-- /.col-md-6 -->
-        </div>
         <!-- /.row -->
       </div>
       <!-- /.container-fluid -->
@@ -297,7 +298,7 @@ to get the desired effect
 
 </div>
   <footer class="main-footer text-center">
-    <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+    <strong>HCI_10 &copy; 20191</strong>
   </footer>
 </div>
 <!-- ./wrapper -->

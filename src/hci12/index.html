@@ -7,37 +7,56 @@
 <html>
 <head>
 <title>HCI_12</title>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/home/home.css">
+    <link href="./bootstrap/css/bootstrap-table.css" rel="stylesheet">
 </head>
 <body>
+    <div class="wrap-login">
 
-<h1>Bài làm của nhóm 12</h1>
-<p>Man hinh ke toan truong</p>
-<a href="leader/home.html">link</a>
-<p>Man hinh nhan vien</p>
-<a href="employee/home.html">link</a>
-   <!--  <form action="" method="POST" role="form">
-        <legend>Phòng kế toán</legend>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="panel panel-info panel-login">
+                        <div class="panel-body">
+                             <form action="" method="POST" role="form">
+                                <legend class="title-room">Phòng kế toán doanh nghiệp</legend>
+                                <div class="form-group">
+                                    <label for="">Tài khoản</label>
+                                    <input type="text" class="form-control" id="name" placeholder="manager/employee">
+                                </div>
+                                <div class="form-group">
+                                    <label for="">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" placeholder="manager/employee">
+                                </div>
+                                <div class="checkbox-login">
+                                    <input type="checkbox" name="remember-me">
+                                    <span>Nhớ mật khẩu</span>
+                                </div>
 
-        <div class="form-group">
-            <label for="">Tài khoản</label>
-            <input type="text" class="form-control" id="name" placeholder="Input field">
+                                <p id="demo" class="text-danger"></p>
+                                <button type="button" class="btn btn-primary" onclick="myFunction()">Đăng nhập</button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="">Mật khẩu</label>
-            <input type="text" class="form-control" id="password" placeholder="Input field">
-        </div>
+    </div>
 
-        <button type="submit" class="btn btn-primary" onClick="login">Đăng nhập</button>
-    </form>
-    <script type="text/javascript">
-        function login(){
-            if(document.getElementById("nam") === document.getElementById("password")){
-                window.location("./leader/home.html");
-            }
-        }
 
-    </script> -->
+
+
+
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript" src = "./js/master.js"></script>
 
 </body>
 </html>
