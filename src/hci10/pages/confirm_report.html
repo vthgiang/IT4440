@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hợp đồng</title>
+    <title>Xác nhận báo cáo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
+    <title>BKA Company | Quản lý nhãn hàng</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
     <!-- IonIcons -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -48,28 +48,28 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-bell fa-2x"></i>
-                        <span class="badge badge-warning navbar-badge">10</span>
+                        <span class="badge badge-warning navbar-badge">5</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-item dropdown-header">10 Thông báo mới</span>
+                        <span class="dropdown-item dropdown-header">5 Thông báo mới</span>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 Hợp đồng cần duyệt
+                            <i class="fas fa-users mr-2"></i> 3 Hợp đồng cần duyệt
                             <span class="float-right text-muted text-sm">12 phút</span>
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-file mr-2"></i> 3 Báo cáo mới
+                            <i class="fas fa-file mr-2"></i> 2 Báo cáo mới
                             <span class="float-right text-muted text-sm">35 phút</span>
                         </a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item dropdown-footer">Xem tất cả</a>
+                        <a href="../noti.html" class="dropdown-item dropdown-footer">Xem tất cả</a>
                     </div>
                 </li>
             </ul>
             <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                 <div class="image">
-                    <img src="dist/img/user4-128x128.jpg" class="img-circle elevation-2" alt="User Image">
+                    <img src="../dist/img/user4-128x128.jpg" class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
                     <a href="#" class="d-block">Quản lý - Hồng Nguyễn</a>
@@ -82,8 +82,8 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-            <img src="dist/img/Capture1.JPG" alt="Company Logo" class="brand-image img-circle elevation-3"
+        <a href="../index.html" class="brand-link">
+            <img src="../dist/img/Capture1.JPG" alt="Company Logo" class="brand-image img-circle elevation-3"
                  style="opacity: .8">
             <span class="brand-text font-weight-light">HCI_10 Company</span>
         </a>
@@ -94,14 +94,19 @@
 
             <!-- Sidebar Menu -->
             <nav class="mt-2">
-                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-                    data-accordion="false">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                     <!-- Add icons to the links using the .nav-icon class
                          with font-awesome or any other icon font library -->
                     <li class="nav-item">
-                        <a href="manage_index.html" class="nav-link">
+                        <a href="../manage_index.html" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
                             <p>Trang chủ - Quản lý</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../noti.html" class="nav-link">
+                            <i class="nav-icon fas fa-bell"></i>
+                            <p>Thông báo</p>
                         </a>
                     </li>
                     <li class="nav-item has-treeview menu-open">
@@ -115,13 +120,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="./employee_schedule.html" class="nav-link active">
+                                <a href="../manage_employee_schedule.html" class="nav-link">
                                     <i class="fas fa-check-square nav-icon"></i>
                                     <p>Phân công công việc</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./pages/confirm_report.html" class="nav-link">
+                                <a href="confirm_report.html" class="nav-link active">
                                     <i class="fas fa-file-word nav-icon"></i>
                                     <p>Xác nhận báo cáo</p>
                                 </a>
@@ -130,15 +135,9 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/list_custom.html" class="nav-link">
+                        <a href="./list_custom.html" class="nav-link">
                             <i class="nav-icon fas fa-copy"></i>
                             <p>Danh sách khách hàng</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html" class="nav-link">
-                            <i class="nav-icon fas fa-chart-line"></i>
-                            <p>Thiết lập KPI</p>
                         </a>
                     </li>
                 </ul>
@@ -155,13 +154,13 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0 text-dark">Hợp đồng</h1>
+                        <h1 class="m-0 text-dark">Chi tiết báo cáo</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Quản lý A</a></li>
                             <li class="breadcrumb-item"><a href="#">Công việc</a></li>
-                            <li class="breadcrumb-item active">Hợp đồng</li>
+                            <li class="breadcrumb-item active">Báo cáo</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -170,21 +169,75 @@
         <!-- /.content-header -->
         <hr>
         <!-- Main content -->
-        <div class="form-contract">
-            <img src="img/contract.jpg" style="width:1024px;height:1500px;" alt="Hợp đồng">
-        </div>
-        <hr>
-        <div class="row">
-                <div class="col-4 row">
-                        <div class="col-sm-6">
-                                <button type="submit" class="btn btn-success form-control float-right toastsDefaultSuccess">Duyệt</button>
-                            </div>
-                        <div class="col-sm-6">
-                                <button type="submit" class="btn btn-danger form-control float-right toastsDefaultError">Không duyệt
-                                </button>
-                            </div>
-                </div>
+        <div class="content">
+            <div class="container-fluid">
+                <div style="margin:5%; margin-left: 15%; font: 20px !important;">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12" style="font: 20px;">
+                            <label style="float: left; margin-right: 30px;">Tên báo cáo: </label>
+                            <p><strong>Báo cáo khối lượng công việc</strong></p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <label style="float: left; margin-right: 30px;">Ngày báo cáo: </label>
+                            <p>16/12/2019</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <label style="float: left; margin-right: 30px;"><i class="fas fa-user"></i>Tên nhân viên: </label>
+                            <p>Trần Thị Thu Uyên</p>
+                        </div>
 
+                        <div class="col-md-6 col-sm-12">
+                            <label style="float: left; margin-right: 30px;"><i class="fas fa-envelope"></i>Email: </label>
+                            <p>uyenttt@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="row">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Khối lượng công việc</th>
+                                    <th>Khối lượng công việc hoàn thành</th>
+                                    <th>Khối lượng công việc còn lại</th>
+                                    <th>Phần trăm hoàn thành</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th style="text-align: center">80</th>
+                                    <th style="text-align: center">50</th>
+                                    <th style="text-align: center">30</th>
+                                    <th style="text-align: center">62.5%</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="" style="font: 20px; width: 100%">
+                            <label style="float: left; margin-right: 30px;">Ghi chú: </label>
+                            <textarea class="form-control" style="width: 100%">Đã liên hệ được với nhà thuốc Bạch Mai, hẹn khách hàng tuần sau gặp mặt kí kết hợp đồng</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12" style="font: 20px;">
+                            <label style="float: left; margin-right: 30px;">Trạng thái báo cáo: </label>
+                            <p id="status">Chưa xác nhận</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3" style="margin-top: 15px;">
+                            <input id="baocao" type="button" width="100px" value="Xác nhận báo cáo" class="btn btn-sm btn-primary toastsDefaultSuccess" onclick="thongbao()">
+                            <input id="baocao_re" type="button" width="100px" value="Không xác nhận" class="btn btn-sm btn-danger toastsDefaultError" onclick="thongbao()">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /.content-wrapper -->
 
@@ -206,36 +259,40 @@
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="../plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->
-<script src="dist/js/adminlte.js"></script>
+<script src="../dist/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
-<script src="dist/js/demo.js"></script>
-<script src="dist/js/pages/dashboard3.js"></script>
+<script src="../plugins/chart.js/Chart.min.js"></script>
+<script src="../dist/js/demo.js"></script>
+<script src="../dist/js/pages/dashboard3.js"></script>
 
 <script>
+
     $('.toastsDefaultSuccess').click(function() {
         $(document).Toasts('create', {
             class: 'bg-success',
             title: 'Thành công',
             subtitle: '',
-            body: 'Duyệt thành công'
+            body: 'Xác nhận Báo cáo thành công'
         })
+        var status = document.querySelector("#status");
+        status.innerHTML = "Đã duyệt";
     });
 
     $('.toastsDefaultError').click(function() {
         $(document).Toasts('create', {
-            class: 'bg-success',
+            class: 'bg-errors',
             title: 'Không Duyệt',
             subtitle: '',
-            body: 'Đã bỏ qua hợp đồng này'
+            body: 'Đã bỏ qua báo cáo này'
         })
+        var status = document.querySelector("#status");
+        status.innerHTML = "Không được duyệt";
     });
-
     n = new Date();
     y = n.getFullYear();
     m = n.getMonth() + 1;
