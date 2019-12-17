@@ -136,7 +136,7 @@
               <ul class="nav flex-column h6 sub-nav">
                 <li class="nav-item">
                   <a class="nav-link" href="/statistic.html">
-                    <span>Dashboard</span>
+                    <span>Bảng điều khiển</span>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -186,12 +186,12 @@
                     <label class="h6">Bộ phận</label>
                   </div>
                   <div class="col-md-8 col-sm-12">
-                    <select class="form-control">
-                      <option disabled selected>Chọn bộ phận ...</option>
-                      <option>Bộ phận Nhân sự</option>
-                      <option>Bộ phận Kinh doanh</option>
-                      <option>Bộ phận Nghiên cứu</option>
-                      <option>Bộ phận Hậu cần</option>
+                    <select class="form-control" onchange="handleChange(this)">
+                      <option disabled selected value="0">Chọn bộ phận ...</option>
+                      <option value="1">Bộ phận Nhân sự</option>
+                      <option value="2">Bộ phận Kinh doanh</option>
+                      <option value="3">Bộ phận Nghiên cứu</option>
+                      <option value="4">Bộ phận Hậu cần</option>
                     </select>
                   </div>
                 </div>
@@ -202,12 +202,8 @@
                     <label class="h6">Phòng ban</label>
                   </div>
                   <div class="col-md-8 col-sm-12">
-                    <select class="form-control">
-                      <option disabled selected>Chọn phòng ban ...</option>
-                      <option>Phòng quản lí</option>
-                      <option>Phòng tuyển dụng</option>
-                      <option>Phòng kế toán</option>
-                      <option>Phòng sản xuất</option>
+                    <select class="form-control" id="phongban">
+                      <option disabled selected>Chọn bộ phận trước ...</option>
                     </select>
                   </div>
                 </div>
@@ -520,6 +516,65 @@
       autoclose: true,
       language: 'vi-VN'
     });
+  </script>
+  <script type="text/javascript">
+    var array1 = [
+      "Phòng quản lí",
+      "Phòng lao động",
+      "Phòng kiểm tra",
+      "Phòng hành chính",
+    ]
+    var array2 = [
+      "Phòng kế toán",
+      "Phòng marketing",
+      "Phòng chiến lược",
+      "Phòng phát triển",
+      "Phòng tài chính",
+    ]
+    var array3 = [
+      "Phòng nghiên cứu",
+      "Phòng sáng chế",
+      "Phòng phát triển",
+    ]
+    var array4 = [
+      "Phòng bảo vệ",
+      "Phòng vệ sinh",
+      "Phòng hỗ trợ",
+    ]
+
+    var str1 = "<option disabled selected>Chọn phòng ban ...</option>", str2 = "<option disabled selected>Chọn phòng ban ...</option>", str3 = "<option disabled selected>Chọn phòng ban ...</option>", str4 = "<option disabled selected>Chọn phòng ban ...</option>";
+    array1.map(function(data, i) {
+      str1 += `<option>${data}</option>`
+    })
+    array2.map(function(data, i) {
+      str2 += `<option>${data}</option>`
+    })
+    array3.map(function(data, i) {
+      str3 += `<option>${data}</option>`
+    })
+    array4.map(function(data, i) {
+      str4 += `<option>${data}</option>`
+    })
+    function handleChange(e) {
+      console.log(e.value)
+      switch (e.value) {
+        case "1":
+          document.getElementById("phongban").innerHTML = str1;
+          break;
+        case "2":
+          document.getElementById("phongban").innerHTML = str2;
+          break;
+        case "3":
+          document.getElementById("phongban").innerHTML = str3;
+          break;
+        case "4":
+          document.getElementById("phongban").innerHTML = str4;
+          break;
+        default:
+          // statements_def
+          break;
+      }
+    }
   </script>
 </body>
 
