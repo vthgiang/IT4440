@@ -343,7 +343,31 @@
                                     <td>Xin cấp phép của bộ y tế</td>
                                     <td>Phòng hành chính nhân sự</td>
                                     <td>10/01/2020</td>
-                                    <td>30/01/2020</td>
+                                    var donutData = [
+                                    { label: '', data: 10, color: '#0B610B' },
+                                    { label: '', data: 10, color: '#01DFD7' },
+                                    { label: '', data: 10, color: '#DF3A01' },
+                                    {label:'',data:10,color:'#337ab7'}
+                                    ]
+                                    $.plot('#donut-chart', donutData, {
+                                    series: {
+                                    pie: {
+                                    show       : true,
+                                    radius     : 1,
+                                    innerRadius: 0.5,
+                                    label      : {
+                                    show     : true,
+                                    radius   : 2 / 3,
+                                    formatter: labelFormatter,
+                                    threshold: 0.1
+                                    }
+
+                                    }
+                                    },
+                                    legend: {
+                                    show: false
+                                    }
+                                    })              <td>30/01/2020</td>
                                     <td>Đang thực hiện</td>
                                     <td>
                                         <a href="chi_tiet_cong_viec_du_an_4.html"><button class="btn btn-info">Chi
