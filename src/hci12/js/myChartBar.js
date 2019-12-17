@@ -17,11 +17,11 @@ let massPopChart = new Chart(myChart, {
     datasets:[{
       label:'KPI',
       data:[
-        16,
         15,
-        14,
-        5,
-        20,
+        15,
+        15,
+        15,
+        15,
       ],
       //backgroundColor:'green',
       backgroundColor:[
@@ -52,9 +52,9 @@ let massPopChart = new Chart(myChart, {
     },
     layout:{
       padding:{
-        left:10,
+        left:0,
         right:0,
-        bottom:0,
+        bottom:250,
         top:0
       }
     },
