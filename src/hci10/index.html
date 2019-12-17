@@ -1,863 +1,320 @@
 <!DOCTYPE html>
-<html lang="en" class="k-webkit k-webkit78">
-
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Quản lý nhãn hàng - User: nhanvienA</title>
+  <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
 
-    <meta name="description" content="overview &amp; stats">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- basic styles -->
-
-    <link href="./public/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./public/font-awesome.min.css">
-
-    <script type="text/javascript" async="" src="./public/analytics.js.download"></script>
-    <script src="./public/jquery.confirm.js.download"></script>
-    <script src="./public/jquery.confirm.min.js.download"></script>
-    <script src="./public/grid.rowspan.js.download"></script>
-
-    <link href="./public/bootstrap.min(1).css" rel="stylesheet">
-    <link href="./public/bootstrap-theme.min.css" rel="stylesheet">
-
-    <!-- page specific plugin styles -->
-    <link rel="stylesheet" href="./public/jquery-ui-1.10.3.full.min.css">
-    <link rel="stylesheet" href="./public/datepicker.css">
-    <link rel="stylesheet" href="./public/bootstrap-timepicker.css">
-    <link rel="stylesheet" href="./public/ui.jqgrid.css">
-
-    <!-- fonts -->
-
-    <link rel="stylesheet" href="./public/ace-fonts.css">
-
-    <!-- ace styles -->
-
-    <link rel="stylesheet" href="./public/ace.min.css">
-    <link rel="stylesheet" href="./public/ace-rtl.min.css">
-    <link rel="stylesheet" href="./public/ace-skins.min.css">
-
-    <script src="./public/ace-extra.min.js.download"></script>
-
-    <script type="text/javascript">
-        window.jQuery || document.write("<script src='/Content/themes/ace/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
-    </script>
-    <script src="./public/jquery-2.0.3.min.js.download"></script>
-
-    <script type="text/javascript">
-        if ("ontouchend" in document) document.write("<script src='/Content/themes/ace/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
-    </script>
-
-    <script src="./public/typeahead-bs2.min.js.download"></script>
-    <script src="./public/bootstrap.min.btn.js.download"></script>
-    <!-- page specific plugin scripts -->
-
-    <script src="./public/bootstrap-datepicker.min.js.download"></script>
-    <script src="./public/bootstrap-timepicker.min.js.download"></script>
-    <script src="./public/jquery.jqGrid.min.js.download"></script>
-    <script src="./public/grid.locale-en.js.download"></script>
-
-    <!-- page specific plugin scripts -->
-    <script src="./public/jquery-ui-1.10.3.custom.min.js.download"></script>
-    <script src="./public/jquery.ui.touch-punch.min.js.download"></script>
-    <script src="./public/jquery.slimscroll.min.js.download"></script>
-    <script src="./public/jquery.easy-pie-chart.min.js.download"></script>
-    <script src="./public/jquery.sparkline.min.js.download"></script>
-    <script src="./public/jquery.flot.min.js.download"></script>
-    <script src="./public/jquery.flot.pie.min.js.download"></script>
-    <script src="./public/jquery.flot.resize.min.js.download"></script>
-    <script src="./public/fuelux.tree.min.js.download"></script>
-
-    <script type="text/javascript" src="./public/jquery.form.js.download"></script>
-    <script type="text/javascript" src="./public/jquery.tmpl.js.download"></script>
-
-    <!-- ace scripts -->
-
-    <script type="text/javascript" src="./public/ace-elements.min.js.download"></script>
-    <script type="text/javascript" src="./public/ace.min.js.download"></script>
-
-    <!-- tamo crm-->
-    <script src="./public/bootbox.min.js.download"></script>
-
-    <!-- tamo css -->
-    <link rel="stylesheet" href="./public/tamo.css">
-    <link href="./public/jquery.scombobox.min.css" rel="stylesheet">
-    <script src="./public/jquery.scombobox.js.download"></script>
-    <link href="./public/chosen.css" rel="stylesheet">
-    <script src="./public/chosen.jquery.js.download"></script>
-
-    <link href="./public/jquery.cleditor.css" rel="stylesheet">
-    <script type="text/javascript" src="./public/jquery.cleditor.min.js.download"></script>
-    <link href="./public/customize.css" rel="stylesheet">
-
-    <script src="./public/firebase.js.download"></script>
-
-    <script src="./public/jquery.noty.js.download"></script>
-    <script src="./public/topCenter.js.download"></script>
-    <script src="./public/topRight.js.download"></script>
-    <script src="./public/topLeft.js.download"></script>
-    <script src="./public/default.js.download"></script>
-    <style type="text/css">
-        .jqstooltip {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            visibility: hidden;
-            background: rgb(0, 0, 0) transparent;
-            background-color: rgba(0, 0, 0, 0.6);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-            -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-            color: white;
-            font: 10px arial, san serif;
-            text-align: left;
-            white-space: nowrap;
-            padding: 5px;
-            border: 1px solid white;
-            z-index: 10000;
-        }
-
-        .jqsfield {
-            color: white;
-            font: 10px arial, san serif;
-            text-align: left;
-        }
-    </style>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- IonIcons -->
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+<!--  <script src="//code.jquery.com/jquery-1.10.2.js"></script>-->
+<!--  <script>-->
+<!--    $(function(){-->
+<!--      $("#nav").load("nav.html");-->
+<!--    });-->
+<!--  </script>-->
 </head>
 
-<body style="">
-    <input type="hidden" name="menu_ip_local" id="menu_ip_local" value="113.185.45.90">
-    <div class="navbar navbar-default" id="navbar">
-        <script type="text/javascript">
-            try {
-                ace.settings.check('navbar', 'fixed');
-            } catch (e) { }
-        </script>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to to the body tag
+to get the desired effect
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Navbar -->
+  <div id="nav">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
 
-        <div class="navbar-container" id="navbar-container">
-            <div class="navbar-header pull-left">
-                <a href="" class="navbar-brand">
-                    <small>
-                        Công ty thuốc ABC
-                    </small>
-                </a>
-                <!-- /.brand -->
-            </div>
-            <!-- /.navbar-header -->
-            <div class="navbar-header pull-left">
-                <div style="margin-top: 7px;">
-                </div>
-                <!-- /.brand -->
-            </div>
-            <!-- /.navbar-header -->
-
-            <div class="navbar-header pull-right" role="navigation">
-                <ul class="nav ace-nav">
-
-                    <li>
-                        <input type="button" class="btn btn-success" style="margin: 3px 20px; display:none"
-                            id="btn_active_autocall" value="Bấm để tham gia AutoCall">
-                        <input type="button" class="btn btn-danger" style="margin: 3px 20px; display:none"
-                            id="btn_deactive_autocall" value="Bấm để dừng auto call">
-                        <input type="button" class="btn btn-default"
-                            style="margin: 3px 20px; display:none; background-color: #3F51B5!important"
-                            id="btn_complete_autocall" value="Đã hoàn thành phiên AutoCall">
-                    </li>
-                    <li class="light-blue" style="width: 200px; padding: 5px 0 0 15px; margin-right: 20px;">
-
-                        <select class="form-control" id="dropUserBranch" name="dropUserBranch">
-                            <option selected="selected" value="0">Nhãn hàng A</option>
-                            <option value="1">Nhãn hàng B</option>
-                            <option value="2">Nhãn hàng C</option>
-                        </select>
-
-                    </li>
-
-                    <li class="light-blue">
-                        <a data-toggle="dropdown" href=""
-                            class="dropdown-toggle">
-                            <span class="user-info">
-                                <small>Welcome,</small>
-                                nhanvienA
-                            </span>
-
-                            <i class="icon-caret-down"></i>
-                        </a>
-                        <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-                            <li>
-                                <a href="#">
-                                    <i class="icon-cog"></i>
-                                    Thay đối mật khẩu
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon-off"></i>
-                                    Đăng xuất
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-header -->
+      <!-- SEARCH FORM -->
+      <form class="form-inline ml-3">
+        <div class="input-group input-group-sm">
+          <input class="form-control form-control-navbar" type="search" placeholder="Tìm kiếm" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-navbar" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
         </div>
-        <!-- /.container -->
-    </div>
+      </form>
+    </nav>
+  </div>
+  <!-- /.navbar -->
 
-    <div class="main-container" id="main-container">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/Capture1.JPG" alt="Company Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">HCI_10 Company</span>
+    </a>
 
-        <script type="text/javascript">
-            try {
-                ace.settings.check('main-container', 'fixed');
-            }
-            catch (e) {
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
 
-            }
-        </script>
-
-        <div class="main-container-inner">
-            <a class="menu-toggler" id="menu-toggler" href="">
-                <span class="menu-text"></span>
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link active">
+              <i class="fas fa-home nav-icon"></i>
+              <p>Trang chủ</p>
             </a>
-            <div class="sidebar" id="sidebar">
+          </li>
+          <li class="nav-header">NHÂN VIÊN</li>
+          <li class="nav-item">
+            <a href="./employees_index.html" class="nav-link">
+              <i class="fas fa-user nav-icon"></i>
+              <p>Nhân viên</p>
+            </a>
+          </li>
+          <li class="nav-header">QUẢN LÝ</li>
+          <li class="nav-item">
+          <a href="./manage_index.html" class="nav-link">
+            <i class="fas fa-user-tie nav-icon"></i>
+            <p>Quản lý</p>
+          </a>
+        </li>
 
-                <script type="text/javascript">
-                    try {
-                        ace.settings.check('sidebar', 'fixed');
-                    } catch (e) { }
-                </script>
-                <!-- #sidebar-shortcuts -->
-
-                <ul class="nav nav-list">
-                    <li class="open"><a href="" class="dropdown-toggle"><i
-                            class="icon-fire"></i><span class="menu-text">Tư vấn sản phẩm</span><b
-                            class="arrow icon-angle-down"></b></a>
-                        <ul class="submenu" id="32" style="display:block;">
-                            <li class="open"><a href="index.html" class=""><span class="menu-text">Danh sách khách hàng</span></a></li>
-                            <li class="open"><a href="themcontact.html" class=""><span class="menu-text menu-active">Thêm contact</span></a></li>
-                            <li class="open"><a href="lichlamviec.html" class=""><span class="menu-text menu-active">Lịch làm việc</span></a></li>
-                        </ul>
-                    </li>
-                    <li class="open"><a href="" class="dropdown-toggle"><i
-                            class="icon-dashboard"></i><span class="menu-text">Báo cáo</span><b
-                            class="arrow icon-angle-down"></b></a>
-                        <ul class="submenu" id="83" style="display:none;">
-                            <!-- <li class="open"><a href="baocaohieuqualamviec.html" class=""><span class="menu-text menu-active" >Báo cáo hiệu quả làm việc</span></a></li> -->
-                            <li class="open"><a href="baocaochatluonggapgo.html" class=""><span class="menu-text menu-active" >Báo cáo chất lượng gặp gỡ khách hàng</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-
-                <div class="sidebar-collapse" id="sidebar-collapse">
-                    <i class="icon-double-angle-left" data-icon1="icon-double-angle-left"
-                        data-icon2="icon-double-angle-right"></i>
-                </div>
-
-                <style>
-                    .dropdown-toggle {
-                        color: #DBAC69;
-                        font-weight: bold;
-                    }
-
-                    .menu-text {
-                        color: #DBAC69;
-                    }
-
-                    .menu-active {
-                        font-weight: bold;
-                        text-decoration: underline;
-                    }
-                </style>
-
-
-            </div>
-
-            <div class="main-content">
-
-                <div class="breadcrumbs" id="breadcrumbs">
-                    <script type="text/javascript">
-                        try {
-                            ace.settings.check('breadcrumbs', 'fixed');
-                        } catch (e) { }
-                    </script>
-
-                    <ul class="breadcrumb">
-                        <li>
-                            <i class="icon-home home-icon"></i>
-                            <a href="">Trang chủ</a>
-                        </li>
-
-                        <li>
-                            <a href="javascript:void(0);">Danh mục</a>
-                        </li>
-                        <li class="active">Danh sách khách hàng</li>
-                    </ul>
-                </div>
-
-                <div class="page-content">
-                    <div class="page-header">
-                        <h1>Danh sách khách hàng</h1>
-                    </div>
-                    <div class="row" style="height: 50px">
-                        <div class="col-sm-12">
-                            <div class="col-sm-3">
-                                <div class="col-sm-2" style="line-height:2">
-                                    <label> Ngày</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <input class="form-control" id="FDate" name="FDate"
-                                        style="height: 30px !important; float: right" type="text" value="23/10/2019">
-                                </div>
-                            </div>
-                            <!-- <div class="col-sm-4">
-                                <button type="button" class="btn-import btn-primary" id="btnReport"
-                                    style="height:30px">Xuất báo cáo</button>
-                                <button type="button" class="btn-import btn-primary gj-hidden" id="btnExportExcel"
-                                    style="height:30px; display:none">Excel</button>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="space-4"></div>
-                    <div class="row">
-                        <div id="loading" style="display: none;">
-                            <p><img src="./public/loading.gif"></p>
-                        </div>
-                        <div id="tableResult" style="width:100%; height:500px">
-
-
-                            <div class="form-group">
-                                <div class="k-widget k-grid" id="grid" style="" data-role="grid">
-                                    <div class="k-header k-grid-toolbar k-grid-top"><button
-                                            class="k-button k-button-icontext k-grid-excel"><span
-                                                class="k-icon k-i-excel"></span>Xuất báo cáo</button></div>
-                                    <div class="k-grid-header" style="padding-right: 17px;">
-                                        <div class="k-grid-header-wrap" data-role="resizable">
-                                            <table role="grid">
-                                                <colgroup>
-                                                    <col style="width:50px">
-                                                    <col style="width:200px">
-                                                    <col style="width:200px">
-                                                    <col style="width:150px">
-                                                    <col style="width:150px">
-                                                    <col style="width:150px">
-                                                    <col style="width:200px">
-                                                </colgroup>
-                                                <thead role="rowgroup">
-                                                    <tr role="row">
-                                                        <th class="k-header" data-field="STT" data-index="0"
-                                                            data-title="STT" scope="col" data-role="columnsorter"><a
-                                                                class="k-link" href="">STT</a>
-                                                        </th>
-                                                        <th class="k-header" data-field="TVTS" data-index="1"
-                                                            data-title="TVTS" scope="col" data-role="columnsorter"><a
-                                                                class="k-link" href="">Tên khách hàng</a>
-                                                        </th>
-                                                        <th class="k-header" data-field="StartTime" data-index="2"
-                                                            data-title="Thời gian truy cập CRM lần đầu trong ngày"
-                                                            scope="col" data-role="columnsorter"><a class="k-link"
-                                                                href="">SĐT</a></th>
-                                                        <th class="k-header" data-field="CountL3" data-index="3"
-                                                            data-title="Số L3 phát sinh" scope="col"
-                                                            data-role="columnsorter"><a class="k-link" href="">Địa
-                                                                chỉ</a></th>
-                                                        <th class="k-header" data-field="CountL5" data-index="4"
-                                                            data-title="Số L5 phát sinh" scope="col"
-                                                            data-role="columnsorter"><a class="k-link" href="">Email</a>
-                                                        </th>
-                                                        <th class="k-header" data-field="CountL6" data-index="5"
-                                                            data-title="Số L6 phát sinh" scope="col"
-                                                            data-role="columnsorter"><a class="k-link" href="">Ghi
-                                                                chú</a></th>
-                                                        <th class="k-header" data-field="CountCts" data-index="6"
-                                                            data-title="Số contacts chăm sóc trong ngày" scope="col"
-                                                            data-role="columnsorter"><a class="k-link" href="">Đã ký hợp
-                                                                đồng</a></th>
-                                                    </tr>
-                                                </thead>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="k-grid-content" style="height:600px">
-                                        <table role="grid" data-role="selectable" class="k-selectable"
-                                            aria-multiselectable="true">
-                                            <colgroup>
-                                                <col style="width:50px">
-                                                <col style="width:200px">
-                                                <col style="width:200px">
-                                                <col style="width:150px">
-                                                <col style="width:150px">
-                                                <col style="width:150px">
-                                                <col style="width:200px">
-                                            </colgroup>
-                                            <tbody role="rowgroup">
-                                                <tr data-uid="cb6df931-e23f-468f-97f0-0b105038579c" role="row">
-                                                    <td role="gridcell">1</td>
-                                                    <td role="gridcell">Nguyễn Văn A</td>
-                                                    <td role="gridcell">0912345678</td>
-                                                    <td role="gridcell">Hai Bà Trưng, Hà Nội</td>
-                                                    <td role="gridcell">abc@gmail.com</td>
-                                                    <td role="gridcell"></td>
-                                                    <td role="gridcell">Chưa</td>
-                                                </tr>
-                                                <tr data-uid="cb6df931-e23f-468f-97f0-0b105038579c" role="row">
-                                                    <td role="gridcell">2</td>
-                                                    <td role="gridcell">Phạm Văn B</td>
-                                                    <td role="gridcell">0657197685</td>
-                                                    <td role="gridcell">Cầu Giấy, Hà Nội</td>
-                                                    <td role="gridcell">xyz@gmail.com</td>
-                                                    <td role="gridcell"></td>
-                                                    <td role="gridcell">Rồi</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="k-pager-wrap k-grid-pager k-widget" data-role="pager"><a
-                                            class="k-link k-pager-nav k-state-disabled k-pager-first" data-page="1"
-                                            href=""
-                                            title="Go to the first page" tabindex="-1"><span
-                                                class="k-icon k-i-seek-w">seek-w</span></a><a
-                                            class="k-link k-pager-nav k-state-disabled" data-page="1"
-                                            href=""
-                                            title="Go to the previous page" tabindex="-1"><span
-                                                class="k-icon k-i-arrow-w">arrow-w</span></a>
-                                        <ul class="k-pager-numbers k-reset">
-                                            <li class="k-current-page"><span class="k-link k-pager-nav">1</span></li>
-                                            <li><span class="k-state-selected">1</span></li>
-                                        </ul><a class="k-link k-pager-nav k-state-disabled" data-page="1"
-                                            href=""
-                                            title="Go to the next page" tabindex="-1"><span
-                                                class="k-icon k-i-arrow-e">arrow-e</span></a><a
-                                            class="k-link k-pager-nav k-state-disabled k-pager-last" data-page="1"
-                                            href=""
-                                            title="Go to the last page" tabindex="-1"><span
-                                                class="k-icon k-i-seek-e">seek-e</span></a><span
-                                            class="k-pager-info k-label"></span>
-                                    </div>
-                                </div>
-                                <script>
-                                    jQuery(function () {
-                                        jQuery("#grid").kendoGrid({
-                                            "columns": [{ "title": "STT", "width": "50px", "field": "STT", "encoded": true }, { "title": "Tên khách hàng", "width": "200px", "field": "Name", "encoded": true }, { "title": "SĐT", "width": "200px", "field": "Phone", "encoded": true }, { "title": "Địa chỉ", "width": "150px", "field": "Address", "encoded": true }, { "title": "Email", "width": "150px", "field": "Email", "encoded": true }, { "title": "Ghi chú", "width": "150px", "field": "Note", "encoded": true }, { "title": "Ký hợp đồng", "width": "200px", "field": "Contracted", "encoded": true }], "pageable": { "buttonCount": 10, "messages": { "display": "", "empty": "" } }, "sortable": true, "selectable": "Multiple, Row", "excel": { "proxyURL": "/Admin/Report/Excel_Export_Save", "fileName": "Export to excel", "allPages": true }, "resizable": true, "toolbar": { "command": [{ "name": null, "buttonType": "ImageAndText", "text": "Export to Excel" }] }, "dataSource": {
-                                                "type": (function () { if (kendo.data.transports['aspnetmvc-ajax']) { return 'aspnetmvc-ajax'; } else { throw new Error('The kendo.aspnetmvc.min.js script is not included.'); } })(), "transport": { "read": { "url": "" }, "prefix": "" }, "pageSize": 400, "page": 1, "total": 1, "schema": { "data": "Data", "total": "Total", "errors": "Errors", "model": { "fields": { "Name": { "type": "string" }, "Phone": { "type": "string" }, "Address": { "type": "string" }, "Email": { "type": "string" }, "Note": { "type": "string" }, "Contracted": { "type": "boolean" }, "STT": { "type": "number" } } } }, "data": {
-                                                    "Data": [{
-                                                        "Name": "Nguyễn Văn A",
-                                                        "Phone": "0912345678",
-                                                        "Address": "Hai Bà Trưng, Hà Nội",
-                                                        "Email": "abc@gmail.com",
-                                                        "Note": "",
-                                                        "Contracted": false,
-                                                        "STT": 1
-                                                    },
-                                                    {
-                                                        "Name": "Phạm Văn B",
-                                                        "Phone": "0934256574",
-                                                        "Address": "Cầu Giấy, Hà Nội",
-                                                        "Email": "xyz@gmail.com",
-                                                        "Note": "",
-                                                        "Contracted": true,
-                                                        "STT": 2
-                                                    }
-                                                    ], "Total": 2
-                                                }
-                                            }
-                                        });
-                                    });
-                                </script>
-
-                            </div>
-                            <script type="text/javascript">
-                                $(document).ready(function () {
-                                    $('#loading').hide();
-                                });
-                            </script>
-                            <style>
-                                #grid .k-grid-header .k-header {
-                                    background-color: #DBAC69;
-                                    color: #fff;
-                                    text-align: center;
-                                }
-
-                                #grid .k-link {
-                                    color: #fff;
-                                    /*text-overflow: ellipsis;*/
-                                    overflow: visible;
-                                    white-space: normal;
-                                    text-align: center;
-                                }
-
-                                #grid .k-grid,
-                                .k-grid * {
-                                    border-color: #000;
-                                    text-align: center;
-                                }
-
-                                #grid td {
-                                    border-width: thin;
-                                    border-color: #d9d9d9;
-                                    text-align: center;
-                                }
-
-                                #grid .k-grid-top {
-                                    height: 40px;
-                                }
-                            </style>
-                        </div>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $('#loading').hide();
-                        $("#FDate").datepicker({ format: 'dd/mm/yyyy', autoclose: true });
-                        $("#TDate").datepicker({ format: 'dd/mm/yyyy', autoclose: true });
-                        $('#Group').chosen();
-                    });
-                    
-                    $('#btnExportExcel').click(function (e) {
-                        $.ajax({
-                            type: "POST",
-                            url: "/admin/api/report/ExportExcelBC14",
-                        });
-                    });
-                </script>
-                <style>
-                    #loading {
-                        height: 200px;
-                        width: 200px;
-                        display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        z-index: 2;
-                    }
-                </style>
-
-            </div>
-            <!-- /.main-content -->
-            <!-- /#ace-settings-container -->
-        </div>
-        <!-- /.main-container-inner -->
-
-        <a href="" id="btn-scroll-up"
-            class="btn-scroll-up btn btn-sm btn-inverse">
-            <i class="icon-double-angle-up icon-only bigger-110"></i>
-        </a>
+          <li class="nav-header">TRANG CHỦ CHUNG</li>
+          <li class="nav-item">
+            <a href="./bo_phan_kinh_doanh_index.html" class="nav-link">
+              <i class="fas fa-money-check nav-icon"></i>
+              <p>Bộ phận kinh doanh</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.main-container -->
+    <!-- /.sidebar -->
+  </aside>
 
-    <link rel="stylesheet" href="./public/kendo.material.min.css">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Bộ phận kinh doanh - Các nhãn hàng</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item active">Thống kê</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
 
-    <link rel="stylesheet" href="./public/kendo.common-material.min.css">
-    <script src="./public/kendo.core.min.js.download" type="text/javascript"></script>
-    <script src="./public/kendo.all.min.js.download" type="text/javascript"></script>
-    <script src="./public/kendo.aspnetmvc.min.js.download" type="text/javascript"></script>
-    <script src="./public/jszip.min.js.download" type="text/javascript"></script>
+    <!-- Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
 
-    <style>
-        .menu-text {
-            color: #111 !important;
-        }
-
-        .ui-jqgrid .ui-jqgrid-title {
-            color: #111 !important;
-        }
-
-        .btn-primary {
-            color: #111 !important;
-        }
-
-        .navbar-brand {
-            color: #111 !important;
-        }
-
-        .user-info {
-            color: #111 !important;
-        }
-    </style>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async="" src="./public/js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-132871673-1');
-        gtag('set', { 'user_id': 'nhanvienA' }); // Set the user ID using signed-in user_id.
-    </script>
-    <!-- END - Global site tag (gtag.js) - Google Analytics -->
-
-    <style>
-        .dialog-ovelay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.50);
-            z-index: 999999;
-        }
-
-        .dialog-ovelay .dialog {
-            position: fixed;
-            width: 500px;
-            margin: 100px auto 0;
-            left: 0;
-            right: 0;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, .2);
-            border-radius: 8px;
-            overflow: hidden;
-            /*width: 500px;
-            margin: 100px auto 0;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0,0,0,.2);
-            border-radius: 8px;
-            overflow: hidden;*/
-        }
-
-        .dialog-ovelay .dialog header {
-            padding: 10px 8px;
-            background-color: #f6f7f9;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .dialog-ovelay .dialog header h3 {
-            font-size: 14px;
-            margin: 0 auto;
-            color: #555;
-            display: inline-block;
-            font-weight: bold;
-        }
-
-        .dialog-ovelay .dialog header .fa-close {
-            float: right;
-            color: #c4c5c7;
-            cursor: pointer;
-            transition: all .5s ease;
-            padding: 0 2px;
-            border-radius: 1px;
-        }
-
-        .dialog-ovelay .dialog header .fa-close:hover {
-            color: #b9b9b9;
-        }
-
-        .dialog-ovelay .dialog header .fa-close:active {
-            box-shadow: 0 0 5px #673AB7;
-            color: #a2a2a2;
-        }
-
-        .dialog-ovelay .dialog .dialog-msg {
-            padding: 12px 10px;
-        }
-
-        .dialog-ovelay .dialog .dialog-msg p {
-            margin: 0;
-            font-size: 15px;
-            color: #333;
-        }
-
-        .dialog-ovelay .dialog footer {
-            border-top: 1px solid #e5e5e5;
-            padding: 8px 10px;
-        }
-
-        .dialog-ovelay .dialog footer .controls {}
-
-        .dialog-ovelay .dialog footer .controls .button {
-            padding: 5px 15px;
-            border-radius: 3px;
-            width: 49%;
-            margin-left: 2px;
-        }
-
-        .button {
-            cursor: pointer !important;
-        }
-
-        .button-default {
-            background-color: rgb(248, 248, 248);
-            border: 1px solid rgba(204, 204, 204, 0.5);
-            color: #5D5D5D;
-        }
-
-        .button-danger {
-            background-color: #FFCC00;
-            border: 1px solid #d32f2f;
-            color: #000000;
-        }
-
-        #txtReason {
-            width: 95%;
-            margin: 0 auto 10px;
-            border-radius: 3px !important;
-        }
-    </style>
-    <!-- END Autocall -->
-
-    <!-- Event Message Box -->
-    <!-- Modal Message -->
-    <div class="modal fade" id="popup_event_message" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width: 1000px !important; left: auto !important;">
-            <div class="modal-content">
-                <div class="modal-header" style="height: 50px">
-                    <div class="col-md-11 md_no_padding">
-                        <h4 class="modal-title" style="font-weight: bold;">Message</h4>
-                    </div>
-                    <div class="col-md-1 md_no_padding">
-                        <button type="button" class="close" aria-label="Close" id="btn_event_message_close1">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-0">
+                <div class="d-flex justify-content-between">
+                  <h3 class="card-title">Tình hình kinh doanh Các nhãn hàng</h3>
+                  <a href="javascript:void(0);"></a>
                 </div>
-                <div class="modal-body" id="div_event_message_content">
+              </div>
+              <div class="card-body">
+                <div class="d-flex">
+                  <p class="d-flex flex-column">
+                    <span class="text-bold text-lg">1,808,230.00</span>
+                    <span>Danh số</span>
+                  </p>
+                  <p class="ml-auto d-flex flex-column text-right">
+                    <span class="text-success">
+                      <i class="fas fa-arrow-up"></i> 33.1%
+                    </span>
+                    <span class="text-muted">Tháng trước</span>
+                  </p>
+                </div>
+                <!-- /.d-flex -->
 
+                <div class="position-relative mb-4">
+                  <canvas id="sales-chart" height="200"></canvas>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="btn_event_message_close2">Đóng</button>
+
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="mr-2">
+                    <i class="fas fa-square text-primary"></i> Hiện tại
+                  </span>
+
+                  <span>
+                    <i class="fas fa-square text-gray"></i> Năm ngoái
+                  </span>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- END Modal -->
+            <!-- /.col-md-6 -->
+          </div>
 
-    <!-- END Event Message Box -->
-    <div class="datepicker datepicker-dropdown dropdown-menu">
-        <div class="datepicker-days" style="display: block;">
-            <table class=" table-condensed">
-                <thead>
-                    <tr>
-                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
-                        <th colspan="5" class="switch">October 2019</th>
-                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
-                    </tr>
-                    <tr>
-                        <th class="dow">Su</th>
-                        <th class="dow">Mo</th>
-                        <th class="dow">Tu</th>
-                        <th class="dow">We</th>
-                        <th class="dow">Th</th>
-                        <th class="dow">Fr</th>
-                        <th class="dow">Sa</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="day old">29</td>
-                        <td class="day old">30</td>
-                        <td class="day">1</td>
-                        <td class="day">2</td>
-                        <td class="day">3</td>
-                        <td class="day">4</td>
-                        <td class="day">5</td>
-                    </tr>
-                    <tr>
-                        <td class="day">6</td>
-                        <td class="day">7</td>
-                        <td class="day">8</td>
-                        <td class="day">9</td>
-                        <td class="day">10</td>
-                        <td class="day">11</td>
-                        <td class="day">12</td>
-                    </tr>
-                    <tr>
-                        <td class="day">13</td>
-                        <td class="day">14</td>
-                        <td class="day">15</td>
-                        <td class="day">16</td>
-                        <td class="day">17</td>
-                        <td class="day">18</td>
-                        <td class="day">19</td>
-                    </tr>
-                    <tr>
-                        <td class="day">20</td>
-                        <td class="day">21</td>
-                        <td class="day">22</td>
-                        <td class="day active">23</td>
-                        <td class="day">24</td>
-                        <td class="day">25</td>
-                        <td class="day">26</td>
-                    </tr>
-                    <tr>
-                        <td class="day">27</td>
-                        <td class="day">28</td>
-                        <td class="day">29</td>
-                        <td class="day">30</td>
-                        <td class="day">31</td>
-                        <td class="day new">1</td>
-                        <td class="day new">2</td>
-                    </tr>
-                    <tr>
-                        <td class="day new">3</td>
-                        <td class="day new">4</td>
-                        <td class="day new">5</td>
-                        <td class="day new">6</td>
-                        <td class="day new">7</td>
-                        <td class="day new">8</td>
-                        <td class="day new">9</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="7" class="today" style="display: none;">Today</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-        <div class="datepicker-months" style="display: none;">
-            <table class="table-condensed">
-                <thead>
-                    <tr>
-                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
-                        <th colspan="5" class="switch">2019</th>
-                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span
-                                class="month">Mar</span><span class="month">Apr</span><span
-                                class="month">May</span><span class="month">Jun</span><span
-                                class="month">Jul</span><span class="month">Aug</span><span
-                                class="month">Sep</span><span class="month active">Oct</span><span
-                                class="month">Nov</span><span class="month">Dec</span></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="7" class="today" style="display: none;">Today</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-        <div class="datepicker-years" style="display: none;">
-            <table class="table-condensed">
-                <thead>
-                    <tr>
-                        <th class="prev" style="visibility: visible;"><i class="icon-arrow-left"></i></th>
-                        <th colspan="5" class="switch">2010-2019</th>
-                        <th class="next" style="visibility: visible;"><i class="icon-arrow-right"></i></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span
-                                class="year">2011</span><span class="year">2012</span><span
-                                class="year">2013</span><span class="year">2014</span><span
-                                class="year">2015</span><span class="year">2016</span><span
-                                class="year">2017</span><span class="year">2018</span><span
-                                class="year active">2019</span><span class="year old">2020</span></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th colspan="7" class="today" style="display: none;">Today</th>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-0">
+                <h3 class="card-title">Top nhân các nhãn hàng đạt doanh số cao nhất</h3>
+                <br>
+                <div class="card-tools">
+                  <a href="#" class="btn btn-tool btn-sm">
+                    <i class="fas fa-download"></i>
+                  </a>
+                  <a href="#" class="btn btn-tool btn-sm">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body table-responsive p-0">
+                <table class="table table-striped table-valign-middle">
+                  <thead>
+                  <tr>
+                    <th>Nhãn hàng</th>
+                    <th>Số lượng Sale</th>
+                    <th>KPI</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+                      TPCN - Phahacol
+                    </td>
+                    <td>12</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        12%
+                      </small>
+                      197.450.000 VNĐ
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      TPCN - Traphacoo
+                    </td>
+                    <td>10</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        0.5%
+                      </small>
+                      184.970.000 VNĐ
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>
+                      Thuốc thú y - Jerry
+                    </td>
+                    <td>21</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        10%
+                      </small>
+                      147.340.000 VNĐ
+                    </td>
+
+                  </tr>
+                  <tr>
+                    <td>
+                      Thuốc thú y - Remax
+                    </td>
+                    <td>15</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        2.5%
+                      </small>
+                      124.970.000 VNĐ
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      TPCN - RoseWet
+                    </td>
+                    <td>15</td>
+                    <td>
+                      <small class="text-success mr-1">
+                        <i class="fas fa-arrow-up"></i>
+                        3.2%
+                      </small>
+                      103.430.000 VNĐ
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- /.card -->
+
+            <!-- /.card -->
+          </div>
+          <!-- /.col-md-6 -->
+
+        <!-- /.row -->
+      </div>
+      <!-- /.container-fluid -->
     </div>
-    <div id="eJOY__extension_root" style="all: unset;"></div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- Main Footer -->
+
+</div>
+  <footer class="main-footer text-center">
+    <strong>HCI_10 &copy; 20191</strong>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="dist/js/demo.js"></script>
+<script src="dist/js/pages/dashboard3.js"></script>
 </body>
-
 </html>

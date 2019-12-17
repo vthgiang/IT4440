@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi Tiết Khách Hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>HCI_10 BKA Company | Quản lý nhãn hàng</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+    <!-- Navbar -->
+    <div id="nav"></div>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-link">
+            <img src="dist/img/AdminLTELogo.png" alt="Company Logo" class="brand-image img-circle elevation-3"
+                 style="opacity: .8">
+            <span class="brand-text font-weight-light">HCI_10 Company</span>
+        </a>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                         with font-awesome or any other icon font library -->
+                    <li class="nav-item">
+                        <a href="../../manage_index.html" class="nav-link active">
+                            <i class="far fa-circle nav-icon"></i>
+                            <p>Trang chủ - Quản lý</p>
+                        </a>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fas fa-calendar-alt"></i>
+                            <p>
+                                Công việc
+                                <i class="fas fa-angle-right right"></i>
+                                <span class="badge badge-info right">2</span>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="./employee_schedule.html" class="nav-link active">
+                                    <i class="fas fa-check-square nav-icon"></i>
+                                    <p>Phân công công việc</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="pages/layout/top-nav.html" class="nav-link">
+                                    <i class="fas fa-file-word nav-icon"></i>
+                                    <p>Xác nhận báo cáo</p>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/list_custom.html" class="nav-link">
+                            <i class="nav-icon fas fa-copy"></i>
+                            <p>Danh sách khách hàng</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1 class="m-0 text-dark">Chi tiết công việc</h1>
+                    </div><!-- /.col -->
+                    <div class="col-sm-6">
+                        <ol class="breadcrumb float-sm-right">
+                            <li class="breadcrumb-item"><a href="#">Quản lý A</a></li>
+                            <li class="breadcrumb-item"><a href="#">Công việc</a></li>
+                            <li class="breadcrumb-item active">Danh sách khách hàng</li>
+                        </ol>
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </div>
+        <!-- /.content-header -->
+        <hr>
+        <!-- Main content -->
+        <div class="main-content">
+
+
+            <div  class="row">
+                <table style="width: 100%; border: 1px solid #eee; border-collapse: collapse;" border="1">
+                    <tbody>
+                    <tr style="height: 35px;" role="row">
+                        <td style="text-align: center; width: 12.5%; font-weight: bold;">
+                            Nhân viên
+                        </td>
+                        <td style="text-align: center; width: 12.5%; font-weight: bold;">
+                            Nhãn hàng
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            Khối lượng công việc(*KH)
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            KH mới cần liên lạc
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            KH đã liên lạc
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            KH cần gặp mặt
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            KH chưa liên hệ
+                        </td>
+                        <td  style="text-align: center; width: 12.5%; font-weight: bold;">
+                            Phần trăm
+                        </td>
+
+                    </tr>
+                    <tr style ="height: 35px;" role="row">
+                        <td  style="text-align: center; width: 12.5%;">
+                            Nguyễn Thị Hồng
+                        </td>
+                        <td  style="text-align: center; width: 12.5%;">
+                            Thuốc rụng tóc
+                        </td>
+                        <td  style="text-align: center; width: 12.5%;">
+                            8
+                        </td>
+                        <td style="text-align: center; width: 12.5%;" >
+                            3
+                        </td>
+                        <td  style="text-align: center; width: 12.5%;">
+                            5
+                        </td>
+                        <td style="text-align: center; width: 12.5%;">
+                            3
+                        </td>
+                        <td style="text-align: center; width: 12.5%;">
+                            0
+                        </td>
+                        <td  style="text-align: center; width: 12.5%;">
+                            60%
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--            Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title" style="font-weight: bold; margin-left: 580px">Danh sách khách hàng</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <input type="text" placeholder="Searching...">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="col-sm-8">
+                            <button class="btn btn-sm btn-primary float-right">Thêm Khách Hàng.xlsx</button>
+                            <button class="btn btn-sm btn-primary float-right" data-toggle="modal" data-target="#add_new" style="margin-right: 5px">Thêm Khách Hàng</button>
+                            <button class="btn btn-sm btn-primary float-right" style="margin-right: 5px" data-toggle="modal" data-target="#goal">Mục Tiêu</button>
+                        </div>
+                    </div>
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th>Mã số khách hàng</th>
+                            <th>Tên khách hàng</th>
+                            <th>SĐT</th>
+                            <th>Địa chỉ</th>
+                            <th>Email</th>
+                            <th>Trạng thái</th>
+                            <th>Hành Động</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Nhà thuốc Hồng Mai</td>
+                            <td>0398777888</td>
+                            <td>Hồng Mai, Hà Nội</td>
+                            <td>hongmai@gmail.com</td>
+                            <td>Đã liên hệ - Gặp mặt</td>
+                            <td>
+                                <button type="button" class="btn btn-sm text-center btn-primary"><a href="contract.html" style="color: white"> Duyệt Hợp Đồng</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>Nhà thuốc Mai</td>
+                            <td>0396166238</td>
+                            <td>Thái Hà, Hà Nội</td>
+                            <td>thaiha@gmail.com</td>
+                            <td>Đã liên hệ - Gặp mặt</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary"><a href="contract.html" style="color: white">Duyệt Hợp Đồng</a></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>Nhà thuốc 112</td>
+                            <td>0727273888</td>
+                            <td>Vinhome Skylake, Hà Nội</td>
+                            <td>112@gmail.com</td>
+                            <td>Đã liên hệ - Gặp mặt</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>004</td>
+                            <td>Nhà thuốc Hoa Dương</td>
+                            <td>0399528989</td>
+                            <td>Xã Đàn, Hà Nội</td>
+                            <td>hoaduong@gmail.com</td>
+                            <td>Đã liên hệ</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>005</td>
+                            <td>Nhà thuốc Hoa Hồng</td>
+                            <td>0346474738</td>
+                            <td>Xã Đàn, Hà Nội</td>
+                            <td>hoahong@gmail.com</td>
+                            <td>Đã liên hệ</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr><tr>
+                            <td>006</td>
+                            <td>Nhà thuốc Tân Dược 1</td>
+                            <td>0363737288</td>
+                            <td>Chùa Bộc, Hà Nội</td>
+                            <td>tanduoc1@gmail.com</td>
+                            <td>Mới</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr><tr>
+                            <td>007</td>
+                            <td>Nhà thuốc Tân Dược 2</td>
+                            <td>0363737288</td>
+                            <td>Hà Đông, Hà Nội</td>
+                            <td>tanduoc2@gmail.com</td>
+                            <td>Mới</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>008</td>
+                            <td>Nhà thuốc Tân Dược 3</td>
+                            <td>0363737288</td>
+                            <td>Cầu Giấy, Hà Nội</td>
+                            <td>tanduoc3@gmail.com</td>
+                            <td>Mới</td>
+                            <td>
+                                <button type="button" class="btn btn-sm btn-primary" href="#">Duyệt Hợp Đồng</button>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th>Mã số</th>
+                            <th>Tên nhân viên</th>
+                            <th>Nhãn hàng</th>
+                            <th>SĐT</th>
+                            <th>KL công việc</th>
+                            <th>Phần trăm</th>
+                            <th>Hành động</th>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- /.card-body -->
+                <!--    Popup Modal Thêm mới khách hàng     -->
+                <div id="add_new" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background: #1a252f">
+                                <h4 class="modal-title" style="color: white">Thêm Mới Khách Hàng</h4>
+                                <button type="button" class="close float-right" data-dismiss="modal" style="color: whitefactive">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row form-group">
+                                    <div class="col-4">
+                                        <label>Tên Khách Hàng</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-4">
+                                        <label>Số điện thoại:</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-4">
+                                        <label>Email:</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-4">
+                                        <label>Địa chỉ:</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-4">
+                                        <label>Trạng Thái:</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <select class="" >
+                                            <option>Mới</option>
+                                            <option>Đã Liên Hệ</option>
+                                            <option>Gặp Mặt</option>
+                                            <option>Cần Chăm Sóc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-sm btn-primary">Thêm Mới</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Modal-->
+                <div id="goal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background: #1a252f">
+                                <h4 class="modal-title" style="color: white">Mục Tiêu Trong Tháng</h4>
+                                <button type="button" class="close float-right" data-dismiss="modal" style="color: whitefactive">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row form-group">
+                                    <div class="col-6">
+                                        <label>Số Lượng Khách Hàng Mới:</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="" >
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                            <option>50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-6">
+                                        <label>Số Hợp Đồng:</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <select class="" >
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                            <option>50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-sm btn-primary">Cập nhật</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+
+    </div>
+    <footer class="main-footer text-center">
+        <strong>HCI_10 &copy; 20191 <a href="http://adminlte.io">HCI_10</a>.</strong>
+    </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="../dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="../plugins/chart.js/Chart.min.js"></script>
+<script src="../dist/js/demo.js"></script>
+<script src="../dist/js/pages/dashboard3.js"></script>
+
+<script>
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script>
+</body>
+</html>
