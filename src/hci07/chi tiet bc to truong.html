@@ -372,12 +372,18 @@
                     </div>
                 </div>
                 <div class="row" id="row_submit">
-                    <a href="Báo cáo tổ trưởng.html"><input style="margin-left: 900px; margin-top: 6px; " type="button" value="Quay lại" id="repost"></a>
-                    
+
+                  <input style="margin-left: 900px; margin-top: 6px;background-color: rgb(255, 0, 0) "  data-toggle="modal" data-target="#submit" type="button" value="Duyệt" id="repost">
+                  <input onclick="msg()" style=" margin-top:6px; background-color: rgb(0, 255, 13)" type="button" value="Quay lại" id="cancel">
                 </div>
             </form>
         </div>
 
+        <script>
+          function msg() {
+              window.location.assign("Báo cáo tổ trưởng.html")
+          }
+          </script>
       <!-- Body-->
       
 
@@ -443,7 +449,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Bạn đã hoàn tất việc tạo công việc</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Hoàn tất duyệt báo cáo</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
