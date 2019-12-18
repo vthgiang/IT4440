@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> HCI-05 Chỉnh sửa chi tiết công việc của nhân viên trong dự án</title>
+    <title> HCI-05 Chi tiết dự án</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -19,11 +19,6 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
-    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
-    <!-- Select2 -->
-    <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
-    <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
 
    <script src="https://kit.fontawesome.com/0fb6f52a65.js" crossorigin="anonymous"></script>
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +31,11 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
+<style>
+    a {
+        color: #fff;
+    }
+</style>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
@@ -90,7 +90,7 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Lã Mạnh Cường</span>
+                            <span class="hidden-xs">Nguyễn Chí Thanh</span>
 
 
                         </a>
@@ -100,7 +100,7 @@
                                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                                 <p>
-                                    Lã Mạnh Cường <br> Trưởng phòng hành chính nhân sự
+                                   Nguyễn Chí Thanh <br> NV phòng hành chính nhân sự
 
                                 </p>
                             </li>
@@ -129,22 +129,22 @@
         <section class="sidebar">
             <!-- Sidebar user panel -->
             <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p>Lã Mạnh Cường</p>
-                    <a href="#">Trưởng phòng</a>
-                </div>
-            </div>
+              <div class="pull-left image">
+                  <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              </div>
+              <div class="pull-left info">
+                  <p>Nguyễn Chí Thanh</p>
+                  <a href="#">Nhân viên</a>
+              </div>
+        </div>
             <!-- search form -->
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Tìm kiếm...">
                     <span class="input-group-btn">
-                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                  </button>
-                </span>
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
                 </div>
             </form>
             <!-- /.search form -->
@@ -204,7 +204,7 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Tạo công việc của dự án sản xuất vacxin cúm gà
+                Chi tiết dự án
             </h1>
             <ol class="breadcrumb">
                 <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
@@ -218,61 +218,107 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- /.box -->
+                    <div class="box box-default">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Thông tin chung về dự án sản xuất vacxin lợn tai xanh</h3>
 
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
+                                        class="fa fa-minus"></i></button>
+                            </div>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-2 ">Tên dự án:</div>
+                                <div class="col-md-10">Dự án sản xuất vacxin lợn tai xanh</div>
+                                <div class="col-md-2 ">Ngày bắt đầu:</div>
+                                <div class="col-md-10">10/12/2019</div>
+                                <div class="col-md-2 ">Deadline:</div>
+                                <div class="col-md-10">30/12/2019</div>
+                                <div class="col-md-2 ">Người chịu trách nhiệm:</div>
+                                <div class="col-md-10">Nguyễn Duy Kỳ</div>
+                                <div class="col-md-2 ">Mô tả:</div>
+                                <div class="col-md-10">Sản xuất vacxin để dập tắt dịch lợn tai xanh</div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-2"></div>
                     <div class="box">
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <form role="form">
-                                <div class="box-body">
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Tên công việc</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail0" value="Chuẩn bị giấy kiểm định chất lượng">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Tên dự án</label>
-                                        <input type="email" class="form-control" disabled id="exampleInputEmail1" value="Dự án sản xuất vacxin cúm gà" >
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Người chịu trách nhiệm</label>
-                                        <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">Lã Mạnh Cường</option>
-                                            <option>Nguyễn Chí Thanh</option>
-                                            <option>Nguyễn Duy Kỳ</option>
-                                            <option>Trịnh Duy Hưng</option>
-                                            <option>Kerlor Senglao</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Date:</label>
-                                        <div class="input-group date">
-                                            <div class="input-group-addon">
-                                                <i class="fa fa-calendar"></i>
-                                            </div>
-                                            <input type="text" class="form-control pull-right" id="datepicker" value="12/12/2019">
-                                        </div>
-                                        <!-- /.input group -->
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Mô tả</label>
-                                        <textarea rows="4" cols="50" class="form-control" >Lập mẫu giấy kiểm định chất lượng và lấy thông tin để hoàn thành</textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label style="width: 100%;">Người phối hợp thực hiện</label>
-                                        <select class="form-control select2" style="width: 95%; float: left;">
-                                            <option selected="selected">Lã Mạnh Cường</option>
-                                            <option>Nguyễn Chí Thanh</option>
-                                            <option>Nguyễn Duy Kỳ</option>
-                                            <option>Trịnh Duy Hưng</option>
-                                            <option>Kerlor Senglao</option>
-                                        </select>
-                                        <button class="btn"><i class="fa fa-plus"></i></button>
-                                    </div>
-                                </div>
 
-                                <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary btn-create">Cập nhật</button>
-                                </div>
-                            </form>
+<!--                            <button class="btn btn-success"><a href="create_task_project.html">Tạo công việc cho phòng ban</a>-->
+<!--                            </button>-->
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>Tên công việc</th>
+                                    <th>Phòng ban thực hiện</th>
+                                    <th>Ngày bắt đầu</th>
+                                    <th>Deadline</th>
+                                    <th>Trạng thái</th>
+                                    <th>Chi tiết</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nghiên cứu tìm ra vacxin</td>
+                                    <td>Phòng nghiên cứu sản xuất</td>
+                                    <td>10/12/2019</td>
+                                    <td>30/12/2019</td>
+                                    <td>Đã hoàn thành</td>
+                                    <td>
+                                       <button class="btn btn-info" disabled>Chi
+                                            tiết</button>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <
+                                    <td>Lập chiến lược marketing</td>
+                                    <td>Phòng marketing</td>
+                                    <td>10/12/2019</td>
+                                    <td>30/12/2019</td>
+                                    <td>Đã hoàn thành</td>
+                                    <td>
+                                       <button class="btn btn-info" disabled>Chi
+                                            tiết</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Lập chiến lược sale</td>
+                                    <td>Phòng sale</td>
+                                    <td>10/12/2019</td>
+                                    <td>30/12/2019</td>
+                                    <td>Đang thực hiện</td>
+                                    <td>
+                                       <button class="btn btn-info" disabled>Chi
+                                            tiết</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Xin cấp phép của bộ y tế</td>
+                                    <td>Phòng hành chính nhân sự</td>
+                                    <td>10/12/2019</td>
+                                    <td>30/12/2019</td>
+                                    <td>Đang thực hiện</td>
+                                    <td>
+                                        <a href="chi_tiet_cong_viec_du_an_3.html"><button class="btn btn-info">Chi
+                                            tiết</button></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -289,7 +335,7 @@
          <strong>HCI_05</strong>
     </footer>
 
-
+    <!-- Control Sidebar -->
     <!-- /.control-sidebar -->
     <!-- Add the sidebar's background. This div must be placed
          immediately after the control sidebar -->
@@ -301,8 +347,6 @@
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- Select2 -->
-<script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
 <!-- DataTables -->
 <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
@@ -314,50 +358,19 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<!-- bootstrap datepicker -->
-<script src="../../bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
 <!-- page script -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script>
-     $('.btn-create').on('click', function (e) {
-            e.preventDefault();
-            Swal.fire({
-                title: 'Bạn có chắc chắn muốn sửa?',
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Đồng ý',
-                cancelButtonText: 'Hủy',
-            }).then((result) => {
-                if (result.value) {
-                    Swal.fire(
-                        'Bạn đã sửa thành công',
-                    )
-                }
-            })
-
-        })
-
-
-    //Date picker
-    $('#datepicker').datepicker({
-        autoclose: true
-    })
-
     $(function () {
         $('#example1').DataTable()
         $('#example2').DataTable({
-            'paging'      : true,
+            'paging': true,
             'lengthChange': false,
-            'searching'   : false,
-            'ordering'    : true,
-            'info'        : true,
-            'autoWidth'   : false
+            'searching': false,
+            'ordering': true,
+            'info': true,
+            'autoWidth': false
         })
     })
-
-    //Initialize Select2 Elements
 </script>
 </body>
 </html>
