@@ -51,7 +51,7 @@
 						<li><a href="../work/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc cá nhân</span></a></li>
 						<li><a href="../workemployee/list.html"><i class="fa fa-shopping-cart"></i> <span>Quản lý công việc nhân viên</span></a></li>
 
-						<li><a href="setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
+						<li class="active"><a href="setciteria.html"><i class="fa fa-shopping-cart"></i> <span>KPI</span></a></li>
 
 
 						<li><a href="../report/list.html"><i class="fa fa-shopping-cart"></i> <span>Lập báo cáo</span></a></li>
@@ -73,7 +73,8 @@
 				<p style="float: left;line-height: 40px;"> Đánh giá nhân viên kế toán</p>
 
 				<div class="btn-add">
-					<div class="btn btn-success"  data-toggle="modal" data-target="#add">Thêm tiêu chí</div>
+					<!-- <div class="btn btn-success"  data-toggle="modal" data-target="#add">Thêm tiêu chí</div> -->
+					<a href="http://hci09.it4440.phungluan.com/thietlapkpicapbophan.html" target="_blank" class="btn btn-success">Thiết lập</a>
 				</div>
 
 
@@ -86,7 +87,7 @@
 							<th>Kỳ vọng</th>
 							<th>Trọng số</th>
 							<th>Thang điểm</th>
-							<th>Chỉnh sửa</th>
+							<th>Chi tiết</th>
 							<th>Xóa</th>
 						</tr>
 					</thead>
@@ -98,49 +99,50 @@
 							<td>2</td>
 							<td>10</td>
 							<td>
-								<div class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</div>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td>Tiêu chí về kết quả thực hiện</td>
-							<td>8</td>
-							<td>1</td>
-							<td>10</td>
-							<td>
-								<div class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</div>
-							</td>
-							<td>
-								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
-							</td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td>Tiêu chí về kết quả báo cáo</td>
-							<td>7</td>
-							<td>1</td>
-							<td>10</td>
-							<td>
-								<div class="btn btn-success" data-toggle="modal" data-target="#edit"> Sửa</div>
+								<a href="http://hci09.it4440.phungluan.com/chitietkpi.html" target="_blank" class="btn btn-success">Chi tiết</a>
 							</td>
 							<td>
 								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
 							</td>
 						</tr>
 
+						<tr>
+							<td>1</td>
+							<td>Tiêu chí về thời gian</td>
+							<td>7</td>
+							<td>2</td>
+							<td>10</td>
+							<td>
+								<a href="http://hci09.it4440.phungluan.com/chitietkpi.html" target="_blank" class="btn btn-success">Chi tiết</a>
+							</td>
+							<td>
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
+
+						<tr>
+							<td>1</td>
+							<td>Tiêu chí về thời gian</td>
+							<td>7</td>
+							<td>2</td>
+							<td>10</td>
+							<td>
+								<a href="http://hci09.it4440.phungluan.com/chitietkpi.html" target="_blank" class="btn btn-success">Chi tiết</a>
+							</td>
+							<td>
+								<div class="btn btn-danger" data-toggle="modal" data-target="#deleteModal"> Xóa</div>
+							</td>
+						</tr>
 
 					</tbody>
 				</table>
 
 				<ul class="pagination">
-				  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+				  <li class="page-item"><a class="page-link" href="#"><<</a></li>
 				  <li class="page-item"><a class="page-link" href="#">1</a></li>
 				  <li class="page-item"><a class="page-link" href="#">2</a></li>
 				  <li class="page-item"><a class="page-link" href="#">3</a></li>
-				  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+				  <li class="page-item"><a class="page-link" href="#">>></a></li>
 				</ul>
 			</div>
 		</div>
