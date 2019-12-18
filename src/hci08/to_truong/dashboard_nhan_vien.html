@@ -128,7 +128,7 @@
             <hr>
 
             <h3>Công việc đang làm</h3>
-            <table class="table table-borered table-hover">
+            <table class="table table-borered table-hover dang_lam">
                 <thead>
                 <th>STT</th>
                 <th>Tên</th>
@@ -294,6 +294,8 @@ function phan_chia_success() {
   alert('Success !');
   $('#modelFail').modal('hide');
   $('.cv_moi').remove();
+
+  $('.dang_lam tbody').append('<tr><td>3</td><td>Thuốc dạ dày</td><td>200 lít </td><td>0 lít</td><td>Pha chế: 0 lít<br>Chia liều: 0 lít<br>Đóng gói: 0 lít</td><td>20/11/2019</td><td>20/12/2019</td></tr>');
 
 }
 
