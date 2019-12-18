@@ -115,7 +115,7 @@
         <!-- Form -->
         <form class="mt-4 mb-3 d-md-none">
           <div class="input-group input-group-rounded input-group-merge">
-            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+            <input required="required" type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <span class="fa fa-search"></span>
@@ -135,6 +135,16 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link " href="../kpi/danhsachKPI.html">
+              <i class="nav-icon fas fa-chart-line"></i> Thiết lập KPI
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  " href="../marketing/report.html">
+              <i class="nav-icon fas fa-copy"></i> Báo cáo công việc
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link " href="../marketing/profile.html">
               <i class="ni ni-single-02 text-yellow"></i> Profile
             </a>
@@ -142,6 +152,8 @@
         </ul>
         <!-- Divider -->
         <hr class="my-3">
+        <!-- Heading -->
+        <h6 class="navbar-heading text-muted">Trưởng phòng marketing</h6>
       </div>
     </div>
   </nav>
@@ -158,7 +170,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-search"></i></span>
               </div>
-              <input class="form-control" placeholder="Search" type="text">
+              <input required="required" class="form-control" placeholder="Search" type="text">
             </div>
           </div>
         </form>
@@ -277,20 +289,20 @@
                 </div>
               </div>
               <div class="card-body">
-                <form>
+                <form id="forminput">
                   <h6 class="heading-small text-muted mb-4">Thông tin</h6>
                   <div class="pl-lg-4">
                     <div class="row">
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-username">Tên công việc</label>
-                          <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên công việc" value="...">
+                          <input required="required" type="text" id="input-username" class="form-control form-control-alternative" placeholder="Tên công việc" >
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-email">Người phụ trách</label>
-                          <input type="email" id="input-email" class="form-control form-control-alternative" value="Trương Thành Duy">
+                          <input required="required" type="text" id="input-email" class="form-control form-control-alternative" placeholder="Nhập tên người phụ trách">
                         </div>
                       </div>
                     </div>
@@ -298,13 +310,13 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-first-name">Người duyệt</label>
-                          <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Nguyễn Thị Mỹ Hằng">
+                          <input required="required" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Nhập tên người duyệt" >
                         </div>
                       </div>
                       <!-- <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-last-name">Last name</label>
-                          <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse">
+                          <input required="required" type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse">
                         </div>
                       </div> -->
                     </div>
@@ -312,15 +324,15 @@
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-first-name">Ngày nhận</label>
-                          <input class="form-control datepicker" placeholder="Select date" type="text" value="06/20/2019">
-                          <!-- <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Nguyễn Thị Mỹ Hằng"> -->
+                          <input required="required" class="form-control datepicker" placeholder="Select date" type="datetime-local" value="2019-11-11T13:45:00">
+                          <!-- <input required="required" type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="First name" value="Nguyễn Thị Mỹ Hằng"> -->
                         </div>
                       </div>
                       <div class="col-lg-6">
                         <div class="form-group">
                           <label class="form-control-label" for="input-last-name">Ngày giao</label>
-                          <input class="form-control datepicker" placeholder="Select date" type="text" value="06/20/2019">
-                          <!-- <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse"> -->
+                          <input required="required" class="form-control datepicker" placeholder="Select date" type="datetime-local" value="2019-11-11T13:45:00">
+                          <!-- <input required="required" type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Last name" value="Jesse"> -->
                         </div>
                       </div>
                     </div>
@@ -331,7 +343,7 @@
                   <div class="pl-lg-4">
                     <div class="form-group">
                       <label>Chi tiết công việc</label>
-                      <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Nhà thuốc Hòa Bình (221A, Khâm Thiên, Hà Nội) là nhà thuốc mới được thành lập, nhưng đã có được một tập khách hàng thường xuyên tương đối lớn. Đây là cơ hội hợp tác cho hai bên.</textarea>
+                      <textarea required="required" rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..."></textarea>
                     </div>
                   </div>
                   <div class="pl-lg-4">
@@ -345,10 +357,10 @@
                   <div class="pl-lg-4">
                     <div class="form-group">
                       <label>Nội dung phản hồi</label>
-                      <textarea rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Cố gắng hơn nữa nhé Duy!</textarea>
+                      <textarea required="required" rows="4" class="form-control form-control-alternative" placeholder="A few words about you ..."></textarea>
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-success" id="add">Duyệt</button>
+                      <button type="submit" class="btn btn-success" id="save">Duyệt</button>
                     </div>
                   </div>
                 </form>
@@ -400,21 +412,17 @@
       });
   </script>
   <script>
-    // $( "#approve" ).click(function() {
-    //   if (window.confirm('Sau khi duyệt, công việc sẽ hoàn thành. Bạn có muốn duyệt?')) {
-    //     window.location = "./tables.html";
-    //   }
-    // });
-    // $( "#cancel" ).click(function() {
-    //   if (window.confirm('Hãy cẩn thận! Bạn có muốn hủy công việc đã giao không?')) {
-    //     window.location = "./tables.html";
-    //   }
-    // });
-    $( "#add" ).click(function() {
-      if (window.confirm('Bạn có muốn giao công việc này không?')) {
-        window.location = "./tables.html";
-      }
-    });
+    
+    $(document).ready(function(){
+        $("#forminput").validate({
+        })
+        if($("#forminput").valid()) {
+          $( "#save" ).click(function() {
+          if (window.confirm('Bạn có muốn giao công việc này không?')) {
+            window.location = "./tables.html";}
+    });}
+    })
+    
   </script>
 </body>
 
