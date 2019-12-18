@@ -238,7 +238,8 @@
                                     <div class="form-group">
                                         <label>Người chịu trách nhiệm</label>
                                         <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">Lã Mạnh Cường</option>
+                                            <option></option>
+                                            <option>Lã Mạnh Cường</option>
                                             <option>Nguyễn Chí Thanh</option>
                                             <option>Nguyễn Duy Kỳ</option>
                                             <option>Trịnh Duy Hưng</option>
@@ -252,7 +253,7 @@
                                                 <i class="fa fa-calendar"></i>
                                             </div>
                                             <input type="text" class="form-control pull-right" id="datepicker"
-                                                   value="11/27/2019">
+                                                   >
                                         </div>
                                         <!-- /.input group -->
                                     </div>
@@ -264,7 +265,8 @@
                                         <label for="exampleInputFile" style="width: 100%;">Người phối hợp thực
                                             hiện</label>
                                         <select class="form-control select2" style="width: 95%; float: left;">
-                                            <option selected="selected">Lã Mạnh Cường</option>
+                                            <option></option>
+                                            <option>Lã Mạnh Cường</option>
                                             <option>Nguyễn Chí Thanh</option>
                                             <option>Nguyễn Duy Kỳ</option>
                                             <option>Trịnh Duy Hưng</option>
@@ -328,7 +330,7 @@
      $('.btn-create').on('click', function (e) {
             e.preventDefault();
             Swal.fire({
-                title: 'Bạn có chắc chắn muốn sửa?',
+                title: 'Bạn có chắc chắn muốn tạo công việc?',
                 icon: 'question',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -338,7 +340,7 @@
             }).then((result) => {
                 if (result.value) {
                     Swal.fire(
-                        'Bạn đã sửa thành công',
+                        'Bạn đã tạo công việc thành công',
                     )
                 }
             })

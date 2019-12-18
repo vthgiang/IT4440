@@ -380,7 +380,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
                               <tr>
@@ -395,7 +395,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_2.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
                               <tr>
@@ -409,7 +409,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
                               <tr>
@@ -423,7 +423,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
                               </tbody>
@@ -485,6 +485,19 @@
 <!-- page script -->
 <script>
     $(function () {
+        $('.btn-delete').on('click', function(e){
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Bạn có muốn xóa công việc??',
+                showConfirmButton: true,
+                timer: 1500
+            }).then((result) => {
+                if (result.value) {
+                    // window.location="ds_congviec_thuong_xuyen.html";
+                }
+            })
+        });
         $('#example1').DataTable()
         $('#example2').DataTable({
             'paging': true,
