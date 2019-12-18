@@ -96,28 +96,30 @@
         <section class="content" id="main_content">
 
 
-            <div class="alert alert-success" role="alert">
+            <div class="alert alert-success cv_moi" role="alert">
                 Có công việc mới <a href="chi-tiet-cong-viec.html">
                 <!-- <button class="btn btn-primary">Xem chi tiết</button> --></a>
             </div>
 
-            <h3 style="color: green">Công việc mới</h3>
-            <table class="table table-borered table-hover">
+            <h3 style="color: green cv_moi">Công việc mới</h3>
+            <table class="table table-borered table-hover cv_moi">
                 <thead>
                 <th>STT</th>
                 <th>Tên</th>
                 <th>Khối Lượng</th>
                 <th>Ngày bắt đầu</th>
                 <th>Ngày Kết thúc dự kiến</th>
+                <th>Phân chia</th>
                 <th>Ghi chú</th>
                 </thead>
                 <tbody>
                 <tr>
                     <td>1</td>
                     <td>Thuốc dạ dày</td>
-                    <td>200 cân</td>
+                    <td>200 lít</td>
                     <td>20/11/2019</td>
                     <td>20/12/2019</td>
+                    <td><button class="btn btn-primary phan_chia">Phân chia</button></td>
                     <td></td>
                 </tr>
 
@@ -141,9 +143,9 @@
                 <tr style="color:red">
                     <td>1</td>
                     <td>Thuốc dạ dày</td>
-                    <td>200 cân</td>
-                    <td>100 cân</td>
-                    <td>Pha chế: 150 cân</br>Chia liều: 120 cân</br>Đóng gói: 100 cân</br></td>
+                    <td>200 lít</td>
+                    <td>100 lít</td>
+                    <td>Pha chế: 150 lít</br>Chia liều: 120 lít</br>Đóng gói: 100 lít</br></td>
                     <td>20/11/2019</td>
                     <td><span>15/12/2019</span></td>
                     <td></td>
@@ -152,9 +154,9 @@
                 <tr>
                     <td>2</td>
                     <td>Thuốc viêm</td>
-                    <td>150 cân</td>
-                    <td>75 cân</td>
-                    <td>Pha chế: 100 cân</br>Chia liều: 100 cân</br>Đóng gói: 75 cân</br></td>
+                    <td>150 lít</td>
+                    <td>75 lít</td>
+                    <td>Pha chế: 100 lít</br>Chia liều: 100 lít</br>Đóng gói: 75 lít</br></td>
                     <td>20/11/2019</td>
                     <td>20/12/2019</td>
                     <td></td>
@@ -188,28 +190,53 @@
             </div>
         </div>
 
-
-        <!-- The Modal -->
         <div class="modal fade" id="modelFail">
             <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h4 class="modal-title"></h4>
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                    </div>
-
-                    <div class="modal-body">
-                        vui lòng kiểm tra lại dữ liệu
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
+              <div class="modal-content">
+              
+                <div class="modal-header">
+                  <h4 class="modal-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
                 </div>
+                
+                <div class="modal-body">
+                  <table class="table table-hover table-bordered table_phan_chia">
+                    
+                    <thead>
+                      <th>Chức vụ</th>
+                      <th>Số lượng</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Pha chế: </td>
+                        <td>
+                          <input type="number" value="100" /> Cẩn <br>
+                          <input type="number" value="100" /> mạnh <br>
+                          Đơn vị: Lít
+        
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Đóng gói:</td>
+                        <td>
+                            <input type="number" value="100" /> Thảo <br>
+                            <input type="number" value="100" /> hải <br>
+                          Đơn vị: Lít
+                        </td>
+                      </tr>
+                    </tbody>
+        
+                  </table>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary dong_y">Phân chia</button>
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+                
+              </div>
             </div>
-        </div>
+          </div>
 
 
     </div>
@@ -243,6 +270,41 @@
 
 <script>
     $(document).ready(function () {
+
+
+        
+    var tong = 200;
+
+$('.phan_chia').click(function(){
+  $("#modelFail").modal();
+});
+
+$('.dong_y').click(function(){
+  let input = $('.table_phan_chia input');
+  
+    if ( check($(input[0]).val(),$(input[1]).val(),tong) && check($(input[3]).val(),$(input[2]).val(),tong) ) {
+      phan_chia_success();
+    } else {
+      alert( 'Số liệu không hợp lệ!');
+    }
+  
+});
+
+function phan_chia_success() {
+  alert('Success !');
+  $('#modelFail').modal('hide');
+  $('.cv_moi').remove();
+
+}
+
+function check(data1,data2,total) {
+
+  if( parseInt(data1) + parseInt(data2) != total ) {
+    return false;
+  }
+  return true;
+}
+
 
         // function checkInt(string) {
         // 	return string == parseInt(string);
