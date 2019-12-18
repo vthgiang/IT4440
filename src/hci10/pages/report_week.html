@@ -170,7 +170,7 @@
                                 <p>
                                     Công việc
                                     <i class="fas fa-angle-right right"></i>
-                                    <span class="badge badge-info right">2</span>
+                                    <span class="badge badge-info right">3</span>
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
@@ -189,8 +189,8 @@
                                 <li class="nav-item">
                                     <a href="take_care_customer.html" class="nav-link">
                                         <i class="nav-icon fas fa-user"></i>
-                                        <p>Chắm sóc khách hàng
-                                            <span class="badge badge-info right">2</span>
+                                        <p>Chăm sóc khách hàng
+                                            <span class="badge badge-info right"></span>
                                         </p>
                                     </a>
                                 </li>
@@ -314,6 +314,19 @@
                                         <!-- /.form group -->
                                     </div>
 
+                                    <div class="form-group">
+                                        <label>Tổng doanh số</label>
+
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i
+                                                        class="far fa-money-bill-alt"></i></span>
+                                            </div>
+                                            <p class="form-control"><span><b>150</b></span> Triệu VNĐ</p>
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+
                                 </div>
 
                                 <!-- /.card-body -->
@@ -375,9 +388,10 @@
                                 </div>
                             </div>
                         </form>
-                        <div class="col-md-6">
+                        <form class="row">
+                        <div class="col-md-6 col-sm-12 card-body">
                             <!-- PIE CHART -->
-                            <div class="card card-danger">
+                            <div class="card card-danger form-group" style="margin: 1% !important;">
                                 <div class="card-header">
                                     <h3 class="card-title">Biểu đồ KPI</h3>
                                 </div>
@@ -390,11 +404,11 @@
 
                         </div>
                         <!-- /.col (LEFT) -->
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-12 card-body">
                             <!-- LINE CHART -->
-                            <div class="card card-info">
+                            <div class="card card-info form-group" style="margin: 1% !important;">
                                 <div class="card-header">
-                                    <h3 class="card-title">Biểu đồ doanh số</h3>
+                                    <h3 class="card-title">Biểu đồ doanh số (Triệu VNĐ)</h3>
 
                                 </div>
                                 <div class="card-body">
@@ -406,6 +420,7 @@
                             </div>
                             <!-- /.card -->
                         </div>
+                        </form>
                         <!-- /.col (RIGHT) -->
                         <div class="card-footer">
                             <button type="button" class="btn btn-primary toastsDefaultSuccess">Gửi báo cáo</button>
@@ -445,6 +460,8 @@
 
     <!-- ChartJS -->
     <script src="../plugins/chart.js/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@1.1.2"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
@@ -464,12 +481,16 @@
                         label: 'Doanh số',
                         backgroundColor: 'rgba(60,141,188,0.9)',
                         borderColor: 'rgba(60,141,188,0.8)',
-                        pointRadius: false,
                         pointColor: '#3b8bba',
                         pointStrokeColor: 'rgba(60,141,188,1)',
                         pointHighlightFill: '#fff',
                         pointHighlightStroke: 'rgba(60,141,188,1)',
-                        data: [120, 170, 100, 150]
+                        data: [120, 170, 100, 150],
+                        lineTension: 0.1,
+                        datalabels: {
+                            align: 'start',
+                            anchor: 'start'
+                        }
                     }
                 ]
             }
@@ -498,7 +519,20 @@
                             beginAtZero: true   // minimum value will be 0.
                         }
                     }]
-                }
+                },
+                plugins: {
+					datalabels: {
+						backgroundColor: function(context) {
+							return context.dataset.backgroundColor;
+						},
+						borderRadius: 4,
+						color: 'white',
+						font: {
+							weight: 'bold'
+						},
+						formatter: Math.round
+					}
+				},
             }
 
             //-------------
@@ -540,6 +574,13 @@
             var pieOptions = {
                 maintainAspectRatio: false,
                 responsive: true,
+                plugins: {
+                    labels: {
+                        render: 'percentage',
+                        fontColor: '#fff',
+                        precision: 2
+                    }
+                },
             }
             //Create pie or douhnut chart
             // You can switch between pie and douhnut using the method below.
