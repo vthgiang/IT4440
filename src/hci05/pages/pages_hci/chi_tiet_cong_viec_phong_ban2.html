@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> HCI-05 Chi tiết công việc phòng ban</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+ <!-- Include SmartWizard CSS -->
+ <link href="../dist/css/smart_wizard.css" rel="stylesheet" type="text/css" />
+
+ <!-- Optional SmartWizard theme -->
+ <link href="../dist/css/smart_wizard_theme_circles.css" rel="stylesheet" type="text/css" />
+ <link href="../dist/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css" />
+ <link href="../dist/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css" />
+ <script src="https://kit.fontawesome.com/0fb6f52a65.js" crossorigin="anonymous"></script>
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<style>
+    .col-md-2{
+        padding: 10px;
+    }
+    .col-md-10{
+        padding: 10px;
+    }
+</style>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="../../index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Công ty thuốc</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Notifications: style can be found in dropdown.less -->
+                    <li class="dropdown notifications-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label label-warning">2</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="header">Bạn có 2 thông báo mới</li>
+                            <li>
+                                <!-- inner menu: contains the actual data -->
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-users text-aqua"> Bạn được thêm vào dự án sản xuất cúm gà</i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-warning text-yellow"></i> Công việc tính lương cho phòng marketing sắp đến deadline
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">Xem tất cả</a></li>
+                        </ul>
+                    </li>
+                    <!-- User Account: style can be found in dropdown.less -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Lã Mạnh Cường</span>
+
+
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                                <p>
+                                    Lã Mạnh Cường <br> Trưởng phòng hành chính nhân sự
+
+                                </p>
+                            </li>
+                            <!-- Menu Body -->
+
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Thông tin cá nhân</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="#" class="btn btn-default btn-flat">Đăng xuất</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+      </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>Lã Mạnh Cường</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">MENU</li>
+                <li class="treeview">
+                    <a href="#">
+                        <span>Phòng hành chính nhân sự</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="ds_congviec_cty.html">
+                                <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
+                                <span class="pull-right-container">
+
+                    </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ds_cong_viec_phong_ban.html">
+                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
+                                <span class="pull-right-container">
+
+                      </span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="ds_cong_viec_ca_nhan.html">
+                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                                <span class="pull-right-container">
+
+                      </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../../hci09/ketquakpi.html">
+                                <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
+                                <span class="pull-right-container">
+
+                      </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+      </section>
+   </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Chi tiết công việc phòng ban
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="#">Danh sách công việc phòng ban</a></li>
+        <li class="active">Chi tiết công việc phòng ban</li>
+      </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <!-- /.box -->
+          <div class="box box-default">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Chi tiết công việc ABC </h3>
+
+                    <div class="box-tools pull-right">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row box-body">
+                        <div class="col-md-2 mt-4 ml-1  ">Tên công việc:</div><div class="col-md-10">Tính lương tháng 10 cho phòng marketing</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Deadline:</div><div class="col-md-10">20/11/2019</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Mô tả:</div><div class="col-md-10">Tính lương cho nhân viên thuộc phòng Marketing</div>
+
+                        <div class="col-md-2 mt-4 ml-1 ">Phòng ban:</div><div class="col-md-10">Hành chính - Nhân sự</div>
+                        <div class="col-md-2 mt-4 ml-1 ">Người chịu trách nhiệm:</div><div class="col-md-10">Lã Mạnh Cường</div>
+
+
+                      </div>
+
+                        <div class="row">
+                          <div class="col-xs-12">
+
+                            <!-- /.box -->
+                            <div class="box">
+                              <div class="box-header">
+                                <h3 class="box-title">Quy trình công việc</h3>
+                              </div>
+                              <!-- /.box-header -->
+                              <div class="box-body">
+
+                                <div>
+                                    <!-- External toolbar sample -->
+                                    <div class="row d-flex align-items-center p-3 my-3 text-white-50">
+                                        <!-- <div class="col-12 col-lg-6 col-sm-12">
+                                          <label>Theme:</label>
+                                          <select id="theme_selector" class="custom-select col-lg-6 col-sm-12">
+                                                <option value="default">default</option>
+                                                <option value="arrows">arrows</option>
+                                                <option value="circles">circles</option>
+                                                <option value="dots">dots</option>
+                                          </select>
+                                        </div> -->
+                                        <!-- <div class="col-12 col-lg-6 col-sm-12">
+                                          <label>External Buttons:</label>
+                                          <div class="btn-group col-lg-6 col-sm-12" role="group">
+                                              <button class="btn btn-secondary" id="prev-btn" type="button">Quay lại</button>
+                                              <button class="btn btn-secondary" id="next-btn" type="button">Bước tiếp theo</button>
+
+                                          </div>
+                                        </div> -->
+                                    </div>
+
+                                    <!-- SmartWizard html -->
+                                    <div id="smartwizard">
+                                        <ul>
+                                            <li><a href="#step-1">Bước 1<br /><small> </small></a></li>
+                                            <li><a href="#step-2">Bước 2<br /><small></small></a></li>
+                                            <li><a href="#step-3">Bước 3<br /><small></small></a></li>
+                                            <li><a href="#step-4">Bước 4<br /><small></small></a></li>
+                                        </ul>
+
+                                        <div>
+                                            <div id="step-1" class="">
+                                                <h3 class="border-bottom border-gray pb-2">Bước 1 Nội dung</h3>
+                                                <div class="box">
+
+                                                    <!-- /.box-header -->
+                                                  <div class="box-body">
+                                                    <table id="example1" class="table table-bordered table-striped">
+                                                      <thead>
+                                                      <tr>
+                                                        <th style="width: 40px">STT</th>
+                                                        <th>Tên bước</th>
+                                                        <th style="width: 200px">Thời gian hoàn thành</th>
+                                                        <th style="width: 40px">Tình trạng</th>
+                                                        <th style="width: 80px">Báo cáo</th>
+                                                      </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                      <tr>
+                                                        <td>1</td>
+                                                        <td>Lấy danh sách chấm công nhân viên phòng marketing
+                                                        </td>
+                                                        <td>12/11/2019</td>
+                                                        <td><a href="taocongviec_quytrinh.html">
+                                                          <button class=" btn btn-primary btn-warning">100%<i
+                                                                  class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                        </a>
+                                                        <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+
+                                                      </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-2" class="">
+                                                <h3 class="border-bottom border-gray pb-2">Bước 2</h3>
+                                                <div class="box">
+
+                                                    <!-- /.box-header -->
+                                                  <div class="box-body">
+                                                    <table id="example1" class="table table-bordered table-striped">
+                                                      <thead>
+                                                      <tr>
+                                                        <th style="width: 40px">STT</th>
+                                                        <th>Tên bước</th>
+                                                        <th style="width: 200px">Thời gian hoàn thành</th>
+                                                        <th style="width: 40px">Tình trạng</th>
+                                                        <th style="width: 80px">Báo cáo</th>
+                                                      </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                      <tr>
+                                                        <td>2</td>
+                                                        <td>Dựa vào công thức để tính lương cho các nhân viên
+                                                        </td>
+                                                        <td>14/11/2019</td>
+                                                        <td><a href="taocongviec_quytrinh.html">
+                                                          <button class=" btn btn-primary btn-warning">100%<i
+                                                                  class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                        </a>
+                                                        <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+
+                                                      </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-3" class="">
+                                                <h3 class="border-bottom border-gray pb-2">Bước 3</h3>
+                                                <div class="box">
+
+                                                    <!-- /.box-header -->
+                                                  <div class="box-body">
+                                                    <table id="example1" class="table table-bordered table-striped">
+                                                      <thead>
+                                                      <tr>
+                                                        <th style="width: 40px">STT</th>
+                                                        <th>Tên bước</th>
+                                                        <th style="width: 200px">Thời gian hoàn thành</th>
+                                                        <th style="width: 40px">Tình trạng</th>
+                                                        <th style="width: 80px">Báo cáo</th>
+                                                      </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                      <tr>
+                                                        <td>3</td>
+                                                        <td>Xuất ra file excel
+                                                        </td>
+                                                        <td>17/11/2019</td>
+                                                        <td><a href="taocongviec_quytrinh.html">
+                                                          <button class=" btn btn-primary btn-warning">100%<i
+                                                                  class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                        </a>
+                                                        <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+
+                                                      </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <div id="step-4" class="">
+                                                <h3 class="border-bottom border-gray pb-2">Bước 4</h3>
+                                                <div class="box">
+
+                                                    <!-- /.box-header -->
+                                                  <div class="box-body">
+                                                    <table id="example1" class="table table-bordered table-striped">
+                                                      <thead>
+                                                      <tr>
+                                                        <th style="width: 40px">STT</th>
+                                                        <th>Tên bước</th>
+                                                        <th style="width: 200px">Thời gian hoàn thành</th>
+                                                        <th style="width: 40px">Tình trạng</th>
+                                                        <th style="width: 80px">Báo cáo</th>
+                                                      </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                      <tr>
+                                                        <td>4</td>
+                                                        <td>Gửi thông báo cho nhân viên cũng như lãnh đạo
+                                                        </td>
+                                                        <td>20/11/2019</td>
+                                                        <td><a href="taocongviec_quytrinh.html">
+                                                          <button class=" btn btn-primary btn-warning">100%<i
+                                                                  class="fa fa-pencil" aria-hidden="true"></i></button>
+                                                        </a>
+                                                        <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+
+                                                      </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                              </div>
+                              <!-- /.box-body -->
+                            </div>
+                          </div>
+                          <!-- /.col -->
+                        </div>
+
+                </div>
+            </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+        <strong>HCI_05</strong>
+  </footer>
+
+  <!-- Control Sidebar -->  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- Include SmartWizard JavaScript source -->
+<script type="text/javascript" src="../dist/js/jquery.smartWizard.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+      // Step show event
+      $("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+         //alert("You are on step "+stepNumber+" now");
+         if(stepPosition === 'first'){
+             $("#prev-btn").addClass('disabled');
+         }else if(stepPosition === 'final'){
+             $("#next-btn").addClass('disabled');
+         }else{
+             $("#prev-btn").removeClass('disabled');
+             $("#next-btn").removeClass('disabled');
+         }
+      });
+
+      // Toolbar extra buttons
+      var btnFinish = $('<button></button>').text('Finish')
+                                       .addClass('btn btn-info')
+                                       .on('click', function(){ alert('Finish Clicked'); });
+      var btnCancel = $('<button></button>').text('Cancel')
+                                       .addClass('btn btn-danger')
+                                       .on('click', function(){ $('#smartwizard').smartWizard("reset"); });
+
+
+      // Smart Wizard
+      $('#smartwizard').smartWizard({
+              selected: 0,
+              theme: 'default',
+              transitionEffect:'fade',
+              showStepURLhash: true,
+              toolbarSettings: {toolbarPosition: 'both',
+                                toolbarButtonPosition: 'end',
+                                toolbarExtraButtons: [btnFinish, btnCancel]
+                              }
+      });
+
+
+      // External Button Events
+      $("#reset-btn").on("click", function() {
+          // Reset wizard
+          $('#smartwizard').smartWizard("reset");
+          return true;
+      });
+
+      $("#prev-btn").on("click", function() {
+          // Navigate previous
+          $('#smartwizard').smartWizard("prev");
+          return true;
+      });
+
+      $("#next-btn").on("click", function() {
+          // Navigate next
+          $('#smartwizard').smartWizard("next");
+          return true;
+      });
+
+      $("#theme_selector").on("change", function() {
+          // Change theme
+          $('#smartwizard').smartWizard("theme", $(this).val());
+          return true;
+      });
+
+      // Set selected theme on page refresh
+      $("#theme_selector").change();
+  });
+</script>
+</body>
+</html>
