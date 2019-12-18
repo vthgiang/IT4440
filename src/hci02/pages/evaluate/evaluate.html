@@ -299,11 +299,31 @@
                      <p class="card-description"> Tiến độ tháng 10: 45%</p>
                      <p class="card-description"> Vượt chỉ tiêu: 12%</p>
                      <p class="card-description">  </p>
-                     <button type="submit" class="btn btn-success mr-2">Xuất báo cáo</button>
+                     <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#test">Xuất báo cáo</button>
+
+                      <!--the Modal-->
+                      <div class="modal fade" id="test" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Xuất dữ liệu thành công</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal">Quay lại</button>
+                            </div>
+                          </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
+                      <!--The modal end-->
+
                   </div>
                 </div>
               </div>
             </div>
+            <a role="button" class="btn btn-danger" href="../../index.html">Quay lại</a>
           </div>
           <!-- content-wrapper ends -->
           <!-- partial:../../partials/_footer.html -->

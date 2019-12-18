@@ -28,7 +28,7 @@
     <!-- page css -->
 
     <!-- core css -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="assets/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="assets/css/animate.min.css" rel="stylesheet">
@@ -106,28 +106,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="sidebar-dropdown">
-                            <a href="#">
-                                <i class="fa fa-address-book"></i>
-                                <span class="menu-text">Quản lý nhân viên</span>
-                                <span class="badge badge-pill badge-danger">3</span>
-                            </a>
-                            <div class="sidebar-submenu">
-                                <ul>
-                                    <li>
-                                        <a href="#">Danh sách nhân viên
 
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Theo dõi tiến độ công việc trong ngày</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Kỉ luật, khen thưởng</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
                         <li class="sidebar-dropdown">
                             <a href="#">
                                 <i class="fa fa-book"></i>
@@ -379,14 +358,16 @@
                                                         class="text-gray font-size-22"><i
                                                             class="mdi mdi-file-outline"></i></a></td>
                                                 <td>
-                                                    <div><a><button data-toggle="modal" data-target="#modal-fs"
+                                                    <div class="d-flex"><a><button data-toggle="modal"
+                                                                data-target="#modal-fs"
                                                                 class="btn btn-success btn-rounded">Phê
                                                                 duyệt</button></a>
-                                                        <a><button data-toggle="modal" data-target="#modal-sm"
-                                                                class="btn btn-danger btn-rounded alert alert-danger">Xóa</button></a>
                                                         <a><button data-toggle="modal" data-target="#side-modal-r"
-                                                                class="btn btn-gradient-warning btn-rounded">Phản
+                                                                class="btn btn-primary btn-rounded">Phản
                                                                 hồi</button></a>
+                                                        <a><button data-toggle="modal" data-target="#modal-sm"
+                                                                class="btn btn-danger btn-rounded swal-with-text">
+                                                                Xóa</button></a>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -525,7 +506,7 @@
                                     <h1 class="text-thin m-v-15">Bạn đã phê duyệt báo cáo tuần thứ 1</h1>
                                     <p class="m-b-25 lead">Võ Thị Hà Vy - Hậu cần 1</p>
                                     <div class="text-center">
-                                        <button class="btn btn-default btn-lg">Xác nhận</button>
+                                        <a href="#" data-dismiss="modal" class="btn btn-default btn-lg">Xác nhận</a>
                                     </div>
                                 </div>
                             </div>
