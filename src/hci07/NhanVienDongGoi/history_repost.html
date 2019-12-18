@@ -76,7 +76,7 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
                aria-haspopup="true" aria-expanded="false">
-                Nguyễn Văn Lâm
+                Nhân viên: Lê Minh Tuấn Anh
                 <i class="fas fa-user-circle fa-fw"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
@@ -107,7 +107,7 @@
                 <span>Báo cáo</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="taskManager">
-                <a class="dropdown-item" href="create_repost.html">Báo cáo chia liều</a>
+                <a class="dropdown-item" href="create_repost.html">Tạo báo cáo</a>
                 <a class="dropdown-item" href="history_repost.html">Lịch sử báo cáo</a>
             </div>
         </li>
@@ -120,6 +120,17 @@
             <a class="nav-link" href="tables.html">
                 <i class="fas fa-fw fa-table"></i>
                 <span>Danh sách công việc</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../thong tin ca nhan.html">
+                <i class="fas fa-fw fa-user-circle"></i>
+                <span>Thông tin cá nhân</span></a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="../tro giup.html">
+                <i class="fas fa-fw fa-search"></i>
+                <span>Trợ giúp</span></a>
         </li>
     </ul>
 
@@ -149,6 +160,7 @@
                                 <th>Loại báo cáo</th>
                                 <th>Ngày gửi</th>
                                 <th>Trạng thái</th>
+                                <th>Chi tiết</th>
                             </tr>
                             </thead>
                             <tfoot>
@@ -157,49 +169,57 @@
                                 <th>Loại báo cáo</th>
                                 <th>Ngày gửi</th>
                                 <th>Trạng thái</th>
+                                <th>Chi tiết</th>
                             </tr>
                             <tbody>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo ngày</td>
                                 <td>27/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo ngày</td>
                                 <td>25/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo tháng</td>
                                 <td>27/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo ngày</td>
                                 <td>27/9/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo tuần</td>
                                 <td>30/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo ngày</td>
                                 <td>30/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
                             <tr>
-                                <td>Nguyễn Văn Lâm</td>
+                                <td>Lê Minh Tuấn Anh</td>
                                 <td>Báo cáo ngày</td>
                                 <td>30/11/2019</td>
                                 <td>Thành công</td>
+                                <td><a href="#" data-toggle="modal" data-target="#logoutModal_x">Chi tiết</a></td>
                             </tr>
 
                             </tbody>
@@ -246,8 +266,30 @@
             <div class="modal-body">Chọn "Đăng xuất" bên dưới nếu bạn đã sẵn sàng kết thúc phiên hiện tại của mình.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
-                <a class="btn btn-primary" href="login.html">Đăng xuất</a>
+                <a class="btn btn-primary" href="../index.html">Đăng xuất</a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="logoutModal_x" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel_x">Chi tiết báo cáo</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Người gửi: Lê Minh Tuấn Anh</label><br>
+                <label>Người nhận: Phan Văn Quang</label>
+                <label>Ngày gửi: 27/11/2019</label><br>
+                <label>Loại báo cáo: Báo cáo ngày</label><br>
+                <label>Tên công việc thực hiện: N-Eryampi </label>
+            </div>
+
         </div>
     </div>
 </div>
