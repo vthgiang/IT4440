@@ -12087,3 +12087,10 @@ body.sidebar-toggled footer.sticky-footer {
 .dis{
     display: none;
 }
+.button-detail{
+    display: flex;
+}
+.button-detail button{
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

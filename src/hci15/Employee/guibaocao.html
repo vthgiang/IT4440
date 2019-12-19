@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>HCI15-Trang chủ</title>
+    <title>HCI15-Báo cáo</title>
 
     <!-- Custom fonts for this template-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -49,7 +49,25 @@
 
             <!-- Divider -->
             <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item i">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Thống kê</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Thống kê doanh thu:</h6>
+                        <a class="collapse-item child" href="theongay.html">Theo ngày</a>
+                        <a class="collapse-item child" href="theothang.html">Theo tháng</a>
+                        <a class="collapse-item child" href="theoquy.html">Theo quý</a>
+                        <a class="collapse-item child" href="theonam.html">Theo năm</a>
+                        <a class="collapse-item child" href="theosanpham.html">Theo sản phẩm</a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item i select active">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="far fa-file"></i>
                     <span>Báo cáo</span>
@@ -68,24 +86,12 @@
                 </a>
             </li>
             <li class="nav-item i">
-                <a class="nav-link" href="chiaviec.html">
-                    <i class="fas fa-bars"></i>
-                    <span>Quản lý công việc cá nhân</span>
-                </a>
-            </li>
-            <li class="nav-item i">
-                <a class="nav-link" href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html">
-                    <i class="fas fa-balance-scale"></i>
-                    <span>KPI</span>
-                </a>
-            </li>
-            <li class="nav-item i">
                 <a class="nav-link" href="#">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Thiết lập hệ thống</span>
                 </a>
             </li>
-            <li class="nav-item i active select">
+            <li class="nav-item i">
                 <a class="nav-link" href="help.html">
                     <i class="fas fa-hands-helping"></i>
                     <span>Trợ giúp</span>
@@ -286,34 +292,40 @@
 
                 </nav>
                 <!-- End of Topbar -->
-
                 <div class="container-fluid">
-                    <!-- Content Row -->
-
-                    <div class="row">
-                        <!-- Area Chart -->
-                        <div class="col-xl-12 col-lg-12">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold">Video hướng dẫn sử dụng phần mềm</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <video width="50%" style="margin-top: 40px; margin-left: 25%;" controls>
-                                        <source src="../Video/bandicam 2019-12-14 09-37-05-545.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><strong>Tên người gửi</strong></label>
+                            <input type="text" class="form-control" placeholder="Tên người gửi">
                         </div>
-                    </div>
-                </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><strong>Tên người nhận</strong></label>
+                            <input type="text" class="form-control" placeholder="Tên người nhận">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2"><strong>Chức vụ</strong></label>
+                            <input type="text" class="form-control" placeholder="Chức vụ">
+                        </div>
+                        <div class="form-group">
+                            <label for=""><strong>Email</strong></label>
+                            <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                   placeholder="truongphong@gmail.com">
 
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput"><strong>Mô tả chi tiết</strong></label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nội dung">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1"><strong>File báo cáo đính kèm</strong></label>
+                            <p><u>baocao1.pdf</u></p>
+                        </div>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#baocaoModal">
+                            <span">Gửi báo cáo</span>
+                        </button>
+                    </form>
+                </div>
                 <!-- End of Content Wrapper -->
 
             </div>
@@ -329,7 +341,41 @@
                     </div>
                 </div>
             </footer>
-
+            <!--xuat Modal-->
+            <div class="modal fade" id="xuatModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn có muốn xuất báo cáo doanh thu tháng 11 không?</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy bỏ</button>
+                            <button class="btn btn-primary" type="button" data-dismiss="modal" data-toggle="modal" data-target="#okModal">Xuất</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ok Modal-->
+            <div class="modal fade" id="okModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn đã xuất file thành công</div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" type="button" data-dismiss="modal">Ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Logout Modal-->
             <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -348,7 +394,22 @@
                     </div>
                 </div>
             </div>
-
+            <div class="modal fade" id="baocaoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">Bạn đã gửi thành công</div>
+                        <div class="modal-footer">
+                            <a class="btn btn-primary" href="danhsachbaocao.html">OK</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Bootstrap core JavaScript-->
             <script src="../Scripts/jquery.min.js"></script>
             <script src="../Scripts/bootstrap.bundle.min.js"></script>
