@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Thông báo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sina-nav.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	<style>
+		.nav-container{
+			min-height: 60px;
+		}
+		.sina-nav{
+			top: 0px;
+			position: absolute;
+		}
+
+		ul li a:visited{
+			color: blue;
+		}
+
+		.card{
+			border-color: lightblue;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="nav-container">
+		<nav class="sina-nav mobile-sidebar navbar-fixed" data-top="0">
+			<div class="container">
+				<div class="search-box">
+					<form role="search" method="get" action="#">
+						<span class="search-addon close-search"><i class="fa fa-times"></i></span>
+						<div class="search-input">
+							<input type="search" class="form-control" placeholder="Search here" value="" name="">
+						</div>
+						<span class="search-addon search-icon"><i class="fa fa-search"></i></span>
+					</form>
+				</div><!-- .search-box -->
+
+				<div class="extension-nav">
+					<ul>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="widget-bar-btn"><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+					</ul>
+				</div><!-- .extension-nav -->
+
+				<div class="sina-nav-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="sina-brand" href="#">
+						<h2 class="pt-2">
+							Material
+						</h2>
+					</a>
+				</div><!-- .sina-nav-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+						<li><a href="truong-phong-trang-chu.html">Trang chủ</a></li>
+						<li><a href="cong-viec.html">Công việc</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thống kê</a>
+							<ul class="dropdown-menu">
+								<li><a href="thong-ke-doanh-thu.html">Doanh thu</a></li>
+								<li><a href="thong-ke-nguyen-lieu.html">Nguyên liệu</a></li>
+								<li><a href="nha-cung-cap.html">Nhà cung cấp</a></li>
+								<li><a href="thong-ke-nhan-vien.html">Nhân viên</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Liên kết</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://hci10.it4440.phungluan.com/">Kinh doanh nhãn hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="#contact">Thông báo</a></li>
+						<li><a href="huong-dan.html">Hướng dẫn</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- .container -->
+
+			<!-- Start widget-bar -->
+			<div class="widget-bar">
+				<a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h4 class="title text-capitalize">Hi, Nguyễn Văn Tuân</h4>
+					<ul class="link">
+						<li><a href="#" class="text-capitalize"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Tài khoản</a></li>
+						<li><a href="#" class="text-capitalize"><i class="fa fa-cog mr-1"></i>Cài đặt</a></li>
+						<li><a href="index.html" class="text-capitalize"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Đăng xuất</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End widget-bar -->
+		</nav>	
+	</div>
+
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Chi tiết công việc</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Tên công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Chi tiết công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng từ lô hàng số hiệu 3AF:2019 xuất xứ từ Trung Quốc
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Người thực hiện</strong>
+								</div>
+								<div class="col-sm-9">
+									Thu An
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Bắt đầu</strong>
+								</div>
+								<div class="col-sm-9">
+									8:30 - 2019/12/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Kết thúc</strong>
+								</div>
+								<div class="col-sm-9">
+									7:30 - 2019/13/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Tệp đính kèm</strong>
+								</div>
+								<div class="col-sm-9">
+									<a href="#">báo cáo.docx</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Trạng thái</strong>
+								</div>
+								<div class="col-sm-9">
+									<p class="text-danger">Trễ hạn</p>
+								</div>
+							</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Delete -->
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5 p-5" id="delete">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div>
+						<h4 class="text-center" style="padding-top: 2rem; padding-bottom: 2rem;">Bạn chắc chắn muốn xóa ?</h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body pb-5">
+						<div class="row justify-content-around">					
+							<button class="btn btn-primary" data-dismiss="modal" onclick="alert('Xóa thành công.') ">Có</button>													
+							<button class="btn btn-danger" data-dismiss="modal">Không</button>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5 p-5" id="newModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content p-5">
+					<div class="row">
+						<div class="col-sm-3">
+							<label class="form-control border-0"><strong>Tên công việc</strong></label>
+						</div>
+						<div class="col-sm-9">
+							<input type="text" value ="Lập báo cáo" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label class="form-control border-0"><strong>Bắt đầu</strong></label>
+						</div>
+						<div class="col-sm-9">
+							<input type="text" value ="8:30 - Ngày 20/12/2019" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label class="form-control border-0"><strong>Kết thúc</strong></label>
+						</div>
+						<div class="col-sm-9">
+							<input type="text" value ="15:30 - Ngày 20/12/2019" class="form-control" readonly>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label class="form-control border-0"><strong>Trạng thái</strong></label>
+						</div>
+						<div class="col-sm-9">
+							<select class="form-control">
+								<option value="">Quá hạn</option>
+								<option value="">Đúng hạn</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-3">
+							<label class="form-control border-0"><strong>Đánh giá</strong></label>
+						</div>
+						<div class="col-sm-9">
+							<select class="form-control">
+								<option value="">Rất tốt</option>
+								<option value="">Tốt</option>
+								<option value="">Khá</option>
+								<option value="">Trung bình</option>
+								<option value="">Kém</option>										
+							</select>
+						</div>
+					</div>
+					<button class="offset-3 btn btn-info col-md-2" onclick="alert('Cập nhật thành công');" data-dismiss="modal" >Submit</button>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="container mt-2 mb-5">
+		<div class="row m-0">
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary">Chi tiết</a>
+						<a href="#" class="btn btn-primary">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row m-0">
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary">Chi tiết</a>
+						<a href="#" class="btn btn-primary">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row m-0">
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-3">
+				<div class="card">
+					<div class="card-header">
+						Người gửi: Quỳnh Anh
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">Báo cáo kết quả kinh doanh cuối năm 2019</h5>
+						<p class="card-text">Sếp duyệt lại báo cáo rồi xác nhận...</p>
+						<a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn btn-primary" data-toggle="modal" data-target="#newModal">Xác nhận</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mt-5">
+			<nav aria-label="Page navigation example">
+				<ul class="pagination justify-content-center">
+					<li class="page-item disabled">
+						<a class="page-link" href="#" tabindex="-1">Previous</a>
+					</li>
+					<li class="page-item"><a class="page-link" href="#">1</a></li>
+					<li class="page-item"><a class="page-link" href="#">2</a></li>
+					<li class="page-item"><a class="page-link" href="#">3</a></li>
+					<li class="page-item">
+						<a class="page-link" href="#">Next</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/sina-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* CSS Document */
+
+body{margin: 30px 0px;}
+.test-img{border-radius: 50%;}
+.test-img-block{
+	background:-webkit-linear-gradient( to bottom, #3366ff 0%, #66ccff 100%);
+	background:-o-linear-gradient( to bottom, #3366ff 0%, #66ccff 100%);
+	background:-moz-linear-gradient( to bottom, #3366ff 0%, #66ccff 100%);
+	background:linear-gradient( to bottom, #3366ff 0%, #66ccff 100%);
+	
+	border-radius: 15px 15px 0 0;
+	
+}
+
+.testimonial{text-align: center;}
+
+.test-heading{color:dodgerblue;}
+
+.test-text{color:dimgray;
+         margin-bottom: 15px;
+           }
+.test-body-block{border:2px solid #66ccff;
+             border-radius: 0 0 15px 15px;}
+.test-comp{color:brown;}

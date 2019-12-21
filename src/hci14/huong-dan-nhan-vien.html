@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Hướng dẫn sử dụng</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/smart_wizard.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="container mt-5 mb-3">
+		<a href="nhan-vien-trang-chu.html"><i class="fa fa-arrow-left" style="font-size: 1.8rem;">Thoát</i></a>
+	</div>
+
+	<div class="container">
+		<div class="bg-dark p-4 text-white">
+			<h3>Hướng dẫn chức năng phân công công việc</h3>
+		</div>
+	</div>
+
+
+	<div class="container mt-2 mb-5">
+		<div id="stepwizard">
+			<ul>
+				<li><a href="#step1">Bước 1</a></li>
+				<li><a href="#step2">Bước 2</a></li>
+				<li><a href="#step3">Bước 3</a></li>
+				<li><a href="#step4">Bước 4</a></li>
+			</ul>
+			<div>
+				<div id="step1">
+					<h3>Đăng nhập vào hệ thống </h3>
+				</div>
+				<div id="step2">
+					<h3>Điền tên công việc muốn giao</h3>
+				</div>
+				<div id="step3">
+					<h3>Điền mô tả chi tiết công việc</h3>
+				</div>
+				<div id="step4">
+					<h3>Điền thời gian bắt đầu, kết thúc</h3>
+				</div>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container">
+		<div class="bg-dark p-4 text-white">
+			<h3>Hướng dẫn chức năng đánh giá công việc</h3>
+		</div>
+	</div>
+
+
+	<div class="container mt-2 mb-5">
+		<div id="myWizard">
+			<ul>
+				<li><a href="#buoc1">Bước 1</a></li>
+				<li><a href="#buoc2">Bước 2</a></li>
+				<li><a href="#buoc3">Bước 3</a></li>
+				<li><a href="#buoc4">Bước 4</a></li>
+			</ul>
+			<div>
+				<div id="buoc1">
+					<h3>Đăng nhập vào hệ thống </h3>
+				</div>
+				<div id="buoc2">
+					<h3>Chọn công việc muốn đánh giá</h3>
+				</div>
+				<div id="buoc3">
+					<h3>Nhận xét chi tiết công việc</h3>
+				</div>
+				<div id="buoc4">
+					<h3>Cập nhật vào hệ thống</h3>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
+	</footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+
+	<script>
+		$('#stepwizard').smartWizard();
+	</script>
+	<script>	
+		$('#myWizard').smartWizard();
+	</script>
+</body>
+</html>

@@ -1,383 +1,105 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>HCI_14 Danh sách công việc</title>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-
-	<style>
-
-		*{
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
-		.w3-anton{
-			font-family: 'Patua One', cursive;
-		}
-
-		body{
-			font-family: Arial, sans-serif;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/login-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<title>HCI_14 Log in</title>
 </head>
 <body>
-	<!-- Navbar (sit on top) -->
-	<div class="w3-bar w3-white w3-card w3-cell-middle " id="myNavbar">
-		<a href="employee-import.html" class="w3-bar-item w3-anton w3-medium" style="text-decoration: none; padding-right: 30px;">COMPANY</a>
-		<!-- Right-sided navbar links -->
-		<div class="w3-left w3-hide-small w3-margin-right">
-
-			<a href="#" class="w3-bar-item w3-button"><i class="fa fa-th" style="margin-right: 5px;"></i>Danh sách công việc</a>
-			<a href="job-dividing.html" class="w3-bar-item w3-button "><i class="fa fa-user" style="margin-right: 5px;"></i>Phân công công việc</a>
-			<a href="thong-ke.html" class="w3-bar-item w3-button "><i class="fa fa-usd" ></i> Thống kê</a>
-			<a href="kpi.html" class="w3-bar-item w3-button "><i class="fa fa-bar-chart" style="margin-right: 5px;"></i>KPI</a>
-			<a href="he-thong.html" class="w3-bar-item w3-button "><i class="fa fa-book" style="padding-right: 5px;"></i>Thông báo</a>
+	
+	<div class="container mt-5">
+		<div class="text-center">
+			<img class="mb-4" src="imgs/logo-hust.png" alt="" width="100" height="100">
+			<h1 class="h3 mb-3 font-weight-normal">Phòng kinh doanh nguyên liệu</h1>
 		</div>
-		<div class="w3-right w3-hide-small w3-margin-right ">
-			<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-user w3-large" style="padding: 0 10px;"></i>Hi, Manager</a>
-			<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-bell w3-large" style="padding: 0 10px;"></i></a>
-		</div>
-		<!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-		<a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-			<i class="fa fa-bars"></i>
-		</a>
-	</div>
-
-	<!-- Sidebar on small screens when clicking the menu icon -->
-	<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Đóng ×</a>
-		<a href="index-manage.html" onclick="w3_close()" class="w3-bar-item w3-button">Danh sách công việc</a>
-		<a href="job-dividing.html" onclick="w3_close()" class="w3-bar-item w3-button">Phân công công việc</a>
-		<a href="thong-ke.html" onclick="w3_close()" class="w3-bar-item w3-button">Thống kê</a>
-		<a href="kpi.html" onclick="w3_close()" class="w3-bar-item w3-button">KPI</a>
-		<a href="he-thong.html" onclick="w3_close()" class="w3-bar-item w3-button">Thông báo</a>
-	</nav>
-
-	<!-- Main content -->
-	<div class="w3-bar w3-content w3-padding-16">
-		<div class="w3-row-padding">
-			<div class="w3-threequarter" style="margin-bottom: 10px;">
-				<input type="search" name="Search" style="width: 100%">
-			</div>
-			<div class="w3-quarter" >
-				<button class="w3-border" style="cursor: pointer; padding: 0 10px;">Tìm kiếm</button>
-			</div>
-		</div>
-		
-	</div>
-	<div class="w3-bar w3-content w3-padding-16">
-		<div class="w3-row-padding">
-			<div class="w3-threequarter">
-				<div class="w3-row">
-					<div class="w3-third">
-						<select name="status" style="width: 80%; margin-bottom: 10px;">
-							<option value="status">Trạng thái</option>
-							<option value="run">Đang thực hiện</option>
-							<option value="complete">Đã hoàn thành</option>
-							<option value="warning">Sắp hết hạn</option>
-							<option value="deadline">Qúa hạn</option>
-						</select>
-					</div>
-					<div class="w3-third">
-						<select name="user" style="width: 80%; margin-bottom: 10px;">
-							<option value="user">Người thực hiện</option>
-							<option value="huong">Nguyễn Thị Hương</option>
-							<option value="huong">Nguyễn Thị Hoa</option>
-							<option value="huong">Nguyễn Thị Hoài</option>
-							<option value="huong">Nguyễn Thị Thắm</option>
-							<option value="huong">Nguyễn Thị Thảo</option>
-							<option value="huong">Nguyễn Thị Oanh</option>
-							<option value="huong">Nguyễn Thị Ly</option>
-						</select>
-					</div>
-					<div class="w3-third">
-						<select name="status" style="width: 80%; margin-bottom: 10px;" >
-							<option value="room">Bộ phận</option>
-							<option value="Running">Nhập nguyên liệu</option>
-							<option value="Running">Xuất nguyên liệu</option>
-							<option value="Running">Kinh doanh nguyên liệu</option>
-						</select>
+		<div class="container mt-5 mb-5">
+			<form class="needs-validation" novalidate>
+				<div class="form-row">
+					<div class="col-sm-4 offset-sm-4 offset-xs-0 col">
+						<input type="email" class="form-control" id="validationCustom01" placeholder="Email" required>
+						<div class="invalid-feedback">
+							Email không hợp lệ !
+						</div>
 					</div>
 				</div>
+				<div class="form-row mt-2">
+					<div class="col-sm-4 offset-sm-4 offset-xs-0">
+						<input type="password" class="form-control" id="validationCustom02" placeholder="Password" required>
+						<div class="invalid-feedback">
+							Password phải có ít nhất 8 ký tự
+						</div>
+					</div>
+				</div>
+				<div class="form-row mt-3">
+					<div class="col-sm-4 offset-sm-7 offset-xs-0">
+						<a href="#"><small>Quên mật khẩu</small></a>
+					</div>
+				</div>
+				<div class="form-row mt-3">
+					<div class="col-sm-4 offset-sm-4 col-md-4 offset-md-4 offset-xs-0">
+						<input type="submit" class="btn btn-block btn-primary" value="Log in">
+					</div>
+				</div>
+				
+			</form>
+			<div class="container mt-2 text-center">
+				<a href="truong-phong-trang-chu.html" class="mr-2"><small>Trưởng phòng</small></a>
+				<a href="nhan-vien-trang-chu.html"><small>Nhân viên</small></a>
 			</div>
-			
-			<div class="w3-quarter">
-				<button class="w3-border" style="cursor: pointer; padding: 0 10px;">Tìm kiếm nâng cao</button>
-			</div>	
 		</div>
 	</div>
 
-	<section class="w3-responsive w3-section">
-		<!-- Modal -->
-		<div id="id01" class="w3-modal">
-			<div class="w3-modal-content" style="max-width: 400px;">
-				<header class="w3-container w3-light-grey"> 
-					<span onclick="document.getElementById('id01').style.display='none'" 
-					class="w3-button w3-display-topright w3-large">&times;</span>
-					<h3 class="w3-center">Bạn chắc chắc muốn xóa?</h3>
-				</header>
-				<div class="w3-container w3-row w3-padding-32">
-					<div class="w3-half w3-center w3-padding-16"><button class="w3-button w3-center w3-blue" onclick="document.getElementById('id01').style.display='none'">Có</button></div>
-					<div class="w3-half w3-center w3-padding-16"><button class="w3-button w3-center w3-red" onclick="document.getElementById('id01').style.display='none'">Không</button></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="w3-margin">
-			<div class="w3-border-bottom w3-row w3-container w3-green w3-hide-small">
-				<div class="w3-quarter">
-					<h5>Tên công việc</h5>
-				</div>
-				<div class="w3-quarter">
-					<h5>Người thực hiện</h5>
-				</div>
-				<div class="w3-quarter">
-					<h5>Trạng thái</h5>
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Hương</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6><span style="padding: 0 5px 0 0; font-weight: bold;">12/19</span>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-red w3-tiny w3-center" style="height:12px;width:20%;">20%</div>
-					</div>
-					<h6><span style="padding-right: 5px; font-weight: bold;">4</span>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile w3-display-container" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Hoa</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-yellow w3-tiny w3-center" style="height:12px;width:50%;">50%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Lan</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-green w3-tiny w3-center" style="height:12px;width:100%;">100%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Hương</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-green w3-tiny w3-center" style="height:12px;width:100%;">100%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Hoa</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-green w3-tiny w3-center" style="height:12px;width:20%;">20%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Phương</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-green w3-tiny w3-center" style="height:12px;width:100%;">100%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-			<div class="w3-border-bottom w3-row w3-container w3-hover-light-grey">
-				<div class="w3-quarter w3-mobile">
-					<h6>Cập nhật đơn hàng từ HongKong</h6>
-					<p>Hoàn thành gấp </p>
-				</div>
-				<div class="w3-quarter w3-mobile " style="padding-top: 20px;">
-					<p>Nguyễn Thị Hương</p>
-				</div>
-				<div class="w3-quarter w3-mobile">	
-					<h6>hoàn thành</h6>
-					<div class="w3-border" style="width:80%;">
-						<div class="w3-green w3-tiny w3-center" style="height:12px;width:100%;">100%</div>
-					</div>
-					<h6>quá hạn</h6>
-				</div>
-				<div class="w3-quarter w3-mobile" style="padding: 36px 0;">
-					<div class="w3-row">
-						<div class="w3-col s4 m4 w3-center">
-							<a href="#" class="w3-tag w3-blue" style="text-decoration: none;">Detail</a>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-red" style="cursor: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Delete</span>
-						</div>
-						<div class="w3-col s4 m4 w3-center">
-							<span class="w3-tag w3-yellow" style="cursor: pointer;or: pointer; padding: 0 5px;" onclick="document.getElementById('id01').style.display='block'">Update</span>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</div>
-		
-	</div>
-</section>
-
-<div class="w3-bar w3-center w3-section w3-padding-16">
-	<a href="#" class="w3-button">&laquo;</a>
-	<a href="#" class="w3-button">1</a>
-	<a href="#" class="w3-button">2</a>
-	<a href="#" class="w3-button">3</a>
-	<a href="#" class="w3-button">4</a>
-	<a href="#" class="w3-button">&raquo;</a>
-</div>
-
-<footer class="w3-container w3-section w3-center w3-large w3-light-grey w3-padding-32">
-	HCI_14
-</footer>
-
-
-<script type="text/javascript">
-	var mySidebar = document.getElementById("mySidebar");
-
-	function w3_open() {
-		if (mySidebar.style.display === 'block') {
-			mySidebar.style.display = 'none';
-		} else {
-			mySidebar.style.display = 'block';
-		}
-	}
-
-// Close the sidebar with the close button
-function w3_close() {
-	mySidebar.style.display = "none";
-}
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function() {
+		  'use strict';
+		  window.addEventListener('load', function() {
+		    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+		    var forms = document.getElementsByClassName('needs-validation');
+		    // Loop over them and prevent submission
+		    var validation = Array.prototype.filter.call(forms, function(form) {
+		      form.addEventListener('submit', function(event) {
+		        if (form.checkValidity() === false) {
+		          event.preventDefault();
+		          event.stopPropagation();
+		        }
+		        form.classList.add('was-validated');
+		      }, false);
+		    });
+		  }, false);
+		})();
+</script>
+    </script>
 </body>
 </html>

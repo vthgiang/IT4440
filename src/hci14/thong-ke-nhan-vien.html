@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Thống kế hiệu quả làm việc</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sina-nav.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<style>
+		.nav-container{
+			min-height: 60px;
+		}
+		.sina-nav{
+			top: 0px;
+			position: absolute;
+		}
+
+		ul li a:visited{
+			color: blue;
+		}
+
+		td{
+			background-color: white !important;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-container">
+		<nav class="sina-nav mobile-sidebar navbar-fixed" data-top="0">
+			<div class="container">
+				<div class="search-box">
+					<form role="search" method="get" action="#">
+						<span class="search-addon close-search"><i class="fa fa-times"></i></span>
+						<div class="search-input">
+							<input type="search" class="form-control" placeholder="Search here" value="" name="">
+						</div>
+						<span class="search-addon search-icon"><i class="fa fa-search"></i></span>
+					</form>
+				</div><!-- .search-box -->
+
+				<div class="extension-nav">
+					<ul>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="widget-bar-btn"><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+					</ul>
+				</div><!-- .extension-nav -->
+
+				<div class="sina-nav-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="sina-brand" href="#">
+						<h2 class="pt-2">
+							Material
+						</h2>
+					</a>
+				</div><!-- .sina-nav-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+						<li><a href="truong-phong-trang-chu.html">Trang chủ</a></li>
+						<li><a href="cong-viec.html">Công việc</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thống kê</a>
+							<ul class="dropdown-menu">
+								<li><a href="thong-ke-doanh-thu.html">Doanh thu</a></li>
+								<li><a href="thong-ke-nguyen-lieu.html">Nguyên liệu</a></li>
+								<li><a href="nha-cung-cap.html">Nhà cung cấp</a></li>
+								<li><a href="thong-ke-nhan-vien.html">Nhân viên</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Liên kết</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://hci10.it4440.phungluan.com/">Kinh doanh nhãn hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="thong-bao.html">Thông báo</a></li>
+						<li><a href="huong-dan.html">Hướng dẫn</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- .container -->
+
+			<!-- Start widget-bar -->
+			<div class="widget-bar">
+				<a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h4 class="title text-capitalize">Hi, Nguyễn Văn Tuân</h4>
+					<ul class="link">
+						<li><a href="#" class="text-capitalize"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Tài khoản</a></li>
+						<li><a href="#" class="text-capitalize"><i class="fa fa-cog mr-1"></i>Cài đặt</a></li>
+						<li><a href="index.html" class="text-capitalize"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Đăng xuất</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End widget-bar -->
+		</nav>	
+	</div>
+	
+
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-4" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Chi tiết công việc</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="container mt-1 mb-5">
+							<nav>
+								<div class="nav nav-tabs" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Dạng bảng</a>
+									<a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Dạng biểu đồ</a>
+								</div>
+							</nav>
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+									<div class="container mb-3 mt-3">
+										<table class="table table-striped table-bordered mydatatable" style="width: 100%;" 	>
+											<thead>
+												<tr>
+													<th>Tuần</th>
+													<th>Tháng</th>
+													<th>Năm</th>
+													<th>Hoàn thành</th>
+													<th>Quá hạn</th>
+													<th></th>
+												</tr>			
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>1</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>0</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>1</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>0</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>12</td>
+													<td>12</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>0</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>1</td>
+													<td>11</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>5</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>12</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>0</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>10</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>2</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>9</td>
+													<td>2019</td>
+													<td>100</td>
+													<td>3</td>
+													<td>
+														<a href="chi-tiet-cong-viec.html" class="btn-link pr-1">Chi tiết</a>
+													</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr></tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+
+								<!-- Chart -->
+								<div class="tab-pane fade pt-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+									<div class="container pt-1">
+										<canvas id="myChart" width="600" height="400">
+											
+										</canvas>
+
+										<canvas id="newChart" width="600" height="400" class="mt-5">
+										
+										</canvas>					
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Delete -->
+	
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5 p-5" id="delete">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div>
+						<h4 class="text-center" style="padding-top: 2rem; padding-bottom: 2rem;">Bạn chắc chắn muốn xóa ?</h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body pb-5">
+						<div class="row justify-content-around">					
+							<button class="btn btn-primary" data-dismiss="modal" onclick="alert('Xóa thành công.') ">Có</button>													
+							<button class="btn btn-danger" data-dismiss="modal">Không</button>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- content -->
+
+	<div class="container mb-3 mt-3">
+		<table class="table table-striped table-bordered mydatatable" style="width: 100%;" 	>
+			<thead>
+				<tr>
+					<th>Mã nhân viên</th>
+					<th>Tên nhân viên</th>
+					<th>Chức vụ</th>
+					<th>Trạng thái</th>
+					<th>Mức độ hiệu quả</th>
+					<th></th>
+				</tr>			
+			</thead>
+			<tbody>
+				<tr>
+					<td>bk1000</td>
+					<td>Quỳnh Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:90%">90%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1001</td>
+					<td>Vân Anh</td>
+					<td>Nhân viên kinh doanh</td>
+					<td>Offline</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:85%">85%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1002</td>
+					<td>Thu Anh</td>
+					<td>Nhân viên xuất khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar bg-warning" style="width:75%">75%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1003</td>
+					<td>Hoài Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar bg-warning" style="width:70%">70%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1004</td>
+					<td>Lan Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td>Offline</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:90%">90%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1005</td>
+					<td>Quỳnh Anh</td>
+					<td>Nhân viên kinh doanh</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:100%">100%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1006</td>
+					<td>Thu Quỳnh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:95%">95%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1007</td>
+					<td>Hà Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar bg-warning" style="width:70%">70%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1008</td>
+					<td>Quỳnh Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:90%">90%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1009</td>
+					<td>Quỳnh Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar bg-danger" style="width:60%">60%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+				<tr>
+					<td>bk1010</td>
+					<td>Quỳnh Anh</td>
+					<td>Nhân viên nhập khẩu</td>
+					<td class="text-success">Online</td>
+					<td>
+						<div class="progress mt-1">
+							<div class="progress-bar" style="width:90%">90%</div>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
+	</footer>
+	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/sina-nav.js"></script>
+	<script>
+		$('.mydatatable').DataTable({	
+		});
+	</script>	
+	<script>
+		var myChart = document.getElementById('myChart').getContext('2d');
+
+		//global chart
+		Chart.defaults.global.defaultFontFamily = 'Arial';
+		Chart.defaults.global.defaultFontSize = 16;
+		Chart.defaults.global.defaultFontColor = '#777';
+
+
+		var lineChart = new Chart(myChart, {
+			type: 'line',
+			data:{
+				labels: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+				datasets: [{
+					label: 'Hoàn thành',
+					data:[
+						0,
+						90,
+						85,
+						90,
+						100,
+						80,
+						90,
+						95						
+					],
+					borderColor: 'rgba(255, 99, 132, 0.6)',
+					fill: false			
+				}]
+			},
+			options: {
+				title: {
+					display: true,
+					text: 'Mức độ hoàn thành công việc',
+					fontSize: 25
+				}
+			}
+		});
+	</script>
+	<script>
+		var newChart = document.getElementById('newChart').getContext('2d');
+
+		//global chart
+		Chart.defaults.global.defaultFontFamily = 'Arial';
+		Chart.defaults.global.defaultFontSize = 16;
+		Chart.defaults.global.defaultFontColor = '#777';
+
+
+		var doubChart = new Chart(newChart, {
+			type: 'doughnut',
+			data:{
+				labels: ['Rất tốt', 'Tốt', 'Khá', 'Trung Bình', 'Kém'],
+				datasets: [{
+					label: 'Hoàn thành',
+					data:[
+						20,
+						10,
+						2,
+						1,
+						0						
+					],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.6)',
+						'rgba(54, 162, 235, 0.6)',
+						'rgba(255, 206, 86, 0.6)',
+						'rgba(100, 120, 86, 0.6)',
+						'rgba(32, 206, 186, 0.6)'
+					]		
+				}]
+			},
+			options: {
+				title: {
+					display: true,
+					text: 'Mức độ hoàn thành công việc',
+					fontSize: 25
+				}
+			}
+		});
+	</script>
+</body>
+</html>
