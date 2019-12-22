@@ -26,8 +26,8 @@
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
-          <a class="navbar-brand brand-logo" href="../../index.html">
-           <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
+          <a class="navbar-brand brand-logo" href="../../staff.html">
+            <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
@@ -143,10 +143,10 @@
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                 <div class="dropdown-header text-center">
                   <img class="img-md rounded-circle" src="../../assets/images/faces/face8.jpg" alt="Profile image">
-                  <p class="mb-1 mt-3 font-weight-semibold">Đặng Ngọc Hiếu</p>
-                  <p class="font-weight-light text-muted mb-0">Hieu@gmail.com</p>
+                  <p class="mb-1 mt-3 font-weight-semibold">Nguyễn Anh</p>
+                  <p class="font-weight-light text-muted mb-0">Anh@gmail.com</p>
                 </div>
-                <a class="dropdown-item" href="../../pages/profile/profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
+                <a class="dropdown-item" href="../../pages/profile/staff_profile.html">Thông tin cá nhân<i class="dropdown-item-icon ti-dashboard"></i></a>
                 <a class="dropdown-item">Tin nhắn<i class="dropdown-item-icon ti-comment-alt"></i></a>
                 <a class="dropdown-item">Hoạt động<i class="dropdown-item-icon ti-location-arrow"></i></a>
                 <a class="dropdown-item">Cài đặt<i class="dropdown-item-icon ti-help-alt"></i></a>
@@ -171,14 +171,14 @@
                   <div class="dot-indicator bg-success"></div>
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name">Đặng Ngọc Hiếu</p>
+                  <p class="profile-name">Nguyễn Anh</p>
                   <p class="designation">Phòng kỹ thuật</p>
                 </div>
               </a>
             </li>
             <li class="nav-item nav-category">Main Menu</li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="../../staff.html">
                 <i class="menu-icon typcn typcn-document-text"></i>
                 <span class="menu-title">Trang chủ</span>
               </a>
@@ -192,24 +192,7 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/ui-features/project_manage.html">Quản lý dự án</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                <i class="menu-icon typcn typcn-coffee"></i>
-                <span class="menu-title">Đánh giá</span>
-                <i class="menu-arrow"></i>
-              </a>
-              <div class="collapse" id="ui-basic">
-                <ul class="nav flex-column sub-menu">
-                  <li class="nav-item">
-                    <a class="nav-link" href="../../pages/evaluate/evaluate.html">Đánh giá công việc</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="http://hci09.it4440.phungluan.com/thietlapkpicapnhanvien.html">Đánh giá KPI</a>
+                    <a class="nav-link" href="../../pages/ui-features/staff_my_work.html">Công việc của tôi</a>
                   </li>
                 </ul>
               </div>
@@ -223,13 +206,10 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/report/report.html">Lập báo cáo</a>
+                    <a class="nav-link" href="../../pages/report/staff_report.html">Lập báo cáo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/report/sent_report.html">Báo cáo đã gửi</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../../pages/report/report_received.html">Báo cáo đã nhận</a>
+                    <a class="nav-link" href="../../pages/report/staff_sent_report.html">Báo cáo đã gửi</a>
                   </li>
                 </ul>
               </div>
@@ -240,140 +220,109 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-4">
+              <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Dự án 001</h4>
-                    <p class="card-description"> Triển khai hệ thống chấm công </p>
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Người giám sát</label>
-                        <p class="card-description"> Trưởng phòng: Nguyễn Xuân Nam </p>
+                    <h4 class="card-title">Công việc của tôi</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Công việc </th>
+                          <th> Dự án </th>
+                          <th> Trạng thái </th>
+                          <th> Chi tiết </th>
+                          <th> Deadline </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <div class="filter-wrapper">
+                          <div class="dropdown toolbar-item">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownsorting" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tất cả</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownsorting">
+                              <a class="dropdown-item" href="#">Đã hoàn thành</a>
+                              <a class="dropdown-item" href="#">Chưa hoàn thành</a>
+                            </div>
+                          </div>
+                        </div>
+                        <tr>
+                          <td> Lắp đặt máy chấm công </td>
+                          <td> Dự án 001 </td>
+                          <td> Đã hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 01/05/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Khảo sát xưởng lắp đặt </td>
+                          <td> Dự án 002 </td>
+                          <td> Đã hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 01/05/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Lập báo cáo dự án </td>
+                          <td> Dự án 006 </td>
+                          <td> Đã hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 01/09/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Bảo trì website ngày 01/12/2019 </td>
+                          <td> Dự án 010 </td>
+                          <td> Chưa hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 01/01/2020 </td>
+                        </tr>
+                        <tr>
+                          <td> Tiến hành bảo trì nhà máy pha chế </td>
+                          <td> Dự án 013 </td>
+                          <td> Đã hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 01/08/2019 </td>
+                        </tr>
+                        <tr>
+                          <td> Tháo dỡ thiết bị cơ sở 02 </td>
+                          <td> Dự án 014 </td>
+                          <td> Chưa hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 15/01/2020 </td>
+                        </tr>
+                        <tr>
+                          <td> Cà đặt phần mềm phòng hành chính </td>
+                          <td> Dự án 016 </td>
+                          <td> Chưa hoàn thành </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light" href="staff_task_detail.html">Chi tiết</a>
+                          </td>
+                          <td> 31/12/2019 </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="d-block mt-3" href="#"> </a>
+                      <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                        <button type="button" class="btn btn-secondary">01</button>
+                        <button type="button" class="btn btn-secondary">02</button>
+                        <button type="button" class="btn btn-secondary">03</button>
+                        <button type="button" class="btn btn-secondary">...</button>
+                        <button type="button" class="btn btn-secondary">10</button>
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
                       </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Ngày bắt đầu</label>
-                        <p class="card-description"> 01/01/2019 </p>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Ngày kết thúc</label>
-                        <p class="card-description"> 01/05/2019 </p>
-                      </div>
-                    </form>
                   </div>
                 </div>
               </div>
-
-              <div class="col-8 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Thêm công việc dự án</h4>
-                    <form class="form-sample">
-                      <p class="card-description"> Thông tin chi tiết công việc </p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Mã công việc</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Tên công việc</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Bộ phận</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Bộ phận kỹ thuật</option>
-                                <option>Bộ phận nhân sự</option>
-                                <option>Bộ phận hành chính</option>
-                                <option>Bộ phận R&D</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Deadline</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="dd/mm/yyyy" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-10">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Nội dung</label>
-                            <div class="col-sm-12">
-                              <textarea class="form-control" id="exampleTextarea1" rows="6">
-                              </textarea>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Phân công</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Đặng Ngọc Hiếu</option>
-                                <option>Hà Văn Toàn</option>
-                                <option>Đào Thị Hà</option>
-                                <option>Nguyễn Văn Chinh</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Ghi chú</label>
-                            <div class="input-group col-xs-12">
-                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
-                              <span class="input-group-append">
-                              <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#test">Thêm</button>
-
-                      <!--the Modal-->
-                      <div class="modal fade" id="test" tabindex="-1" role="dialog">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            </div>
-                            <div class="modal-body">
-                              <p>Thêm công việc thành công</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Quay lại</button>
-                            </div>
-                          </div><!-- /.modal-content -->
-                        </div><!-- /.modal-dialog -->
-                      </div><!-- /.modal -->
-
-                      <a role="button" class="btn btn-danger" href="project_detail.html">Quay lại</a>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              <a role="button" class="btn btn-danger" href="../../staff.html">Quay lại</a>
             </div>
           </div>
           <!-- content-wrapper ends -->

@@ -27,7 +27,7 @@
       <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
           <a class="navbar-brand brand-logo" href="../../index.html">
-           <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
+            <span class="profile-text font-weight-medium d-none d-md-block">HCI_02 PROJECT</span> </a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-center">
           <ul class="navbar-nav">
@@ -240,117 +240,72 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-4">
+              <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Dự án 001</h4>
-                    <p class="card-description"> Triển khai hệ thống chấm công </p>
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Người giám sát</label>
-                        <p class="card-description"> Trưởng phòng: Nguyễn Xuân Nam </p>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Ngày bắt đầu</label>
-                        <p class="card-description"> 01/01/2019 </p>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword1">Ngày kết thúc</label>
-                        <p class="card-description"> 01/05/2019 </p>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
+                    <h4 class="card-title">Báo cáo đã gửi</h4>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th> Ngày tháng </th>
+                          <th> Người gửi </th>
+                          <th> Tiêu đề </th>
+                          <th> Trạng thái </th>
+                          <th> Chi tiết </th>
+                          <th> Phê duyệt </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> 01/12/2019 </td>
+                          <td> Nhân viên: Nguyễn Anh </td>
+                          <td> Báo cáo tiến độ định kỳ </td>
+                          <td> Chưa phê duyệt </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-success btn-block text-light" data-toggle="modal" data-target="#test">Phê duyệt</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 15/11/2019 </td>
+                          <td> Nhân viên: Nguyễn Quang Hà </td>
+                          <td> Báo cáo hoàn thành công việc </td>
+                          <td> Chưa phê duyệt </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-success btn-block text-light" data-toggle="modal" data-target="#test">Phê duyệt</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 13/11/2019 </td>
+                          <td> Nhân viên: Nguyễn Anh </td>
+                          <td> Báo cáo hoàn thành công việc </td>
+                          <td> Chưa phê duyệt </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-success btn-block text-light" data-toggle="modal" data-target="#test">Phê duyệt</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td> 01/11/2019 </td>
+                          <td> Nhân viên: Nguyễn Anh </td>
+                          <td> Báo cáo công việc tháng 10/2019 </td>
+                          <td> Chưa phê duyệt </td>
+                          <td>
+                            <a role="button" class="btn btn-info btn-block text-light">Chi tiết</a>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-success btn-block text-light" data-toggle="modal" data-target="#test">Phê duyệt</button>
+                          </td>
+                        </tr>
 
-              <div class="col-8 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Thêm công việc dự án</h4>
-                    <form class="form-sample">
-                      <p class="card-description"> Thông tin chi tiết công việc </p>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Mã công việc</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Tên công việc</label>
-                            <div class="col-sm-9">
-                              <input type="text" class="form-control" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Bộ phận</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Bộ phận kỹ thuật</option>
-                                <option>Bộ phận nhân sự</option>
-                                <option>Bộ phận hành chính</option>
-                                <option>Bộ phận R&D</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Deadline</label>
-                            <div class="col-sm-9">
-                              <input class="form-control" placeholder="dd/mm/yyyy" />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-10">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Nội dung</label>
-                            <div class="col-sm-12">
-                              <textarea class="form-control" id="exampleTextarea1" rows="6">
-                              </textarea>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Phân công</label>
-                            <div class="col-sm-9">
-                              <select class="form-control">
-                                <option>Đặng Ngọc Hiếu</option>
-                                <option>Hà Văn Toàn</option>
-                                <option>Đào Thị Hà</option>
-                                <option>Nguyễn Văn Chinh</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group row">
-                            <label class="col-sm-6 col-form-label">Ghi chú</label>
-                            <div class="input-group col-xs-12">
-                              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload File">
-                              <span class="input-group-append">
-                              <button class="file-upload-browse btn btn-info" type="button">Upload</button>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#test">Thêm</button>
-
-                      <!--the Modal-->
+                        <!--the Modal-->
                       <div class="modal fade" id="test" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
@@ -358,7 +313,7 @@
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             </div>
                             <div class="modal-body">
-                              <p>Thêm công việc thành công</p>
+                              <p>Phê duyệt báo cáo thành công</p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-danger" data-dismiss="modal">Quay lại</button>
@@ -367,13 +322,20 @@
                         </div><!-- /.modal-dialog -->
                       </div><!-- /.modal -->
 
-                      <a role="button" class="btn btn-danger" href="project_detail.html">Quay lại</a>
-                    </form>
+                      </tbody>
+                    </table>
+                    <a class="d-block mt-3" href="#"> </a>
+                      <div class="btn-group toolbar-item" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-left"></i></button>
+                        <button type="button" class="btn btn-secondary">01</button>
+                        <button type="button" class="btn btn-secondary">02</button>
+                        <button type="button" class="btn btn-secondary">03</button>
+                        <button type="button" class="btn btn-secondary"><i class="mdi mdi-chevron-right"></i></button>
+                      </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+              <a role="button" class="btn btn-danger" href="../../index.html">Quay lại</a>
             </div>
           </div>
           <!-- content-wrapper ends -->
