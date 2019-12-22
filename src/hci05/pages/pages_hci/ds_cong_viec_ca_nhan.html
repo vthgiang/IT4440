@@ -25,8 +25,13 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Font -->
-    <link rel="stylesheet"
+    <style>
+        #myTable_filter, #example1_filter, .pagination{
+            float: right;
+        }
+
+        
+</style><!-- Google Font -->    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -197,13 +202,13 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Công việc cá nhân
+                Công việc thường xuyên
                 <!-- <small>Biểu đồ</small> -->
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
 
-                <li class="active">Công việc cá nhân</li>
+                <li class="active">Công việc thường xuyên</li>
             </ol>
         </section>
 
@@ -212,7 +217,7 @@
 
             <!-- /.row -->
 
-            <div class="row">
+            <div class="">
                 <div class="box box-primary">
                     <div class="box-header with-border">
                         <i class="fa fa-bar-chart-o"></i>
@@ -288,50 +293,51 @@
                                             </tr>
 
 
-                                    <tr>
-                                        <td>
-                                            <div class="form-group">
-                                                <label>Quý</label>
-                                                <select class="form-control">
-                                                    <option></option>
-                                                    <option>Quý 1</option>
-                                                    <option>Quý 2</option>
-                                                    <option>Quý 3</option>
-                                                    <option>Quý 4</option>
-
-
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group">
-                                                <label>Tháng</label>
-                                                <select class="form-control">
-                                                    <option></option>
-                                                    <option>Tháng một</option>
-                                                    <option>Tháng hai</option>
-                                                    <option>Tháng ba</option>
-
-
-                                                </select>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="form-group">
-                                                <label>Năm</label>
-                                                <select class="form-control">
-                                                    <option></option>
-                                                    <option>2019</option>
-                                                    <option>2018</option>
-                                                    <option>2017</option>
-                                                    <option>2016</option>
-                                                    <option>2015</option>
-                                                </select>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                   
                                 </table>
                             </div>
+                            <form action="" method="POST" class="form-inline" role="form" style="
+                            margin-left: 23px;
+                            margin-top: 25px;
+                        ">
+                                    
+                              <div class="form-group">
+                                  <label>Quý</label>
+                                  <select class="form-control">
+                                      <option></option>
+                                      <option>Quý 1</option>
+                                      <option>Quý 2</option>
+                                      <option>Quý 3</option>
+                                      <option selected>Quý 4</option>
+            
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label>Tháng</label>
+                                  <select class="form-control">
+                                      <option></option>
+                                      <option>Tháng 1</option>
+                                      <option>Tháng 2</option>
+                                      <option>Tháng 3</option>
+                                      <option>Tháng 4</option>
+                                      <option>Tháng 5</option>
+                                      <option>Tháng 6</option>
+                                      <option>Tháng 7</option>
+                                      <option>Tháng 8</option>
+                                      <option>Tháng 9</option>
+                                      <option>Tháng 10</option>
+                                      <option>Tháng 11</option>
+                                      <option selected>Tháng 12</option s>
+                                  </select>
+                              </div>
+                              <div class="form-group">
+                                  <label>Năm</label>
+                                  
+                                  <input type="number" name="" id="input" class="form-control" min="2000" max="2100" value="2019" required="required" title="">
+                                  
+                              </div>
+                                <button type="submit" class="btn btn-primary">Lọc</button>
+                            </form>
 
                             <!-- /.box -->
                         </div>
@@ -343,9 +349,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <!-- /.box -->
-                    <a href="tao_cong_viec_ca_nhan.html">
-                        <button type="button" class="btn btn-block btn-success">Tạo công việc</button>
-                    </a>
+                    
                 </div>
                 <!-- /.col -->
             </div>
@@ -364,78 +368,55 @@
                                 <tr>
                                     <th>STT</th>
                                     <th>Tên công việc</th>
+                                    <th>Người giao phó</th>
                                     <th>Ngày bắt đầu</th>
                                     <th>Deadline</th>
                                     <th>Tiến độ</th>
                                     <th>Chi tiết</th>
-                                    <th style="width: 40px">Sửa</th>
-                                    <th style="width: 40px">Xóa</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Tính lương tháng 10 cho phòng hành chính-nhân sự</td>
+                                    <td><a href="chi_tiet_cong_viec_ca_nhan.html">Tính lương tháng 10 cho phòng hành chính-nhân sự</a></td>
+                                    <th>Vũ Thị Hương Giang</th>
                                     <td>10/11/2019</td>
                                     <td>20/11/2019</td>
-                                    <td>35%</td>
+                                    <td><input type="text" class="knob" value="35" data-width="40" data-height="40" data-fgColor="#df3a01"></td>
                                     <td><a href="chi_tiet_cong_viec_ca_nhan.html"><button class="btn btn-info">Chi tiết
                                     </button></a></td>
-
-                                    <td><a href="sua_cong_viec_ca_nhan1.html">
-                                        <button class=" btn btn-primary btn-warning">Sửa
-                                        </button>
-                                    </a></td>
-                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                           onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Tính lương tháng 10 cho phòng marketing</td>
+                                    <td><a href="chi_tiet_cong_viec_ca_nhan.html">Tính lương tháng 10 cho phòng marketing</a></td>
+                                    <th>Vũ Thị Hương Giang</th>
                                     <td>10/11/2019</td>
                                     <td>20/11/2019</td>
-                                    <td>65%</td>
+                                    <td><input type="text" class="knob" value="65" data-width="40" data-height="40" data-fgColor="#ffd011"></td>
                                     <td><a href="chi_tiet_cong_viec_ca_nhan.html"><button class="btn btn-info">Chi tiết
                                     </button></a></td>
-
-                                    <td><a href="sua_cong_viec_ca_nhan2.html">
-                                        <button class=" btn btn-primary btn-warning">Sửa
-                                        </button>
-                                    </a>
-                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                           onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Tính lương tháng 10 cho phòng sale</td>
+                                    <td><a href="chi_tiet_cong_viec_ca_nhan.html">Tính lương tháng 10 cho phòng sale</a></td>
+                                    <th>Vũ Thị Hương Giang</th>
                                     <td>10/11/2019</td>
                                     <td>20/11/2019</td>
-                                    <td>65%</td>
+                                    <td><input type="text" class="knob" value="65" data-width="40" data-height="40" data-fgColor="#ffd011"></td>
                                     <td><a href="chi_tiet_cong_viec_ca_nhan.html"><button class="btn btn-info">Chi tiết
                                     </button></a></td>
 
-                                    <td><a href="sua_cong_viec_ca_nhan3.html">
-                                        <button class=" btn btn-primary btn-warning">Sửa
-                                        </button>
-                                    </a>
-                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                           onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>Tính lương tháng 10 cho phòng kế toán</td>
+                                    <td><a href="chi_tiet_cong_viec_ca_nhan.html">Tính lương tháng 10 cho phòng kế toán</a></td>
+                                    <th>Vũ Thị Hương Giang</th>
                                     <td>10/11/2019</td>
                                     <td>20/11/2019</td>
-                                    <td>65%</td>
+                                    <td><input type="text" class="knob" value="65" data-width="40" data-height="40" data-fgColor="#ffd011"></td>
                                     <td><a href="chi_tiet_cong_viec_ca_nhan.html"><button class="btn btn-info">Chi tiết
                                     </button></a></td>
 
-                                    <td><a href="sua_cong_viec_ca_nhan4.html">
-                                        <button class=" btn btn-primary btn-warning">Sửa
-                                        </button>
-                                    </a>
-                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                           onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
                                 </tr>
 
                                 </tbody>
@@ -493,10 +474,21 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="../../bower_components/jquery-knob/js/jquery.knob.js"></script>
 <!-- page script -->
 <script>
     $(function () {
-        $('#example1').DataTable()
+        $(".knob").knob({
+                readOnly : true});
+        $('#example1').DataTable({
+        "language": {
+          "paginate": {
+            "previous": "Trước",
+            "next": "Sau",
+            "search": "Tìm kiếm"
+          }
+        }
+      });
         $('#example2').DataTable({
             'paging': true,
             'lengthChange': false,

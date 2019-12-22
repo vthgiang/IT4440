@@ -32,8 +32,15 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Font -->
-    <link rel="stylesheet"
+    <style>
+  #myTable_filter, #example1_filter, .pagination{
+    float: right;
+  }
+
+  .select2-container--default .select2-selection--multiple .select2-selection__choice{
+      background-color: #3c8dbc !important;
+  }
+</style><!-- Google Font -->    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -152,50 +159,46 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">MENU</li>
-                <li class="treeview">
-                    <a href="#">
-                        <span>Phòng hành chính nhân sự</span>
+            <li>
+                <a href="dashboard.html">
+                    <span style="font-size: 15px"><i class="fas fa-chart-pie"></i></span> <span>&nbsp;&nbsp;Trang chủ phòng HC - NS</span>
+                    <span class="pull-right-container">
+
+        </span>
+                </a>
+            </li>
+                <li>
+                    <a href="ds_congviec_cty.html">
+                        <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
                         <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+
             </span>
                     </a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a href="ds_congviec_cty.html">
-                                <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
-                                <span class="pull-right-container">
+                </li>
+                <li>
+                    <a href="ds_cong_viec_phong_ban.html">
+                        <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
+                        <span class="pull-right-container">
 
-                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ds_cong_viec_phong_ban.html">
-                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
-                                <span class="pull-right-container">
+                </span>
+                    </a>
 
-                      </span>
-                            </a>
+                </li>
+                <li>
+                    <a href="ds_cong_viec_ca_nhan.html">
+                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                        <span class="pull-right-container">
 
-                        </li>
-                        <li>
-                            <a href="ds_cong_viec_ca_nhan.html">
-                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
-                                <span class="pull-right-container">
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
+                        <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
+                        <span class="pull-right-container">
 
-                      </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
-                                <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
-                                <span class="pull-right-container">
-
-                      </span>
-                            </a>
-                        </li>
-                    </ul>
-
+                </span>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -209,9 +212,9 @@
                 Sửa công việc phòng ban
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
-                <li><a href="#">Tables</a></li>
-                <li class="active">Data tables</li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="ds_cong_viec_phong_ban.html">Ds công việc phòng ban</a></li>
+                <li class="active">Sửa công việc</li>
             </ol>
         </section>
 
@@ -284,20 +287,23 @@
                                     <div class="form-group">
                                         <label  style="width: 100%;">Người phối hợp thực
                                             hiện</label>
-                                        <select class="form-control select2" style="width: 95%; float: left;">
+                                        <select class="form-control select2" multiple="multiple" data-placeholder="Select a State"style="width: 100%;">
                                             <option></option>
-                                            <option>Lã Mạnh Cường</option>
+                                            <option selected>Lã Mạnh Cường</option>
                                             <option>Nguyễn Chí Thanh</option>
                                             <option>Nguyễn Duy Kỳ</option>
-                                            <option>Trịnh Duy Hưng</option>
+                                            <option selected>Trịnh Duy Hưng</option>
                                             <option>Kerlor Senglao</option>
                                         </select>
-                                        <button class="btn"><i class="fa fa-plus"></i></button>
                                     </div>
                                 </div>
 
                                 <div class="box-footer">
-                                    <button type="submit" class="btn btn-primary btn-create">Sửa</button>
+                                    <div class="form-group" style="margin-top: 15px; text-align: center;">
+                                        <!-- /.col -->
+                                        <a type="button" style="width: 150px; float: left;" class="btn btn-block btn-primary btn-create">Sửa công việc</a>
+                                        <a type="button" href="ds_cong_viec_phong_ban.html" style="width: 150px; float: left; margin-left: 10px;" class="btn  btn-default">Quay lại</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
@@ -359,14 +365,13 @@
                 cancelButtonText: 'Hủy',
             }).then((result) => {
                 if (result.value) {
-                    Swal.fire(
-                        'Bạn đã sửa thành công',
-                    )
+                    window.location.href = "ds_cong_viec_phong_ban.html";
                 }
             })
 
         })
 
+    $('.select2').select2();
 
     //Date picker
     $('#datepicker').datepicker({
@@ -374,7 +379,15 @@
     })
 
     $(function () {
-        $('#example1').DataTable()
+        $('#example1').DataTable({
+        "language": {
+          "paginate": {
+            "previous": "Trước",
+            "next": "Sau",
+            "search": "Tìm kiếm"
+          }
+        }
+      });
         $('#example2').DataTable({
             'paging': true,
             'lengthChange': false,

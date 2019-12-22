@@ -33,8 +33,11 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <!-- Google Font -->
-  <link rel="stylesheet"
+  <style>
+  #myTable_filter, #example1_filter, .pagination{
+    float: right;
+  }
+</style><!-- Google Font -->  <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <style>
@@ -216,7 +219,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Danh sách công việc phòng ban</a></li>
+        <li><a href="ds_cong_viec_phong_ban.html">Danh sách công việc phòng ban</a></li>
         <li class="active">Chi tiết công việc phòng ban</li>
       </ol>
     </section>
@@ -474,7 +477,15 @@
 <!-- page script -->
 <script>
   $(function () {
-    $('#example1').DataTable()
+    $('#example1').DataTable({
+        "language": {
+          "paginate": {
+            "previous": "Trước",
+            "next": "Sau",
+            "search": "Tìm kiếm"
+          }
+        }
+      });
     $('#example2').DataTable({
       'paging'      : true,
       'lengthChange': false,
@@ -525,7 +536,7 @@ crossorigin="anonymous"></script>
       // Smart Wizard
       $('#smartwizard').smartWizard({
               selected: 0,
-              theme: 'default',
+             theme: 'arrows',
               transitionEffect:'fade',
               showStepURLhash: true,
               toolbarSettings: {

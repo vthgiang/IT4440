@@ -26,12 +26,6 @@
 <![endif]-->
 
 <style>
-  #myTable_filter{
-    float: right;
-  }
-</style>
-
-<style>
   #myTable_filter, #example1_filter, .pagination{
     float: right;
   }
@@ -151,49 +145,42 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
       </form>
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
-       <ul class="sidebar-menu" data-widget="tree">
-            <li>
-                <a href="dashboard.html">
-                    <span style="font-size: 15px"><i class="fas fa-chart-pie"></i></span> <span>&nbsp;&nbsp;Trang chủ phòng HC - NS</span>
-                    <span class="pull-right-container">
-
-        </span>
-                </a>
-            </li>
-                <li>
-                    <a href="ds_congviec_cty.html">
-                        <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
-                        <span class="pull-right-container">
-
-            </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="ds_cong_viec_phong_ban.html">
-                        <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
-                        <span class="pull-right-container">
-
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="dashboard.html">
+                            <span style="font-size: 15px"><i class="fas fa-chart-pie"></i></span> <span>&nbsp;&nbsp;Trang chủ phòng HC - NS</span>
+                            <span class="pull-right-container">
+        
                 </span>
-                    </a>
-
-                </li>
-                <li>
-                    <a href="ds_cong_viec_ca_nhan.html">
-                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
-                        <span class="pull-right-container">
-
-                </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
-                        <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
-                        <span class="pull-right-container">
-
-                </span>
-                    </a>
-                </li>
-            </ul>
+                        </a>
+                    </li>
+                        <li>
+                            <a href="ds_cong_viec_ca_nhan.html">
+                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc cá nhân</span>
+                                <span class="pull-right-container">
+        
+                        </span>
+                            </a>
+        
+                        </li>
+                        <li>
+                            <a href="ds_bao_cao.html">
+                                <i class="fas fa-file-alt"></i> <span>Danh sách báo cáo</span>
+                                <span class="pull-right-container">
+        
+                        </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
+                                <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
+                                <span class="pull-right-container">
+        
+                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                
     </section>
  </aside>
 
@@ -202,12 +189,13 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Danh sách công việc theo phòng ban
+      Trang chủ
       <small>Biểu đồ</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
-      <li><a href="#">Ds công việc phòng ban</a></li>
+      <li><a href="#">Quản lý công việc</a></li>
+      <li class="active">công việc thường xuyên</li>
     </ol>
   </section>
 
@@ -217,7 +205,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
     <!-- /.row -->
 
     <div class="">
-        <div class="box box-primary">
+        <div class="box box-primary" style="padding-bottom: 120px;">
           <div class="box-header with-border">
             <i class="fa fa-bar-chart-o"></i>
 
@@ -229,7 +217,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
             </div>
           </div>
           <div class="box-body">
-            <div class="col-md-6" id="donut-chart" style="height: 300px;"></div>
+            <div class="col-md-6" id="donut-chart" style="height: 350px;"></div>
             <div class="col-md-6">
                 <!-- Bar chart -->
 
@@ -291,51 +279,52 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
                           </td>
 
                       </tr>
-                     
+                      <tr>
                   </table>
-                </div>
-                <form action="" method="POST" class="form-inline" role="form" style="
-                margin-left: 23px;
-                margin-top: 25px;
-            ">
-                        
-                  <div class="form-group">
-                      <label>Quý</label>
-                      <select class="form-control">
-                          <option></option>
-                          <option>Quý 1</option>
-                          <option>Quý 2</option>
-                          <option>Quý 3</option>
-                          <option selected>Quý 4</option>
+                  <br>
+                  <form action="" method="POST" class="form-inline" role="form" style="
+                  margin-left: 23px;
+                  margin-top: 25px;
+              ">
+                          
+                    <div class="form-group">
+                        <label>Quý</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option>Quý 1</option>
+                            <option>Quý 2</option>
+                            <option>Quý 3</option>
+                            <option selected>Quý 4</option>
 
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label>Tháng</label>
-                      <select class="form-control">
-                          <option></option>
-                          <option>Tháng 1</option>
-                          <option>Tháng 2</option>
-                          <option>Tháng 3</option>
-                          <option>Tháng 4</option>
-                          <option>Tháng 5</option>
-                          <option>Tháng 6</option>
-                          <option>Tháng 7</option>
-                          <option>Tháng 8</option>
-                          <option>Tháng 9</option>
-                          <option>Tháng 10</option>
-                          <option>Tháng 11</option>
-                          <option selected>Tháng 12</option s>
-                      </select>
-                  </div>
-                  <div class="form-group">
-                      <label>Năm</label>
-                      
-                      <input type="number" name="" id="input" class="form-control" min="2000" max="2100" value="2019" required="required" title="">
-                      
-                  </div>
-                    <button type="submit" class="btn btn-primary">Lọc</button>
-                </form>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Tháng</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option>Tháng 1</option>
+                            <option>Tháng 2</option>
+                            <option>Tháng 3</option>
+                            <option>Tháng 4</option>
+                            <option>Tháng 5</option>
+                            <option>Tháng 6</option>
+                            <option>Tháng 7</option>
+                            <option>Tháng 8</option>
+                            <option>Tháng 9</option>
+                            <option>Tháng 10</option>
+                            <option>Tháng 11</option>
+                            <option selected>Tháng 12</option s>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Năm</label>
+                        
+                        <input type="number" name="" id="input" class="form-control" min="2000" max="2100" value="2019" required="required" title="">
+                        
+                    </div>
+                      <button type="submit" class="btn btn-primary">Lọc</button>
+                  </form>
+                </div>
 
                 <!-- /.box -->
               </div>
@@ -343,125 +332,26 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
 
       </div>
     </div>
-    <!-- /.row -->
-    <div class="row">
-      <div class="col-xs-12">
-        <!-- /.box -->
-        
-      </div>
-      <!-- /.col -->
-    </div>
-    <div class="row">
-      <div class="col-xs-12">
 
-        <!-- /.box -->
-        <div class="box">
-          <div class="box-header">
-            <h3 class="box-title" style="float: left;">Bảng quản lý công việc</h3>
-            
-           
-          </div>
-          <!-- /.box-header -->
-          <div class="box-body">
-            <div class="row" style="margin-right: 0; margin-left: 0;">
-              <a href="tao_cong_viec_phong_ban.html" style="
-              width: 150px;
-              float: left;
-              margin-bottom: 25px;
-              "><button type="button" style="
-              width: 150px;
-              margin-bottom: 25px;
-          "class="btn btn-block btn-success" >Tạo công việc</button></a>
-           <form action="" method="POST" class="form-inline" role="form" style="float: right;">
-            <div class="form-group">
-                <label class="" >Bộ phận</label>
-                <select name="" id="input" class="form-control" required="required">
-                  <option value="">Nhân sự</option>
-                  <option value="">Bảo hiểm</option>
-                  <option value="">Tính lương</option>
-                  <option value="">Văn thư</option>
-                </select>
-              </div>
-            <button type="submit" class="btn btn-primary">Lọc</button>
-          </form></div>
-            <table id="myTable" class="table table-bordered table-striped">
-              <thead>
-                <tr>
-                  <th>STT</th>
-                  <th>Tên công việc</th>
-                  <th>Tên quy trình</th>
-                  <th>Người tạo</th>
-                  <th>Phòng ban thực hiện</th>
-                  <th>Deadline</th>
-                  <th>Tiến độ</th>
-                  <th>Chi tiết</th>
-                  <th style="width: 40px">Sửa</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Tuyển thêm nhân viên mới
-                  </td>
-                  <td>Quy trình tuyển dụng</td>
-                  <td>Nguyễn Chí Thanh</td>
-                  <td>Nhân sự</td>
-                  <td>17/12/2019 - Đã hoàn thành nhưng chậm tiến độ </td>
-                  <td><input type="text" class="knob" value="100" data-width="40" data-height="40" data-fgColor="#00a65a"></td>
-                  <td><a href="chi_tiet_cong_viec_phong_ban1.html" class="btn btn-primary">Chi tiết</a></td>
-
-                  <td><a href="sua_cong_viec_phong_ban_1.html"><button class=" btn btn-primary btn-warning" >Sửa</button></a>
-                   
-                    </tr>
-                    <tr>
-                     <td>2</td>
-                     <td>Đào tạo nhân viên</td>
-                     <td>Quy trình đào tạo</td>
-                     <td>Lã Mạnh Cường</td>
-                     <td>Nhân sự</td>
-                     <td>20/12/2019 - Đã hoàn thành </td>
-                     <td><input type="text" class="knob" value="100" data-width="40" data-height="40" data-fgColor="#00a65a"></td>
-                     <td><a href="chi_tiet_cong_viec_phong_ban2.html" class="btn btn-primary">Chi tiết</a></td>
-
-                     <td><a href="sua_cong_viec_phong_ban_2.html"><button class=" btn btn-primary btn-warning" >Sửa</button></a>
-                     
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Khen thưởng kỷ luật quý 3</td>
-                        <td>Quy trình khen thưởng kỷ luật</td>
-                        <td>Trịnh Duy Hưng</td>
-                        <td>Nhân sự</td>
-                        <td>16/12/2019 - Đã quá hạn </td>
-                        <td><input type="text" class="knob" value="65" data-width="40" data-height="40" data-fgColor="#ffd011"></td>
-                        <td><a href="chi_tiet_cong_viec_phong_ban3.html" class="btn btn-primary">Chi tiết</a></td>
-
-                        <td><a href="sua_cong_viec_phong_ban_3.html"><button class=" btn btn-primary btn-warning" >Sửa</button></a>
-                         
-                          </tr>
-                          <tr>
-                           <td>4  </td>
-                           <td>Thống kê danh sách nhân viên</td>
-                           <td>Quy trình thống kê</td>
-                           <td>Nguyễn Duy Kỳ</td>
-                           <td>Nhân sự</td>
-                           <td>20/12/2019 - Còn lại 2 ngày </td>
-                           <td><input type="text" class="knob" value="65" data-width="40" data-height="40" data-fgColor="#ffd011"></td>
-                           <td><a href="chi_tiet_cong_viec_phong_ban4.html" class="btn btn-primary">Chi tiết</a></td>
-
-                           <td><a href="sua_cong_viec_phong_ban_4.html"><button class=" btn btn-primary btn-warning" >Sửa</button></a>
-                           
-                            </tr>
-
-                          </tbody>
-
-            </table>
-          </div>
-          <!-- /.box-body -->
+    <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Thống kê KPI theo các tiêu chí của phòng hành chính nhân sự</h3>
         </div>
-      </div>
-      <!-- /.col -->
+        <div class="box-body ">
+            <canvas id="canvas" width="100" height="15" style="height: 500 !important;"></canvas>
+        </div>
     </div>
+
+    <div class="box">
+        <div class="box-header">
+          <h3 class="box-title">Thống kê KPI tất cả các tháng của phòng hành chính nhân sự</h3>
+        </div>
+        <div class="box-body ">
+            <canvas id="kpi_depart_months" width="100" height="15" style="height: 500 !important;"></canvas>
+        </div>
+    </div>
+    <!-- /.row -->
+    
     <!-- /.row -->
   </section>
              <!-- /.content -->
@@ -483,8 +373,6 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
  <!-- Select2 -->
  <script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
-
- <!-- date-range-picker -->
  <script src="../../bower_components/moment/min/moment.min.js"></script>
  <script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
  <!-- bootstrap datepicker -->
@@ -497,6 +385,7 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <!-- iCheck 1.0.1 -->
  <!-- FastClick -->
  <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
  <!-- AdminLTE App -->
  <script src="../../dist/js/adminlte.min.js"></script>
  <!-- AdminLTE for demo purposes -->
@@ -504,7 +393,6 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
  <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
    <!-- AdminLTE for demo purposes -->
    <script src="../../dist/js/demo.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
    <script src="../../bower_components/Flot/jquery.flot.js"></script>
    <script src="../../bower_components/Flot/jquery.flot.js"></script>
    <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
@@ -513,77 +401,130 @@ href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,30
    <script src="../../bower_components/Flot/jquery.flot.pie.js"></script>
    <!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
    <script src="../../bower_components/Flot/jquery.flot.categories.js"></script>
-   <script src="../../bower_components/jquery-knob/js/jquery.knob.js"></script>
+  
  <!-- page script -->
- <script>
-  $(function () {
-    $(".knob").knob({
-            readOnly : true});
-    $('.btn-delete').on('click', function(e){
-      Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'Bạn có muốn xóa công việc??',
-            showConfirmButton: true,
-            timer: 1500
-          }).then((result) => {
-            if (result.value) {
-              // window.location="ds_congviec_thuong_xuyen.html";
-            }
-          })
-    });
-  })
-</script>
-<!-- Page script -->
+ 
 <script>
-  $(function () {
-    $('#myTable').DataTable({
-        "language": {
-          "paginate": {
-            "previous": "Trước",
-            "next": "Sau",
-            "search": "Tìm kiếm"
-          }
-        }
-      });;
+    $(document).ready(function(){
+
+        window.chartColors = {
+        red: 'rgb(255, 99, 132)',
+        orange: 'rgb(255, 159, 64)',
+        yellow: 'rgb(255, 205, 86)',
+        green: 'rgb(75, 192, 192)',
+        blue: 'rgb(54, 162, 235)',
+        purple: 'rgb(153, 102, 255)',
+        grey: 'rgb(201, 203, 207)'
+        };
+        var chartData = {
+                labels: ['Tiêu chí 1', 'Tiêu chí 2', 'Tiêu chí 3', 'Tiêu chí 4', 'Tiêu chí 5'],
+                datasets: [{
+                    type: 'line',
+                    label: 'Tiêu chí KPI của công ty',
+                    borderColor: window.chartColors.blue,
+                    borderWidth: 2,
+                    data: [1,1,1,1,1]
+                }, {
+                    type: 'bar',
+                    label: 'KPI từng phòng ban',
+                    backgroundColor: window.chartColors.red,
+                    data: [0.8,0.5,1,1.2,0.75],
+                    borderColor: 'white',
+                    borderWidth: 2
+                }
+                ]
     
-    /* END BAR CHART */
+            };
+    
+        var data_kpi_depart_months = {
+                labels: ['Tháng 1', ' Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [ {
+                    type: 'bar',
+                    label: 'KPI phòng ban theo tháng',
+                    backgroundColor: window.chartColors.green,
+                    data: [1,1,1,1,1,1,1,1,1,1,1,1],
+                    borderColor: 'white',
+                    borderWidth: 2
+                }
+                ]
+            };
+        var ctx = document.getElementById('canvas').getContext('2d');
+        var ctx_kpi_depart_months = document.getElementById('kpi_depart_months').getContext('2d');
+        ctx.height = 500;
+        var mixedChart = new Chart(ctx, {
+            type: 'bar',
+            data: chartData,
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: true
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            min: 0,
+                            max: 1   
+                        }
+                    }]
+                }
+            }
+        });
 
-    /*
-     * DONUT CHART
-     * -----------
-     */
+        var mixedChart = new Chart(ctx_kpi_depart_months, {
+            type: 'bar',
+            data: data_kpi_depart_months,
+            options: {
+                responsive: true,
+                tooltips: {
+                    mode: 'index',
+                    intersect: true
+                },
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            min: 0,
+                            max: 1   
+                        }
+                    }]
+                }
+            }
+        });
+                
+    
 
-      var donutData = [
-          { label: '', data: 10, color: '#0B610B' },
-          { label: '', data: 10, color: '#01DFD7' },
-          { label: '', data: 10, color: '#DF3A01' },
-          {label:'',data:10,color:'#337ab7'}
-      ]
-      $.plot('#donut-chart', donutData, {
-          series: {
-              pie: {
-                  show       : true,
-                  radius     : 1,
-                  innerRadius: 0.5,
-                  label      : {
-                      show     : true,
-                      radius   : 2 / 3,
-                      formatter: labelFormatter,
-                      threshold: 0.1
-                  }
+        var donutData = [
+            { label: '', data: 10, color: '#0B610B' },
+            { label: '', data: 10, color: '#01DFD7' },
+            { label: '', data: 10, color: '#DF3A01' },
+            {label:'',data:10,color:'#337ab7'}
+        ]
+        $.plot('#donut-chart', donutData, {
+            series: {
+                pie: {
+                    show       : true,
+                    radius     : 1,
+                    innerRadius: 0.5,
+                    label      : {
+                        show     : true,
+                        radius   : 2 / 3,
+                        formatter: labelFormatter,
+                        threshold: 0.1
+                    }
 
-              }
-          },
-          legend: {
-              show: false
-          }
-      })
+                }
+            },
+            legend: {
+                show: false
+            }
+        })
     /*
      * END DONUT CHART
      */
 
-   })
+        })
 
   /*
    * Custom Label formatter

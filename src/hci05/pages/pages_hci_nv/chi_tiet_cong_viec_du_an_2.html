@@ -25,8 +25,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Font -->
-    <link rel="stylesheet"
+    <style>
+  #myTable_filter, #example1_filter, .pagination{
+    float: right;
+  }
+</style><!-- Google Font -->    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -200,7 +203,7 @@
                 <small></small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
 
                 <li class="active">Công việc công ty</li>
             </ol>
@@ -405,7 +408,15 @@
 <!-- page script -->
 <script>
     $(function () {
-        $('#example1').DataTable()
+        $('#example1').DataTable({
+        "language": {
+          "paginate": {
+            "previous": "Trước",
+            "next": "Sau",
+            "search": "Tìm kiếm"
+          }
+        }
+      });
         $('#example2').DataTable({
             'paging': true,
             'lengthChange': false,

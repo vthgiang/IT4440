@@ -17,11 +17,9 @@
     <!-- bootstrap datepicker -->
     <link rel="stylesheet" href="../../bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="../../plugins/iCheck/all.css">
     <!-- Bootstrap Color Picker -->
     <link rel="stylesheet" href="../../bower_components/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
     <!-- Bootstrap time Picker -->
-    <link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
     <!-- Select2 -->
     <link rel="stylesheet" href="../../bower_components/select2/dist/css/select2.min.css">
     <!-- Theme style -->
@@ -37,8 +35,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Font -->
-    <link rel="stylesheet"
+    <style>
+  #myTable_filter, #example1_filter, .pagination{
+    float: right;
+  }
+</style><!-- Google Font -->    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -155,50 +156,46 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">MENU</li>
-                <li class="treeview">
-                    <a href="#">
-                        <span>Phòng hành chính nhân sự</span>
+            <li>
+                <a href="dashboard.html">
+                    <span style="font-size: 15px"><i class="fas fa-chart-pie"></i></span> <span>&nbsp;&nbsp;Trang chủ phòng HC - NS</span>
+                    <span class="pull-right-container">
+
+        </span>
+                </a>
+            </li>
+                <li>
+                    <a href="ds_congviec_cty.html">
+                        <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
                         <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
+
             </span>
                     </a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a href="ds_congviec_cty.html">
-                                <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
-                                <span class="pull-right-container">
+                </li>
+                <li>
+                    <a href="ds_cong_viec_phong_ban.html">
+                        <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
+                        <span class="pull-right-container">
 
-                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ds_cong_viec_phong_ban.html">
-                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
-                                <span class="pull-right-container">
+                </span>
+                    </a>
 
-                      </span>
-                            </a>
+                </li>
+                <li>
+                    <a href="ds_cong_viec_ca_nhan.html">
+                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                        <span class="pull-right-container">
 
-                        </li>
-                        <li>
-                            <a href="ds_cong_viec_ca_nhan.html">
-                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
-                                <span class="pull-right-container">
+                </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
+                        <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
+                        <span class="pull-right-container">
 
-                      </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
-                                <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
-                                <span class="pull-right-container">
-
-                      </span>
-                            </a>
-                        </li>
-                    </ul>
-
+                </span>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -213,7 +210,7 @@
                 <small></small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
                 <li><a href="#">Tạo công việc</a></li>
                 <li class="active">Công việc cá nhân</li>
             </ol>
@@ -230,7 +227,7 @@
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                 class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                        
                         </button>
                     </div>
                 </div>
@@ -240,7 +237,7 @@
 
                     <div class="form-group">
                         <label>Tên công việc</label>
-                        <input type="text" class="form-control" placeholder="Enter ...">
+                        <input type="text" class="form-control" placeholder="Nhập tên công việc ...">
                     </div>
 
 
@@ -320,10 +317,6 @@
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Select2 -->
 <script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
-<!-- InputMask -->
-<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
 <!-- date-range-picker -->
 <script src="../../bower_components/moment/min/moment.min.js"></script>
 <script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
@@ -332,11 +325,9 @@
 <!-- bootstrap color picker -->
 <script src="../../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- SlimScroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
@@ -371,13 +362,7 @@
         //Initialize Select2 Elements
         $('.select2').select2()
 
-        //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'})
-        //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'})
-        //Money Euro
-        $('[data-mask]').inputmask()
-
+       
         //Date range picker
         $('#reservation').daterangepicker()
         //Date range picker with time picker
@@ -410,31 +395,10 @@
             autoclose: true
         })
 
-        //iCheck for checkbox and radio inputs
-        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-            checkboxClass: 'icheckbox_minimal-blue',
-            radioClass: 'iradio_minimal-blue'
-        })
-        //Red color scheme for iCheck
-        $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-            checkboxClass: 'icheckbox_minimal-red',
-            radioClass: 'iradio_minimal-red'
-        })
-        //Flat red color scheme for iCheck
-        $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-            checkboxClass: 'icheckbox_flat-green',
-            radioClass: 'iradio_flat-green'
+        $('#datepicker1').datepicker({
+            autoclose: true
         })
 
-        //Colorpicker
-        $('.my-colorpicker1').colorpicker()
-        //color picker with addon
-        $('.my-colorpicker2').colorpicker()
-
-        //Timepicker
-        $('.timepicker').timepicker({
-            showInputs: false
-        })
     })
 </script>
 </body>

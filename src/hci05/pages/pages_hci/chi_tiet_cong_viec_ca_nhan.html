@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HCI_05 Chi tiết công việc cá nhân</title>
+    <title>HCI_05 Chi tiết Công việc thường xuyên</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -182,7 +182,7 @@
                         </li>
                         <li>
                             <a href="ds_cong_viec_ca_nhan.html">
-                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                                <i class="fa fa-user"></i> <span>Công việc thường xuyên</span>
                                 <span class="pull-right-container">
 
                       </span>
@@ -212,9 +212,9 @@
                 Chi tiết công việc
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
-
-                <li class="active">Công việc cá nhân</li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="ds_cong_viec_ca_nhan.html">Công việc thường xuyên</a></li>
+                <li class="active">Chi tiết công việc thường xuyên</li>
             </ol>
         </section>
 
@@ -238,6 +238,8 @@
                             <div class="row box-body">
                                 <div class="col-md-2 mt-4 ml-1  ">Tên công việc:</div>
                                 <div class="col-md-10">Tính lương tháng 10 cho phòng hành chính nhân sự</div>
+                                <div class="col-md-2 mt-4 ml-1  ">Người giao phó:</div>
+                                <div class="col-md-10">Giám đốc Vũ Thị Hương Giang</div>
                                 <div class="col-md-2 mt-4 ml-1 ">Ngày bắt đầu:</div>
                                 <div class="col-md-10">10/10/2019</div>
                                 <div class="col-md-2 mt-4 ml-1 ">Deadline:</div>
@@ -260,7 +262,7 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <!-- /.box -->
-                                    <a href="./tao_buoc_trong_cong_viec_ca_nha.html"><button type="button" class="btn btn-block btn-success">Tạo bước cho công việc
+                                    <a href="./tao_buoc_trong_cong_viec_ca_nha.html"><button type="button" class="btn btn-block btn-success">Phân công công việc thường xuyên
                                     </button></a>
                                 </div>
                                 <!-- /.col -->
@@ -271,7 +273,7 @@
                                     <!-- /.box -->
                                     <div class="box">
                                         <div class="box-header">
-                                            <h3 class="box-title">Bảng quản lý các bước công việc</h3>
+                                            <h3 class="box-title">Bảng quản lý công việc</h3>
                                         </div>
                                         <!-- /.box-header -->
                                         <div class="box-body">
@@ -279,7 +281,8 @@
                                                 <thead>
                                                 <tr>
                                                     <th style="width: 40px">STT</th>
-                                                    <th style="width: 300px">Tên bước</th>
+                                                    <th style="width: 300px">Tên công việc</th>
+                                                    <th style="width: 300px">Người chịu trách nhiệm</th>
                                                     <th style="width: 150px">Thời gian hoàn thành</th>
                                                     <th style="width: 80px">Tình trạng</th>
                                                     <th style="width: 80px">Báo cáo</th>
@@ -288,10 +291,11 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr>
+                                                <tr  id="item-1">
                                                     <td>1</td>
-                                                    <td>Lấy danh sách chấm công nhân viên phòng hành chính nhân sự
+                                                    <td ><a href="sua_chi_tiet_cong_viec1.html">Lấy danh sách chấm công nhân viên phòng hành chính nhân sự</a>
                                                     </td>
+                                                    <td>Nguyễn Chí Thanh</td>
                                                     <td>12/11/2019</td>
                                                     <td><a>
                                                         <!-- <button class=" btn btn-primary btn-warning">100%<i
@@ -299,70 +303,71 @@
                                                              -->
                                                              <b>Đã hoàn thành</b>
                                                             </a>
-                                                    <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+                                                    <td><a href="http://www.tainvest.vn/jobs/hr.pdf" target="_blank">Báo cáo</a></td>
                                                     <td><a href="sua_chi_tiet_cong_viec1.html">
                                                         <button class=" btn btn-primary btn-warning">Sửa
                                                         </button>
                                                     </a></td>
-                                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                                        onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
-                                             </tr>
+                                                    <td><button href="" class="btn btn-social-icon btn-google btn-delete"
+                                                        onclick="checkDelete(1)"><i class="fa fa fa-trash-o"></i></button>
                                                 </tr>
-                                                <tr>
+                                        
+                                                <tr id="item-2">
                                                     <td>2</td>
-                                                    <td>Dựa vào công thức để tính lương cho các nhân viên
+                                                    <td><a href="sua_chi_tiet_cong_viec2.html">Dựa vào công thức để tính lương cho các nhân viên</a>
                                                     </td>
+                                                    <td>Nguyễn Chí Thanh</td>
                                                     <td>14/11/2019</td>
                                                     <td><a>
                                                         <!-- <button class=" btn btn-primary btn-warning">100%<i
                                                                 class="fa fa-pencil" aria-hidden="true"></i></button> -->
                                                                 <b>Đã hoàn thành</b>
                                                     </a>
-                                                    <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+                                                   <td><a href="http://www.tainvest.vn/jobs/hr.pdf" target="_blank">Báo cáo</a></td>
                                                     <td><a href="sua_chi_tiet_cong_viec2.html">
                                                         <button class=" btn btn-primary btn-warning">Sửa
                                                         </button>
                                                     </a></td>
-                                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                                        onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
+                                                    <td><button  href="#" class="btn btn-social-icon btn-google"
+                                                        onclick="checkDelete(2)"><i class="fa fa fa-trash-o"></i></button  >
                                              </tr>
-                                                </tr>
-                                                <tr>
+                                             <tr id="item-3">
                                                     <td>3</td>
-                                                    <td>Xuất ra file excel
+                                                    <td><a href="sua_chi_tiet_cong_viec3.html">Xuất ra file excel</a>
                                                     </td>
+                                                    <td>Nguyễn Duy Kỳ</td>
                                                     <td>17/11/2019</td>
                                                     <td><a>
                                                         <!-- <button class=" btn btn-primary btn-warning">100%<i
                                                                 class="fa fa-pencil" aria-hidden="true"></i></button> -->
                                                                 <b>Đã hoàn thành</b>
                                                     </a>
-                                                    <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+                                                   <td><a href="http://www.tainvest.vn/jobs/hr.pdf" target="_blank">Báo cáo</a></td>
                                                     <td><a href="sua_chi_tiet_cong_viec3.html">
                                                         <button class=" btn btn-primary btn-warning">Sửa
                                                         </button>
                                                     </a></td>
-                                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                                        onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
+                                                    <td><button href="#" class="btn btn-social-icon btn-google"
+                                                        onclick="checkDelete(3)"><i class="fa fa fa-trash-o"></i></button>
                                              </tr>
-                                                </tr>
-                                                <tr>
+                                             <tr id="item-4">
                                                     <td>4</td>
-                                                    <td>Gửi thông báo cho nhân viên cũng như lãnh đạo
+                                                    <td><a href="sua_chi_tiet_cong_viec4.html">Gửi thông báo cho nhân viên và lãnh đạo</a>
                                                     </td>
+                                                    <td>Nguyễn Duy Kỳ</td>
                                                     <td>20/11/2019</td>
                                                     <td><p style="color: darkorange;" >
                                                         <!-- <button class=" btn btn-primary btn-warning">100%<i
                                                                 class="fa fa-pencil" aria-hidden="true"></i></button> -->
                                                               <b>Đang thực hiện</b>
                                                         </p>
-                                                    <td><a href="ketqua_congviec.html">Báo cáo</a></td>
+                                                   <td><a href="http://www.tainvest.vn/jobs/hr.pdf" target="_blank">Báo cáo</a></td>
                                                     <td><a href="sua_chi_tiet_cong_viec4.html">
                                                         <button class=" btn btn-primary btn-warning">Sửa
                                                         </button>
                                                     </a></td>
-                                                    <td><a href="deletearea.php?id=" class="btn btn-social-icon btn-google"
-                                                        onClick="return checkDelete()"><i class="fa fa fa-trash-o"></i></a>
+                                                    <td><button href="#" class="btn btn-social-icon btn-google"
+                                                        onclick="checkDelete(4)"><i class="fa fa fa-trash-o"></i></button>
                                              </tr>
                                                 </tr>
 
@@ -429,10 +434,19 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <!-- page script -->
 <script>
     $(function () {
-        $('#example1').DataTable()
+        $('#example1').DataTable({
+        "language": {
+          "paginate": {
+            "previous": "Trước",
+            "next": "Sau",
+            "search": "Tìm kiếm"
+          }
+        }
+      });
         $('#example2').DataTable({
             'paging': true,
             'lengthChange': false,
@@ -441,7 +455,27 @@
             'info': true,
             'autoWidth': false
         })
+
+        
     })
+    function checkDelete(item){
+        Swal.fire({
+                title: 'Bạn có chắc chắn muốn xóa?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy',
+            }).then((result) => {
+                if (result.value) {
+                    $('#item-'+ item).remove();
+                   
+                   
+                }
+            })
+           
+        }
 </script>
 </body>
 </html>

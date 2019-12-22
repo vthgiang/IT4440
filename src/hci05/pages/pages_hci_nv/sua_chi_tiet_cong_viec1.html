@@ -37,8 +37,11 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Google Font -->
-    <link rel="stylesheet"
+    <style>
+  #myTable_filter, #example1_filter, .pagination{
+    float: right;
+  }
+</style><!-- Google Font -->    <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -155,52 +158,40 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">MENU</li>
-                <li class="treeview">
-                    <a href="#">
-                        <span>Phòng hành chính nhân sự</span>
-                        <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li>
-                            <a href="ds_congviec_cty.html">
-                                <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
-                                <span class="pull-right-container">
-
-                    </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="ds_cong_viec_phong_ban.html">
-                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc phòng ban</span>
-                                <span class="pull-right-container">
-
-                      </span>
-                            </a>
-
-                        </li>
+                    <li>
+                        <a href="dashboard.html">
+                            <span style="font-size: 15px"><i class="fas fa-chart-pie"></i></span> <span>&nbsp;&nbsp;Trang chủ phòng HC - NS</span>
+                            <span class="pull-right-container">
+        
+                </span>
+                        </a>
+                    </li>
                         <li>
                             <a href="ds_cong_viec_ca_nhan.html">
-                                <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                                <span style="font-size: 15px"><i class="fas fa-users"></i></span> <span>Công việc cá nhân</span>
                                 <span class="pull-right-container">
-
-                      </span>
+        
+                        </span>
+                            </a>
+        
+                        </li>
+                        <li>
+                            <a href="ds_bao_cao.html">
+                                <i class="fas fa-file-alt"></i> <span>Danh sách báo cáo</span>
+                                <span class="pull-right-container">
+        
+                        </span>
                             </a>
                         </li>
                         <li>
                             <a href="http://hci09.it4440.phungluan.com/ketquakpi.html">
                                 <span style="font-size: 15px"><i class="fas fa-chart-bar"></i></span><span>&nbsp;&nbsp;Quản lý KPI</span>
                                 <span class="pull-right-container">
-
-                      </span>
+        
+                        </span>
                             </a>
                         </li>
                     </ul>
-
-                </li>
-            </ul>
         </section>
     </aside>
 
@@ -209,11 +200,11 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Sửa các bước trong công việc
+                Cập nhật các bước trong công việc
                 <small></small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
+                <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
                 <li><a href="#">Chi tiết công việc cá nhân</a></li>
                 <li class="active">Sửa các bước trong công việc cá nhân</li>
             </ol>
@@ -229,7 +220,7 @@
                     <div class="box-tools pull-right">
                         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
                                 class="fa fa-minus"></i></button>
-                        <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i>
+                        
                         </button>
                     </div>
                 </div>
@@ -240,7 +231,7 @@
                     <div class="form-group">
                         <label>Tên bước</label>
                         <input type="text" class="form-control"
-                               value="Lấy danh sách chấm công nhân viên phòng hành chính nhân sự">
+                               value="Lấy danh sách chấm công nhân viên phòng hành chính nhân sự" disabled>
                     </div>
 
 
@@ -256,37 +247,50 @@
                             <div class="input-group-addon">
                                 <i class="fa fa-calendar"></i>
                             </div>
-                            <input type="text" class="form-control pull-right" id="datepicker" value="12/11/2019">
+                            <input type="text" class="form-control pull-right" id="datepicker" value="12/11/2019" disabled>
                         </div>
                         <!-- /.input group -->
                     </div>
-                    <!-- <div class="form-group">
-                      <label>Deadline:</label>
+                    <div class="form-group">
+                        <label>Thời gian hoàn thành</label>
 
-                      <div class="input-group date">
-                        <div class="input-group-addon">
-                          <i class="fa fa-calendar"></i>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                  70%
+                                </div>
+                              </div>
+
+                              <div class="plus_minus">
+                                  <button class="btn btn-success btn-plus">+</button>
+                                  <button class="btn btn-danger btn-minus">-</button>
+                              </div>
+                        <!-- /.input group -->
+                    </div>
+
+                    <div class="form-group">
+                        <label>Báo cáo</label>
+
+                        <div class="input-group date">
+                            <div class="input-group-addon">
+                                <i class="fas fa-file-upload"></i>
+                            </div>
+                            <input type="file" class="form-control pull-right" >
                         </div>
-                        <input type="text" class="form-control pull-right" id="datepicker">
-                      </div>
-                      <-- /.input group -->
-                </div>
-                <!-- /.col -->
-                <!-- <div class="form-group">
-                  <label>Các tiêu chí KPI</label>
-                  <select class="form-control select2" multiple="multiple" data-placeholder="Chọn các phòng ban"
-                  style="width: 100%;">
-                  <option>Phòng maketing</option>
-                  <option>Phòng kĩ thuật</option>
-                  <option>Phòng nhân sự</option>
-                  <option>Phòng tài chính</option>
-                  <option>Phòng sản xuẩt</option>
-                  <option>Ban lãnh đạo</option>
-                </select>
-              </div> -->
-                <div class="form-group">
+                        <div class="files" style="margin-top: 10px; position: relative;">
+                            <i class="fas fa-file-upload" style="font-size: 50px; "></i>
+                            <i class="far fa-times-circle btn-remove" style="    position: absolute;
+                            font-size: 16px;
+                            top: -5px;
+                        "></i>
+                        </div>
+                        <!-- /.input group -->
+                    </div>
+
+              <div class="form-group" style="margin-top: 15px; text-align: center;">
                     <!-- /.col -->
-                    <button type="button" class="btn btn-block btn-success btn-create">Sửa công việc</button>
+                    <a type="button" style="width: 150px; float: left;" class="btn btn-block btn-primary btn-create">Cập nhật công việc</a>
+                    <a type="button" href="chi_tiet_cong_viec_ca_nhan.html" style="width: 150px; float: left; margin-left: 10px;" class="btn  btn-default">Quay lại</a>
                 </div>
                 <!-- /.row -->
             </div>
@@ -320,11 +324,7 @@
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- Select2 -->
 <script src="../../bower_components/select2/dist/js/select2.full.min.js"></script>
-<!-- InputMask -->
-<script src="../../plugins/input-mask/jquery.inputmask.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
-<script src="../../plugins/input-mask/jquery.inputmask.extensions.js"></script>
-<!-- date-range-picker -->
+
 <script src="../../bower_components/moment/min/moment.min.js"></script>
 <script src="../../bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
 <!-- bootstrap datepicker -->
@@ -332,11 +332,9 @@
 <!-- bootstrap color picker -->
 <script src="../../bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
 <!-- bootstrap time picker -->
-<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
 <!-- SlimScroll -->
 <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <!-- iCheck 1.0.1 -->
-<script src="../../plugins/iCheck/icheck.min.js"></script>
 <!-- FastClick -->
 <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
@@ -346,6 +344,9 @@
 <!-- Page script -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script>
+    $(document).ready(function(){
+
+   
     $(function () {
 
         $('.btn-create').on('click', function (e) {
@@ -368,16 +369,36 @@
 
         });
 
+        $('.btn-remove').click(function(){
+            $('.files').remove();
+        })
+
+        $('.btn-plus').click(function(){
+            $('.btn-minus').prop( "disabled", false );
+            value = 5 + parseInt($('.progress-bar').attr('aria-valuenow')) ;
+            $('.progress-bar').attr('aria-valuenow', value )
+            $('.progress-bar').html(value + '%')
+        })
+
+        if(parseInt($('.progress-bar').attr('aria-valuenow')) <= 70){
+            $('.btn-minus').prop( "disabled", true );
+        }else{
+            $('.btn-minus').prop( "disabled", false );
+        }
+        $('.btn-minus').click(function(){
+            value = parseInt($('.progress-bar').attr('aria-valuenow'));
+            if(value  > 70){
+                $('.progress-bar').attr('aria-valuenow', value - 5)
+                $('.progress-bar').html(value - 5 + '%')
+            }else{
+                $('.btn-minus').prop( "disabled", true );
+            }
+        })
+
         //Initialize Select2 Elements
         $('.select2').select2();
 
-        //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'});
-        //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'});
-        //Money Euro
-        $('[data-mask]').inputmask();
-
+       
         //Date range picker
         $('#reservation').daterangepicker();
         //Date range picker with time picker
@@ -410,32 +431,8 @@
             autoclose: true
         });
 
-        //iCheck for checkbox and radio inputs
-        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-            checkboxClass: 'icheckbox_minimal-blue',
-            radioClass: 'iradio_minimal-blue'
-        });
-        //Red color scheme for iCheck
-        $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-            checkboxClass: 'icheckbox_minimal-red',
-            radioClass: 'iradio_minimal-red'
-        });
-        //Flat red color scheme for iCheck
-        $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-            checkboxClass: 'icheckbox_flat-green',
-            radioClass: 'iradio_flat-green'
-        });
-
-        //Colorpicker
-        $('.my-colorpicker1').colorpicker();
-        //color picker with addon
-        $('.my-colorpicker2').colorpicker();
-
-        //Timepicker
-        $('.timepicker').timepicker({
-            showInputs: false
-        })
     })
+})
 </script>
 </body>
 </html>
