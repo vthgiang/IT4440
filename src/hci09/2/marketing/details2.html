@@ -291,7 +291,7 @@
                   <label class="form-control-label">Người duyệt:</label><i class="ni business_briefcase-24 mr-2"></i> Nguyễn Thị Mỹ Hằng <br/>
                   <label class="form-control-label">Ngày nhận:</label><i class="ni business_briefcase-24 mr-2"></i> 15/11/2019 <br/>
                   <label class="form-control-label">Deadline:</label><i class="ni business_briefcase-24 mr-2"></i> 20/11/2019 <br/>
-                  <label class="form-control-label">Trạng thái:</label><i class="ni business_briefcase-24 mr-2"></i> Đang làm <br/>
+                  <label class="form-control-label">Trạng thái:</label><i class="ni business_briefcase-24 mr-2"></i> Đang làm <span id="pending-status" style="color:#2ecc71; display: none;"> - Đang chờ duyệt</span><br/>
                   <hr class="my-4" />
                   <!-- Address -->
                   <h6 class="heading-small text-muted mb-4">Nội dung</h6>
@@ -314,10 +314,10 @@
                       <label>Nội dung phản hồi</label>
                       <textarea readonly rows="4" class="form-control form-control-alternative" placeholder="A few words about you ...">Cố gắng hơn nữa nhé Duy!</textarea>
                     </div>
-                    <!-- <div class="text-center">
+                    <div class="text-center">
                       <button type="button" class="btn btn-success" id="request">Yêu cầu duyệt</button>
-                      <button type="button" style="display: none" class="btn btn-default" id="pending">Đang chờ duyệt</button>
-                    </div> -->
+                      <button type="button" style="display: none;" class="btn btn-default" id="pending">Đang chờ duyệt</button>
+                    </div>
                   </div>
                 </form>
               </div>
@@ -371,8 +371,9 @@
     $( "#request" ).click(function() {
       if (window.confirm('Gửi yêu cầu duyệt cho người giao việc?')) {
         // document.getElementById("request").innerHTML = "Đang chờ duyệt";
-        $("#pending").css("display", "inline");
         $("#request").css("display", "none");
+        $("#pending").css("display", "inline");
+        $("#pending-status").css("display", "inline");
       }
     });
   </script>

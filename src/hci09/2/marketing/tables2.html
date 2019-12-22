@@ -363,7 +363,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="./details2.html">Chi tiết</a>
                           <a class="dropdown-item" href="#" id="on-working">Đang làm</a>
-                          <a class="dropdown-item" href="#" id="cancel">Hủy</a>
+                          <a class="dropdown-item" href="#" id="cancel" style="color:red;">Hủy</a>
                         </div>
                       </div>
                     </td>
@@ -401,7 +401,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="./details2.html">Chi tiết</a>
                           <a class="dropdown-item" href="#" id="completed">Hoàn thành</a>
-                          <a class="dropdown-item" href="#" id="cancel">Hủy</a>
+                          <a class="dropdown-item" href="#" id="cancel" style="color:red;">Hủy</a>
                         </div>
                       </div>
                     </td>
@@ -439,7 +439,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="./details2.html">Chi tiết</a>
                           <a class="dropdown-item" href="#">Hoàn thành</a>
-                          <a class="dropdown-item" href="#" id="cancel-failed">Hủy</a>
+                          <a class="dropdown-item" href="#" id="cancel-failed" style="color:red;">Hủy</a>
                         </div>
                       </div>
                     </td>
@@ -477,7 +477,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="./details2.html">Chi tiết</a>
                           <a class="dropdown-item" href="#" id="on-working">Đang làm</a>
-                          <a class="dropdown-item" href="#" id="cancel">Hủy</a>
+                          <a class="dropdown-item" href="#" id="cancel" style="color:red;">Hủy</a>
                         </div>
                       </div>
                     </td>
@@ -515,7 +515,7 @@
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                           <a class="dropdown-item" href="./details2.html">Chi tiết</a>
                           <a class="dropdown-item" href="#" id="on-working">Đang làm</a>
-                          <a class="dropdown-item" href="#" id="cancel">Hủy</a>
+                          <a class="dropdown-item" href="#" id="cancel" style="color:red;">Hủy</a>
                         </div>
                       </div>
                     </td>
@@ -595,7 +595,7 @@
   </script>
   <script>
     $( "#cancel" ).click(function() {
-      window.confirm('Bạn có thực sự muốn Hủy?')
+      window.alert('Chỉ có người giao việc mới có thể Hủy!')
     });
     $( "#cancel-failed" ).click(function() {
       window.alert('Công việc đã hoàn thành không thể Hủy!')
@@ -604,7 +604,7 @@
       window.confirm('Chuyển công việc sang trạng thái Đang làm?')
     });
     $( "#completed" ).click(function() {
-      window.confirm('Chỉ có người giao việc mới có quyền duyệt công việc hoàn thành')
+      window.alert('Chỉ có người giao việc mới có quyền duyệt công việc hoàn thành')
     });
   </script>
 </body>

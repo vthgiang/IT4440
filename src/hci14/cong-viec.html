@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Trang chủ của trưởng phòng</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sina-nav.css">
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+	<style>
+		.nav-container{
+			min-height: 60px;
+		}
+		.sina-nav{
+			top: 0px;
+			position: absolute;
+		}
+
+		ul li a:visited{
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-container">
+		<nav class="sina-nav mobile-sidebar navbar-fixed" data-top="0">
+			<div class="container">
+				<div class="search-box">
+					<form role="search" method="get" action="#">
+						<span class="search-addon close-search"><i class="fa fa-times"></i></span>
+						<div class="search-input">
+							<input type="search" class="form-control" placeholder="Search here" value="" name="">
+						</div>
+						<span class="search-addon search-icon"><i class="fa fa-search"></i></span>
+					</form>
+				</div><!-- .search-box -->
+
+				<div class="extension-nav">
+					<ul>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="widget-bar-btn"><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+					</ul>
+				</div><!-- .extension-nav -->
+
+				<div class="sina-nav-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="sina-brand" href="#">
+						<h2 class="pt-2">
+							Material
+						</h2>
+					</a>
+				</div><!-- .sina-nav-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+						<li><a href="truong-phong-trang-chu.html">Trang chủ</a></li>
+						<li><a href="cong-viec.html">Công việc</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thống kê</a>
+							<ul class="dropdown-menu">
+								<li><a href="thong-ke-doanh-thu.html">Doanh thu</a></li>
+								<li><a href="thong-ke-nguyen-lieu.html">Nguyên liệu</a></li>
+								<li><a href="nha-cung-cap.html">Nhà cung cấp</a></li>
+								<li><a href="thong-ke-nhan-vien.html">Nhân viên</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Liên kết</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://hci10.it4440.phungluan.com/">Kinh doanh nhãn hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="thong-bao.html">Thông báo</a></li>
+						<li><a href="huong-dan.html">Hướng dẫn</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- .container -->
+
+			<!-- Start widget-bar -->
+			<div class="widget-bar">
+				<a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h4 class="title text-capitalize">Hi, Nguyễn Văn Tuân</h4>
+					<ul class="link">
+						<li><a href="#" class="text-capitalize"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Tài khoản</a></li>
+						<li><a href="#" class="text-capitalize"><i class="fa fa-cog mr-1"></i>Cài đặt</a></li>
+						<li><a href="index.html" class="text-capitalize"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Đăng xuất</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End widget-bar -->
+		</nav>	
+	</div>
+	
+	
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Chi tiết công việc</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Tên công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Chi tiết công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng từ lô hàng số hiệu 3AF:2019 xuất xứ từ Trung Quốc
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Người thực hiện</strong>
+								</div>
+								<div class="col-sm-9">
+									Thu An
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Bắt đầu</strong>
+								</div>
+								<div class="col-sm-9">
+									8:30 - 2019/12/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Kết thúc</strong>
+								</div>
+								<div class="col-sm-9">
+									7:30 - 2019/13/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Trạng thái</strong>
+								</div>
+								<div class="col-sm-9">
+									<p class="text-danger">Trễ hạn</p>
+								</div>
+							</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</div>
+	<!-- Rich text editor -->
+
+	
+
+	<div class="container mt-5 mb-5">
+		<form class="needs-validation" novalidate action="#" id="myForm" onsubmit="myFunction">
+			<div class="form-row">
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustom01">Tên công việc</label>
+					<input type="text" class="form-control" id="work" placeholder="Việc cần giao" required>
+					<div class="invalid-feedback">
+						
+					</div>
+				</div>
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustom02">Chi tiết công việc</label>
+					<textarea id="summernote" class="form-control">
+						Chi tiết công việc...
+					</textarea>
+				</div>
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustom02">Người thực hiện</label>
+					<select name="" class="form-control">
+						<option value="-1">--NONE--</option>
+						<option value="">Thu An</option>
+						<option value="">Thu Hương</option>
+						<option value="">Xuân Quỳnh</option>
+						<option value="">Thảo Vân</option>
+						<option value="">Quỳnh Anh</option>
+						<option value="">Thu Trang</option>
+						<option value="">Ngọc Huyền</option>
+					</select>
+					<div class="invalid-feedback">
+					</div>
+				</div>
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustomUsername">Người giao việc</label>
+					<input type="text" name="" value="Nguyễn Văn Tuân" class="form-control" readonly placeholder="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustom03">Thời gian bắt đầu</label>
+					<input type="text" class="form-control picker" required>
+					<div class="invalid-feedback">
+					</div>
+				</div>
+				<div class="col-sm-12 mb-3">
+					<label for="validationCustom03">Thời gian hoàn thành</label>
+					<input type="text" class="form-control picker"  placeholder="City" required>
+					<div class="invalid-feedback">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+					<label class="form-check-label" for="invalidCheck">
+						Xác nhận 
+					</label>
+					<div class="invalid-feedback">
+						Bạn phải xác nhận !
+					</div>
+				</div>
+			</div>
+			<button class="btn btn-primary" type="submit">Submit Form</button>
+		</form>
+	</div>
+
+
+
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
+	</footer>
+	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+	<script type="text/javascript" src="js/sina-nav.js"></script>
+	<script type="text/javascript" src="js/moment.min.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
+	<script>
+		$('#summernote').summernote({
+			height: 150,   //set editable area's height
+		  	codemirror: { // codemirror options
+		  	theme: 'monokai'}
+  		});
+	</script>
+	<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+	(function() {
+		'use strict';
+		window.addEventListener('load', function() {
+	    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	    var forms = document.getElementsByClassName('needs-validation');
+	    // Loop over them and prevent submission
+	    var validation = Array.prototype.filter.call(forms, function(form) {
+	    	form.addEventListener('submit', function(event) {
+	    		if (form.checkValidity() === false) {
+	    			event.preventDefault();
+	    			event.stopPropagation();
+	    		}
+	    		form.classList.add('was-validated');
+	    	}, false);
+	    });
+	}, false);
+	})();
+	</script>
+	<script>
+		$('.picker').daterangepicker({
+			singleDatePicker: true,
+			timePicker: true,
+			timePickerSeconds: true,
+			timePicker24Hours: true,
+			locale: {
+				format: 'YYYY-MM-DD hh:mm:ss'
+			}
+
+		});
+	</script>
+</body>
+</html>

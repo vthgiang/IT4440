@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCI_14 Trang chủ của trưởng phòng</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sina-nav.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
+	<style>
+		.nav-container{
+			min-height: 60px;
+		}
+		.sina-nav{
+			top: 0px;
+			position: absolute;
+		}
+
+		ul li a:visited{
+			color: blue;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="nav-container">
+		<nav class="sina-nav mobile-sidebar navbar-fixed" data-top="0">
+			<div class="container">
+				<div class="search-box">
+					<form role="search" method="get" action="#">
+						<span class="search-addon close-search"><i class="fa fa-times"></i></span>
+						<div class="search-input">
+							<input type="search" class="form-control" placeholder="Search here" value="" name="">
+						</div>
+						<span class="search-addon search-icon"><i class="fa fa-search"></i></span>
+					</form>
+				</div><!-- .search-box -->
+
+				<div class="extension-nav">
+					<ul>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="widget-bar-btn"><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+					</ul>
+				</div><!-- .extension-nav -->
+
+				<div class="sina-nav-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="sina-brand" href="#">
+						<h2 class="pt-2">
+							Material
+						</h2>
+					</a>
+				</div><!-- .sina-nav-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+						<li><a href="truong-phong-trang-chu.html">Trang chủ</a></li>
+						<li><a href="cong-viec.html">Công việc</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Thống kê</a>
+							<ul class="dropdown-menu">
+								<li><a href="thong-ke-doanh-thu.html">Doanh thu</a></li>
+								<li><a href="thong-ke-nguyen-lieu.html">Nguyên liệu</a></li>
+								<li><a href="nha-cung-cap.html">Nhà cung cấp</a></li>
+								<li><a href="thong-ke-nhan-vien.html">Nhân viên</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Liên kết</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://hci10.it4440.phungluan.com/">Kinh doanh nhãn hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="thong-bao.html">Thông báo</a></li>
+						<li><a href="huong-dan.html">Hướng dẫn</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- .container -->
+
+			<!-- Start widget-bar -->
+			<div class="widget-bar">
+				<a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h4 class="title text-capitalize">Hi, Nguyễn Văn Tuân</h4>
+					<ul class="link">
+						<li><a href="#" class="text-capitalize"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Tài khoản</a></li>
+						<li><a href="#" class="text-capitalize"><i class="fa fa-cog mr-1"></i>Cài đặt</a></li>
+						<li><a href="index.html" class="text-capitalize"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Đăng xuất</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- End widget-bar -->
+		</nav>	
+	</div>
+	
+	<div class="container">
+		<hr>
+		<div class="jumbotron">
+			<h2 class="text-center">Bảng theo dõi công việc</h2>
+		</div>
+	</div>
+
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Chi tiết công việc</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Tên công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Chi tiết công việc</strong>
+								</div>
+								<div class="col-sm-9">
+									Kiểm tra tiến độ xuất hàng từ lô hàng số hiệu 3AF:2019 xuất xứ từ Trung Quốc
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Người thực hiện</strong>
+								</div>
+								<div class="col-sm-9">
+									Thu An
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Bắt đầu</strong>
+								</div>
+								<div class="col-sm-9">
+									8:30 - 2019/12/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Kết thúc</strong>
+								</div>
+								<div class="col-sm-9">
+									7:30 - 2019/13/10
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<strong>Trạng thái</strong>
+								</div>
+								<div class="col-sm-9">
+									<p class="text-danger">Trễ hạn</p>
+								</div>
+							</div>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Delete -->
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5 p-5" id="delete">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div>
+						<h4 class="text-center" style="padding-top: 2rem; padding-bottom: 2rem;">Bạn chắc chắn muốn xóa ?</h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body pb-5">
+						<div class="row justify-content-around">					
+							<button class="btn btn-primary" data-dismiss="modal" onclick="alert('Xóa thành công.') ">Có</button>													
+							<button class="btn btn-danger" data-dismiss="modal">Không</button>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container mb-3 mt-3">
+		<table class="table table-striped table-bordered mydatatable" style="width: 100%;" 	>
+			<thead>
+				<tr>
+					<th>Tên công việc</th>
+					<th>Người thực hiện</th>
+					<th>Bắt đầu</th>
+					<th>Kết thúc</th>
+					<th>Trạng thái</th>
+					<th></th>
+				</tr>			
+			</thead>
+			<tbody>
+				<tr>
+					<td>Chuẩn bị hợp đồng kinh doanh</td>
+					<td>Bá Luân</td>
+					<td>8:00-2019/10/1</td>
+					<td>11:00-2019/10/1</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo doanh thu tháng 12</td>
+					<td>Thùy Dung</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo các đơn hàng quá hạn</td>
+					<td>Trung Hiếu</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Chuẩn bị giấy tờ nhập hàng</td>
+					<td>Quang Huy</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td> 
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo tổng kết quý 1</td>
+					<td>Ngọc Hải</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Xây dựng phương án kinh doanh</td>
+					<td>Ngọc Hiếu</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kiểm xe hàng mới nhập</td>
+					<td>Văn Hoàng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nghiên cứu sự biến động của thị trường</td>
+					<td>Văn Hùng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nhập đơn hàng từ Nhật</td>
+					<td>Quỳnh Anh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Phụ trách xuất hàng cho công ty AOP</td>
+					<td>Nam Thư</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo về tập khách hàng</td>
+					<td>Thu An</td>
+					<td>9:30-2019/10/10</td>
+					<td>11:00-2019/10/12</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kế hoạch thu hút khách hàng</td>
+					<td>Nhật Anh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kế hoạch mở rộng kinh doanh</td>
+					<td>Văn Duy</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kiểm tra tiến độ xuất hàng</td>
+					<td>Thu Quỳnh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td>Đang thực hiện</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+					<tr>
+					<td>Xây dựng phương án kinh doanh</td>
+					<td>Ngọc Hiếu</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kiểm xe hàng mới nhập</td>
+					<td>Văn Hoàng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nghiên cứu sự biến động của thị trường</td>
+					<td>Văn Hùng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nhập đơn hàng từ Nhật</td>
+					<td>Quỳnh Anh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Phụ trách xuất hàng cho công ty AOP</td>
+					<td>Nam Thư</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo về tập khách hàng</td>
+					<td>Thu An</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kiểm xe hàng mới nhập</td>
+					<td>Văn Hoàng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nghiên cứu sự biến động của thị trường</td>
+					<td>Văn Hùng</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Nhập đơn hàng từ Nhật</td>
+					<td>Quỳnh Anh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Phụ trách xuất hàng cho công ty AOP</td>
+					<td>Nam Thư</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Báo cáo về tập khách hàng</td>
+					<td>Thu An</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-success">Hoàn thành</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Kế hoạch thu hút khách hàng</td>
+					<td>Nhật Anh</td>
+					<td>8:30-2019/10/2</td>
+					<td>11:00-2019/10/2</td>
+					<td class="text-danger">Trễ hạn</td>
+					<td>
+						<a href="#" class="btn-link pr-1" data-toggle="modal" data-target="#myModal">Chi tiết</a>
+						<a href="#" class="btn-link text-danger" data-toggle="modal" data-target="#delete">Xóa</a>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr></tr>
+			</tfoot>
+		</table>
+	</div>
+
+
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
+	</footer>
+	
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/sina-nav.js"></script>
+	<script>
+		$('.mydatatable').DataTable({	
+		});
+	</script>
+	<script>
+		$('.carousel').carousel({
+			interval: 3000
+		})
+	</script>
+	
+</body>
+</html>

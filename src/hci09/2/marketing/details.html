@@ -296,7 +296,7 @@
                   <label class="form-control-label">Người duyệt:</label><i class="ni business_briefcase-24 mr-2"></i> Nguyễn Thị Mỹ Hằng <br/>
                   <label class="form-control-label">Ngày nhận:</label><i class="ni business_briefcase-24 mr-2"></i> 15/11/2019 <br/>
                   <label class="form-control-label">Deadline:</label><i class="ni business_briefcase-24 mr-2"></i> 20/11/2019 <br/>
-                  <label class="form-control-label">Trạng thái:</label><i class="ni business_briefcase-24 mr-2"></i> Đang làm <br/>
+                  <label class="form-control-label">Trạng thái:</label><i class="ni business_briefcase-24 mr-2"></i> Đang làm <span style="color:#2ecc71;"> - Đang chờ duyệt</span><br/>
                   <hr class="my-4" />
                   <!-- Address -->
                   <h6 class="heading-small text-muted mb-4">Nội dung</h6>
@@ -318,6 +318,10 @@
                     <div class="form-group">
                       <label>Nội dung phản hồi</label>
                       <textarea rows="4" class="form-control form-control-alternative" readonly placeholder="A few words about you ...">Cố gắng hơn nữa nhé Duy!</textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-success" id="approve">Duyệt</button>
+                      <button type="button" class="btn btn-danger" id="cancel">Hủy</button>
                     </div>
                   </div>
                 </form>
@@ -371,6 +375,11 @@
   <script>
     $( "#approve" ).click(function() {
       if (window.confirm('Duyệt công việc thành công?')) {
+        window.location = './tables.html';
+      }
+    });
+    $( "#cancel" ).click(function() {
+      if (window.confirm('Bạn có thực sự muốn Hủy?')) {
         window.location = './tables.html';
       }
     });

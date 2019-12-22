@@ -1,152 +1,286 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>HCI_14 Nhập hàng</title>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/sina-nav.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 	<style>
-
-		*{
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
+		.nav-container{
+			min-height: 60px;
 		}
-		.w3-anton{
-			font-family: 'Patua One', cursive;
+		.sina-nav{
+			top: 0px;
+			position: absolute;
 		}
 
-		body{
-			font-family: Arial, sans-serif;
+		ul li a:visited{
+			color: blue;
 		}
+
 	</style>
 </head>
 <body>
-	<!-- Navbar (sit on top) -->
-		<div class="w3-bar w3-white w3-card w3-cell-middle " id="myNavbar">
-		<a href="#home" class="w3-bar-item w3-anton w3-medium" style="text-decoration: none; padding-right: 30px;">COMPANY</a>
-			<!-- Right-sided navbar links -->
-			<div class="w3-left w3-hide-small w3-margin-right">
-				
-				<a href="employee-import.html" class="w3-bar-item w3-button"><i class="fa fa-th" style="margin-right: 5px;"></i>Danh sách công việc</a>
-				<a href="nhap-hang.html" class="w3-bar-item w3-button "><i class="fa fa-user" style="margin-right: 5px;"></i>Nhập hàng</a>
-				<a href="theo-doi.html" class="w3-bar-item w3-button "><i class="fa fa-usd" ></i> Theo dõi đơn hàng</a>
-				<a href="employee-kpi.html" class="w3-bar-item w3-button "><i class="fa fa-bar-chart" style="margin-right: 5px;"></i>KPI</a>
-				<a href="danh-muc-sp.html" class="w3-bar-item w3-button "><i class="fa fa-book" style="padding-right: 5px;"></i>Danh mục sản phẩm</a>
-			</div>
-			<div class="w3-right w3-hide-small w3-margin-right">
-				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-user w3-large" style="padding: 0 10px;"></i>Hi, Employee</a>
-				<a href="#team" class="w3-bar-item" style="text-decoration: none;"><i class="fa fa-bell w3-large" style="padding: 0 10px;"></i></a>
-			</div>
-			<!-- Hide right-floated links on small screens and replace them with a menu icon -->
+	
 
-			<a href="javascript:void(0)" class="w3-bar-item w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
+	<div class="nav-container">
+		<nav class="sina-nav mobile-sidebar navbar-fixed" data-top="0">
+			<div class="container">
+				<div class="search-box">
+					<form role="search" method="get" action="#">
+						<span class="search-addon close-search"><i class="fa fa-times"></i></span>
+						<div class="search-input">
+							<input type="search" class="form-control" placeholder="Search here" value="" name="">
+						</div>
+						<span class="search-addon search-icon"><i class="fa fa-search"></i></span>
+					</form>
+				</div><!-- .search-box -->
 
-	<!-- Sidebar on small screens when clicking the menu icon -->
-	<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-		<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-		<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-		<a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-		<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">SIGN OUT</a>
-	</nav>
+				<div class="extension-nav">
+					<ul>
+						<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+						<li class="widget-bar-btn"><a href="#"><i class="fa fa-ellipsis-v"></i></a></li>
+					</ul>
+				</div><!-- .extension-nav -->
 
-	<div class="w3-bar w3-content w3-padding-16">
-		<div class="w3-row-padding">
-			<div class="w3-threequarter" style="margin-bottom: 10px;">
-				<select name="job" class="w3-input w3-border" >
-					<option value="Hôm nay">Hôm nay</option>
-					<option value="Khẩn cấp">Khẩn cấp</option>
-					<option value="Quá hạn">Quá hạn</option>
-				</select>
+				<div class="sina-nav-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+						<i class="fa fa-bars"></i>
+					</button>
+					<a class="sina-brand" href="#">
+						<h2 class="pt-2">
+							Material
+						</h2>
+					</a>
+				</div><!-- .sina-nav-header -->
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+						<li><a href="nhan-vien-trang-chu.html">Trang chủ</a></li>
+						<li><a href="nhan-vien-ca-nhan.html">Cá nhân</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Công việc</a>
+							<ul class="dropdown-menu">
+								<li><a href="nhap-hang.html">Nhập hàng</a></li>
+								<li><a href="xuat-hang.html">Xuất hàng</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Thông báo</a></li>
+						<li><a href="huong-dan-nhan-vien.html">Hướng dẫn</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- .container -->
+
+			<!-- Start widget-bar -->
+			<div class="widget-bar">
+				<a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
+				<div class="widget">
+					<h4 class="title text-capitalize">Hi, Nguyễn Văn Tuân</h4>
+					<ul class="link">
+						<li><a href="#" class="text-capitalize"><i class="fa fa-user-circle-o mr-1" aria-hidden="true"></i>Tài khoản</a></li>
+						<li><a href="#" class="text-capitalize"><i class="fa fa-cog mr-1"></i>Cài đặt</a></li>
+						<li><a href="index.html" class="text-capitalize"><i class="fa fa-sign-out mr-1" aria-hidden="true"></i>Đăng xuất</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="w3-quarter" >
-				<button class="w3-border" style="cursor: pointer; padding: 6px;">Tìm kiếm</button>
-			</div>
+			<!-- End widget-bar -->
+		</nav>	
+	</div>
+
+	<div class="container">
+		<hr>
+		<div class="jumbotron">
+			<h2 class="text-center">Quản lý hàng nhập</h2>
 		</div>
 	</div>
 
-	<form class="w3-container w3-light-grey">
-  		<h2 class="w3-center w3-padding-16">Thêm mới sản phẩm</h2>
-  		<div class="w3-content">
-  			
-  			<p class="w3-large"><label>Tên sản phẩm</label></p>
-  			<div class="w3-section">
-  				<select name="user" style="width: 100%;" class="w3-large w3-input">
-	  				<option value="huong">Paetoge</option>
-	  				<option value="huong">Cacbonnat</option>
-	  				<option value="huong">Urma</option>
-	  				<option value="huong">Terecc</option>
-	  				<option value="huong">Ciccilin</option>
-	  				<option value="huong">Rine</option>
-	  				<option value="huong">ccacidimi</option>
-  				</select>
-  			</div>
-  			<p class="w3-large w3-margin-top"><label>Nhà cung cấp</label></p>
-  			<div class="w3-section">
-  				<select name="user" style="width: 100%;" class="w3-large w3-input">
-	  				<option value="huong">Paetoge</option>
-	  				<option value="huong">Cacbonnat</option>
-	  				<option value="huong">Urma</option>
-	  				<option value="huong">Terecc</option>
-	  				<option value="huong">Ciccilin</option>
-	  				<option value="huong">Rine</option>
-	  				<option value="huong">ccacidimi</option>
-  				</select>
-  			</div>
-  			<div class="w3-section">
-  				<p class="w3-large w3-padding-16"><label>Số lượng</label></p>
-  				<input type="number" name="time" class="w3-block w3-input" step="5">
-  			</div>
-  			<div class="w3-section">
-  				<p class="w3-large w3-padding-16"><label>Giá tiền</label></p>
-  				<input type="number" name="time" class="w3-block w3-input" step="1000000">
-  			</div>
-  			<div class="w3-section">
-  				<p class="w3-large w3-padding-16"><label>Mô tả chi tiết</label></p>
-  				<textarea name="discription" class="w3-input" rows="6">
-  					
-  				</textarea>
-  			</div>
-  			<div class="w3-section w3-padding-32">
-  				<input type="submit" name="Submit" class="w3-block w3-blue w3-btn">
-  			</div>
-  		</div>
-  		
-	</form>
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5" id="myModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
 
-	<footer class="w3-container w3-center w3-large w3-light-grey w3-padding-32">
-		HCI_14
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title">Sản phẩm</h4>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="row">
+								<div class="col-sm-3">
+									<label class="form-control border-0"><strong>Mã hàng</strong></label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<label class="form-control border-0"><strong>Tên hàng</strong></label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<label class="form-control border-0"><strong>Xuất xứ</strong></label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text"  class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<label class="form-control border-0"><strong>Số lượng</strong></label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-3">
+									<label class="form-control border-0"><strong>Giá trị</strong></label>
+								</div>
+								<div class="col-sm-9">
+									<input type="text" class="form-control">
+								</div>
+							</div>						
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal" onclick="alert('Cập nhật thành công')">Cập nhật</button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Delete -->
+	<div class="container">
+		<!-- The Modal -->
+		<div class="modal fade mt-5 p-5" id="delete">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+
+					<!-- Modal Header -->
+					<div>
+						<h4 class="text-center" style="padding-top: 2rem; padding-bottom: 2rem;">Bạn chắc chắn muốn xóa ?</h4>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body pb-5">
+						<div class="row justify-content-around">					
+							<button class="btn btn-primary" data-dismiss="modal" onclick="alert('Xóa thành công.') ">Có</button>													
+							<button class="btn btn-danger" data-dismiss="modal">Không</button>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Thêm mới</button>
+	</div>
+	<div class="container mb-3 mt-3">
+		<table class="table table-striped table-bordered mydatatable" style="width: 100%;" 	>
+			<thead>
+				<tr>
+					<th>Mã hàng</th>
+					<th>Tên hàng</th>
+					<th>Xuất sứ</th>
+					<th>Số lượng</th>
+					<th>Giá trị</th>
+				</tr>			
+			</thead>
+			<tbody>
+				<tr>
+					<td>tf1234</td>
+					<td>Nitrat Bonio</td>
+					<td>HongKong</td>
+					<td>20</td>
+					<td>$12000</td>
+				</tr>
+				<tr>
+					<td>df1234</td>
+					<td>Wisp</td>
+					<td>USA</td>
+					<td>40</td>
+					<td>$24000</td>
+				</tr>
+				<tr>
+					<td>cf1234</td>
+					<td>Cepa</td>
+					<td>Anh</td>
+					<td>120</td>
+					<td>$42000</td>
+				</tr>
+				<tr>
+					<td>mn2345</td>
+					<td>Violet</td>
+					<td>Trung Quốc</td>
+					<td>20</td>
+					<td>$55000</td>
+				</tr>
+				<tr>
+					<td>tk1234</td>
+					<td>Nichojen</td>
+					<td>HongKong</td>
+					<td>220</td>
+					<td>$77000</td>
+				</tr>
+				<tr>
+					<td>sm1234</td>
+					<td>Nitrat Bonio</td>
+					<td>USA</td>
+					<td>320</td>
+					<td>$79000</td>
+				</tr>
+				<tr>
+					<td>dk1234</td>
+					<td>Hyphecilicic</td>
+					<td>HongKong</td>
+					<td>20</td>
+					<td>$102000</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+
+
+	<footer class="container-fluid my-5">
+		<div class="display-5 text-center py-4 bg-dark text-white">HCI_14</div>
 	</footer>
 	
 
 	
-
-
-	<script type="text/javascript">
-		var mySidebar = document.getElementById("mySidebar");
-
-		function w3_open() {
-			if (mySidebar.style.display === 'block') {
-				mySidebar.style.display = 'none';
-			} else {
-				mySidebar.style.display = 'block';
-			}
-		}
-
-// Close the sidebar with the close button
-		function w3_close() {
-			mySidebar.style.display = "none";
-		}
-	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/sina-nav.js"></script>
+	<script>
+		$('.mydatatable').DataTable({	
+		});
+	</script>
+	<script>
+		$('.carousel').carousel({
+			interval: 3000
+		})
+	</script>
+	
 </body>
 </html>
