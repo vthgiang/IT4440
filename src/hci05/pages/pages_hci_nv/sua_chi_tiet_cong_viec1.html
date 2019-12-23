@@ -376,8 +376,12 @@
         $('.btn-plus').click(function(){
             $('.btn-minus').prop( "disabled", false );
             value = 5 + parseInt($('.progress-bar').attr('aria-valuenow')) ;
+           if(value <= 100){
             $('.progress-bar').attr('aria-valuenow', value )
             $('.progress-bar').html(value + '%')
+            $('.progress-bar').css('width', value + '%')
+           }
+            
         })
 
         if(parseInt($('.progress-bar').attr('aria-valuenow')) <= 70){
@@ -390,6 +394,7 @@
             if(value  > 70){
                 $('.progress-bar').attr('aria-valuenow', value - 5)
                 $('.progress-bar').html(value - 5 + '%')
+                $('.progress-bar').css('width', value - 5+ '%')
             }else{
                 $('.btn-minus').prop( "disabled", true );
             }

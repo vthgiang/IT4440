@@ -250,34 +250,47 @@
                         </div>
                         <!-- /.input group -->
                     </div>
-                    <!-- <div class="form-group">
-                      <label>Deadline:</label>
 
-                      <div class="input-group date">
-                        <div class="input-group-addon">
-                          <i class="fa fa-calendar"></i>
+              <div class="form-group">
+                <label>Thời gian hoàn thành</label>
+
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                          70%
                         </div>
-                        <input type="text" class="form-control pull-right" id="datepicker">
                       </div>
-                      <-- /.input group -->
+
+                      <div class="plus_minus">
+                          <button class="btn btn-success btn-plus">+</button>
+                          <button class="btn btn-danger btn-minus">-</button>
+                      </div>
+                <!-- /.input group -->
+            </div>
+
+            <div class="form-group">
+                <label>Báo cáo</label>
+
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <input type="file" class="form-control pull-right" >
                 </div>
+                <div class="files" style="margin-top: 10px; position: relative;">
+                    <i class="fas fa-file-upload" style="font-size: 50px; "></i>
+                    <i class="far fa-times-circle btn-remove" style="    position: absolute;
+                    font-size: 16px;
+                    top: -5px;
+                "></i>
+                </div>
+                <!-- /.input group -->
+            </div>
+            <div class="form-group" style="margin-top: 15px; text-align: center;">
                 <!-- /.col -->
-                <!-- <div class="form-group">
-                  <label>Các tiêu chí KPI</label>
-                  <select class="form-control select2" multiple="multiple" data-placeholder="Chọn các phòng ban"
-                  style="width: 100%;">
-                  <option>Phòng maketing</option>
-                  <option>Phòng kĩ thuật</option>
-                  <option>Phòng nhân sự</option>
-                  <option>Phòng tài chính</option>
-                  <option>Phòng sản xuẩt</option>
-                  <option>Ban lãnh đạo</option>
-                </select>
-              </div> -->
-                <div class="form-group">
-                    <!-- /.col -->
-                    <button type="button" class="btn btn-block btn-success btn-create">Sửa công việc</button>
-                </div>
+                <a type="button" style="width: 150px; float: left;" class="btn btn-block btn-primary btn-create">Cập nhật công việc</a>
+                <a type="button" href="chi_tiet_cong_viec_ca_nhan.html" style="width: 150px; float: left; margin-left: 10px;" class="btn  btn-default">Quay lại</a>
+            </div>
                 <!-- /.row -->
             </div>
             <!-- /.box-body -->
@@ -336,96 +349,100 @@
 <!-- Page script -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script>
-    $(function () {
+   $(document).ready(function(){
 
-        $('.btn-create').on('click', function (e) {
-            e.preventDefault();
-            Swal.fire({
-                title: 'Bạn có chắc chắn muốn sửa?',
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Đồng ý',
-                cancelButtonText: 'Hủy',
-            }).then((result) => {
-                if (result.value) {
-                    Swal.fire(
-                        'Bạn đã sửa thành công',
-                    )
-                }
-            })
+   
+$(function () {
 
-        })
-
-        //Initialize Select2 Elements
-        $('.select2').select2()
-
-        //Datemask dd/mm/yyyy
-        $('#datemask').inputmask('dd/mm/yyyy', {'placeholder': 'dd/mm/yyyy'})
-        //Datemask2 mm/dd/yyyy
-        $('#datemask2').inputmask('mm/dd/yyyy', {'placeholder': 'mm/dd/yyyy'})
-        //Money Euro
-        $('[data-mask]').inputmask()
-
-        //Date range picker
-        $('#reservation').daterangepicker()
-        //Date range picker with time picker
-        $('#reservationtime').daterangepicker({
-            timePicker: true,
-            timePickerIncrement: 30,
-            locale: {format: 'MM/DD/YYYY hh:mm A'}
-        })
-        //Date range as a button
-        $('#daterange-btn').daterangepicker(
-            {
-                ranges: {
-                    'Today': [moment(), moment()],
-                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-                },
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment()
-            },
-            function (start, end) {
-                $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+    $('.btn-create').on('click', function (e) {
+        e.preventDefault();
+        Swal.fire({
+            title: 'Bạn có chắc chắn muốn sửa?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Đồng ý',
+            cancelButtonText: 'Hủy',
+        }).then((result) => {
+            if (result.value) {
+                Swal.fire(
+                    'Bạn đã sửa thành công',
+                )
             }
-        )
-
-        //Date picker
-        $('#datepicker').datepicker({
-            autoclose: true
         })
 
-        //iCheck for checkbox and radio inputs
-        $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-            checkboxClass: 'icheckbox_minimal-blue',
-            radioClass: 'iradio_minimal-blue'
-        })
-        //Red color scheme for iCheck
-        $('input[type="checkbox"].minimal-red, input[type="radio"].minimal-red').iCheck({
-            checkboxClass: 'icheckbox_minimal-red',
-            radioClass: 'iradio_minimal-red'
-        })
-        //Flat red color scheme for iCheck
-        $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
-            checkboxClass: 'icheckbox_flat-green',
-            radioClass: 'iradio_flat-green'
-        })
+    });
 
-        //Colorpicker
-        $('.my-colorpicker1').colorpicker()
-        //color picker with addon
-        $('.my-colorpicker2').colorpicker()
-
-        //Timepicker
-        $('.timepicker').timepicker({
-            showInputs: false
-        })
+    $('.btn-remove').click(function(){
+        $('.files').remove();
     })
+
+    $('.btn-plus').click(function(){
+        $('.btn-minus').prop( "disabled", false );
+        value = 5 + parseInt($('.progress-bar').attr('aria-valuenow')) ;
+       if(value <= 100){
+        $('.progress-bar').attr('aria-valuenow', value )
+        $('.progress-bar').html(value + '%')
+        $('.progress-bar').css('width', value + '%')
+       }
+        
+    })
+
+    if(parseInt($('.progress-bar').attr('aria-valuenow')) <= 70){
+        $('.btn-minus').prop( "disabled", true );
+    }else{
+        $('.btn-minus').prop( "disabled", false );
+    }
+    $('.btn-minus').click(function(){
+        value = parseInt($('.progress-bar').attr('aria-valuenow'));
+        if(value  > 70){
+            $('.progress-bar').attr('aria-valuenow', value - 5)
+            $('.progress-bar').html(value - 5 + '%')
+            $('.progress-bar').css('width', value - 5+ '%')
+        }else{
+            $('.btn-minus').prop( "disabled", true );
+        }
+    })
+
+    //Initialize Select2 Elements
+    $('.select2').select2();
+
+   
+    //Date range picker
+    $('#reservation').daterangepicker();
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 30,
+        locale: {format: 'MM/DD/YYYY hh:mm A'}
+    });
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+        {
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            startDate: moment().subtract(29, 'days'),
+            endDate: moment()
+        },
+        function (start, end) {
+            $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+        }
+    );
+
+    //Date picker
+    $('#datepicker').datepicker({
+        autoclose: true
+    });
+
+})
+})
 </script>
 </body>
 </html>
