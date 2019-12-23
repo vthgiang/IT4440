@@ -153,7 +153,7 @@
         </span>
                 </a>
             </li>
-                <li>
+                <li style="background-color: #3c8dbc;">
                     <a href="ds_congviec_cty.html">
                         <span style="font-size: 15px"><i class="fas fa-building"></i></span> <span>&nbsp;&nbsp;Công việc công ty</span>
                         <span class="pull-right-container">
@@ -172,7 +172,7 @@
                 </li>
                 <li>
                     <a href="ds_cong_viec_ca_nhan.html">
-                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
+                        <i class="fa fa-user"></i> <span>Công việc thường xuyên</span>
                         <span class="pull-right-container">
 
                 </span>
@@ -376,7 +376,7 @@
                               </tr>
                               </thead>
                               <tbody>
-                              <tr>
+                              <tr id="item-1">
                                 <td>1</td>
                                 <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chuẩn bị giấy kiểm định chất lượng</a></td>
                                 <td>Nguyễn Chí Thanh</td>
@@ -387,10 +387,10 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete">Xóa</button>
+                                  <button class="btn btn-danger btn-delete"  onclick="checkDelete(1)">Xóa</button>
                                 </td>
                               </tr>
-                              <tr>
+                              <tr id="item-2">
                                 <td>2</td>
                                 <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chuẩn bị giấy cấp phép sản xuất</a></td>
                                 <td>Lã Mạnh Cường</td>
@@ -401,10 +401,10 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_2.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete">Xóa</button>
+                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(2)">Xóa</button>
                                 </td>
                               </tr>
-                              <tr>
+                              <tr id="item-3">
                                 <td>3</td>
                                 <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Đăng ký nhãn hiệu và xin cấp phép</a></td>
                                 <td>Nguyễn Duy Kỳ</td>
@@ -415,10 +415,10 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete">Xóa</button>
+                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(3)">Xóa</button>
                                 </td>
                               </tr>
-                              <tr>
+                              <tr id="item-4">
                                 <td>4</td>
                                 <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Báo cáo lại kết quả cho ban giám đốc</a></td>
                                 <td>Trịnh Duy Hưng</td>
@@ -429,7 +429,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete">Xóa</button>
+                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(4)">Xóa</button>
                                 </td>
                               </tr>
                               </tbody>
@@ -488,22 +488,29 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <!-- page script -->
 <script>
-    $(function () {
-        $('.btn-delete').on('click', function(e){
-            Swal.fire({
-                position: 'center',
-                icon: 'error',
-                title: 'Bạn có muốn xóa công việc??',
-                showConfirmButton: true,
-                timer: 1500
+    function checkDelete(item){
+        Swal.fire({
+                title: 'Bạn có chắc chắn muốn xóa?',
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Đồng ý',
+                cancelButtonText: 'Hủy',
             }).then((result) => {
                 if (result.value) {
-                    // window.location="ds_congviec_thuong_xuyen.html";
+                    $('#item-'+ item).remove();
+                   
+                   
                 }
             })
-        });
+           
+        }
+    $(function () {
+       
         $('#example1').DataTable({
         "language": {
           "paginate": {
