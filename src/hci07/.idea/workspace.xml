@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7db502a6-7a3a-4045-8c64-6a06c54c2de3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NhanVienChiaLieu/thong tin ca nhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NhanVienChiaLieu/tro giup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NhanVienDongGoi/thong tin ca nhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NhanVienDongGoi/tro giup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NhanVienPhaChe/thong tin ca nhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NhanVienPhaChe/tro giup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html" beforeDir="false" afterPath="$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html" beforeDir="false" afterPath="$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html" afterDir="false" />
@@ -30,112 +36,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/tables.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="113" column="70" lean-forward="true" selection-start-line="113" selection-start-column="70" selection-end-line="113" selection-end-column="70" />
+            <state relative-caret-position="-340">
+              <caret line="190" column="33" lean-forward="true" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/tables.html">
+        <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/thong tin ca nhan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="113" column="70" lean-forward="true" selection-start-line="113" selection-start-column="70" selection-end-line="113" selection-end-column="70" />
+            <state relative-caret-position="17">
+              <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html">
+        <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/tro giup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="355" column="47" selection-start-line="355" selection-start-column="47" selection-end-line="355" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#1;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/create_repost.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1009">
-              <caret line="355" column="46" lean-forward="true" selection-start-line="355" selection-start-column="46" selection-end-line="355" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/history_repost.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="109" column="78" selection-start-line="109" selection-start-column="78" selection-end-line="109" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="295" column="52" lean-forward="true" selection-start-line="295" selection-start-column="52" selection-end-line="295" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2225">
-              <caret line="109" column="78" selection-start-line="109" selection-start-column="78" selection-end-line="109" selection-end-column="78" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/create_repost.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="225" column="87" lean-forward="true" selection-start-line="225" selection-start-column="87" selection-end-line="225" selection-end-column="87" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#3;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#1;n#div#0;n#div#4;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#7;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#label#0;n#div#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -143,17 +63,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/history_repost.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="287" column="42" lean-forward="true" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
+            <state relative-caret-position="716">
+              <caret line="434" column="54" selection-start-line="434" selection-start-column="54" selection-end-line="434" selection-end-column="54" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,6 +83,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Nguyễn</find>
+      <find>Logo</find>
+      <find>XƯỞNG THUỐC THÚ Y</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,18 +99,24 @@
         <option value="$PROJECT_DIR$/MyLaravel/routes/web.php" />
         <option value="$PROJECT_DIR$/MyLaravel/resources/views/thongtin.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/NhanVienChiaLieu/thong tin ca nhan.html" />
+        <option value="$PROJECT_DIR$/NhanVienChiaLieu/tro giup.html" />
         <option value="$PROJECT_DIR$/NhanVienChiaLieu/index.html" />
-        <option value="$PROJECT_DIR$/NhanVienChiaLieu/tables.html" />
+        <option value="$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html" />
         <option value="$PROJECT_DIR$/NhanVienDongGoi/create_repost.html" />
         <option value="$PROJECT_DIR$/NhanVienDongGoi/index.html" />
-        <option value="$PROJECT_DIR$/NhanVienDongGoi/tables.html" />
+        <option value="$PROJECT_DIR$/NhanVienDongGoi/thong tin ca nhan.html" />
+        <option value="$PROJECT_DIR$/NhanVienDongGoi/tro giup.html" />
+        <option value="$PROJECT_DIR$/NhanVienPhaChe/tro giup.html" />
+        <option value="$PROJECT_DIR$/NhanVienPhaChe/thong tin ca nhan.html" />
         <option value="$PROJECT_DIR$/NhanVienPhaChe/index.html" />
-        <option value="$PROJECT_DIR$/NhanVienPhaChe/tables.html" />
         <option value="$PROJECT_DIR$/NhanVienPhaChe/create_repost.html" />
+        <option value="$PROJECT_DIR$/NhanVienChiaLieu/tables.html" />
+        <option value="$PROJECT_DIR$/NhanVienDongGoi/tables.html" />
+        <option value="$PROJECT_DIR$/NhanVienPhaChe/tables.html" />
         <option value="$PROJECT_DIR$/NhanVienPhaChe/history_repost.html" />
-        <option value="$PROJECT_DIR$/NhanVienDongGoi/history_repost.html" />
         <option value="$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html" />
-        <option value="$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html" />
+        <option value="$PROJECT_DIR$/NhanVienDongGoi/history_repost.html" />
       </list>
     </option>
   </component>
@@ -277,7 +205,7 @@
       <path value="$PROJECT_DIR$/MyLaravel/vendor/sebastian/comparator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="94" />
     <option name="y" value="57" />
     <option name="width" value="1346" />
@@ -289,45 +217,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hci_07_ttnm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hci_07_ttnm" type="462c0819:PsiDirectoryNode" />
+              <item name="hci_07_ttnm_fix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hci_07_ttnm_fix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hci_07_ttnm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hci_07_ttnm" type="462c0819:PsiDirectoryNode" />
+              <item name="hci_07_ttnm_fix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hci_07_ttnm_fix" type="462c0819:PsiDirectoryNode" />
               <item name="NhanVienChiaLieu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hci_07_ttnm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hci_07_ttnm" type="462c0819:PsiDirectoryNode" />
+              <item name="hci_07_ttnm_fix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hci_07_ttnm_fix" type="462c0819:PsiDirectoryNode" />
               <item name="NhanVienDongGoi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hci_07_ttnm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hci_07_ttnm" type="462c0819:PsiDirectoryNode" />
+              <item name="hci_07_ttnm_fix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hci_07_ttnm_fix" type="462c0819:PsiDirectoryNode" />
               <item name="NhanVienPhaChe" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NhanVienPhaChe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\hci_07_ttnm_fix\NhanVienPhaChe" />
+      <recent name="C:\xampp\htdocs\hci_07_ttnm_fix\NhanVienDongGoi" />
+      <recent name="C:\xampp\htdocs\hci_07_ttnm_fix\NhanVienChiaLieu" />
       <recent name="C:\xampp\htdocs\hci_07_ttnm\NhanVienChiaLieu" />
     </key>
   </component>
@@ -372,18 +303,18 @@
       <workItem from="1576314901137" duration="36000" />
       <workItem from="1576405351866" duration="1017000" />
       <workItem from="1576591191583" duration="6633000" />
+      <workItem from="1577111064122" duration="6468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25428000" />
+    <option name="totallyTimeSpent" value="31896000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8396072" visible="true" weight="0.22919819" />
-      <window_info id="Structure" order="1" sideWeight="0.1603928" side_tool="true" visible="true" weight="0.22919819" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8363339" visible="true" weight="0.23298033" />
+      <window_info id="Structure" order="1" sideWeight="0.16366611" side_tool="true" visible="true" weight="0.23298033" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Gulp" order="3" side_tool="true" />
       <window_info id="npm" order="4" side_tool="true" />
@@ -488,27 +419,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thong tin ca nhan.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/thong tin ca nhan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="142" lean-forward="true" selection-start-line="142" selection-end-line="142" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/tro giup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="143" column="49" selection-start-line="143" selection-start-column="49" selection-end-line="143" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1409">
-          <caret line="301" column="13" lean-forward="true" selection-start-line="301" selection-start-column="13" selection-end-line="301" selection-end-column="13" />
+        <state relative-caret-position="139">
+          <caret line="201" column="68" selection-start-line="201" selection-start-column="68" selection-end-line="201" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/tables.html">
+    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/create_repost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="225" column="87" lean-forward="true" selection-start-line="225" selection-start-column="87" selection-end-line="225" selection-end-column="87" />
+        <state relative-caret-position="314">
+          <caret line="143" column="68" selection-start-line="143" selection-start-column="68" selection-end-line="143" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -531,36 +472,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="287" column="42" lean-forward="true" selection-start-line="287" selection-start-column="42" selection-end-line="287" selection-end-column="42" />
+        <state relative-caret-position="475">
+          <caret line="310" column="38" selection-start-line="310" selection-start-column="38" selection-end-line="310" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/tables.html">
+    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/thong tin ca nhan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="113" column="70" lean-forward="true" selection-start-line="113" selection-start-column="70" selection-end-line="113" selection-end-column="70" />
+        <state relative-caret-position="354">
+          <caret line="193" column="43" selection-start-line="193" selection-start-column="43" selection-end-line="193" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/index.html">
+    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/tro giup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="295" column="52" lean-forward="true" selection-start-line="295" selection-start-column="52" selection-end-line="295" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/tables.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="113" column="70" lean-forward="true" selection-start-line="113" selection-start-column="70" selection-end-line="113" selection-end-column="70" />
+        <state relative-caret-position="221">
+          <caret line="193" column="35" selection-start-line="193" selection-start-column="35" selection-end-line="193" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/create_repost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="355" column="46" lean-forward="true" selection-start-line="355" selection-start-column="46" selection-end-line="355" selection-end-column="46" />
+        <state relative-caret-position="172">
+          <caret line="244" column="38" lean-forward="true" selection-start-line="244" selection-start-column="38" selection-end-line="244" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#label#0;n#div#0;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#8;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -568,34 +502,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/history_repost.html">
+    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="109" column="78" selection-start-line="109" selection-start-column="78" selection-end-line="109" selection-end-column="78" />
+        <state relative-caret-position="153">
+          <caret line="303" column="38" lean-forward="true" selection-start-line="303" selection-start-column="38" selection-end-line="303" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/history_repost.html">
+    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/create_repost.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="107" column="16" lean-forward="true" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2225">
-          <caret line="109" column="78" selection-start-line="109" selection-start-column="78" selection-end-line="109" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/create_repost.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="355" column="47" selection-start-line="355" selection-start-column="47" selection-end-line="355" selection-end-column="47" />
+        <state relative-caret-position="223">
+          <caret line="251" column="38" selection-start-line="251" selection-start-column="38" selection-end-line="251" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -613,6 +530,81 @@
             <element signature="n#style#0;n#input#0;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#1;n#div#9;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="269" column="95" selection-start-line="269" selection-start-column="95" selection-end-line="269" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/history_repost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="348" lean-forward="true" selection-start-line="348" selection-end-line="348" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3405">
+          <caret line="513" column="46" lean-forward="true" selection-start-line="513" selection-start-column="46" selection-end-line="513" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienChiaLieu/history_repost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1375">
+          <caret line="291" column="62" selection-start-line="291" selection-start-column="62" selection-end-line="291" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienDongGoi/history_repost.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="434" column="54" selection-start-line="434" selection-start-column="54" selection-end-line="434" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#7;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#8;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/tables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="190" column="33" lean-forward="true" selection-start-line="190" selection-start-column="33" selection-end-line="190" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/thong tin ca nhan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="313" column="67" selection-start-line="313" selection-start-column="67" selection-end-line="313" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NhanVienPhaChe/tro giup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="193" column="32" selection-start-line="193" selection-start-column="32" selection-end-line="193" selection-end-column="32" />
         </state>
       </provider>
     </entry>
