@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
+
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -37,7 +37,7 @@ h2 {
   font-weight: 600;
   text-transform: uppercase;
   display:inline-block;
-  margin: 40px 8px 10px 8px; 
+  margin: 40px 8px 10px 8px;
   color: #cccccc;
 }
 
@@ -48,7 +48,7 @@ h2 {
 .wrapper {
   display: flex;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   width: 100%;
   min-height: 100%;
@@ -262,7 +262,7 @@ input[type=email]:placeholder, input[type=password]:placeholder {
 
 *:focus {
     outline: none;
-} 
+}
 
 #icon {
   width:60%;
@@ -275,24 +275,24 @@ input[type=email]:placeholder, input[type=password]:placeholder {
     <div class="wrapper fadeInDown">
         <div id="formContent">
           <!-- Tabs Titles -->
-      
+
           <!-- Icon -->
           <div class="fadeIn first">
-              <h3>HCI 04 - Phần mềm quản lý công việc</h3>
+              <h3>HCI 05 - Phần mềm quản lý công việc</h3>
           </div>
-      
+
           <!-- Login Form -->
-          <form id="login-form" action="#" method="post"> 
+          <form id="login-form" action="#" method="post">
             <input type="email" id="login" name="login" placeholder="email">
             <input type="password" id="password"  name="login" placeholder="password">
             <input type="submit" value="Log In" id="btn-login">
           </form>
-      
+
           <!-- Remind Passowrd -->
           <div id="formFooter">
             <a class="underlineHover" href="#">Forgot Password?</a>
           </div>
-      
+
         </div>
       </div>
     <script>
@@ -300,9 +300,10 @@ input[type=email]:placeholder, input[type=password]:placeholder {
             $("#btn-login").click(function(e){
                 e.preventDefault();
                 role = $('#login').val();
-                if(role == 'truongphong@gmail.com'){
+                password= $('#password').val();
+                if(role == 'truongphong@gmail.com'||password == 'truongphong'){
                     window.location.href = "pages/pages_hci/dashboard.html";
-                }else{
+                }else if(role == 'nhanvien@gmail.com' || password == 'nhanvien'){
                     window.location.href = "pages/pages_hci_nv/dashboard.html";
                 }
 
