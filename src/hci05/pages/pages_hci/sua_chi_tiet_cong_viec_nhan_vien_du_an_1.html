@@ -180,7 +180,7 @@
                 </li>
                 <li>
                     <a href="ds_cong_viec_ca_nhan.html">
-                        <i class="fa fa-user"></i> <span>Công việc thường xuyên</span>
+                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
                         <span class="pull-right-container">
 
                 </span>
@@ -201,7 +201,7 @@
                       </span>
                             </a>
                         </li>
-                
+
             </ul>
         </section>
     </aside>
@@ -216,7 +216,8 @@
             <ol class="breadcrumb">
                 <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
 
-                <li class="active">Công việc công ty</li>
+                <li class="active">...</li>
+                <li class="active"><a  href="chi_tiet_cong_viec_du_an_2.html">Kết quả công việc</a></li>
             </ol>
         </section>
 
@@ -237,12 +238,12 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Tên dự án</label>
-                                        <input type="email" class="form-control" disabled id="exampleInputEmail1" value="Dự án sản xuất vacxin cúm gà" >
+                                        <input type="email" class="form-control" disabled id="exampleInputEmail1" value="Dự án sản xuất vacxin tả lợn châu Phi" >
                                     </div>
                                     <div class="form-group">
                                         <label>Người chịu trách nhiệm</label>
                                         <select class="form-control select2" style="width: 100%;">
-                                            <option selected="selected">Lã Mạnh Cường</option>
+                                            <option selected="selected">Nguyễn Chí Thanh</option>
                                             <option>Nguyễn Chí Thanh</option>
                                             <option>Nguyễn Duy Kỳ</option>
                                             <option>Trịnh Duy Hưng</option>
@@ -255,7 +256,7 @@
                                             <div class="input-group-addon">
                                                 <i class="fa fa-calendar"></i>
                                             </div>
-                                            <input type="text" class="form-control pull-right" id="datepicker" value="12/12/2019">
+                                            <input type="text" class="form-control pull-right" id="datepicker" value="15/11/2019">
                                         </div>
                                         <!-- /.input group -->
                                     </div>
@@ -276,12 +277,10 @@
                                     </div>
                                 </div>
 
-                                <div class="box-footer">
-                                    <div class="form-group" style="margin-top: 15px; text-align: center;">
-                                        <!-- /.col -->
-                                        <a type="button" style="width: 150px; float: left;" class="btn btn-block btn-primary btn-create">Sửa công việc</a>
-                                        <a type="button" href="chi_tiet_cong_viec_du_an.html" style="width: 150px; float: left; margin-left: 10px;" class="btn  btn-default">Quay lại</a>
-                                    </div>
+                                <div class="form-group" style="margin-top: 15px; text-align: center;">
+                                    <!-- /.col -->
+                                    <a type="button" style="width: 150px; float: left;" class="btn btn-block btn-success btn-create">Cập nhật</a>
+                                    <a type="button" href="chi_tiet_cong_viec_du_an_2.html" style="width: 150px; float: left; margin-left: 10px;" class="btn  btn-default">Quay lại</a>
                                 </div>
                             </form>
                         </div>
@@ -333,7 +332,7 @@
      $('.btn-create').on('click', function (e) {
             e.preventDefault();
             Swal.fire({
-                title: 'Bạn có chắc chắn muốn sửa?',
+                title: 'Bạn có chắc chắn muốn cập nhật?',
                 icon: 'question',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
@@ -342,9 +341,7 @@
                 cancelButtonText: 'Hủy',
             }).then((result) => {
                 if (result.value) {
-                    Swal.fire(
-                        'Bạn đã sửa thành công',
-                    )
+                    window.location.href = "chi_tiet_cong_viec_du_an_2.html";
                 }
             })
 

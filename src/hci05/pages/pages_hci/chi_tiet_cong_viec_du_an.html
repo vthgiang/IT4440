@@ -172,7 +172,7 @@
                 </li>
                 <li>
                     <a href="ds_cong_viec_ca_nhan.html">
-                        <i class="fa fa-user"></i> <span>Công việc thường xuyên</span>
+                        <i class="fa fa-user"></i> <span>Công việc cá nhân</span>
                         <span class="pull-right-container">
 
                 </span>
@@ -193,7 +193,7 @@
                       </span>
                             </a>
                         </li>
-                
+
             </ul>
         </section>
     </aside>
@@ -209,7 +209,10 @@
             <ol class="breadcrumb">
                 <li><a href="dashboard.html"><i class="fa fa-home"></i> Trang chủ</a></li>
 
-                <li class="active">Công việc công ty</li>
+
+                <li class="active"><a  href="ds_congviec_cty.html">Công việc công ty</a></li>
+                <li class="active"><a href="chi_tiet_du_an.html">Chi tiết dự án</a></li>
+                <li class="active">Kết quả công việc</li>
             </ol>
         </section>
 
@@ -376,9 +379,9 @@
                               </tr>
                               </thead>
                               <tbody>
-                              <tr id="item-1">
+                              <tr>
                                 <td>1</td>
-                                <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chuẩn bị giấy kiểm định chất lượng</a></td>
+                                <td>Chuẩn bị giấy kiểm định chất lượng</td>
                                 <td>Nguyễn Chí Thanh</td>
                                 <td>10/10/2019</td>
                                 <td>30/10/2019</td>
@@ -387,12 +390,13 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete"  onclick="checkDelete(1)">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
-                              <tr id="item-2">
+                              <tr>
                                 <td>2</td>
-                                <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Chuẩn bị giấy cấp phép sản xuất</a></td>
+                                <
+                                <td>Chuẩn bị giấy cấp phép sản xuất</td>
                                 <td>Lã Mạnh Cường</td>
                                 <td>10/10/2019</td>
                                 <td>30/10/2019</td>
@@ -401,12 +405,12 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_2.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(2)">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
-                              <tr id="item-3">
+                              <tr>
                                 <td>3</td>
-                                <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Đăng ký nhãn hiệu và xin cấp phép</a></td>
+                                <td>Đăng ký nhãn hiệu và xin cấp phép</td>
                                 <td>Nguyễn Duy Kỳ</td>
                                 <td>10/10/2019</td>
                                 <td>30/10/2019</td>
@@ -415,12 +419,12 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(3)">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
-                              <tr id="item-4">
+                              <tr>
                                 <td>4</td>
-                                <td><a href="chi_tiet_cong_viec_nhan_vien_du_an.html">Báo cáo lại kết quả cho ban giám đốc</a></td>
+                                <td>Báo cáo lại kết quả cho ban giám đốc</td>
                                 <td>Trịnh Duy Hưng</td>
                                 <td>10/10/2019</td>
                                 <td>30/10/2019</td>
@@ -429,7 +433,7 @@
                                     <a href="chi_tiet_cong_viec_nhan_vien_du_an.html"><button class="btn btn-info">Chi tiết
                                     </button></a>
                                     <a href="sua_chi_tiet_cong_viec_nhan_vien_du_an_1.html"><button class="btn btn-warning">Sửa</button></a>
-                                  <button class="btn btn-danger btn-delete" onclick="checkDelete(4)">Xóa</button>
+                                  <button class="btn btn-danger btn-delete">Xóa</button>
                                 </td>
                               </tr>
                               </tbody>
@@ -488,29 +492,22 @@
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <!-- page script -->
 <script>
-    function checkDelete(item){
-        Swal.fire({
-                title: 'Bạn có chắc chắn muốn xóa?',
-                icon: 'question',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Đồng ý',
-                cancelButtonText: 'Hủy',
+    $(function () {
+        $('.btn-delete').on('click', function(e){
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Bạn có muốn xóa công việc??',
+                showConfirmButton: true,
+                timer: 1500
             }).then((result) => {
                 if (result.value) {
-                    $('#item-'+ item).remove();
-                   
-                   
+                    // window.location="ds_congviec_thuong_xuyen.html";
                 }
             })
-           
-        }
-    $(function () {
-       
+        });
         $('#example1').DataTable({
         "language": {
           "paginate": {
