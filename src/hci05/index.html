@@ -148,7 +148,7 @@ input[type=email]:focus, input[type=password]:focus {
   border-bottom: 2px solid #5fbae9;
 }
 
-input[type=email]:placeholder, input[type=password]:placeholder {
+input[type=email]::placeholder, input[type=password]::placeholder {
   color: #cccccc;
 }
 
@@ -283,11 +283,16 @@ input[type=email]:placeholder, input[type=password]:placeholder {
 
           <!-- Login Form -->
           <form id="login-form" action="#" method="post">
-            <input type="email" id="login" name="login" placeholder="email">
-            <input type="password" id="password"  name="login" placeholder="password">
+            <input type="email" id="login" name="login" placeholder="Email">
+            <input type="password" id="password"  name="login" placeholder="Password">
             <input type="submit" value="Log In" id="btn-login">
           </form>
-
+          <div align="center" style="padding: 10px">
+              <a href="./pages/pages_hci/dashboard.html"> <button style="width: 150px;height: 40px;background: #56baed;border-radius: 10px;color:#f6f6f6 ;
+              border-style: solid; ">Trưởng phòng</button></a>
+              <a href="pages/pages_hci_nv/dashboard.html"><button  style="width: 150px;height: 40px;background: #56baed;border-radius:10px;color:#f6f6f6 ;
+               border-style: solid;">Nhân viên</button></a>
+          </div>
           <!-- Remind Passowrd -->
           <div id="formFooter">
             <a class="underlineHover" href="#">Forgot Password?</a>
